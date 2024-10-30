@@ -1,0 +1,807 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>4.2 Propriedades básicas da esperança condicional ‣ Capítulo 4 Esperança condicional ‣ Notas de aula: Probabilidade I</title>
+<!--Generated on Tue Aug 27 13:34:01 2024 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
+<style>:root { --bml-ltx-font-size: 10; }</style>
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-table.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-search.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-bookdown.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-fontsettings.css" type="text/css">
+<link rel="stylesheet" href="ltx-book.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook,plain.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook.css" type="text/css">
+<link rel="stylesheet" href="bmluser/colors.gitbook-Notas_de_aula.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6"></script>
+<link rel="up" href="Ch4.html" title="Capítulo 4 Esperança condicional ‣ Notas de aula: Probabilidade I">
+<link rel="up up" href="index.html" title="Notas de aula: Probabilidade I">
+<link rel="start" href="index.html" title="Notas de aula: Probabilidade I">
+<link rel="prev" href="Ch4.S1.html" title="4.1 Esperança condicional ‣ Capítulo 4 Esperança condicional ‣ Notas de aula: Probabilidade I">
+<link rel="next" href="Ch4.S3.html" title="4.3 Probabilidade Condicional Regular ‣ Capítulo 4 Esperança condicional ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch4.S1.html" title="4.1 Esperança condicional ‣ Capítulo 4 Esperança condicional ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch4.S3.html" title="4.3 Probabilidade Condicional Regular ‣ Capítulo 4 Esperança condicional ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch4.S4.html" title="4.4 Princípio da substituição ‣ Capítulo 4 Esperança condicional ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch4.Sx1.html" title="Tópico: Processos de Poisson em ℝ ‣ Capítulo 4 Esperança condicional ‣ Notas de aula: Probabilidade I">
+<link rel="chapter" href="Chx1.html" title="Licença ‣ Notas de aula: Probabilidade I">
+<link rel="chapter" href="Chx2.html" title="Contribuições ‣ Notas de aula: Probabilidade I">
+<link rel="chapter" href="Ch1.html" title="Capítulo 1 Fundamentos ‣ Notas de aula: Probabilidade I">
+<link rel="chapter" href="Ch2.html" title="Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I">
+<link rel="chapter" href="Ch3.html" title="Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I">
+<link rel="chapter" href="Ch4.html" title="Capítulo 4 Esperança condicional ‣ Notas de aula: Probabilidade I">
+<link rel="chapter" href="Ch5.html" title="Capítulo 5 Soluções de exercícios ‣ Notas de aula: Probabilidade I">
+<link rel="bibliography" href="bib.html" title="Referências ‣ Notas de aula: Probabilidade I">
+<link rel="index" href="idx.html" title="Índice Remissivo ‣ Notas de aula: Probabilidade I">
+<meta name="keywords" lang="pt-BR" content="T.C.D., T.C.M., aditividade, condicional, desigualdade de Jensen, esperança, monotonicidade, torre">
+</head>
+<body>
+<div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+<a href="#bml-main-content" tabindex="0" class="bml-skip-to-content">Skip to content.</a>
+<div class="book-summary"><nav class="ltx_page_navbar">
+<ul class="ltx_toclist summary">
+<li>
+<a href="index.html" title="" class="ltx_ref" rel="start">Notas de aula: Probabilidade I</a>
+</li>
+<li class="divider">
+<li data-level="" data-path="Chx1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Chx1.html" title="In Notas de aula: Probabilidade I" class="ltx_ref">Licença</a></li>
+<li data-level="" data-path="Chx2.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Chx2.html" title="In Notas de aula: Probabilidade I" class="ltx_ref">Contribuições</a></li>
+<li data-level="1" data-path="Ch1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch1.html" title="In Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1 </span></b>Fundamentos</a></li>
+<li data-level="2" data-path="Ch2.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch2.html" title="In Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2 </span></b>Construção de espaços de probabilidade</a></li>
+<li data-level="3" data-path="Ch3.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch3.html" title="In Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3 </span></b>Somas de variáveis independentes</a></li>
+<li data-level="4" data-path="Ch4.html" class="ltx_tocentry ltx_tocentry_chapter  chapter ">
+<a href="Ch4.html" title="In Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4 </span></b>Esperança condicional</a>
+<ol class="ltx_toclist ltx_toclist_chapter">
+<li data-level="4.1" data-path="Ch4.S1.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch4.S1.html" title="In Capítulo 4 Esperança condicional ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4.1 </span></b>Esperança condicional</a></li>
+<li data-level="4.2" data-path="" class="ltx_tocentry ltx_tocentry_section ltx_ref_self  chapter active"><a href="" title="In Capítulo 4 Esperança condicional ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4.2 </span></b>Propriedades básicas da esperança condicional</a></li>
+<li data-level="4.3" data-path="Ch4.S3.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch4.S3.html" title="In Capítulo 4 Esperança condicional ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4.3 </span></b>Probabilidade Condicional Regular</a></li>
+<li data-level="4.4" data-path="Ch4.S4.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch4.S4.html" title="In Capítulo 4 Esperança condicional ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4.4 </span></b>Princípio da substituição</a></li>
+<li data-level="" data-path="Ch4.Sx1.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch4.Sx1.html" title="In Capítulo 4 Esperança condicional ‣ Notas de aula: Probabilidade I" class="ltx_ref">Tópico: Processos de Poisson em <math class="ltx_Math" alttext="\mathbb{R}" display="inline"><semantics><mi>ℝ</mi><annotation encoding="application/x-tex">\mathbb{R}</annotation></semantics></math></a></li>
+</ol>
+</li>
+<li data-level="5" data-path="Ch5.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch5.html" title="In Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">5 </span></b>Soluções de exercícios</a></li>
+<li data-level="" data-path="bib.html" class="ltx_tocentry ltx_tocentry_bibliography  chapter "><a href="bib.html" title="In Notas de aula: Probabilidade I" class="ltx_ref">Referências</a></li>
+<li data-level="" data-path="idx.html" class="ltx_tocentry ltx_tocentry_index  chapter "><a href="idx.html" title="In Notas de aula: Probabilidade I" class="ltx_ref">Índice Remissivo</a></li>
+</ul>
+</nav></div>
+<div class="ltx_page_main book-body fixed">
+<div class="body-inner">
+<div class="book-header fixed" role="navigation"><h1>Propriedades básicas da esperança condicional</h1></div>
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="ltx_page_content page-inner" id="bml-main-content">
+<section class="ltx_section normal" lang="pt-BR">
+<div class="section level1">
+
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section header-section-number">4.2</span> Propriedades básicas da esperança condicional</h1>
+
+<div id="p1" class="ltx_para">
+<p class="ltx_p">Nessa seção justificaremos, em certa medida, a nomenclatura “esperança condicional”.
+Faremos isso mostrando que ela satisfaz várias propriedades que já conhecemos para a esperança tradicional.</p>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">Mas como podemos mostrar propriedades simples tais como a linearidade da esperança condicional?
+Vamos começar com um exemplo</p>
+</div>
+<div id="p3" class="ltx_para">
+<span class="ltx_ERROR undefined">{proposition}</span>
+<p class="ltx_p">Se <math id="p3.m1" class="ltx_Math" alttext="X,X^{\prime}\in\mathcal{L}^{1}(P)" display="inline"><semantics><mrow><mrow><mi>X</mi><mo>,</mo><msup><mi>X</mi><mo>′</mo></msup></mrow><mo>∈</mo><mrow><msup><mi class="ltx_font_mathcaligraphic">ℒ</mi><mn>1</mn></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>P</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">X,X^{\prime}\in\mathcal{L}^{1}(P)</annotation></semantics></math>, então</p>
+<div id="Ch4.E7" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.E7.m1" class="ltx_Math" alttext="E(X+X^{\prime}|\mathcal{F}^{\prime})=E(X|\mathcal{F}^{\prime})+E(X^{\prime}|%
+\mathcal{F}^{\prime}),\text{ $P$-quase certamente.}" display="block"><semantics><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo>+</mo><mrow><msup><mi>X</mi><mo>′</mo></msup><mo fence="false">|</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo fence="false">|</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>X</mi><mo>′</mo></msup><mo fence="false">|</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>,</mo><mrow><mtext> </mtext><mi>P</mi><mtext>-quase certamente.</mtext></mrow></mrow></mrow><annotation encoding="application/x-tex">E(X+X^{\prime}|\mathcal{F}^{\prime})=E(X|\mathcal{F}^{\prime})+E(X^{\prime}|%
+\mathcal{F}^{\prime}),\text{ $P$-quase certamente.}</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.7)</span>
+            
+            
+          
+</div>
+</div>
+<div id="p4" class="ltx_para">
+<p class="ltx_p">Note que a igualdade acima é uma igualdade entre variáveis aleatórias.</p>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demonstração.</h6>
+<div id="p5" class="ltx_para">
+<p class="ltx_p">Sabemos que <math id="p5.m1" class="ltx_Math" alttext="Y=E(X|\mathcal{F}^{\prime})+E(X^{\prime}|\mathcal{F}^{\prime})" display="inline"><semantics><mrow><mi>Y</mi><mo>=</mo><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo fence="false">|</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>X</mi><mo>′</mo></msup><mo fence="false">|</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">Y=E(X|\mathcal{F}^{\prime})+E(X^{\prime}|\mathcal{F}^{\prime})</annotation></semantics></math> é uma variável aleatória bem definida.
+Mais do que isso, sabemos que ela é uma candidata muito boa a <math id="p5.m2" class="ltx_Math" alttext="E(X+X^{\prime}|\mathcal{F}^{\prime})" display="inline"><semantics><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo>+</mo><mrow><msup><mi>X</mi><mo>′</mo></msup><mo fence="false">|</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">E(X+X^{\prime}|\mathcal{F}^{\prime})</annotation></semantics></math>.
+Logo, por unicidade da esperança condicional, basta verificar que <math id="p5.m3" class="ltx_Math" alttext="Y" display="inline"><semantics><mi>Y</mi><annotation encoding="application/x-tex">Y</annotation></semantics></math> satisfaz as condições da Definição <a href="Ch4.S1.html" title="4.1 Esperança condicional ‣ Capítulo 4 Esperança condicional ‣ Notas de aula: Probabilidade I" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.1</span></a> com respeito a <math id="p5.m4" class="ltx_Math" alttext="X+X^{\prime}" display="inline"><semantics><mrow><mi>X</mi><mo>+</mo><msup><mi>X</mi><mo>′</mo></msup></mrow><annotation encoding="application/x-tex">X+X^{\prime}</annotation></semantics></math>.
+De fato</p>
+<ol id="I1" class="ltx_enumerate">
+<li id="I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"> a)</span><div id="I1.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i1.p1.m1" class="ltx_Math" alttext="Y" display="inline"><semantics><mi>Y</mi><annotation encoding="application/x-tex">Y</annotation></semantics></math> é <math id="I1.i1.p1.m2" class="ltx_Math" alttext="\mathcal{F}^{\prime}" display="inline"><semantics><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup><annotation encoding="application/x-tex">\mathcal{F}^{\prime}</annotation></semantics></math>-mensurável, por ser uma soma de duas variáveis <math id="I1.i1.p1.m3" class="ltx_Math" alttext="\mathcal{F}^{\prime}" display="inline"><semantics><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup><annotation encoding="application/x-tex">\mathcal{F}^{\prime}</annotation></semantics></math>-mensuráveis e</p>
+</div>
+</li>
+<li id="I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"> b)</span><div id="I1.i2.p1" class="ltx_para">​<p class="ltx_p">por linearidade da esperança (não da esperança condicional), temos</p>
+<div id="Ch4.E8" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.E8.m1" class="ltx_Math" alttext="\begin{split}E(Y\1_{A})&amp;=E\big{(}E(X|\mathcal{F}^{\prime})\1_{A}+E(X^{\prime}|%
+\mathcal{F}^{\prime})\1_{A}\big{)}\\
+&amp;=E\big{(}E(X|\mathcal{F}^{\prime})\1_{A}\big{)}+E\big{(}E(X^{\prime}|\mathcal%
+{F}^{\prime})\1_{A}\big{)}\\
+&amp;=E(X\1_{A})+E(X^{\prime}\1_{A})=E\big{(}(X+X^{\prime})\1_{A}\big{)}.\end{split}" display="block"><semantics><mtable columnspacing="0pt" displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_align_right" columnalign="right"><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>Y</mi><mo>⁢</mo><msub><merror class="ltx_ERROR undefined undefined"><mtext>\1</mtext></merror><mi>A</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mi></mi><mo>=</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo fence="false">|</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><merror class="ltx_ERROR undefined undefined"><mtext>\1</mtext></merror><mi>A</mi></msub></mrow><mo>+</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>X</mi><mo>′</mo></msup><mo fence="false">|</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><merror class="ltx_ERROR undefined undefined"><mtext>\1</mtext></merror><mi>A</mi></msub></mrow></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow></mtd></mtr><mtr><mtd></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mi></mi><mo>=</mo><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo fence="false">|</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><merror class="ltx_ERROR undefined undefined"><mtext>\1</mtext></merror><mi>A</mi></msub></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo>+</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>X</mi><mo>′</mo></msup><mo fence="false">|</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><merror class="ltx_ERROR undefined undefined"><mtext>\1</mtext></merror><mi>A</mi></msub></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow></mrow></mtd></mtr><mtr><mtd></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mi></mi><mo>=</mo><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo>⁢</mo><msub><merror class="ltx_ERROR undefined undefined"><mtext>\1</mtext></merror><mi>A</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>X</mi><mo>′</mo></msup><mo>⁢</mo><msub><merror class="ltx_ERROR undefined undefined"><mtext>\1</mtext></merror><mi>A</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo>+</mo><msup><mi>X</mi><mo>′</mo></msup></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><merror class="ltx_ERROR undefined undefined"><mtext>\1</mtext></merror><mi>A</mi></msub></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{split}E(Y\1_{A})&amp;=E\big{(}E(X|\mathcal{F}^{\prime})\1_{A}+E(X^{\prime}|%
+\mathcal{F}^{\prime})\1_{A}\big{)}\\
+&amp;=E\big{(}E(X|\mathcal{F}^{\prime})\1_{A}\big{)}+E\big{(}E(X^{\prime}|\mathcal%
+{F}^{\prime})\1_{A}\big{)}\\
+&amp;=E(X\1_{A})+E(X^{\prime}\1_{A})=E\big{(}(X+X^{\prime})\1_{A}\big{)}.\end{split}</annotation></semantics></math></span>
+                    <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.8)</span>
+                    
+                    
+                  
+</div>
+</div>
+</li>
+</ol>
+<p class="ltx_p">Isso termina a prova do proposição.
+∎</p>
+</div>
+</div>
+<div id="p6" class="ltx_para">
+<span class="ltx_ERROR undefined">{exercise}</span>
+<p class="ltx_p">Dados <math id="p6.m1" class="ltx_Math" alttext="X\in\mathcal{L}^{1}" display="inline"><semantics><mrow><mi>X</mi><mo>∈</mo><msup><mi class="ltx_font_mathcaligraphic">ℒ</mi><mn>1</mn></msup></mrow><annotation encoding="application/x-tex">X\in\mathcal{L}^{1}</annotation></semantics></math> e <math id="p6.m2" class="ltx_Math" alttext="\alpha\in\mathbb{R}" display="inline"><semantics><mrow><mi>α</mi><mo>∈</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">\alpha\in\mathbb{R}</annotation></semantics></math>, mostre que <math id="p6.m3" class="ltx_Math" alttext="E(\alpha X|\mathcal{F}^{\prime})=\alpha E(X|\mathcal{F}^{\prime})" display="inline"><semantics><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>α</mi><mo>⁢</mo><mi>X</mi></mrow><mo fence="false">|</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>α</mi><mo>⁢</mo><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo fence="false">|</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">E(\alpha X|\mathcal{F}^{\prime})=\alpha E(X|\mathcal{F}^{\prime})</annotation></semantics></math>.</p>
+</div>
+<div id="p7" class="ltx_para">
+<p class="ltx_p">Uma outra propriedade bem simples da esperança condicional é a monotonicidade.</p>
+</div>
+<div id="p8" class="ltx_para">
+<span class="ltx_ERROR undefined">{lemma}</span>
+<p class="ltx_p">Se <math id="p8.m1" class="ltx_Math" alttext="X\geq X^{\prime}" display="inline"><semantics><mrow><mi>X</mi><mo>≥</mo><msup><mi>X</mi><mo>′</mo></msup></mrow><annotation encoding="application/x-tex">X\geq X^{\prime}</annotation></semantics></math> em <math id="p8.m2" class="ltx_Math" alttext="\mathcal{L}^{1}(P)" display="inline"><semantics><mrow><msup><mi class="ltx_font_mathcaligraphic">ℒ</mi><mn>1</mn></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>P</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mathcal{L}^{1}(P)</annotation></semantics></math>, então</p>
+<div id="Ch4.E9" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.E9.m1" class="ltx_Math" alttext="E(X|\mathcal{F}^{\prime})\geq E(X^{\prime}|\mathcal{F}^{\prime}),\text{$P$-%
+quase certamente.}" display="block"><semantics><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo fence="false">|</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>≥</mo><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>X</mi><mo>′</mo></msup><mo fence="false">|</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>,</mo><mrow><mi>P</mi><mtext>-quase certamente.</mtext></mrow></mrow></mrow><annotation encoding="application/x-tex">E(X|\mathcal{F}^{\prime})\geq E(X^{\prime}|\mathcal{F}^{\prime}),\text{$P$-%
+quase certamente.}</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.9)</span>
+            
+            
+          
+</div>
+<p class="ltx_p">Em particular, se <math id="p8.m3" class="ltx_Math" alttext="X\geq 0" display="inline"><semantics><mrow><mi>X</mi><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">X\geq 0</annotation></semantics></math>, então <math id="p8.m4" class="ltx_Math" alttext="E(X|\mathcal{F}^{\prime})\geq 0" display="inline"><semantics><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo fence="false">|</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">E(X|\mathcal{F}^{\prime})\geq 0</annotation></semantics></math> quase certamente.</p>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demonstração.</h6>
+<div id="p9" class="ltx_para">
+<p class="ltx_p">Seja <math id="p9.m1" class="ltx_Math" alttext="A=[E(X^{\prime}|\mathcal{F}^{\prime})-E(X|\mathcal{F}^{\prime})&gt;0]" display="inline"><semantics><mrow><mi>A</mi><mo>=</mo><mrow><mo stretchy="false">[</mo><mrow><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>X</mi><mo>′</mo></msup><mo fence="false">|</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo fence="false">|</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>&gt;</mo><mn>0</mn></mrow><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">A=[E(X^{\prime}|\mathcal{F}^{\prime})-E(X|\mathcal{F}^{\prime})&gt;0]</annotation></semantics></math>, que pertence a <math id="p9.m2" class="ltx_Math" alttext="\mathcal{F}^{\prime}" display="inline"><semantics><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup><annotation encoding="application/x-tex">\mathcal{F}^{\prime}</annotation></semantics></math>.
+Então</p>
+<div id="Ch4.E10" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.E10.m1" class="ltx_Math" alttext="0\leq E\big{(}(E(X^{\prime}|\mathcal{F}^{\prime})-E(X|\mathcal{F}^{\prime}))\1%
+_{A}\big{)}=E\big{(}(X^{\prime}-X)\1_{A}\big{)}\leq 0," display="block"><semantics><mrow><mrow><mn>0</mn><mo>≤</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>X</mi><mo>′</mo></msup><mo fence="false">|</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo fence="false">|</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><merror class="ltx_ERROR undefined undefined"><mtext>\1</mtext></merror><mi>A</mi></msub></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo>=</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><msup><mi>X</mi><mo>′</mo></msup><mo>−</mo><mi>X</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><merror class="ltx_ERROR undefined undefined"><mtext>\1</mtext></merror><mi>A</mi></msub></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo>≤</mo><mn>0</mn></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">0\leq E\big{(}(E(X^{\prime}|\mathcal{F}^{\prime})-E(X|\mathcal{F}^{\prime}))\1%
+_{A}\big{)}=E\big{(}(X^{\prime}-X)\1_{A}\big{)}\leq 0,</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.10)</span>
+              
+              
+            
+</div>
+<p class="ltx_p">o que implica que <math id="p9.m3" class="ltx_Math" alttext="P(A)=0" display="inline"><semantics><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">P(A)=0</annotation></semantics></math>.
+∎</p>
+</div>
+</div>
+<div id="p10" class="ltx_para">
+<span class="ltx_ERROR undefined">{proposition}</span>
+<p class="ltx_p">Se <math id="p10.m1" class="ltx_Math" alttext="X,ZX\in\mathcal{L}^{1}(P)" display="inline"><semantics><mrow><mrow><mi>X</mi><mo>,</mo><mrow><mi>Z</mi><mo>⁢</mo><mi>X</mi></mrow></mrow><mo>∈</mo><mrow><msup><mi class="ltx_font_mathcaligraphic">ℒ</mi><mn>1</mn></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>P</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">X,ZX\in\mathcal{L}^{1}(P)</annotation></semantics></math>, com <math id="p10.m2" class="ltx_Math" alttext="Z\in\mathcal{F}^{\prime}" display="inline"><semantics><mrow><mi>Z</mi><mo>∈</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></mrow><annotation encoding="application/x-tex">Z\in\mathcal{F}^{\prime}</annotation></semantics></math>, temos</p>
+<div id="Ch4.E11" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.E11.m1" class="ltx_Math" alttext="E(XZ|\mathcal{F}^{\prime})=ZE(X|\mathcal{F}^{\prime})\text{ $P$-quase %
+certamente}." display="block"><semantics><mrow><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>X</mi><mo>⁢</mo><mi>Z</mi></mrow><mo fence="false">|</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>Z</mi><mo>⁢</mo><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo fence="false">|</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mtext> </mtext><mi>P</mi><mtext>-quase certamente</mtext></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">E(XZ|\mathcal{F}^{\prime})=ZE(X|\mathcal{F}^{\prime})\text{ $P$-quase %
+certamente}.</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.11)</span>
+            
+            
+          
+</div>
+<p class="ltx_p">Em particular, <math id="p10.m3" class="ltx_Math" alttext="E(\alpha X|\mathcal{F}^{\prime})=\alpha E(X|\mathcal{F}^{\prime})" display="inline"><semantics><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>α</mi><mo>⁢</mo><mi>X</mi></mrow><mo fence="false">|</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>α</mi><mo>⁢</mo><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo fence="false">|</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">E(\alpha X|\mathcal{F}^{\prime})=\alpha E(X|\mathcal{F}^{\prime})</annotation></semantics></math>, para todo <math id="p10.m4" class="ltx_Math" alttext="\alpha\in\mathbb{R}" display="inline"><semantics><mrow><mi>α</mi><mo>∈</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">\alpha\in\mathbb{R}</annotation></semantics></math>.
+Uma outra consequência interessante é que <math id="p10.m5" class="ltx_Math" alttext="ZE(X|\mathcal{F}^{\prime})" display="inline"><semantics><mrow><mi>Z</mi><mo>⁢</mo><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo fence="false">|</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">ZE(X|\mathcal{F}^{\prime})</annotation></semantics></math> estará automaticamente em <math id="p10.m6" class="ltx_Math" alttext="\mathcal{L}^{1}" display="inline"><semantics><msup><mi class="ltx_font_mathcaligraphic">ℒ</mi><mn>1</mn></msup><annotation encoding="application/x-tex">\mathcal{L}^{1}</annotation></semantics></math>.</p>
+</div>
+<div id="p11" class="ltx_para">
+<p class="ltx_p">De maneira bastante informal, vamos dar uma intuição para o resultado acima.
+Ao considerarmos a esperança condicional dada <math id="p11.m1" class="ltx_Math" alttext="\mathcal{F}^{\prime}" display="inline"><semantics><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup><annotation encoding="application/x-tex">\mathcal{F}^{\prime}</annotation></semantics></math>, nós já conhecemos as variáveis aleatórias <math id="p11.m2" class="ltx_Math" alttext="\mathcal{F}^{\prime}" display="inline"><semantics><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup><annotation encoding="application/x-tex">\mathcal{F}^{\prime}</annotation></semantics></math>-mensuráveis, portanto elas se comportam como constantes.</p>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demonstração.</h6>
+<div id="p12" class="ltx_para">
+<p class="ltx_p">Mais uma vez, basta verificar que <math id="p12.m1" class="ltx_Math" alttext="ZE(X|\mathcal{F}^{\prime})" display="inline"><semantics><mrow><mi>Z</mi><mo>⁢</mo><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo fence="false">|</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">ZE(X|\mathcal{F}^{\prime})</annotation></semantics></math> satisfaz as condições que definem a esperança condicional.
+A primeira é trivial, pois <math id="p12.m2" class="ltx_Math" alttext="ZE(X|\mathcal{F}^{\prime})" display="inline"><semantics><mrow><mi>Z</mi><mo>⁢</mo><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo fence="false">|</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">ZE(X|\mathcal{F}^{\prime})</annotation></semantics></math> é <math id="p12.m3" class="ltx_Math" alttext="\mathcal{F}^{\prime}" display="inline"><semantics><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup><annotation encoding="application/x-tex">\mathcal{F}^{\prime}</annotation></semantics></math>-mensurável por ser um produto de funções <math id="p12.m4" class="ltx_Math" alttext="\mathcal{F}^{\prime}" display="inline"><semantics><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup><annotation encoding="application/x-tex">\mathcal{F}^{\prime}</annotation></semantics></math>-mensuráveis.</p>
+</div>
+<div id="p13" class="ltx_para">
+<p class="ltx_p">Para provar a segunda condição, começamos com o caso <math id="p13.m1" class="ltx_Math" alttext="Z=\1_{B}" display="inline"><semantics><mrow><mi>Z</mi><mo>=</mo><msub><merror class="ltx_ERROR undefined undefined"><mtext>\1</mtext></merror><mi>B</mi></msub></mrow><annotation encoding="application/x-tex">Z=\1_{B}</annotation></semantics></math>, implicando que <math id="p13.m2" class="ltx_Math" alttext="B\in\mathcal{F}^{\prime}" display="inline"><semantics><mrow><mi>B</mi><mo>∈</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></mrow><annotation encoding="application/x-tex">B\in\mathcal{F}^{\prime}</annotation></semantics></math>, donde</p>
+<div id="Ch4.Ex1" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.Ex1.m1" class="ltx_Math" alttext="E\big{(}ZE(X|\mathcal{F}^{\prime})\1_{A}\big{)}=E\big{(}E(X|\mathcal{F}^{%
+\prime})\1_{A\cap B}\big{)}=E(X\1_{A\cap B})=E(ZX\1_{A})." display="block"><semantics><mrow><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mi>Z</mi><mo>⁢</mo><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo fence="false">|</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><merror class="ltx_ERROR undefined undefined"><mtext>\1</mtext></merror><mi>A</mi></msub></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo>=</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo fence="false">|</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><merror class="ltx_ERROR undefined undefined"><mtext>\1</mtext></merror><mrow><mi>A</mi><mo>∩</mo><mi>B</mi></mrow></msub></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo>=</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo>⁢</mo><msub><merror class="ltx_ERROR undefined undefined"><mtext>\1</mtext></merror><mrow><mi>A</mi><mo>∩</mo><mi>B</mi></mrow></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>Z</mi><mo>⁢</mo><mi>X</mi><mo>⁢</mo><msub><merror class="ltx_ERROR undefined undefined"><mtext>\1</mtext></merror><mi>A</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">E\big{(}ZE(X|\mathcal{F}^{\prime})\1_{A}\big{)}=E\big{(}E(X|\mathcal{F}^{%
+\prime})\1_{A\cap B}\big{)}=E(X\1_{A\cap B})=E(ZX\1_{A}).</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Por linearidade, já sabemos que o resultado vale para funções <math id="p13.m3" class="ltx_Math" alttext="Z" display="inline"><semantics><mi>Z</mi><annotation encoding="application/x-tex">Z</annotation></semantics></math> simples e gostaríamos de extender para quaisquer <math id="p13.m4" class="ltx_Math" alttext="Z" display="inline"><semantics><mi>Z</mi><annotation encoding="application/x-tex">Z</annotation></semantics></math> positivas via Teorema da Convergência Monótona.
+Um problema aqui é que mesmo que <math id="p13.m5" class="ltx_Math" alttext="Z" display="inline"><semantics><mi>Z</mi><annotation encoding="application/x-tex">Z</annotation></semantics></math> seja positiva, não sabemos se <math id="p13.m6" class="ltx_Math" alttext="E(X|\mathcal{F}^{\prime})" display="inline"><semantics><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo fence="false">|</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">E(X|\mathcal{F}^{\prime})</annotation></semantics></math> também será positiva.</p>
+</div>
+<div id="p14" class="ltx_para">
+<p class="ltx_p">Portanto, trataremos primeiramente do caso <math id="p14.m1" class="ltx_Math" alttext="X\geq 0" display="inline"><semantics><mrow><mi>X</mi><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">X\geq 0</annotation></semantics></math>.
+Para tais <math id="p14.m2" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>, sabemos pelo Lema <span class="ltx_ref ltx_ref_self"><span class="ltx_text ltx_ref_tag">4.2</span></span> que <math id="p14.m3" class="ltx_Math" alttext="E(X|\mathcal{F}^{\prime})\geq 0" display="inline"><semantics><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo fence="false">|</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">E(X|\mathcal{F}^{\prime})\geq 0</annotation></semantics></math> quase certamente.
+Daí, podemos concluir que <math id="p14.m4" class="ltx_Math" alttext="ZE(X|\mathcal{F}^{\prime})=E(ZX|\mathcal{F}^{\prime})" display="inline"><semantics><mrow><mrow><mi>Z</mi><mo>⁢</mo><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo fence="false">|</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>Z</mi><mo>⁢</mo><mi>X</mi></mrow><mo fence="false">|</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">ZE(X|\mathcal{F}^{\prime})=E(ZX|\mathcal{F}^{\prime})</annotation></semantics></math> para toda <math id="p14.m5" class="ltx_Math" alttext="Z\geq 0" display="inline"><semantics><mrow><mi>Z</mi><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">Z\geq 0</annotation></semantics></math>, podemos aproximá-la por baixo por <math id="p14.m6" class="ltx_Math" alttext="Z_{n}" display="inline"><semantics><msub><mi>Z</mi><mi>n</mi></msub><annotation encoding="application/x-tex">Z_{n}</annotation></semantics></math> simples e, pelo Teorema da Convergência Monótona,</p>
+<div id="Ch4.E12" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.E12.m1" class="ltx_Math" alttext="\begin{array}[]{e}E\big{(}ZE(X|\mathcal{F}^{\prime})\big{)}&amp;\overset{\text{TCM%
+}}{=}&amp;\lim_{n}E\big{(}Z_{n}E(X|\mathcal{F}^{\prime})\big{)}\\
+&amp;=&amp;\lim_{n}E\big{(}E(Z_{n}X|\mathcal{F}^{\prime})\big{)}\overset{\text{TCM}}{=%
+}E\big{(}E(ZX|\mathcal{F}^{\prime})\big{)}.\end{array}" display="block"><semantics><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd><mrow><mi>E</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mi>Z</mi><mo>⁢</mo><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo fence="false">|</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mtd><mtd><mover accent="true"><mo>=</mo><mtext>TCM</mtext></mover></mtd><mtd><mrow><msub><mo>lim</mo><mi>n</mi></msub><mrow><mi>E</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><msub><mi>Z</mi><mi>n</mi></msub><mo>⁢</mo><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo fence="false">|</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow></mtd></mtr><mtr><mtd></mtd><mtd><mo>=</mo></mtd><mtd><mrow><mrow><msub><mo>lim</mo><mi>n</mi></msub><mrow><mi>E</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><msub><mi>Z</mi><mi>n</mi></msub><mo>⁢</mo><mi>X</mi></mrow><mo fence="false">|</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow><mo>⁢</mo><mover accent="true"><mo>=</mo><mtext>TCM</mtext></mover><mo>⁢</mo><mi>E</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>Z</mi><mo>⁢</mo><mi>X</mi></mrow><mo fence="false">|</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{array}[]{e}E\big{(}ZE(X|\mathcal{F}^{\prime})\big{)}&amp;\overset{\text{TCM%
+}}{=}&amp;\lim_{n}E\big{(}Z_{n}E(X|\mathcal{F}^{\prime})\big{)}\\
+&amp;=&amp;\lim_{n}E\big{(}E(Z_{n}X|\mathcal{F}^{\prime})\big{)}\overset{\text{TCM}}{=%
+}E\big{(}E(ZX|\mathcal{F}^{\prime})\big{)}.\end{array}</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.12)</span>
+              
+              
+            
+</div>
+<p class="ltx_p">O que mostra o resultado sempre que <math id="p14.m7" class="ltx_Math" alttext="X\geq 0" display="inline"><semantics><mrow><mi>X</mi><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">X\geq 0</annotation></semantics></math>.</p>
+</div>
+<div id="p15" class="ltx_para">
+<p class="ltx_p">Além disso, pela Proposição <a href="Ch4.S1.html" title="4.1 Esperança condicional ‣ Capítulo 4 Esperança condicional ‣ Notas de aula: Probabilidade I" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.1</span></a>, sabemos que <math id="p15.m1" class="ltx_Math" alttext="ZE(X|\mathcal{F}^{\prime})\in\mathcal{L}^{1}" display="inline"><semantics><mrow><mrow><mi>Z</mi><mo>⁢</mo><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo fence="false">|</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>∈</mo><msup><mi class="ltx_font_mathcaligraphic">ℒ</mi><mn>1</mn></msup></mrow><annotation encoding="application/x-tex">ZE(X|\mathcal{F}^{\prime})\in\mathcal{L}^{1}</annotation></semantics></math>.
+Podemos finalmente concluir a prova por linearidade decompondo <math id="p15.m2" class="ltx_Math" alttext="X=X_{+}-X_{-}" display="inline"><semantics><mrow><mi>X</mi><mo>=</mo><mrow><msub><mi>X</mi><mo>+</mo></msub><mo>−</mo><msub><mi>X</mi><mo>−</mo></msub></mrow></mrow><annotation encoding="application/x-tex">X=X_{+}-X_{-}</annotation></semantics></math>.
+∎</p>
+</div>
+</div>
+<div id="p16" class="ltx_para">
+<p class="ltx_p">O próximo resultado tenta corroborar nossa afirmação que a esperança condicional é uma boa maneira de aproximar uma variável aleatória.</p>
+</div>
+<div id="p17" class="ltx_para">
+<span class="ltx_ERROR undefined">{lemma}</span>
+<p class="ltx_p">Se <math id="p17.m1" class="ltx_Math" alttext="X\in\mathcal{L}^{2}(P)" display="inline"><semantics><mrow><mi>X</mi><mo>∈</mo><mrow><msup><mi class="ltx_font_mathcaligraphic">ℒ</mi><mn>2</mn></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>P</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">X\in\mathcal{L}^{2}(P)</annotation></semantics></math> e <math id="p17.m2" class="ltx_Math" alttext="\mathcal{F}^{\prime}\subseteq\mathcal{F}" display="inline"><semantics><mrow><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup><mo>⊆</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi></mrow><annotation encoding="application/x-tex">\mathcal{F}^{\prime}\subseteq\mathcal{F}</annotation></semantics></math>, então <math id="p17.m3" class="ltx_Math" alttext="E(X|\mathcal{F}^{\prime})" display="inline"><semantics><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo fence="false">|</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">E(X|\mathcal{F}^{\prime})</annotation></semantics></math> é a projeção ortogonal de <math id="p17.m4" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> no espaço vetorial <math id="p17.m5" class="ltx_Math" alttext="H_{\mathcal{F}^{\prime}}" display="inline"><semantics><msub><mi>H</mi><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></msub><annotation encoding="application/x-tex">H_{\mathcal{F}^{\prime}}</annotation></semantics></math>.
+Onde <math id="p17.m6" class="ltx_Math" alttext="H_{\mathcal{F}^{\prime}}=\{Y\in\mathcal{L}^{2};Y\text{ \'{e} $\mathcal{F}^{%
+\prime}$-mensur\'{a}vel}\}" display="inline"><semantics><mrow><msub><mi>H</mi><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></msub><mo>=</mo><mrow><mo stretchy="false">{</mo><mrow><mi>Y</mi><mo>∈</mo><mrow><msup><mi class="ltx_font_mathcaligraphic">ℒ</mi><mn>2</mn></msup><mo>;</mo><mrow><mi>Y</mi><mo>⁢</mo><mrow><mtext> é </mtext><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup><mtext>-mensurável</mtext></mrow></mrow></mrow></mrow><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">H_{\mathcal{F}^{\prime}}=\{Y\in\mathcal{L}^{2};Y\text{ \'{e} $\mathcal{F}^{%
+\prime}$-mensur\'{a}vel}\}</annotation></semantics></math>.</p>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demonstração.</h6>
+<div id="p18" class="ltx_para">
+<p class="ltx_p">Temos que verificar que <math id="p18.m1" class="ltx_Math" alttext="X-E(X|\mathcal{F}^{\prime})" display="inline"><semantics><mrow><mi>X</mi><mo>−</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo fence="false">|</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">X-E(X|\mathcal{F}^{\prime})</annotation></semantics></math> é ortogonal a <math id="p18.m2" class="ltx_Math" alttext="H_{\mathcal{F}^{\prime}}" display="inline"><semantics><msub><mi>H</mi><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></msub><annotation encoding="application/x-tex">H_{\mathcal{F}^{\prime}}</annotation></semantics></math>.
+Ou seja, mostrar que para todo <math id="p18.m3" class="ltx_Math" alttext="Z\in H_{\mathcal{F}^{\prime}}" display="inline"><semantics><mrow><mi>Z</mi><mo>∈</mo><msub><mi>H</mi><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></msub></mrow><annotation encoding="application/x-tex">Z\in H_{\mathcal{F}^{\prime}}</annotation></semantics></math>, temos</p>
+<div id="Ch4.E13" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.E13.m1" class="ltx_Math" alttext="E\big{(}XZ-E(X|\mathcal{F}^{\prime})Z\big{)}=0." display="block"><semantics><mrow><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mrow><mi>X</mi><mo>⁢</mo><mi>Z</mi></mrow><mo>−</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo fence="false">|</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>Z</mi></mrow></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">E\big{(}XZ-E(X|\mathcal{F}^{\prime})Z\big{)}=0.</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.13)</span>
+              
+              
+            
+</div>
+<p class="ltx_p">Note que não é claro que essa esperança faz sentido, pois não sabemos que <math id="p18.m4" class="ltx_Math" alttext="ZE(X|\mathcal{F}^{\prime})\in\mathcal{L}^{1}" display="inline"><semantics><mrow><mrow><mi>Z</mi><mo>⁢</mo><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo fence="false">|</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>∈</mo><msup><mi class="ltx_font_mathcaligraphic">ℒ</mi><mn>1</mn></msup></mrow><annotation encoding="application/x-tex">ZE(X|\mathcal{F}^{\prime})\in\mathcal{L}^{1}</annotation></semantics></math>.
+Mas isso segue facilmente da Proposição <span class="ltx_ref ltx_ref_self"><span class="ltx_text ltx_ref_tag">4.2</span></span>.</p>
+</div>
+<div id="p19" class="ltx_para">
+<p class="ltx_p">Mas <math id="p19.m1" class="ltx_Math" alttext="E\big{(}E(X|\mathcal{F}^{\prime})Z\big{)}=ZE\big{(}E(X|\mathcal{F}^{\prime})\1%
+_{\Omega}\big{)}=ZE\big{(}X\1_{\Omega}\big{)}" display="inline"><semantics><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo fence="false">|</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>Z</mi></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo>=</mo><mrow><mi>Z</mi><mo>⁢</mo><mi>E</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo fence="false">|</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><merror class="ltx_ERROR undefined undefined"><mtext>\1</mtext></merror><mi mathvariant="normal">Ω</mi></msub></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo>=</mo><mrow><mi>Z</mi><mo>⁢</mo><mi>E</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mi>X</mi><mo>⁢</mo><msub><merror class="ltx_ERROR undefined undefined"><mtext>\1</mtext></merror><mi mathvariant="normal">Ω</mi></msub></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">E\big{(}E(X|\mathcal{F}^{\prime})Z\big{)}=ZE\big{(}E(X|\mathcal{F}^{\prime})\1%
+_{\Omega}\big{)}=ZE\big{(}X\1_{\Omega}\big{)}</annotation></semantics></math>, provando o resultado.
+<span id="todo6" class="ltx_note ltx_role_todo"><sup class="ltx_note_mark">6</sup><span class="ltx_note_outer"><span class="ltx_note_content"><sup class="ltx_note_mark">6</sup><span class="ltx_note_type">todo: </span>
+                <span class="ltx_tag ltx_tag_note">6</span>
+                
+                
+                
+              Adicionar footnote.</span></span></span>
+∎</p>
+</div>
+</div>
+<div id="p20" class="ltx_para">
+<p class="ltx_p">Vimos acima uma metodologia que se repete frequentemente.
+Digamos que queremos provar que uma determinada expressão nos dá a esperança condicional de algo.
+Podemos começar provando esse resultado para funções indicadoras, depois para funções simples usando a linearidade provada acima.</p>
+</div>
+<div id="p21" class="ltx_para">
+<p class="ltx_p">Porém ainda falta um ingrediente bastante importante para construir ou verificar que determinadas variáveis são esperanças condicionais.</p>
+</div>
+<div id="p22" class="ltx_para">
+<span class="ltx_ERROR undefined">{theorem}</span>
+<p class="ltx_p">[Convergência Monótona para Esperanças Condicionais]
+
+
+Se as variáveis <math id="p22.m1" class="ltx_Math" alttext="X_{n}" display="inline"><semantics><msub><mi>X</mi><mi>n</mi></msub><annotation encoding="application/x-tex">X_{n}</annotation></semantics></math> satisfazem <math id="p22.m2" class="ltx_Math" alttext="X_{n}\uparrow X" display="inline"><semantics><mrow><msub><mi>X</mi><mi>n</mi></msub><mo stretchy="false">↑</mo><mi>X</mi></mrow><annotation encoding="application/x-tex">X_{n}\uparrow X</annotation></semantics></math> e estão todas em <math id="p22.m3" class="ltx_Math" alttext="\mathcal{L}^{1}(P)" display="inline"><semantics><mrow><msup><mi class="ltx_font_mathcaligraphic">ℒ</mi><mn>1</mn></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>P</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mathcal{L}^{1}(P)</annotation></semantics></math>, então</p>
+<div id="Ch4.E14" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.E14.m1" class="ltx_Math" alttext="\lim_{n}E(X_{n}|\mathcal{F}^{\prime})=E(X|\mathcal{F}^{\prime})." display="block"><semantics><mrow><mrow><mrow><munder><mo movablelimits="false">lim</mo><mi>n</mi></munder><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>X</mi><mi>n</mi></msub><mo fence="false">|</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo fence="false">|</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\lim_{n}E(X_{n}|\mathcal{F}^{\prime})=E(X|\mathcal{F}^{\prime}).</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.14)</span>
+            
+            
+          
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demonstração do Teorema <span class="ltx_ref ltx_ref_self"><span class="ltx_text ltx_ref_tag">4.2</span></span>.</h6>
+<div id="p23" class="ltx_para">
+<p class="ltx_p">Sabemos que <math id="p23.m1" class="ltx_Math" alttext="E(X_{n+1}|\mathcal{F}^{\prime})\geq E(X_{n}|\mathcal{F}^{\prime})" display="inline"><semantics><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>X</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo fence="false">|</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>≥</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>X</mi><mi>n</mi></msub><mo fence="false">|</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">E(X_{n+1}|\mathcal{F}^{\prime})\geq E(X_{n}|\mathcal{F}^{\prime})</annotation></semantics></math>, donde concluímos que <math id="p23.m2" class="ltx_Math" alttext="E(X_{n}|\mathcal{F}^{\prime})\uparrow Y" display="inline"><semantics><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>X</mi><mi>n</mi></msub><mo fence="false">|</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">↑</mo><mi>Y</mi></mrow><annotation encoding="application/x-tex">E(X_{n}|\mathcal{F}^{\prime})\uparrow Y</annotation></semantics></math>.
+Vamos demosntrar que <math id="p23.m3" class="ltx_Math" alttext="Y=E(X|\mathcal{F}^{\prime})" display="inline"><semantics><mrow><mi>Y</mi><mo>=</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo fence="false">|</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">Y=E(X|\mathcal{F}^{\prime})</annotation></semantics></math>.</p>
+<ol id="I2" class="ltx_enumerate">
+<li id="I2.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"> a)</span><div id="I2.i1.p1" class="ltx_para">​<p class="ltx_p">Por ser um limite de funções <math id="I2.i1.p1.m1" class="ltx_Math" alttext="\mathcal{F}^{\prime}" display="inline"><semantics><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup><annotation encoding="application/x-tex">\mathcal{F}^{\prime}</annotation></semantics></math> mensuráveis, <math id="I2.i1.p1.m2" class="ltx_Math" alttext="Y" display="inline"><semantics><mi>Y</mi><annotation encoding="application/x-tex">Y</annotation></semantics></math> é <math id="I2.i1.p1.m3" class="ltx_Math" alttext="\mathcal{F}^{\prime}" display="inline"><semantics><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup><annotation encoding="application/x-tex">\mathcal{F}^{\prime}</annotation></semantics></math>-mensurável.</p>
+</div>
+</li>
+<li id="I2.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"> b)</span><div id="I2.i2.p1" class="ltx_para">​<p class="ltx_p">Dado <math id="I2.i2.p1.m1" class="ltx_Math" alttext="A\in\mathcal{F}^{\prime}" display="inline"><semantics><mrow><mi>A</mi><mo>∈</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></mrow><annotation encoding="application/x-tex">A\in\mathcal{F}^{\prime}</annotation></semantics></math>, temos</p>
+<div id="Ch4.E15" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.E15.m1" class="ltx_Math" alttext="\begin{split}E(Y\1_{A})&amp;=E(\lim_{n}E(X_{n}|\mathcal{F}^{\prime})\1_{A})%
+\overset{\text{TCM}}{=}\lim_{n}E\big{(}E(X_{n}|\mathcal{F}^{\prime})\1_{A}\big%
+{)}\\
+&amp;=\lim_{n}E(X_{n}\1_{A})\overset{\text{TCM}}{=}E(X\1_{A}).\end{split}" display="block"><semantics><mtable columnspacing="0pt" displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_align_right" columnalign="right"><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>Y</mi><mo>⁢</mo><msub><merror class="ltx_ERROR undefined undefined"><mtext>\1</mtext></merror><mi>A</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mi></mi><mo>=</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><munder><mo lspace="0em" movablelimits="false" rspace="0.167em">lim</mo><mi>n</mi></munder><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>X</mi><mi>n</mi></msub><mo fence="false">|</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><merror class="ltx_ERROR undefined undefined"><mtext>\1</mtext></merror><mi>A</mi></msub></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mover accent="true"><mo>=</mo><mtext>TCM</mtext></mover><mo lspace="0.278em">⁢</mo><mrow><munder><mo movablelimits="false" rspace="0.167em">lim</mo><mi>n</mi></munder><mrow><mi>E</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>X</mi><mi>n</mi></msub><mo fence="false">|</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><merror class="ltx_ERROR undefined undefined"><mtext>\1</mtext></merror><mi>A</mi></msub></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow></mrow></mrow></mtd></mtr><mtr><mtd></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mi></mi><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0.167em">lim</mo><mi>n</mi></munder><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>X</mi><mi>n</mi></msub><mo>⁢</mo><msub><merror class="ltx_ERROR undefined undefined"><mtext>\1</mtext></merror><mi>A</mi></msub></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mover accent="true"><mo>=</mo><mtext>TCM</mtext></mover><mo>⁢</mo><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo>⁢</mo><msub><merror class="ltx_ERROR undefined undefined"><mtext>\1</mtext></merror><mi>A</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{split}E(Y\1_{A})&amp;=E(\lim_{n}E(X_{n}|\mathcal{F}^{\prime})\1_{A})%
+\overset{\text{TCM}}{=}\lim_{n}E\big{(}E(X_{n}|\mathcal{F}^{\prime})\1_{A}\big%
+{)}\\
+&amp;=\lim_{n}E(X_{n}\1_{A})\overset{\text{TCM}}{=}E(X\1_{A}).\end{split}</annotation></semantics></math></span>
+                    <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.15)</span>
+                    
+                    
+                  
+</div>
+</div>
+</li>
+</ol>
+<p class="ltx_p">O que termina a prova do teorema.
+∎</p>
+</div>
+</div>
+<div id="p24" class="ltx_para">
+<p class="ltx_p">No que segue, muitas vezes escreveremos <math id="p24.m1" class="ltx_Math" alttext="E(X|Z)" display="inline"><semantics><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo fence="false">|</mo><mi>Z</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">E(X|Z)</annotation></semantics></math> para representar a esperança condicional <math id="p24.m2" class="ltx_Math" alttext="E(X|\sigma(Z))" display="inline"><semantics><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo fence="false">|</mo><mrow><mi>σ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>Z</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">E(X|\sigma(Z))</annotation></semantics></math>.</p>
+</div>
+<div id="p25" class="ltx_para">
+<span class="ltx_ERROR undefined">{exercise}</span>
+<p class="ltx_p">Sejam <math id="p25.m1" class="ltx_Math" alttext="X_{1}" display="inline"><semantics><msub><mi>X</mi><mn>1</mn></msub><annotation encoding="application/x-tex">X_{1}</annotation></semantics></math> e <math id="p25.m2" class="ltx_Math" alttext="X_{2}" display="inline"><semantics><msub><mi>X</mi><mn>2</mn></msub><annotation encoding="application/x-tex">X_{2}</annotation></semantics></math> as coordenadas canônicas em <math id="p25.m3" class="ltx_Math" alttext="\mathbb{R}\times E" display="inline"><semantics><mrow><mi>ℝ</mi><mo lspace="0.222em" rspace="0.222em">×</mo><mi>E</mi></mrow><annotation encoding="application/x-tex">\mathbb{R}\times E</annotation></semantics></math> e definimos a probabilidade <math id="p25.m4" class="ltx_Math" alttext="\d{P}=\rho(x,y)\d{\mu}_{1}\d{\mu}_{2}" display="inline"><semantics><mrow><munder accentunder="true"><mtext>P</mtext><mo>⋅</mo></munder><mo>=</mo><mrow><mi>ρ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><munder accentunder="true"><mtext class="ltx_mathvariant_italic">μ</mtext><mo>⋅</mo></munder><mn>1</mn></msub><mo>⁢</mo><msub><munder accentunder="true"><mtext class="ltx_mathvariant_italic">μ</mtext><mo>⋅</mo></munder><mn>2</mn></msub></mrow></mrow><annotation encoding="application/x-tex">\d{P}=\rho(x,y)\d{\mu}_{1}\d{\mu}_{2}</annotation></semantics></math>, onde <math id="p25.m5" class="ltx_Math" alttext="\rho:\mathbb{R}\times E\to\mathbb{R}_{+}" display="inline"><semantics><mrow><mi>ρ</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mrow><mi>ℝ</mi><mo lspace="0.222em" rspace="0.222em">×</mo><mi>E</mi></mrow><mo stretchy="false">→</mo><msub><mi>ℝ</mi><mo>+</mo></msub></mrow></mrow><annotation encoding="application/x-tex">\rho:\mathbb{R}\times E\to\mathbb{R}_{+}</annotation></semantics></math> é uma densidade.
+Dê sentido à expressão abaixo e mostre que elá é <math id="p25.m6" class="ltx_Math" alttext="E(X_{1}|X_{2})" display="inline"><semantics><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>X</mi><mn>1</mn></msub><mo fence="false">|</mo><msub><mi>X</mi><mn>2</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">E(X_{1}|X_{2})</annotation></semantics></math>:</p>
+<div id="Ch4.E16" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.E16.m1" class="ltx_Math" alttext="\frac{\int x\rho(x,X_{2})\mu_{1}(\d{x})}{\int\rho(x,X_{2})\mu_{1}(\d{x})}." display="block"><semantics><mrow><mfrac><mrow><mo>∫</mo><mrow><mi>x</mi><mo>⁢</mo><mi>ρ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><msub><mi>X</mi><mn>2</mn></msub><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mi>μ</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><munder accentunder="true"><mtext>x</mtext><mo>⋅</mo></munder><mo stretchy="false">)</mo></mrow></mrow></mrow><mrow><mo>∫</mo><mrow><mi>ρ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><msub><mi>X</mi><mn>2</mn></msub><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mi>μ</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><munder accentunder="true"><mtext>x</mtext><mo>⋅</mo></munder><mo stretchy="false">)</mo></mrow></mrow></mrow></mfrac><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\frac{\int x\rho(x,X_{2})\mu_{1}(\d{x})}{\int\rho(x,X_{2})\mu_{1}(\d{x})}.</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.16)</span>
+            
+            
+          
+</div>
+</div>
+<div id="p26" class="ltx_para">
+<span class="ltx_ERROR undefined">{exercise}</span>
+<p class="ltx_p">Seja <math id="p26.m1" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math> enumerável com uma <math id="p26.m2" class="ltx_Math" alttext="\sigma" display="inline"><semantics><mi>σ</mi><annotation encoding="application/x-tex">\sigma</annotation></semantics></math>-álgebra <math id="p26.m3" class="ltx_Math" alttext="\mathcal{F}^{\prime}" display="inline"><semantics><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup><annotation encoding="application/x-tex">\mathcal{F}^{\prime}</annotation></semantics></math>.
+Mostre que</p>
+<div id="Ch4.E17" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.E17.m1" class="ltx_Math" alttext="\mathcal{F}^{\prime}=\sigma(A_{i},i\geq 1),\text{ com $A_{i}\subseteq E$ %
+disjuntos}." display="block"><semantics><mrow><mrow><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup><mo>=</mo><mrow><mrow><mi>σ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><msub><mi>A</mi><mi>i</mi></msub><mo>,</mo><mi>i</mi></mrow><mo>≥</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>,</mo><mrow><mtext> com </mtext><mrow><msub><mi>A</mi><mi>i</mi></msub><mo>⊆</mo><mi>E</mi></mrow><mtext> disjuntos</mtext></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\mathcal{F}^{\prime}=\sigma(A_{i},i\geq 1),\text{ com $A_{i}\subseteq E$ %
+disjuntos}.</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.17)</span>
+            
+            
+          
+</div>
+<p class="ltx_p">Suponha que todos conjuntos <math id="p26.m4" class="ltx_Math" alttext="A_{i}" display="inline"><semantics><msub><mi>A</mi><mi>i</mi></msub><annotation encoding="application/x-tex">A_{i}</annotation></semantics></math> tem probabilidade positiva e mostre que</p>
+<div id="Ch4.E18" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.E18.m1" class="ltx_Math" alttext="E(X|\mathcal{F}^{\prime})=\sum_{i}E^{i}(X)\1_{A_{i}}," display="block"><semantics><mrow><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo fence="false">|</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><mo rspace="0.111em">=</mo><mrow><munder><mo movablelimits="false">∑</mo><mi>i</mi></munder><mrow><msup><mi>E</mi><mi>i</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><merror class="ltx_ERROR undefined undefined"><mtext>\1</mtext></merror><msub><mi>A</mi><mi>i</mi></msub></msub></mrow></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">E(X|\mathcal{F}^{\prime})=\sum_{i}E^{i}(X)\1_{A_{i}},</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.18)</span>
+            
+            
+          
+</div>
+<p class="ltx_p">onde <math id="p26.m5" class="ltx_Math" alttext="E^{i}" display="inline"><semantics><msup><mi>E</mi><mi>i</mi></msup><annotation encoding="application/x-tex">E^{i}</annotation></semantics></math> é a esperança com respeito à probabilidade <math id="p26.m6" class="ltx_math_unparsed" alttext="P(\cdot|A_{i})" display="inline"><semantics><mrow><mi>P</mi><mrow><mo stretchy="false">(</mo><mo lspace="0em" rspace="0em">⋅</mo><mo fence="false" rspace="0.167em" stretchy="false">|</mo><msub><mi>A</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">P(\cdot|A_{i})</annotation></semantics></math>.
+Em breve extenderemos esse tipo de resultado a espaços quaisquer.</p>
+</div>
+<div id="p27" class="ltx_para">
+<p class="ltx_p">Uma outra propriedade que a esperança condicional herda da integral é a</p>
+</div>
+<div id="p28" class="ltx_para">
+<span class="ltx_ERROR undefined">{proposition}</span>
+<p class="ltx_p">[Desigualdade de Jensen]
+
+Se <math id="p28.m1" class="ltx_Math" alttext="\phi:\mathbb{R}\to\mathbb{R}" display="inline"><semantics><mrow><mi>ϕ</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>ℝ</mi><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">\phi:\mathbb{R}\to\mathbb{R}</annotation></semantics></math> é convexa, <math id="p28.m2" class="ltx_Math" alttext="X,\phi(X)\in\mathcal{L}^{1}(P)" display="inline"><semantics><mrow><mrow><mi>X</mi><mo>,</mo><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>∈</mo><mrow><msup><mi class="ltx_font_mathcaligraphic">ℒ</mi><mn>1</mn></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>P</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">X,\phi(X)\in\mathcal{L}^{1}(P)</annotation></semantics></math>, então</p>
+<div id="Ch4.E19" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.E19.m1" class="ltx_Math" alttext="\phi\big{(}E(X|\mathcal{F}^{\prime})\big{)}\leq E\big{(}\phi(X)|\mathcal{F}^{%
+\prime}\big{)}." display="block"><semantics><mrow><mrow><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo fence="false">|</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo>≤</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow><mo fence="false">|</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\phi\big{(}E(X|\mathcal{F}^{\prime})\big{)}\leq E\big{(}\phi(X)|\mathcal{F}^{%
+\prime}\big{)}.</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.19)</span>
+            
+            
+          
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demonstração.</h6>
+<div id="p29" class="ltx_para">
+<p class="ltx_p">Se <math id="p29.m1" class="ltx_Math" alttext="\phi" display="inline"><semantics><mi>ϕ</mi><annotation encoding="application/x-tex">\phi</annotation></semantics></math> for uma função linear, o resultado segue da linearidade que já provamos para a esperança condicional.
+Além disso, se temos uma função <math id="p29.m2" class="ltx_Math" alttext="\psi:\mathbb{R}\to\mathbb{R}" display="inline"><semantics><mrow><mi>ψ</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>ℝ</mi><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">\psi:\mathbb{R}\to\mathbb{R}</annotation></semantics></math> linear e tal que <math id="p29.m3" class="ltx_Math" alttext="\psi(x)\leq\phi(x)" display="inline"><semantics><mrow><mrow><mi>ψ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≤</mo><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\psi(x)\leq\phi(x)</annotation></semantics></math> para todo <math id="p29.m4" class="ltx_Math" alttext="x\in\mathbb{R}" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">x\in\mathbb{R}</annotation></semantics></math>, então</p>
+<div id="Ch4.E20" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.E20.m1" class="ltx_Math" alttext="E\big{(}\phi(X)|\mathcal{F}^{\prime}\big{)}\geq E\big{(}\psi(X)|\mathcal{F}^{%
+\prime}\big{)}=\psi\big{(}E(X|\mathcal{F}^{\prime})\big{)}." display="block"><semantics><mrow><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow><mo fence="false">|</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo>≥</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mrow><mi>ψ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow><mo fence="false">|</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo>=</mo><mrow><mi>ψ</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo fence="false">|</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">E\big{(}\phi(X)|\mathcal{F}^{\prime}\big{)}\geq E\big{(}\psi(X)|\mathcal{F}^{%
+\prime}\big{)}=\psi\big{(}E(X|\mathcal{F}^{\prime})\big{)}.</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.20)</span>
+              
+              
+            
+</div>
+<p class="ltx_p">Tomamos finalmente o supremo em todas as <math id="p29.m5" class="ltx_Math" alttext="\psi" display="inline"><semantics><mi>ψ</mi><annotation encoding="application/x-tex">\psi</annotation></semantics></math> lineares com <math id="p29.m6" class="ltx_Math" alttext="\psi\leq\phi" display="inline"><semantics><mrow><mi>ψ</mi><mo>≤</mo><mi>ϕ</mi></mrow><annotation encoding="application/x-tex">\psi\leq\phi</annotation></semantics></math> dos dois lados da desigualdade acima, obtendo</p>
+<div id="Ch4.E21" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.E21.m1" class="ltx_Math" alttext="E\big{(}\phi(X)|\mathcal{F}^{\prime}\big{)}\geq\sup_{\begin{subarray}{c}\psi%
+\leq\phi\\
+\psi\text{ linear}\end{subarray}}\psi\big{(}E(X|\mathcal{F}^{\prime})\big{)}=%
+\phi\big{(}E(X|\mathcal{F}^{\prime})\big{)}," display="block"><semantics><mrow><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow><mo fence="false">|</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo rspace="0.1389em">≥</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0.167em">sup</mo><mtable rowspacing="0pt"><mtr><mtd><mrow><mi>ψ</mi><mo>≤</mo><mi>ϕ</mi></mrow></mtd></mtr><mtr><mtd><mrow><mi>ψ</mi><mo>⁢</mo><mtext> linear</mtext></mrow></mtd></mtr></mtable></munder><mrow><mi>ψ</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo fence="false">|</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo fence="false">|</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">E\big{(}\phi(X)|\mathcal{F}^{\prime}\big{)}\geq\sup_{\begin{subarray}{c}\psi%
+\leq\phi\\
+\psi\text{ linear}\end{subarray}}\psi\big{(}E(X|\mathcal{F}^{\prime})\big{)}=%
+\phi\big{(}E(X|\mathcal{F}^{\prime})\big{)},</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.21)</span>
+              
+              
+            
+</div>
+<p class="ltx_p">terminando a prova da proposição.
+∎</p>
+</div>
+</div>
+<div id="p30" class="ltx_para">
+<span class="ltx_ERROR undefined">{corollary}</span>
+<p class="ltx_p">Se <math id="p30.m1" class="ltx_Math" alttext="X\in\mathcal{L}^{1}(P)" display="inline"><semantics><mrow><mi>X</mi><mo>∈</mo><mrow><msup><mi class="ltx_font_mathcaligraphic">ℒ</mi><mn>1</mn></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>P</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">X\in\mathcal{L}^{1}(P)</annotation></semantics></math>, então <math id="p30.m2" class="ltx_math_unparsed" alttext="\big{|}E(X|\mathcal{F}^{\prime})\big{|}\leq E\big{(}|X|\big{|}\mathcal{F}^{%
+\prime}\big{)}" display="inline"><semantics><mrow><mo fence="false" maxsize="120%" minsize="120%" rspace="0.167em">|</mo><mi>E</mi><mrow><mo stretchy="false">(</mo><mi>X</mi><mo fence="false" rspace="0.167em" stretchy="false">|</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup><mo stretchy="false">)</mo></mrow><mo fence="false" maxsize="120%" minsize="120%">|</mo><mo lspace="0.167em">≤</mo><mi>E</mi><mrow><mo maxsize="120%" minsize="120%">(</mo><mo fence="false" rspace="0.167em" stretchy="false">|</mo><mi>X</mi><mo fence="false" rspace="0.167em" stretchy="false">|</mo><mo fence="false" maxsize="120%" minsize="120%" rspace="0.167em">|</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><annotation encoding="application/x-tex">\big{|}E(X|\mathcal{F}^{\prime})\big{|}\leq E\big{(}|X|\big{|}\mathcal{F}^{%
+\prime}\big{)}</annotation></semantics></math>.</p>
+</div>
+<div id="p31" class="ltx_para">
+<p class="ltx_p">Uma outra propriedade interessante da esperança condicional diz respeito a sua relação com independência.</p>
+</div>
+<div id="p32" class="ltx_para">
+<span class="ltx_ERROR undefined">{proposition}</span>
+<p class="ltx_p">Se <math id="p32.m1" class="ltx_Math" alttext="X\in\mathcal{L}^{1}(P)" display="inline"><semantics><mrow><mi>X</mi><mo>∈</mo><mrow><msup><mi class="ltx_font_mathcaligraphic">ℒ</mi><mn>1</mn></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>P</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">X\in\mathcal{L}^{1}(P)</annotation></semantics></math> é independente de <math id="p32.m2" class="ltx_Math" alttext="\mathcal{F}^{\prime}" display="inline"><semantics><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup><annotation encoding="application/x-tex">\mathcal{F}^{\prime}</annotation></semantics></math>, então</p>
+<div id="Ch4.E22" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.E22.m1" class="ltx_Math" alttext="E(X|\mathcal{F}^{\prime})=E(X)\text{ $P$-quase certamente.}" display="block"><semantics><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo fence="false">|</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mtext> </mtext><mi>P</mi><mtext>-quase certamente.</mtext></mrow></mrow></mrow><annotation encoding="application/x-tex">E(X|\mathcal{F}^{\prime})=E(X)\text{ $P$-quase certamente.}</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.22)</span>
+            
+            
+          
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demonstração.</h6>
+<div id="p33" class="ltx_para">
+<p class="ltx_p">Funções constantes são sempre mensuráveis. Além disso, se <math id="p33.m1" class="ltx_Math" alttext="A\in\mathcal{F}^{\prime}" display="inline"><semantics><mrow><mi>A</mi><mo>∈</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></mrow><annotation encoding="application/x-tex">A\in\mathcal{F}^{\prime}</annotation></semantics></math>, então</p>
+<div id="Ch4.E23" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.E23.m1" class="ltx_Math" alttext="E(X\1_{A})=E(X)P(A)=E\big{(}E(X)\1_{A}\big{)}," display="block"><semantics><mrow><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo>⁢</mo><msub><merror class="ltx_ERROR undefined undefined"><mtext>\1</mtext></merror><mi>A</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><merror class="ltx_ERROR undefined undefined"><mtext>\1</mtext></merror><mi>A</mi></msub></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">E(X\1_{A})=E(X)P(A)=E\big{(}E(X)\1_{A}\big{)},</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.23)</span>
+              
+              
+            
+</div>
+<p class="ltx_p">concluindo a prova.
+∎</p>
+</div>
+</div>
+<div id="p34" class="ltx_para">
+<p class="ltx_p">Terminamos essa seção com o que chamamos da propriedade de torre da esperança condicional.</p>
+</div>
+<div id="p35" class="ltx_para">
+<span class="ltx_ERROR undefined">{proposition}</span>
+<p class="ltx_p">Se <math id="p35.m1" class="ltx_Math" alttext="\mathcal{F}^{\prime}\subseteq\mathcal{F}^{\prime\prime}" display="inline"><semantics><mrow><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup><mo>⊆</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′′</mo></msup></mrow><annotation encoding="application/x-tex">\mathcal{F}^{\prime}\subseteq\mathcal{F}^{\prime\prime}</annotation></semantics></math> são ambas sub-<math id="p35.m2" class="ltx_Math" alttext="\sigma" display="inline"><semantics><mi>σ</mi><annotation encoding="application/x-tex">\sigma</annotation></semantics></math>-álgebras de <math id="p35.m3" class="ltx_Math" alttext="\mathcal{F}" display="inline"><semantics><mi class="ltx_font_mathcaligraphic">ℱ</mi><annotation encoding="application/x-tex">\mathcal{F}</annotation></semantics></math>, então para <math id="p35.m4" class="ltx_Math" alttext="X\in\mathcal{L}^{1}(P)" display="inline"><semantics><mrow><mi>X</mi><mo>∈</mo><mrow><msup><mi class="ltx_font_mathcaligraphic">ℒ</mi><mn>1</mn></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>P</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">X\in\mathcal{L}^{1}(P)</annotation></semantics></math>, temos</p>
+<div id="Ch4.E24" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.E24.m1" class="ltx_Math" alttext="E\big{(}E(X|\mathcal{F}^{\prime})\big{|}\mathcal{F}^{\prime\prime}\big{)}=E(X|%
+\mathcal{F}^{\prime})=E\big{(}E(X|\mathcal{F}^{\prime\prime})\big{|}\mathcal{F%
+}^{\prime}\big{)}," display="block"><semantics><mrow><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo fence="false">|</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><mo fence="false" mathsize="120%">|</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′′</mo></msup></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo>=</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo fence="false">|</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo fence="false">|</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′′</mo></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><mo fence="false" mathsize="120%">|</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">E\big{(}E(X|\mathcal{F}^{\prime})\big{|}\mathcal{F}^{\prime\prime}\big{)}=E(X|%
+\mathcal{F}^{\prime})=E\big{(}E(X|\mathcal{F}^{\prime\prime})\big{|}\mathcal{F%
+}^{\prime}\big{)},</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.24)</span>
+            
+            
+          
+</div>
+<p class="ltx_p">ou em outras palavras, independentemente da ordem, prevalece a condição na menor <math id="p35.m5" class="ltx_Math" alttext="\sigma" display="inline"><semantics><mi>σ</mi><annotation encoding="application/x-tex">\sigma</annotation></semantics></math>-álgebra.
+Consequentemente, <math id="p35.m6" class="ltx_Math" alttext="E\big{(}E(X|\mathcal{F}^{\prime})\big{)}=E(X)" display="inline"><semantics><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo fence="false">|</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo>=</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">E\big{(}E(X|\mathcal{F}^{\prime})\big{)}=E(X)</annotation></semantics></math>.</p>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demonstração.</h6>
+<div id="p36" class="ltx_para">
+<p class="ltx_p">Como <math id="p36.m1" class="ltx_Math" alttext="E(X|\mathcal{F}^{\prime})" display="inline"><semantics><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo fence="false">|</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">E(X|\mathcal{F}^{\prime})</annotation></semantics></math> é <math id="p36.m2" class="ltx_Math" alttext="\mathcal{F}^{\prime\prime}" display="inline"><semantics><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′′</mo></msup><annotation encoding="application/x-tex">\mathcal{F}^{\prime\prime}</annotation></semantics></math>-mensurável, a Proposição <span class="ltx_ref ltx_ref_self"><span class="ltx_text ltx_ref_tag">4.2</span></span>, aplicada com <math id="p36.m3" class="ltx_Math" alttext="X=1" display="inline"><semantics><mrow><mi>X</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">X=1</annotation></semantics></math>, mostra a primeira igualdade em (<a href="#Ch4.E24" title="In 4.2 Propriedades básicas da esperança condicional ‣ Capítulo 4 Esperança condicional ‣ Notas de aula: Probabilidade I" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.24</span></a>).</p>
+</div>
+<div id="p37" class="ltx_para">
+<p class="ltx_p">Falta mostrar que <math id="p37.m1" class="ltx_Math" alttext="E\big{(}E(X|\mathcal{F}^{\prime\prime})\big{|}\mathcal{F}^{\prime}\big{)}" display="inline"><semantics><mrow><mi>E</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo fence="false">|</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′′</mo></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><mo fence="false" mathsize="120%">|</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><annotation encoding="application/x-tex">E\big{(}E(X|\mathcal{F}^{\prime\prime})\big{|}\mathcal{F}^{\prime}\big{)}</annotation></semantics></math> é a esperança condicional de <math id="p37.m2" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> dada <math id="p37.m3" class="ltx_Math" alttext="\mathcal{F}^{\prime}" display="inline"><semantics><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup><annotation encoding="application/x-tex">\mathcal{F}^{\prime}</annotation></semantics></math>.
+Obviamente ela é <math id="p37.m4" class="ltx_Math" alttext="\mathcal{F}^{\prime}" display="inline"><semantics><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup><annotation encoding="application/x-tex">\mathcal{F}^{\prime}</annotation></semantics></math>-mensurável, e nos resta verificar a segunda condição.
+Mas para todo <math id="p37.m5" class="ltx_Math" alttext="A\in\mathcal{F}^{\prime}" display="inline"><semantics><mrow><mi>A</mi><mo>∈</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></mrow><annotation encoding="application/x-tex">A\in\mathcal{F}^{\prime}</annotation></semantics></math>, lembrando que <math id="p37.m6" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> também pertence a <math id="p37.m7" class="ltx_Math" alttext="\mathcal{F}^{\prime\prime}" display="inline"><semantics><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′′</mo></msup><annotation encoding="application/x-tex">\mathcal{F}^{\prime\prime}</annotation></semantics></math> e usando a definição de esperança condicional duas vezes,</p>
+<div id="Ch4.E25" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.E25.m1" class="ltx_Math" alttext="E\Big{(}E\big{(}E(X|\mathcal{F}^{\prime\prime})\big{|}\mathcal{F}^{\prime}\big%
+{)}\1_{A}\Big{)}=E\big{(}E(X|\mathcal{F}^{\prime\prime})\1_{A}\big{)}=E(X\1_{A%
+})." display="block"><semantics><mrow><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo maxsize="160%" minsize="160%">(</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo fence="false">|</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′′</mo></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><mo fence="false" mathsize="120%">|</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow><mo>⁢</mo><msub><merror class="ltx_ERROR undefined undefined"><mtext>\1</mtext></merror><mi>A</mi></msub></mrow><mo maxsize="160%" minsize="160%">)</mo></mrow></mrow><mo>=</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo fence="false">|</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′′</mo></msup></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><merror class="ltx_ERROR undefined undefined"><mtext>\1</mtext></merror><mi>A</mi></msub></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo>=</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo>⁢</mo><msub><merror class="ltx_ERROR undefined undefined"><mtext>\1</mtext></merror><mi>A</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">E\Big{(}E\big{(}E(X|\mathcal{F}^{\prime\prime})\big{|}\mathcal{F}^{\prime}\big%
+{)}\1_{A}\Big{)}=E\big{(}E(X|\mathcal{F}^{\prime\prime})\1_{A}\big{)}=E(X\1_{A%
+}).</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.25)</span>
+              
+              
+            
+</div>
+<p class="ltx_p">O que termina a prova da proposição.
+∎</p>
+</div>
+</div>
+<div id="p38" class="ltx_para">
+<span class="ltx_ERROR undefined">{lemma}</span>
+<p class="ltx_p">Se <math id="p38.m1" class="ltx_Math" alttext="X:\Omega\to E" display="inline"><semantics><mrow><mi>X</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi mathvariant="normal">Ω</mi><mo stretchy="false">→</mo><mi>E</mi></mrow></mrow><annotation encoding="application/x-tex">X:\Omega\to E</annotation></semantics></math> é um elemento aleatório e <math id="p38.m2" class="ltx_Math" alttext="f:\Omega\to\mathbb{R}" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi mathvariant="normal">Ω</mi><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">f:\Omega\to\mathbb{R}</annotation></semantics></math> é <math id="p38.m3" class="ltx_Math" alttext="\sigma(X)" display="inline"><semantics><mrow><mi>σ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\sigma(X)</annotation></semantics></math>-mensurável, então existe uma <math id="p38.m4" class="ltx_Math" alttext="g:E\to\mathbb{R}" display="inline"><semantics><mrow><mi>g</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>E</mi><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">g:E\to\mathbb{R}</annotation></semantics></math> mensurável tal que <math id="p38.m5" class="ltx_Math" alttext="f=g\circ X" display="inline"><semantics><mrow><mi>f</mi><mo>=</mo><mrow><mi>g</mi><mo lspace="0.222em" rspace="0.222em">∘</mo><mi>X</mi></mrow></mrow><annotation encoding="application/x-tex">f=g\circ X</annotation></semantics></math>.</p>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demonstração.</h6>
+<div id="p39" class="ltx_para">
+<p class="ltx_p">Como de costume, consideramos primeiramente o caso <math id="p39.m1" class="ltx_Math" alttext="f=\1_{A}" display="inline"><semantics><mrow><mi>f</mi><mo>=</mo><msub><merror class="ltx_ERROR undefined undefined"><mtext>\1</mtext></merror><mi>A</mi></msub></mrow><annotation encoding="application/x-tex">f=\1_{A}</annotation></semantics></math>
+Claramente <math id="p39.m2" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> tem que pertencer a <math id="p39.m3" class="ltx_Math" alttext="\sigma(X)" display="inline"><semantics><mrow><mi>σ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\sigma(X)</annotation></semantics></math>, ou seja <math id="p39.m4" class="ltx_Math" alttext="A=X^{-1}(B)" display="inline"><semantics><mrow><mi>A</mi><mo>=</mo><mrow><msup><mi>X</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>B</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">A=X^{-1}(B)</annotation></semantics></math> para algum <math id="p39.m5" class="ltx_Math" alttext="B\in\mathcal{A}" display="inline"><semantics><mrow><mi>B</mi><mo>∈</mo><mi class="ltx_font_mathcaligraphic">𝒜</mi></mrow><annotation encoding="application/x-tex">B\in\mathcal{A}</annotation></semantics></math>.
+Neste caso colocamos <math id="p39.m6" class="ltx_Math" alttext="g=\1_{B}" display="inline"><semantics><mrow><mi>g</mi><mo>=</mo><msub><merror class="ltx_ERROR undefined undefined"><mtext>\1</mtext></merror><mi>B</mi></msub></mrow><annotation encoding="application/x-tex">g=\1_{B}</annotation></semantics></math>, donde obtemos <math id="p39.m7" class="ltx_Math" alttext="f(\omega)=1\Leftrightarrow\omega\in A\Leftrightarrow X(\omega)\in B%
+\Leftrightarrow g\circ X=1" display="inline"><semantics><mrow><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ω</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>1</mn></mrow><mo stretchy="false">⇔</mo><mrow><mi>ω</mi><mo>∈</mo><mi>A</mi></mrow><mo stretchy="false">⇔</mo><mrow><mrow><mi>X</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ω</mi><mo stretchy="false">)</mo></mrow></mrow><mo>∈</mo><mi>B</mi></mrow><mo stretchy="false">⇔</mo><mrow><mrow><mi>g</mi><mo lspace="0.222em" rspace="0.222em">∘</mo><mi>X</mi></mrow><mo>=</mo><mn>1</mn></mrow></mrow><annotation encoding="application/x-tex">f(\omega)=1\Leftrightarrow\omega\in A\Leftrightarrow X(\omega)\in B%
+\Leftrightarrow g\circ X=1</annotation></semantics></math>.</p>
+</div>
+<div id="p40" class="ltx_para">
+<p class="ltx_p">No caso em que <math id="p40.m1" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> é simples, temos <math id="p40.m2" class="ltx_Math" alttext="f=\sum_{i}a_{i}(g_{i}\circ X)=(\sum_{i}a_{i}g_{i})\circ X" display="inline"><semantics><mrow><mi>f</mi><mo rspace="0.111em">=</mo><mrow><msub><mo>∑</mo><mi>i</mi></msub><mrow><msub><mi>a</mi><mi>i</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>g</mi><mi>i</mi></msub><mo lspace="0.222em" rspace="0.222em">∘</mo><mi>X</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><msub><mo lspace="0em">∑</mo><mi>i</mi></msub><mrow><msub><mi>a</mi><mi>i</mi></msub><mo>⁢</mo><msub><mi>g</mi><mi>i</mi></msub></mrow></mrow><mo rspace="0.055em" stretchy="false">)</mo></mrow><mo rspace="0.222em">∘</mo><mi>X</mi></mrow></mrow><annotation encoding="application/x-tex">f=\sum_{i}a_{i}(g_{i}\circ X)=(\sum_{i}a_{i}g_{i})\circ X</annotation></semantics></math>.
+Se <math id="p40.m3" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> é positiva, então ela é um limite crescente de funções do tipo <math id="p40.m4" class="ltx_Math" alttext="g_{n}\circ X" display="inline"><semantics><mrow><msub><mi>g</mi><mi>n</mi></msub><mo lspace="0.222em" rspace="0.222em">∘</mo><mi>X</mi></mrow><annotation encoding="application/x-tex">g_{n}\circ X</annotation></semantics></math>, além disso podemos tomar <math id="p40.m5" class="ltx_Math" alttext="g_{n}" display="inline"><semantics><msub><mi>g</mi><mi>n</mi></msub><annotation encoding="application/x-tex">g_{n}</annotation></semantics></math> crescentes, pois</p>
+<div id="Ch4.E26" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.E26.m1" class="ltx_Math" alttext="f_{n+1}=f_{n+1}\vee f_{n}=(g_{n+1}\circ X)\vee(g_{n}\circ X)=(g_{n}\vee g_{n+1%
+})\circ X." display="block"><semantics><mrow><mrow><msub><mi>f</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>=</mo><mrow><msub><mi>f</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>∨</mo><msub><mi>f</mi><mi>n</mi></msub></mrow><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><msub><mi>g</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo lspace="0.222em" rspace="0.222em">∘</mo><mi>X</mi></mrow><mo stretchy="false">)</mo></mrow><mo>∨</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>g</mi><mi>n</mi></msub><mo lspace="0.222em" rspace="0.222em">∘</mo><mi>X</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><msub><mi>g</mi><mi>n</mi></msub><mo>∨</mo><msub><mi>g</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow><mo rspace="0.055em" stretchy="false">)</mo></mrow><mo rspace="0.222em">∘</mo><mi>X</mi></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">f_{n+1}=f_{n+1}\vee f_{n}=(g_{n+1}\circ X)\vee(g_{n}\circ X)=(g_{n}\vee g_{n+1%
+})\circ X.</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.26)</span>
+              
+              
+            
+</div>
+</div>
+<div id="p41" class="ltx_para">
+<p class="ltx_p">Finalmente usamos a linearidade da composição novamente para resolver o caso geral <math id="p41.m1" class="ltx_Math" alttext="f=f_{+}-f_{-}" display="inline"><semantics><mrow><mi>f</mi><mo>=</mo><mrow><msub><mi>f</mi><mo>+</mo></msub><mo>−</mo><msub><mi>f</mi><mo>−</mo></msub></mrow></mrow><annotation encoding="application/x-tex">f=f_{+}-f_{-}</annotation></semantics></math>.
+∎</p>
+</div>
+</div>
+<div id="p42" class="ltx_para">
+<p class="ltx_p">Se <math id="p42.m1" class="ltx_Math" alttext="X:\Omega\to E" display="inline"><semantics><mrow><mi>X</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi mathvariant="normal">Ω</mi><mo stretchy="false">→</mo><mi>E</mi></mrow></mrow><annotation encoding="application/x-tex">X:\Omega\to E</annotation></semantics></math> é elemento aleatório, então <math id="p42.m2" class="ltx_Math" alttext="E(Y|\sigma(X))" display="inline"><semantics><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>Y</mi><mo fence="false">|</mo><mrow><mi>σ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">E(Y|\sigma(X))</annotation></semantics></math> é obviamente <math id="p42.m3" class="ltx_Math" alttext="\sigma(X)" display="inline"><semantics><mrow><mi>σ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\sigma(X)</annotation></semantics></math>-mensurável.
+Pelo lema anterior, <math id="p42.m4" class="ltx_Math" alttext="E(Y|\sigma(X))=g\circ X" display="inline"><semantics><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>Y</mi><mo fence="false">|</mo><mrow><mi>σ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>g</mi><mo lspace="0.222em" rspace="0.222em">∘</mo><mi>X</mi></mrow></mrow><annotation encoding="application/x-tex">E(Y|\sigma(X))=g\circ X</annotation></semantics></math> para alguma <math id="p42.m5" class="ltx_Math" alttext="g:E\to\mathbb{R}" display="inline"><semantics><mrow><mi>g</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>E</mi><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">g:E\to\mathbb{R}</annotation></semantics></math>.
+Nesse caso denotamos</p>
+<div id="Ch4.E27" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.E27.m1" class="ltx_Math" alttext="E(Y|X=x)=g(x)." display="block"><semantics><mrow><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>Y</mi><mo fence="false">|</mo><mi>X</mi></mrow><mo>=</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">E(Y|X=x)=g(x).</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.27)</span>
+            
+            
+          
+</div>
+</div>
+<div id="p43" class="ltx_para">
+<span class="ltx_ERROR undefined">{exercise}</span>
+<p class="ltx_p">Mostre que <math id="p43.m1" class="ltx_Math" alttext="g" display="inline"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math> é única <math id="p43.m2" class="ltx_Math" alttext="X\circ P" display="inline"><semantics><mrow><mi>X</mi><mo lspace="0.222em" rspace="0.222em">∘</mo><mi>P</mi></mrow><annotation encoding="application/x-tex">X\circ P</annotation></semantics></math>-quase certamente.</p>
+</div>
+<div id="p44" class="ltx_para">
+<p class="ltx_p">Gostaríamos de dizer que <math id="p44.m1" class="ltx_Math" alttext="E(Y|X=x)" display="inline"><semantics><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>Y</mi><mo fence="false">|</mo><mi>X</mi></mrow><mo>=</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">E(Y|X=x)</annotation></semantics></math> satisfaz alguma propriedade que justifique essa notação.
+Apesar de que apenas na próxima seção poderemos justificar completamente essa nomenclatura, nesse momento já podemos mostrar a seguinte relação</p>
+<div id="Ch4.Ex2" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.Ex2.m1" class="ltx_Math" alttext="E(Y)=E\big{(}E(Y|X)\big{)}=E\big{(}E(Y|X=x)\circ X\big{)}=\int E(Y|X=x)(X\circ
+P%
+)(\d{x})." display="block"><semantics><mrow><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>Y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>Y</mi><mo fence="false">|</mo><mi>X</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo>=</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>Y</mi><mo fence="false">|</mo><mi>X</mi></mrow><mo>=</mo><mi>x</mi></mrow><mo rspace="0.055em" stretchy="false">)</mo></mrow></mrow><mo rspace="0.222em">∘</mo><mi>X</mi></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo rspace="0.111em">=</mo><mrow><mo>∫</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>Y</mi><mo fence="false">|</mo><mi>X</mi></mrow><mo>=</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo lspace="0.222em" rspace="0.222em">∘</mo><mi>P</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><munder accentunder="true"><mtext>x</mtext><mo>⋅</mo></munder><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">E(Y)=E\big{(}E(Y|X)\big{)}=E\big{(}E(Y|X=x)\circ X\big{)}=\int E(Y|X=x)(X\circ
+P%
+)(\d{x}).</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Em outras palavras, para integrar <math id="p44.m2" class="ltx_Math" alttext="Y" display="inline"><semantics><mi>Y</mi><annotation encoding="application/x-tex">Y</annotation></semantics></math>, basta conhecermos a distribuição de <math id="p44.m3" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> e a esperança condicional de <math id="p44.m4" class="ltx_Math" alttext="Y" display="inline"><semantics><mi>Y</mi><annotation encoding="application/x-tex">Y</annotation></semantics></math>, dado que <math id="p44.m5" class="ltx_Math" alttext="X=x" display="inline"><semantics><mrow><mi>X</mi><mo>=</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">X=x</annotation></semantics></math>.</p>
+</div>
+<div id="p45" class="ltx_para">
+<span class="ltx_ERROR undefined">{exercise}</span>
+<p class="ltx_p">Sejam <math id="p45.m1" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> e <math id="p45.m2" class="ltx_Math" alttext="Y" display="inline"><semantics><mi>Y</mi><annotation encoding="application/x-tex">Y</annotation></semantics></math> as coordenadas canônicas em <math id="p45.m3" class="ltx_Math" alttext="E_{1}\times E_{2}" display="inline"><semantics><mrow><msub><mi>E</mi><mn>1</mn></msub><mo lspace="0.222em" rspace="0.222em">×</mo><msub><mi>E</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">E_{1}\times E_{2}</annotation></semantics></math>, com a probabilidade <math id="p45.m4" class="ltx_Math" alttext="P=\mu_{1}\otimes\mu_{2}" display="inline"><semantics><mrow><mi>P</mi><mo>=</mo><mrow><msub><mi>μ</mi><mn>1</mn></msub><mo lspace="0.222em" rspace="0.222em">⊗</mo><msub><mi>μ</mi><mn>2</mn></msub></mrow></mrow><annotation encoding="application/x-tex">P=\mu_{1}\otimes\mu_{2}</annotation></semantics></math> e seja <math id="p45.m5" class="ltx_Math" alttext="f:E_{1}\times E_{2}\to\mathbb{R}" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mrow><msub><mi>E</mi><mn>1</mn></msub><mo lspace="0.222em" rspace="0.222em">×</mo><msub><mi>E</mi><mn>2</mn></msub></mrow><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">f:E_{1}\times E_{2}\to\mathbb{R}</annotation></semantics></math> em <math id="p45.m6" class="ltx_Math" alttext="\mathcal{L}^{1}(P)" display="inline"><semantics><mrow><msup><mi class="ltx_font_mathcaligraphic">ℒ</mi><mn>1</mn></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>P</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mathcal{L}^{1}(P)</annotation></semantics></math>.
+Mostre que</p>
+<div id="Ch4.E28" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.E28.m1" class="ltx_Math" alttext="E(f|X=x)=\int f(x,y)\mu_{2}(\d{y})." display="block"><semantics><mrow><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>f</mi><mo fence="false">|</mo><mi>X</mi></mrow><mo>=</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo rspace="0.111em">=</mo><mrow><mo>∫</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mi>μ</mi><mn>2</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><munder accentunder="true"><mtext>y</mtext><mo>⋅</mo></munder><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">E(f|X=x)=\int f(x,y)\mu_{2}(\d{y}).</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.28)</span>
+            
+            
+          
+</div>
+</div>
+<div id="p46" class="ltx_para">
+<span class="ltx_ERROR undefined">{exercise}</span>
+<p class="ltx_p">Se <math id="p46.m1" class="ltx_Math" alttext="K" display="inline"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math> é um núcleo de transição entre <math id="p46.m2" class="ltx_Math" alttext="E_{1}" display="inline"><semantics><msub><mi>E</mi><mn>1</mn></msub><annotation encoding="application/x-tex">E_{1}</annotation></semantics></math> e <math id="p46.m3" class="ltx_Math" alttext="\mathbb{R}" display="inline"><semantics><mi>ℝ</mi><annotation encoding="application/x-tex">\mathbb{R}</annotation></semantics></math> e <math id="p46.m4" class="ltx_Math" alttext="P_{1}" display="inline"><semantics><msub><mi>P</mi><mn>1</mn></msub><annotation encoding="application/x-tex">P_{1}</annotation></semantics></math> é uma probabilidade em <math id="p46.m5" class="ltx_Math" alttext="E_{1}" display="inline"><semantics><msub><mi>E</mi><mn>1</mn></msub><annotation encoding="application/x-tex">E_{1}</annotation></semantics></math>, mostre que em <math id="p46.m6" class="ltx_Math" alttext="P_{1}\star K" display="inline"><semantics><mrow><msub><mi>P</mi><mn>1</mn></msub><mo lspace="0.222em" rspace="0.222em">⋆</mo><mi>K</mi></mrow><annotation encoding="application/x-tex">P_{1}\star K</annotation></semantics></math> temos</p>
+<div id="Ch4.E29" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.E29.m1" class="ltx_Math" alttext="E(X_{2}|X_{1}=x_{1})=\int x_{2}K(x_{1},\d{x}_{2})." display="block"><semantics><mrow><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><msub><mi>X</mi><mn>2</mn></msub><mo fence="false">|</mo><msub><mi>X</mi><mn>1</mn></msub></mrow><mo>=</mo><msub><mi>x</mi><mn>1</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo rspace="0.111em">=</mo><mrow><mo>∫</mo><mrow><msub><mi>x</mi><mn>2</mn></msub><mo>⁢</mo><mi>K</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><msub><munder accentunder="true"><mtext>x</mtext><mo>⋅</mo></munder><mn>2</mn></msub><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">E(X_{2}|X_{1}=x_{1})=\int x_{2}K(x_{1},\d{x}_{2}).</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.29)</span>
+            
+            
+          
+</div>
+</div>
+<div id="p47" class="ltx_para">
+<p class="ltx_p">Um outro resultado bastante importante é o seguinte</p>
+</div>
+<div id="p48" class="ltx_para">
+<span class="ltx_ERROR undefined">{theorem}</span>
+<p class="ltx_p">[Teorema da Convergência Dominada para Esperanças Condicionais]
+
+Se <math id="p48.m1" class="ltx_Math" alttext="X_{n}\to X" display="inline"><semantics><mrow><msub><mi>X</mi><mi>n</mi></msub><mo stretchy="false">→</mo><mi>X</mi></mrow><annotation encoding="application/x-tex">X_{n}\to X</annotation></semantics></math> e existe <math id="p48.m2" class="ltx_Math" alttext="Y\in\mathcal{L}^{1}(P)" display="inline"><semantics><mrow><mi>Y</mi><mo>∈</mo><mrow><msup><mi class="ltx_font_mathcaligraphic">ℒ</mi><mn>1</mn></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>P</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">Y\in\mathcal{L}^{1}(P)</annotation></semantics></math> tal que <math id="p48.m3" class="ltx_Math" alttext="|X_{n}|\leq Y" display="inline"><semantics><mrow><mrow><mo stretchy="false">|</mo><msub><mi>X</mi><mi>n</mi></msub><mo stretchy="false">|</mo></mrow><mo>≤</mo><mi>Y</mi></mrow><annotation encoding="application/x-tex">|X_{n}|\leq Y</annotation></semantics></math> para todo <math id="p48.m4" class="ltx_Math" alttext="n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>, então</p>
+<div id="Ch4.E30" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.E30.m1" class="ltx_Math" alttext="E(X_{n}|\mathcal{F})\to E(X|\mathcal{F})\text{ $P$-quase certamente.}" display="block"><semantics><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>X</mi><mi>n</mi></msub><mo fence="false">|</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">→</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo fence="false">|</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mtext> </mtext><mi>P</mi><mtext>-quase certamente.</mtext></mrow></mrow></mrow><annotation encoding="application/x-tex">E(X_{n}|\mathcal{F})\to E(X|\mathcal{F})\text{ $P$-quase certamente.}</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.30)</span>
+            
+            
+          
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demonstração.</h6>
+<div id="p49" class="ltx_para">
+<p class="ltx_p">Seja <math id="p49.m1" class="ltx_Math" alttext="Z_{n}=\sup_{k\geq n}|X_{k}-X|" display="inline"><semantics><mrow><msub><mi>Z</mi><mi>n</mi></msub><mo rspace="0.1389em">=</mo><mrow><msub><mo lspace="0.1389em" rspace="0em">sup</mo><mrow><mi>k</mi><mo>≥</mo><mi>n</mi></mrow></msub><mrow><mo stretchy="false">|</mo><mrow><msub><mi>X</mi><mi>k</mi></msub><mo>−</mo><mi>X</mi></mrow><mo stretchy="false">|</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">Z_{n}=\sup_{k\geq n}|X_{k}-X|</annotation></semantics></math> o erro máximo à partir de <math id="p49.m2" class="ltx_Math" alttext="n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>.
+Claramente, <math id="p49.m3" class="ltx_Math" alttext="Z_{n}\downarrow 0" display="inline"><semantics><mrow><msub><mi>Z</mi><mi>n</mi></msub><mo stretchy="false">↓</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">Z_{n}\downarrow 0</annotation></semantics></math> quase certamente e além disso</p>
+<div id="Ch4.E31" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.E31.m1" class="ltx_Math" alttext="|Z_{n}|\leq\sup_{k\geq 1}|X_{k}|+|X|\leq 2Y," display="block"><semantics><mrow><mrow><mrow><mo stretchy="false">|</mo><msub><mi>Z</mi><mi>n</mi></msub><mo stretchy="false">|</mo></mrow><mo rspace="0.1389em">≤</mo><mrow><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0em">sup</mo><mrow><mi>k</mi><mo>≥</mo><mn>1</mn></mrow></munder><mrow><mo stretchy="false">|</mo><msub><mi>X</mi><mi>k</mi></msub><mo stretchy="false">|</mo></mrow></mrow><mo>+</mo><mrow><mo stretchy="false">|</mo><mi>X</mi><mo stretchy="false">|</mo></mrow></mrow><mo>≤</mo><mrow><mn>2</mn><mo>⁢</mo><mi>Y</mi></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">|Z_{n}|\leq\sup_{k\geq 1}|X_{k}|+|X|\leq 2Y,</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.31)</span>
+              
+              
+            
+</div>
+<p class="ltx_p">donde <math id="p49.m4" class="ltx_Math" alttext="E(Z_{n})\to E(0)=0" display="inline"><semantics><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>Z</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">→</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">E(Z_{n})\to E(0)=0</annotation></semantics></math>, quase certamente pelo Teorema da Convergência Dominada.</p>
+</div>
+<div id="p50" class="ltx_para">
+<p class="ltx_p">Obviamente <math id="p50.m1" class="ltx_Math" alttext="E(Z_{n}|\mathcal{F})" display="inline"><semantics><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>Z</mi><mi>n</mi></msub><mo fence="false">|</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">E(Z_{n}|\mathcal{F})</annotation></semantics></math> é uma sequência positiva e não-crescente, logo decresce quase certamtente para algum <math id="p50.m2" class="ltx_Math" alttext="Z" display="inline"><semantics><mi>Z</mi><annotation encoding="application/x-tex">Z</annotation></semantics></math>.
+Daí,</p>
+<div id="Ch4.E32" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.E32.m1" class="ltx_math_unparsed" alttext="\big{|}E(X_{n}|\mathcal{F})-E(X|\mathcal{F})\big{|}\leq E(Z_{n}|\mathcal{F})%
+\downarrow Z\geq 0." display="block"><semantics><mrow><mo fence="false" maxsize="120%" minsize="120%" rspace="0.167em">|</mo><mi>E</mi><mrow><mo stretchy="false">(</mo><msub><mi>X</mi><mi>n</mi></msub><mo fence="false" rspace="0.167em" stretchy="false">|</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo stretchy="false">)</mo></mrow><mo>−</mo><mi>E</mi><mrow><mo stretchy="false">(</mo><mi>X</mi><mo fence="false" rspace="0.167em" stretchy="false">|</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo stretchy="false">)</mo></mrow><mo fence="false" maxsize="120%" minsize="120%">|</mo><mo lspace="0.167em">≤</mo><mi>E</mi><mrow><mo stretchy="false">(</mo><msub><mi>Z</mi><mi>n</mi></msub><mo fence="false" rspace="0.167em" stretchy="false">|</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo stretchy="false">)</mo></mrow><mo stretchy="false">↓</mo><mi>Z</mi><mo>≥</mo><mn>0</mn><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\big{|}E(X_{n}|\mathcal{F})-E(X|\mathcal{F})\big{|}\leq E(Z_{n}|\mathcal{F})%
+\downarrow Z\geq 0.</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.32)</span>
+              
+              
+            
+</div>
+<p class="ltx_p">Mas <math id="p50.m3" class="ltx_Math" alttext="E(Z)\leq E\big{(}E(Z_{n}|\mathcal{F})\big{)}=E(Z_{n})" display="inline"><semantics><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>Z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≤</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>Z</mi><mi>n</mi></msub><mo fence="false">|</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo>=</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>Z</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">E(Z)\leq E\big{(}E(Z_{n}|\mathcal{F})\big{)}=E(Z_{n})</annotation></semantics></math>.
+Como <math id="p50.m4" class="ltx_Math" alttext="E(Z_{n})" display="inline"><semantics><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>Z</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">E(Z_{n})</annotation></semantics></math> vai a zero pelo Teorema da Convergência Dominada, temos que <math id="p50.m5" class="ltx_Math" alttext="Z=0" display="inline"><semantics><mrow><mi>Z</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">Z=0</annotation></semantics></math> quase certamente como gostaríamos.
+∎</p>
+</div>
+</div>
+<div id="p51" class="ltx_para">
+<span class="ltx_ERROR undefined">{exercise}</span>
+<p class="ltx_p">Sejam <math id="p51.m1" class="ltx_Math" alttext="Z_{1},Z_{2},\dots" display="inline"><semantics><mrow><msub><mi>Z</mi><mn>1</mn></msub><mo>,</mo><msub><mi>Z</mi><mn>2</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi></mrow><annotation encoding="application/x-tex">Z_{1},Z_{2},\dots</annotation></semantics></math> variáveis aleatórias <span class="ltx_ERROR undefined">\iid</span>em <math id="p51.m2" class="ltx_Math" alttext="\mathcal{L}^{1}(P)" display="inline"><semantics><mrow><msup><mi class="ltx_font_mathcaligraphic">ℒ</mi><mn>1</mn></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>P</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mathcal{L}^{1}(P)</annotation></semantics></math> com <math id="p51.m3" class="ltx_Math" alttext="E(Z_{1})=0" display="inline"><semantics><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>Z</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">E(Z_{1})=0</annotation></semantics></math>.</p>
+<ol id="I3" class="ltx_enumerate">
+<li id="I3.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"> a)</span><div id="I3.i1.p1" class="ltx_para">​<p class="ltx_p">Defina <math id="I3.i1.p1.m1" class="ltx_Math" alttext="X_{0}=0" display="inline"><semantics><mrow><msub><mi>X</mi><mn>0</mn></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">X_{0}=0</annotation></semantics></math> e</p>
+<div id="Ch4.E33" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.E33.m1" class="ltx_Math" alttext="X_{n}=\sum_{i=1}^{n}Z_{i},\text{ para $n\geq 1$.}" display="block"><semantics><mrow><msub><mi>X</mi><mi>n</mi></msub><mo rspace="0.111em">=</mo><mrow><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><msub><mi>Z</mi><mi>i</mi></msub></mrow><mo>,</mo><mrow><mtext> para </mtext><mrow><mi>n</mi><mo>≥</mo><mn>1</mn></mrow><mtext>.</mtext></mrow></mrow></mrow><annotation encoding="application/x-tex">X_{n}=\sum_{i=1}^{n}Z_{i},\text{ para $n\geq 1$.}</annotation></semantics></math></span>
+                  <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.33)</span>
+                  
+                  
+                
+</div>
+<p class="ltx_p">Mostre que <math id="I3.i1.p1.m2" class="ltx_Math" alttext="E(X_{n+1}|Z_{1},\dots,Z_{n})=X_{n}" display="inline"><semantics><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>X</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo fence="false">|</mo><mrow><msub><mi>Z</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>Z</mi><mi>n</mi></msub></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msub><mi>X</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">E(X_{n+1}|Z_{1},\dots,Z_{n})=X_{n}</annotation></semantics></math>.</p>
+</div>
+</li>
+<li id="I3.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"> b)</span><div id="I3.i2.p1" class="ltx_para">​<p class="ltx_p">Supondo agora que <math id="I3.i2.p1.m1" class="ltx_Math" alttext="Z_{1}\in\mathcal{L}^{2}(P)" display="inline"><semantics><mrow><msub><mi>Z</mi><mn>1</mn></msub><mo>∈</mo><mrow><msup><mi class="ltx_font_mathcaligraphic">ℒ</mi><mn>2</mn></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>P</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">Z_{1}\in\mathcal{L}^{2}(P)</annotation></semantics></math> e <math id="I3.i2.p1.m2" class="ltx_Math" alttext="E(Z)=0" display="inline"><semantics><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>Z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">E(Z)=0</annotation></semantics></math>, defina <math id="I3.i2.p1.m3" class="ltx_Math" alttext="Y_{0}=0" display="inline"><semantics><mrow><msub><mi>Y</mi><mn>0</mn></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">Y_{0}=0</annotation></semantics></math> e</p>
+<div id="Ch4.E34" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.E34.m1" class="ltx_Math" alttext="Y_{n}=\Big{(}\sum_{i=1}^{n}Z_{i}\Big{)}^{2}-nE(Z_{1}^{2})" display="block"><semantics><mrow><msub><mi>Y</mi><mi>n</mi></msub><mo>=</mo><mrow><msup><mrow><mo maxsize="160%" minsize="160%">(</mo><mrow><munderover><mo lspace="0em" movablelimits="false">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><msub><mi>Z</mi><mi>i</mi></msub></mrow><mo maxsize="160%" minsize="160%">)</mo></mrow><mn>2</mn></msup><mo>−</mo><mrow><mi>n</mi><mo>⁢</mo><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msubsup><mi>Z</mi><mn>1</mn><mn>2</mn></msubsup><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">Y_{n}=\Big{(}\sum_{i=1}^{n}Z_{i}\Big{)}^{2}-nE(Z_{1}^{2})</annotation></semantics></math></span>
+                  <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.34)</span>
+                  
+                  
+                
+</div>
+<p class="ltx_p">Mostre que <math id="I3.i2.p1.m4" class="ltx_Math" alttext="E(Y_{n+1}|Z_{1},\dots,Z_{n})=Y_{n}" display="inline"><semantics><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>Y</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo fence="false">|</mo><mrow><msub><mi>Z</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>Z</mi><mi>n</mi></msub></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msub><mi>Y</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">E(Y_{n+1}|Z_{1},\dots,Z_{n})=Y_{n}</annotation></semantics></math>.</p>
+</div>
+</li>
+</ol>
+</div>
+<div id="p52" class="ltx_para">
+<span class="ltx_ERROR undefined">\todosec</span>
+<p class="ltx_p">Tópico: Martingais a tempo discretofazer…</p>
+</div>
+<div id="p53" class="ltx_para">
+<span class="ltx_ERROR undefined">\todosec</span>
+<p class="ltx_p">Tópico: Propriedade fraca de Markovmostrar que cadeias = processos…</p>
+</div>
+<div id="p54" class="ltx_para">
+<span class="ltx_ERROR undefined">\todosec</span>
+<p class="ltx_p">Tópico: Recorrência e transiênciamarkov recorrência/transiência + periodicidade…</p>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+<a href="Ch4.S1.html" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a><a href="Ch4.S3.html" class="navigation navigation-next" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+</div>
+</div>
+<script src="bookml/gitbook/js/app.min.js"></script>
+<script src="bookml/gitbook/js/jquery.highlight.js"></script>
+<script src="bookml/gitbook/js/plugin-search.js"></script>
+<script src="bookml/gitbook/js/plugin-fontsettings.js"></script>
+<script src="bookml/gitbook/js/plugin-bookdown.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+        MathJax = {
+          startup: {
+            ready() {
+              // do not process equations disabled with \bmlDisableMathJax (code suggested by Davide P. Cervone)
+              class bmlFindMathML extends MathJax._.input.mathml.FindMathML.FindMathML {
+                processMath(set) {
+                  const adaptor = this.adaptor;
+                  for (const node of set.values()) {
+                    if (adaptor.hasClass(node, 'bml_disable_mathjax')) {
+                      set.delete(node);
+                    }
+                  }
+                  return super.processMath(set);
+                }
+              }
+
+              MathJax._.components.global.combineDefaults(MathJax.config, 'mml', {FindMathML: new bmlFindMathML()});
+
+              MathJax.startup.defaultReady();
+
+              // preproces MathML to make MathJax aware of certain LaTeXML and BookML additional info
+              const mmlFilters = MathJax.startup.input[0].mmlFilters;
+
+              // convert the LaTeXML calligraphic (chancery) annotation to a form MathJax understands
+              // since the corresponding Unicode characters render as script (rounded)
+              const script2latin = {
+                '𝒜': 'A', 'ℬ': 'B', '𝒞': 'C', '𝒟': 'D', 'ℰ': 'E', 'ℱ': 'F', '𝒢': 'G',
+                'ℋ': 'H', 'ℐ': 'I', '𝒥': 'J', '𝒦': 'K', 'ℒ': 'L', 'ℳ': 'M', '𝒩': 'N',
+                '𝒪': 'O', '𝒫': 'P', '𝒬': 'Q', 'ℛ': 'R', '𝒮': 'S', '𝒯': 'T', '𝒰': 'U',
+                '𝒱': 'V', '𝒲': 'W', '𝒳': 'X', '𝒴': 'Y', '𝒵': 'Z',
+              };
+
+              mmlFilters.add((args) => {
+                for (const n of args.data.getElementsByClassName('ltx_font_mathcaligraphic')) {
+                  n.classList.add('MJX-tex-calligraphic');
+                  const letter = script2latin[n.textContent];
+                  if (letter !== undefined) { n.textContent = letter; }
+                }
+              });
+
+              // adjust characters based on Unicode variation sequences
+              const replacements = {
+                // MathJax renders the empty set as the U+FE00 variant, so the plain character needs adjusting
+                '∅': { variant: 'variant' },
+                // MathJax renders script characters in rounded style, which is fine for no variation and U+FE00
+                '𝒜\xFE00': { text: 'A', variant: 'tex-calligraphic' },
+                'ℬ\xFE00': { text: 'B', variant: 'tex-calligraphic' },
+                '𝒞\xFE00': { text: 'C', variant: 'tex-calligraphic' },
+                '𝒟\xFE00': { text: 'D', variant: 'tex-calligraphic' },
+                'ℰ\xFE00': { text: 'E', variant: 'tex-calligraphic' },
+                'ℱ\xFE00': { text: 'F', variant: 'tex-calligraphic' },
+                '𝒢\xFE00': { text: 'G', variant: 'tex-calligraphic' },
+                'ℋ\xFE00': { text: 'H', variant: 'tex-calligraphic' },
+                'ℐ\xFE00': { text: 'I', variant: 'tex-calligraphic' },
+                '𝒥\xFE00': { text: 'J', variant: 'tex-calligraphic' },
+                '𝒦\xFE00': { text: 'K', variant: 'tex-calligraphic' },
+                'ℒ\xFE00': { text: 'L', variant: 'tex-calligraphic' },
+                'ℳ\xFE00': { text: 'M', variant: 'tex-calligraphic' },
+                '𝒩\xFE00': { text: 'N', variant: 'tex-calligraphic' },
+                '𝒪\xFE00': { text: 'O', variant: 'tex-calligraphic' },
+                '𝒫\xFE00': { text: 'P', variant: 'tex-calligraphic' },
+                '𝒬\xFE00': { text: 'Q', variant: 'tex-calligraphic' },
+                'ℛ\xFE00': { text: 'R', variant: 'tex-calligraphic' },
+                '𝒮\xFE00': { text: 'S', variant: 'tex-calligraphic' },
+                '𝒯\xFE00': { text: 'T', variant: 'tex-calligraphic' },
+                '𝒰\xFE00': { text: 'U', variant: 'tex-calligraphic' },
+                '𝒱\xFE00': { text: 'V', variant: 'tex-calligraphic' },
+                '𝒲\xFE00': { text: 'W', variant: 'tex-calligraphic' },
+                '𝒳\xFE00': { text: 'X', variant: 'tex-calligraphic' },
+                '𝒴\xFE00': { text: 'Y', variant: 'tex-calligraphic' },
+                '𝒵\xFE00': { text: 'Z', variant: 'tex-calligraphic' }
+              };
+
+              mmlFilters.add((args) => {
+                let nodes = document.evaluate('.//m:mi | .//m:mn | .//m:mo | .//m:ms', args.data,
+                  () => 'http://www.w3.org/1998/Math/MathML', XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE);
+                for (let i = 0; i < nodes.snapshotLength; i++) {
+                  const n = nodes.snapshotItem(i);
+                  const repl = replacements[n.innerHTML];
+                  if (repl !== undefined) {
+                    const variant = repl['variant'];
+                    const text = repl['text'];
+                    if (variant !== undefined) { n.classList.add('MJX-' + variant); n.removeAttribute('mathvariant'); }
+                    if (text !== undefined) { n.innerHTML = text; }
+                  }
+                }
+              });
+            }
+          }
+        };
+      </script>
+<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js"></script>
+<script type="text/javascript">
+                gitbook.require(["gitbook"], function(gitbook) {
+                gitbook.start({
+                  "fontsettings": {
+                    "theme": "white",
+                    "family": "sans",
+                    "size": 2
+                  },
+                  "download": [ [ "Notas_de_aula.pdf", "PDF" ], ],
+                  "search": {
+                    "engine": "fuse"
+                  },
+                  "toc": {
+                    "collapse": "none"
+                  }
+                });
+              });
+            </script>
+</body>
+
+</html>

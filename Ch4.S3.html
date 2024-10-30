@@ -1,0 +1,372 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>4.3 Probabilidade Condicional Regular ‣ Capítulo 4 Esperança condicional ‣ Notas de aula: Probabilidade I</title>
+<!--Generated on Tue Aug 27 13:34:01 2024 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
+<style>:root { --bml-ltx-font-size: 10; }</style>
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-table.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-search.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-bookdown.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-fontsettings.css" type="text/css">
+<link rel="stylesheet" href="ltx-book.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook,plain.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook.css" type="text/css">
+<link rel="stylesheet" href="bmluser/colors.gitbook-Notas_de_aula.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6"></script>
+<link rel="up" href="Ch4.html" title="Capítulo 4 Esperança condicional ‣ Notas de aula: Probabilidade I">
+<link rel="up up" href="index.html" title="Notas de aula: Probabilidade I">
+<link rel="start" href="index.html" title="Notas de aula: Probabilidade I">
+<link rel="prev" href="Ch4.S2.html" title="4.2 Propriedades básicas da esperança condicional ‣ Capítulo 4 Esperança condicional ‣ Notas de aula: Probabilidade I">
+<link rel="next" href="Ch4.S4.html" title="4.4 Princípio da substituição ‣ Capítulo 4 Esperança condicional ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch4.S1.html" title="4.1 Esperança condicional ‣ Capítulo 4 Esperança condicional ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch4.S2.html" title="4.2 Propriedades básicas da esperança condicional ‣ Capítulo 4 Esperança condicional ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch4.S4.html" title="4.4 Princípio da substituição ‣ Capítulo 4 Esperança condicional ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch4.Sx1.html" title="Tópico: Processos de Poisson em ℝ ‣ Capítulo 4 Esperança condicional ‣ Notas de aula: Probabilidade I">
+<link rel="chapter" href="Chx1.html" title="Licença ‣ Notas de aula: Probabilidade I">
+<link rel="chapter" href="Chx2.html" title="Contribuições ‣ Notas de aula: Probabilidade I">
+<link rel="chapter" href="Ch1.html" title="Capítulo 1 Fundamentos ‣ Notas de aula: Probabilidade I">
+<link rel="chapter" href="Ch2.html" title="Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I">
+<link rel="chapter" href="Ch3.html" title="Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I">
+<link rel="chapter" href="Ch4.html" title="Capítulo 4 Esperança condicional ‣ Notas de aula: Probabilidade I">
+<link rel="chapter" href="Ch5.html" title="Capítulo 5 Soluções de exercícios ‣ Notas de aula: Probabilidade I">
+<link rel="bibliography" href="bib.html" title="Referências ‣ Notas de aula: Probabilidade I">
+<link rel="index" href="idx.html" title="Índice Remissivo ‣ Notas de aula: Probabilidade I">
+<meta name="keywords" lang="pt-BR" content="Teorema, da Desintegração">
+</head>
+<body>
+<div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+<a href="#bml-main-content" tabindex="0" class="bml-skip-to-content">Skip to content.</a>
+<div class="book-summary"><nav class="ltx_page_navbar">
+<ul class="ltx_toclist summary">
+<li>
+<a href="index.html" title="" class="ltx_ref" rel="start">Notas de aula: Probabilidade I</a>
+</li>
+<li class="divider">
+<li data-level="" data-path="Chx1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Chx1.html" title="In Notas de aula: Probabilidade I" class="ltx_ref">Licença</a></li>
+<li data-level="" data-path="Chx2.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Chx2.html" title="In Notas de aula: Probabilidade I" class="ltx_ref">Contribuições</a></li>
+<li data-level="1" data-path="Ch1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch1.html" title="In Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1 </span></b>Fundamentos</a></li>
+<li data-level="2" data-path="Ch2.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch2.html" title="In Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2 </span></b>Construção de espaços de probabilidade</a></li>
+<li data-level="3" data-path="Ch3.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch3.html" title="In Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3 </span></b>Somas de variáveis independentes</a></li>
+<li data-level="4" data-path="Ch4.html" class="ltx_tocentry ltx_tocentry_chapter  chapter ">
+<a href="Ch4.html" title="In Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4 </span></b>Esperança condicional</a>
+<ol class="ltx_toclist ltx_toclist_chapter">
+<li data-level="4.1" data-path="Ch4.S1.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch4.S1.html" title="In Capítulo 4 Esperança condicional ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4.1 </span></b>Esperança condicional</a></li>
+<li data-level="4.2" data-path="Ch4.S2.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch4.S2.html" title="In Capítulo 4 Esperança condicional ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4.2 </span></b>Propriedades básicas da esperança condicional</a></li>
+<li data-level="4.3" data-path="" class="ltx_tocentry ltx_tocentry_section ltx_ref_self  chapter active"><a href="" title="In Capítulo 4 Esperança condicional ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4.3 </span></b>Probabilidade Condicional Regular</a></li>
+<li data-level="4.4" data-path="Ch4.S4.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch4.S4.html" title="In Capítulo 4 Esperança condicional ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4.4 </span></b>Princípio da substituição</a></li>
+<li data-level="" data-path="Ch4.Sx1.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch4.Sx1.html" title="In Capítulo 4 Esperança condicional ‣ Notas de aula: Probabilidade I" class="ltx_ref">Tópico: Processos de Poisson em <math class="ltx_Math" alttext="\mathbb{R}" display="inline"><semantics><mi>ℝ</mi><annotation encoding="application/x-tex">\mathbb{R}</annotation></semantics></math></a></li>
+</ol>
+</li>
+<li data-level="5" data-path="Ch5.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch5.html" title="In Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">5 </span></b>Soluções de exercícios</a></li>
+<li data-level="" data-path="bib.html" class="ltx_tocentry ltx_tocentry_bibliography  chapter "><a href="bib.html" title="In Notas de aula: Probabilidade I" class="ltx_ref">Referências</a></li>
+<li data-level="" data-path="idx.html" class="ltx_tocentry ltx_tocentry_index  chapter "><a href="idx.html" title="In Notas de aula: Probabilidade I" class="ltx_ref">Índice Remissivo</a></li>
+</ul>
+</nav></div>
+<div class="ltx_page_main book-body fixed">
+<div class="body-inner">
+<div class="book-header fixed" role="navigation"><h1>Probabilidade Condicional Regular</h1></div>
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="ltx_page_content page-inner" id="bml-main-content">
+<section class="ltx_section normal" lang="pt-BR">
+<div class="section level1">
+
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section header-section-number">4.3</span> Probabilidade Condicional Regular</h1>
+
+<div id="p1" class="ltx_para">
+<p class="ltx_p">Já sabemos definir por exemplo <math id="p1.m1" class="ltx_Math" alttext="E(\1_{A}|X=x)" display="inline"><semantics><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><msub><merror class="ltx_ERROR undefined undefined"><mtext>\1</mtext></merror><mi>A</mi></msub><mo fence="false">|</mo><mi>X</mi></mrow><mo>=</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">E(\1_{A}|X=x)</annotation></semantics></math>.
+Gostaríamos porém de garantir que essa expressão definisse uma probabilidade em <math id="p1.m2" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>, e chamaríamos essa probabilidade de <math id="p1.m3" class="ltx_Math" alttext="P(A|X=x)" display="inline"><semantics><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>A</mi><mo fence="false">|</mo><mi>X</mi></mrow><mo>=</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">P(A|X=x)</annotation></semantics></math>.
+Mas certamente gostaríamos que <math id="p1.m4" class="ltx_math_unparsed" alttext="P(\cdot|X=x)" display="inline"><semantics><mrow><mi>P</mi><mrow><mo stretchy="false">(</mo><mo lspace="0em" rspace="0em">⋅</mo><mo fence="false" rspace="0.167em" stretchy="false">|</mo><mi>X</mi><mo>=</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">P(\cdot|X=x)</annotation></semantics></math> fosse uma função <math id="p1.m5" class="ltx_Math" alttext="\sigma" display="inline"><semantics><mi>σ</mi><annotation encoding="application/x-tex">\sigma</annotation></semantics></math>-aditiva.
+Essa especulação parece promissora, por exemplo se <math id="p1.m6" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> e <math id="p1.m7" class="ltx_Math" alttext="B" display="inline"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math> são disjuntos,</p>
+<div id="Ch4.Ex3" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.Ex3.m1" class="ltx_Math" alttext="P(A\cup B|\mathcal{F}^{\prime})=E(\1_{A\cup B}|\mathcal{F}^{\prime})=E(\1_{A}|%
+\mathcal{F}^{\prime})+E(\1_{B}|\mathcal{F}^{\prime})=P(A|\mathcal{F}^{\prime})%
++P(B|\mathcal{F}^{\prime})." display="block"><semantics><mrow><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>∪</mo><mrow><mi>B</mi><mo fence="false">|</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><merror class="ltx_ERROR undefined undefined"><mtext>\1</mtext></merror><mrow><mi>A</mi><mo>∪</mo><mi>B</mi></mrow></msub><mo fence="false">|</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><merror class="ltx_ERROR undefined undefined"><mtext>\1</mtext></merror><mi>A</mi></msub><mo fence="false">|</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><merror class="ltx_ERROR undefined undefined"><mtext>\1</mtext></merror><mi>B</mi></msub><mo fence="false">|</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo fence="false">|</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>B</mi><mo fence="false">|</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">P(A\cup B|\mathcal{F}^{\prime})=E(\1_{A\cup B}|\mathcal{F}^{\prime})=E(\1_{A}|%
+\mathcal{F}^{\prime})+E(\1_{B}|\mathcal{F}^{\prime})=P(A|\mathcal{F}^{\prime})%
++P(B|\mathcal{F}^{\prime}).</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Ótimo, mas ainda temos o seguinte problema.</p>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">Lembramos que a equação acima está bem definida apenas quase certamente.
+Poderíamos portanto garantir que para uma classe enumerável de conjuntos <math id="p2.m1" class="ltx_Math" alttext="A\in\mathcal{F}" display="inline"><semantics><mrow><mi>A</mi><mo>∈</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi></mrow><annotation encoding="application/x-tex">A\in\mathcal{F}</annotation></semantics></math>, essa aditividade fosse satisfeita.
+Porém, a <math id="p2.m2" class="ltx_Math" alttext="\sigma" display="inline"><semantics><mi>σ</mi><annotation encoding="application/x-tex">\sigma</annotation></semantics></math>-álgebra <math id="p2.m3" class="ltx_Math" alttext="\mathcal{F}" display="inline"><semantics><mi class="ltx_font_mathcaligraphic">ℱ</mi><annotation encoding="application/x-tex">\mathcal{F}</annotation></semantics></math> é frequentemente não enumerável, portanto não conseguimos a <math id="p2.m4" class="ltx_Math" alttext="\sigma" display="inline"><semantics><mi>σ</mi><annotation encoding="application/x-tex">\sigma</annotation></semantics></math>-aditividade plena.
+Isso pode ser contornado se o espaço for canônico, como afirma o nosso próximo resultado.</p>
+</div>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">Ele nos ajudará bastante ao fazermos cálculos usando condicionais, de maneira semelhante à Lei da Probabilidade Total.
+Esse é o conteúdo do seguinte resultado.</p>
+</div>
+<div id="p4" class="ltx_para">
+<span class="ltx_ERROR undefined">{theorem}</span>
+<p class="ltx_p">[Teorema da Desintegração] 
+
+Sejam espaços mensuráveis <math id="p4.m1" class="ltx_Math" alttext="(\Omega,\mathcal{F})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">Ω</mi><mo>,</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(\Omega,\mathcal{F})</annotation></semantics></math> e <math id="p4.m2" class="ltx_Math" alttext="(E,\mathcal{A})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi>E</mi><mo>,</mo><mi class="ltx_font_mathcaligraphic">𝒜</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(E,\mathcal{A})</annotation></semantics></math>, com <math id="p4.m3" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math> canônico.
+Se <math id="p4.m4" class="ltx_Math" alttext="P" display="inline"><semantics><mi>P</mi><annotation encoding="application/x-tex">P</annotation></semantics></math> é uma probabilidade no espaço produto <math id="p4.m5" class="ltx_Math" alttext="(\Omega\times E,\mathcal{F}\otimes\mathcal{A})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mrow><mi mathvariant="normal">Ω</mi><mo lspace="0.222em" rspace="0.222em">×</mo><mi>E</mi></mrow><mo>,</mo><mrow><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo lspace="0.222em" rspace="0.222em">⊗</mo><mi class="ltx_font_mathcaligraphic">𝒜</mi></mrow><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(\Omega\times E,\mathcal{F}\otimes\mathcal{A})</annotation></semantics></math> e denotamos por <math id="p4.m6" class="ltx_Math" alttext="P_{\Omega}=P\circ X_{1}" display="inline"><semantics><mrow><msub><mi>P</mi><mi mathvariant="normal">Ω</mi></msub><mo>=</mo><mrow><mi>P</mi><mo lspace="0.222em" rspace="0.222em">∘</mo><msub><mi>X</mi><mn>1</mn></msub></mrow></mrow><annotation encoding="application/x-tex">P_{\Omega}=P\circ X_{1}</annotation></semantics></math> a primeira distribuição marginal de <math id="p4.m7" class="ltx_Math" alttext="P" display="inline"><semantics><mi>P</mi><annotation encoding="application/x-tex">P</annotation></semantics></math>, então existe um núcleo de transição <math id="p4.m8" class="ltx_Math" alttext="K:\Omega\times\mathcal{A}\to[0,1]" display="inline"><semantics><mrow><mi>K</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mrow><mi mathvariant="normal">Ω</mi><mo lspace="0.222em" rspace="0.222em">×</mo><mi class="ltx_font_mathcaligraphic">𝒜</mi></mrow><mo stretchy="false">→</mo><mrow><mo stretchy="false">[</mo><mn>0,1</mn><mo stretchy="false">]</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">K:\Omega\times\mathcal{A}\to[0,1]</annotation></semantics></math> satisfazendo</p>
+<div id="Ch4.E35" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.E35.m1" class="ltx_Math" alttext="P=P_{\Omega}\star K," display="block"><semantics><mrow><mrow><mi>P</mi><mo>=</mo><mrow><msub><mi>P</mi><mi mathvariant="normal">Ω</mi></msub><mo lspace="0.222em" rspace="0.222em">⋆</mo><mi>K</mi></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">P=P_{\Omega}\star K,</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.35)</span>
+            
+            
+          
+</div>
+<p class="ltx_p">Em particular,</p>
+<div id="Ch4.E36" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.E36.m1" class="ltx_Math" alttext="P(A\times B)=\int_{A}K(\omega,B)P_{\Omega}(\d{\omega})\text{ para todo $A\in%
+\mathcal{F}$, $B\in\mathcal{A}$}." display="block"><semantics><mrow><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo lspace="0.222em" rspace="0.222em">×</mo><mi>B</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo rspace="0.111em">=</mo><mrow><msub><mo>∫</mo><mi>A</mi></msub><mrow><mi>K</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ω</mi><mo>,</mo><mi>B</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mi>P</mi><mi mathvariant="normal">Ω</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><munder accentunder="true"><mtext class="ltx_mathvariant_italic">ω</mtext><mo>⋅</mo></munder><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mtext> para todo </mtext><mrow><mi>A</mi><mo>∈</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi></mrow><mtext>, </mtext><mrow><mi>B</mi><mo>∈</mo><mi class="ltx_font_mathcaligraphic">𝒜</mi></mrow></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">P(A\times B)=\int_{A}K(\omega,B)P_{\Omega}(\d{\omega})\text{ para todo $A\in%
+\mathcal{F}$, $B\in\mathcal{A}$}.</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.36)</span>
+            
+            
+          
+</div>
+<p class="ltx_p">Nesse caso denotamos <math id="p4.m9" class="ltx_Math" alttext="K(\omega,B)" display="inline"><semantics><mrow><mi>K</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ω</mi><mo>,</mo><mi>B</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">K(\omega,B)</annotation></semantics></math> por <math id="p4.m10" class="ltx_Math" alttext="P[X_{2}\in B|X_{1}=\omega]" display="inline"><semantics><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><msub><mi>X</mi><mn>2</mn></msub><mo>∈</mo><mrow><mi>B</mi><mo fence="false">|</mo><msub><mi>X</mi><mn>1</mn></msub></mrow><mo>=</mo><mi>ω</mi></mrow><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">P[X_{2}\in B|X_{1}=\omega]</annotation></semantics></math> (como de costume <math id="p4.m11" class="ltx_Math" alttext="X_{i}" display="inline"><semantics><msub><mi>X</mi><mi>i</mi></msub><annotation encoding="application/x-tex">X_{i}</annotation></semantics></math> denota a <math id="p4.m12" class="ltx_Math" alttext="i" display="inline"><semantics><mi>i</mi><annotation encoding="application/x-tex">i</annotation></semantics></math>-ésima coordenada canônica).</p>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demonstração.</h6>
+<div id="p5" class="ltx_para">
+<p class="ltx_p">Como de costume, basta resolver o caso <math id="p5.m1" class="ltx_Math" alttext="(E,\mathcal{A})=(\mathbb{R},\mathcal{B}(\mathbb{R}))" display="inline"><semantics><mrow><mrow><mo stretchy="false">(</mo><mi>E</mi><mo>,</mo><mi class="ltx_font_mathcaligraphic">𝒜</mi><mo stretchy="false">)</mo></mrow><mo>=</mo><mrow><mo stretchy="false">(</mo><mi>ℝ</mi><mo>,</mo><mrow><mi class="ltx_font_mathcaligraphic">ℬ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ℝ</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">(E,\mathcal{A})=(\mathbb{R},\mathcal{B}(\mathbb{R}))</annotation></semantics></math>.
+De fato, se assumimos a validade do teorema para a reta, podemos usar a função bi-mensurável <math id="p5.m2" class="ltx_Math" alttext="\phi:E\to B\in\mathcal{B}(\mathbb{R})" display="inline"><semantics><mrow><mi>ϕ</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>E</mi><mo stretchy="false">→</mo><mi>B</mi><mo>∈</mo><mrow><mi class="ltx_font_mathcaligraphic">ℬ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ℝ</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\phi:E\to B\in\mathcal{B}(\mathbb{R})</annotation></semantics></math> para concluir o caso geral.</p>
+</div>
+<div id="p6" class="ltx_para">
+<p class="ltx_p">Nos restringiremos agora ao espaço <math id="p6.m1" class="ltx_Math" alttext="(\Omega\times\mathbb{R},\mathcal{F}\otimes\mathcal{B}(\mathbb{R}),P)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mrow><mi mathvariant="normal">Ω</mi><mo lspace="0.222em" rspace="0.222em">×</mo><mi>ℝ</mi></mrow><mo>,</mo><mrow><mrow><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo lspace="0.222em" rspace="0.222em">⊗</mo><mi class="ltx_font_mathcaligraphic">ℬ</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ℝ</mi><mo stretchy="false">)</mo></mrow></mrow><mo>,</mo><mi>P</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(\Omega\times\mathbb{R},\mathcal{F}\otimes\mathcal{B}(\mathbb{R}),P)</annotation></semantics></math>.
+Para cada <math id="p6.m2" class="ltx_Math" alttext="q\in\mathbb{Q}" display="inline"><semantics><mrow><mi>q</mi><mo>∈</mo><mi>ℚ</mi></mrow><annotation encoding="application/x-tex">q\in\mathbb{Q}</annotation></semantics></math>, definimos <math id="p6.m3" class="ltx_Math" alttext="P^{q}_{\Omega}:\mathcal{F}\to[0,1]" display="inline"><semantics><mrow><msubsup><mi>P</mi><mi mathvariant="normal">Ω</mi><mi>q</mi></msubsup><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo stretchy="false">→</mo><mrow><mo stretchy="false">[</mo><mn>0,1</mn><mo stretchy="false">]</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">P^{q}_{\Omega}:\mathcal{F}\to[0,1]</annotation></semantics></math> por</p>
+<div id="Ch4.E37" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.E37.m1" class="ltx_Math" alttext="P^{q}_{\Omega}(A)=P\big{(}(-\infty,q]\times A\big{)}." display="block"><semantics><mrow><mrow><mrow><msubsup><mi>P</mi><mi mathvariant="normal">Ω</mi><mi>q</mi></msubsup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>P</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mi mathvariant="normal">∞</mi></mrow><mo>,</mo><mi>q</mi><mo rspace="0.055em" stretchy="false">]</mo></mrow><mo rspace="0.222em">×</mo><mi>A</mi></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">P^{q}_{\Omega}(A)=P\big{(}(-\infty,q]\times A\big{)}.</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.37)</span>
+              
+              
+            
+</div>
+<p class="ltx_p">Observando que <math id="p6.m4" class="ltx_Math" alttext="P^{q}_{\Omega}" display="inline"><semantics><msubsup><mi>P</mi><mi mathvariant="normal">Ω</mi><mi>q</mi></msubsup><annotation encoding="application/x-tex">P^{q}_{\Omega}</annotation></semantics></math> é absolutamente contínua com respeito a <math id="p6.m5" class="ltx_Math" alttext="P_{\Omega}" display="inline"><semantics><msub><mi>P</mi><mi mathvariant="normal">Ω</mi></msub><annotation encoding="application/x-tex">P_{\Omega}</annotation></semantics></math>, podemos definir</p>
+<div id="Ch4.E38" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.E38.m1" class="ltx_Math" alttext="F(\omega,q)=\frac{\d{P}^{q}_{\Omega}}{\d{P}_{\Omega}}(\omega)." display="block"><semantics><mrow><mrow><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ω</mi><mo>,</mo><mi>q</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mfrac><msubsup><munder accentunder="true"><mtext>P</mtext><mo>⋅</mo></munder><mi mathvariant="normal">Ω</mi><mi>q</mi></msubsup><msub><munder accentunder="true"><mtext>P</mtext><mo>⋅</mo></munder><mi mathvariant="normal">Ω</mi></msub></mfrac><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ω</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">F(\omega,q)=\frac{\d{P}^{q}_{\Omega}}{\d{P}_{\Omega}}(\omega).</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.38)</span>
+              
+              
+            
+</div>
+<p class="ltx_p">Observamos as seguintes propriedades de <math id="p6.m6" class="ltx_Math" alttext="F" display="inline"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>:</p>
+<ol id="I1" class="ltx_enumerate">
+<li id="I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"> a)</span><div id="I1.i1.p1" class="ltx_para">​<p class="ltx_p">para cada <math id="I1.i1.p1.m1" class="ltx_Math" alttext="q\in\mathbb{Q}" display="inline"><semantics><mrow><mi>q</mi><mo>∈</mo><mi>ℚ</mi></mrow><annotation encoding="application/x-tex">q\in\mathbb{Q}</annotation></semantics></math>, <math id="I1.i1.p1.m2" class="ltx_Math" alttext="F(\cdot,q)\in[0,1]" display="inline"><semantics><mrow><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mo lspace="0em" rspace="0em">⋅</mo><mo>,</mo><mi>q</mi><mo stretchy="false">)</mo></mrow></mrow><mo>∈</mo><mrow><mo stretchy="false">[</mo><mn>0,1</mn><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">F(\cdot,q)\in[0,1]</annotation></semantics></math>, <math id="I1.i1.p1.m3" class="ltx_Math" alttext="P_{\Omega}" display="inline"><semantics><msub><mi>P</mi><mi mathvariant="normal">Ω</mi></msub><annotation encoding="application/x-tex">P_{\Omega}</annotation></semantics></math>-quase certamente, pois <math id="I1.i1.p1.m4" class="ltx_Math" alttext="P^{q}_{\Omega}(A)\leq P_{\Omega}(A)" display="inline"><semantics><mrow><mrow><msubsup><mi>P</mi><mi mathvariant="normal">Ω</mi><mi>q</mi></msubsup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≤</mo><mrow><msub><mi>P</mi><mi mathvariant="normal">Ω</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">P^{q}_{\Omega}(A)\leq P_{\Omega}(A)</annotation></semantics></math> para todo <math id="I1.i1.p1.m5" class="ltx_Math" alttext="A\in\mathcal{F}" display="inline"><semantics><mrow><mi>A</mi><mo>∈</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi></mrow><annotation encoding="application/x-tex">A\in\mathcal{F}</annotation></semantics></math>,</p>
+</div>
+</li>
+<li id="I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"> b)</span><div id="I1.i2.p1" class="ltx_para">​<p class="ltx_p">para <math id="I1.i2.p1.m1" class="ltx_Math" alttext="q&lt;q^{\prime}\in\mathbb{Q}" display="inline"><semantics><mrow><mi>q</mi><mo>&lt;</mo><msup><mi>q</mi><mo>′</mo></msup><mo>∈</mo><mi>ℚ</mi></mrow><annotation encoding="application/x-tex">q&lt;q^{\prime}\in\mathbb{Q}</annotation></semantics></math>, <math id="I1.i2.p1.m2" class="ltx_Math" alttext="F(\cdot,q)\leq F(\cdot,q^{\prime})" display="inline"><semantics><mrow><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mo lspace="0em" rspace="0em">⋅</mo><mo>,</mo><mi>q</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≤</mo><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mo lspace="0em" rspace="0em">⋅</mo><mo>,</mo><msup><mi>q</mi><mo>′</mo></msup><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">F(\cdot,q)\leq F(\cdot,q^{\prime})</annotation></semantics></math>, <math id="I1.i2.p1.m3" class="ltx_Math" alttext="P_{\Omega}" display="inline"><semantics><msub><mi>P</mi><mi mathvariant="normal">Ω</mi></msub><annotation encoding="application/x-tex">P_{\Omega}</annotation></semantics></math>-quase certamente, pois <math id="I1.i2.p1.m4" class="ltx_Math" alttext="P^{q}_{\Omega}(A)\leq P^{q^{\prime}}_{\Omega}(A)" display="inline"><semantics><mrow><mrow><msubsup><mi>P</mi><mi mathvariant="normal">Ω</mi><mi>q</mi></msubsup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≤</mo><mrow><msubsup><mi>P</mi><mi mathvariant="normal">Ω</mi><msup><mi>q</mi><mo>′</mo></msup></msubsup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">P^{q}_{\Omega}(A)\leq P^{q^{\prime}}_{\Omega}(A)</annotation></semantics></math> para todo <math id="I1.i2.p1.m5" class="ltx_Math" alttext="A\in\mathcal{F}" display="inline"><semantics><mrow><mi>A</mi><mo>∈</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi></mrow><annotation encoding="application/x-tex">A\in\mathcal{F}</annotation></semantics></math> e</p>
+</div>
+</li>
+<li id="I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"> c)</span><div id="I1.i3.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i3.p1.m1" class="ltx_Math" alttext="F(\cdot,n)\to 1" display="inline"><semantics><mrow><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mo lspace="0em" rspace="0em">⋅</mo><mo>,</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">→</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">F(\cdot,n)\to 1</annotation></semantics></math> (analogamente <math id="I1.i3.p1.m2" class="ltx_Math" alttext="F(\cdot,-n)\to 0" display="inline"><semantics><mrow><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mo lspace="0em" rspace="0em">⋅</mo><mo>,</mo><mrow><mo>−</mo><mi>n</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">→</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">F(\cdot,-n)\to 0</annotation></semantics></math>) quando <math id="I1.i3.p1.m3" class="ltx_Math" alttext="n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math> tende a infinito, <math id="I1.i3.p1.m4" class="ltx_Math" alttext="P_{\Omega}" display="inline"><semantics><msub><mi>P</mi><mi mathvariant="normal">Ω</mi></msub><annotation encoding="application/x-tex">P_{\Omega}</annotation></semantics></math>-quase certamente.
+Para ver isso, note que a sequência de variáveis aleatórias <math id="I1.i3.p1.m5" class="ltx_Math" alttext="F(\cdot,n)" display="inline"><semantics><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mo lspace="0em" rspace="0em">⋅</mo><mo>,</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">F(\cdot,n)</annotation></semantics></math> é quase certamente monótona não decrescente, logo converge <math id="I1.i3.p1.m6" class="ltx_Math" alttext="P_{\Omega}" display="inline"><semantics><msub><mi>P</mi><mi mathvariant="normal">Ω</mi></msub><annotation encoding="application/x-tex">P_{\Omega}</annotation></semantics></math>-quase certamente.
+Sendo limitada, converge em <math id="I1.i3.p1.m7" class="ltx_Math" alttext="\mathcal{L}^{1}" display="inline"><semantics><msup><mi class="ltx_font_mathcaligraphic">ℒ</mi><mn>1</mn></msup><annotation encoding="application/x-tex">\mathcal{L}^{1}</annotation></semantics></math> e como sua integral em <math id="I1.i3.p1.m8" class="ltx_Math" alttext="P_{\Omega}" display="inline"><semantics><msub><mi>P</mi><mi mathvariant="normal">Ω</mi></msub><annotation encoding="application/x-tex">P_{\Omega}</annotation></semantics></math> converge para um, <math id="I1.i3.p1.m9" class="ltx_Math" alttext="F(\cdot,n)\to 1" display="inline"><semantics><mrow><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mo lspace="0em" rspace="0em">⋅</mo><mo>,</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">→</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">F(\cdot,n)\to 1</annotation></semantics></math>, quase certamente (analogamente para <math id="I1.i3.p1.m10" class="ltx_Math" alttext="F(\cdot,-n)" display="inline"><semantics><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mo lspace="0em" rspace="0em">⋅</mo><mo>,</mo><mrow><mo>−</mo><mi>n</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">F(\cdot,-n)</annotation></semantics></math>).</p>
+</div>
+</li>
+</ol>
+<p class="ltx_p">Existe pois um conjunto <math id="p6.m7" class="ltx_Math" alttext="\Omega^{\prime}\in\mathcal{F}" display="inline"><semantics><mrow><msup><mi mathvariant="normal">Ω</mi><mo>′</mo></msup><mo>∈</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi></mrow><annotation encoding="application/x-tex">\Omega^{\prime}\in\mathcal{F}</annotation></semantics></math> com <math id="p6.m8" class="ltx_Math" alttext="P_{\Omega}(\Omega^{\prime})=1" display="inline"><semantics><mrow><mrow><msub><mi>P</mi><mi mathvariant="normal">Ω</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi mathvariant="normal">Ω</mi><mo>′</mo></msup><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">P_{\Omega}(\Omega^{\prime})=1</annotation></semantics></math> no qual as três hipóteses acima são satisfeitas.
+Definimos <math id="p6.m9" class="ltx_Math" alttext="\hat{F}(\omega,q)" display="inline"><semantics><mrow><mover accent="true"><mi>F</mi><mo>^</mo></mover><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ω</mi><mo>,</mo><mi>q</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\hat{F}(\omega,q)</annotation></semantics></math> como sendo igual a <math id="p6.m10" class="ltx_Math" alttext="F(\omega,q)" display="inline"><semantics><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ω</mi><mo>,</mo><mi>q</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">F(\omega,q)</annotation></semantics></math> em <math id="p6.m11" class="ltx_Math" alttext="\Omega^{\prime}" display="inline"><semantics><msup><mi mathvariant="normal">Ω</mi><mo>′</mo></msup><annotation encoding="application/x-tex">\Omega^{\prime}</annotation></semantics></math> e igual a <math id="p6.m12" class="ltx_Math" alttext="F_{0}(q)" display="inline"><semantics><mrow><msub><mi>F</mi><mn>0</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>q</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">F_{0}(q)</annotation></semantics></math> (uma função de distribuição fixa) caso contrário (que claramente será mensurável).
+Finalmente podemos definir <math id="p6.m13" class="ltx_Math" alttext="\tilde{F}(\omega,x)=\inf_{q\in\mathbb{Q};q\downarrow x}\hat{F}(\omega,q)" display="inline"><semantics><mrow><mrow><mover accent="true"><mi>F</mi><mo>~</mo></mover><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ω</mi><mo>,</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo rspace="0.1389em">=</mo><mrow><msub><mo lspace="0.1389em" rspace="0.167em">inf</mo><mrow><mrow><mi>q</mi><mo>∈</mo><mi>ℚ</mi></mrow><mo>;</mo><mrow><mi>q</mi><mo stretchy="false">↓</mo><mi>x</mi></mrow></mrow></msub><mrow><mover accent="true"><mi>F</mi><mo>^</mo></mover><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ω</mi><mo>,</mo><mi>q</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\tilde{F}(\omega,x)=\inf_{q\in\mathbb{Q};q\downarrow x}\hat{F}(\omega,q)</annotation></semantics></math>, que satisfaz para todo <math id="p6.m14" class="ltx_Math" alttext="\omega" display="inline"><semantics><mi>ω</mi><annotation encoding="application/x-tex">\omega</annotation></semantics></math> as hipóteses do Teorema <a href="Ch2.S3.html" title="2.3 Funções acumuladas de distribuição ‣ Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.3</span></a>.
+Logo, existe para cada <math id="p6.m15" class="ltx_Math" alttext="\omega\in\Omega" display="inline"><semantics><mrow><mi>ω</mi><mo>∈</mo><mi mathvariant="normal">Ω</mi></mrow><annotation encoding="application/x-tex">\omega\in\Omega</annotation></semantics></math> uma medida <math id="p6.m16" class="ltx_Math" alttext="K(\omega,\cdot)" display="inline"><semantics><mrow><mi>K</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ω</mi><mo rspace="0em">,</mo><mo lspace="0em" rspace="0em">⋅</mo><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">K(\omega,\cdot)</annotation></semantics></math> em <math id="p6.m17" class="ltx_Math" alttext="(\mathbb{R},\mathcal{B}(\mathbb{R}))" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi>ℝ</mi><mo>,</mo><mrow><mi class="ltx_font_mathcaligraphic">ℬ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ℝ</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(\mathbb{R},\mathcal{B}(\mathbb{R}))</annotation></semantics></math> satisfazendo <math id="p6.m18" class="ltx_Math" alttext="K(\omega,(-\infty,q])=F(\omega,q)" display="inline"><semantics><mrow><mrow><mi>K</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ω</mi><mo>,</mo><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mi mathvariant="normal">∞</mi></mrow><mo>,</mo><mi>q</mi><mo stretchy="false">]</mo></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ω</mi><mo>,</mo><mi>q</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">K(\omega,(-\infty,q])=F(\omega,q)</annotation></semantics></math> <math id="p6.m19" class="ltx_Math" alttext="P_{\Omega}" display="inline"><semantics><msub><mi>P</mi><mi mathvariant="normal">Ω</mi></msub><annotation encoding="application/x-tex">P_{\Omega}</annotation></semantics></math>-quase certamente.</p>
+</div>
+<div id="p7" class="ltx_para">
+<p class="ltx_p">Precisamos mostrar que <math id="p7.m1" class="ltx_Math" alttext="K" display="inline"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math> é um núcleo, e para isso basta observar que <math id="p7.m2" class="ltx_Math" alttext="F(\omega,q)" display="inline"><semantics><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ω</mi><mo>,</mo><mi>q</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">F(\omega,q)</annotation></semantics></math> são mensuráveis e a família <math id="p7.m3" class="ltx_Math" alttext="\{(-\infty,q];q\in\mathbb{Q}\}" display="inline"><semantics><mrow><mo stretchy="false">{</mo><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mi mathvariant="normal">∞</mi></mrow><mo>,</mo><mi>q</mi><mo stretchy="false">]</mo></mrow><mo>;</mo><mi>q</mi></mrow><mo>∈</mo><mi>ℚ</mi></mrow><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{(-\infty,q];q\in\mathbb{Q}\}</annotation></semantics></math> forma um <math id="p7.m4" class="ltx_Math" alttext="\pi" display="inline"><semantics><mi>π</mi><annotation encoding="application/x-tex">\pi</annotation></semantics></math>-sistema que gera <math id="p7.m5" class="ltx_Math" alttext="\mathcal{B}(\mathbb{R})" display="inline"><semantics><mrow><mi class="ltx_font_mathcaligraphic">ℬ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ℝ</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mathcal{B}(\mathbb{R})</annotation></semantics></math>.</p>
+</div>
+<div id="p8" class="ltx_para">
+<p class="ltx_p">Finalmente, vamos verificar (<a href="#Ch4.E36" title="In 4.3 Probabilidade Condicional Regular ‣ Capítulo 4 Esperança condicional ‣ Notas de aula: Probabilidade I" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.36</span></a>), notando que se <math id="p8.m1" class="ltx_Math" alttext="A\in\mathcal{F}" display="inline"><semantics><mrow><mi>A</mi><mo>∈</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi></mrow><annotation encoding="application/x-tex">A\in\mathcal{F}</annotation></semantics></math> e <math id="p8.m2" class="ltx_Math" alttext="B=(-\infty,q]" display="inline"><semantics><mrow><mi>B</mi><mo>=</mo><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mi mathvariant="normal">∞</mi></mrow><mo>,</mo><mi>q</mi><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">B=(-\infty,q]</annotation></semantics></math>,</p>
+<div id="Ch4.E39" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.E39.m1" class="ltx_Math" alttext="\int_{A}K(\omega,B)P_{\Omega}(\d{\omega})=\int_{A}F(\omega,q)P_{\Omega}(\d{%
+\omega})=P^{q}_{\Omega}(A)=P(A\times B)." display="block"><semantics><mrow><mrow><mrow><msub><mo>∫</mo><mi>A</mi></msub><mrow><mi>K</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ω</mi><mo>,</mo><mi>B</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mi>P</mi><mi mathvariant="normal">Ω</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><munder accentunder="true"><mtext class="ltx_mathvariant_italic">ω</mtext><mo>⋅</mo></munder><mo stretchy="false">)</mo></mrow></mrow></mrow><mo rspace="0.111em">=</mo><mrow><msub><mo>∫</mo><mi>A</mi></msub><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ω</mi><mo>,</mo><mi>q</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mi>P</mi><mi mathvariant="normal">Ω</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><munder accentunder="true"><mtext class="ltx_mathvariant_italic">ω</mtext><mo>⋅</mo></munder><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><msubsup><mi>P</mi><mi mathvariant="normal">Ω</mi><mi>q</mi></msubsup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo lspace="0.222em" rspace="0.222em">×</mo><mi>B</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\int_{A}K(\omega,B)P_{\Omega}(\d{\omega})=\int_{A}F(\omega,q)P_{\Omega}(\d{%
+\omega})=P^{q}_{\Omega}(A)=P(A\times B).</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.39)</span>
+              
+              
+            
+</div>
+<p class="ltx_p">Como a classe <math id="p8.m3" class="ltx_Math" alttext="B" display="inline"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math> é um <math id="p8.m4" class="ltx_Math" alttext="\pi" display="inline"><semantics><mi>π</mi><annotation encoding="application/x-tex">\pi</annotation></semantics></math>-sistema gerando <math id="p8.m5" class="ltx_Math" alttext="\mathcal{B}(\mathbb{R})" display="inline"><semantics><mrow><mi class="ltx_font_mathcaligraphic">ℬ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ℝ</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mathcal{B}(\mathbb{R})</annotation></semantics></math> terminamos a prova.
+∎</p>
+</div>
+</div>
+<div id="p9" class="ltx_para">
+<p class="ltx_p">Interpretamos <math id="p9.m1" class="ltx_Math" alttext="P[X_{2}\in B|X_{1}=\omega]" display="inline"><semantics><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><msub><mi>X</mi><mn>2</mn></msub><mo>∈</mo><mrow><mi>B</mi><mo fence="false">|</mo><msub><mi>X</mi><mn>1</mn></msub></mrow><mo>=</mo><mi>ω</mi></mrow><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">P[X_{2}\in B|X_{1}=\omega]</annotation></semantics></math> da seguinte forma.
+Se alguém tiver acesso à <math id="p9.m2" class="ltx_Math" alttext="\sigma" display="inline"><semantics><mi>σ</mi><annotation encoding="application/x-tex">\sigma</annotation></semantics></math>-álgebra <math id="p9.m3" class="ltx_Math" alttext="\sigma(X_{1})" display="inline"><semantics><mrow><mi>σ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>X</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\sigma(X_{1})</annotation></semantics></math>, ou seja, essa pessoa é capaz de observar o valor de <math id="p9.m4" class="ltx_Math" alttext="\omega" display="inline"><semantics><mi>ω</mi><annotation encoding="application/x-tex">\omega</annotation></semantics></math>, ela pode não saber o valor de <math id="p9.m5" class="ltx_Math" alttext="X_{2}" display="inline"><semantics><msub><mi>X</mi><mn>2</mn></msub><annotation encoding="application/x-tex">X_{2}</annotation></semantics></math>, mas já pode atualizar sua distribuição para <math id="p9.m6" class="ltx_math_unparsed" alttext="P(X_{2}\in\cdot|X_{1}=\omega)" display="inline"><semantics><mrow><mi>P</mi><mrow><mo stretchy="false">(</mo><msub><mi>X</mi><mn>2</mn></msub><mo rspace="0em">∈</mo><mo lspace="0em" rspace="0em">⋅</mo><mo fence="false" rspace="0.167em" stretchy="false">|</mo><msub><mi>X</mi><mn>1</mn></msub><mo>=</mo><mi>ω</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">P(X_{2}\in\cdot|X_{1}=\omega)</annotation></semantics></math>.</p>
+</div>
+<div id="p10" class="ltx_para">
+<p class="ltx_p">Uma das grandes vantagens de ter um núcleo de transição a determinar uma distribuição conjunta, como foi feito acima, é que podemos usar a versão generalizada de Fubini.
+Antes, nós somente podiamos usar Fubini para espaços construídos através de um núcleo.</p>
+</div>
+<div id="p11" class="ltx_para">
+<span class="ltx_ERROR undefined">{exercise}</span>
+<p class="ltx_p">Se <math id="p11.m1" class="ltx_Math" alttext="\Omega=E_{1}\times E_{2}" display="inline"><semantics><mrow><mi mathvariant="normal">Ω</mi><mo>=</mo><mrow><msub><mi>E</mi><mn>1</mn></msub><mo lspace="0.222em" rspace="0.222em">×</mo><msub><mi>E</mi><mn>2</mn></msub></mrow></mrow><annotation encoding="application/x-tex">\Omega=E_{1}\times E_{2}</annotation></semantics></math> com <math id="p11.m2" class="ltx_Math" alttext="E_{2}" display="inline"><semantics><msub><mi>E</mi><mn>2</mn></msub><annotation encoding="application/x-tex">E_{2}</annotation></semantics></math> canônico é dotado da probabilidade <math id="p11.m3" class="ltx_Math" alttext="\d{P}=\rho(x_{1},x_{2})\mu_{1}\otimes\mu_{2}(\d{x}_{1}\d{x}_{2})" display="inline"><semantics><mrow><munder accentunder="true"><mtext>P</mtext><mo>⋅</mo></munder><mo>=</mo><mrow><mrow><mrow><mi>ρ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><msub><mi>x</mi><mn>2</mn></msub><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mi>μ</mi><mn>1</mn></msub></mrow><mo lspace="0.222em" rspace="0.222em">⊗</mo><msub><mi>μ</mi><mn>2</mn></msub></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><munder accentunder="true"><mtext>x</mtext><mo>⋅</mo></munder><mn>1</mn></msub><mo>⁢</mo><msub><munder accentunder="true"><mtext>x</mtext><mo>⋅</mo></munder><mn>2</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\d{P}=\rho(x_{1},x_{2})\mu_{1}\otimes\mu_{2}(\d{x}_{1}\d{x}_{2})</annotation></semantics></math>, mostre que</p>
+<div id="Ch4.E40" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.E40.m1" class="ltx_Math" alttext="P(X_{2}\in A|X_{1}=x_{1})=\frac{\int_{A}\rho(x_{1},x_{2})\mu_{2}(\d{x}_{2})}{%
+\int\rho(x_{1},x_{2})\mu_{2}(\d{x}_{2})}," display="block"><semantics><mrow><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>X</mi><mn>2</mn></msub><mo>∈</mo><mrow><mi>A</mi><mo fence="false">|</mo><msub><mi>X</mi><mn>1</mn></msub></mrow><mo>=</mo><msub><mi>x</mi><mn>1</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mrow><msub><mo>∫</mo><mi>A</mi></msub><mrow><mi>ρ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><msub><mi>x</mi><mn>2</mn></msub><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mi>μ</mi><mn>2</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><munder accentunder="true"><mtext>x</mtext><mo>⋅</mo></munder><mn>2</mn></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><mrow><mo>∫</mo><mrow><mi>ρ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><msub><mi>x</mi><mn>2</mn></msub><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mi>μ</mi><mn>2</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><munder accentunder="true"><mtext>x</mtext><mo>⋅</mo></munder><mn>2</mn></msub><mo stretchy="false">)</mo></mrow></mrow></mrow></mfrac></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">P(X_{2}\in A|X_{1}=x_{1})=\frac{\int_{A}\rho(x_{1},x_{2})\mu_{2}(\d{x}_{2})}{%
+\int\rho(x_{1},x_{2})\mu_{2}(\d{x}_{2})},</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.40)</span>
+            
+            
+          
+</div>
+<p class="ltx_p"><math id="p11.m4" class="ltx_Math" alttext="(X_{1}\circ P)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mrow><msub><mi>X</mi><mn>1</mn></msub><mo lspace="0.222em" rspace="0.222em">∘</mo><mi>P</mi></mrow><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(X_{1}\circ P)</annotation></semantics></math>-quase certamtente.</p>
+</div>
+<div id="p12" class="ltx_para">
+<span class="ltx_ERROR undefined">{exercise}</span>
+<p class="ltx_p">Sejam <math id="p12.m1" class="ltx_Math" alttext="X_{1}" display="inline"><semantics><msub><mi>X</mi><mn>1</mn></msub><annotation encoding="application/x-tex">X_{1}</annotation></semantics></math> e <math id="p12.m2" class="ltx_Math" alttext="X_{2}" display="inline"><semantics><msub><mi>X</mi><mn>2</mn></msub><annotation encoding="application/x-tex">X_{2}</annotation></semantics></math> as projeções canônicas em um espaço produto <math id="p12.m3" class="ltx_Math" alttext="\Omega\times E" display="inline"><semantics><mrow><mi mathvariant="normal">Ω</mi><mo lspace="0.222em" rspace="0.222em">×</mo><mi>E</mi></mrow><annotation encoding="application/x-tex">\Omega\times E</annotation></semantics></math>, com <math id="p12.m4" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math> canônico.
+Então, se <math id="p12.m5" class="ltx_Math" alttext="X_{1}" display="inline"><semantics><msub><mi>X</mi><mn>1</mn></msub><annotation encoding="application/x-tex">X_{1}</annotation></semantics></math> e <math id="p12.m6" class="ltx_Math" alttext="X_{2}" display="inline"><semantics><msub><mi>X</mi><mn>2</mn></msub><annotation encoding="application/x-tex">X_{2}</annotation></semantics></math> são independentes com respeito a <math id="p12.m7" class="ltx_Math" alttext="P" display="inline"><semantics><mi>P</mi><annotation encoding="application/x-tex">P</annotation></semantics></math>, vale</p>
+<div id="Ch4.E41" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.E41.m1" class="ltx_Math" alttext="P[X_{2}\in B|X_{1}=\omega]=P[X_{2}\in B]\text{ para $(X_{1}\circ P)$-quase %
+todo $\omega$}." display="block"><semantics><mrow><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><msub><mi>X</mi><mn>2</mn></msub><mo>∈</mo><mrow><mi>B</mi><mo fence="false">|</mo><msub><mi>X</mi><mn>1</mn></msub></mrow><mo>=</mo><mi>ω</mi></mrow><mo stretchy="false">]</mo></mrow></mrow><mo>=</mo><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><msub><mi>X</mi><mn>2</mn></msub><mo>∈</mo><mi>B</mi></mrow><mo stretchy="false">]</mo></mrow><mo>⁢</mo><mrow><mtext> para </mtext><mrow><mo stretchy="false">(</mo><mrow><msub><mi>X</mi><mn>1</mn></msub><mo lspace="0.222em" rspace="0.222em">∘</mo><mi>P</mi></mrow><mo stretchy="false">)</mo></mrow><mtext>-quase todo </mtext><mi>ω</mi></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">P[X_{2}\in B|X_{1}=\omega]=P[X_{2}\in B]\text{ para $(X_{1}\circ P)$-quase %
+todo $\omega$}.</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.41)</span>
+            
+            
+          
+</div>
+</div>
+<div id="p13" class="ltx_para">
+<span class="ltx_ERROR undefined">{exercise}</span>
+<p class="ltx_p">Considere em <math id="p13.m1" class="ltx_Math" alttext="(\mathbb{R}^{2},\mathcal{B}(\mathbb{R}^{2}))" display="inline"><semantics><mrow><mo stretchy="false">(</mo><msup><mi>ℝ</mi><mn>2</mn></msup><mo>,</mo><mrow><mi class="ltx_font_mathcaligraphic">ℬ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>ℝ</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(\mathbb{R}^{2},\mathcal{B}(\mathbb{R}^{2}))</annotation></semantics></math> as projeções canônicas <math id="p13.m2" class="ltx_Math" alttext="X_{1}" display="inline"><semantics><msub><mi>X</mi><mn>1</mn></msub><annotation encoding="application/x-tex">X_{1}</annotation></semantics></math> e <math id="p13.m3" class="ltx_Math" alttext="X_{2}" display="inline"><semantics><msub><mi>X</mi><mn>2</mn></msub><annotation encoding="application/x-tex">X_{2}</annotation></semantics></math>.
+Calcule, em cada um dos exemplos abaixo, a probabilidade condicional regular <math id="p13.m4" class="ltx_math_unparsed" alttext="P[X_{1}\in\cdot|X_{2}=x_{2}]" display="inline"><semantics><mrow><mi>P</mi><mrow><mo stretchy="false">[</mo><msub><mi>X</mi><mn>1</mn></msub><mo rspace="0em">∈</mo><mo lspace="0em" rspace="0em">⋅</mo><mo fence="false" rspace="0.167em" stretchy="false">|</mo><msub><mi>X</mi><mn>2</mn></msub><mo>=</mo><msub><mi>x</mi><mn>2</mn></msub><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">P[X_{1}\in\cdot|X_{2}=x_{2}]</annotation></semantics></math>, justificando sua resposta,</p>
+<ol id="I2" class="ltx_enumerate">
+<li id="I2.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"> a)</span><div id="I2.i1.p1" class="ltx_para">​<p class="ltx_p">Quando <math id="I2.i1.p1.m1" class="ltx_Math" alttext="P" display="inline"><semantics><mi>P</mi><annotation encoding="application/x-tex">P</annotation></semantics></math> é a medida uniforme em <math id="I2.i1.p1.m2" class="ltx_Math" alttext="T=\{(x,y)\in[0,1]^{2};x\leq y\}" display="inline"><semantics><mrow><mi>T</mi><mo>=</mo><mrow><mo stretchy="false">{</mo><mrow><mrow><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo>∈</mo><msup><mrow><mo stretchy="false">[</mo><mn>0,1</mn><mo stretchy="false">]</mo></mrow><mn>2</mn></msup></mrow><mo>;</mo><mrow><mi>x</mi><mo>≤</mo><mi>y</mi></mrow></mrow><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">T=\{(x,y)\in[0,1]^{2};x\leq y\}</annotation></semantics></math> (ou seja, a medida de Lebesgue em <math id="I2.i1.p1.m3" class="ltx_Math" alttext="\mathbb{R}^{2}" display="inline"><semantics><msup><mi>ℝ</mi><mn>2</mn></msup><annotation encoding="application/x-tex">\mathbb{R}^{2}</annotation></semantics></math> restrita a <math id="I2.i1.p1.m4" class="ltx_Math" alttext="T" display="inline"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math> e normalizada para ser uma probabilidade).</p>
+</div>
+</li>
+<li id="I2.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"> b)</span><div id="I2.i2.p1" class="ltx_para">​<p class="ltx_p">Quando <math id="I2.i2.p1.m1" class="ltx_Math" alttext="P" display="inline"><semantics><mi>P</mi><annotation encoding="application/x-tex">P</annotation></semantics></math> é a medida <math id="I2.i2.p1.m2" class="ltx_Math" alttext="U_{S^{1}}" display="inline"><semantics><msub><mi>U</mi><msup><mi>S</mi><mn>1</mn></msup></msub><annotation encoding="application/x-tex">U_{S^{1}}</annotation></semantics></math> (uniforme em <math id="I2.i2.p1.m3" class="ltx_Math" alttext="S^{1}" display="inline"><semantics><msup><mi>S</mi><mn>1</mn></msup><annotation encoding="application/x-tex">S^{1}</annotation></semantics></math>).</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+<a href="Ch4.S2.html" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a><a href="Ch4.S4.html" class="navigation navigation-next" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+</div>
+</div>
+<script src="bookml/gitbook/js/app.min.js"></script>
+<script src="bookml/gitbook/js/jquery.highlight.js"></script>
+<script src="bookml/gitbook/js/plugin-search.js"></script>
+<script src="bookml/gitbook/js/plugin-fontsettings.js"></script>
+<script src="bookml/gitbook/js/plugin-bookdown.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+        MathJax = {
+          startup: {
+            ready() {
+              // do not process equations disabled with \bmlDisableMathJax (code suggested by Davide P. Cervone)
+              class bmlFindMathML extends MathJax._.input.mathml.FindMathML.FindMathML {
+                processMath(set) {
+                  const adaptor = this.adaptor;
+                  for (const node of set.values()) {
+                    if (adaptor.hasClass(node, 'bml_disable_mathjax')) {
+                      set.delete(node);
+                    }
+                  }
+                  return super.processMath(set);
+                }
+              }
+
+              MathJax._.components.global.combineDefaults(MathJax.config, 'mml', {FindMathML: new bmlFindMathML()});
+
+              MathJax.startup.defaultReady();
+
+              // preproces MathML to make MathJax aware of certain LaTeXML and BookML additional info
+              const mmlFilters = MathJax.startup.input[0].mmlFilters;
+
+              // convert the LaTeXML calligraphic (chancery) annotation to a form MathJax understands
+              // since the corresponding Unicode characters render as script (rounded)
+              const script2latin = {
+                '𝒜': 'A', 'ℬ': 'B', '𝒞': 'C', '𝒟': 'D', 'ℰ': 'E', 'ℱ': 'F', '𝒢': 'G',
+                'ℋ': 'H', 'ℐ': 'I', '𝒥': 'J', '𝒦': 'K', 'ℒ': 'L', 'ℳ': 'M', '𝒩': 'N',
+                '𝒪': 'O', '𝒫': 'P', '𝒬': 'Q', 'ℛ': 'R', '𝒮': 'S', '𝒯': 'T', '𝒰': 'U',
+                '𝒱': 'V', '𝒲': 'W', '𝒳': 'X', '𝒴': 'Y', '𝒵': 'Z',
+              };
+
+              mmlFilters.add((args) => {
+                for (const n of args.data.getElementsByClassName('ltx_font_mathcaligraphic')) {
+                  n.classList.add('MJX-tex-calligraphic');
+                  const letter = script2latin[n.textContent];
+                  if (letter !== undefined) { n.textContent = letter; }
+                }
+              });
+
+              // adjust characters based on Unicode variation sequences
+              const replacements = {
+                // MathJax renders the empty set as the U+FE00 variant, so the plain character needs adjusting
+                '∅': { variant: 'variant' },
+                // MathJax renders script characters in rounded style, which is fine for no variation and U+FE00
+                '𝒜\xFE00': { text: 'A', variant: 'tex-calligraphic' },
+                'ℬ\xFE00': { text: 'B', variant: 'tex-calligraphic' },
+                '𝒞\xFE00': { text: 'C', variant: 'tex-calligraphic' },
+                '𝒟\xFE00': { text: 'D', variant: 'tex-calligraphic' },
+                'ℰ\xFE00': { text: 'E', variant: 'tex-calligraphic' },
+                'ℱ\xFE00': { text: 'F', variant: 'tex-calligraphic' },
+                '𝒢\xFE00': { text: 'G', variant: 'tex-calligraphic' },
+                'ℋ\xFE00': { text: 'H', variant: 'tex-calligraphic' },
+                'ℐ\xFE00': { text: 'I', variant: 'tex-calligraphic' },
+                '𝒥\xFE00': { text: 'J', variant: 'tex-calligraphic' },
+                '𝒦\xFE00': { text: 'K', variant: 'tex-calligraphic' },
+                'ℒ\xFE00': { text: 'L', variant: 'tex-calligraphic' },
+                'ℳ\xFE00': { text: 'M', variant: 'tex-calligraphic' },
+                '𝒩\xFE00': { text: 'N', variant: 'tex-calligraphic' },
+                '𝒪\xFE00': { text: 'O', variant: 'tex-calligraphic' },
+                '𝒫\xFE00': { text: 'P', variant: 'tex-calligraphic' },
+                '𝒬\xFE00': { text: 'Q', variant: 'tex-calligraphic' },
+                'ℛ\xFE00': { text: 'R', variant: 'tex-calligraphic' },
+                '𝒮\xFE00': { text: 'S', variant: 'tex-calligraphic' },
+                '𝒯\xFE00': { text: 'T', variant: 'tex-calligraphic' },
+                '𝒰\xFE00': { text: 'U', variant: 'tex-calligraphic' },
+                '𝒱\xFE00': { text: 'V', variant: 'tex-calligraphic' },
+                '𝒲\xFE00': { text: 'W', variant: 'tex-calligraphic' },
+                '𝒳\xFE00': { text: 'X', variant: 'tex-calligraphic' },
+                '𝒴\xFE00': { text: 'Y', variant: 'tex-calligraphic' },
+                '𝒵\xFE00': { text: 'Z', variant: 'tex-calligraphic' }
+              };
+
+              mmlFilters.add((args) => {
+                let nodes = document.evaluate('.//m:mi | .//m:mn | .//m:mo | .//m:ms', args.data,
+                  () => 'http://www.w3.org/1998/Math/MathML', XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE);
+                for (let i = 0; i < nodes.snapshotLength; i++) {
+                  const n = nodes.snapshotItem(i);
+                  const repl = replacements[n.innerHTML];
+                  if (repl !== undefined) {
+                    const variant = repl['variant'];
+                    const text = repl['text'];
+                    if (variant !== undefined) { n.classList.add('MJX-' + variant); n.removeAttribute('mathvariant'); }
+                    if (text !== undefined) { n.innerHTML = text; }
+                  }
+                }
+              });
+            }
+          }
+        };
+      </script>
+<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js"></script>
+<script type="text/javascript">
+                gitbook.require(["gitbook"], function(gitbook) {
+                gitbook.start({
+                  "fontsettings": {
+                    "theme": "white",
+                    "family": "sans",
+                    "size": 2
+                  },
+                  "download": [ [ "Notas_de_aula.pdf", "PDF" ], ],
+                  "search": {
+                    "engine": "fuse"
+                  },
+                  "toc": {
+                    "collapse": "none"
+                  }
+                });
+              });
+            </script>
+</body>
+
+</html>

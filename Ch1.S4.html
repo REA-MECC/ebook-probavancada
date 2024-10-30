@@ -1,0 +1,331 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>1.4 Elementos aleatórios ‣ Capítulo 1 Fundamentos ‣ Notas de aula: Probabilidade I</title>
+<!--Generated on Tue Aug 27 13:34:01 2024 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
+<style>:root { --bml-ltx-font-size: 10; }</style>
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-table.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-search.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-bookdown.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-fontsettings.css" type="text/css">
+<link rel="stylesheet" href="ltx-book.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook,plain.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook.css" type="text/css">
+<link rel="stylesheet" href="bmluser/colors.gitbook-Notas_de_aula.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6"></script>
+<link rel="up" href="Ch1.html" title="Capítulo 1 Fundamentos ‣ Notas de aula: Probabilidade I">
+<link rel="up up" href="index.html" title="Notas de aula: Probabilidade I">
+<link rel="start" href="index.html" title="Notas de aula: Probabilidade I">
+<link rel="prev" href="Ch1.S3.html" title="1.3 Sistemas 𝜆-𝜋 ‣ Capítulo 1 Fundamentos ‣ Notas de aula: Probabilidade I">
+<link rel="next" href="Ch1.Sx1.html" title="Tópico: O paradoxo de Bertrand ‣ Capítulo 1 Fundamentos ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch1.S1.html" title="1.1 Espaços mensuráveis ‣ Capítulo 1 Fundamentos ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch1.S2.html" title="1.2 Espaços de probabilidade ‣ Capítulo 1 Fundamentos ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch1.S3.html" title="1.3 Sistemas 𝜆-𝜋 ‣ Capítulo 1 Fundamentos ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch1.Sx1.html" title="Tópico: O paradoxo de Bertrand ‣ Capítulo 1 Fundamentos ‣ Notas de aula: Probabilidade I">
+<link rel="chapter" href="Chx1.html" title="Licença ‣ Notas de aula: Probabilidade I">
+<link rel="chapter" href="Chx2.html" title="Contribuições ‣ Notas de aula: Probabilidade I">
+<link rel="chapter" href="Ch1.html" title="Capítulo 1 Fundamentos ‣ Notas de aula: Probabilidade I">
+<link rel="chapter" href="Ch2.html" title="Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I">
+<link rel="chapter" href="Ch3.html" title="Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I">
+<link rel="chapter" href="Ch4.html" title="Capítulo 4 Esperança condicional ‣ Notas de aula: Probabilidade I">
+<link rel="chapter" href="Ch5.html" title="Capítulo 5 Soluções de exercícios ‣ Notas de aula: Probabilidade I">
+<link rel="bibliography" href="bib.html" title="Referências ‣ Notas de aula: Probabilidade I">
+<link rel="index" href="idx.html" title="Índice Remissivo ‣ Notas de aula: Probabilidade I">
+<meta name="keywords" lang="pt-BR" content=", , distribuição, elemento aleatório, variável aleatória">
+</head>
+<body>
+<div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+<a href="#bml-main-content" tabindex="0" class="bml-skip-to-content">Skip to content.</a>
+<div class="book-summary"><nav class="ltx_page_navbar">
+<ul class="ltx_toclist summary">
+<li>
+<a href="index.html" title="" class="ltx_ref" rel="start">Notas de aula: Probabilidade I</a>
+</li>
+<li class="divider">
+<li data-level="" data-path="Chx1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Chx1.html" title="In Notas de aula: Probabilidade I" class="ltx_ref">Licença</a></li>
+<li data-level="" data-path="Chx2.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Chx2.html" title="In Notas de aula: Probabilidade I" class="ltx_ref">Contribuições</a></li>
+<li data-level="1" data-path="Ch1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter ">
+<a href="Ch1.html" title="In Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1 </span></b>Fundamentos</a>
+<ol class="ltx_toclist ltx_toclist_chapter">
+<li data-level="1.1" data-path="Ch1.S1.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch1.S1.html" title="In Capítulo 1 Fundamentos ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1.1 </span></b>Espaços mensuráveis</a></li>
+<li data-level="1.2" data-path="Ch1.S2.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch1.S2.html" title="In Capítulo 1 Fundamentos ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1.2 </span></b>Espaços de probabilidade</a></li>
+<li data-level="1.3" data-path="Ch1.S3.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch1.S3.html" title="In Capítulo 1 Fundamentos ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1.3 </span></b>Sistemas <math class="ltx_Math" alttext="\lambda" display="inline"><semantics><mi>λ</mi><annotation encoding="application/x-tex">\lambda</annotation></semantics></math>-<math class="ltx_Math" alttext="\pi" display="inline"><semantics><mi>π</mi><annotation encoding="application/x-tex">\pi</annotation></semantics></math></a></li>
+<li data-level="1.4" data-path="" class="ltx_tocentry ltx_tocentry_section ltx_ref_self  chapter active">
+<a href="" title="In Capítulo 1 Fundamentos ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1.4 </span></b>Elementos aleatórios</a>
+<ol class="ltx_toclist ltx_toclist_section">
+<li data-level="1.4.1" data-path="" class="ltx_tocentry ltx_tocentry_subsection  chapter "><a href="#SS1" title="In 1.4 Elementos aleatórios ‣ Capítulo 1 Fundamentos ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1.4.1 </span></b>Distribuição de elementos aleatórios</a></li>
+</ol>
+</li>
+<li data-level="" data-path="Ch1.Sx1.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch1.Sx1.html" title="In Capítulo 1 Fundamentos ‣ Notas de aula: Probabilidade I" class="ltx_ref">Tópico: O paradoxo de Bertrand</a></li>
+</ol>
+</li>
+<li data-level="2" data-path="Ch2.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch2.html" title="In Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2 </span></b>Construção de espaços de probabilidade</a></li>
+<li data-level="3" data-path="Ch3.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch3.html" title="In Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3 </span></b>Somas de variáveis independentes</a></li>
+<li data-level="4" data-path="Ch4.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch4.html" title="In Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4 </span></b>Esperança condicional</a></li>
+<li data-level="5" data-path="Ch5.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch5.html" title="In Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">5 </span></b>Soluções de exercícios</a></li>
+<li data-level="" data-path="bib.html" class="ltx_tocentry ltx_tocentry_bibliography  chapter "><a href="bib.html" title="In Notas de aula: Probabilidade I" class="ltx_ref">Referências</a></li>
+<li data-level="" data-path="idx.html" class="ltx_tocentry ltx_tocentry_index  chapter "><a href="idx.html" title="In Notas de aula: Probabilidade I" class="ltx_ref">Índice Remissivo</a></li>
+</ul>
+</nav></div>
+<div class="ltx_page_main book-body fixed">
+<div class="body-inner">
+<div class="book-header fixed" role="navigation"><h1>Elementos aleatórios</h1></div>
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="ltx_page_content page-inner" id="bml-main-content">
+<section class="ltx_section normal" lang="pt-BR">
+<div class="section level1">
+
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section header-section-number">1.4</span> Elementos aleatórios</h1>
+
+<div id="p1" class="ltx_para">
+<p class="ltx_p">Muitas vezes não estamos interessados no resultado exato do nosso experimento aleatório, mas sim em uma determinada medição ou função de <math id="p1.m1" class="ltx_Math" alttext="\omega\in\Omega" display="inline"><semantics><mrow><mi>ω</mi><mo>∈</mo><mi mathvariant="normal">Ω</mi></mrow><annotation encoding="application/x-tex">\omega\in\Omega</annotation></semantics></math>.
+Por exemplo, no caso do Exemplo <a href="Ch1.S1.html" title="1.1 Espaços mensuráveis ‣ Capítulo 1 Fundamentos ‣ Notas de aula: Probabilidade I" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.1</span></a> <math id="p1.m2" class="ltx_math_unparsed" alttext="c)" display="inline"><semantics><mrow><mi>c</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">c)</annotation></semantics></math>, talvez não nos interesse toda a função <math id="p1.m3" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>, mas apenas o seu valor no fim do dia <math id="p1.m4" class="ltx_Math" alttext="f(1)" display="inline"><semantics><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">f(1)</annotation></semantics></math>.
+Essas medições são ditas elementos aleatórios que definimos à seguir.</p>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">Seja <math id="p2.m1" class="ltx_Math" alttext="(E,\mathcal{A})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi>E</mi><mo>,</mo><mi class="ltx_font_mathcaligraphic">𝒜</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(E,\mathcal{A})</annotation></semantics></math> um espaço mensurável.
+Nesse caso, se <math id="p2.m2" class="ltx_Math" alttext="X:\Omega\to E" display="inline"><semantics><mrow><mi>X</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi mathvariant="normal">Ω</mi><mo stretchy="false">→</mo><mi>E</mi></mrow></mrow><annotation encoding="application/x-tex">X:\Omega\to E</annotation></semantics></math> é uma função <math id="p2.m3" class="ltx_Math" alttext="(\mathcal{F},\mathcal{A})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>,</mo><mi class="ltx_font_mathcaligraphic">𝒜</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(\mathcal{F},\mathcal{A})</annotation></semantics></math>-mensurável, dizemos que <math id="p2.m4" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> é um <em class="ltx_emph ltx_font_italic">elemento aleatório</em>  em <math id="p2.m5" class="ltx_Math" alttext="(\Omega,\mathcal{F})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">Ω</mi><mo>,</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(\Omega,\mathcal{F})</annotation></semantics></math> tomando valores em <math id="p2.m6" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math>, ou um <math id="p2.m7" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math>-elemento aleatório.</p>
+</div>
+<div id="p3" class="ltx_para">
+<span class="ltx_ERROR undefined">{example}</span>
+<p class="ltx_p">Consideramos os casos</p>
+<ol id="I1" class="ltx_enumerate">
+<li id="I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"> a)</span><div id="I1.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i1.p1.m1" class="ltx_Math" alttext="X:\Omega\to\mathbb{R}" display="inline"><semantics><mrow><mi>X</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi mathvariant="normal">Ω</mi><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">X:\Omega\to\mathbb{R}</annotation></semantics></math> mensurável é dita variável aleatória. </p>
+</div>
+</li>
+<li id="I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"> b)</span><div id="I1.i2.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i2.p1.m1" class="ltx_Math" alttext="X:\Omega\to\mathbb{R}^{d}" display="inline"><semantics><mrow><mi>X</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi mathvariant="normal">Ω</mi><mo stretchy="false">→</mo><msup><mi>ℝ</mi><mi>d</mi></msup></mrow></mrow><annotation encoding="application/x-tex">X:\Omega\to\mathbb{R}^{d}</annotation></semantics></math> mensurável é dito vetor aleatório (<math id="I1.i2.p1.m2" class="ltx_Math" alttext="d" display="inline"><semantics><mi>d</mi><annotation encoding="application/x-tex">d</annotation></semantics></math>-dimensional).</p>
+</div>
+</li>
+<li id="I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"> c)</span><div id="I1.i3.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i3.p1.m1" class="ltx_Math" alttext="X:\Omega\to C[0,1]" display="inline"><semantics><mrow><mi>X</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi mathvariant="normal">Ω</mi><mo stretchy="false">→</mo><mrow><mi>C</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mn>0,1</mn><mo stretchy="false">]</mo></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">X:\Omega\to C[0,1]</annotation></semantics></math> mensurável é dita função aleatória.</p>
+</div>
+</li>
+</ol>
+<p class="ltx_p">Seguindo a motivação do Exemplo <a href="Ch1.S1.html" title="1.1 Espaços mensuráveis ‣ Capítulo 1 Fundamentos ‣ Notas de aula: Probabilidade I" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.1</span></a> <math id="p3.m1" class="ltx_math_unparsed" alttext="c)" display="inline"><semantics><mrow><mi>c</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">c)</annotation></semantics></math>, poderia ser que, por exemplo, estivéssemos interessados apenas na variável aleatória <math id="p3.m2" class="ltx_Math" alttext="X:\Omega_{3}\to\mathbb{R}" display="inline"><semantics><mrow><mi>X</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><msub><mi mathvariant="normal">Ω</mi><mn>3</mn></msub><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">X:\Omega_{3}\to\mathbb{R}</annotation></semantics></math> dada por <math id="p3.m3" class="ltx_Math" alttext="X(f)=f(1)" display="inline"><semantics><mrow><mrow><mi>X</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>f</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">X(f)=f(1)</annotation></semantics></math>.</p>
+</div>
+<div id="p4" class="ltx_para">
+<span class="ltx_ERROR undefined">{exercise}</span>
+<p class="ltx_p">Mostre que <math id="p4.m1" class="ltx_Math" alttext="X:\Omega_{3}\to\mathbb{R}" display="inline"><semantics><mrow><mi>X</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><msub><mi mathvariant="normal">Ω</mi><mn>3</mn></msub><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">X:\Omega_{3}\to\mathbb{R}</annotation></semantics></math> dada por <math id="p4.m2" class="ltx_Math" alttext="X(f)=f(1)" display="inline"><semantics><mrow><mrow><mi>X</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>f</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">X(f)=f(1)</annotation></semantics></math> é uma variável aleatória.</p>
+</div>
+<div id="p5" class="ltx_para">
+<p class="ltx_p">Citando Kingman em seu livro Poisson Processes: “<em class="ltx_emph ltx_font_italic">a random elephant is a function from <math id="p5.m1" class="ltx_Math" alttext="\Omega" display="inline"><semantics><mi mathvariant="normal">Ω</mi><annotation encoding="application/x-tex">\Omega</annotation></semantics></math> into a suitable space of elephants.</em>”</p>
+</div>
+<div id="p6" class="ltx_para">
+<p class="ltx_p">Relembrando a nossa notação: <math id="p6.m1" class="ltx_Math" alttext="P[X\in A]=P(\{\omega\in\Omega;X(\omega)\in A\})" display="inline"><semantics><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><mi>X</mi><mo>∈</mo><mi>A</mi></mrow><mo stretchy="false">]</mo></mrow></mrow><mo>=</mo><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mo stretchy="false">{</mo><mrow><mrow><mi>ω</mi><mo>∈</mo><mi mathvariant="normal">Ω</mi></mrow><mo>;</mo><mrow><mrow><mi>X</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ω</mi><mo stretchy="false">)</mo></mrow></mrow><mo>∈</mo><mi>A</mi></mrow></mrow><mo stretchy="false">}</mo></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">P[X\in A]=P(\{\omega\in\Omega;X(\omega)\in A\})</annotation></semantics></math>.</p>
+</div>
+<div id="p7" class="ltx_para">
+<span class="ltx_ERROR undefined">{proposition}</span>
+<p class="ltx_p">Seja <math id="p7.m1" class="ltx_Math" alttext="X:\Omega\to E" display="inline"><semantics><mrow><mi>X</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi mathvariant="normal">Ω</mi><mo stretchy="false">→</mo><mi>E</mi></mrow></mrow><annotation encoding="application/x-tex">X:\Omega\to E</annotation></semantics></math> onde <math id="p7.m2" class="ltx_Math" alttext="(E,\mathcal{A})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi>E</mi><mo>,</mo><mi class="ltx_font_mathcaligraphic">𝒜</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(E,\mathcal{A})</annotation></semantics></math> é um espaço mensurável com <math id="p7.m3" class="ltx_Math" alttext="\mathcal{A}=\sigma(\mathcal{G})" display="inline"><semantics><mrow><mi class="ltx_font_mathcaligraphic">𝒜</mi><mo>=</mo><mrow><mi>σ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi class="ltx_font_mathcaligraphic">𝒢</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\mathcal{A}=\sigma(\mathcal{G})</annotation></semantics></math>.
+Então para verificar que <math id="p7.m4" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> é um elemento aleatório, basta provar que <math id="p7.m5" class="ltx_Math" alttext="X^{-1}(G)\in\mathcal{F}" display="inline"><semantics><mrow><mrow><msup><mi>X</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>G</mi><mo stretchy="false">)</mo></mrow></mrow><mo>∈</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi></mrow><annotation encoding="application/x-tex">X^{-1}(G)\in\mathcal{F}</annotation></semantics></math> para todo <math id="p7.m6" class="ltx_Math" alttext="G\in\mathcal{G}" display="inline"><semantics><mrow><mi>G</mi><mo>∈</mo><mi class="ltx_font_mathcaligraphic">𝒢</mi></mrow><annotation encoding="application/x-tex">G\in\mathcal{G}</annotation></semantics></math>.</p>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demonstração.</h6>
+<div id="p8" class="ltx_para">
+<p class="ltx_p">Teoria da Medida.
+∎</p>
+</div>
+</div>
+<div id="p9" class="ltx_para">
+<span class="ltx_ERROR undefined">{example}</span>
+<p class="ltx_p">Se <math id="p9.m1" class="ltx_Math" alttext="\Omega" display="inline"><semantics><mi mathvariant="normal">Ω</mi><annotation encoding="application/x-tex">\Omega</annotation></semantics></math> e <math id="p9.m2" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math> são espaços topológicos dotados das correspondentes <math id="p9.m3" class="ltx_Math" alttext="\sigma" display="inline"><semantics><mi>σ</mi><annotation encoding="application/x-tex">\sigma</annotation></semantics></math>-álgebras de Borel, então toda função contínua é um <math id="p9.m4" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math>-elemento aleatório.</p>
+</div>
+<section id="SS1" class="ltx_subsection normal">
+<div class="section level2">
+
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection header-section-number">1.4.1</span> Distribuição de elementos aleatórios</h2>
+
+<div id="SS1.p1" class="ltx_para">
+<span class="ltx_ERROR undefined">{definition}</span>
+<p class="ltx_p">Se <math id="SS1.p1.m1" class="ltx_Math" alttext="X:\Omega\to E" display="inline"><semantics><mrow><mi>X</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi mathvariant="normal">Ω</mi><mo stretchy="false">→</mo><mi>E</mi></mrow></mrow><annotation encoding="application/x-tex">X:\Omega\to E</annotation></semantics></math> é um elemento aleatório e <math id="SS1.p1.m2" class="ltx_Math" alttext="\Omega" display="inline"><semantics><mi mathvariant="normal">Ω</mi><annotation encoding="application/x-tex">\Omega</annotation></semantics></math> é dotado de uma probabilidade <math id="SS1.p1.m3" class="ltx_Math" alttext="P" display="inline"><semantics><mi>P</mi><annotation encoding="application/x-tex">P</annotation></semantics></math>, então denotamos por <math id="SS1.p1.m4" class="ltx_Math" alttext="X_{*}P" display="inline"><semantics><mrow><msub><mi>X</mi><mo>∗</mo></msub><mo>⁢</mo><mi>P</mi></mrow><annotation encoding="application/x-tex">X_{*}P</annotation></semantics></math>,
+a chamada <em class="ltx_emph ltx_font_italic">distribuição de <math id="SS1.p1.m5" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math></em> , a medida de probabilidade</p>
+<div id="Ch1.E25" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch1.E25.m1" class="ltx_Math" alttext="X_{*}P(A):=P\big{(}\{\omega\in\Omega;X(\omega)\in A\}\big{)}=P[X\in A]." display="block"><semantics><mrow><mrow><mrow><msub><mi>X</mi><mo>∗</mo></msub><mo>⁢</mo><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo rspace="0.278em" stretchy="false">)</mo></mrow></mrow><mo rspace="0.278em">:=</mo><mrow><mi>P</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mo stretchy="false">{</mo><mrow><mrow><mi>ω</mi><mo>∈</mo><mi mathvariant="normal">Ω</mi></mrow><mo>;</mo><mrow><mrow><mi>X</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ω</mi><mo stretchy="false">)</mo></mrow></mrow><mo>∈</mo><mi>A</mi></mrow></mrow><mo stretchy="false">}</mo></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo>=</mo><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><mi>X</mi><mo>∈</mo><mi>A</mi></mrow><mo stretchy="false">]</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">X_{*}P(A):=P\big{(}\{\omega\in\Omega;X(\omega)\in A\}\big{)}=P[X\in A].</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(1.25)</span>
+              
+              
+            
+</div>
+<p class="ltx_p">no espaço mensurável <math id="SS1.p1.m6" class="ltx_Math" alttext="(E,\mathcal{A})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi>E</mi><mo>,</mo><mi class="ltx_font_mathcaligraphic">𝒜</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(E,\mathcal{A})</annotation></semantics></math>.</p>
+</div>
+<div id="SS1.p2" class="ltx_para">
+<span class="ltx_ERROR undefined">{remark}</span>
+<p class="ltx_p">Essa definição corresponde com a de <span class="ltx_text ltx_font_italic">medida imagem</span> vista no curso de integração que tem um papel ainda mais importante em probabilidade.</p>
+</div>
+<div id="SS1.p3" class="ltx_para">
+<p class="ltx_p">Fica como exercício verificar que <math id="SS1.p3.m1" class="ltx_Math" alttext="X_{*}P" display="inline"><semantics><mrow><msub><mi>X</mi><mo>∗</mo></msub><mo>⁢</mo><mi>P</mi></mrow><annotation encoding="application/x-tex">X_{*}P</annotation></semantics></math> é de fato uma probabilidade em <math id="SS1.p3.m2" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math>.</p>
+</div>
+<div id="SS1.p4" class="ltx_para">
+<span class="ltx_ERROR undefined">{exercise}</span>
+<p class="ltx_p">Seja <math id="SS1.p4.m1" class="ltx_Math" alttext="X:[0,1]\to\{0,1\}" display="inline"><semantics><mrow><mi>X</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mrow><mo stretchy="false">[</mo><mn>0,1</mn><mo stretchy="false">]</mo></mrow><mo stretchy="false">→</mo><mrow><mo stretchy="false">{</mo><mn>0,1</mn><mo stretchy="false">}</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">X:[0,1]\to\{0,1\}</annotation></semantics></math> dada por <math id="SS1.p4.m2" class="ltx_Math" alttext="X(\omega)=\1_{A}(\omega)" display="inline"><semantics><mrow><mrow><mi>X</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ω</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msub><merror class="ltx_ERROR undefined undefined"><mtext>\1</mtext></merror><mi>A</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ω</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">X(\omega)=\1_{A}(\omega)</annotation></semantics></math>.
+Nesse caso, mostre que <math id="SS1.p4.m3" class="ltx_Math" alttext="X_{*}P=\Ber(p)" display="inline"><semantics><mrow><mrow><msub><mi>X</mi><mo>∗</mo></msub><mo>⁢</mo><mi>P</mi></mrow><mo>=</mo><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\Ber</mtext></merror><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">X_{*}P=\Ber(p)</annotation></semantics></math> para algum <math id="SS1.p4.m4" class="ltx_Math" alttext="p\in[0,1]" display="inline"><semantics><mrow><mi>p</mi><mo>∈</mo><mrow><mo stretchy="false">[</mo><mn>0,1</mn><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">p\in[0,1]</annotation></semantics></math>.
+Calcule o valor de <math id="SS1.p4.m5" class="ltx_Math" alttext="p" display="inline"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>.</p>
+</div>
+<div id="SS1.p5" class="ltx_para">
+<p class="ltx_p">Duas notações importantes nesse contexto são:</p>
+<ol id="I2" class="ltx_enumerate">
+<li id="I2.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"> a)</span><div id="I2.i1.p1" class="ltx_para">​<p class="ltx_p">Sejam <math id="I2.i1.p1.m1" class="ltx_Math" alttext="(\Omega,\mathcal{F},P)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">Ω</mi><mo>,</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>,</mo><mi>P</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(\Omega,\mathcal{F},P)</annotation></semantics></math> e <math id="I2.i1.p1.m2" class="ltx_Math" alttext="(\Omega^{\prime},\mathcal{F}^{\prime},P^{\prime})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><msup><mi mathvariant="normal">Ω</mi><mo>′</mo></msup><mo>,</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup><mo>,</mo><msup><mi>P</mi><mo>′</mo></msup><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(\Omega^{\prime},\mathcal{F}^{\prime},P^{\prime})</annotation></semantics></math> dois espaços de probabilidade e <math id="I2.i1.p1.m3" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> e <math id="I2.i1.p1.m4" class="ltx_Math" alttext="Y" display="inline"><semantics><mi>Y</mi><annotation encoding="application/x-tex">Y</annotation></semantics></math> dois elementos aleatórios.
+Dizemos que <math id="I2.i1.p1.m5" class="ltx_Math" alttext="X\stackrel{{\scriptstyle d}}{{=}}Y" display="inline"><semantics><mrow><mi>X</mi><mover><mo>=</mo><mi>d</mi></mover><mi>Y</mi></mrow><annotation encoding="application/x-tex">X\stackrel{{\scriptstyle d}}{{=}}Y</annotation></semantics></math>,  quando <math id="I2.i1.p1.m7" class="ltx_Math" alttext="X_{*}P=Y_{*}P^{\prime}" display="inline"><semantics><mrow><mrow><msub><mi>X</mi><mo>∗</mo></msub><mo>⁢</mo><mi>P</mi></mrow><mo>=</mo><mrow><msub><mi>Y</mi><mo>∗</mo></msub><mo>⁢</mo><msup><mi>P</mi><mo>′</mo></msup></mrow></mrow><annotation encoding="application/x-tex">X_{*}P=Y_{*}P^{\prime}</annotation></semantics></math>.
+Note que <math id="I2.i1.p1.m8" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> e <math id="I2.i1.p1.m9" class="ltx_Math" alttext="Y" display="inline"><semantics><mi>Y</mi><annotation encoding="application/x-tex">Y</annotation></semantics></math> nem ao menos precisam pertencer ao mesmo espaço de probabilidade para dizermos que são <em class="ltx_emph ltx_font_italic">igualmente distribuídos</em>, mas precisam ser elementos aleatórios de mesmo tipo (ou seja, possuir o mesmo contradomínio).</p>
+</div>
+</li>
+<li id="I2.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"> b)</span><div id="I2.i2.p1" class="ltx_para">​<p class="ltx_p">Escrevemos <math id="I2.i2.p1.m1" class="ltx_Math" alttext="X\distr\mu" display="inline"><semantics><mrow><mi>X</mi><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\distr</mtext></merror><mo>⁢</mo><mi>μ</mi></mrow><annotation encoding="application/x-tex">X\distr\mu</annotation></semantics></math>,  que lê-se <em class="ltx_emph ltx_font_italic"><math id="I2.i2.p1.m3" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> é distribuída como <math id="I2.i2.p1.m4" class="ltx_Math" alttext="\mu" display="inline"><semantics><mi>μ</mi><annotation encoding="application/x-tex">\mu</annotation></semantics></math></em>, onde <math id="I2.i2.p1.m5" class="ltx_Math" alttext="\mu" display="inline"><semantics><mi>μ</mi><annotation encoding="application/x-tex">\mu</annotation></semantics></math> é uma probabilidade em <math id="I2.i2.p1.m6" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math>, caso <math id="I2.i2.p1.m7" class="ltx_Math" alttext="X_{*}P=\mu" display="inline"><semantics><mrow><mrow><msub><mi>X</mi><mo>∗</mo></msub><mo>⁢</mo><mi>P</mi></mrow><mo>=</mo><mi>μ</mi></mrow><annotation encoding="application/x-tex">X_{*}P=\mu</annotation></semantics></math>.</p>
+</div>
+</li>
+</ol>
+</div>
+<div id="SS1.p6" class="ltx_para">
+<span class="ltx_ERROR undefined">{exercise}</span>
+<p class="ltx_p">Sejam <math id="SS1.p6.m1" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> e <math id="SS1.p6.m2" class="ltx_Math" alttext="Y" display="inline"><semantics><mi>Y</mi><annotation encoding="application/x-tex">Y</annotation></semantics></math> variáveis aleatórias tais que <math id="SS1.p6.m3" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> é nula quase certamente.
+Mostre que <math id="SS1.p6.m4" class="ltx_Math" alttext="X+Y" display="inline"><semantics><mrow><mi>X</mi><mo>+</mo><mi>Y</mi></mrow><annotation encoding="application/x-tex">X+Y</annotation></semantics></math> tem a mesma distribuição de <math id="SS1.p6.m5" class="ltx_Math" alttext="Y" display="inline"><semantics><mi>Y</mi><annotation encoding="application/x-tex">Y</annotation></semantics></math>.</p>
+</div>
+<div id="SS1.p7" class="ltx_para">
+<p class="ltx_p">O exercício acima é bastante simples, mas o usaremos para fazer uma importante observação sobre como são enunciados tipicamente os resultados de probabilidade.</p>
+</div>
+<div id="SS1.p8" class="ltx_para">
+<p class="ltx_p">Raramente encontramos teoremas que explicitam qual é o espaço de probabilidades <math id="SS1.p8.m1" class="ltx_Math" alttext="\Omega" display="inline"><semantics><mi mathvariant="normal">Ω</mi><annotation encoding="application/x-tex">\Omega</annotation></semantics></math> em questão.
+Como no exercício acima, o contexto de um teorema frequentemente é dado apenas em termos de elementos aleatórios em <math id="SS1.p8.m2" class="ltx_Math" alttext="\Omega" display="inline"><semantics><mi mathvariant="normal">Ω</mi><annotation encoding="application/x-tex">\Omega</annotation></semantics></math> e de suas distribuições.
+Dessa forma, podemos utilizar o resultado em vários contextos diferentes, desde que possamos encontrar elementos aleatórios que satisfaçam as hipóteses.
+Com o tempo, passamos até mesmo a considerar menos relevante a escolha específica do espaço amostral, focando cada vez mais na distribuição de seus elementos aleatórios.</p>
+</div>
+<div class="ltx_pagination ltx_role_newpage"></div>
+</div>
+</section>
+</div>
+</section>
+</div>
+</div>
+</div>
+<a href="Ch1.S3.html" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a><a href="Ch1.Sx1.html" class="navigation navigation-next" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+</div>
+</div>
+<script src="bookml/gitbook/js/app.min.js"></script>
+<script src="bookml/gitbook/js/jquery.highlight.js"></script>
+<script src="bookml/gitbook/js/plugin-search.js"></script>
+<script src="bookml/gitbook/js/plugin-fontsettings.js"></script>
+<script src="bookml/gitbook/js/plugin-bookdown.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+        MathJax = {
+          startup: {
+            ready() {
+              // do not process equations disabled with \bmlDisableMathJax (code suggested by Davide P. Cervone)
+              class bmlFindMathML extends MathJax._.input.mathml.FindMathML.FindMathML {
+                processMath(set) {
+                  const adaptor = this.adaptor;
+                  for (const node of set.values()) {
+                    if (adaptor.hasClass(node, 'bml_disable_mathjax')) {
+                      set.delete(node);
+                    }
+                  }
+                  return super.processMath(set);
+                }
+              }
+
+              MathJax._.components.global.combineDefaults(MathJax.config, 'mml', {FindMathML: new bmlFindMathML()});
+
+              MathJax.startup.defaultReady();
+
+              // preproces MathML to make MathJax aware of certain LaTeXML and BookML additional info
+              const mmlFilters = MathJax.startup.input[0].mmlFilters;
+
+              // convert the LaTeXML calligraphic (chancery) annotation to a form MathJax understands
+              // since the corresponding Unicode characters render as script (rounded)
+              const script2latin = {
+                '𝒜': 'A', 'ℬ': 'B', '𝒞': 'C', '𝒟': 'D', 'ℰ': 'E', 'ℱ': 'F', '𝒢': 'G',
+                'ℋ': 'H', 'ℐ': 'I', '𝒥': 'J', '𝒦': 'K', 'ℒ': 'L', 'ℳ': 'M', '𝒩': 'N',
+                '𝒪': 'O', '𝒫': 'P', '𝒬': 'Q', 'ℛ': 'R', '𝒮': 'S', '𝒯': 'T', '𝒰': 'U',
+                '𝒱': 'V', '𝒲': 'W', '𝒳': 'X', '𝒴': 'Y', '𝒵': 'Z',
+              };
+
+              mmlFilters.add((args) => {
+                for (const n of args.data.getElementsByClassName('ltx_font_mathcaligraphic')) {
+                  n.classList.add('MJX-tex-calligraphic');
+                  const letter = script2latin[n.textContent];
+                  if (letter !== undefined) { n.textContent = letter; }
+                }
+              });
+
+              // adjust characters based on Unicode variation sequences
+              const replacements = {
+                // MathJax renders the empty set as the U+FE00 variant, so the plain character needs adjusting
+                '∅': { variant: 'variant' },
+                // MathJax renders script characters in rounded style, which is fine for no variation and U+FE00
+                '𝒜\xFE00': { text: 'A', variant: 'tex-calligraphic' },
+                'ℬ\xFE00': { text: 'B', variant: 'tex-calligraphic' },
+                '𝒞\xFE00': { text: 'C', variant: 'tex-calligraphic' },
+                '𝒟\xFE00': { text: 'D', variant: 'tex-calligraphic' },
+                'ℰ\xFE00': { text: 'E', variant: 'tex-calligraphic' },
+                'ℱ\xFE00': { text: 'F', variant: 'tex-calligraphic' },
+                '𝒢\xFE00': { text: 'G', variant: 'tex-calligraphic' },
+                'ℋ\xFE00': { text: 'H', variant: 'tex-calligraphic' },
+                'ℐ\xFE00': { text: 'I', variant: 'tex-calligraphic' },
+                '𝒥\xFE00': { text: 'J', variant: 'tex-calligraphic' },
+                '𝒦\xFE00': { text: 'K', variant: 'tex-calligraphic' },
+                'ℒ\xFE00': { text: 'L', variant: 'tex-calligraphic' },
+                'ℳ\xFE00': { text: 'M', variant: 'tex-calligraphic' },
+                '𝒩\xFE00': { text: 'N', variant: 'tex-calligraphic' },
+                '𝒪\xFE00': { text: 'O', variant: 'tex-calligraphic' },
+                '𝒫\xFE00': { text: 'P', variant: 'tex-calligraphic' },
+                '𝒬\xFE00': { text: 'Q', variant: 'tex-calligraphic' },
+                'ℛ\xFE00': { text: 'R', variant: 'tex-calligraphic' },
+                '𝒮\xFE00': { text: 'S', variant: 'tex-calligraphic' },
+                '𝒯\xFE00': { text: 'T', variant: 'tex-calligraphic' },
+                '𝒰\xFE00': { text: 'U', variant: 'tex-calligraphic' },
+                '𝒱\xFE00': { text: 'V', variant: 'tex-calligraphic' },
+                '𝒲\xFE00': { text: 'W', variant: 'tex-calligraphic' },
+                '𝒳\xFE00': { text: 'X', variant: 'tex-calligraphic' },
+                '𝒴\xFE00': { text: 'Y', variant: 'tex-calligraphic' },
+                '𝒵\xFE00': { text: 'Z', variant: 'tex-calligraphic' }
+              };
+
+              mmlFilters.add((args) => {
+                let nodes = document.evaluate('.//m:mi | .//m:mn | .//m:mo | .//m:ms', args.data,
+                  () => 'http://www.w3.org/1998/Math/MathML', XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE);
+                for (let i = 0; i < nodes.snapshotLength; i++) {
+                  const n = nodes.snapshotItem(i);
+                  const repl = replacements[n.innerHTML];
+                  if (repl !== undefined) {
+                    const variant = repl['variant'];
+                    const text = repl['text'];
+                    if (variant !== undefined) { n.classList.add('MJX-' + variant); n.removeAttribute('mathvariant'); }
+                    if (text !== undefined) { n.innerHTML = text; }
+                  }
+                }
+              });
+            }
+          }
+        };
+      </script>
+<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js"></script>
+<script type="text/javascript">
+                gitbook.require(["gitbook"], function(gitbook) {
+                gitbook.start({
+                  "fontsettings": {
+                    "theme": "white",
+                    "family": "sans",
+                    "size": 2
+                  },
+                  "download": [ [ "Notas_de_aula.pdf", "PDF" ], ],
+                  "search": {
+                    "engine": "fuse"
+                  },
+                  "toc": {
+                    "collapse": "none"
+                  }
+                });
+              });
+            </script>
+</body>
+
+</html>

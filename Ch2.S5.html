@@ -1,0 +1,574 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>2.5 Independência ‣ Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I</title>
+<!--Generated on Tue Aug 27 13:34:01 2024 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
+<style>:root { --bml-ltx-font-size: 10; }</style>
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-table.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-search.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-bookdown.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-fontsettings.css" type="text/css">
+<link rel="stylesheet" href="ltx-book.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook,plain.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook.css" type="text/css">
+<link rel="stylesheet" href="bmluser/colors.gitbook-Notas_de_aula.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6"></script>
+<link rel="up" href="Ch2.html" title="Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I">
+<link rel="up up" href="index.html" title="Notas de aula: Probabilidade I">
+<link rel="start" href="index.html" title="Notas de aula: Probabilidade I">
+<link rel="prev" href="Ch2.S4.html" title="2.4 Espaços produto finito ‣ Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I">
+<link rel="next" href="Ch2.Sx2.html" title="Tópico: Lei dos pequenos números ‣ Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch2.S1.html" title="2.1 Caso enumerável ‣ Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch2.Sx1.html" title="Tópico: Método Probabilístico ‣ Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch2.S2.html" title="2.2 Caso absolutamente contínuo ‣ Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch2.S3.html" title="2.3 Funções acumuladas de distribuição ‣ Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch2.S4.html" title="2.4 Espaços produto finito ‣ Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch2.Sx2.html" title="Tópico: Lei dos pequenos números ‣ Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch2.S6.html" title="2.6 Espaços produto infinito ‣ Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch2.Sx3.html" title="Tópico: Percolação ‣ Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch2.S7.html" title="2.7 Distribuições conjuntas ‣ Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch2.S8.html" title="2.8 Probabilidades condicionais ‣ Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch2.S9.html" title="2.9 Núcleos de transição ‣ Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch2.S10.html" title="2.10 Espaços canônicos ‣ Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch2.Sx4.html" title="Tópico: Cadeias de Markov ‣ Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch2.Sx5.html" title="Tópico: Urna de Pólya ‣ Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I">
+<link rel="chapter" href="Chx1.html" title="Licença ‣ Notas de aula: Probabilidade I">
+<link rel="chapter" href="Chx2.html" title="Contribuições ‣ Notas de aula: Probabilidade I">
+<link rel="chapter" href="Ch1.html" title="Capítulo 1 Fundamentos ‣ Notas de aula: Probabilidade I">
+<link rel="chapter" href="Ch2.html" title="Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I">
+<link rel="chapter" href="Ch3.html" title="Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I">
+<link rel="chapter" href="Ch4.html" title="Capítulo 4 Esperança condicional ‣ Notas de aula: Probabilidade I">
+<link rel="chapter" href="Ch5.html" title="Capítulo 5 Soluções de exercícios ‣ Notas de aula: Probabilidade I">
+<link rel="bibliography" href="bib.html" title="Referências ‣ Notas de aula: Probabilidade I">
+<link rel="index" href="idx.html" title="Índice Remissivo ‣ Notas de aula: Probabilidade I">
+<meta name="keywords" lang="pt-BR" content="de , de elementos, de eventos, independência">
+</head>
+<body>
+<div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+<a href="#bml-main-content" tabindex="0" class="bml-skip-to-content">Skip to content.</a>
+<div class="book-summary"><nav class="ltx_page_navbar">
+<ul class="ltx_toclist summary">
+<li>
+<a href="index.html" title="" class="ltx_ref" rel="start">Notas de aula: Probabilidade I</a>
+</li>
+<li class="divider">
+<li data-level="" data-path="Chx1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Chx1.html" title="In Notas de aula: Probabilidade I" class="ltx_ref">Licença</a></li>
+<li data-level="" data-path="Chx2.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Chx2.html" title="In Notas de aula: Probabilidade I" class="ltx_ref">Contribuições</a></li>
+<li data-level="1" data-path="Ch1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch1.html" title="In Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1 </span></b>Fundamentos</a></li>
+<li data-level="2" data-path="Ch2.html" class="ltx_tocentry ltx_tocentry_chapter  chapter ">
+<a href="Ch2.html" title="In Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2 </span></b>Construção de espaços de probabilidade</a>
+<ol class="ltx_toclist ltx_toclist_chapter">
+<li data-level="2.1" data-path="Ch2.S1.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch2.S1.html" title="In Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2.1 </span></b>Caso enumerável</a></li>
+<li data-level="" data-path="Ch2.Sx1.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch2.Sx1.html" title="In Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I" class="ltx_ref">Tópico: Método Probabilístico</a></li>
+<li data-level="2.2" data-path="Ch2.S2.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch2.S2.html" title="In Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2.2 </span></b>Caso absolutamente contínuo</a></li>
+<li data-level="2.3" data-path="Ch2.S3.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch2.S3.html" title="In Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2.3 </span></b>Funções acumuladas de distribuição</a></li>
+<li data-level="2.4" data-path="Ch2.S4.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch2.S4.html" title="In Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2.4 </span></b>Espaços produto finito</a></li>
+<li data-level="2.5" data-path="" class="ltx_tocentry ltx_tocentry_section ltx_ref_self  chapter active">
+<a href="" title="In Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2.5 </span></b>Independência</a>
+<ol class="ltx_toclist ltx_toclist_section">
+<li data-level="2.5.1" data-path="" class="ltx_tocentry ltx_tocentry_subsection  chapter "><a href="#SS1" title="In 2.5 Independência ‣ Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2.5.1 </span></b>Coleções de eventos</a></li>
+<li data-level="2.5.2" data-path="" class="ltx_tocentry ltx_tocentry_subsection  chapter "><a href="#SS2" title="In 2.5 Independência ‣ Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2.5.2 </span></b>Independência de <math class="ltx_Math" alttext="\sigma" display="inline"><semantics><mi>σ</mi><annotation encoding="application/x-tex">\sigma</annotation></semantics></math>-álgebras</a></li>
+</ol>
+</li>
+<li data-level="" data-path="Ch2.Sx2.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch2.Sx2.html" title="In Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I" class="ltx_ref">Tópico: Lei dos pequenos números</a></li>
+<li data-level="2.6" data-path="Ch2.S6.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch2.S6.html" title="In Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2.6 </span></b>Espaços produto infinito</a></li>
+<li data-level="" data-path="Ch2.Sx3.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch2.Sx3.html" title="In Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I" class="ltx_ref">Tópico: Percolação</a></li>
+<li data-level="2.7" data-path="Ch2.S7.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch2.S7.html" title="In Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2.7 </span></b>Distribuições conjuntas</a></li>
+<li data-level="2.8" data-path="Ch2.S8.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch2.S8.html" title="In Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2.8 </span></b>Probabilidades condicionais</a></li>
+<li data-level="2.9" data-path="Ch2.S9.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch2.S9.html" title="In Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2.9 </span></b>Núcleos de transição</a></li>
+<li data-level="2.10" data-path="Ch2.S10.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch2.S10.html" title="In Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2.10 </span></b>Espaços canônicos</a></li>
+<li data-level="" data-path="Ch2.Sx4.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch2.Sx4.html" title="In Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I" class="ltx_ref">Tópico: Cadeias de Markov</a></li>
+<li data-level="" data-path="Ch2.Sx5.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch2.Sx5.html" title="In Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I" class="ltx_ref">Tópico: Urna de Pólya</a></li>
+</ol>
+</li>
+<li data-level="3" data-path="Ch3.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch3.html" title="In Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3 </span></b>Somas de variáveis independentes</a></li>
+<li data-level="4" data-path="Ch4.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch4.html" title="In Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4 </span></b>Esperança condicional</a></li>
+<li data-level="5" data-path="Ch5.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch5.html" title="In Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">5 </span></b>Soluções de exercícios</a></li>
+<li data-level="" data-path="bib.html" class="ltx_tocentry ltx_tocentry_bibliography  chapter "><a href="bib.html" title="In Notas de aula: Probabilidade I" class="ltx_ref">Referências</a></li>
+<li data-level="" data-path="idx.html" class="ltx_tocentry ltx_tocentry_index  chapter "><a href="idx.html" title="In Notas de aula: Probabilidade I" class="ltx_ref">Índice Remissivo</a></li>
+</ul>
+</nav></div>
+<div class="ltx_page_main book-body fixed">
+<div class="body-inner">
+<div class="book-header fixed" role="navigation"><h1>Independência</h1></div>
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="ltx_page_content page-inner" id="bml-main-content">
+<section class="ltx_section normal" lang="pt-BR">
+<div class="section level1">
+
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section header-section-number">2.5</span> Independência</h1>
+
+<div id="p1" class="ltx_para">
+<p class="ltx_p">Nossa intuição nos diz que quando jogamos duas moedas, o resultado de cada uma delas não deve depender um do outro.
+Dessa forma, a probabilidade de obtermos um determinado resultado (como por exemplo duas caras) deve ser um quarto, ou seja, meio vezes meio.</p>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">Em geral, definimos dois eventos como independentes da seguinte forma.</p>
+</div>
+<div id="p3" class="ltx_para">
+<span class="ltx_ERROR undefined">{definition}</span>
+<p class="ltx_p">Dizemos que dois eventos <math id="p3.m1" class="ltx_Math" alttext="A,B\in\mathcal{F}" display="inline"><semantics><mrow><mrow><mi>A</mi><mo>,</mo><mi>B</mi></mrow><mo>∈</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi></mrow><annotation encoding="application/x-tex">A,B\in\mathcal{F}</annotation></semantics></math> são <em class="ltx_emph ltx_font_italic">independentes</em>  se</p>
+<div id="Ch2.E15" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch2.E15.m1" class="ltx_Math" alttext="P(A\cap B)=P(A)P(B)." display="block"><semantics><mrow><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>∩</mo><mi>B</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>B</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">P(A\cap B)=P(A)P(B).</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(2.15)</span>
+            
+            
+          
+</div>
+</div>
+<div id="p4" class="ltx_para">
+<span class="ltx_ERROR undefined">{example}</span>
+<p class="ltx_p">Se <math id="p4.m1" class="ltx_Math" alttext="\Omega=\{1,\dots,6\}" display="inline"><semantics><mrow><mi mathvariant="normal">Ω</mi><mo>=</mo><mrow><mo stretchy="false">{</mo><mn>1</mn><mo>,</mo><mrow><mi mathvariant="normal">…</mi><mo>⁢</mo><mn>,6</mn></mrow><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">\Omega=\{1,\dots,6\}</annotation></semantics></math> é dotada da <math id="p4.m2" class="ltx_Math" alttext="\sigma" display="inline"><semantics><mi>σ</mi><annotation encoding="application/x-tex">\sigma</annotation></semantics></math>-álgebra das partes e <math id="p4.m3" class="ltx_Math" alttext="P(A)=\#A/6" display="inline"><semantics><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi mathvariant="normal">#</mi><mo>⁢</mo><mi>A</mi></mrow><mo>/</mo><mn>6</mn></mrow></mrow><annotation encoding="application/x-tex">P(A)=\#A/6</annotation></semantics></math>, então os eventos <math id="p4.m4" class="ltx_Math" alttext="A=[\omega\text{ \'{e} impar}]" display="inline"><semantics><mrow><mi>A</mi><mo>=</mo><mrow><mo stretchy="false">[</mo><mrow><mi>ω</mi><mo>⁢</mo><mtext> é impar</mtext></mrow><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">A=[\omega\text{ \'{e} impar}]</annotation></semantics></math> e <math id="p4.m5" class="ltx_Math" alttext="B=[\omega\geq 5]" display="inline"><semantics><mrow><mi>B</mi><mo>=</mo><mrow><mo stretchy="false">[</mo><mrow><mi>ω</mi><mo>≥</mo><mn>5</mn></mrow><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">B=[\omega\geq 5]</annotation></semantics></math> satisfazem</p>
+<div id="Ch2.E16" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch2.E16.m1" class="ltx_Math" alttext="P(A\cap B)=P(\{5\})=1/6=(1/2)(1/3)=P(A)P(B)." display="block"><semantics><mrow><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>∩</mo><mi>B</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mo stretchy="false">{</mo><mn>5</mn><mo stretchy="false">}</mo></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mn>1</mn><mo>/</mo><mn>6</mn></mrow><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>/</mo><mn>3</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>B</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">P(A\cap B)=P(\{5\})=1/6=(1/2)(1/3)=P(A)P(B).</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(2.16)</span>
+            
+            
+          
+</div>
+<p class="ltx_p">Logo tais eventos são independentes.</p>
+</div>
+<div id="p5" class="ltx_para">
+<span class="ltx_ERROR undefined">{exercise}</span>
+<p class="ltx_p">Seja <math id="p5.m1" class="ltx_Math" alttext="\Omega=\{0,1\}^{n}" display="inline"><semantics><mrow><mi mathvariant="normal">Ω</mi><mo>=</mo><msup><mrow><mo stretchy="false">{</mo><mn>0,1</mn><mo stretchy="false">}</mo></mrow><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">\Omega=\{0,1\}^{n}</annotation></semantics></math> com <math id="p5.m2" class="ltx_Math" alttext="P(A)=\#A/2^{n}" display="inline"><semantics><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi mathvariant="normal">#</mi><mo>⁢</mo><mi>A</mi></mrow><mo>/</mo><msup><mn>2</mn><mi>n</mi></msup></mrow></mrow><annotation encoding="application/x-tex">P(A)=\#A/2^{n}</annotation></semantics></math> e <math id="p5.m3" class="ltx_Math" alttext="X_{i}(\omega_{1},\dots,\omega_{n})=\omega_{i}" display="inline"><semantics><mrow><mrow><msub><mi>X</mi><mi>i</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>ω</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>ω</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msub><mi>ω</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">X_{i}(\omega_{1},\dots,\omega_{n})=\omega_{i}</annotation></semantics></math> para <math id="p5.m4" class="ltx_Math" alttext="i=1,\dots,n" display="inline"><semantics><mrow><mi>i</mi><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi>n</mi></mrow></mrow><annotation encoding="application/x-tex">i=1,\dots,n</annotation></semantics></math>.
+Mostre que</p>
+<div id="Ch2.E17" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch2.E17.m1" class="ltx_Math" alttext="P[X_{i}=a,X_{j}=b]=P[X_{i}=a]P[X_{j}=b]," display="block"><semantics><mrow><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><mrow><msub><mi>X</mi><mi>i</mi></msub><mo>=</mo><mi>a</mi></mrow><mo>,</mo><mrow><msub><mi>X</mi><mi>j</mi></msub><mo>=</mo><mi>b</mi></mrow></mrow><mo stretchy="false">]</mo></mrow></mrow><mo>=</mo><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><msub><mi>X</mi><mi>i</mi></msub><mo>=</mo><mi>a</mi></mrow><mo stretchy="false">]</mo></mrow><mo>⁢</mo><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><msub><mi>X</mi><mi>j</mi></msub><mo>=</mo><mi>b</mi></mrow><mo stretchy="false">]</mo></mrow></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">P[X_{i}=a,X_{j}=b]=P[X_{i}=a]P[X_{j}=b],</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(2.17)</span>
+            
+            
+          
+</div>
+<p class="ltx_p">onde <math id="p5.m5" class="ltx_Math" alttext="[A,B]" display="inline"><semantics><mrow><mo stretchy="false">[</mo><mi>A</mi><mo>,</mo><mi>B</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[A,B]</annotation></semantics></math> denota a interseção <math id="p5.m6" class="ltx_Math" alttext="A\cap B" display="inline"><semantics><mrow><mi>A</mi><mo>∩</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">A\cap B</annotation></semantics></math>.</p>
+</div>
+<section id="SS1" class="ltx_subsection normal">
+<div class="section level2">
+
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection header-section-number">2.5.1</span> Coleções de eventos</h2>
+<span id="todo2" class="ltx_note ltx_role_todo"><sup class="ltx_note_mark">2</sup><span class="ltx_note_outer"><span class="ltx_note_content"><sup class="ltx_note_mark">2</sup><span class="ltx_note_type">todo: </span>
+            <span class="ltx_tag ltx_tag_note">2</span>
+            
+            
+            
+          discutir a alternativa <math id="todo2.m1" class="ltx_Math" alttext="I=\{1,\dots,k\}" display="inline"><semantics><mrow><mi>I</mi><mo>=</mo><mrow><mo stretchy="false">{</mo><mn>1</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi>k</mi><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">I=\{1,\dots,k\}</annotation></semantics></math> que é ruim (basta adicionar <math id="todo2.m2" class="ltx_Math" alttext="\varnothing" display="inline"><semantics><mi mathvariant="normal">∅</mi><annotation encoding="application/x-tex">\varnothing</annotation></semantics></math> que qq coisa fica indep).</span></span></span>
+<div id="SS1.p1" class="ltx_para">
+<span class="ltx_ERROR undefined">{definition}</span>
+<p class="ltx_p">Sejam <math id="SS1.p1.m1" class="ltx_Math" alttext="A_{1},A_{2},\dots,A_{k}" display="inline"><semantics><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>,</mo><msub><mi>A</mi><mn>2</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>A</mi><mi>k</mi></msub></mrow><annotation encoding="application/x-tex">A_{1},A_{2},\dots,A_{k}</annotation></semantics></math> eventos.
+Dizemos que eles formam uma coleção independente  se para todo <math id="SS1.p1.m2" class="ltx_Math" alttext="I\subseteq\{1,\dots,k\}" display="inline"><semantics><mrow><mi>I</mi><mo>⊆</mo><mrow><mo stretchy="false">{</mo><mn>1</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi>k</mi><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">I\subseteq\{1,\dots,k\}</annotation></semantics></math> não vazio</p>
+<div id="Ch2.E18" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch2.E18.m1" class="ltx_Math" alttext="P\big{(}\mcap\nolimits_{i\in I}A_{i}\big{)}=\prod\limits_{i\in I}P(A_{i})." display="block"><semantics><mrow><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><msub><merror class="ltx_ERROR undefined undefined"><mtext>\mcap</mtext></merror><mrow><mi>i</mi><mo>∈</mo><mi>I</mi></mrow></msub><mo>⁢</mo><msub><mi>A</mi><mi>i</mi></msub></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo rspace="0.111em">=</mo><mrow><munder><mo movablelimits="false">∏</mo><mrow><mi>i</mi><mo>∈</mo><mi>I</mi></mrow></munder><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">P\big{(}\mcap\nolimits_{i\in I}A_{i}\big{)}=\prod\limits_{i\in I}P(A_{i}).</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(2.18)</span>
+              
+              
+            
+</div>
+</div>
+<div id="SS1.p2" class="ltx_para">
+<p class="ltx_p">Vale observar que independência dois a dois não implica independência.
+Mais precisamente
+<span class="ltx_ERROR undefined">{example}</span>
+Seja <math id="SS1.p2.m1" class="ltx_Math" alttext="\Omega=\{1,2,3,4\}" display="inline"><semantics><mrow><mi mathvariant="normal">Ω</mi><mo>=</mo><mrow><mo stretchy="false">{</mo><mn>1,2,3,4</mn><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">\Omega=\{1,2,3,4\}</annotation></semantics></math> com <math id="SS1.p2.m2" class="ltx_Math" alttext="P(A)=\#A/4" display="inline"><semantics><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi mathvariant="normal">#</mi><mo>⁢</mo><mi>A</mi></mrow><mo>/</mo><mn>4</mn></mrow></mrow><annotation encoding="application/x-tex">P(A)=\#A/4</annotation></semantics></math> e sejam os seguintes eventos: <math id="SS1.p2.m3" class="ltx_Math" alttext="A_{1}=\{1,2\}" display="inline"><semantics><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>=</mo><mrow><mo stretchy="false">{</mo><mn>1,2</mn><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">A_{1}=\{1,2\}</annotation></semantics></math>, <math id="SS1.p2.m4" class="ltx_Math" alttext="A_{2}=\{2,3\}" display="inline"><semantics><mrow><msub><mi>A</mi><mn>2</mn></msub><mo>=</mo><mrow><mo stretchy="false">{</mo><mn>2,3</mn><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">A_{2}=\{2,3\}</annotation></semantics></math> e <math id="SS1.p2.m5" class="ltx_Math" alttext="A_{3}=\{1,3\}" display="inline"><semantics><mrow><msub><mi>A</mi><mn>3</mn></msub><mo>=</mo><mrow><mo stretchy="false">{</mo><mn>1,3</mn><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">A_{3}=\{1,3\}</annotation></semantics></math>.
+Nesse caso,</p>
+<ol id="I1" class="ltx_enumerate">
+<li id="I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"> a)</span><div id="I1.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i1.p1.m1" class="ltx_Math" alttext="P(A_{i})=1/2" display="inline"><semantics><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></mrow><annotation encoding="application/x-tex">P(A_{i})=1/2</annotation></semantics></math> para <math id="I1.i1.p1.m2" class="ltx_Math" alttext="i=1,2,3" display="inline"><semantics><mrow><mi>i</mi><mo>=</mo><mn>1,2,3</mn></mrow><annotation encoding="application/x-tex">i=1,2,3</annotation></semantics></math>,</p>
+</div>
+</li>
+<li id="I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"> b)</span><div id="I1.i2.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i2.p1.m1" class="ltx_Math" alttext="P(A_{i}\cap A_{j})=1/4" display="inline"><semantics><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>A</mi><mi>i</mi></msub><mo>∩</mo><msub><mi>A</mi><mi>j</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mn>1</mn><mo>/</mo><mn>4</mn></mrow></mrow><annotation encoding="application/x-tex">P(A_{i}\cap A_{j})=1/4</annotation></semantics></math> para todo <math id="I1.i2.p1.m2" class="ltx_Math" alttext="i\neq j" display="inline"><semantics><mrow><mi>i</mi><mo>≠</mo><mi>j</mi></mrow><annotation encoding="application/x-tex">i\neq j</annotation></semantics></math> mas</p>
+</div>
+</li>
+<li id="I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"> c)</span><div id="I1.i3.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i3.p1.m1" class="ltx_Math" alttext="P(A_{1}\cap A_{2}\cap A_{3})=0\neq 1/8=P(A_{1})P(A_{2})P(A_{3})" display="inline"><semantics><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>∩</mo><msub><mi>A</mi><mn>2</mn></msub><mo>∩</mo><msub><mi>A</mi><mn>3</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn><mo>≠</mo><mrow><mn>1</mn><mo>/</mo><mn>8</mn></mrow><mo>=</mo><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mn>2</mn></msub><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mn>3</mn></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">P(A_{1}\cap A_{2}\cap A_{3})=0\neq 1/8=P(A_{1})P(A_{2})P(A_{3})</annotation></semantics></math>.</p>
+</div>
+</li>
+</ol>
+</div>
+<div id="SS1.p3" class="ltx_para">
+<span class="ltx_ERROR undefined">{definition}</span>
+<p class="ltx_p">Dizemos que uma coleção infinita de eventos <math id="SS1.p3.m1" class="ltx_Math" alttext="(A_{n})_{n\geq 1}" display="inline"><semantics><msub><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow><mrow><mi>n</mi><mo>≥</mo><mn>1</mn></mrow></msub><annotation encoding="application/x-tex">(A_{n})_{n\geq 1}</annotation></semantics></math> é independente  se toda sub-coleção finita de tais eventos forem independentes.</p>
+</div>
+<div id="SS1.p4" class="ltx_para">
+<span class="ltx_ERROR undefined">{lemma}</span>
+<p class="ltx_p">Se <math id="SS1.p4.m1" class="ltx_Math" alttext="(A_{n})_{n\geq 1}" display="inline"><semantics><msub><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow><mrow><mi>n</mi><mo>≥</mo><mn>1</mn></mrow></msub><annotation encoding="application/x-tex">(A_{n})_{n\geq 1}</annotation></semantics></math> forma uma sequencia de eventos independentes, então</p>
+<div id="Ch2.E19" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch2.E19.m1" class="ltx_Math" alttext="P\Big{(}\mcap_{i=1}^{\infty}A_{i}\Big{)}=\prod\limits_{i=1}^{\infty}P(A_{i})." display="block"><semantics><mrow><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo maxsize="160%" minsize="160%">(</mo><mrow><msubsup><merror class="ltx_ERROR undefined undefined"><mtext>\mcap</mtext></merror><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mo>⁢</mo><msub><mi>A</mi><mi>i</mi></msub></mrow><mo maxsize="160%" minsize="160%">)</mo></mrow></mrow><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false">∏</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">P\Big{(}\mcap_{i=1}^{\infty}A_{i}\Big{)}=\prod\limits_{i=1}^{\infty}P(A_{i}).</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(2.19)</span>
+              
+              
+            
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demonstração.</h6>
+<div id="SS1.p5" class="ltx_para">
+<p class="ltx_p">De fato,</p>
+<div id="Ch2.Ex1" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch2.Ex1.m1" class="ltx_Math" alttext="P\Big{(}\mcap_{i=1}^{\infty}A_{i}\Big{)}=\lim_{n\to\infty}P\Big{(}\mcap_{i=1}^%
+{n}A_{i}\Big{)}=\lim_{n\to\infty}\prod\limits_{i=1}^{n}P(A_{i})=\prod\limits_{%
+i=1}^{\infty}P(A_{i}).\qed" display="block"><semantics><mrow><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo maxsize="160%" minsize="160%">(</mo><mrow><msubsup><merror class="ltx_ERROR undefined undefined"><mtext>\mcap</mtext></merror><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mo>⁢</mo><msub><mi>A</mi><mi>i</mi></msub></mrow><mo maxsize="160%" minsize="160%">)</mo></mrow></mrow><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mrow><mi>P</mi><mo>⁢</mo><mrow><mo maxsize="160%" minsize="160%">(</mo><mrow><msubsup><merror class="ltx_ERROR undefined undefined"><mtext>\mcap</mtext></merror><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><mo>⁢</mo><msub><mi>A</mi><mi>i</mi></msub></mrow><mo maxsize="160%" minsize="160%">)</mo></mrow></mrow></mrow><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0em">lim</mo><mrow><mi>n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mrow><munderover><mo movablelimits="false">∏</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false">∏</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo lspace="0em" rspace="0.0835em">.</mo><mo class="ltx_mathvariant_italic" lspace="0.0835em" mathvariant="italic" separator="true">∎</mo></mrow><annotation encoding="application/x-tex">P\Big{(}\mcap_{i=1}^{\infty}A_{i}\Big{)}=\lim_{n\to\infty}P\Big{(}\mcap_{i=1}^%
+{n}A_{i}\Big{)}=\lim_{n\to\infty}\prod\limits_{i=1}^{n}P(A_{i})=\prod\limits_{%
+i=1}^{\infty}P(A_{i}).\qed</annotation></semantics></math></span>
+</div>
+</div>
+</div>
+<div id="SS1.p6" class="ltx_para">
+<span class="ltx_ERROR undefined">{exercise}</span>
+<p class="ltx_p">Mostre que se <math id="SS1.p6.m1" class="ltx_Math" alttext="A\in\mathcal{F}" display="inline"><semantics><mrow><mi>A</mi><mo>∈</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi></mrow><annotation encoding="application/x-tex">A\in\mathcal{F}</annotation></semantics></math>, então <math id="SS1.p6.m2" class="ltx_Math" alttext="\{B\in\mathcal{F}\,:\,B\text{ \'{e} independente de }A\}" display="inline"><semantics><mrow><mo stretchy="false">{</mo><mrow><mi>B</mi><mo>∈</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi></mrow><mo lspace="0.448em" rspace="0.448em">:</mo><mrow><mi>B</mi><mo>⁢</mo><mtext> é independente de </mtext><mo>⁢</mo><mi>A</mi></mrow><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{B\in\mathcal{F}\,:\,B\text{ \'{e} independente de }A\}</annotation></semantics></math> é um <math id="SS1.p6.m3" class="ltx_Math" alttext="\lambda" display="inline"><semantics><mi>λ</mi><annotation encoding="application/x-tex">\lambda</annotation></semantics></math>-sistema.</p>
+</div>
+<div id="SS1.p7" class="ltx_para">
+<span class="ltx_ERROR undefined">{exercise}</span>
+<p class="ltx_p">Mostre que se <math id="SS1.p7.m1" class="ltx_Math" alttext="B" display="inline"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math> é independente de <math id="SS1.p7.m2" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> para todo <math id="SS1.p7.m3" class="ltx_Math" alttext="B\in\mathcal{B}" display="inline"><semantics><mrow><mi>B</mi><mo>∈</mo><mi class="ltx_font_mathcaligraphic">ℬ</mi></mrow><annotation encoding="application/x-tex">B\in\mathcal{B}</annotation></semantics></math>, com <math id="SS1.p7.m4" class="ltx_Math" alttext="\mathcal{B}" display="inline"><semantics><mi class="ltx_font_mathcaligraphic">ℬ</mi><annotation encoding="application/x-tex">\mathcal{B}</annotation></semantics></math> um <math id="SS1.p7.m5" class="ltx_Math" alttext="\pi" display="inline"><semantics><mi>π</mi><annotation encoding="application/x-tex">\pi</annotation></semantics></math>-sistema, então <math id="SS1.p7.m6" class="ltx_Math" alttext="B" display="inline"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math> é independente de <math id="SS1.p7.m7" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> para todo <math id="SS1.p7.m8" class="ltx_Math" alttext="B\in\sigma(\mathcal{B})" display="inline"><semantics><mrow><mi>B</mi><mo>∈</mo><mrow><mi>σ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi class="ltx_font_mathcaligraphic">ℬ</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">B\in\sigma(\mathcal{B})</annotation></semantics></math>.</p>
+</div>
+</div>
+</section>
+<section id="SS2" class="ltx_subsection normal">
+<div class="section level2">
+
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection header-section-number">2.5.2</span> Independência de <math id="SS2.m1" class="ltx_Math" alttext="\sigma" display="inline"><semantics><mi>σ</mi><annotation encoding="application/x-tex">\sigma</annotation></semantics></math>-álgebras</h2>
+
+<div id="SS2.p1" class="ltx_para">
+<span class="ltx_ERROR undefined">{definition}</span>
+<p class="ltx_p">Dado um espaço de probabilidade <math id="SS2.p1.m1" class="ltx_Math" alttext="(\Omega,P,\mathcal{F})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">Ω</mi><mo>,</mo><mi>P</mi><mo>,</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(\Omega,P,\mathcal{F})</annotation></semantics></math> Dizemos que as <math id="SS2.p1.m2" class="ltx_Math" alttext="\sigma" display="inline"><semantics><mi>σ</mi><annotation encoding="application/x-tex">\sigma</annotation></semantics></math>-álgebra <math id="SS2.p1.m3" class="ltx_Math" alttext="\mathcal{F}_{1},\dots,\mathcal{F}_{n}\subset\mathcal{F}" display="inline"><semantics><mrow><mrow><msub><mi class="ltx_font_mathcaligraphic">ℱ</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi class="ltx_font_mathcaligraphic">ℱ</mi><mi>n</mi></msub></mrow><mo>⊂</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi></mrow><annotation encoding="application/x-tex">\mathcal{F}_{1},\dots,\mathcal{F}_{n}\subset\mathcal{F}</annotation></semantics></math> são independentes  se</p>
+<div id="Ch2.E20" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch2.E20.m1" class="ltx_Math" alttext="\forall\mathcal{A}_{1}\in\mathcal{F}_{1},\dots,\mathcal{A}_{n}\in\mathcal{F}_{%
+n},\ P(\cap_{i=1}^{n}A_{i})=\prod_{i=1}^{n}P(A_{i})." display="block"><semantics><mrow><mrow><mrow><mrow><mo rspace="0.167em">∀</mo><msub><mi class="ltx_font_mathcaligraphic">𝒜</mi><mn>1</mn></msub></mrow><mo>∈</mo><mrow><msub><mi class="ltx_font_mathcaligraphic">ℱ</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi></mrow></mrow><mo>,</mo><mrow><mrow><msub><mi class="ltx_font_mathcaligraphic">𝒜</mi><mi>n</mi></msub><mo>∈</mo><msub><mi class="ltx_font_mathcaligraphic">ℱ</mi><mi>n</mi></msub></mrow><mo rspace="0.667em">,</mo><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msubsup><mo lspace="0em">∩</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><msub><mi>A</mi><mi>i</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false">∏</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\forall\mathcal{A}_{1}\in\mathcal{F}_{1},\dots,\mathcal{A}_{n}\in\mathcal{F}_{%
+n},\ P(\cap_{i=1}^{n}A_{i})=\prod_{i=1}^{n}P(A_{i}).</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(2.20)</span>
+              
+              
+            
+</div>
+<p class="ltx_p">Nessa definição podemos tomar uma coleção infinita.</p>
+</div>
+<div id="SS2.p2" class="ltx_para">
+<span class="ltx_ERROR undefined">{exercise}</span>
+<p class="ltx_p">Em um espaço produto <math id="SS2.p2.m1" class="ltx_Math" alttext="(\Omega_{1}\times\Omega_{2},\mathcal{F}_{1}\otimes\mathcal{F}_{2},P_{1}\otimes
+P%
+_{2})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mrow><msub><mi mathvariant="normal">Ω</mi><mn>1</mn></msub><mo lspace="0.222em" rspace="0.222em">×</mo><msub><mi mathvariant="normal">Ω</mi><mn>2</mn></msub></mrow><mo>,</mo><mrow><msub><mi class="ltx_font_mathcaligraphic">ℱ</mi><mn>1</mn></msub><mo lspace="0.222em" rspace="0.222em">⊗</mo><msub><mi class="ltx_font_mathcaligraphic">ℱ</mi><mn>2</mn></msub></mrow><mo>,</mo><mrow><msub><mi>P</mi><mn>1</mn></msub><mo lspace="0.222em" rspace="0.222em">⊗</mo><msub><mi>P</mi><mn>2</mn></msub></mrow><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(\Omega_{1}\times\Omega_{2},\mathcal{F}_{1}\otimes\mathcal{F}_{2},P_{1}\otimes
+P%
+_{2})</annotation></semantics></math>, podemos definir</p>
+<div id="Ch2.E21" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch2.E21.m1" class="ltx_Math" alttext="\begin{split}\widebar{\mathcal{F}}_{1}&amp;=\{A\times\Omega_{2}\,:\,A\in\mathcal{F%
+}_{1}\},\\
+\widebar{\mathcal{F}}_{2}&amp;=\{\Omega_{1}\times B\,:\,B\in\mathcal{F}_{2}\}.\end%
+{split}" display="block"><semantics><mtable columnspacing="0pt" displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_align_right" columnalign="right"><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\widebar</mtext></merror><mo>⁢</mo><msub><mi class="ltx_font_mathcaligraphic">ℱ</mi><mn>1</mn></msub></mrow></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mi></mi><mo>=</mo><mrow><mo stretchy="false">{</mo><mrow><mi>A</mi><mo lspace="0.222em" rspace="0.222em">×</mo><msub><mi mathvariant="normal">Ω</mi><mn>2</mn></msub></mrow><mo lspace="0.278em" rspace="0.448em">:</mo><mrow><mi>A</mi><mo>∈</mo><msub><mi class="ltx_font_mathcaligraphic">ℱ</mi><mn>1</mn></msub></mrow><mo stretchy="false">}</mo></mrow></mrow><mo>,</mo></mrow></mtd></mtr><mtr><mtd class="ltx_align_right" columnalign="right"><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\widebar</mtext></merror><mo>⁢</mo><msub><mi class="ltx_font_mathcaligraphic">ℱ</mi><mn>2</mn></msub></mrow></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mi></mi><mo>=</mo><mrow><mo stretchy="false">{</mo><mrow><msub><mi mathvariant="normal">Ω</mi><mn>1</mn></msub><mo lspace="0.222em" rspace="0.222em">×</mo><mi>B</mi></mrow><mo lspace="0.448em" rspace="0.448em">:</mo><mrow><mi>B</mi><mo>∈</mo><msub><mi class="ltx_font_mathcaligraphic">ℱ</mi><mn>2</mn></msub></mrow><mo stretchy="false">}</mo></mrow></mrow><mo lspace="0em">.</mo></mrow></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{split}\widebar{\mathcal{F}}_{1}&amp;=\{A\times\Omega_{2}\,:\,A\in\mathcal{F%
+}_{1}\},\\
+\widebar{\mathcal{F}}_{2}&amp;=\{\Omega_{1}\times B\,:\,B\in\mathcal{F}_{2}\}.\end%
+{split}</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(2.21)</span>
+              
+              
+            
+</div>
+<p class="ltx_p">Mostre que essas <math id="SS2.p2.m2" class="ltx_Math" alttext="\sigma" display="inline"><semantics><mi>σ</mi><annotation encoding="application/x-tex">\sigma</annotation></semantics></math>-álgebras são independentes.</p>
+</div>
+<div id="SS2.p3" class="ltx_para">
+<p class="ltx_p">Podemos extender esse conceito a elementos aleatórios, ou seja:
+<span class="ltx_ERROR undefined">{definition}</span>
+Dizemos que <math id="SS2.p3.m1" class="ltx_Math" alttext="X_{1},\dots,X_{k}" display="inline"><semantics><mrow><msub><mi>X</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>X</mi><mi>k</mi></msub></mrow><annotation encoding="application/x-tex">X_{1},\dots,X_{k}</annotation></semantics></math> são elementos aleatórios independentes  se as respectivas <math id="SS2.p3.m2" class="ltx_Math" alttext="\sigma" display="inline"><semantics><mi>σ</mi><annotation encoding="application/x-tex">\sigma</annotation></semantics></math>-álgebras <math id="SS2.p3.m3" class="ltx_Math" alttext="\sigma(X_{1}),\dots,\sigma(X_{k})" display="inline"><semantics><mrow><mrow><mi>σ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>X</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mrow><mi>σ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>X</mi><mi>k</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\sigma(X_{1}),\dots,\sigma(X_{k})</annotation></semantics></math> o forem.</p>
+</div>
+<div id="SS2.p4" class="ltx_para">
+<p class="ltx_p">Quando <math id="SS2.p4.m1" class="ltx_Math" alttext="X_{1},\dots,X_{k}" display="inline"><semantics><mrow><msub><mi>X</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>X</mi><mi>k</mi></msub></mrow><annotation encoding="application/x-tex">X_{1},\dots,X_{k}</annotation></semantics></math> são elementos aleatórios independentes e com a mesma distribuição, escrevemos que <math id="SS2.p4.m2" class="ltx_Math" alttext="X_{i}" display="inline"><semantics><msub><mi>X</mi><mi>i</mi></msub><annotation encoding="application/x-tex">X_{i}</annotation></semantics></math> são <span class="ltx_ERROR undefined">\iid</span>(independentes e identicamente distribuídos).</p>
+</div>
+<div id="SS2.p5" class="ltx_para">
+<span class="ltx_ERROR undefined">{exercise}</span>
+<p class="ltx_p">Com a notação do exercício anterior, mostre que as funções <math id="SS2.p5.m1" class="ltx_Math" alttext="X_{i}:\Omega_{1}\times\Omega_{2}\to\Omega_{i}" display="inline"><semantics><mrow><msub><mi>X</mi><mi>i</mi></msub><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mrow><msub><mi mathvariant="normal">Ω</mi><mn>1</mn></msub><mo lspace="0.222em" rspace="0.222em">×</mo><msub><mi mathvariant="normal">Ω</mi><mn>2</mn></msub></mrow><mo stretchy="false">→</mo><msub><mi mathvariant="normal">Ω</mi><mi>i</mi></msub></mrow></mrow><annotation encoding="application/x-tex">X_{i}:\Omega_{1}\times\Omega_{2}\to\Omega_{i}</annotation></semantics></math> dadas por</p>
+<div id="Ch2.E22" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch2.E22.m1" class="ltx_Math" alttext="X_{1}(x,y)=x\text{ e }X_{2}(x,y)=y," display="block"><semantics><mrow><mrow><mrow><msub><mi>X</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>x</mi><mo>⁢</mo><mtext> e </mtext><mo>⁢</mo><msub><mi>X</mi><mn>2</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi>y</mi></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">X_{1}(x,y)=x\text{ e }X_{2}(x,y)=y,</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(2.22)</span>
+              
+              
+            
+</div>
+<p class="ltx_p">são elementos aleatórios e são independentes.</p>
+</div>
+<div id="SS2.p6" class="ltx_para">
+<span class="ltx_ERROR undefined">{exercise}</span>
+<p class="ltx_p">Mostre que as coordenadas canônicas do exercício anterior no caso <math id="SS2.p6.m1" class="ltx_Math" alttext="X_{i}:\mathbb{R}^{2}\to\mathbb{R}" display="inline"><semantics><mrow><msub><mi>X</mi><mi>i</mi></msub><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><msup><mi>ℝ</mi><mn>2</mn></msup><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">X_{i}:\mathbb{R}^{2}\to\mathbb{R}</annotation></semantics></math> não são independentes segundo a medida <math id="SS2.p6.m2" class="ltx_Math" alttext="U_{\mathbb{S}^{1}}" display="inline"><semantics><msub><mi>U</mi><msup><mi>𝕊</mi><mn>1</mn></msup></msub><annotation encoding="application/x-tex">U_{\mathbb{S}^{1}}</annotation></semantics></math>.
+Mas o são segundo <math id="SS2.p6.m3" class="ltx_Math" alttext="U_{[0,1]^{2}}" display="inline"><semantics><msub><mi>U</mi><msup><mrow><mo stretchy="false">[</mo><mn>0,1</mn><mo stretchy="false">]</mo></mrow><mn>2</mn></msup></msub><annotation encoding="application/x-tex">U_{[0,1]^{2}}</annotation></semantics></math> (que é a medida de Lebesgue em <math id="SS2.p6.m4" class="ltx_Math" alttext="\mathbb{R}^{2}" display="inline"><semantics><msup><mi>ℝ</mi><mn>2</mn></msup><annotation encoding="application/x-tex">\mathbb{R}^{2}</annotation></semantics></math> restrita a <math id="SS2.p6.m5" class="ltx_Math" alttext="[0,1]^{2}" display="inline"><semantics><msup><mrow><mo stretchy="false">[</mo><mn>0,1</mn><mo stretchy="false">]</mo></mrow><mn>2</mn></msup><annotation encoding="application/x-tex">[0,1]^{2}</annotation></semantics></math>).</p>
+</div>
+<div id="SS2.p7" class="ltx_para">
+<span class="ltx_ERROR undefined">{exercise}</span>
+<p class="ltx_p">Seja <math id="SS2.p7.m1" class="ltx_Math" alttext="\Omega=\{0,1\}^{n}" display="inline"><semantics><mrow><mi mathvariant="normal">Ω</mi><mo>=</mo><msup><mrow><mo stretchy="false">{</mo><mn>0,1</mn><mo stretchy="false">}</mo></mrow><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">\Omega=\{0,1\}^{n}</annotation></semantics></math> com <math id="SS2.p7.m2" class="ltx_Math" alttext="P(A)=\#A/2^{n}" display="inline"><semantics><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi mathvariant="normal">#</mi><mo>⁢</mo><mi>A</mi></mrow><mo>/</mo><msup><mn>2</mn><mi>n</mi></msup></mrow></mrow><annotation encoding="application/x-tex">P(A)=\#A/2^{n}</annotation></semantics></math> e <math id="SS2.p7.m3" class="ltx_Math" alttext="X_{i}(\omega_{1},\dots,\omega_{n})=\omega_{i}" display="inline"><semantics><mrow><mrow><msub><mi>X</mi><mi>i</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>ω</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>ω</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msub><mi>ω</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">X_{i}(\omega_{1},\dots,\omega_{n})=\omega_{i}</annotation></semantics></math> para <math id="SS2.p7.m4" class="ltx_Math" alttext="i=1,\dots,n" display="inline"><semantics><mrow><mi>i</mi><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi>n</mi></mrow></mrow><annotation encoding="application/x-tex">i=1,\dots,n</annotation></semantics></math>.
+Mostre que os <math id="SS2.p7.m5" class="ltx_Math" alttext="X_{i}" display="inline"><semantics><msub><mi>X</mi><mi>i</mi></msub><annotation encoding="application/x-tex">X_{i}</annotation></semantics></math> são independentes.</p>
+</div>
+<div id="SS2.p8" class="ltx_para">
+<span class="ltx_ERROR undefined">{exercise}</span>
+<p class="ltx_p">Sejam <math id="SS2.p8.m1" class="ltx_Math" alttext="(X_{i})_{i\geq 1}" display="inline"><semantics><msub><mrow><mo stretchy="false">(</mo><msub><mi>X</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow><mrow><mi>i</mi><mo>≥</mo><mn>1</mn></mrow></msub><annotation encoding="application/x-tex">(X_{i})_{i\geq 1}</annotation></semantics></math> elementos aleatórios independentes tomando valores em espaços <math id="SS2.p8.m2" class="ltx_Math" alttext="(E_{i})_{i\geq 1}" display="inline"><semantics><msub><mrow><mo stretchy="false">(</mo><msub><mi>E</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow><mrow><mi>i</mi><mo>≥</mo><mn>1</mn></mrow></msub><annotation encoding="application/x-tex">(E_{i})_{i\geq 1}</annotation></semantics></math>, respectivamente.
+Mostre que para funções mensuráveis <math id="SS2.p8.m3" class="ltx_Math" alttext="(f_{i})_{i\geq 1}" display="inline"><semantics><msub><mrow><mo stretchy="false">(</mo><msub><mi>f</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow><mrow><mi>i</mi><mo>≥</mo><mn>1</mn></mrow></msub><annotation encoding="application/x-tex">(f_{i})_{i\geq 1}</annotation></semantics></math> temos que <math id="SS2.p8.m4" class="ltx_Math" alttext="(f_{i}(X_{i}))_{i\geq 1}" display="inline"><semantics><msub><mrow><mo stretchy="false">(</mo><mrow><msub><mi>f</mi><mi>i</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>X</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow><mrow><mi>i</mi><mo>≥</mo><mn>1</mn></mrow></msub><annotation encoding="application/x-tex">(f_{i}(X_{i}))_{i\geq 1}</annotation></semantics></math> são independentes.</p>
+</div>
+<div id="SS2.p9" class="ltx_para">
+<span class="ltx_ERROR undefined">{exercise}</span>
+<p class="ltx_p">Mostre que se <math id="SS2.p9.m1" class="ltx_Math" alttext="X,Y" display="inline"><semantics><mrow><mi>X</mi><mo>,</mo><mi>Y</mi></mrow><annotation encoding="application/x-tex">X,Y</annotation></semantics></math> são elementos aleatórios e se <math id="SS2.p9.m2" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> é constante quase certamente então <math id="SS2.p9.m3" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> e <math id="SS2.p9.m4" class="ltx_Math" alttext="Y" display="inline"><semantics><mi>Y</mi><annotation encoding="application/x-tex">Y</annotation></semantics></math> são independentes.</p>
+</div>
+<div id="SS2.p10" class="ltx_para">
+<span class="ltx_ERROR undefined">{exercise}</span>
+<p class="ltx_p">Sejam <math id="SS2.p10.m1" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> e <math id="SS2.p10.m2" class="ltx_Math" alttext="Y" display="inline"><semantics><mi>Y</mi><annotation encoding="application/x-tex">Y</annotation></semantics></math> variáveis aleatórias independentes com distribuição <math id="SS2.p10.m3" class="ltx_Math" alttext="\Exp(1)" display="inline"><semantics><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\Exp</mtext></merror><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\Exp(1)</annotation></semantics></math>, calcule a distribuição de</p>
+<ol id="I2" class="ltx_enumerate">
+<li id="I2.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"> a)</span><div id="I2.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i1.p1.m1" class="ltx_Math" alttext="\min\{X,Y\}" display="inline"><semantics><mrow><mi>min</mi><mo>⁡</mo><mrow><mo stretchy="false">{</mo><mi>X</mi><mo>,</mo><mi>Y</mi><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">\min\{X,Y\}</annotation></semantics></math> e</p>
+</div>
+</li>
+<li id="I2.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"> b)</span><div id="I2.i2.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i2.p1.m1" class="ltx_Math" alttext="X+Y" display="inline"><semantics><mrow><mi>X</mi><mo>+</mo><mi>Y</mi></mrow><annotation encoding="application/x-tex">X+Y</annotation></semantics></math>.</p>
+</div>
+</li>
+</ol>
+</div>
+<div id="SS2.p11" class="ltx_para">
+<span class="ltx_ERROR undefined">{exercise}</span>
+<p class="ltx_p">Seja um espaço produto de medidas <math id="SS2.p11.m1" class="ltx_Math" alttext="(\Omega_{1}\times\Omega_{2},\mathcal{F}_{1}\otimes\mathcal{F}_{2},\mu_{1}%
+\otimes\mu_{2})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mrow><msub><mi mathvariant="normal">Ω</mi><mn>1</mn></msub><mo lspace="0.222em" rspace="0.222em">×</mo><msub><mi mathvariant="normal">Ω</mi><mn>2</mn></msub></mrow><mo>,</mo><mrow><msub><mi class="ltx_font_mathcaligraphic">ℱ</mi><mn>1</mn></msub><mo lspace="0.222em" rspace="0.222em">⊗</mo><msub><mi class="ltx_font_mathcaligraphic">ℱ</mi><mn>2</mn></msub></mrow><mo>,</mo><mrow><msub><mi>μ</mi><mn>1</mn></msub><mo lspace="0.222em" rspace="0.222em">⊗</mo><msub><mi>μ</mi><mn>2</mn></msub></mrow><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(\Omega_{1}\times\Omega_{2},\mathcal{F}_{1}\otimes\mathcal{F}_{2},\mu_{1}%
+\otimes\mu_{2})</annotation></semantics></math> e defina a probabilidade <math id="SS2.p11.m2" class="ltx_Math" alttext="P" display="inline"><semantics><mi>P</mi><annotation encoding="application/x-tex">P</annotation></semantics></math> através de</p>
+<div id="Ch2.E23" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch2.E23.m1" class="ltx_math_unparsed" alttext="\d{P}=\rho(x,y)\d{(}\mu_{1}\otimes\mu_{2})." display="block"><semantics><mrow><munder accentunder="true"><mtext>P</mtext><mo>⋅</mo></munder><mo>=</mo><mi>ρ</mi><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><munder accentunder="true"><mtext>(</mtext><mo>⋅</mo></munder><msub><mi>μ</mi><mn>1</mn></msub><mo lspace="0.222em" rspace="0.222em">⊗</mo><msub><mi>μ</mi><mn>2</mn></msub><mo stretchy="false">)</mo><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\d{P}=\rho(x,y)\d{(}\mu_{1}\otimes\mu_{2}).</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(2.23)</span>
+              
+              
+            
+</div>
+<p class="ltx_p">Mostre nesse caso que as coordenadas canônicas <math id="SS2.p11.m3" class="ltx_Math" alttext="X_{1}" display="inline"><semantics><msub><mi>X</mi><mn>1</mn></msub><annotation encoding="application/x-tex">X_{1}</annotation></semantics></math> e <math id="SS2.p11.m4" class="ltx_Math" alttext="X_{2}" display="inline"><semantics><msub><mi>X</mi><mn>2</mn></msub><annotation encoding="application/x-tex">X_{2}</annotation></semantics></math> são independentes se e somente se existem <math id="SS2.p11.m5" class="ltx_Math" alttext="\rho_{1}" display="inline"><semantics><msub><mi>ρ</mi><mn>1</mn></msub><annotation encoding="application/x-tex">\rho_{1}</annotation></semantics></math> e <math id="SS2.p11.m6" class="ltx_Math" alttext="\rho_{2}" display="inline"><semantics><msub><mi>ρ</mi><mn>2</mn></msub><annotation encoding="application/x-tex">\rho_{2}</annotation></semantics></math> em <math id="SS2.p11.m7" class="ltx_Math" alttext="\Omega_{1}" display="inline"><semantics><msub><mi mathvariant="normal">Ω</mi><mn>1</mn></msub><annotation encoding="application/x-tex">\Omega_{1}</annotation></semantics></math> e <math id="SS2.p11.m8" class="ltx_Math" alttext="\Omega_{2}" display="inline"><semantics><msub><mi mathvariant="normal">Ω</mi><mn>2</mn></msub><annotation encoding="application/x-tex">\Omega_{2}</annotation></semantics></math> respectivamente, tais que <math id="SS2.p11.m9" class="ltx_Math" alttext="\rho(x,y)=\rho_{1}(x)\rho_{2}(y)" display="inline"><semantics><mrow><mrow><mi>ρ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msub><mi>ρ</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mi>ρ</mi><mn>2</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\rho(x,y)=\rho_{1}(x)\rho_{2}(y)</annotation></semantics></math> quase certamente com respeito a <math id="SS2.p11.m10" class="ltx_Math" alttext="\mu_{1}\otimes\mu_{2}" display="inline"><semantics><mrow><msub><mi>μ</mi><mn>1</mn></msub><mo lspace="0.222em" rspace="0.222em">⊗</mo><msub><mi>μ</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">\mu_{1}\otimes\mu_{2}</annotation></semantics></math>.</p>
+</div>
+<div id="SS2.p12" class="ltx_para">
+<span class="ltx_ERROR undefined">{exercise}</span>
+<p class="ltx_p">Sejam <math id="SS2.p12.m1" class="ltx_Math" alttext="X,Y" display="inline"><semantics><mrow><mi>X</mi><mo>,</mo><mi>Y</mi></mrow><annotation encoding="application/x-tex">X,Y</annotation></semantics></math> variáveis aleatórias tais que</p>
+<div id="Ch2.E24" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch2.E24.m1" class="ltx_Math" alttext="P[X\leq x,Y\leq y]=\begin{cases}0&amp;\quad\text{if $x&lt;0$,}\\
+(1-e^{-x})\Big{(}\frac{1}{2}+\frac{1}{\pi}\tan^{-1}y\Big{)},&amp;\quad\text{if $x%
+\geq 0$}.\end{cases}" display="block"><semantics><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><mrow><mi>X</mi><mo>≤</mo><mi>x</mi></mrow><mo>,</mo><mrow><mi>Y</mi><mo>≤</mo><mi>y</mi></mrow></mrow><mo stretchy="false">]</mo></mrow></mrow><mo>=</mo><mrow><mo>{</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_align_left" columnalign="left"><mn>0</mn></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mtext>if </mtext><mrow><mi>x</mi><mo>&lt;</mo><mn>0</mn></mrow><mtext>,</mtext></mrow></mtd></mtr><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><msup><mi>e</mi><mrow><mo>−</mo><mi>x</mi></mrow></msup></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo maxsize="160%" minsize="160%">(</mo><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>+</mo><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mi>π</mi></mfrac></mstyle><mo lspace="0.167em">⁢</mo><mrow><msup><mi>tan</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo lspace="0.167em">⁡</mo><mi>y</mi></mrow></mrow></mrow><mo maxsize="160%" minsize="160%">)</mo></mrow></mrow><mo>,</mo></mrow></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mtext>if </mtext><mrow><mi>x</mi><mo>≥</mo><mn>0</mn></mrow></mrow><mo lspace="0em">.</mo></mrow></mtd></mtr></mtable></mrow></mrow><annotation encoding="application/x-tex">P[X\leq x,Y\leq y]=\begin{cases}0&amp;\quad\text{if $x&lt;0$,}\\
+(1-e^{-x})\Big{(}\frac{1}{2}+\frac{1}{\pi}\tan^{-1}y\Big{)},&amp;\quad\text{if $x%
+\geq 0$}.\end{cases}</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(2.24)</span>
+              
+              
+            
+</div>
+<ol id="I3" class="ltx_enumerate">
+<li id="I3.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"> a)</span><div id="I3.i1.p1" class="ltx_para">​<p class="ltx_p">Mostre que a distribuição conjunta <math id="I3.i1.p1.m1" class="ltx_Math" alttext="\mu_{(X,Y)}" display="inline"><semantics><msub><mi>μ</mi><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><mi>Y</mi><mo stretchy="false">)</mo></mrow></msub><annotation encoding="application/x-tex">\mu_{(X,Y)}</annotation></semantics></math> é
+absolutamente contínua com relação à medida de Lebesgue em
+<math id="I3.i1.p1.m2" class="ltx_Math" alttext="\mathbb{R}^{2}" display="inline"><semantics><msup><mi>ℝ</mi><mn>2</mn></msup><annotation encoding="application/x-tex">\mathbb{R}^{2}</annotation></semantics></math>.</p>
+</div>
+</li>
+<li id="I3.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"> b)</span><div id="I3.i2.p1" class="ltx_para">​<p class="ltx_p">Mostre que <math id="I3.i2.p1.m1" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> e <math id="I3.i2.p1.m2" class="ltx_Math" alttext="Y" display="inline"><semantics><mi>Y</mi><annotation encoding="application/x-tex">Y</annotation></semantics></math> são independentes.</p>
+</div>
+</li>
+</ol>
+</div>
+<div id="SS2.p13" class="ltx_para">
+<span class="ltx_ERROR undefined">{exercise}</span>
+<p class="ltx_p">Mostre que se <math id="SS2.p13.m1" class="ltx_Math" alttext="X,Y" display="inline"><semantics><mrow><mi>X</mi><mo>,</mo><mi>Y</mi></mrow><annotation encoding="application/x-tex">X,Y</annotation></semantics></math> são variáveis aleatórias independentes com distribuições <math id="SS2.p13.m2" class="ltx_Math" alttext="X\distr f_{X}(x)\d{x}" display="inline"><semantics><mrow><mi>X</mi><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\distr</mtext></merror><mo>⁢</mo><msub><mi>f</mi><mi>X</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><munder accentunder="true"><mtext>x</mtext><mo>⋅</mo></munder></mrow><annotation encoding="application/x-tex">X\distr f_{X}(x)\d{x}</annotation></semantics></math> e <math id="SS2.p13.m3" class="ltx_Math" alttext="Y\distr f_{Y}(y)\d{y}" display="inline"><semantics><mrow><mi>Y</mi><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\distr</mtext></merror><mo>⁢</mo><msub><mi>f</mi><mi>Y</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><munder accentunder="true"><mtext>y</mtext><mo>⋅</mo></munder></mrow><annotation encoding="application/x-tex">Y\distr f_{Y}(y)\d{y}</annotation></semantics></math>, então <math id="SS2.p13.m4" class="ltx_Math" alttext="X+Y" display="inline"><semantics><mrow><mi>X</mi><mo>+</mo><mi>Y</mi></mrow><annotation encoding="application/x-tex">X+Y</annotation></semantics></math> tem distribuição absolutamente contínua com respeito a Lebesgue e</p>
+<div id="Ch2.E25" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch2.E25.m1" class="ltx_Math" alttext="f_{X+Y}(z)=\int_{-\infty}^{\infty}f_{Y}(z-x)f_{X}(x)\d{x}." display="block"><semantics><mrow><mrow><mrow><msub><mi>f</mi><mrow><mi>X</mi><mo>+</mo><mi>Y</mi></mrow></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mo rspace="0.111em">=</mo><mrow><msubsup><mo>∫</mo><mrow><mo>−</mo><mi mathvariant="normal">∞</mi></mrow><mi mathvariant="normal">∞</mi></msubsup><mrow><msub><mi>f</mi><mi>Y</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>z</mi><mo>−</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mi>f</mi><mi>X</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><munder accentunder="true"><mtext>x</mtext><mo>⋅</mo></munder></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">f_{X+Y}(z)=\int_{-\infty}^{\infty}f_{Y}(z-x)f_{X}(x)\d{x}.</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(2.25)</span>
+              
+              
+            
+</div>
+</div>
+<span id="todo3" class="ltx_note ltx_role_todo"><sup class="ltx_note_mark">3</sup><span class="ltx_note_outer"><span class="ltx_note_content"><sup class="ltx_note_mark">3</sup><span class="ltx_note_type">todo: </span>
+            <span class="ltx_tag ltx_tag_note">3</span>
+            
+            
+            
+          mandar para depois de produtos infinitos?</span></span></span>
+<div id="SS2.p14" class="ltx_para">
+<span class="ltx_ERROR undefined">{lemma}</span>
+<p class="ltx_p">[Borel-Cantelli - segunda parte]
+Se <math id="SS2.p14.m1" class="ltx_Math" alttext="A_{1},A_{2},\dots\in\mathcal{F}" display="inline"><semantics><mrow><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>,</mo><msub><mi>A</mi><mn>2</mn></msub><mo>,</mo><mi mathvariant="normal">⋯</mi></mrow><mo>∈</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi></mrow><annotation encoding="application/x-tex">A_{1},A_{2},\dots\in\mathcal{F}</annotation></semantics></math> são independentes e <math id="SS2.p14.m2" class="ltx_Math" alttext="p_{i}=P(A_{i})" display="inline"><semantics><mrow><msub><mi>p</mi><mi>i</mi></msub><mo>=</mo><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">p_{i}=P(A_{i})</annotation></semantics></math> satisfazem <math id="SS2.p14.m3" class="ltx_Math" alttext="\sum_{i}p_{i}=\infty" display="inline"><semantics><mrow><mrow><msub><mo>∑</mo><mi>i</mi></msub><msub><mi>p</mi><mi>i</mi></msub></mrow><mo>=</mo><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">\sum_{i}p_{i}=\infty</annotation></semantics></math>, então</p>
+<div id="Ch2.E26" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch2.E26.m1" class="ltx_Math" alttext="P[A_{i}\text{ infinitas vezes}]=1." display="block"><semantics><mrow><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><msub><mi>A</mi><mi>i</mi></msub><mo>⁢</mo><mtext> infinitas vezes</mtext></mrow><mo stretchy="false">]</mo></mrow></mrow><mo>=</mo><mn>1</mn></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">P[A_{i}\text{ infinitas vezes}]=1.</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(2.26)</span>
+              
+              
+            
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demonstração.</h6>
+<div id="SS2.p15" class="ltx_para">
+<p class="ltx_p">Queremos mostrar que</p>
+<div id="Ch2.E27" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch2.E27.m1" class="ltx_Math" alttext="P\Big{(}\big{(}\mcap_{n}\mcup_{i=n}^{\infty}A_{i}\big{)}^{c}\Big{)}=0," display="block"><semantics><mrow><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo maxsize="160%" minsize="160%">(</mo><msup><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><msub><merror class="ltx_ERROR undefined undefined"><mtext>\mcap</mtext></merror><mi>n</mi></msub><mo>⁢</mo><msubsup><merror class="ltx_ERROR undefined undefined"><mtext>\mcup</mtext></merror><mrow><mi>i</mi><mo>=</mo><mi>n</mi></mrow><mi mathvariant="normal">∞</mi></msubsup><mo>⁢</mo><msub><mi>A</mi><mi>i</mi></msub></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow><mi>c</mi></msup><mo maxsize="160%" minsize="160%">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">P\Big{(}\big{(}\mcap_{n}\mcup_{i=n}^{\infty}A_{i}\big{)}^{c}\Big{)}=0,</annotation></semantics></math></span>
+                <span class="ltx_tag ltx_tag_equation ltx_align_right">(2.27)</span>
+                
+                
+              
+</div>
+<p class="ltx_p">mas</p>
+<div id="Ch2.E28" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch2.E28.m1" class="ltx_Math" alttext="P\Big{(}\big{(}\mcap_{n}\mcup_{i=n}^{\infty}A_{i}\big{)}^{c}\Big{)}=P\Big{(}%
+\mcup_{n}\mcap_{i=n}^{\infty}A_{i}^{c}\Big{)}\leq\sum\limits_{n}P\Big{(}\mcap_%
+{i=n}^{\infty}A_{i}^{c}\Big{)}." display="block"><semantics><mrow><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo maxsize="160%" minsize="160%">(</mo><msup><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><msub><merror class="ltx_ERROR undefined undefined"><mtext>\mcap</mtext></merror><mi>n</mi></msub><mo>⁢</mo><msubsup><merror class="ltx_ERROR undefined undefined"><mtext>\mcup</mtext></merror><mrow><mi>i</mi><mo>=</mo><mi>n</mi></mrow><mi mathvariant="normal">∞</mi></msubsup><mo>⁢</mo><msub><mi>A</mi><mi>i</mi></msub></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow><mi>c</mi></msup><mo maxsize="160%" minsize="160%">)</mo></mrow></mrow><mo>=</mo><mrow><mi>P</mi><mo>⁢</mo><mrow><mo maxsize="160%" minsize="160%">(</mo><mrow><msub><merror class="ltx_ERROR undefined undefined"><mtext>\mcup</mtext></merror><mi>n</mi></msub><mo>⁢</mo><msubsup><merror class="ltx_ERROR undefined undefined"><mtext>\mcap</mtext></merror><mrow><mi>i</mi><mo>=</mo><mi>n</mi></mrow><mi mathvariant="normal">∞</mi></msubsup><mo>⁢</mo><msubsup><mi>A</mi><mi>i</mi><mi>c</mi></msubsup></mrow><mo maxsize="160%" minsize="160%">)</mo></mrow></mrow><mo rspace="0.111em">≤</mo><mrow><munder><mo movablelimits="false">∑</mo><mi>n</mi></munder><mrow><mi>P</mi><mo>⁢</mo><mrow><mo maxsize="160%" minsize="160%">(</mo><mrow><msubsup><merror class="ltx_ERROR undefined undefined"><mtext>\mcap</mtext></merror><mrow><mi>i</mi><mo>=</mo><mi>n</mi></mrow><mi mathvariant="normal">∞</mi></msubsup><mo>⁢</mo><msubsup><mi>A</mi><mi>i</mi><mi>c</mi></msubsup></mrow><mo maxsize="160%" minsize="160%">)</mo></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">P\Big{(}\big{(}\mcap_{n}\mcup_{i=n}^{\infty}A_{i}\big{)}^{c}\Big{)}=P\Big{(}%
+\mcup_{n}\mcap_{i=n}^{\infty}A_{i}^{c}\Big{)}\leq\sum\limits_{n}P\Big{(}\mcap_%
+{i=n}^{\infty}A_{i}^{c}\Big{)}.</annotation></semantics></math></span>
+                <span class="ltx_tag ltx_tag_equation ltx_align_right">(2.28)</span>
+                
+                
+              
+</div>
+<p class="ltx_p">Logo basta mostrar que a probabilidade à direita é zero para todo <math id="SS2.p15.m1" class="ltx_Math" alttext="n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>.
+Mas</p>
+<div id="Ch2.E29" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch2.E29.m1" class="ltx_Math" alttext="\begin{split}P\Big{(}\mcap_{i=n}^{\infty}A_{i}^{c}\Big{)}&amp;=\prod\limits_{i=n}^%
+{\infty}P(A_{i}^{c})=\prod\limits_{i=n}^{\infty}(1-p_{i})\\
+&amp;\leq\prod\limits_{i=n}^{\infty}\exp\{-p_{i}\}=\exp\big{\{}-\sum_{i=n}^{\infty%
+}p_{i}\big{\}}=0.\end{split}" display="block"><semantics><mtable columnspacing="0pt" displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_align_right" columnalign="right"><mrow><mi>P</mi><mo>⁢</mo><mrow><mo maxsize="160%" minsize="160%">(</mo><mrow><msubsup><merror class="ltx_ERROR undefined undefined"><mtext>\mcap</mtext></merror><mrow><mi>i</mi><mo>=</mo><mi>n</mi></mrow><mi mathvariant="normal">∞</mi></msubsup><mo>⁢</mo><msubsup><mi>A</mi><mi>i</mi><mi>c</mi></msubsup></mrow><mo maxsize="160%" minsize="160%">)</mo></mrow></mrow></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mi></mi><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false">∏</mo><mrow><mi>i</mi><mo>=</mo><mi>n</mi></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msubsup><mi>A</mi><mi>i</mi><mi>c</mi></msubsup><mo stretchy="false">)</mo></mrow></mrow></mrow><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false" rspace="0em">∏</mo><mrow><mi>i</mi><mo>=</mo><mi>n</mi></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><msub><mi>p</mi><mi>i</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mtd></mtr><mtr><mtd></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mi></mi><mo rspace="0.111em">≤</mo><mrow><munderover><mo movablelimits="false">∏</mo><mrow><mi>i</mi><mo>=</mo><mi>n</mi></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><mi>exp</mi><mo>⁡</mo><mrow><mo stretchy="false">{</mo><mrow><mo>−</mo><msub><mi>p</mi><mi>i</mi></msub></mrow><mo stretchy="false">}</mo></mrow></mrow></mrow><mo>=</mo><mrow><mi>exp</mi><mo>⁡</mo><mrow><mo maxsize="120%" minsize="120%">{</mo><mrow><mo>−</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>i</mi><mo>=</mo><mi>n</mi></mrow><mi mathvariant="normal">∞</mi></munderover><msub><mi>p</mi><mi>i</mi></msub></mrow></mrow><mo maxsize="120%" minsize="120%">}</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow><mo lspace="0em">.</mo></mrow></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{split}P\Big{(}\mcap_{i=n}^{\infty}A_{i}^{c}\Big{)}&amp;=\prod\limits_{i=n}^%
+{\infty}P(A_{i}^{c})=\prod\limits_{i=n}^{\infty}(1-p_{i})\\
+&amp;\leq\prod\limits_{i=n}^{\infty}\exp\{-p_{i}\}=\exp\big{\{}-\sum_{i=n}^{\infty%
+}p_{i}\big{\}}=0.\end{split}</annotation></semantics></math></span>
+                <span class="ltx_tag ltx_tag_equation ltx_align_right">(2.29)</span>
+                
+                
+              
+</div>
+<p class="ltx_p">Terminando a prova do lema.
+∎</p>
+</div>
+</div>
+<div id="SS2.p16" class="ltx_para">
+<span class="ltx_ERROR undefined">\todosec</span>
+<p class="ltx_p">Tópico: Uma dinâmica em <math id="SS2.p16.m1" class="ltx_Math" alttext="[0,1]" display="inline"><semantics><mrow><mo stretchy="false">[</mo><mn>0,1</mn><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[0,1]</annotation></semantics></math>fazer dinâmica 2x mod 1 e relações Lebesgue[0,1] com produtos de bernoulli</p>
+</div>
+<div class="ltx_pagination ltx_role_newpage"></div>
+</div>
+</section>
+</div>
+</section>
+</div>
+</div>
+</div>
+<a href="Ch2.S4.html" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a><a href="Ch2.Sx2.html" class="navigation navigation-next" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+</div>
+</div>
+<script src="bookml/gitbook/js/app.min.js"></script>
+<script src="bookml/gitbook/js/jquery.highlight.js"></script>
+<script src="bookml/gitbook/js/plugin-search.js"></script>
+<script src="bookml/gitbook/js/plugin-fontsettings.js"></script>
+<script src="bookml/gitbook/js/plugin-bookdown.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+        MathJax = {
+          startup: {
+            ready() {
+              // do not process equations disabled with \bmlDisableMathJax (code suggested by Davide P. Cervone)
+              class bmlFindMathML extends MathJax._.input.mathml.FindMathML.FindMathML {
+                processMath(set) {
+                  const adaptor = this.adaptor;
+                  for (const node of set.values()) {
+                    if (adaptor.hasClass(node, 'bml_disable_mathjax')) {
+                      set.delete(node);
+                    }
+                  }
+                  return super.processMath(set);
+                }
+              }
+
+              MathJax._.components.global.combineDefaults(MathJax.config, 'mml', {FindMathML: new bmlFindMathML()});
+
+              MathJax.startup.defaultReady();
+
+              // preproces MathML to make MathJax aware of certain LaTeXML and BookML additional info
+              const mmlFilters = MathJax.startup.input[0].mmlFilters;
+
+              // convert the LaTeXML calligraphic (chancery) annotation to a form MathJax understands
+              // since the corresponding Unicode characters render as script (rounded)
+              const script2latin = {
+                '𝒜': 'A', 'ℬ': 'B', '𝒞': 'C', '𝒟': 'D', 'ℰ': 'E', 'ℱ': 'F', '𝒢': 'G',
+                'ℋ': 'H', 'ℐ': 'I', '𝒥': 'J', '𝒦': 'K', 'ℒ': 'L', 'ℳ': 'M', '𝒩': 'N',
+                '𝒪': 'O', '𝒫': 'P', '𝒬': 'Q', 'ℛ': 'R', '𝒮': 'S', '𝒯': 'T', '𝒰': 'U',
+                '𝒱': 'V', '𝒲': 'W', '𝒳': 'X', '𝒴': 'Y', '𝒵': 'Z',
+              };
+
+              mmlFilters.add((args) => {
+                for (const n of args.data.getElementsByClassName('ltx_font_mathcaligraphic')) {
+                  n.classList.add('MJX-tex-calligraphic');
+                  const letter = script2latin[n.textContent];
+                  if (letter !== undefined) { n.textContent = letter; }
+                }
+              });
+
+              // adjust characters based on Unicode variation sequences
+              const replacements = {
+                // MathJax renders the empty set as the U+FE00 variant, so the plain character needs adjusting
+                '∅': { variant: 'variant' },
+                // MathJax renders script characters in rounded style, which is fine for no variation and U+FE00
+                '𝒜\xFE00': { text: 'A', variant: 'tex-calligraphic' },
+                'ℬ\xFE00': { text: 'B', variant: 'tex-calligraphic' },
+                '𝒞\xFE00': { text: 'C', variant: 'tex-calligraphic' },
+                '𝒟\xFE00': { text: 'D', variant: 'tex-calligraphic' },
+                'ℰ\xFE00': { text: 'E', variant: 'tex-calligraphic' },
+                'ℱ\xFE00': { text: 'F', variant: 'tex-calligraphic' },
+                '𝒢\xFE00': { text: 'G', variant: 'tex-calligraphic' },
+                'ℋ\xFE00': { text: 'H', variant: 'tex-calligraphic' },
+                'ℐ\xFE00': { text: 'I', variant: 'tex-calligraphic' },
+                '𝒥\xFE00': { text: 'J', variant: 'tex-calligraphic' },
+                '𝒦\xFE00': { text: 'K', variant: 'tex-calligraphic' },
+                'ℒ\xFE00': { text: 'L', variant: 'tex-calligraphic' },
+                'ℳ\xFE00': { text: 'M', variant: 'tex-calligraphic' },
+                '𝒩\xFE00': { text: 'N', variant: 'tex-calligraphic' },
+                '𝒪\xFE00': { text: 'O', variant: 'tex-calligraphic' },
+                '𝒫\xFE00': { text: 'P', variant: 'tex-calligraphic' },
+                '𝒬\xFE00': { text: 'Q', variant: 'tex-calligraphic' },
+                'ℛ\xFE00': { text: 'R', variant: 'tex-calligraphic' },
+                '𝒮\xFE00': { text: 'S', variant: 'tex-calligraphic' },
+                '𝒯\xFE00': { text: 'T', variant: 'tex-calligraphic' },
+                '𝒰\xFE00': { text: 'U', variant: 'tex-calligraphic' },
+                '𝒱\xFE00': { text: 'V', variant: 'tex-calligraphic' },
+                '𝒲\xFE00': { text: 'W', variant: 'tex-calligraphic' },
+                '𝒳\xFE00': { text: 'X', variant: 'tex-calligraphic' },
+                '𝒴\xFE00': { text: 'Y', variant: 'tex-calligraphic' },
+                '𝒵\xFE00': { text: 'Z', variant: 'tex-calligraphic' }
+              };
+
+              mmlFilters.add((args) => {
+                let nodes = document.evaluate('.//m:mi | .//m:mn | .//m:mo | .//m:ms', args.data,
+                  () => 'http://www.w3.org/1998/Math/MathML', XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE);
+                for (let i = 0; i < nodes.snapshotLength; i++) {
+                  const n = nodes.snapshotItem(i);
+                  const repl = replacements[n.innerHTML];
+                  if (repl !== undefined) {
+                    const variant = repl['variant'];
+                    const text = repl['text'];
+                    if (variant !== undefined) { n.classList.add('MJX-' + variant); n.removeAttribute('mathvariant'); }
+                    if (text !== undefined) { n.innerHTML = text; }
+                  }
+                }
+              });
+            }
+          }
+        };
+      </script>
+<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js"></script>
+<script type="text/javascript">
+                gitbook.require(["gitbook"], function(gitbook) {
+                gitbook.start({
+                  "fontsettings": {
+                    "theme": "white",
+                    "family": "sans",
+                    "size": 2
+                  },
+                  "download": [ [ "Notas_de_aula.pdf", "PDF" ], ],
+                  "search": {
+                    "engine": "fuse"
+                  },
+                  "toc": {
+                    "collapse": "none"
+                  }
+                });
+              });
+            </script>
+</body>
+
+</html>

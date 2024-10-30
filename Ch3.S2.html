@@ -1,0 +1,478 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>3.2 Variância ‣ Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I</title>
+<!--Generated on Tue Aug 27 13:34:01 2024 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
+<style>:root { --bml-ltx-font-size: 10; }</style>
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-table.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-search.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-bookdown.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-fontsettings.css" type="text/css">
+<link rel="stylesheet" href="ltx-book.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook,plain.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook.css" type="text/css">
+<link rel="stylesheet" href="bmluser/colors.gitbook-Notas_de_aula.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6"></script>
+<link rel="up" href="Ch3.html" title="Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I">
+<link rel="up up" href="index.html" title="Notas de aula: Probabilidade I">
+<link rel="start" href="index.html" title="Notas de aula: Probabilidade I">
+<link rel="prev" href="Ch3.S1.html" title="3.1 Esperança ‣ Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I">
+<link rel="next" href="Ch3.S3.html" title="3.3 Lei fraca dos grandes números ‣ Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch3.S1.html" title="3.1 Esperança ‣ Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch3.S3.html" title="3.3 Lei fraca dos grandes números ‣ Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch3.Sx1.html" title="Tópico: Contando triângulos ‣ Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch3.S4.html" title="3.4 Lei forte dos grandes números ‣ Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch3.S5.html" title="3.5 Lei {0,1} de Kolmogorov ‣ Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch3.S6.html" title="3.6 Momentos exponenciais ‣ Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch3.S7.html" title="3.7 Princípio de Grandes Desvios ‣ Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch3.Sx2.html" title="Tópico: Funções características 1 footnote 1 1 footnote 1 Somos gratos a Rangel Baldasso por escrever essa seção. ‣ Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch3.S8.html" title="3.8 O Teorema Central do Limite ‣ Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch3.Sx3.html" title="Tópico: O Teorema de Portmanteau ‣ Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I">
+<link rel="chapter" href="Chx1.html" title="Licença ‣ Notas de aula: Probabilidade I">
+<link rel="chapter" href="Chx2.html" title="Contribuições ‣ Notas de aula: Probabilidade I">
+<link rel="chapter" href="Ch1.html" title="Capítulo 1 Fundamentos ‣ Notas de aula: Probabilidade I">
+<link rel="chapter" href="Ch2.html" title="Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I">
+<link rel="chapter" href="Ch3.html" title="Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I">
+<link rel="chapter" href="Ch4.html" title="Capítulo 4 Esperança condicional ‣ Notas de aula: Probabilidade I">
+<link rel="chapter" href="Ch5.html" title="Capítulo 5 Soluções de exercícios ‣ Notas de aula: Probabilidade I">
+<link rel="bibliography" href="bib.html" title="Referências ‣ Notas de aula: Probabilidade I">
+<link rel="index" href="idx.html" title="Índice Remissivo ‣ Notas de aula: Probabilidade I">
+<meta name="keywords" lang="pt-BR" content="momento, primeiro, variância">
+</head>
+<body>
+<div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+<a href="#bml-main-content" tabindex="0" class="bml-skip-to-content">Skip to content.</a>
+<div class="book-summary"><nav class="ltx_page_navbar">
+<ul class="ltx_toclist summary">
+<li>
+<a href="index.html" title="" class="ltx_ref" rel="start">Notas de aula: Probabilidade I</a>
+</li>
+<li class="divider">
+<li data-level="" data-path="Chx1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Chx1.html" title="In Notas de aula: Probabilidade I" class="ltx_ref">Licença</a></li>
+<li data-level="" data-path="Chx2.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Chx2.html" title="In Notas de aula: Probabilidade I" class="ltx_ref">Contribuições</a></li>
+<li data-level="1" data-path="Ch1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch1.html" title="In Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1 </span></b>Fundamentos</a></li>
+<li data-level="2" data-path="Ch2.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch2.html" title="In Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2 </span></b>Construção de espaços de probabilidade</a></li>
+<li data-level="3" data-path="Ch3.html" class="ltx_tocentry ltx_tocentry_chapter  chapter ">
+<a href="Ch3.html" title="In Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3 </span></b>Somas de variáveis independentes</a>
+<ol class="ltx_toclist ltx_toclist_chapter">
+<li data-level="3.1" data-path="Ch3.S1.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch3.S1.html" title="In Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3.1 </span></b>Esperança</a></li>
+<li data-level="3.2" data-path="" class="ltx_tocentry ltx_tocentry_section ltx_ref_self  chapter active"><a href="" title="In Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3.2 </span></b>Variância</a></li>
+<li data-level="3.3" data-path="Ch3.S3.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch3.S3.html" title="In Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3.3 </span></b>Lei fraca dos grandes números</a></li>
+<li data-level="" data-path="Ch3.Sx1.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch3.Sx1.html" title="In Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I" class="ltx_ref">Tópico: Contando triângulos</a></li>
+<li data-level="3.4" data-path="Ch3.S4.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch3.S4.html" title="In Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3.4 </span></b>Lei forte dos grandes números</a></li>
+<li data-level="3.5" data-path="Ch3.S5.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch3.S5.html" title="In Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3.5 </span></b>Lei <math class="ltx_Math" alttext="\{0,1\}" display="inline"><semantics><mrow><mo stretchy="false">{</mo><mn>0,1</mn><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{0,1\}</annotation></semantics></math> de Kolmogorov</a></li>
+<li data-level="3.6" data-path="Ch3.S6.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch3.S6.html" title="In Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3.6 </span></b>Momentos exponenciais</a></li>
+<li data-level="3.7" data-path="Ch3.S7.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch3.S7.html" title="In Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3.7 </span></b>Princípio de Grandes Desvios</a></li>
+<li data-level="" data-path="Ch3.Sx2.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch3.Sx2.html" title="In Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I" class="ltx_ref">Tópico: Funções características</a></li>
+<li data-level="3.8" data-path="Ch3.S8.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch3.S8.html" title="In Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3.8 </span></b>O Teorema Central do Limite</a></li>
+<li data-level="" data-path="Ch3.Sx3.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch3.Sx3.html" title="In Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I" class="ltx_ref">Tópico: O Teorema de Portmanteau</a></li>
+</ol>
+</li>
+<li data-level="4" data-path="Ch4.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch4.html" title="In Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4 </span></b>Esperança condicional</a></li>
+<li data-level="5" data-path="Ch5.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch5.html" title="In Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">5 </span></b>Soluções de exercícios</a></li>
+<li data-level="" data-path="bib.html" class="ltx_tocentry ltx_tocentry_bibliography  chapter "><a href="bib.html" title="In Notas de aula: Probabilidade I" class="ltx_ref">Referências</a></li>
+<li data-level="" data-path="idx.html" class="ltx_tocentry ltx_tocentry_index  chapter "><a href="idx.html" title="In Notas de aula: Probabilidade I" class="ltx_ref">Índice Remissivo</a></li>
+</ul>
+</nav></div>
+<div class="ltx_page_main book-body fixed">
+<div class="body-inner">
+<div class="book-header fixed" role="navigation"><h1>Variância</h1></div>
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="ltx_page_content page-inner" id="bml-main-content">
+<section class="ltx_section normal" lang="pt-BR">
+<div class="section level1">
+
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section header-section-number">3.2</span> Variância</h1>
+
+<div id="p1" class="ltx_para">
+<p class="ltx_p">Na seção anterior, limitamos <math id="p1.m1" class="ltx_Math" alttext="P[X&gt;a]" display="inline"><semantics><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><mi>X</mi><mo>&gt;</mo><mi>a</mi></mrow><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">P[X&gt;a]</annotation></semantics></math> usando <math id="p1.m2" class="ltx_Math" alttext="E(X)" display="inline"><semantics><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">E(X)</annotation></semantics></math> (se <math id="p1.m3" class="ltx_Math" alttext="X\geq 0" display="inline"><semantics><mrow><mi>X</mi><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">X\geq 0</annotation></semantics></math>).
+Esse método é chamado de <em class="ltx_emph ltx_font_italic">método do primeiro momento</em>,  de acordo com a seguinte
+<span class="ltx_ERROR undefined">{definition}</span>
+Dada uma variável aleatória <math id="p1.m4" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>, definimos o seu <math id="p1.m5" class="ltx_Math" alttext="k" display="inline"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>-ésimo momento como <math id="p1.m6" class="ltx_Math" alttext="E(X^{k})" display="inline"><semantics><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>X</mi><mi>k</mi></msup><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">E(X^{k})</annotation></semantics></math>, para <math id="p1.m7" class="ltx_Math" alttext="k=1,2,\dots" display="inline"><semantics><mrow><mi>k</mi><mo>=</mo><mrow><mn>1,2</mn><mo>,</mo><mi mathvariant="normal">…</mi></mrow></mrow><annotation encoding="application/x-tex">k=1,2,\dots</annotation></semantics></math></p>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">Então, por exemplo, se <math id="p2.m1" class="ltx_Math" alttext="X\in\mathcal{L}^{k}" display="inline"><semantics><mrow><mi>X</mi><mo>∈</mo><msup><mi class="ltx_font_mathcaligraphic">ℒ</mi><mi>k</mi></msup></mrow><annotation encoding="application/x-tex">X\in\mathcal{L}^{k}</annotation></semantics></math> e <math id="p2.m2" class="ltx_Math" alttext="X\geq 0" display="inline"><semantics><mrow><mi>X</mi><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">X\geq 0</annotation></semantics></math>, podemos estimar</p>
+<div id="Ch3.E20" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch3.E20.m1" class="ltx_Math" alttext="P[X\geq x]=P[X^{k}\geq x^{k}]\leq\frac{E(X^{k})}{x^{k}},\text{ para quaisquer %
+$k\geq 1$.}" display="block"><semantics><mrow><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><mi>X</mi><mo>≥</mo><mi>x</mi></mrow><mo stretchy="false">]</mo></mrow></mrow><mo>=</mo><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><msup><mi>X</mi><mi>k</mi></msup><mo>≥</mo><msup><mi>x</mi><mi>k</mi></msup></mrow><mo stretchy="false">]</mo></mrow></mrow><mo>≤</mo><mfrac><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>X</mi><mi>k</mi></msup><mo stretchy="false">)</mo></mrow></mrow><msup><mi>x</mi><mi>k</mi></msup></mfrac></mrow><mo>,</mo><mrow><mtext> para quaisquer </mtext><mrow><mi>k</mi><mo>≥</mo><mn>1</mn></mrow><mtext>.</mtext></mrow></mrow><annotation encoding="application/x-tex">P[X\geq x]=P[X^{k}\geq x^{k}]\leq\frac{E(X^{k})}{x^{k}},\text{ para quaisquer %
+$k\geq 1$.}</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.20)</span>
+            
+            
+          
+</div>
+<p class="ltx_p">Observe que quando o <math id="p2.m3" class="ltx_Math" alttext="k" display="inline"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>-ésimo momento de <math id="p2.m4" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> é finito, a razão acima decai mais rápido quando <math id="p2.m5" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> diverge.</p>
+</div>
+<div id="p3" class="ltx_para">
+<span class="ltx_ERROR undefined">{exercise}</span>
+<p class="ltx_p">Mostre uma fórmula análoga à da Proposição <a href="Ch3.S1.html" title="3.1 Esperança ‣ Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.1</span></a>.</p>
+</div>
+<div id="p4" class="ltx_para">
+<span class="ltx_ERROR undefined">{exercise}</span>
+<p class="ltx_p">Mostre que se a distribuição de <math id="p4.m1" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> tem densidade <math id="p4.m2" class="ltx_Math" alttext="\rho" display="inline"><semantics><mi>ρ</mi><annotation encoding="application/x-tex">\rho</annotation></semantics></math> e <math id="p4.m3" class="ltx_Math" alttext="E(|f(X)|)&lt;\infty" display="inline"><semantics><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mo stretchy="false">|</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">|</mo></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>&lt;</mo><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">E(|f(X)|)&lt;\infty</annotation></semantics></math>, então</p>
+<div id="Ch3.E21" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch3.E21.m1" class="ltx_Math" alttext="E(f(X))=\int f(x)\rho(x)\d{x}." display="block"><semantics><mrow><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo rspace="0.111em">=</mo><mrow><mo>∫</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>ρ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><munder accentunder="true"><mtext>x</mtext><mo>⋅</mo></munder></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">E(f(X))=\int f(x)\rho(x)\d{x}.</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.21)</span>
+            
+            
+          
+</div>
+</div>
+<div id="p5" class="ltx_para">
+<p class="ltx_p">Um caso bastante importante ocorre quando <math id="p5.m1" class="ltx_Math" alttext="k=2" display="inline"><semantics><mrow><mi>k</mi><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">k=2</annotation></semantics></math>, por várias razões que descreveremos abaixo.</p>
+</div>
+<div id="p6" class="ltx_para">
+<p class="ltx_p">Digamos que estamos interessados em aproximar uma variável aleatória por uma constante de forma a minimizar o erro da aproximação.
+Uma possível formulação desse problema é encontrar <math id="p6.m1" class="ltx_Math" alttext="a" display="inline"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math> de forma a minimizar</p>
+<div id="Ch3.E22" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch3.E22.m1" class="ltx_Math" alttext="E\Big{(}(X-a)^{2}\Big{)}=E(X^{2})-2aE(X)+a^{2}." display="block"><semantics><mrow><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo maxsize="160%" minsize="160%">(</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo>−</mo><mi>a</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo maxsize="160%" minsize="160%">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>X</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mn>2</mn><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>+</mo><msup><mi>a</mi><mn>2</mn></msup></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">E\Big{(}(X-a)^{2}\Big{)}=E(X^{2})-2aE(X)+a^{2}.</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.22)</span>
+            
+            
+          
+</div>
+<p class="ltx_p">Essa equação obviamente possui um único mínimo em <math id="p6.m2" class="ltx_Math" alttext="a=E(X)" display="inline"><semantics><mrow><mi>a</mi><mo>=</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">a=E(X)</annotation></semantics></math>.
+Ao erro da aproximação acima damos o nome de variância</p>
+</div>
+<div id="p7" class="ltx_para">
+<span class="ltx_ERROR undefined">{definition}</span>
+<p class="ltx_p">Dada uma variável aleatória <math id="p7.m1" class="ltx_Math" alttext="X\in\mathcal{L}^{2}" display="inline"><semantics><mrow><mi>X</mi><mo>∈</mo><msup><mi class="ltx_font_mathcaligraphic">ℒ</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">X\in\mathcal{L}^{2}</annotation></semantics></math>, definimos sua variância  como</p>
+<div id="Ch3.E23" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch3.E23.m1" class="ltx_Math" alttext="\Var(X)=E\Big{(}\big{(}X-E(X)\big{)}^{2}\Big{)}=E(X^{2})-E(X)^{2}." display="block"><semantics><mrow><mrow><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\Var</mtext></merror><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo maxsize="160%" minsize="160%">(</mo><msup><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mi>X</mi><mo>−</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow><mn>2</mn></msup><mo maxsize="160%" minsize="160%">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>X</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>E</mi><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\Var(X)=E\Big{(}\big{(}X-E(X)\big{)}^{2}\Big{)}=E(X^{2})-E(X)^{2}.</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.23)</span>
+            
+            
+          
+</div>
+</div>
+<div id="p8" class="ltx_para">
+<p class="ltx_p">Observe pelas definições alternativas dadas acima que</p>
+<ol id="I1" class="ltx_enumerate">
+<li id="I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"> a)</span><div id="I1.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i1.p1.m1" class="ltx_Math" alttext="\Var(X)\geq 0" display="inline"><semantics><mrow><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\Var</mtext></merror><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\Var(X)\geq 0</annotation></semantics></math> e</p>
+</div>
+</li>
+<li id="I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"> b)</span><div id="I1.i2.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i2.p1.m1" class="ltx_Math" alttext="E(X^{2})\geq E(X)^{2}" display="inline"><semantics><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>X</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow></mrow><mo>≥</mo><mrow><mi>E</mi><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></mrow><annotation encoding="application/x-tex">E(X^{2})\geq E(X)^{2}</annotation></semantics></math>.</p>
+</div>
+</li>
+</ol>
+</div>
+<div id="p9" class="ltx_para">
+<span class="ltx_ERROR undefined">{exercise}</span>
+<p class="ltx_p">Mostre que se <math id="p9.m1" class="ltx_Math" alttext="X\in\mathcal{L}^{2}" display="inline"><semantics><mrow><mi>X</mi><mo>∈</mo><msup><mi class="ltx_font_mathcaligraphic">ℒ</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">X\in\mathcal{L}^{2}</annotation></semantics></math>, então <math id="p9.m2" class="ltx_Math" alttext="\Var(X)=0" display="inline"><semantics><mrow><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\Var</mtext></merror><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\Var(X)=0</annotation></semantics></math> se e somente se <math id="p9.m3" class="ltx_Math" alttext="X=a" display="inline"><semantics><mrow><mi>X</mi><mo>=</mo><mi>a</mi></mrow><annotation encoding="application/x-tex">X=a</annotation></semantics></math> quase certamente.</p>
+</div>
+<div id="p10" class="ltx_para">
+<p class="ltx_p">Obviamente</p>
+<div id="Ch3.E24" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch3.E24.m1" class="ltx_Math" alttext="\Var(aX)=E(a^{2}X^{2})-E(aX)^{2}=a^{2}\Var(X)." display="block"><semantics><mrow><mrow><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\Var</mtext></merror><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo>⁢</mo><mi>X</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>⁢</mo><msup><mi>X</mi><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>E</mi><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo>⁢</mo><mi>X</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></mrow><mo>=</mo><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\Var</mtext></merror><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\Var(aX)=E(a^{2}X^{2})-E(aX)^{2}=a^{2}\Var(X).</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.24)</span>
+            
+            
+          
+</div>
+</div>
+<div id="p11" class="ltx_para">
+<p class="ltx_p">Podemos alternativamente entender a variância da seguinte meneira.
+Sejam <math id="p11.m1" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> e <math id="p11.m2" class="ltx_Math" alttext="Y" display="inline"><semantics><mi>Y</mi><annotation encoding="application/x-tex">Y</annotation></semantics></math> variáveis aleatórias independentes em <math id="p11.m3" class="ltx_Math" alttext="\mathcal{L}^{2}" display="inline"><semantics><msup><mi class="ltx_font_mathcaligraphic">ℒ</mi><mn>2</mn></msup><annotation encoding="application/x-tex">\mathcal{L}^{2}</annotation></semantics></math> de mesma distribuição.
+Então,</p>
+<div id="Ch3.E25" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch3.E25.m1" class="ltx_Math" alttext="E\big{(}(X-Y)^{2}\big{)}=E(X^{2})-2E(XY)+E(X^{2})=E(X^{2})-E(X)^{2}=\Var(X)." display="block"><semantics><mrow><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo>−</mo><mi>Y</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>X</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mn>2</mn><mo>⁢</mo><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo>⁢</mo><mi>Y</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>+</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>X</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>X</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>E</mi><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></mrow><mo>=</mo><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\Var</mtext></merror><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">E\big{(}(X-Y)^{2}\big{)}=E(X^{2})-2E(XY)+E(X^{2})=E(X^{2})-E(X)^{2}=\Var(X).</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.25)</span>
+            
+            
+          
+</div>
+</div>
+<div id="p12" class="ltx_para">
+<span class="ltx_ERROR undefined">{exercise}</span>
+<p class="ltx_p">Mostre que se <math id="p12.m1" class="ltx_Math" alttext="X\in\mathcal{L}^{2}" display="inline"><semantics><mrow><mi>X</mi><mo>∈</mo><msup><mi class="ltx_font_mathcaligraphic">ℒ</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">X\in\mathcal{L}^{2}</annotation></semantics></math>, então <math id="p12.m2" class="ltx_Math" alttext="\Var(X+b)=\Var(X)" display="inline"><semantics><mrow><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\Var</mtext></merror><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo>+</mo><mi>b</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\Var</mtext></merror><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\Var(X+b)=\Var(X)</annotation></semantics></math>.</p>
+</div>
+<div id="p13" class="ltx_para">
+<span class="ltx_ERROR undefined">{exercise}</span>
+<p class="ltx_p">Calcule <math id="p13.m1" class="ltx_Math" alttext="Var(X)" display="inline"><semantics><mrow><mi>V</mi><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mi>r</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">Var(X)</annotation></semantics></math> quando <math id="p13.m2" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> tem distribuições <math id="p13.m3" class="ltx_Math" alttext="\Ber(p)" display="inline"><semantics><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\Ber</mtext></merror><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\Ber(p)</annotation></semantics></math>, <math id="p13.m4" class="ltx_Math" alttext="U[0,1]" display="inline"><semantics><mrow><mi>U</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mn>0,1</mn><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">U[0,1]</annotation></semantics></math> ou <math id="p13.m5" class="ltx_Math" alttext="\Exp(\lambda)" display="inline"><semantics><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\Exp</mtext></merror><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>λ</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\Exp(\lambda)</annotation></semantics></math>.</p>
+</div>
+<div id="p14" class="ltx_para">
+<p class="ltx_p">A seguinte proposição mostra que a variância é uma maneira de estimar o quanto uma variável aleatória se desvia de sua média.
+<span class="ltx_ERROR undefined">{proposition}</span>
+Se <math id="p14.m1" class="ltx_Math" alttext="X\in\mathcal{L}^{2}" display="inline"><semantics><mrow><mi>X</mi><mo>∈</mo><msup><mi class="ltx_font_mathcaligraphic">ℒ</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">X\in\mathcal{L}^{2}</annotation></semantics></math> e <math id="p14.m2" class="ltx_Math" alttext="a&gt;0" display="inline"><semantics><mrow><mi>a</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">a&gt;0</annotation></semantics></math>, então</p>
+<div id="Ch3.E26" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch3.E26.m1" class="ltx_Math" alttext="P[|X-E(X)|&gt;a]\leq\frac{\Var(X)}{a^{2}}." display="block"><semantics><mrow><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><mrow><mo stretchy="false">|</mo><mrow><mi>X</mi><mo>−</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">|</mo></mrow><mo>&gt;</mo><mi>a</mi></mrow><mo stretchy="false">]</mo></mrow></mrow><mo>≤</mo><mfrac><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\Var</mtext></merror><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow><msup><mi>a</mi><mn>2</mn></msup></mfrac></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">P[|X-E(X)|&gt;a]\leq\frac{\Var(X)}{a^{2}}.</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.26)</span>
+            
+            
+          
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demonstração.</h6>
+<div id="p15" class="ltx_para">
+<p class="ltx_p">A desigualdade segue trivialmente da cota de Markov, ao observarmos que</p>
+<ol id="I2" class="ltx_enumerate">
+<li id="I2.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"> a)</span><div id="I2.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i1.p1.m1" class="ltx_Math" alttext="|X-E(X)|\geq 0" display="inline"><semantics><mrow><mrow><mo stretchy="false">|</mo><mrow><mi>X</mi><mo>−</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">|</mo></mrow><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">|X-E(X)|\geq 0</annotation></semantics></math>,</p>
+</div>
+</li>
+<li id="I2.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"> b)</span><div id="I2.i2.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i2.p1.m1" class="ltx_Math" alttext="|X-E(X)|&gt;a" display="inline"><semantics><mrow><mrow><mo stretchy="false">|</mo><mrow><mi>X</mi><mo>−</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">|</mo></mrow><mo>&gt;</mo><mi>a</mi></mrow><annotation encoding="application/x-tex">|X-E(X)|&gt;a</annotation></semantics></math> se e somente se <math id="I2.i2.p1.m2" class="ltx_Math" alttext="|X-E(X)|^{2}&gt;a^{2}" display="inline"><semantics><mrow><msup><mrow><mo stretchy="false">|</mo><mrow><mi>X</mi><mo>−</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">|</mo></mrow><mn>2</mn></msup><mo>&gt;</mo><msup><mi>a</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">|X-E(X)|^{2}&gt;a^{2}</annotation></semantics></math> e</p>
+</div>
+</li>
+<li id="I2.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"> c)</span><div id="I2.i3.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i3.p1.m1" class="ltx_Math" alttext="E\big{(}|X-E(X)|^{2}\big{)}=E\big{(}(X-E(X))^{2}\big{)}=\Var(X)" display="inline"><semantics><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><msup><mrow><mo stretchy="false">|</mo><mrow><mi>X</mi><mo>−</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">|</mo></mrow><mn>2</mn></msup><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo>=</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo>−</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo>=</mo><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\Var</mtext></merror><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">E\big{(}|X-E(X)|^{2}\big{)}=E\big{(}(X-E(X))^{2}\big{)}=\Var(X)</annotation></semantics></math>,</p>
+</div>
+</li>
+</ol>
+<p class="ltx_p">mostrando a proposição.
+∎</p>
+</div>
+</div>
+<div id="p16" class="ltx_para">
+<p class="ltx_p">Para variáveis aleatórias de média zero, a variância nada mais é que <math id="p16.m1" class="ltx_Math" alttext="E(X^{2})" display="inline"><semantics><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>X</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">E(X^{2})</annotation></semantics></math>, ou em outras palavras <math id="p16.m2" class="ltx_Math" alttext="\lVert X\rVert^{2}_{2}" display="inline"><semantics><msubsup><mrow><mo fence="true" rspace="0em">∥</mo><mi>X</mi><mo fence="true" lspace="0em">∥</mo></mrow><mn>2</mn><mn>2</mn></msubsup><annotation encoding="application/x-tex">\lVert X\rVert^{2}_{2}</annotation></semantics></math>, o quadrado de sua norma em <math id="p16.m3" class="ltx_Math" alttext="\mathcal{L}^{2}" display="inline"><semantics><msup><mi class="ltx_font_mathcaligraphic">ℒ</mi><mn>2</mn></msup><annotation encoding="application/x-tex">\mathcal{L}^{2}</annotation></semantics></math>.
+Isso nos motiva a olhar mais de perto para o produto interno em <math id="p16.m4" class="ltx_Math" alttext="\mathcal{L}^{2}" display="inline"><semantics><msup><mi class="ltx_font_mathcaligraphic">ℒ</mi><mn>2</mn></msup><annotation encoding="application/x-tex">\mathcal{L}^{2}</annotation></semantics></math>, que se traduz a <math id="p16.m5" class="ltx_Math" alttext="E(XY)" display="inline"><semantics><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo>⁢</mo><mi>Y</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">E(XY)</annotation></semantics></math>.
+Mas para não nos restringirmos a variáveis de média zero, introduzimos a seguinte</p>
+</div>
+<div id="p17" class="ltx_para">
+<span class="ltx_ERROR undefined">{definition}</span>
+<p class="ltx_p">Se <math id="p17.m1" class="ltx_Math" alttext="X,Y" display="inline"><semantics><mrow><mi>X</mi><mo>,</mo><mi>Y</mi></mrow><annotation encoding="application/x-tex">X,Y</annotation></semantics></math> são variáveis em <math id="p17.m2" class="ltx_Math" alttext="\mathcal{L}^{2}" display="inline"><semantics><msup><mi class="ltx_font_mathcaligraphic">ℒ</mi><mn>2</mn></msup><annotation encoding="application/x-tex">\mathcal{L}^{2}</annotation></semantics></math>, definimos</p>
+<div id="Ch3.E27" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch3.E27.m1" class="ltx_Math" alttext="\Cov(X,Y)=E\Big{(}\big{(}X-E(X)\big{)}\big{(}Y-E(Y)\big{)}\Big{)}=E(XY)-E(X)E(%
+Y)." display="block"><semantics><mrow><mrow><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\Cov</mtext></merror><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><mi>Y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo maxsize="160%" minsize="160%">(</mo><mrow><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mi>X</mi><mo>−</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mi>Y</mi><mo>−</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>Y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo maxsize="160%" minsize="160%">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo>⁢</mo><mi>Y</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>Y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\Cov(X,Y)=E\Big{(}\big{(}X-E(X)\big{)}\big{(}Y-E(Y)\big{)}\Big{)}=E(XY)-E(X)E(%
+Y).</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.27)</span>
+            
+            
+          
+</div>
+</div>
+<div id="p18" class="ltx_para">
+<p class="ltx_p">Uma observação importante é que</p>
+<div id="Ch3.E28" class="ltx_equation ltx_eqn_div">
+<span><span class="ltx_text ltx_markedasmath">se <math id="Ch3.E28.m1.m1" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> e <math id="Ch3.E28.m1.m2" class="ltx_Math" alttext="Y" display="inline"><semantics><mi>Y</mi><annotation encoding="application/x-tex">Y</annotation></semantics></math> em <math id="Ch3.E28.m1.m3" class="ltx_Math" alttext="\mathcal{L}^{2}" display="inline"><semantics><msup><mi class="ltx_font_mathcaligraphic">ℒ</mi><mn>2</mn></msup><annotation encoding="application/x-tex">\mathcal{L}^{2}</annotation></semantics></math> são independentes, então <math id="Ch3.E28.m1.m4" class="ltx_Math" alttext="\Cov(X,Y)=0" display="inline"><semantics><mrow><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\Cov</mtext></merror><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><mi>Y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\Cov(X,Y)=0</annotation></semantics></math>.</span></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.28)</span>
+            
+            
+          
+</div>
+</div>
+<div id="p19" class="ltx_para">
+<span class="ltx_ERROR undefined">{exercise}</span>
+<p class="ltx_p">Sejam <math id="p19.m1" class="ltx_Math" alttext="X_{1}" display="inline"><semantics><msub><mi>X</mi><mn>1</mn></msub><annotation encoding="application/x-tex">X_{1}</annotation></semantics></math> e <math id="p19.m2" class="ltx_Math" alttext="X_{2}" display="inline"><semantics><msub><mi>X</mi><mn>2</mn></msub><annotation encoding="application/x-tex">X_{2}</annotation></semantics></math> as coordenadas canônicas em <math id="p19.m3" class="ltx_Math" alttext="\mathbb{R}^{2}" display="inline"><semantics><msup><mi>ℝ</mi><mn>2</mn></msup><annotation encoding="application/x-tex">\mathbb{R}^{2}</annotation></semantics></math>.
+Já vimos que elas não são independentes sob a distribuição <math id="p19.m4" class="ltx_Math" alttext="U_{S^{1}}" display="inline"><semantics><msub><mi>U</mi><msup><mi>S</mi><mn>1</mn></msup></msub><annotation encoding="application/x-tex">U_{S^{1}}</annotation></semantics></math>.
+Mostre que mesmo assim temos <math id="p19.m5" class="ltx_Math" alttext="\Cov(X_{1},X_{2})=0" display="inline"><semantics><mrow><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\Cov</mtext></merror><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>X</mi><mn>1</mn></msub><mo>,</mo><msub><mi>X</mi><mn>2</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\Cov(X_{1},X_{2})=0</annotation></semantics></math>.</p>
+</div>
+<div id="p20" class="ltx_para">
+<p class="ltx_p">Uma outra propriedade bastante importante da variância é que ela se comporta bem com somas, no seguinte sentido
+<span class="ltx_ERROR undefined">{proposition}</span>
+Se <math id="p20.m1" class="ltx_Math" alttext="X_{1},\dots,X_{n}" display="inline"><semantics><mrow><msub><mi>X</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>X</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">X_{1},\dots,X_{n}</annotation></semantics></math> são variáveis em <math id="p20.m2" class="ltx_Math" alttext="\mathcal{L}^{2}" display="inline"><semantics><msup><mi class="ltx_font_mathcaligraphic">ℒ</mi><mn>2</mn></msup><annotation encoding="application/x-tex">\mathcal{L}^{2}</annotation></semantics></math>, então</p>
+<div id="Ch3.E29" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch3.E29.m1" class="ltx_Math" alttext="\Var(X_{1}+\dots+X_{n})=\sum_{i=1}^{n}\Var(X_{i})+\sum_{i\neq j}\Cov(X_{i},X_{%
+j})." display="block"><semantics><mrow><mrow><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\Var</mtext></merror><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>X</mi><mn>1</mn></msub><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><msub><mi>X</mi><mi>n</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo rspace="0.111em">=</mo><mrow><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\Var</mtext></merror><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>X</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><mo rspace="0.055em">+</mo><mrow><munder><mo movablelimits="false">∑</mo><mrow><mi>i</mi><mo>≠</mo><mi>j</mi></mrow></munder><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\Cov</mtext></merror><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>X</mi><mi>i</mi></msub><mo>,</mo><msub><mi>X</mi><mi>j</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\Var(X_{1}+\dots+X_{n})=\sum_{i=1}^{n}\Var(X_{i})+\sum_{i\neq j}\Cov(X_{i},X_{%
+j}).</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.29)</span>
+            
+            
+          
+</div>
+<p class="ltx_p">Em particular, se as variáveis <math id="p20.m3" class="ltx_Math" alttext="X_{i}" display="inline"><semantics><msub><mi>X</mi><mi>i</mi></msub><annotation encoding="application/x-tex">X_{i}</annotation></semantics></math> forem independentes duas a duas, então</p>
+<div id="Ch3.E30" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch3.E30.m1" class="ltx_Math" alttext="\Var(X_{1}+\dots+X_{n})=\sum_{i=1}^{n}\Var(X_{i})." display="block"><semantics><mrow><mrow><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\Var</mtext></merror><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>X</mi><mn>1</mn></msub><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><msub><mi>X</mi><mi>n</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\Var</mtext></merror><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>X</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\Var(X_{1}+\dots+X_{n})=\sum_{i=1}^{n}\Var(X_{i}).</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.30)</span>
+            
+            
+          
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demonstração.</h6>
+<div id="p21" class="ltx_para">
+<p class="ltx_p">Basta fazer o tedioso desenvolvimento</p>
+<div id="Ch3.E31" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch3.E31.m1" class="ltx_Math" alttext="\begin{split}\Var\Big{(}\sum_{i}X_{i}\Big{)}&amp;=E\Big{(}\Big{(}\sum_{i}X_{i}-E%
+\Big{(}\sum_{i}X_{i}\Big{)}\Big{)}^{2}\Big{)}\\
+&amp;=E\Big{(}\Big{(}\sum_{i}X_{i}-E(X_{i})\Big{)}^{2}\Big{)}\\
+&amp;=\sum_{i,j=1}^{n}E\big{(}X_{i}-E(X_{i})\big{)}E\big{(}X_{j}-E(X_{j})\big{)},%
+\end{split}" display="block"><semantics><mtable columnspacing="0pt" displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_align_right" columnalign="right"><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\Var</mtext></merror><mo>⁢</mo><mrow><mo maxsize="160%" minsize="160%">(</mo><mrow><munder><mo lspace="0em" movablelimits="false">∑</mo><mi>i</mi></munder><msub><mi>X</mi><mi>i</mi></msub></mrow><mo maxsize="160%" minsize="160%">)</mo></mrow></mrow></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mi></mi><mo>=</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo maxsize="160%" minsize="160%">(</mo><msup><mrow><mo maxsize="160%" minsize="160%">(</mo><mrow><mrow><munder><mo lspace="0em" movablelimits="false">∑</mo><mi>i</mi></munder><msub><mi>X</mi><mi>i</mi></msub></mrow><mo>−</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo maxsize="160%" minsize="160%">(</mo><mrow><munder><mo lspace="0em" movablelimits="false">∑</mo><mi>i</mi></munder><msub><mi>X</mi><mi>i</mi></msub></mrow><mo maxsize="160%" minsize="160%">)</mo></mrow></mrow></mrow><mo maxsize="160%" minsize="160%">)</mo></mrow><mn>2</mn></msup><mo maxsize="160%" minsize="160%">)</mo></mrow></mrow></mrow></mtd></mtr><mtr><mtd></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mi></mi><mo>=</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo maxsize="160%" minsize="160%">(</mo><msup><mrow><mo maxsize="160%" minsize="160%">(</mo><mrow><mrow><munder><mo lspace="0em" movablelimits="false">∑</mo><mi>i</mi></munder><msub><mi>X</mi><mi>i</mi></msub></mrow><mo>−</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>X</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><mo maxsize="160%" minsize="160%">)</mo></mrow><mn>2</mn></msup><mo maxsize="160%" minsize="160%">)</mo></mrow></mrow></mrow></mtd></mtr><mtr><mtd></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mi></mi><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mrow><mi>i</mi><mo>,</mo><mi>j</mi></mrow><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mrow><mi>E</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><msub><mi>X</mi><mi>i</mi></msub><mo>−</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>X</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow><mo>⁢</mo><mi>E</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><msub><mi>X</mi><mi>j</mi></msub><mo>−</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>X</mi><mi>j</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{split}\Var\Big{(}\sum_{i}X_{i}\Big{)}&amp;=E\Big{(}\Big{(}\sum_{i}X_{i}-E%
+\Big{(}\sum_{i}X_{i}\Big{)}\Big{)}^{2}\Big{)}\\
+&amp;=E\Big{(}\Big{(}\sum_{i}X_{i}-E(X_{i})\Big{)}^{2}\Big{)}\\
+&amp;=\sum_{i,j=1}^{n}E\big{(}X_{i}-E(X_{i})\big{)}E\big{(}X_{j}-E(X_{j})\big{)},%
+\end{split}</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.31)</span>
+              
+              
+            
+</div>
+<p class="ltx_p">o que termina a prova ao separarmos <math id="p21.m1" class="ltx_Math" alttext="i=j" display="inline"><semantics><mrow><mi>i</mi><mo>=</mo><mi>j</mi></mrow><annotation encoding="application/x-tex">i=j</annotation></semantics></math> de <math id="p21.m2" class="ltx_Math" alttext="i\neq j" display="inline"><semantics><mrow><mi>i</mi><mo>≠</mo><mi>j</mi></mrow><annotation encoding="application/x-tex">i\neq j</annotation></semantics></math>.
+∎</p>
+</div>
+</div>
+<div id="p22" class="ltx_para">
+<span class="ltx_ERROR undefined">{exercise}</span>
+<p class="ltx_p">Calcule <math id="p22.m1" class="ltx_Math" alttext="\Var(X)" display="inline"><semantics><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\Var</mtext></merror><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\Var(X)</annotation></semantics></math> quando <math id="p22.m2" class="ltx_Math" alttext="X\overset{d}{\sim}\Bin(n,p)" display="inline"><semantics><mrow><mi>X</mi><mo>⁢</mo><mover accent="true"><mo>∼</mo><mo>𝑑</mo></mover><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\Bin</mtext></merror><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo>,</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">X\overset{d}{\sim}\Bin(n,p)</annotation></semantics></math>.</p>
+</div>
+<div id="p23" class="ltx_para">
+<span class="ltx_ERROR undefined">{exercise}</span>
+<p class="ltx_p">Calcule <math id="p23.m1" class="ltx_Math" alttext="E(X)" display="inline"><semantics><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">E(X)</annotation></semantics></math> quando <math id="p23.m2" class="ltx_Math" alttext="X\overset{d}{\sim}\Geo(p)" display="inline"><semantics><mrow><mi>X</mi><mo>⁢</mo><mover accent="true"><mo>∼</mo><mo>𝑑</mo></mover><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\Geo</mtext></merror><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">X\overset{d}{\sim}\Geo(p)</annotation></semantics></math>.</p>
+</div>
+<div id="p24" class="ltx_para">
+<p class="ltx_p">Um dito popular muito comum no Brasil é que não devemos deixar todos os “ovos no mesmo cesto”, o que nos remete à possibilidade de perdermos todos eles caso o cesto caia.
+Uma outra maneira de pensar nas vantagens de se dividir nossos riscos entre várias fontes independentes de incerteza, vem da equação (<a href="#Ch3.E30" title="In 3.2 Variância ‣ Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.30</span></a>), melhor explicada no exercício abaixo.</p>
+</div>
+<div id="p25" class="ltx_para">
+<span class="ltx_ERROR undefined">{exercise}</span>
+<p class="ltx_p">Imagine que <math id="p25.m1" class="ltx_Math" alttext="X_{1},\dots,X_{n}" display="inline"><semantics><mrow><msub><mi>X</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>X</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">X_{1},\dots,X_{n}</annotation></semantics></math> são variáveis <span class="ltx_ERROR undefined">\iid</span>, tomando valores em <math id="p25.m2" class="ltx_Math" alttext="[0,1]" display="inline"><semantics><mrow><mo stretchy="false">[</mo><mn>0,1</mn><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[0,1]</annotation></semantics></math> e que temos um certo valor <math id="p25.m3" class="ltx_Math" alttext="s\in\mathbb{R}_{+}" display="inline"><semantics><mrow><mi>s</mi><mo>∈</mo><msub><mi>ℝ</mi><mo>+</mo></msub></mrow><annotation encoding="application/x-tex">s\in\mathbb{R}_{+}</annotation></semantics></math> que temos que guardar em <math id="p25.m4" class="ltx_Math" alttext="n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math> caixas (dividindo como quisermos em <math id="p25.m5" class="ltx_Math" alttext="s_{1},\dots,s_{n}" display="inline"><semantics><mrow><msub><mi>s</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>s</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">s_{1},\dots,s_{n}</annotation></semantics></math>).
+Ao fim da semana, obteremos <math id="p25.m6" class="ltx_Math" alttext="S=\sum_{i}s_{i}X_{i}" display="inline"><semantics><mrow><mi>S</mi><mo rspace="0.111em">=</mo><mrow><msub><mo>∑</mo><mi>i</mi></msub><mrow><msub><mi>s</mi><mi>i</mi></msub><mo>⁢</mo><msub><mi>X</mi><mi>i</mi></msub></mrow></mrow></mrow><annotation encoding="application/x-tex">S=\sum_{i}s_{i}X_{i}</annotation></semantics></math>.</p>
+</div>
+<div id="p26" class="ltx_para">
+<p class="ltx_p">Calcule <math id="p26.m1" class="ltx_Math" alttext="E(S)" display="inline"><semantics><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>S</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">E(S)</annotation></semantics></math> e <math id="p26.m2" class="ltx_Math" alttext="\Var(S)" display="inline"><semantics><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\Var</mtext></merror><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>S</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\Var(S)</annotation></semantics></math>,</p>
+<ol id="I3" class="ltx_enumerate">
+<li id="I3.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"> a)</span><div id="I3.i1.p1" class="ltx_para">​<p class="ltx_p">se <math id="I3.i1.p1.m1" class="ltx_Math" alttext="s_{1}=s" display="inline"><semantics><mrow><msub><mi>s</mi><mn>1</mn></msub><mo>=</mo><mi>s</mi></mrow><annotation encoding="application/x-tex">s_{1}=s</annotation></semantics></math> e <math id="I3.i1.p1.m2" class="ltx_Math" alttext="s_{i}=0" display="inline"><semantics><mrow><msub><mi>s</mi><mi>i</mi></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">s_{i}=0</annotation></semantics></math> para todo <math id="I3.i1.p1.m3" class="ltx_Math" alttext="i\geq 2" display="inline"><semantics><mrow><mi>i</mi><mo>≥</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">i\geq 2</annotation></semantics></math> e</p>
+</div>
+</li>
+<li id="I3.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"> b)</span><div id="I3.i2.p1" class="ltx_para">​<p class="ltx_p">se <math id="I3.i2.p1.m1" class="ltx_Math" alttext="s_{i}=s/n" display="inline"><semantics><mrow><msub><mi>s</mi><mi>i</mi></msub><mo>=</mo><mrow><mi>s</mi><mo>/</mo><mi>n</mi></mrow></mrow><annotation encoding="application/x-tex">s_{i}=s/n</annotation></semantics></math> para todo <math id="I3.i2.p1.m2" class="ltx_Math" alttext="i" display="inline"><semantics><mi>i</mi><annotation encoding="application/x-tex">i</annotation></semantics></math>.</p>
+</div>
+</li>
+</ol>
+<p class="ltx_p">Compare os resultados.</p>
+</div>
+<div id="p27" class="ltx_para">
+<span class="ltx_ERROR undefined">{exercise}</span>
+<p class="ltx_p">Calcule <math id="p27.m1" class="ltx_Math" alttext="\lim_{p\to 0}F_{p}(x)" display="inline"><semantics><mrow><msub><mo>lim</mo><mrow><mi>p</mi><mo stretchy="false">→</mo><mn>0</mn></mrow></msub><mrow><msub><mi>F</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\lim_{p\to 0}F_{p}(x)</annotation></semantics></math> onde <math id="p27.m2" class="ltx_Math" alttext="F_{p}" display="inline"><semantics><msub><mi>F</mi><mi>p</mi></msub><annotation encoding="application/x-tex">F_{p}</annotation></semantics></math> é a função de distribuição acumulada de <math id="p27.m3" class="ltx_Math" alttext="pX_{p}" display="inline"><semantics><mrow><mi>p</mi><mo>⁢</mo><msub><mi>X</mi><mi>p</mi></msub></mrow><annotation encoding="application/x-tex">pX_{p}</annotation></semantics></math> com <math id="p27.m4" class="ltx_Math" alttext="X_{p}\overset{d}{\sim}\Geo(p)" display="inline"><semantics><mrow><msub><mi>X</mi><mi>p</mi></msub><mo>⁢</mo><mover accent="true"><mo>∼</mo><mo>𝑑</mo></mover><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\Geo</mtext></merror><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">X_{p}\overset{d}{\sim}\Geo(p)</annotation></semantics></math>.
+Você reconhece esse limite?</p>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+<a href="Ch3.S1.html" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a><a href="Ch3.S3.html" class="navigation navigation-next" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+</div>
+</div>
+<script src="bookml/gitbook/js/app.min.js"></script>
+<script src="bookml/gitbook/js/jquery.highlight.js"></script>
+<script src="bookml/gitbook/js/plugin-search.js"></script>
+<script src="bookml/gitbook/js/plugin-fontsettings.js"></script>
+<script src="bookml/gitbook/js/plugin-bookdown.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+        MathJax = {
+          startup: {
+            ready() {
+              // do not process equations disabled with \bmlDisableMathJax (code suggested by Davide P. Cervone)
+              class bmlFindMathML extends MathJax._.input.mathml.FindMathML.FindMathML {
+                processMath(set) {
+                  const adaptor = this.adaptor;
+                  for (const node of set.values()) {
+                    if (adaptor.hasClass(node, 'bml_disable_mathjax')) {
+                      set.delete(node);
+                    }
+                  }
+                  return super.processMath(set);
+                }
+              }
+
+              MathJax._.components.global.combineDefaults(MathJax.config, 'mml', {FindMathML: new bmlFindMathML()});
+
+              MathJax.startup.defaultReady();
+
+              // preproces MathML to make MathJax aware of certain LaTeXML and BookML additional info
+              const mmlFilters = MathJax.startup.input[0].mmlFilters;
+
+              // convert the LaTeXML calligraphic (chancery) annotation to a form MathJax understands
+              // since the corresponding Unicode characters render as script (rounded)
+              const script2latin = {
+                '𝒜': 'A', 'ℬ': 'B', '𝒞': 'C', '𝒟': 'D', 'ℰ': 'E', 'ℱ': 'F', '𝒢': 'G',
+                'ℋ': 'H', 'ℐ': 'I', '𝒥': 'J', '𝒦': 'K', 'ℒ': 'L', 'ℳ': 'M', '𝒩': 'N',
+                '𝒪': 'O', '𝒫': 'P', '𝒬': 'Q', 'ℛ': 'R', '𝒮': 'S', '𝒯': 'T', '𝒰': 'U',
+                '𝒱': 'V', '𝒲': 'W', '𝒳': 'X', '𝒴': 'Y', '𝒵': 'Z',
+              };
+
+              mmlFilters.add((args) => {
+                for (const n of args.data.getElementsByClassName('ltx_font_mathcaligraphic')) {
+                  n.classList.add('MJX-tex-calligraphic');
+                  const letter = script2latin[n.textContent];
+                  if (letter !== undefined) { n.textContent = letter; }
+                }
+              });
+
+              // adjust characters based on Unicode variation sequences
+              const replacements = {
+                // MathJax renders the empty set as the U+FE00 variant, so the plain character needs adjusting
+                '∅': { variant: 'variant' },
+                // MathJax renders script characters in rounded style, which is fine for no variation and U+FE00
+                '𝒜\xFE00': { text: 'A', variant: 'tex-calligraphic' },
+                'ℬ\xFE00': { text: 'B', variant: 'tex-calligraphic' },
+                '𝒞\xFE00': { text: 'C', variant: 'tex-calligraphic' },
+                '𝒟\xFE00': { text: 'D', variant: 'tex-calligraphic' },
+                'ℰ\xFE00': { text: 'E', variant: 'tex-calligraphic' },
+                'ℱ\xFE00': { text: 'F', variant: 'tex-calligraphic' },
+                '𝒢\xFE00': { text: 'G', variant: 'tex-calligraphic' },
+                'ℋ\xFE00': { text: 'H', variant: 'tex-calligraphic' },
+                'ℐ\xFE00': { text: 'I', variant: 'tex-calligraphic' },
+                '𝒥\xFE00': { text: 'J', variant: 'tex-calligraphic' },
+                '𝒦\xFE00': { text: 'K', variant: 'tex-calligraphic' },
+                'ℒ\xFE00': { text: 'L', variant: 'tex-calligraphic' },
+                'ℳ\xFE00': { text: 'M', variant: 'tex-calligraphic' },
+                '𝒩\xFE00': { text: 'N', variant: 'tex-calligraphic' },
+                '𝒪\xFE00': { text: 'O', variant: 'tex-calligraphic' },
+                '𝒫\xFE00': { text: 'P', variant: 'tex-calligraphic' },
+                '𝒬\xFE00': { text: 'Q', variant: 'tex-calligraphic' },
+                'ℛ\xFE00': { text: 'R', variant: 'tex-calligraphic' },
+                '𝒮\xFE00': { text: 'S', variant: 'tex-calligraphic' },
+                '𝒯\xFE00': { text: 'T', variant: 'tex-calligraphic' },
+                '𝒰\xFE00': { text: 'U', variant: 'tex-calligraphic' },
+                '𝒱\xFE00': { text: 'V', variant: 'tex-calligraphic' },
+                '𝒲\xFE00': { text: 'W', variant: 'tex-calligraphic' },
+                '𝒳\xFE00': { text: 'X', variant: 'tex-calligraphic' },
+                '𝒴\xFE00': { text: 'Y', variant: 'tex-calligraphic' },
+                '𝒵\xFE00': { text: 'Z', variant: 'tex-calligraphic' }
+              };
+
+              mmlFilters.add((args) => {
+                let nodes = document.evaluate('.//m:mi | .//m:mn | .//m:mo | .//m:ms', args.data,
+                  () => 'http://www.w3.org/1998/Math/MathML', XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE);
+                for (let i = 0; i < nodes.snapshotLength; i++) {
+                  const n = nodes.snapshotItem(i);
+                  const repl = replacements[n.innerHTML];
+                  if (repl !== undefined) {
+                    const variant = repl['variant'];
+                    const text = repl['text'];
+                    if (variant !== undefined) { n.classList.add('MJX-' + variant); n.removeAttribute('mathvariant'); }
+                    if (text !== undefined) { n.innerHTML = text; }
+                  }
+                }
+              });
+            }
+          }
+        };
+      </script>
+<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js"></script>
+<script type="text/javascript">
+                gitbook.require(["gitbook"], function(gitbook) {
+                gitbook.start({
+                  "fontsettings": {
+                    "theme": "white",
+                    "family": "sans",
+                    "size": 2
+                  },
+                  "download": [ [ "Notas_de_aula.pdf", "PDF" ], ],
+                  "search": {
+                    "engine": "fuse"
+                  },
+                  "toc": {
+                    "collapse": "none"
+                  }
+                });
+              });
+            </script>
+</body>
+
+</html>

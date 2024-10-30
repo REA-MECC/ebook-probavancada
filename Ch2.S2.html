@@ -1,0 +1,281 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>2.2 Caso absolutamente contínuo ‣ Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I</title>
+<!--Generated on Tue Aug 27 13:34:01 2024 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
+<style>:root { --bml-ltx-font-size: 10; }</style>
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-table.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-search.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-bookdown.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-fontsettings.css" type="text/css">
+<link rel="stylesheet" href="ltx-book.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook,plain.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook.css" type="text/css">
+<link rel="stylesheet" href="bmluser/colors.gitbook-Notas_de_aula.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6"></script>
+<link rel="up" href="Ch2.html" title="Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I">
+<link rel="up up" href="index.html" title="Notas de aula: Probabilidade I">
+<link rel="start" href="index.html" title="Notas de aula: Probabilidade I">
+<link rel="prev" href="Ch2.Sx1.html" title="Tópico: Método Probabilístico ‣ Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I">
+<link rel="next" href="Ch2.S3.html" title="2.3 Funções acumuladas de distribuição ‣ Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch2.S1.html" title="2.1 Caso enumerável ‣ Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch2.Sx1.html" title="Tópico: Método Probabilístico ‣ Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch2.S3.html" title="2.3 Funções acumuladas de distribuição ‣ Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch2.S4.html" title="2.4 Espaços produto finito ‣ Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch2.S5.html" title="2.5 Independência ‣ Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch2.Sx2.html" title="Tópico: Lei dos pequenos números ‣ Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch2.S6.html" title="2.6 Espaços produto infinito ‣ Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch2.Sx3.html" title="Tópico: Percolação ‣ Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch2.S7.html" title="2.7 Distribuições conjuntas ‣ Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch2.S8.html" title="2.8 Probabilidades condicionais ‣ Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch2.S9.html" title="2.9 Núcleos de transição ‣ Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch2.S10.html" title="2.10 Espaços canônicos ‣ Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch2.Sx4.html" title="Tópico: Cadeias de Markov ‣ Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch2.Sx5.html" title="Tópico: Urna de Pólya ‣ Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I">
+<link rel="chapter" href="Chx1.html" title="Licença ‣ Notas de aula: Probabilidade I">
+<link rel="chapter" href="Chx2.html" title="Contribuições ‣ Notas de aula: Probabilidade I">
+<link rel="chapter" href="Ch1.html" title="Capítulo 1 Fundamentos ‣ Notas de aula: Probabilidade I">
+<link rel="chapter" href="Ch2.html" title="Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I">
+<link rel="chapter" href="Ch3.html" title="Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I">
+<link rel="chapter" href="Ch4.html" title="Capítulo 4 Esperança condicional ‣ Notas de aula: Probabilidade I">
+<link rel="chapter" href="Ch5.html" title="Capítulo 5 Soluções de exercícios ‣ Notas de aula: Probabilidade I">
+<link rel="bibliography" href="bib.html" title="Referências ‣ Notas de aula: Probabilidade I">
+<link rel="index" href="idx.html" title="Índice Remissivo ‣ Notas de aula: Probabilidade I">
+<meta name="keywords" lang="pt-BR" content=", densidade, distribuição, exponencial, uniforme">
+</head>
+<body>
+<div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+<a href="#bml-main-content" tabindex="0" class="bml-skip-to-content">Skip to content.</a>
+<div class="book-summary"><nav class="ltx_page_navbar">
+<ul class="ltx_toclist summary">
+<li>
+<a href="index.html" title="" class="ltx_ref" rel="start">Notas de aula: Probabilidade I</a>
+</li>
+<li class="divider">
+<li data-level="" data-path="Chx1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Chx1.html" title="In Notas de aula: Probabilidade I" class="ltx_ref">Licença</a></li>
+<li data-level="" data-path="Chx2.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Chx2.html" title="In Notas de aula: Probabilidade I" class="ltx_ref">Contribuições</a></li>
+<li data-level="1" data-path="Ch1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch1.html" title="In Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1 </span></b>Fundamentos</a></li>
+<li data-level="2" data-path="Ch2.html" class="ltx_tocentry ltx_tocentry_chapter  chapter ">
+<a href="Ch2.html" title="In Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2 </span></b>Construção de espaços de probabilidade</a>
+<ol class="ltx_toclist ltx_toclist_chapter">
+<li data-level="2.1" data-path="Ch2.S1.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch2.S1.html" title="In Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2.1 </span></b>Caso enumerável</a></li>
+<li data-level="" data-path="Ch2.Sx1.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch2.Sx1.html" title="In Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I" class="ltx_ref">Tópico: Método Probabilístico</a></li>
+<li data-level="2.2" data-path="" class="ltx_tocentry ltx_tocentry_section ltx_ref_self  chapter active"><a href="" title="In Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2.2 </span></b>Caso absolutamente contínuo</a></li>
+<li data-level="2.3" data-path="Ch2.S3.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch2.S3.html" title="In Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2.3 </span></b>Funções acumuladas de distribuição</a></li>
+<li data-level="2.4" data-path="Ch2.S4.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch2.S4.html" title="In Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2.4 </span></b>Espaços produto finito</a></li>
+<li data-level="2.5" data-path="Ch2.S5.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch2.S5.html" title="In Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2.5 </span></b>Independência</a></li>
+<li data-level="" data-path="Ch2.Sx2.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch2.Sx2.html" title="In Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I" class="ltx_ref">Tópico: Lei dos pequenos números</a></li>
+<li data-level="2.6" data-path="Ch2.S6.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch2.S6.html" title="In Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2.6 </span></b>Espaços produto infinito</a></li>
+<li data-level="" data-path="Ch2.Sx3.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch2.Sx3.html" title="In Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I" class="ltx_ref">Tópico: Percolação</a></li>
+<li data-level="2.7" data-path="Ch2.S7.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch2.S7.html" title="In Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2.7 </span></b>Distribuições conjuntas</a></li>
+<li data-level="2.8" data-path="Ch2.S8.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch2.S8.html" title="In Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2.8 </span></b>Probabilidades condicionais</a></li>
+<li data-level="2.9" data-path="Ch2.S9.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch2.S9.html" title="In Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2.9 </span></b>Núcleos de transição</a></li>
+<li data-level="2.10" data-path="Ch2.S10.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch2.S10.html" title="In Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2.10 </span></b>Espaços canônicos</a></li>
+<li data-level="" data-path="Ch2.Sx4.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch2.Sx4.html" title="In Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I" class="ltx_ref">Tópico: Cadeias de Markov</a></li>
+<li data-level="" data-path="Ch2.Sx5.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch2.Sx5.html" title="In Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I" class="ltx_ref">Tópico: Urna de Pólya</a></li>
+</ol>
+</li>
+<li data-level="3" data-path="Ch3.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch3.html" title="In Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3 </span></b>Somas de variáveis independentes</a></li>
+<li data-level="4" data-path="Ch4.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch4.html" title="In Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4 </span></b>Esperança condicional</a></li>
+<li data-level="5" data-path="Ch5.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch5.html" title="In Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">5 </span></b>Soluções de exercícios</a></li>
+<li data-level="" data-path="bib.html" class="ltx_tocentry ltx_tocentry_bibliography  chapter "><a href="bib.html" title="In Notas de aula: Probabilidade I" class="ltx_ref">Referências</a></li>
+<li data-level="" data-path="idx.html" class="ltx_tocentry ltx_tocentry_index  chapter "><a href="idx.html" title="In Notas de aula: Probabilidade I" class="ltx_ref">Índice Remissivo</a></li>
+</ul>
+</nav></div>
+<div class="ltx_page_main book-body fixed">
+<div class="body-inner">
+<div class="book-header fixed" role="navigation"><h1>Caso absolutamente contínuo</h1></div>
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="ltx_page_content page-inner" id="bml-main-content">
+<section class="ltx_section normal" lang="pt-BR">
+<div class="section level1">
+
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section header-section-number">2.2</span> Caso absolutamente contínuo</h1>
+
+<div id="p1" class="ltx_para">
+<p class="ltx_p">Uma outra maneira simples de definir um espaço de probabilidade é partindo de um espaço de medida.
+Seja <math id="p1.m1" class="ltx_Math" alttext="(\Omega,\mathcal{F},\mu)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">Ω</mi><mo>,</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>,</mo><mi>μ</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(\Omega,\mathcal{F},\mu)</annotation></semantics></math> um espaço de medida e <math id="p1.m2" class="ltx_Math" alttext="\rho:\Omega\to\mathbb{R}_{+}" display="inline"><semantics><mrow><mi>ρ</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi mathvariant="normal">Ω</mi><mo stretchy="false">→</mo><msub><mi>ℝ</mi><mo>+</mo></msub></mrow></mrow><annotation encoding="application/x-tex">\rho:\Omega\to\mathbb{R}_{+}</annotation></semantics></math> uma função mensurável com <math id="p1.m3" class="ltx_Math" alttext="\int\rho(x)\mu(\d{x})=1" display="inline"><semantics><mrow><mrow><mo>∫</mo><mrow><mi>ρ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>μ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><munder accentunder="true"><mtext>x</mtext><mo>⋅</mo></munder><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\int\rho(x)\mu(\d{x})=1</annotation></semantics></math>.
+Então podemos definir a probabilidade induzida</p>
+<div id="Ch2.E8" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch2.E8.m1" class="ltx_Math" alttext="P(A)=\int_{A}\rho(x)\mu(\d{x})." display="block"><semantics><mrow><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo rspace="0.111em">=</mo><mrow><msub><mo>∫</mo><mi>A</mi></msub><mrow><mi>ρ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>μ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><munder accentunder="true"><mtext>x</mtext><mo>⋅</mo></munder><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">P(A)=\int_{A}\rho(x)\mu(\d{x}).</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(2.8)</span>
+            
+            
+          
+</div>
+<p class="ltx_p">Nesse caso, chamamos <math id="p1.m4" class="ltx_Math" alttext="\rho" display="inline"><semantics><mi>ρ</mi><annotation encoding="application/x-tex">\rho</annotation></semantics></math> de a <em class="ltx_emph ltx_font_italic">densidade</em>  de <math id="p1.m5" class="ltx_Math" alttext="P" display="inline"><semantics><mi>P</mi><annotation encoding="application/x-tex">P</annotation></semantics></math> com respeito a <math id="p1.m6" class="ltx_Math" alttext="\mu" display="inline"><semantics><mi>μ</mi><annotation encoding="application/x-tex">\mu</annotation></semantics></math>.
+Uma outra possível notação para a equação acima é <math id="p1.m7" class="ltx_Math" alttext="\d{P}=\rho(x)\d{\mu}" display="inline"><semantics><mrow><munder accentunder="true"><mtext>P</mtext><mo>⋅</mo></munder><mo>=</mo><mrow><mi>ρ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><munder accentunder="true"><mtext class="ltx_mathvariant_italic">μ</mtext><mo>⋅</mo></munder></mrow></mrow><annotation encoding="application/x-tex">\d{P}=\rho(x)\d{\mu}</annotation></semantics></math>  (lembrando a derivada de Radon-Nikodym).</p>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">Observe que o caso discreto pode ser definido em termos de uma densidade, onde <math id="p2.m1" class="ltx_Math" alttext="\rho(\omega)=p_{\omega}" display="inline"><semantics><mrow><mrow><mi>ρ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ω</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msub><mi>p</mi><mi>ω</mi></msub></mrow><annotation encoding="application/x-tex">\rho(\omega)=p_{\omega}</annotation></semantics></math> e <math id="p2.m2" class="ltx_Math" alttext="\mu" display="inline"><semantics><mi>μ</mi><annotation encoding="application/x-tex">\mu</annotation></semantics></math> é a medida da contagem em <math id="p2.m3" class="ltx_Math" alttext="\Omega" display="inline"><semantics><mi mathvariant="normal">Ω</mi><annotation encoding="application/x-tex">\Omega</annotation></semantics></math>.</p>
+</div>
+<div id="p3" class="ltx_para">
+<span class="ltx_ERROR undefined">{example}</span>
+<p class="ltx_p">Vários exemplos podem ser obtidos via (<a href="#Ch2.E8" title="In 2.2 Caso absolutamente contínuo ‣ Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.8</span></a>) se tomamos <math id="p3.m1" class="ltx_Math" alttext="\Omega\subseteq\mathbb{R}" display="inline"><semantics><mrow><mi mathvariant="normal">Ω</mi><mo>⊆</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">\Omega\subseteq\mathbb{R}</annotation></semantics></math> e <math id="p3.m2" class="ltx_Math" alttext="\mu" display="inline"><semantics><mi>μ</mi><annotation encoding="application/x-tex">\mu</annotation></semantics></math> a medida de Lebesgue restrita a <math id="p3.m3" class="ltx_Math" alttext="\Omega" display="inline"><semantics><mi mathvariant="normal">Ω</mi><annotation encoding="application/x-tex">\Omega</annotation></semantics></math>.
+Nesses casos, escrevemos <math id="p3.m4" class="ltx_Math" alttext="P=\rho(x)\d{x}" display="inline"><semantics><mrow><mi>P</mi><mo>=</mo><mrow><mi>ρ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><munder accentunder="true"><mtext>x</mtext><mo>⋅</mo></munder></mrow></mrow><annotation encoding="application/x-tex">P=\rho(x)\d{x}</annotation></semantics></math> em <math id="p3.m5" class="ltx_Math" alttext="\Omega" display="inline"><semantics><mi mathvariant="normal">Ω</mi><annotation encoding="application/x-tex">\Omega</annotation></semantics></math>.
+Alguns exemplos importantes são:</p>
+<ol id="I1" class="ltx_enumerate">
+<li id="I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"> a)</span><div id="I1.i1.p1" class="ltx_para">​<p class="ltx_p">Para <math id="I1.i1.p1.m1" class="ltx_Math" alttext="a&lt;b\in\mathbb{R}" display="inline"><semantics><mrow><mi>a</mi><mo>&lt;</mo><mi>b</mi><mo>∈</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">a&lt;b\in\mathbb{R}</annotation></semantics></math>, definimos a medida <math id="I1.i1.p1.m2" class="ltx_Math" alttext="U[a,b]" display="inline"><semantics><mrow><mi>U</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">U[a,b]</annotation></semantics></math>  usando <math id="I1.i1.p1.m3" class="ltx_Math" alttext="\rho(x)=\tfrac{1}{b-a}\1_{[a,b]}(x)" display="inline"><semantics><mrow><mrow><mi>ρ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mfrac><mn>1</mn><mrow><mi>b</mi><mo>−</mo><mi>a</mi></mrow></mfrac><mo>⁢</mo><msub><merror class="ltx_ERROR undefined undefined"><mtext>\1</mtext></merror><mrow><mo stretchy="false">[</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">]</mo></mrow></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\rho(x)=\tfrac{1}{b-a}\1_{[a,b]}(x)</annotation></semantics></math>.</p>
+</div>
+</li>
+<li id="I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"> b)</span><div id="I1.i2.p1" class="ltx_para">​<p class="ltx_p">Para <math id="I1.i2.p1.m1" class="ltx_Math" alttext="\lambda&gt;0" display="inline"><semantics><mrow><mi>λ</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\lambda&gt;0</annotation></semantics></math>, definimos a medida <math id="I1.i2.p1.m2" class="ltx_Math" alttext="\Exp(\lambda)" display="inline"><semantics><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\Exp</mtext></merror><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>λ</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\Exp(\lambda)</annotation></semantics></math>  (chamada exponencial de parâmetro <math id="I1.i2.p1.m3" class="ltx_Math" alttext="\lambda" display="inline"><semantics><mi>λ</mi><annotation encoding="application/x-tex">\lambda</annotation></semantics></math>) por meio da densidade <math id="I1.i2.p1.m4" class="ltx_Math" alttext="\rho(x)=\lambda\exp\{-\lambda x\}" display="inline"><semantics><mrow><mrow><mi>ρ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>λ</mi><mo lspace="0.167em">⁢</mo><mrow><mi>exp</mi><mo>⁡</mo><mrow><mo stretchy="false">{</mo><mrow><mo>−</mo><mrow><mi>λ</mi><mo>⁢</mo><mi>x</mi></mrow></mrow><mo stretchy="false">}</mo></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\rho(x)=\lambda\exp\{-\lambda x\}</annotation></semantics></math> em <math id="I1.i2.p1.m5" class="ltx_Math" alttext="[0,\infty)" display="inline"><semantics><mrow><mo stretchy="false">[</mo><mn>0</mn><mo>,</mo><mi mathvariant="normal">∞</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">[0,\infty)</annotation></semantics></math>.</p>
+</div>
+</li>
+</ol>
+</div>
+<div id="p4" class="ltx_para">
+<p class="ltx_p">Podemos também usar a distribuição de um elemento aleatório para construir outras probabilidades, como mostra o seguinte exemplo.</p>
+</div>
+<div id="p5" class="ltx_para">
+<span class="ltx_ERROR undefined">{example}</span>
+<p class="ltx_p">Considere por exemplo <math id="p5.m1" class="ltx_Math" alttext="X:[0,2\pi]\to\mathbb{C}" display="inline"><semantics><mrow><mi>X</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mrow><mo stretchy="false">[</mo><mrow><mn>0,2</mn><mo>⁢</mo><mi>π</mi></mrow><mo stretchy="false">]</mo></mrow><mo stretchy="false">→</mo><mi>ℂ</mi></mrow></mrow><annotation encoding="application/x-tex">X:[0,2\pi]\to\mathbb{C}</annotation></semantics></math> dada por <math id="p5.m2" class="ltx_Math" alttext="X(t)=\exp\{-it\}" display="inline"><semantics><mrow><mrow><mi>X</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>exp</mi><mo>⁡</mo><mrow><mo stretchy="false">{</mo><mrow><mo>−</mo><mrow><mi>i</mi><mo>⁢</mo><mi>t</mi></mrow></mrow><mo stretchy="false">}</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">X(t)=\exp\{-it\}</annotation></semantics></math>.
+A distribuição imagem <math id="p5.m3" class="ltx_Math" alttext="X_{*}U_{[0,2\pi]}" display="inline"><semantics><mrow><msub><mi>X</mi><mo>∗</mo></msub><mo>⁢</mo><msub><mi>U</mi><mrow><mo stretchy="false">[</mo><mrow><mn>0,2</mn><mo>⁢</mo><mi>π</mi></mrow><mo stretchy="false">]</mo></mrow></msub></mrow><annotation encoding="application/x-tex">X_{*}U_{[0,2\pi]}</annotation></semantics></math> é o que chamamos de distribuição uniforme em <math id="p5.m4" class="ltx_Math" alttext="\mathbb{S}^{1}" display="inline"><semantics><msup><mi>𝕊</mi><mn>1</mn></msup><annotation encoding="application/x-tex">\mathbb{S}^{1}</annotation></semantics></math>, também denotada por <math id="p5.m5" class="ltx_Math" alttext="U_{S^{1}}" display="inline"><semantics><msub><mi>U</mi><msup><mi>S</mi><mn>1</mn></msup></msub><annotation encoding="application/x-tex">U_{S^{1}}</annotation></semantics></math>.</p>
+</div>
+<div id="p6" class="ltx_para">
+<span class="ltx_ERROR undefined">{exercise}</span>
+<p class="ltx_p">Mostre que <math id="p6.m1" class="ltx_Math" alttext="U_{\mathbb{S}^{1}}" display="inline"><semantics><msub><mi>U</mi><msup><mi>𝕊</mi><mn>1</mn></msup></msub><annotation encoding="application/x-tex">U_{\mathbb{S}^{1}}</annotation></semantics></math> não é absolutamente contínua com respeito à medida de Lebesgue em <math id="p6.m2" class="ltx_Math" alttext="\mathbb{C}\sim\mathbb{R}^{2}" display="inline"><semantics><mrow><mi>ℂ</mi><mo>∼</mo><msup><mi>ℝ</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\mathbb{C}\sim\mathbb{R}^{2}</annotation></semantics></math>.</p>
+</div>
+<div id="p7" class="ltx_para">
+<span class="ltx_ERROR undefined">{exercise}</span>
+<p class="ltx_p">Mostre que <math id="p7.m1" class="ltx_Math" alttext="U_{\mathbb{S}^{1}}" display="inline"><semantics><msub><mi>U</mi><msup><mi>𝕊</mi><mn>1</mn></msup></msub><annotation encoding="application/x-tex">U_{\mathbb{S}^{1}}</annotation></semantics></math> é invariante por rotações rígidas de <math id="p7.m2" class="ltx_Math" alttext="\mathbb{C}" display="inline"><semantics><mi>ℂ</mi><annotation encoding="application/x-tex">\mathbb{C}</annotation></semantics></math>, isto é, se <math id="p7.m3" class="ltx_Math" alttext="T:\mathbb{C}\to\mathbb{C}" display="inline"><semantics><mrow><mi>T</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>ℂ</mi><mo stretchy="false">→</mo><mi>ℂ</mi></mrow></mrow><annotation encoding="application/x-tex">T:\mathbb{C}\to\mathbb{C}</annotation></semantics></math> é uma isometria linear,
+<math id="p7.m4" class="ltx_Math" alttext="T_{*}U_{\mathbb{S}^{1}}=U_{\mathbb{S}^{1}}" display="inline"><semantics><mrow><mrow><msub><mi>T</mi><mo>∗</mo></msub><mo>⁢</mo><msub><mi>U</mi><msup><mi>𝕊</mi><mn>1</mn></msup></msub></mrow><mo>=</mo><msub><mi>U</mi><msup><mi>𝕊</mi><mn>1</mn></msup></msub></mrow><annotation encoding="application/x-tex">T_{*}U_{\mathbb{S}^{1}}=U_{\mathbb{S}^{1}}</annotation></semantics></math>.</p>
+</div>
+<div id="p8" class="ltx_para">
+<span class="ltx_ERROR undefined">{exercise}</span>
+<p class="ltx_p">Construa uma probabilidade em <math id="p8.m1" class="ltx_Math" alttext="S^{2}" display="inline"><semantics><msup><mi>S</mi><mn>2</mn></msup><annotation encoding="application/x-tex">S^{2}</annotation></semantics></math> invariante por rotações.</p>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+<a href="Ch2.Sx1.html" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a><a href="Ch2.S3.html" class="navigation navigation-next" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+</div>
+</div>
+<script src="bookml/gitbook/js/app.min.js"></script>
+<script src="bookml/gitbook/js/jquery.highlight.js"></script>
+<script src="bookml/gitbook/js/plugin-search.js"></script>
+<script src="bookml/gitbook/js/plugin-fontsettings.js"></script>
+<script src="bookml/gitbook/js/plugin-bookdown.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+        MathJax = {
+          startup: {
+            ready() {
+              // do not process equations disabled with \bmlDisableMathJax (code suggested by Davide P. Cervone)
+              class bmlFindMathML extends MathJax._.input.mathml.FindMathML.FindMathML {
+                processMath(set) {
+                  const adaptor = this.adaptor;
+                  for (const node of set.values()) {
+                    if (adaptor.hasClass(node, 'bml_disable_mathjax')) {
+                      set.delete(node);
+                    }
+                  }
+                  return super.processMath(set);
+                }
+              }
+
+              MathJax._.components.global.combineDefaults(MathJax.config, 'mml', {FindMathML: new bmlFindMathML()});
+
+              MathJax.startup.defaultReady();
+
+              // preproces MathML to make MathJax aware of certain LaTeXML and BookML additional info
+              const mmlFilters = MathJax.startup.input[0].mmlFilters;
+
+              // convert the LaTeXML calligraphic (chancery) annotation to a form MathJax understands
+              // since the corresponding Unicode characters render as script (rounded)
+              const script2latin = {
+                '𝒜': 'A', 'ℬ': 'B', '𝒞': 'C', '𝒟': 'D', 'ℰ': 'E', 'ℱ': 'F', '𝒢': 'G',
+                'ℋ': 'H', 'ℐ': 'I', '𝒥': 'J', '𝒦': 'K', 'ℒ': 'L', 'ℳ': 'M', '𝒩': 'N',
+                '𝒪': 'O', '𝒫': 'P', '𝒬': 'Q', 'ℛ': 'R', '𝒮': 'S', '𝒯': 'T', '𝒰': 'U',
+                '𝒱': 'V', '𝒲': 'W', '𝒳': 'X', '𝒴': 'Y', '𝒵': 'Z',
+              };
+
+              mmlFilters.add((args) => {
+                for (const n of args.data.getElementsByClassName('ltx_font_mathcaligraphic')) {
+                  n.classList.add('MJX-tex-calligraphic');
+                  const letter = script2latin[n.textContent];
+                  if (letter !== undefined) { n.textContent = letter; }
+                }
+              });
+
+              // adjust characters based on Unicode variation sequences
+              const replacements = {
+                // MathJax renders the empty set as the U+FE00 variant, so the plain character needs adjusting
+                '∅': { variant: 'variant' },
+                // MathJax renders script characters in rounded style, which is fine for no variation and U+FE00
+                '𝒜\xFE00': { text: 'A', variant: 'tex-calligraphic' },
+                'ℬ\xFE00': { text: 'B', variant: 'tex-calligraphic' },
+                '𝒞\xFE00': { text: 'C', variant: 'tex-calligraphic' },
+                '𝒟\xFE00': { text: 'D', variant: 'tex-calligraphic' },
+                'ℰ\xFE00': { text: 'E', variant: 'tex-calligraphic' },
+                'ℱ\xFE00': { text: 'F', variant: 'tex-calligraphic' },
+                '𝒢\xFE00': { text: 'G', variant: 'tex-calligraphic' },
+                'ℋ\xFE00': { text: 'H', variant: 'tex-calligraphic' },
+                'ℐ\xFE00': { text: 'I', variant: 'tex-calligraphic' },
+                '𝒥\xFE00': { text: 'J', variant: 'tex-calligraphic' },
+                '𝒦\xFE00': { text: 'K', variant: 'tex-calligraphic' },
+                'ℒ\xFE00': { text: 'L', variant: 'tex-calligraphic' },
+                'ℳ\xFE00': { text: 'M', variant: 'tex-calligraphic' },
+                '𝒩\xFE00': { text: 'N', variant: 'tex-calligraphic' },
+                '𝒪\xFE00': { text: 'O', variant: 'tex-calligraphic' },
+                '𝒫\xFE00': { text: 'P', variant: 'tex-calligraphic' },
+                '𝒬\xFE00': { text: 'Q', variant: 'tex-calligraphic' },
+                'ℛ\xFE00': { text: 'R', variant: 'tex-calligraphic' },
+                '𝒮\xFE00': { text: 'S', variant: 'tex-calligraphic' },
+                '𝒯\xFE00': { text: 'T', variant: 'tex-calligraphic' },
+                '𝒰\xFE00': { text: 'U', variant: 'tex-calligraphic' },
+                '𝒱\xFE00': { text: 'V', variant: 'tex-calligraphic' },
+                '𝒲\xFE00': { text: 'W', variant: 'tex-calligraphic' },
+                '𝒳\xFE00': { text: 'X', variant: 'tex-calligraphic' },
+                '𝒴\xFE00': { text: 'Y', variant: 'tex-calligraphic' },
+                '𝒵\xFE00': { text: 'Z', variant: 'tex-calligraphic' }
+              };
+
+              mmlFilters.add((args) => {
+                let nodes = document.evaluate('.//m:mi | .//m:mn | .//m:mo | .//m:ms', args.data,
+                  () => 'http://www.w3.org/1998/Math/MathML', XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE);
+                for (let i = 0; i < nodes.snapshotLength; i++) {
+                  const n = nodes.snapshotItem(i);
+                  const repl = replacements[n.innerHTML];
+                  if (repl !== undefined) {
+                    const variant = repl['variant'];
+                    const text = repl['text'];
+                    if (variant !== undefined) { n.classList.add('MJX-' + variant); n.removeAttribute('mathvariant'); }
+                    if (text !== undefined) { n.innerHTML = text; }
+                  }
+                }
+              });
+            }
+          }
+        };
+      </script>
+<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js"></script>
+<script type="text/javascript">
+                gitbook.require(["gitbook"], function(gitbook) {
+                gitbook.start({
+                  "fontsettings": {
+                    "theme": "white",
+                    "family": "sans",
+                    "size": 2
+                  },
+                  "download": [ [ "Notas_de_aula.pdf", "PDF" ], ],
+                  "search": {
+                    "engine": "fuse"
+                  },
+                  "toc": {
+                    "collapse": "none"
+                  }
+                });
+              });
+            </script>
+</body>
+
+</html>

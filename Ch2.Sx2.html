@@ -1,0 +1,640 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Tópico: Lei dos pequenos números ‣ Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I</title>
+<!--Generated on Tue Aug 27 13:34:01 2024 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
+<style>:root { --bml-ltx-font-size: 10; }</style>
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-table.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-search.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-bookdown.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-fontsettings.css" type="text/css">
+<link rel="stylesheet" href="ltx-book.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook,plain.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook.css" type="text/css">
+<link rel="stylesheet" href="bmluser/colors.gitbook-Notas_de_aula.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6"></script>
+<link rel="up" href="Ch2.html" title="Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I">
+<link rel="up up" href="index.html" title="Notas de aula: Probabilidade I">
+<link rel="start" href="index.html" title="Notas de aula: Probabilidade I">
+<link rel="prev" href="Ch2.S5.html" title="2.5 Independência ‣ Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I">
+<link rel="next" href="Ch2.S6.html" title="2.6 Espaços produto infinito ‣ Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch2.S1.html" title="2.1 Caso enumerável ‣ Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch2.Sx1.html" title="Tópico: Método Probabilístico ‣ Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch2.S2.html" title="2.2 Caso absolutamente contínuo ‣ Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch2.S3.html" title="2.3 Funções acumuladas de distribuição ‣ Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch2.S4.html" title="2.4 Espaços produto finito ‣ Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch2.S5.html" title="2.5 Independência ‣ Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch2.S6.html" title="2.6 Espaços produto infinito ‣ Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch2.Sx3.html" title="Tópico: Percolação ‣ Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch2.S7.html" title="2.7 Distribuições conjuntas ‣ Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch2.S8.html" title="2.8 Probabilidades condicionais ‣ Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch2.S9.html" title="2.9 Núcleos de transição ‣ Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch2.S10.html" title="2.10 Espaços canônicos ‣ Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch2.Sx4.html" title="Tópico: Cadeias de Markov ‣ Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch2.Sx5.html" title="Tópico: Urna de Pólya ‣ Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I">
+<link rel="chapter" href="Chx1.html" title="Licença ‣ Notas de aula: Probabilidade I">
+<link rel="chapter" href="Chx2.html" title="Contribuições ‣ Notas de aula: Probabilidade I">
+<link rel="chapter" href="Ch1.html" title="Capítulo 1 Fundamentos ‣ Notas de aula: Probabilidade I">
+<link rel="chapter" href="Ch2.html" title="Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I">
+<link rel="chapter" href="Ch3.html" title="Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I">
+<link rel="chapter" href="Ch4.html" title="Capítulo 4 Esperança condicional ‣ Notas de aula: Probabilidade I">
+<link rel="chapter" href="Ch5.html" title="Capítulo 5 Soluções de exercícios ‣ Notas de aula: Probabilidade I">
+<link rel="bibliography" href="bib.html" title="Referências ‣ Notas de aula: Probabilidade I">
+<link rel="index" href="idx.html" title="Índice Remissivo ‣ Notas de aula: Probabilidade I">
+<meta name="keywords" lang="pt-BR" content=", Lei, de Poisson, distribuição, dos Pequenos Números, variação total">
+</head>
+<body>
+<div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+<a href="#bml-main-content" tabindex="0" class="bml-skip-to-content">Skip to content.</a>
+<div class="book-summary"><nav class="ltx_page_navbar">
+<ul class="ltx_toclist summary">
+<li>
+<a href="index.html" title="" class="ltx_ref" rel="start">Notas de aula: Probabilidade I</a>
+</li>
+<li class="divider">
+<li data-level="" data-path="Chx1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Chx1.html" title="In Notas de aula: Probabilidade I" class="ltx_ref">Licença</a></li>
+<li data-level="" data-path="Chx2.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Chx2.html" title="In Notas de aula: Probabilidade I" class="ltx_ref">Contribuições</a></li>
+<li data-level="1" data-path="Ch1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch1.html" title="In Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1 </span></b>Fundamentos</a></li>
+<li data-level="2" data-path="Ch2.html" class="ltx_tocentry ltx_tocentry_chapter  chapter ">
+<a href="Ch2.html" title="In Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2 </span></b>Construção de espaços de probabilidade</a>
+<ol class="ltx_toclist ltx_toclist_chapter">
+<li data-level="2.1" data-path="Ch2.S1.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch2.S1.html" title="In Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2.1 </span></b>Caso enumerável</a></li>
+<li data-level="" data-path="Ch2.Sx1.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch2.Sx1.html" title="In Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I" class="ltx_ref">Tópico: Método Probabilístico</a></li>
+<li data-level="2.2" data-path="Ch2.S2.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch2.S2.html" title="In Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2.2 </span></b>Caso absolutamente contínuo</a></li>
+<li data-level="2.3" data-path="Ch2.S3.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch2.S3.html" title="In Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2.3 </span></b>Funções acumuladas de distribuição</a></li>
+<li data-level="2.4" data-path="Ch2.S4.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch2.S4.html" title="In Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2.4 </span></b>Espaços produto finito</a></li>
+<li data-level="2.5" data-path="Ch2.S5.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch2.S5.html" title="In Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2.5 </span></b>Independência</a></li>
+<li data-level="" data-path="" class="ltx_tocentry ltx_tocentry_section ltx_ref_self  chapter active"><a href="" title="In Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I" class="ltx_ref">Tópico: Lei dos pequenos números</a></li>
+<li data-level="2.6" data-path="Ch2.S6.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch2.S6.html" title="In Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2.6 </span></b>Espaços produto infinito</a></li>
+<li data-level="" data-path="Ch2.Sx3.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch2.Sx3.html" title="In Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I" class="ltx_ref">Tópico: Percolação</a></li>
+<li data-level="2.7" data-path="Ch2.S7.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch2.S7.html" title="In Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2.7 </span></b>Distribuições conjuntas</a></li>
+<li data-level="2.8" data-path="Ch2.S8.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch2.S8.html" title="In Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2.8 </span></b>Probabilidades condicionais</a></li>
+<li data-level="2.9" data-path="Ch2.S9.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch2.S9.html" title="In Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2.9 </span></b>Núcleos de transição</a></li>
+<li data-level="2.10" data-path="Ch2.S10.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch2.S10.html" title="In Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2.10 </span></b>Espaços canônicos</a></li>
+<li data-level="" data-path="Ch2.Sx4.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch2.Sx4.html" title="In Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I" class="ltx_ref">Tópico: Cadeias de Markov</a></li>
+<li data-level="" data-path="Ch2.Sx5.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch2.Sx5.html" title="In Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I" class="ltx_ref">Tópico: Urna de Pólya</a></li>
+</ol>
+</li>
+<li data-level="3" data-path="Ch3.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch3.html" title="In Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3 </span></b>Somas de variáveis independentes</a></li>
+<li data-level="4" data-path="Ch4.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch4.html" title="In Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4 </span></b>Esperança condicional</a></li>
+<li data-level="5" data-path="Ch5.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch5.html" title="In Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">5 </span></b>Soluções de exercícios</a></li>
+<li data-level="" data-path="bib.html" class="ltx_tocentry ltx_tocentry_bibliography  chapter "><a href="bib.html" title="In Notas de aula: Probabilidade I" class="ltx_ref">Referências</a></li>
+<li data-level="" data-path="idx.html" class="ltx_tocentry ltx_tocentry_index  chapter "><a href="idx.html" title="In Notas de aula: Probabilidade I" class="ltx_ref">Índice Remissivo</a></li>
+</ul>
+</nav></div>
+<div class="ltx_page_main book-body fixed">
+<div class="body-inner">
+<div class="book-header fixed" role="navigation"><h1>Tópico: Lei dos pequenos números</h1></div>
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="ltx_page_content page-inner" id="bml-main-content">
+<section class="ltx_section normal" lang="pt-BR">
+<div class="section level1">
+
+<h1 class="ltx_title ltx_title_section">Tópico: Lei dos pequenos números</h1>
+
+<div id="p1" class="ltx_para">
+<p class="ltx_p">Nessa seção estudaremos como se comportam limites de algumas variáveis aleatórias bastante importantes, mas primeiramente, uma breve intuição.</p>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">Apesar de que descreveremos a nossa motivação a partir desse exemplo do estudo de um material radioativo, podemos encontrar aplicações com justificativas bastante semelhantes para outros problemas, como: chegada de carros em um sinal de trânsito, número de mutações em um gene, número de mortes por ano em uma faixa etária…</p>
+</div>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">Digamos que estamos observando um material radioativo que esporadicamente emite fótons que podemos detectar através de um aparelho.
+A razão dessas emissões pode ser aproximada pelo seguinte modelo.
+Na amostra temos um número <math id="p3.m1" class="ltx_Math" alttext="n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math> grande de átomos instáveis (<math id="p3.m2" class="ltx_Math" alttext="n\sim 10^{23}" display="inline"><semantics><mrow><mi>n</mi><mo>∼</mo><msup><mn>10</mn><mn>23</mn></msup></mrow><annotation encoding="application/x-tex">n\sim 10^{23}</annotation></semantics></math>) e em um determinado tempo de observação, cada um deles tem probabilidade muito baixa de decair emitindo um fóton (digamos <math id="p3.m3" class="ltx_Math" alttext="p\sim 10^{-23}" display="inline"><semantics><mrow><mi>p</mi><mo>∼</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>23</mn></mrow></msup></mrow><annotation encoding="application/x-tex">p\sim 10^{-23}</annotation></semantics></math>).
+Nesse caso, supondo que todos decidam emitir de maneira independente, temos para <math id="p3.m4" class="ltx_Math" alttext="p\in[0,1]" display="inline"><semantics><mrow><mi>p</mi><mo>∈</mo><mrow><mo stretchy="false">[</mo><mn>0,1</mn><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">p\in[0,1]</annotation></semantics></math>,</p>
+<div id="Ch2.E30" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch2.E30.m1" class="ltx_math_unparsed" alttext="\Omega_{n}=\{0,1\}^{n},\quad\mathcal{F}_{n}=\mathcal{P}(\Omega)\quad\text{e}%
+\quad P_{p}=\otimes_{i=1}^{n}Ber(p)." display="block"><semantics><mrow><msub><mi mathvariant="normal">Ω</mi><mi>n</mi></msub><mo>=</mo><msup><mrow><mo stretchy="false">{</mo><mn>0,1</mn><mo stretchy="false">}</mo></mrow><mi>n</mi></msup><mo rspace="1.167em">,</mo><msub><mi class="ltx_font_mathcaligraphic">ℱ</mi><mi>n</mi></msub><mo>=</mo><mi class="ltx_font_mathcaligraphic">𝒫</mi><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">Ω</mi><mo stretchy="false">)</mo></mrow><mspace width="1em"></mspace><mtext>e</mtext><mspace width="1em"></mspace><msub><mi>P</mi><mi>p</mi></msub><mo rspace="0em">=</mo><msubsup><mo lspace="0em" rspace="0.222em">⊗</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><mi>B</mi><mi>e</mi><mi>r</mi><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\Omega_{n}=\{0,1\}^{n},\quad\mathcal{F}_{n}=\mathcal{P}(\Omega)\quad\text{e}%
+\quad P_{p}=\otimes_{i=1}^{n}Ber(p).</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(2.30)</span>
+            
+            
+          
+</div>
+<p class="ltx_p">Dessa forma, o número total de emissões observadas para <math id="p3.m5" class="ltx_Math" alttext="\omega=(\omega_{1},\dots,\omega_{n})\in\Omega" display="inline"><semantics><mrow><mi>ω</mi><mo>=</mo><mrow><mo stretchy="false">(</mo><msub><mi>ω</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>ω</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow><mo>∈</mo><mi mathvariant="normal">Ω</mi></mrow><annotation encoding="application/x-tex">\omega=(\omega_{1},\dots,\omega_{n})\in\Omega</annotation></semantics></math> é</p>
+<div id="Ch2.E31" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch2.E31.m1" class="ltx_Math" alttext="X_{n}(\omega)=\sum_{i=1}^{n}\omega_{i}." display="block"><semantics><mrow><mrow><mrow><msub><mi>X</mi><mi>n</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ω</mi><mo stretchy="false">)</mo></mrow></mrow><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><msub><mi>ω</mi><mi>i</mi></msub></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">X_{n}(\omega)=\sum_{i=1}^{n}\omega_{i}.</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(2.31)</span>
+            
+            
+          
+</div>
+<p class="ltx_p">E gostaríamos de entender como se comporta essa distribuição, que nada mais é que <math id="p3.m6" class="ltx_Math" alttext="\Bin(n,p)" display="inline"><semantics><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\Bin</mtext></merror><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo>,</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\Bin(n,p)</annotation></semantics></math>.</p>
+</div>
+<div id="p4" class="ltx_para">
+<p class="ltx_p">Uma primeira tentativa seria modelar esse processo dizendo que o número de átomos <math id="p4.m1" class="ltx_Math" alttext="n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math> é tão grande, que somente estamos interessados no comportamento assintótico quando <math id="p4.m2" class="ltx_Math" alttext="n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math> vai para infinito.
+Mas para manter o número de emissões sob controle, também gostaríamos que <math id="p4.m3" class="ltx_Math" alttext="p=p_{n}" display="inline"><semantics><mrow><mi>p</mi><mo>=</mo><msub><mi>p</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">p=p_{n}</annotation></semantics></math>, que converge a zero.
+Poderíamos por exemplo escolher</p>
+<div id="Ch2.E32" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch2.E32.m1" class="ltx_Math" alttext="p_{n}=\frac{\lambda}{n}." display="block"><semantics><mrow><mrow><msub><mi>p</mi><mi>n</mi></msub><mo>=</mo><mfrac><mi>λ</mi><mi>n</mi></mfrac></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">p_{n}=\frac{\lambda}{n}.</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(2.32)</span>
+            
+            
+          
+</div>
+<p class="ltx_p">Mas a discussão que se segue é muito mais geral que essa escolha específica.</p>
+</div>
+<div id="p5" class="ltx_para">
+<p class="ltx_p">Como estaremos interessados em um regime assintótico da distribuição de <math id="p5.m1" class="ltx_Math" alttext="X_{p}" display="inline"><semantics><msub><mi>X</mi><mi>p</mi></msub><annotation encoding="application/x-tex">X_{p}</annotation></semantics></math> (lembre que apesar do espaço amostral de <math id="p5.m2" class="ltx_Math" alttext="X_{n}" display="inline"><semantics><msub><mi>X</mi><mi>n</mi></msub><annotation encoding="application/x-tex">X_{n}</annotation></semantics></math> variar com <math id="p5.m3" class="ltx_Math" alttext="n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>, sua distribuição é sempre uma probabilidade em <math id="p5.m4" class="ltx_Math" alttext="\mathbb{N}" display="inline"><semantics><mi>ℕ</mi><annotation encoding="application/x-tex">\mathbb{N}</annotation></semantics></math>), precisamos de definir uma noção de distância entre duas distribuições em <math id="p5.m5" class="ltx_Math" alttext="\mathbb{N}" display="inline"><semantics><mi>ℕ</mi><annotation encoding="application/x-tex">\mathbb{N}</annotation></semantics></math>.</p>
+</div>
+<div id="p6" class="ltx_para">
+<span class="ltx_ERROR undefined">{definition}</span>
+<p class="ltx_p">Dadas duas distribuições <math id="p6.m1" class="ltx_Math" alttext="\mu_{1}" display="inline"><semantics><msub><mi>μ</mi><mn>1</mn></msub><annotation encoding="application/x-tex">\mu_{1}</annotation></semantics></math> e <math id="p6.m2" class="ltx_Math" alttext="\mu_{2}" display="inline"><semantics><msub><mi>μ</mi><mn>2</mn></msub><annotation encoding="application/x-tex">\mu_{2}</annotation></semantics></math> em <math id="p6.m3" class="ltx_Math" alttext="(\Omega,\mathcal{A})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">Ω</mi><mo>,</mo><mi class="ltx_font_mathcaligraphic">𝒜</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(\Omega,\mathcal{A})</annotation></semantics></math>, definimos</p>
+<div id="Ch2.E33" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch2.E33.m1" class="ltx_Math" alttext="\lVert\mu_{1}-\mu_{2}\rVert_{\VT}=\sup_{A\in\mathcal{A}}|\mu_{1}(A)-\mu_{2}(A)|," display="block"><semantics><mrow><mrow><msub><mrow><mo fence="true" rspace="0em">∥</mo><mrow><msub><mi>μ</mi><mn>1</mn></msub><mo>−</mo><msub><mi>μ</mi><mn>2</mn></msub></mrow><mo fence="true" lspace="0em">∥</mo></mrow><merror class="ltx_ERROR undefined undefined"><mtext>\VT</mtext></merror></msub><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0em">sup</mo><mrow><mi>A</mi><mo>∈</mo><mi class="ltx_font_mathcaligraphic">𝒜</mi></mrow></munder><mrow><mo stretchy="false">|</mo><mrow><mrow><msub><mi>μ</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><msub><mi>μ</mi><mn>2</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">|</mo></mrow></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\lVert\mu_{1}-\mu_{2}\rVert_{\VT}=\sup_{A\in\mathcal{A}}|\mu_{1}(A)-\mu_{2}(A)|,</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(2.33)</span>
+            
+            
+          
+</div>
+<p class="ltx_p">chamada de distância em variação total  entre <math id="p6.m5" class="ltx_Math" alttext="\mu_{1}" display="inline"><semantics><msub><mi>μ</mi><mn>1</mn></msub><annotation encoding="application/x-tex">\mu_{1}</annotation></semantics></math> e <math id="p6.m6" class="ltx_Math" alttext="\mu_{2}" display="inline"><semantics><msub><mi>μ</mi><mn>2</mn></msub><annotation encoding="application/x-tex">\mu_{2}</annotation></semantics></math>.</p>
+</div>
+<div id="p7" class="ltx_para">
+<p class="ltx_p">No nosso caso, <math id="p7.m1" class="ltx_Math" alttext="\Omega" display="inline"><semantics><mi mathvariant="normal">Ω</mi><annotation encoding="application/x-tex">\Omega</annotation></semantics></math> é enumerável.
+Vamos ver que nesse caso é possível reescrever a definição acima de modo a ver mais facilmente que se trata de uma distância no espaço de probabilidades em <math id="p7.m2" class="ltx_Math" alttext="\Omega" display="inline"><semantics><mi mathvariant="normal">Ω</mi><annotation encoding="application/x-tex">\Omega</annotation></semantics></math>.</p>
+</div>
+<div id="p8" class="ltx_para">
+<span class="ltx_ERROR undefined">{lemma}</span>
+<p class="ltx_p">Se <math id="p8.m1" class="ltx_Math" alttext="\Omega" display="inline"><semantics><mi mathvariant="normal">Ω</mi><annotation encoding="application/x-tex">\Omega</annotation></semantics></math> for finito ou enumerável, então podemos escrever</p>
+<div id="Ch2.E34" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch2.E34.m1" class="ltx_Math" alttext="\lVert\mu_{1}-\mu_{2}\rVert_{\VT}=\frac{1}{2}\sum_{x\in\Omega}|\mu_{1}(x)-\mu_%
+{2}(x)|." display="block"><semantics><mrow><mrow><msub><mrow><mo fence="true" rspace="0em">∥</mo><mrow><msub><mi>μ</mi><mn>1</mn></msub><mo>−</mo><msub><mi>μ</mi><mn>2</mn></msub></mrow><mo fence="true" lspace="0em">∥</mo></mrow><merror class="ltx_ERROR undefined undefined"><mtext>\VT</mtext></merror></msub><mo>=</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mrow><munder><mo movablelimits="false" rspace="0em">∑</mo><mrow><mi>x</mi><mo>∈</mo><mi mathvariant="normal">Ω</mi></mrow></munder><mrow><mo stretchy="false">|</mo><mrow><mrow><msub><mi>μ</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><msub><mi>μ</mi><mn>2</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">|</mo></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\lVert\mu_{1}-\mu_{2}\rVert_{\VT}=\frac{1}{2}\sum_{x\in\Omega}|\mu_{1}(x)-\mu_%
+{2}(x)|.</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(2.34)</span>
+            
+            
+          
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demonstração.</h6>
+<div id="p9" class="ltx_para">
+<p class="ltx_p">Para mostrar que o lado esquerdo é maior ou igual ao direito, escolhemos <math id="p9.m1" class="ltx_Math" alttext="A=\{x\in\Omega\,:\,\mu_{2}(x)\leq\mu_{1}(x)\}" display="inline"><semantics><mrow><mi>A</mi><mo>=</mo><mrow><mo stretchy="false">{</mo><mrow><mi>x</mi><mo>∈</mo><mi mathvariant="normal">Ω</mi></mrow><mo lspace="0.448em" rspace="0.448em">:</mo><mrow><mrow><msub><mi>μ</mi><mn>2</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≤</mo><mrow><msub><mi>μ</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">A=\{x\in\Omega\,:\,\mu_{2}(x)\leq\mu_{1}(x)\}</annotation></semantics></math>. Assim</p>
+<div id="Ch2.E35" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch2.E35.m1" class="ltx_Math" alttext="\begin{split}\sum_{x\in A}\mu_{1}(x)-\mu_{2}(x)&amp;=|\mu_{1}(A)-\mu_{2}(A)|\\
+&amp;=|\mu_{1}(A^{c})-\mu_{2}(A^{c})|=\sum_{x\in A^{c}}\mu_{2}(x)-\mu_{1}(x),\end{split}" display="block"><semantics><mtable columnspacing="0pt" displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_align_right" columnalign="right"><mrow><mrow><munder><mo movablelimits="false">∑</mo><mrow><mi>x</mi><mo>∈</mo><mi>A</mi></mrow></munder><mrow><msub><mi>μ</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>−</mo><mrow><msub><mi>μ</mi><mn>2</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mi></mi><mo>=</mo><mrow><mo stretchy="false">|</mo><mrow><mrow><msub><mi>μ</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><msub><mi>μ</mi><mn>2</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">|</mo></mrow></mrow></mtd></mtr><mtr><mtd></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mi></mi><mo>=</mo><mrow><mo stretchy="false">|</mo><mrow><mrow><msub><mi>μ</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>A</mi><mi>c</mi></msup><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><msub><mi>μ</mi><mn>2</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>A</mi><mi>c</mi></msup><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">|</mo></mrow><mo rspace="0.111em">=</mo><mrow><mrow><munder><mo movablelimits="false">∑</mo><mrow><mi>x</mi><mo>∈</mo><msup><mi>A</mi><mi>c</mi></msup></mrow></munder><mrow><msub><mi>μ</mi><mn>2</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>−</mo><mrow><msub><mi>μ</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{split}\sum_{x\in A}\mu_{1}(x)-\mu_{2}(x)&amp;=|\mu_{1}(A)-\mu_{2}(A)|\\
+&amp;=|\mu_{1}(A^{c})-\mu_{2}(A^{c})|=\sum_{x\in A^{c}}\mu_{2}(x)-\mu_{1}(x),\end{split}</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(2.35)</span>
+              
+              
+            
+</div>
+<p class="ltx_p">donde</p>
+<div id="Ch2.E36" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch2.E36.m1" class="ltx_Math" alttext="\lVert\mu_{1}-\mu_{2}\rVert_{\VT}\geq|\mu_{1}(A)-\mu_{2}(A)|=\frac{1}{2}\sum_{%
+i}|\mu_{1}(x_{i})-\mu_{2}(x_{i})|." display="block"><semantics><mrow><mrow><msub><mrow><mo fence="true" rspace="0em">∥</mo><mrow><msub><mi>μ</mi><mn>1</mn></msub><mo>−</mo><msub><mi>μ</mi><mn>2</mn></msub></mrow><mo fence="true" lspace="0em">∥</mo></mrow><merror class="ltx_ERROR undefined undefined"><mtext>\VT</mtext></merror></msub><mo>≥</mo><mrow><mo stretchy="false">|</mo><mrow><mrow><msub><mi>μ</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><msub><mi>μ</mi><mn>2</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">|</mo></mrow><mo>=</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mrow><munder><mo movablelimits="false" rspace="0em">∑</mo><mi>i</mi></munder><mrow><mo stretchy="false">|</mo><mrow><mrow><msub><mi>μ</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><msub><mi>μ</mi><mn>2</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">|</mo></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\lVert\mu_{1}-\mu_{2}\rVert_{\VT}\geq|\mu_{1}(A)-\mu_{2}(A)|=\frac{1}{2}\sum_{%
+i}|\mu_{1}(x_{i})-\mu_{2}(x_{i})|.</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(2.36)</span>
+              
+              
+            
+</div>
+</div>
+<div id="p10" class="ltx_para">
+<p class="ltx_p">Na outra direção, observe que para todo <math id="p10.m1" class="ltx_Math" alttext="B\subseteq\Omega" display="inline"><semantics><mrow><mi>B</mi><mo>⊆</mo><mi mathvariant="normal">Ω</mi></mrow><annotation encoding="application/x-tex">B\subseteq\Omega</annotation></semantics></math>,</p>
+<div id="Ch2.E37" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch2.E37.m1" class="ltx_Math" alttext="\begin{split}\sum_{i}|\mu_{1}(x_{i})-\mu_{2}(x_{i})|&amp;\geq\sum_{x\in B}\mu_{1}(%
+x)-\mu_{2}(x)+\sum_{x\in B^{c}}\mu_{2}(x)-\mu_{1}(x)\\
+&amp;=\mu_{1}(B)-\mu_{2}(B)+(1-\mu_{2}(B))-(1-\mu_{1}(B))\\
+&amp;=2(\mu_{1}(B)-\mu_{2}(B)).\end{split}" display="block"><semantics><mtable columnspacing="0pt" displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_align_right" columnalign="right"><mrow><munder><mo movablelimits="false">∑</mo><mi>i</mi></munder><mrow><mo lspace="0em" stretchy="false">|</mo><mrow><mrow><msub><mi>μ</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><msub><mi>μ</mi><mn>2</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">|</mo></mrow></mrow></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mi></mi><mo rspace="0.111em">≥</mo><mrow><mrow><mrow><mrow><munder><mo movablelimits="false">∑</mo><mrow><mi>x</mi><mo>∈</mo><mi>B</mi></mrow></munder><mrow><msub><mi>μ</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>−</mo><mrow><msub><mi>μ</mi><mn>2</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo rspace="0.055em">+</mo><mrow><munder><mo movablelimits="false">∑</mo><mrow><mi>x</mi><mo>∈</mo><msup><mi>B</mi><mi>c</mi></msup></mrow></munder><mrow><msub><mi>μ</mi><mn>2</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>−</mo><mrow><msub><mi>μ</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></mtd></mtr><mtr><mtd></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mi></mi><mo>=</mo><mrow><mrow><mrow><mrow><msub><mi>μ</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>B</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><msub><mi>μ</mi><mn>2</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>B</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>+</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><mrow><msub><mi>μ</mi><mn>2</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>B</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><mrow><msub><mi>μ</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>B</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mtd></mtr><mtr><mtd></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mi></mi><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><msub><mi>μ</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>B</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><msub><mi>μ</mi><mn>2</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>B</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{split}\sum_{i}|\mu_{1}(x_{i})-\mu_{2}(x_{i})|&amp;\geq\sum_{x\in B}\mu_{1}(%
+x)-\mu_{2}(x)+\sum_{x\in B^{c}}\mu_{2}(x)-\mu_{1}(x)\\
+&amp;=\mu_{1}(B)-\mu_{2}(B)+(1-\mu_{2}(B))-(1-\mu_{1}(B))\\
+&amp;=2(\mu_{1}(B)-\mu_{2}(B)).\end{split}</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(2.37)</span>
+              
+              
+            
+</div>
+<p class="ltx_p">O que termina a prova do lema.
+∎</p>
+</div>
+</div>
+<div id="p11" class="ltx_para">
+<p class="ltx_p">Fica agora claro que <math id="p11.m1" class="ltx_Math" alttext="\lVert\mu_{1}-\mu_{2}\rVert_{\VT}" display="inline"><semantics><msub><mrow><mo fence="true" rspace="0em">∥</mo><mrow><msub><mi>μ</mi><mn>1</mn></msub><mo>−</mo><msub><mi>μ</mi><mn>2</mn></msub></mrow><mo fence="true" lspace="0em">∥</mo></mrow><merror class="ltx_ERROR undefined undefined"><mtext>\VT</mtext></merror></msub><annotation encoding="application/x-tex">\lVert\mu_{1}-\mu_{2}\rVert_{\VT}</annotation></semantics></math> determina uma distância.</p>
+</div>
+<div id="p12" class="ltx_para">
+<span class="ltx_ERROR undefined">{exercise}</span>
+<p class="ltx_p">Mostre um lema análogo ao anterior para <math id="p12.m1" class="ltx_Math" alttext="(\Omega,\mathcal{A})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">Ω</mi><mo>,</mo><mi class="ltx_font_mathcaligraphic">𝒜</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(\Omega,\mathcal{A})</annotation></semantics></math> qualquer, desde que <math id="p12.m2" class="ltx_Math" alttext="\mu_{1}" display="inline"><semantics><msub><mi>μ</mi><mn>1</mn></msub><annotation encoding="application/x-tex">\mu_{1}</annotation></semantics></math> e <math id="p12.m3" class="ltx_Math" alttext="\mu_{2}" display="inline"><semantics><msub><mi>μ</mi><mn>2</mn></msub><annotation encoding="application/x-tex">\mu_{2}</annotation></semantics></math> sejam absolutamente contínuas com relação à uma medida fixa nesse espaço mensurável. Nesse caso utilizaremos as derivadas de Radon–Nikodym.</p>
+</div>
+<div id="p13" class="ltx_para">
+<p class="ltx_p">Como estaremos interessados em variáveis independentes, precisamos de um resultado que relacione a distância em variação total com produtos de medida. Isso é parte do seguinte</p>
+</div>
+<div id="p14" class="ltx_para">
+<span class="ltx_ERROR undefined">{lemma}</span>
+<p class="ltx_p">Sejam <math id="p14.m1" class="ltx_Math" alttext="\mu_{1},\mu_{2}" display="inline"><semantics><mrow><msub><mi>μ</mi><mn>1</mn></msub><mo>,</mo><msub><mi>μ</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">\mu_{1},\mu_{2}</annotation></semantics></math> distribuições em <math id="p14.m2" class="ltx_Math" alttext="\Omega" display="inline"><semantics><mi mathvariant="normal">Ω</mi><annotation encoding="application/x-tex">\Omega</annotation></semantics></math> e <math id="p14.m3" class="ltx_Math" alttext="\nu_{1},\nu_{2}" display="inline"><semantics><mrow><msub><mi>ν</mi><mn>1</mn></msub><mo>,</mo><msub><mi>ν</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">\nu_{1},\nu_{2}</annotation></semantics></math> distribuições em <math id="p14.m4" class="ltx_Math" alttext="\Omega^{\prime}" display="inline"><semantics><msup><mi mathvariant="normal">Ω</mi><mo>′</mo></msup><annotation encoding="application/x-tex">\Omega^{\prime}</annotation></semantics></math> ambos enumeráveis. Então</p>
+<div id="Ch2.E38" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch2.E38.m1" class="ltx_Math" alttext="\lVert\mu_{1}\otimes\nu_{1}-\mu_{2}\otimes\nu_{2}\rVert_{\VT}\leq\lVert\mu_{1}%
+-\mu_{2}\rVert_{\VT}+\lVert\nu_{1}-\nu_{2}\rVert_{\VT}." display="block"><semantics><mrow><mrow><msub><mrow><mo fence="true" rspace="0em">∥</mo><mrow><mrow><msub><mi>μ</mi><mn>1</mn></msub><mo lspace="0.222em" rspace="0.222em">⊗</mo><msub><mi>ν</mi><mn>1</mn></msub></mrow><mo>−</mo><mrow><msub><mi>μ</mi><mn>2</mn></msub><mo lspace="0.222em" rspace="0.222em">⊗</mo><msub><mi>ν</mi><mn>2</mn></msub></mrow></mrow><mo fence="true" lspace="0em">∥</mo></mrow><merror class="ltx_ERROR undefined undefined"><mtext>\VT</mtext></merror></msub><mo rspace="0.1389em">≤</mo><mrow><msub><mrow><mo fence="true" lspace="0.1389em" rspace="0em">∥</mo><mrow><msub><mi>μ</mi><mn>1</mn></msub><mo>−</mo><msub><mi>μ</mi><mn>2</mn></msub></mrow><mo fence="true" lspace="0em" rspace="0em">∥</mo></mrow><merror class="ltx_ERROR undefined undefined"><mtext>\VT</mtext></merror></msub><mo>+</mo><msub><mrow><mo fence="true" lspace="0em" rspace="0em">∥</mo><mrow><msub><mi>ν</mi><mn>1</mn></msub><mo>−</mo><msub><mi>ν</mi><mn>2</mn></msub></mrow><mo fence="true" lspace="0em" rspace="0em">∥</mo></mrow><merror class="ltx_ERROR undefined undefined"><mtext>\VT</mtext></merror></msub></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\lVert\mu_{1}\otimes\nu_{1}-\mu_{2}\otimes\nu_{2}\rVert_{\VT}\leq\lVert\mu_{1}%
+-\mu_{2}\rVert_{\VT}+\lVert\nu_{1}-\nu_{2}\rVert_{\VT}.</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(2.38)</span>
+            
+            
+          
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demonstração.</h6>
+<div id="p15" class="ltx_para">
+<p class="ltx_p">Basta expandir</p>
+<div id="Ch2.E39" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch2.E39.m1" class="ltx_Math" alttext="\begin{split}2\lVert\mu_{1}&amp;\otimes\nu_{1}-\mu_{2}\otimes\nu_{2}\rVert_{\VT}=%
+\sum_{x\in\Omega,y\in\Omega^{\prime}}|\mu_{1}(x)\nu_{1}(y)-\mu_{2}(x)\nu_{2}(y%
+)|\\
+&amp;\leq\sum_{x\in\Omega,y\in\Omega^{\prime}}|\mu_{1}(x)\nu_{1}(y)-\mu_{1}(x)\nu_%
+{2}(y)|+|\mu_{1}(x)\nu_{2}(y)-\mu_{2}(x)\nu_{2}(y)|\\
+&amp;\leq 2\lVert\mu_{1}-\mu_{2}\rVert_{\VT}+2\lVert\nu_{1}-\nu_{2}\rVert_{\VT},%
+\end{split}" display="block"><semantics><mtable columnspacing="0pt" displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_align_right" columnalign="right"><mrow><mn>2</mn><mrow><mo fence="true" lspace="0em" rspace="0em">∥</mo><msub><mi>μ</mi><mn>1</mn></msub></mrow></mrow></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mo rspace="0.222em">⊗</mo><msub><mi>ν</mi><mn>1</mn></msub><mo>−</mo><msub><mi>μ</mi><mn>2</mn></msub><mo lspace="0.222em" rspace="0.222em">⊗</mo><msub><mi>ν</mi><mn>2</mn></msub><mo fence="true" lspace="0em" rspace="0em">∥</mo><msub><mi></mi><merror class="ltx_ERROR undefined undefined"><mtext>\VT</mtext></merror></msub><mo rspace="0.111em">=</mo><mo movablelimits="false">∑</mo><msub><mi></mi><mrow><mrow><mi>x</mi><mo>∈</mo><mi mathvariant="normal">Ω</mi></mrow><mo>,</mo><mrow><mi>y</mi><mo>∈</mo><msup><mi mathvariant="normal">Ω</mi><mo>′</mo></msup></mrow></mrow></msub><mo fence="false" rspace="0.167em" stretchy="false">|</mo><mi>μ</mi><msub><mi></mi><mn>1</mn></msub><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mi>ν</mi><msub><mi></mi><mn>1</mn></msub><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo><mo>−</mo><mi>μ</mi><msub><mi></mi><mn>2</mn></msub><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mi>ν</mi><msub><mi></mi><mn>2</mn></msub><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo><mo fence="false" stretchy="false">|</mo></mrow></mtd></mtr><mtr><mtd></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mi></mi><mo rspace="0.111em">≤</mo><mrow><mrow><munder><mo movablelimits="false" rspace="0em">∑</mo><mrow><mrow><mi>x</mi><mo>∈</mo><mi mathvariant="normal">Ω</mi></mrow><mo>,</mo><mrow><mi>y</mi><mo>∈</mo><msup><mi mathvariant="normal">Ω</mi><mo>′</mo></msup></mrow></mrow></munder><mrow><mo stretchy="false">|</mo><mrow><mrow><msub><mi>μ</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mi>ν</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><msub><mi>μ</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mi>ν</mi><mn>2</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">|</mo></mrow></mrow><mo>+</mo><mrow><mo stretchy="false">|</mo><mrow><mrow><msub><mi>μ</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mi>ν</mi><mn>2</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><msub><mi>μ</mi><mn>2</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mi>ν</mi><mn>2</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">|</mo></mrow></mrow></mrow></mtd></mtr><mtr><mtd></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mi></mi><mo>≤</mo><mrow><mrow><mn>2</mn><mo lspace="0em">⁢</mo><msub><mrow><mo fence="true" rspace="0em">∥</mo><mrow><msub><mi>μ</mi><mn>1</mn></msub><mo>−</mo><msub><mi>μ</mi><mn>2</mn></msub></mrow><mo fence="true" lspace="0em" rspace="0em">∥</mo></mrow><merror class="ltx_ERROR undefined undefined"><mtext>\VT</mtext></merror></msub></mrow><mo>+</mo><mrow><mn>2</mn><mo lspace="0em">⁢</mo><msub><mrow><mo fence="true" rspace="0em">∥</mo><mrow><msub><mi>ν</mi><mn>1</mn></msub><mo>−</mo><msub><mi>ν</mi><mn>2</mn></msub></mrow><mo fence="true" lspace="0em" rspace="0em">∥</mo></mrow><merror class="ltx_ERROR undefined undefined"><mtext>\VT</mtext></merror></msub></mrow></mrow></mrow><mo>,</mo></mrow></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{split}2\lVert\mu_{1}&amp;\otimes\nu_{1}-\mu_{2}\otimes\nu_{2}\rVert_{\VT}=%
+\sum_{x\in\Omega,y\in\Omega^{\prime}}|\mu_{1}(x)\nu_{1}(y)-\mu_{2}(x)\nu_{2}(y%
+)|\\
+&amp;\leq\sum_{x\in\Omega,y\in\Omega^{\prime}}|\mu_{1}(x)\nu_{1}(y)-\mu_{1}(x)\nu_%
+{2}(y)|+|\mu_{1}(x)\nu_{2}(y)-\mu_{2}(x)\nu_{2}(y)|\\
+&amp;\leq 2\lVert\mu_{1}-\mu_{2}\rVert_{\VT}+2\lVert\nu_{1}-\nu_{2}\rVert_{\VT},%
+\end{split}</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(2.39)</span>
+              
+              
+            
+</div>
+<p class="ltx_p">onde acima usamos que <math id="p15.m1" class="ltx_Math" alttext="\mu_{1}" display="inline"><semantics><msub><mi>μ</mi><mn>1</mn></msub><annotation encoding="application/x-tex">\mu_{1}</annotation></semantics></math> e <math id="p15.m2" class="ltx_Math" alttext="\nu_{2}" display="inline"><semantics><msub><mi>ν</mi><mn>2</mn></msub><annotation encoding="application/x-tex">\nu_{2}</annotation></semantics></math> são probabilidades. Isso termina a prova do lema.
+∎</p>
+</div>
+</div>
+<div id="p16" class="ltx_para">
+<p class="ltx_p">Finalmente, gostaríamos de entender como a distância de variação total se comporta com respeito à soma de variáveis independentes.
+Isso estará ligado à convolução de distribuições:</p>
+</div>
+<div id="p17" class="ltx_para">
+<span class="ltx_ERROR undefined">{definition}</span>
+<p class="ltx_p">Dadas, <math id="p17.m1" class="ltx_Math" alttext="\mu" display="inline"><semantics><mi>μ</mi><annotation encoding="application/x-tex">\mu</annotation></semantics></math> e <math id="p17.m2" class="ltx_Math" alttext="\nu" display="inline"><semantics><mi>ν</mi><annotation encoding="application/x-tex">\nu</annotation></semantics></math> distribuições em <math id="p17.m3" class="ltx_Math" alttext="\mathbb{Z}" display="inline"><semantics><mi>ℤ</mi><annotation encoding="application/x-tex">\mathbb{Z}</annotation></semantics></math>, definimos a distribuição</p>
+<div id="Ch2.E40" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch2.E40.m1" class="ltx_Math" alttext="(\mu\star\nu)(x):=\sum_{y\in\mathbb{Z}}\mu(x-y)\nu(y)." display="block"><semantics><mrow><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>μ</mi><mo lspace="0.222em" rspace="0.222em">⋆</mo><mi>ν</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo rspace="0.278em" stretchy="false">)</mo></mrow></mrow><mo rspace="0.111em">:=</mo><mrow><munder><mo movablelimits="false">∑</mo><mrow><mi>y</mi><mo>∈</mo><mi>ℤ</mi></mrow></munder><mrow><mi>μ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>−</mo><mi>y</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>ν</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">(\mu\star\nu)(x):=\sum_{y\in\mathbb{Z}}\mu(x-y)\nu(y).</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(2.40)</span>
+            
+            
+          
+</div>
+</div>
+<div id="p18" class="ltx_para">
+<p class="ltx_p">Essa definição se relaciona com a soma de variáveis independentes graças ao seguinte
+<span class="ltx_ERROR undefined">{exercise}</span>
+Se <math id="p18.m1" class="ltx_Math" alttext="X\overset{d}{\sim}\mu" display="inline"><semantics><mrow><mi>X</mi><mo>⁢</mo><mover accent="true"><mo>∼</mo><mo>𝑑</mo></mover><mo>⁢</mo><mi>μ</mi></mrow><annotation encoding="application/x-tex">X\overset{d}{\sim}\mu</annotation></semantics></math> e <math id="p18.m2" class="ltx_Math" alttext="Y\overset{d}{\sim}\nu" display="inline"><semantics><mrow><mi>Y</mi><mo>⁢</mo><mover accent="true"><mo>∼</mo><mo>𝑑</mo></mover><mo>⁢</mo><mi>ν</mi></mrow><annotation encoding="application/x-tex">Y\overset{d}{\sim}\nu</annotation></semantics></math> são variáveis aleatórias inteiras e independentes, então <math id="p18.m3" class="ltx_Math" alttext="X+Y\overset{d}{\sim}\mu\star\nu" display="inline"><semantics><mrow><mi>X</mi><mo>+</mo><mrow><mrow><mi>Y</mi><mo>⁢</mo><mover accent="true"><mo>∼</mo><mo>𝑑</mo></mover><mo>⁢</mo><mi>μ</mi></mrow><mo lspace="0.222em" rspace="0.222em">⋆</mo><mi>ν</mi></mrow></mrow><annotation encoding="application/x-tex">X+Y\overset{d}{\sim}\mu\star\nu</annotation></semantics></math>.
+Dica: particione o espaço amostral nos eventos <math id="p18.m4" class="ltx_Math" alttext="[X=j]" display="inline"><semantics><mrow><mo stretchy="false">[</mo><mrow><mi>X</mi><mo>=</mo><mi>j</mi></mrow><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[X=j]</annotation></semantics></math>, para <math id="p18.m5" class="ltx_Math" alttext="j\in\mathbb{Z}" display="inline"><semantics><mrow><mi>j</mi><mo>∈</mo><mi>ℤ</mi></mrow><annotation encoding="application/x-tex">j\in\mathbb{Z}</annotation></semantics></math>, como na prova do Lema <span class="ltx_ref ltx_ref_self"><span class="ltx_text ltx_ref_tag">2</span></span> abaixo.</p>
+</div>
+<div id="p19" class="ltx_para">
+<span class="ltx_ERROR undefined">{corollary}</span>
+<p class="ltx_p">Se <math id="p19.m1" class="ltx_Math" alttext="\mu" display="inline"><semantics><mi>μ</mi><annotation encoding="application/x-tex">\mu</annotation></semantics></math> e <math id="p19.m2" class="ltx_Math" alttext="\nu" display="inline"><semantics><mi>ν</mi><annotation encoding="application/x-tex">\nu</annotation></semantics></math> são distribuições em <math id="p19.m3" class="ltx_Math" alttext="\mathbb{Z}" display="inline"><semantics><mi>ℤ</mi><annotation encoding="application/x-tex">\mathbb{Z}</annotation></semantics></math>, então <math id="p19.m4" class="ltx_Math" alttext="\mu\star\nu=\nu\star\mu" display="inline"><semantics><mrow><mrow><mi>μ</mi><mo lspace="0.222em" rspace="0.222em">⋆</mo><mi>ν</mi></mrow><mo>=</mo><mrow><mi>ν</mi><mo lspace="0.222em" rspace="0.222em">⋆</mo><mi>μ</mi></mrow></mrow><annotation encoding="application/x-tex">\mu\star\nu=\nu\star\mu</annotation></semantics></math>.</p>
+</div>
+<div id="p20" class="ltx_para">
+<p class="ltx_p">Como prometido, obtemos a seguinte relação entre a convolução e a distância de variação total.
+<span class="ltx_ERROR undefined">{lemma}</span>
+
+Sejam <math id="p20.m1" class="ltx_Math" alttext="\mu" display="inline"><semantics><mi>μ</mi><annotation encoding="application/x-tex">\mu</annotation></semantics></math>, <math id="p20.m2" class="ltx_Math" alttext="\nu" display="inline"><semantics><mi>ν</mi><annotation encoding="application/x-tex">\nu</annotation></semantics></math> duas medidas em <math id="p20.m3" class="ltx_Math" alttext="\Omega" display="inline"><semantics><mi mathvariant="normal">Ω</mi><annotation encoding="application/x-tex">\Omega</annotation></semantics></math> enumerável e <math id="p20.m4" class="ltx_Math" alttext="X:\ (\Omega,\mathcal{P}(\Omega))\to(E,\mathcal{A})" display="inline"><semantics><mrow><mi>X</mi><mo lspace="0.278em" rspace="0.778em">:</mo><mrow><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">Ω</mi><mo>,</mo><mrow><mi class="ltx_font_mathcaligraphic">𝒫</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">Ω</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow><mo stretchy="false">→</mo><mrow><mo stretchy="false">(</mo><mi>E</mi><mo>,</mo><mi class="ltx_font_mathcaligraphic">𝒜</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">X:\ (\Omega,\mathcal{P}(\Omega))\to(E,\mathcal{A})</annotation></semantics></math> um elemento aleatorio</p>
+<div id="Ch2.E41" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch2.E41.m1" class="ltx_Math" alttext="\lVert X_{*}\mu-X_{*}\nu\rVert_{\VT}\leq\lVert\mu-\nu\rVert_{\VT}." display="block"><semantics><mrow><mrow><msub><mrow><mo fence="true" rspace="0em">∥</mo><mrow><mrow><msub><mi>X</mi><mo>∗</mo></msub><mo>⁢</mo><mi>μ</mi></mrow><mo>−</mo><mrow><msub><mi>X</mi><mo>∗</mo></msub><mo>⁢</mo><mi>ν</mi></mrow></mrow><mo fence="true" lspace="0em">∥</mo></mrow><merror class="ltx_ERROR undefined undefined"><mtext>\VT</mtext></merror></msub><mo rspace="0.1389em">≤</mo><msub><mrow><mo fence="true" lspace="0.1389em" rspace="0em">∥</mo><mrow><mi>μ</mi><mo>−</mo><mi>ν</mi></mrow><mo fence="true" lspace="0em" rspace="0em">∥</mo></mrow><merror class="ltx_ERROR undefined undefined"><mtext>\VT</mtext></merror></msub></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\lVert X_{*}\mu-X_{*}\nu\rVert_{\VT}\leq\lVert\mu-\nu\rVert_{\VT}.</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(2.41)</span>
+            
+            
+          
+</div>
+<p class="ltx_p">Em particular se <math id="p20.m5" class="ltx_Math" alttext="\mu_{1},\mu_{2},\nu_{1},\nu_{2}" display="inline"><semantics><mrow><msub><mi>μ</mi><mn>1</mn></msub><mo>,</mo><msub><mi>μ</mi><mn>2</mn></msub><mo>,</mo><msub><mi>ν</mi><mn>1</mn></msub><mo>,</mo><msub><mi>ν</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">\mu_{1},\mu_{2},\nu_{1},\nu_{2}</annotation></semantics></math> são distribuições em <math id="p20.m6" class="ltx_Math" alttext="\mathbb{Z}" display="inline"><semantics><mi>ℤ</mi><annotation encoding="application/x-tex">\mathbb{Z}</annotation></semantics></math>, então</p>
+<div id="Ch2.E42" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch2.E42.m1" class="ltx_Math" alttext="\lVert\mu_{1}\star\nu_{1}-\mu_{2}\star\nu_{2}\rVert_{\VT}\leq\lVert\mu_{1}%
+\otimes\nu_{1}-\mu_{2}\otimes\nu_{2}\rVert_{\VT}" display="block"><semantics><mrow><msub><mrow><mo fence="true" rspace="0em">∥</mo><mrow><mrow><msub><mi>μ</mi><mn>1</mn></msub><mo lspace="0.222em" rspace="0.222em">⋆</mo><msub><mi>ν</mi><mn>1</mn></msub></mrow><mo>−</mo><mrow><msub><mi>μ</mi><mn>2</mn></msub><mo lspace="0.222em" rspace="0.222em">⋆</mo><msub><mi>ν</mi><mn>2</mn></msub></mrow></mrow><mo fence="true" lspace="0em">∥</mo></mrow><merror class="ltx_ERROR undefined undefined"><mtext>\VT</mtext></merror></msub><mo rspace="0.1389em">≤</mo><msub><mrow><mo fence="true" lspace="0.1389em" rspace="0em">∥</mo><mrow><mrow><msub><mi>μ</mi><mn>1</mn></msub><mo lspace="0.222em" rspace="0.222em">⊗</mo><msub><mi>ν</mi><mn>1</mn></msub></mrow><mo>−</mo><mrow><msub><mi>μ</mi><mn>2</mn></msub><mo lspace="0.222em" rspace="0.222em">⊗</mo><msub><mi>ν</mi><mn>2</mn></msub></mrow></mrow><mo fence="true" lspace="0em">∥</mo></mrow><merror class="ltx_ERROR undefined undefined"><mtext>\VT</mtext></merror></msub></mrow><annotation encoding="application/x-tex">\lVert\mu_{1}\star\nu_{1}-\mu_{2}\star\nu_{2}\rVert_{\VT}\leq\lVert\mu_{1}%
+\otimes\nu_{1}-\mu_{2}\otimes\nu_{2}\rVert_{\VT}</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(2.42)</span>
+            
+            
+          
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demonstração.</h6>
+<div id="p21" class="ltx_para">
+<p class="ltx_p">O segundo ponto segue do primeiro aplicado ao caso <math id="p21.m1" class="ltx_Math" alttext="\Omega=\mathbb{Z}^{2}" display="inline"><semantics><mrow><mi mathvariant="normal">Ω</mi><mo>=</mo><msup><mi>ℤ</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\Omega=\mathbb{Z}^{2}</annotation></semantics></math>, <math id="p21.m2" class="ltx_Math" alttext="E=\mathbb{Z}" display="inline"><semantics><mrow><mi>E</mi><mo>=</mo><mi>ℤ</mi></mrow><annotation encoding="application/x-tex">E=\mathbb{Z}</annotation></semantics></math> e <math id="p21.m3" class="ltx_Math" alttext="X:\ (x,y)\mapsto(x+y)" display="inline"><semantics><mrow><mi>X</mi><mo lspace="0.278em" rspace="0.778em">:</mo><mrow><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo stretchy="false">↦</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mi>y</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">X:\ (x,y)\mapsto(x+y)</annotation></semantics></math>.
+Para o primeiro, observamos</p>
+<div id="Ch2.E43" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch2.E43.m1" class="ltx_Math" alttext="\begin{split}2\lVert X_{*}\mu-X_{*}\nu\rVert_{\VT}&amp;=\sum_{x\in X(\Omega)}\Big{%
+|}\mu(X(\omega)=x)-\nu(X(\omega)=x)\Big{|}\\
+&amp;=\sum_{x\in X(\Omega)}\Big{|}\sum_{\omega\in\Omega\ :\ X(\omega)=x}\mu(\omega%
+)-\nu(\omega)\Big{|}\\
+&amp;\leq\sum_{\omega\in\Omega}\big{|}\mu(\omega)-\nu(\omega)\big{|}\\
+&amp;=2\lVert\mu-\nu\rVert_{\VT},\end{split}" display="block"><semantics><mtable columnspacing="0pt" displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_align_right" columnalign="right"><mrow><mn>2</mn><mo lspace="0em">⁢</mo><msub><mrow><mo fence="true" rspace="0em">∥</mo><mrow><mrow><msub><mi>X</mi><mo>∗</mo></msub><mo>⁢</mo><mi>μ</mi></mrow><mo>−</mo><mrow><msub><mi>X</mi><mo>∗</mo></msub><mo>⁢</mo><mi>ν</mi></mrow></mrow><mo fence="true" lspace="0em">∥</mo></mrow><merror class="ltx_ERROR undefined undefined"><mtext>\VT</mtext></merror></msub></mrow></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mi></mi><mo rspace="0.111em">=</mo><mrow><munder><mo movablelimits="false" rspace="0em">∑</mo><mrow><mi>x</mi><mo>∈</mo><mrow><mi>X</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">Ω</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></munder><mrow><mo maxsize="160%" minsize="160%">|</mo><mrow><mrow><mi>μ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>X</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ω</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>ν</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>X</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ω</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo maxsize="160%" minsize="160%">|</mo></mrow></mrow></mrow></mtd></mtr><mtr><mtd></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mi></mi><mo rspace="0.111em">=</mo><mrow><munder><mo movablelimits="false" rspace="0em">∑</mo><mrow><mi>x</mi><mo>∈</mo><mrow><mi>X</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">Ω</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></munder><mrow><mo maxsize="160%" minsize="160%">|</mo><mrow><mrow><munder><mo lspace="0em" movablelimits="false">∑</mo><mrow><mrow><mi>ω</mi><mo>∈</mo><mi mathvariant="normal">Ω</mi></mrow><mo lspace="0.628em" rspace="0.628em">:</mo><mrow><mrow><mi>X</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ω</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi>x</mi></mrow></mrow></munder><mrow><mi>μ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ω</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>−</mo><mrow><mi>ν</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ω</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo maxsize="160%" minsize="160%">|</mo></mrow></mrow></mrow></mtd></mtr><mtr><mtd></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mi></mi><mo rspace="0.111em">≤</mo><mrow><munder><mo movablelimits="false" rspace="0em">∑</mo><mrow><mi>ω</mi><mo>∈</mo><mi mathvariant="normal">Ω</mi></mrow></munder><mrow><mo maxsize="120%" minsize="120%">|</mo><mrow><mrow><mi>μ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ω</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>ν</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ω</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo maxsize="120%" minsize="120%">|</mo></mrow></mrow></mrow></mtd></mtr><mtr><mtd></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mi></mi><mo>=</mo><mrow><mn>2</mn><mo lspace="0em">⁢</mo><msub><mrow><mo fence="true" rspace="0em">∥</mo><mrow><mi>μ</mi><mo>−</mo><mi>ν</mi></mrow><mo fence="true" lspace="0em" rspace="0em">∥</mo></mrow><merror class="ltx_ERROR undefined undefined"><mtext>\VT</mtext></merror></msub></mrow></mrow><mo>,</mo></mrow></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{split}2\lVert X_{*}\mu-X_{*}\nu\rVert_{\VT}&amp;=\sum_{x\in X(\Omega)}\Big{%
+|}\mu(X(\omega)=x)-\nu(X(\omega)=x)\Big{|}\\
+&amp;=\sum_{x\in X(\Omega)}\Big{|}\sum_{\omega\in\Omega\ :\ X(\omega)=x}\mu(\omega%
+)-\nu(\omega)\Big{|}\\
+&amp;\leq\sum_{\omega\in\Omega}\big{|}\mu(\omega)-\nu(\omega)\big{|}\\
+&amp;=2\lVert\mu-\nu\rVert_{\VT},\end{split}</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(2.43)</span>
+              
+              
+            
+</div>
+<p class="ltx_p">provando o lema.
+∎</p>
+</div>
+</div>
+<div id="p22" class="ltx_para">
+<p class="ltx_p">Para enunciar o resultado principal dessa seção, vamos apresentar uma distribuição em <math id="p22.m1" class="ltx_Math" alttext="\mathbb{N}" display="inline"><semantics><mi>ℕ</mi><annotation encoding="application/x-tex">\mathbb{N}</annotation></semantics></math> bastane importante, que em particular se comporta muito bem com respeito a somas de variáveis independentes, como veremos.</p>
+</div>
+<div id="p23" class="ltx_para">
+<span class="ltx_ERROR undefined">{definition}</span>
+<p class="ltx_p">Uma variável aleatória <math id="p23.m1" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> é dita ter distribuição de Poisson  com parâmetro <math id="p23.m2" class="ltx_Math" alttext="\lambda" display="inline"><semantics><mi>λ</mi><annotation encoding="application/x-tex">\lambda</annotation></semantics></math>, se</p>
+<div id="Ch2.E44" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch2.E44.m1" class="ltx_Math" alttext="P[X=k]=\frac{\lambda^{k}e^{-\lambda}}{k!},\text{ para $k\geq 0$ inteiro.}" display="block"><semantics><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><mi>X</mi><mo>=</mo><mi>k</mi></mrow><mo stretchy="false">]</mo></mrow></mrow><mo>=</mo><mrow><mfrac><mrow><msup><mi>λ</mi><mi>k</mi></msup><mo>⁢</mo><msup><mi>e</mi><mrow><mo>−</mo><mi>λ</mi></mrow></msup></mrow><mrow><mi>k</mi><mo>!</mo></mrow></mfrac><mo>,</mo><mrow><mtext> para </mtext><mrow><mi>k</mi><mo>≥</mo><mn>0</mn></mrow><mtext> inteiro.</mtext></mrow></mrow></mrow><annotation encoding="application/x-tex">P[X=k]=\frac{\lambda^{k}e^{-\lambda}}{k!},\text{ para $k\geq 0$ inteiro.}</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(2.44)</span>
+            
+            
+          
+</div>
+<p class="ltx_p">Denotamos isso por <math id="p23.m3" class="ltx_Math" alttext="X\overset{d}{\sim}\Poisson(\lambda)" display="inline"><semantics><mrow><mi>X</mi><mo>⁢</mo><mover accent="true"><mo>∼</mo><mo>𝑑</mo></mover><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\Poisson</mtext></merror><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>λ</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">X\overset{d}{\sim}\Poisson(\lambda)</annotation></semantics></math>.</p>
+</div>
+<div id="p24" class="ltx_para">
+<p class="ltx_p">A distribuição de Poisson se comporta bem com respeito a somas independentes, como mostra o seguinte
+<span class="ltx_ERROR undefined">{lemma}</span>
+
+Sejam <math id="p24.m1" class="ltx_Math" alttext="X\overset{d}{\sim}\Poisson(\lambda_{1})" display="inline"><semantics><mrow><mi>X</mi><mo>⁢</mo><mover accent="true"><mo>∼</mo><mo>𝑑</mo></mover><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\Poisson</mtext></merror><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>λ</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">X\overset{d}{\sim}\Poisson(\lambda_{1})</annotation></semantics></math> e <math id="p24.m2" class="ltx_Math" alttext="Y\overset{d}{\sim}\Poisson(\lambda_{2})" display="inline"><semantics><mrow><mi>Y</mi><mo>⁢</mo><mover accent="true"><mo>∼</mo><mo>𝑑</mo></mover><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\Poisson</mtext></merror><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>λ</mi><mn>2</mn></msub><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">Y\overset{d}{\sim}\Poisson(\lambda_{2})</annotation></semantics></math> independentes, então <math id="p24.m3" class="ltx_Math" alttext="X+Y\overset{d}{\sim}\Poisson(\lambda_{1}+\lambda_{2})" display="inline"><semantics><mrow><mi>X</mi><mo>+</mo><mrow><mi>Y</mi><mo>⁢</mo><mover accent="true"><mo>∼</mo><mo>𝑑</mo></mover><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\Poisson</mtext></merror><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>λ</mi><mn>1</mn></msub><mo>+</mo><msub><mi>λ</mi><mn>2</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">X+Y\overset{d}{\sim}\Poisson(\lambda_{1}+\lambda_{2})</annotation></semantics></math>.</p>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demonstração.</h6>
+<div id="p25" class="ltx_para">
+<p class="ltx_p">Basta calcular</p>
+<div id="Ch2.E45" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch2.E45.m1" class="ltx_Math" alttext="\begin{split}P[X+Y=k]&amp;=\sum_{j=0}^{k}P[X=j,Y=k-j]=\sum_{j=0}^{k}\frac{\lambda_%
+{1}^{j}e^{-\lambda_{1}}\lambda_{2}^{k-j}e^{-\lambda_{2}}}{j!(k-j)!}\\
+&amp;=e^{-(\lambda_{1}+\lambda_{2})}\frac{1}{k!}\sum_{j=0}^{k}\frac{k!}{j!(k-j)!}%
+\lambda_{1}^{j}\lambda_{2}^{k-j}=\frac{e^{(\lambda_{1}+\lambda_{2})}(\lambda_{%
+1}+\lambda_{2})^{k}}{k!},\end{split}" display="block"><semantics><mtable columnspacing="0pt" displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_align_right" columnalign="right"><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><mrow><mi>X</mi><mo>+</mo><mi>Y</mi></mrow><mo>=</mo><mi>k</mi></mrow><mo stretchy="false">]</mo></mrow></mrow></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mi></mi><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>j</mi><mo>=</mo><mn>0</mn></mrow><mi>k</mi></munderover><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><mrow><mi>X</mi><mo>=</mo><mi>j</mi></mrow><mo>,</mo><mrow><mi>Y</mi><mo>=</mo><mrow><mi>k</mi><mo>−</mo><mi>j</mi></mrow></mrow></mrow><mo stretchy="false">]</mo></mrow></mrow></mrow><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>j</mi><mo>=</mo><mn>0</mn></mrow><mi>k</mi></munderover><mfrac><mrow><msubsup><mi>λ</mi><mn>1</mn><mi>j</mi></msubsup><mo>⁢</mo><msup><mi>e</mi><mrow><mo>−</mo><msub><mi>λ</mi><mn>1</mn></msub></mrow></msup><mo>⁢</mo><msubsup><mi>λ</mi><mn>2</mn><mrow><mi>k</mi><mo>−</mo><mi>j</mi></mrow></msubsup><mo>⁢</mo><msup><mi>e</mi><mrow><mo>−</mo><msub><mi>λ</mi><mn>2</mn></msub></mrow></msup></mrow><mrow><mrow><mi>j</mi><mo>!</mo></mrow><mo>⁢</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>k</mi><mo>−</mo><mi>j</mi></mrow><mo stretchy="false">)</mo></mrow><mo>!</mo></mrow></mrow></mfrac></mrow></mrow></mtd></mtr><mtr><mtd></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mi></mi><mo>=</mo><mrow><msup><mi>e</mi><mrow><mo>−</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>λ</mi><mn>1</mn></msub><mo>+</mo><msub><mi>λ</mi><mn>2</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></msup><mo>⁢</mo><mfrac><mn>1</mn><mrow><mi>k</mi><mo>!</mo></mrow></mfrac><mo>⁢</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>j</mi><mo>=</mo><mn>0</mn></mrow><mi>k</mi></munderover><mrow><mfrac><mrow><mi>k</mi><mo>!</mo></mrow><mrow><mrow><mi>j</mi><mo>!</mo></mrow><mo>⁢</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>k</mi><mo>−</mo><mi>j</mi></mrow><mo stretchy="false">)</mo></mrow><mo>!</mo></mrow></mrow></mfrac><mo>⁢</mo><msubsup><mi>λ</mi><mn>1</mn><mi>j</mi></msubsup><mo>⁢</mo><msubsup><mi>λ</mi><mn>2</mn><mrow><mi>k</mi><mo>−</mo><mi>j</mi></mrow></msubsup></mrow></mrow></mrow><mo>=</mo><mfrac><mrow><msup><mi>e</mi><mrow><mo stretchy="false">(</mo><mrow><msub><mi>λ</mi><mn>1</mn></msub><mo>+</mo><msub><mi>λ</mi><mn>2</mn></msub></mrow><mo stretchy="false">)</mo></mrow></msup><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><msub><mi>λ</mi><mn>1</mn></msub><mo>+</mo><msub><mi>λ</mi><mn>2</mn></msub></mrow><mo stretchy="false">)</mo></mrow><mi>k</mi></msup></mrow><mrow><mi>k</mi><mo>!</mo></mrow></mfrac></mrow><mo>,</mo></mrow></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{split}P[X+Y=k]&amp;=\sum_{j=0}^{k}P[X=j,Y=k-j]=\sum_{j=0}^{k}\frac{\lambda_%
+{1}^{j}e^{-\lambda_{1}}\lambda_{2}^{k-j}e^{-\lambda_{2}}}{j!(k-j)!}\\
+&amp;=e^{-(\lambda_{1}+\lambda_{2})}\frac{1}{k!}\sum_{j=0}^{k}\frac{k!}{j!(k-j)!}%
+\lambda_{1}^{j}\lambda_{2}^{k-j}=\frac{e^{(\lambda_{1}+\lambda_{2})}(\lambda_{%
+1}+\lambda_{2})^{k}}{k!},\end{split}</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(2.45)</span>
+              
+              
+            
+</div>
+<p class="ltx_p">mostrando o resultado.
+∎</p>
+</div>
+</div>
+<div id="p26" class="ltx_para">
+<p class="ltx_p">Nossa próxima tarefa é estimar a distância entre uma variável aleatória com distribuição <math id="p26.m1" class="ltx_Math" alttext="\Ber(p)" display="inline"><semantics><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\Ber</mtext></merror><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\Ber(p)</annotation></semantics></math> e uma <math id="p26.m2" class="ltx_Math" alttext="\Poisson(p)" display="inline"><semantics><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\Poisson</mtext></merror><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\Poisson(p)</annotation></semantics></math>, como segue.</p>
+</div>
+<div id="p27" class="ltx_para">
+<span class="ltx_ERROR undefined">{lemma}</span>
+<p class="ltx_p">Para <math id="p27.m1" class="ltx_Math" alttext="p\in[0,1]" display="inline"><semantics><mrow><mi>p</mi><mo>∈</mo><mrow><mo stretchy="false">[</mo><mn>0,1</mn><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">p\in[0,1]</annotation></semantics></math>, seja <math id="p27.m2" class="ltx_Math" alttext="\mu_{1}=\Ber(p)" display="inline"><semantics><mrow><msub><mi>μ</mi><mn>1</mn></msub><mo>=</mo><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\Ber</mtext></merror><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\mu_{1}=\Ber(p)</annotation></semantics></math> e <math id="p27.m3" class="ltx_Math" alttext="\mu_{2}=\Poisson(p)" display="inline"><semantics><mrow><msub><mi>μ</mi><mn>2</mn></msub><mo>=</mo><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\Poisson</mtext></merror><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\mu_{2}=\Poisson(p)</annotation></semantics></math>, então,</p>
+<div id="Ch2.E46" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch2.E46.m1" class="ltx_Math" alttext="\lVert\mu_{1}-\mu_{2}\rVert_{\VT}\leq p^{2}." display="block"><semantics><mrow><mrow><msub><mrow><mo fence="true" rspace="0em">∥</mo><mrow><msub><mi>μ</mi><mn>1</mn></msub><mo>−</mo><msub><mi>μ</mi><mn>2</mn></msub></mrow><mo fence="true" lspace="0em">∥</mo></mrow><merror class="ltx_ERROR undefined undefined"><mtext>\VT</mtext></merror></msub><mo>≤</mo><msup><mi>p</mi><mn>2</mn></msup></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\lVert\mu_{1}-\mu_{2}\rVert_{\VT}\leq p^{2}.</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(2.46)</span>
+            
+            
+          
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demonstração.</h6>
+<div id="p28" class="ltx_para">
+<p class="ltx_p">Sabemos que</p>
+<div id="Ch2.E47" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch2.E47.m1" class="ltx_Math" alttext="\begin{split}\lVert\mu_{1}-\mu_{2}\rVert_{\VT}&amp;=\frac{1}{2}\sum_{x}|\mu_{1}(x)%
+-\mu_{2}(x)|\\
+&amp;=\frac{1}{2}\Big{(}|\mu_{1}(0)-\mu_{2}(0)|+|\mu_{1}(1)-\mu_{2}(1)|+\sum_{x%
+\geq 2}\mu_{2}(x)\Big{)}\\
+&amp;=\frac{1}{2}\Big{(}e^{-p}-(1-p)+p(1-e^{-p})+(1-e^{-p}-pe^{-p})\Big{)}\\
+&amp;=\frac{2}{2}p(1-e^{-p})\leq p^{2},\end{split}" display="block"><semantics><mtable columnspacing="0pt" displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_align_right" columnalign="right"><msub><mrow><mo fence="true" rspace="0em">∥</mo><mrow><msub><mi>μ</mi><mn>1</mn></msub><mo>−</mo><msub><mi>μ</mi><mn>2</mn></msub></mrow><mo fence="true" lspace="0em">∥</mo></mrow><merror class="ltx_ERROR undefined undefined"><mtext>\VT</mtext></merror></msub></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mi></mi><mo>=</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mrow><munder><mo movablelimits="false" rspace="0em">∑</mo><mi>x</mi></munder><mrow><mo stretchy="false">|</mo><mrow><mrow><msub><mi>μ</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><msub><mi>μ</mi><mn>2</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">|</mo></mrow></mrow></mrow></mrow></mtd></mtr><mtr><mtd></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mi></mi><mo>=</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mrow><mo maxsize="160%" minsize="160%">(</mo><mrow><mrow><mo stretchy="false">|</mo><mrow><mrow><msub><mi>μ</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><msub><mi>μ</mi><mn>2</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">|</mo></mrow><mo>+</mo><mrow><mo stretchy="false">|</mo><mrow><mrow><msub><mi>μ</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><msub><mi>μ</mi><mn>2</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">|</mo></mrow><mo rspace="0.055em">+</mo><mrow><munder><mo movablelimits="false">∑</mo><mrow><mi>x</mi><mo>≥</mo><mn>2</mn></mrow></munder><mrow><msub><mi>μ</mi><mn>2</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo maxsize="160%" minsize="160%">)</mo></mrow></mrow></mrow></mtd></mtr><mtr><mtd></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mi></mi><mo>=</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mrow><mo maxsize="160%" minsize="160%">(</mo><mrow><mrow><msup><mi>e</mi><mrow><mo>−</mo><mi>p</mi></mrow></msup><mo>−</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><mi>p</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>p</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><msup><mi>e</mi><mrow><mo>−</mo><mi>p</mi></mrow></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><msup><mi>e</mi><mrow><mo>−</mo><mi>p</mi></mrow></msup><mo>−</mo><mrow><mi>p</mi><mo>⁢</mo><msup><mi>e</mi><mrow><mo>−</mo><mi>p</mi></mrow></msup></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo maxsize="160%" minsize="160%">)</mo></mrow></mrow></mrow></mtd></mtr><mtr><mtd></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mi></mi><mo>=</mo><mrow><mfrac><mn>2</mn><mn>2</mn></mfrac><mo>⁢</mo><mi>p</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><msup><mi>e</mi><mrow><mo>−</mo><mi>p</mi></mrow></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>≤</mo><msup><mi>p</mi><mn>2</mn></msup></mrow><mo>,</mo></mrow></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{split}\lVert\mu_{1}-\mu_{2}\rVert_{\VT}&amp;=\frac{1}{2}\sum_{x}|\mu_{1}(x)%
+-\mu_{2}(x)|\\
+&amp;=\frac{1}{2}\Big{(}|\mu_{1}(0)-\mu_{2}(0)|+|\mu_{1}(1)-\mu_{2}(1)|+\sum_{x%
+\geq 2}\mu_{2}(x)\Big{)}\\
+&amp;=\frac{1}{2}\Big{(}e^{-p}-(1-p)+p(1-e^{-p})+(1-e^{-p}-pe^{-p})\Big{)}\\
+&amp;=\frac{2}{2}p(1-e^{-p})\leq p^{2},\end{split}</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(2.47)</span>
+              
+              
+            
+</div>
+<p class="ltx_p">terminando a prova.
+∎</p>
+</div>
+</div>
+<div id="p29" class="ltx_para">
+<p class="ltx_p">O teorema principal de convergência dessa seção concerne a soma de variáveis Bernoulli.</p>
+</div>
+<div id="p30" class="ltx_para">
+<span class="ltx_ERROR undefined">{theorem}</span>
+<p class="ltx_p">[Lei dos Pequenos Números]
+
+Dado, <math id="p30.m1" class="ltx_Math" alttext="n\geq 1" display="inline"><semantics><mrow><mi>n</mi><mo>≥</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">n\geq 1</annotation></semantics></math> e <math id="p30.m2" class="ltx_Math" alttext="p\in[0,1]" display="inline"><semantics><mrow><mi>p</mi><mo>∈</mo><mrow><mo stretchy="false">[</mo><mn>0,1</mn><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">p\in[0,1]</annotation></semantics></math>, suponha que <math id="p30.m3" class="ltx_Math" alttext="\Omega_{n}" display="inline"><semantics><msub><mi mathvariant="normal">Ω</mi><mi>n</mi></msub><annotation encoding="application/x-tex">\Omega_{n}</annotation></semantics></math>, <math id="p30.m4" class="ltx_Math" alttext="\mathcal{F}_{n}" display="inline"><semantics><msub><mi class="ltx_font_mathcaligraphic">ℱ</mi><mi>n</mi></msub><annotation encoding="application/x-tex">\mathcal{F}_{n}</annotation></semantics></math> e <math id="p30.m5" class="ltx_Math" alttext="P_{p}" display="inline"><semantics><msub><mi>P</mi><mi>p</mi></msub><annotation encoding="application/x-tex">P_{p}</annotation></semantics></math> sejam dados como em (<a href="#Ch2.E30" title="In Tópico: Lei dos pequenos números ‣ Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.30</span></a>).
+Então,</p>
+<div id="Ch2.E48" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch2.E48.m1" class="ltx_Math" alttext="\lVert\Bin(n,p)-\Poisson(pn)\rVert_{\VT}\leq np^{2}." display="block"><semantics><mrow><mrow><msub><mrow><mo fence="true" rspace="0em">∥</mo><mrow><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\Bin</mtext></merror><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo>,</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\Poisson</mtext></merror><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>p</mi><mo>⁢</mo><mi>n</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo fence="true" lspace="0em">∥</mo></mrow><merror class="ltx_ERROR undefined undefined"><mtext>\VT</mtext></merror></msub><mo>≤</mo><mrow><mi>n</mi><mo>⁢</mo><msup><mi>p</mi><mn>2</mn></msup></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\lVert\Bin(n,p)-\Poisson(pn)\rVert_{\VT}\leq np^{2}.</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(2.48)</span>
+            
+            
+          
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demonstração.</h6>
+<div id="p31" class="ltx_para">
+<p class="ltx_p">Basta observar que</p>
+<div id="Ch2.E49" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch2.E49.m1" class="ltx_Math" alttext="\begin{split}\lVert X_{n}\circ P_{p}-\Poisson(pn)\rVert_{\VT}&amp;\overset{\text{%
+Lema\leavevmode\nobreak\ \ref{l:soma_poisson}}}{=}\lVert\Ber(p)^{\star n}-%
+\Poisson(p)^{\star n}\rVert_{\VT}\\
+\overset{\text{Lema\leavevmode\nobreak\ \ref{l:vt_conv}}}{\leq}&amp;\lVert\Ber(p)^%
+{\otimes n}-\Poisson(p)^{\otimes n}\rVert_{\VT}\\
+\overset{\text{Lema\leavevmode\nobreak\ \ref{l:vt_produto}}}{\leq}&amp;n\lVert\Ber%
+(p)-\Poisson(p)\rVert_{\VT}\overset{\text{Lema\leavevmode\nobreak\ \ref{l:vt_%
+ber_poiss}}}{\leq}np^{2},\end{split}" display="block"><semantics><mtable columnspacing="0pt" displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_align_right" columnalign="right"><msub><mrow><mo fence="true" rspace="0em">∥</mo><mrow><mrow><msub><mi>X</mi><mi>n</mi></msub><mo lspace="0.222em" rspace="0.222em">∘</mo><msub><mi>P</mi><mi>p</mi></msub></mrow><mo>−</mo><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\Poisson</mtext></merror><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>p</mi><mo>⁢</mo><mi>n</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo fence="true" lspace="0em">∥</mo></mrow><merror class="ltx_ERROR undefined undefined"><mtext>\VT</mtext></merror></msub></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mover accent="true"><mo>=</mo><mrow><mtext>Lema </mtext><semantics><annotation-xml encoding="text/html" style="display: block;"><span class="ltx_ref ltx_ref_self"><span class="ltx_text ltx_ref_tag">2</span></span></annotation-xml></semantics></mrow></mover><mo lspace="0.278em">⁢</mo><msub><mrow><mo fence="true" rspace="0em">∥</mo><mrow><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\Ber</mtext></merror><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow><mrow><mi></mi><mo lspace="0.222em" rspace="0.222em">⋆</mo><mi>n</mi></mrow></msup></mrow><mo>−</mo><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\Poisson</mtext></merror><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow><mrow><mi></mi><mo lspace="0.222em" rspace="0.222em">⋆</mo><mi>n</mi></mrow></msup></mrow></mrow><mo fence="true" lspace="0em">∥</mo></mrow><merror class="ltx_ERROR undefined undefined"><mtext>\VT</mtext></merror></msub></mrow></mtd></mtr><mtr><mtd class="ltx_align_right" columnalign="right"><mover accent="true"><mo>≤</mo><mrow><mtext>Lema </mtext><semantics><annotation-xml encoding="text/html" style="display: block;"><span class="ltx_ref ltx_ref_self"><span class="ltx_text ltx_ref_tag">2</span></span></annotation-xml></semantics></mrow></mover></mtd><mtd class="ltx_align_left" columnalign="left"><msub><mrow><mo fence="true" rspace="0em">∥</mo><mrow><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\Ber</mtext></merror><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow><mrow><mi></mi><mo lspace="0.222em" rspace="0.222em">⊗</mo><mi>n</mi></mrow></msup></mrow><mo>−</mo><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\Poisson</mtext></merror><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow><mrow><mi></mi><mo lspace="0.222em" rspace="0.222em">⊗</mo><mi>n</mi></mrow></msup></mrow></mrow><mo fence="true" lspace="0em">∥</mo></mrow><merror class="ltx_ERROR undefined undefined"><mtext>\VT</mtext></merror></msub></mtd></mtr><mtr><mtd class="ltx_align_right" columnalign="right"><mover accent="true"><mo>≤</mo><mrow><mtext>Lema </mtext><semantics><annotation-xml encoding="text/html" style="display: block;"><span class="ltx_ref ltx_ref_self"><span class="ltx_text ltx_ref_tag">2</span></span></annotation-xml></semantics></mrow></mover></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mi>n</mi><mo lspace="0em">⁢</mo><msub><mrow><mo fence="true" rspace="0em">∥</mo><mrow><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\Ber</mtext></merror><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\Poisson</mtext></merror><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo fence="true" lspace="0em">∥</mo></mrow><merror class="ltx_ERROR undefined undefined"><mtext>\VT</mtext></merror></msub><mo lspace="0.278em">⁢</mo><mover accent="true"><mo>≤</mo><mrow><mtext>Lema </mtext><semantics><annotation-xml encoding="text/html" style="display: block;"><span class="ltx_ref ltx_ref_self"><span class="ltx_text ltx_ref_tag">2</span></span></annotation-xml></semantics></mrow></mover><mo>⁢</mo><mi>n</mi><mo>⁢</mo><msup><mi>p</mi><mn>2</mn></msup></mrow><mo>,</mo></mrow></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{split}\lVert X_{n}\circ P_{p}-\Poisson(pn)\rVert_{\VT}&amp;\overset{\text{%
+Lema\leavevmode\nobreak\ \ref{l:soma_poisson}}}{=}\lVert\Ber(p)^{\star n}-%
+\Poisson(p)^{\star n}\rVert_{\VT}\\
+\overset{\text{Lema\leavevmode\nobreak\ \ref{l:vt_conv}}}{\leq}&amp;\lVert\Ber(p)^%
+{\otimes n}-\Poisson(p)^{\otimes n}\rVert_{\VT}\\
+\overset{\text{Lema\leavevmode\nobreak\ \ref{l:vt_produto}}}{\leq}&amp;n\lVert\Ber%
+(p)-\Poisson(p)\rVert_{\VT}\overset{\text{Lema\leavevmode\nobreak\ \ref{l:vt_%
+ber_poiss}}}{\leq}np^{2},\end{split}</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(2.49)</span>
+              
+              
+            
+</div>
+<p class="ltx_p">provando o teorema.
+∎</p>
+</div>
+</div>
+<div id="p32" class="ltx_para">
+<span class="ltx_ERROR undefined">{corollary}</span>
+<p class="ltx_p">No mesmo contexto do teorema acima, se <math id="p32.m1" class="ltx_Math" alttext="p=\lambda/n" display="inline"><semantics><mrow><mi>p</mi><mo>=</mo><mrow><mi>λ</mi><mo>/</mo><mi>n</mi></mrow></mrow><annotation encoding="application/x-tex">p=\lambda/n</annotation></semantics></math>, então temos</p>
+<div id="Ch2.E50" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch2.E50.m1" class="ltx_Math" alttext="\lVert\Bin(n,p)-\Poisson(pn)\rVert_{\VT}\leq\lambda^{2}/n," display="block"><semantics><mrow><mrow><msub><mrow><mo fence="true" rspace="0em">∥</mo><mrow><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\Bin</mtext></merror><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo>,</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\Poisson</mtext></merror><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>p</mi><mo>⁢</mo><mi>n</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo fence="true" lspace="0em">∥</mo></mrow><merror class="ltx_ERROR undefined undefined"><mtext>\VT</mtext></merror></msub><mo>≤</mo><mrow><msup><mi>λ</mi><mn>2</mn></msup><mo>/</mo><mi>n</mi></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\lVert\Bin(n,p)-\Poisson(pn)\rVert_{\VT}\leq\lambda^{2}/n,</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(2.50)</span>
+            
+            
+          
+</div>
+<p class="ltx_p">que converge a zero com <math id="p32.m2" class="ltx_Math" alttext="n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>.
+
+Veremos mais tarde que existem outros tipos de convergência.</p>
+</div>
+<div id="p33" class="ltx_para">
+<span class="ltx_ERROR undefined">{exercise}</span>
+<p class="ltx_p">Fixado <math id="p33.m1" class="ltx_Math" alttext="\lambda&gt;0" display="inline"><semantics><mrow><mi>λ</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\lambda&gt;0</annotation></semantics></math>, seja <math id="p33.m2" class="ltx_Math" alttext="N" display="inline"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math> uma variável aleatória com distribuição Poisson(<math id="p33.m3" class="ltx_Math" alttext="\lambda" display="inline"><semantics><mi>λ</mi><annotation encoding="application/x-tex">\lambda</annotation></semantics></math>), isto é</p>
+<div id="Ch2.E51" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch2.E51.m1" class="ltx_Math" alttext="P[N=k]=\frac{\lambda^{k}e^{-\lambda}}{k!}\text{ para $k=0,1,\dots$}" display="block"><semantics><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><mi>N</mi><mo>=</mo><mi>k</mi></mrow><mo stretchy="false">]</mo></mrow></mrow><mo>=</mo><mrow><mfrac><mrow><msup><mi>λ</mi><mi>k</mi></msup><mo>⁢</mo><msup><mi>e</mi><mrow><mo>−</mo><mi>λ</mi></mrow></msup></mrow><mrow><mi>k</mi><mo>!</mo></mrow></mfrac><mo>⁢</mo><mrow><mtext> para </mtext><mrow><mi>k</mi><mo>=</mo><mrow><mn>0,1</mn><mo>,</mo><mi mathvariant="normal">…</mi></mrow></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">P[N=k]=\frac{\lambda^{k}e^{-\lambda}}{k!}\text{ para $k=0,1,\dots$}</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(2.51)</span>
+            
+            
+          
+</div>
+<p class="ltx_p">Considere no mesmo espaço de probabilidade uma sequência de variáveis aleatórias <math id="p33.m4" class="ltx_Math" alttext="X_{1},X_{2},\dots" display="inline"><semantics><mrow><msub><mi>X</mi><mn>1</mn></msub><mo>,</mo><msub><mi>X</mi><mn>2</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi></mrow><annotation encoding="application/x-tex">X_{1},X_{2},\dots</annotation></semantics></math> que sejam <span class="ltx_ERROR undefined">\iid</span>, com distribuição <math id="p33.m5" class="ltx_Math" alttext="\Ber(1/2)" display="inline"><semantics><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\Ber</mtext></merror><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\Ber(1/2)</annotation></semantics></math> e independentes de <math id="p33.m6" class="ltx_Math" alttext="N" display="inline"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math>.</p>
+<ol id="I4" class="ltx_enumerate">
+<li id="I4.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"> a)</span><div id="I4.i1.p1" class="ltx_para">​<p class="ltx_p">Calcule a distribuição de <math id="I4.i1.p1.m1" class="ltx_Math" alttext="Z=\sum_{i=1}^{N}X_{i}" display="inline"><semantics><mrow><mi>Z</mi><mo rspace="0.111em">=</mo><mrow><msubsup><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></msubsup><msub><mi>X</mi><mi>i</mi></msub></mrow></mrow><annotation encoding="application/x-tex">Z=\sum_{i=1}^{N}X_{i}</annotation></semantics></math>.</p>
+</div>
+</li>
+<li id="I4.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"> b)</span><div id="I4.i2.p1" class="ltx_para">​<p class="ltx_p">Mostre que <math id="I4.i2.p1.m1" class="ltx_Math" alttext="Z" display="inline"><semantics><mi>Z</mi><annotation encoding="application/x-tex">Z</annotation></semantics></math> e <math id="I4.i2.p1.m2" class="ltx_Math" alttext="N-Z" display="inline"><semantics><mrow><mi>N</mi><mo>−</mo><mi>Z</mi></mrow><annotation encoding="application/x-tex">N-Z</annotation></semantics></math> são independentes.</p>
+</div>
+</li>
+</ol>
+</div>
+<div class="ltx_pagination ltx_role_newpage"></div>
+</div>
+</section>
+</div>
+</div>
+</div>
+<a href="Ch2.S5.html" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a><a href="Ch2.S6.html" class="navigation navigation-next" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+</div>
+</div>
+<script src="bookml/gitbook/js/app.min.js"></script>
+<script src="bookml/gitbook/js/jquery.highlight.js"></script>
+<script src="bookml/gitbook/js/plugin-search.js"></script>
+<script src="bookml/gitbook/js/plugin-fontsettings.js"></script>
+<script src="bookml/gitbook/js/plugin-bookdown.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+        MathJax = {
+          startup: {
+            ready() {
+              // do not process equations disabled with \bmlDisableMathJax (code suggested by Davide P. Cervone)
+              class bmlFindMathML extends MathJax._.input.mathml.FindMathML.FindMathML {
+                processMath(set) {
+                  const adaptor = this.adaptor;
+                  for (const node of set.values()) {
+                    if (adaptor.hasClass(node, 'bml_disable_mathjax')) {
+                      set.delete(node);
+                    }
+                  }
+                  return super.processMath(set);
+                }
+              }
+
+              MathJax._.components.global.combineDefaults(MathJax.config, 'mml', {FindMathML: new bmlFindMathML()});
+
+              MathJax.startup.defaultReady();
+
+              // preproces MathML to make MathJax aware of certain LaTeXML and BookML additional info
+              const mmlFilters = MathJax.startup.input[0].mmlFilters;
+
+              // convert the LaTeXML calligraphic (chancery) annotation to a form MathJax understands
+              // since the corresponding Unicode characters render as script (rounded)
+              const script2latin = {
+                '𝒜': 'A', 'ℬ': 'B', '𝒞': 'C', '𝒟': 'D', 'ℰ': 'E', 'ℱ': 'F', '𝒢': 'G',
+                'ℋ': 'H', 'ℐ': 'I', '𝒥': 'J', '𝒦': 'K', 'ℒ': 'L', 'ℳ': 'M', '𝒩': 'N',
+                '𝒪': 'O', '𝒫': 'P', '𝒬': 'Q', 'ℛ': 'R', '𝒮': 'S', '𝒯': 'T', '𝒰': 'U',
+                '𝒱': 'V', '𝒲': 'W', '𝒳': 'X', '𝒴': 'Y', '𝒵': 'Z',
+              };
+
+              mmlFilters.add((args) => {
+                for (const n of args.data.getElementsByClassName('ltx_font_mathcaligraphic')) {
+                  n.classList.add('MJX-tex-calligraphic');
+                  const letter = script2latin[n.textContent];
+                  if (letter !== undefined) { n.textContent = letter; }
+                }
+              });
+
+              // adjust characters based on Unicode variation sequences
+              const replacements = {
+                // MathJax renders the empty set as the U+FE00 variant, so the plain character needs adjusting
+                '∅': { variant: 'variant' },
+                // MathJax renders script characters in rounded style, which is fine for no variation and U+FE00
+                '𝒜\xFE00': { text: 'A', variant: 'tex-calligraphic' },
+                'ℬ\xFE00': { text: 'B', variant: 'tex-calligraphic' },
+                '𝒞\xFE00': { text: 'C', variant: 'tex-calligraphic' },
+                '𝒟\xFE00': { text: 'D', variant: 'tex-calligraphic' },
+                'ℰ\xFE00': { text: 'E', variant: 'tex-calligraphic' },
+                'ℱ\xFE00': { text: 'F', variant: 'tex-calligraphic' },
+                '𝒢\xFE00': { text: 'G', variant: 'tex-calligraphic' },
+                'ℋ\xFE00': { text: 'H', variant: 'tex-calligraphic' },
+                'ℐ\xFE00': { text: 'I', variant: 'tex-calligraphic' },
+                '𝒥\xFE00': { text: 'J', variant: 'tex-calligraphic' },
+                '𝒦\xFE00': { text: 'K', variant: 'tex-calligraphic' },
+                'ℒ\xFE00': { text: 'L', variant: 'tex-calligraphic' },
+                'ℳ\xFE00': { text: 'M', variant: 'tex-calligraphic' },
+                '𝒩\xFE00': { text: 'N', variant: 'tex-calligraphic' },
+                '𝒪\xFE00': { text: 'O', variant: 'tex-calligraphic' },
+                '𝒫\xFE00': { text: 'P', variant: 'tex-calligraphic' },
+                '𝒬\xFE00': { text: 'Q', variant: 'tex-calligraphic' },
+                'ℛ\xFE00': { text: 'R', variant: 'tex-calligraphic' },
+                '𝒮\xFE00': { text: 'S', variant: 'tex-calligraphic' },
+                '𝒯\xFE00': { text: 'T', variant: 'tex-calligraphic' },
+                '𝒰\xFE00': { text: 'U', variant: 'tex-calligraphic' },
+                '𝒱\xFE00': { text: 'V', variant: 'tex-calligraphic' },
+                '𝒲\xFE00': { text: 'W', variant: 'tex-calligraphic' },
+                '𝒳\xFE00': { text: 'X', variant: 'tex-calligraphic' },
+                '𝒴\xFE00': { text: 'Y', variant: 'tex-calligraphic' },
+                '𝒵\xFE00': { text: 'Z', variant: 'tex-calligraphic' }
+              };
+
+              mmlFilters.add((args) => {
+                let nodes = document.evaluate('.//m:mi | .//m:mn | .//m:mo | .//m:ms', args.data,
+                  () => 'http://www.w3.org/1998/Math/MathML', XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE);
+                for (let i = 0; i < nodes.snapshotLength; i++) {
+                  const n = nodes.snapshotItem(i);
+                  const repl = replacements[n.innerHTML];
+                  if (repl !== undefined) {
+                    const variant = repl['variant'];
+                    const text = repl['text'];
+                    if (variant !== undefined) { n.classList.add('MJX-' + variant); n.removeAttribute('mathvariant'); }
+                    if (text !== undefined) { n.innerHTML = text; }
+                  }
+                }
+              });
+            }
+          }
+        };
+      </script>
+<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js"></script>
+<script type="text/javascript">
+                gitbook.require(["gitbook"], function(gitbook) {
+                gitbook.start({
+                  "fontsettings": {
+                    "theme": "white",
+                    "family": "sans",
+                    "size": 2
+                  },
+                  "download": [ [ "Notas_de_aula.pdf", "PDF" ], ],
+                  "search": {
+                    "engine": "fuse"
+                  },
+                  "toc": {
+                    "collapse": "none"
+                  }
+                });
+              });
+            </script>
+</body>
+
+</html>

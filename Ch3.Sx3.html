@@ -1,0 +1,369 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Tópico: O Teorema de Portmanteau ‣ Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I</title>
+<!--Generated on Tue Aug 27 13:34:01 2024 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
+<style>:root { --bml-ltx-font-size: 10; }</style>
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-table.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-search.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-bookdown.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-fontsettings.css" type="text/css">
+<link rel="stylesheet" href="ltx-book.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook,plain.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook.css" type="text/css">
+<link rel="stylesheet" href="bmluser/colors.gitbook-Notas_de_aula.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6"></script>
+<link rel="up" href="Ch3.html" title="Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I">
+<link rel="up up" href="index.html" title="Notas de aula: Probabilidade I">
+<link rel="start" href="index.html" title="Notas de aula: Probabilidade I">
+<link rel="prev" href="Ch3.S8.html" title="3.8 O Teorema Central do Limite ‣ Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I">
+<link rel="next" href="Ch4.html" title="Capítulo 4 Esperança condicional ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch3.S1.html" title="3.1 Esperança ‣ Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch3.S2.html" title="3.2 Variância ‣ Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch3.S3.html" title="3.3 Lei fraca dos grandes números ‣ Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch3.Sx1.html" title="Tópico: Contando triângulos ‣ Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch3.S4.html" title="3.4 Lei forte dos grandes números ‣ Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch3.S5.html" title="3.5 Lei {0,1} de Kolmogorov ‣ Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch3.S6.html" title="3.6 Momentos exponenciais ‣ Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch3.S7.html" title="3.7 Princípio de Grandes Desvios ‣ Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch3.Sx2.html" title="Tópico: Funções características 1 footnote 1 1 footnote 1 Somos gratos a Rangel Baldasso por escrever essa seção. ‣ Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch3.S8.html" title="3.8 O Teorema Central do Limite ‣ Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I">
+<link rel="chapter" href="Chx1.html" title="Licença ‣ Notas de aula: Probabilidade I">
+<link rel="chapter" href="Chx2.html" title="Contribuições ‣ Notas de aula: Probabilidade I">
+<link rel="chapter" href="Ch1.html" title="Capítulo 1 Fundamentos ‣ Notas de aula: Probabilidade I">
+<link rel="chapter" href="Ch2.html" title="Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I">
+<link rel="chapter" href="Ch3.html" title="Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I">
+<link rel="chapter" href="Ch4.html" title="Capítulo 4 Esperança condicional ‣ Notas de aula: Probabilidade I">
+<link rel="chapter" href="Ch5.html" title="Capítulo 5 Soluções de exercícios ‣ Notas de aula: Probabilidade I">
+<link rel="bibliography" href="bib.html" title="Referências ‣ Notas de aula: Probabilidade I">
+<link rel="index" href="idx.html" title="Índice Remissivo ‣ Notas de aula: Probabilidade I">
+<meta name="keywords" lang="pt-BR" content="Teorema, de Portmanteau">
+</head>
+<body>
+<div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+<a href="#bml-main-content" tabindex="0" class="bml-skip-to-content">Skip to content.</a>
+<div class="book-summary"><nav class="ltx_page_navbar">
+<ul class="ltx_toclist summary">
+<li>
+<a href="index.html" title="" class="ltx_ref" rel="start">Notas de aula: Probabilidade I</a>
+</li>
+<li class="divider">
+<li data-level="" data-path="Chx1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Chx1.html" title="In Notas de aula: Probabilidade I" class="ltx_ref">Licença</a></li>
+<li data-level="" data-path="Chx2.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Chx2.html" title="In Notas de aula: Probabilidade I" class="ltx_ref">Contribuições</a></li>
+<li data-level="1" data-path="Ch1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch1.html" title="In Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1 </span></b>Fundamentos</a></li>
+<li data-level="2" data-path="Ch2.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch2.html" title="In Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2 </span></b>Construção de espaços de probabilidade</a></li>
+<li data-level="3" data-path="Ch3.html" class="ltx_tocentry ltx_tocentry_chapter  chapter ">
+<a href="Ch3.html" title="In Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3 </span></b>Somas de variáveis independentes</a>
+<ol class="ltx_toclist ltx_toclist_chapter">
+<li data-level="3.1" data-path="Ch3.S1.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch3.S1.html" title="In Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3.1 </span></b>Esperança</a></li>
+<li data-level="3.2" data-path="Ch3.S2.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch3.S2.html" title="In Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3.2 </span></b>Variância</a></li>
+<li data-level="3.3" data-path="Ch3.S3.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch3.S3.html" title="In Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3.3 </span></b>Lei fraca dos grandes números</a></li>
+<li data-level="" data-path="Ch3.Sx1.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch3.Sx1.html" title="In Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I" class="ltx_ref">Tópico: Contando triângulos</a></li>
+<li data-level="3.4" data-path="Ch3.S4.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch3.S4.html" title="In Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3.4 </span></b>Lei forte dos grandes números</a></li>
+<li data-level="3.5" data-path="Ch3.S5.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch3.S5.html" title="In Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3.5 </span></b>Lei <math class="ltx_Math" alttext="\{0,1\}" display="inline"><semantics><mrow><mo stretchy="false">{</mo><mn>0,1</mn><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{0,1\}</annotation></semantics></math> de Kolmogorov</a></li>
+<li data-level="3.6" data-path="Ch3.S6.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch3.S6.html" title="In Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3.6 </span></b>Momentos exponenciais</a></li>
+<li data-level="3.7" data-path="Ch3.S7.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch3.S7.html" title="In Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3.7 </span></b>Princípio de Grandes Desvios</a></li>
+<li data-level="" data-path="Ch3.Sx2.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch3.Sx2.html" title="In Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I" class="ltx_ref">Tópico: Funções características</a></li>
+<li data-level="3.8" data-path="Ch3.S8.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch3.S8.html" title="In Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3.8 </span></b>O Teorema Central do Limite</a></li>
+<li data-level="" data-path="" class="ltx_tocentry ltx_tocentry_section ltx_ref_self  chapter active"><a href="" title="In Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I" class="ltx_ref">Tópico: O Teorema de Portmanteau</a></li>
+</ol>
+</li>
+<li data-level="4" data-path="Ch4.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch4.html" title="In Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4 </span></b>Esperança condicional</a></li>
+<li data-level="5" data-path="Ch5.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch5.html" title="In Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">5 </span></b>Soluções de exercícios</a></li>
+<li data-level="" data-path="bib.html" class="ltx_tocentry ltx_tocentry_bibliography  chapter "><a href="bib.html" title="In Notas de aula: Probabilidade I" class="ltx_ref">Referências</a></li>
+<li data-level="" data-path="idx.html" class="ltx_tocentry ltx_tocentry_index  chapter "><a href="idx.html" title="In Notas de aula: Probabilidade I" class="ltx_ref">Índice Remissivo</a></li>
+</ul>
+</nav></div>
+<div class="ltx_page_main book-body fixed">
+<div class="body-inner">
+<div class="book-header fixed" role="navigation"><h1>Tópico: O Teorema de Portmanteau</h1></div>
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="ltx_page_content page-inner" id="bml-main-content">
+<section class="ltx_section normal" lang="pt-BR">
+<div class="section level1">
+
+<h1 class="ltx_title ltx_title_section">Tópico: O Teorema de Portmanteau</h1>
+
+<div id="p1" class="ltx_para">
+<p class="ltx_p">O próximo resultado é bastante útil para provar convergência fraca, pois nos fornece uma coleção de equivalências muitas vezes mais fáceis de verificar.</p>
+</div>
+<div id="p2" class="ltx_para">
+<span class="ltx_ERROR undefined">{theorem}</span>
+<p class="ltx_p">[Teorema de Portmanteau]
+
+
+Sejam <math id="p2.m1" class="ltx_Math" alttext="(\mu_{n})_{n\geq 1}" display="inline"><semantics><msub><mrow><mo stretchy="false">(</mo><msub><mi>μ</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow><mrow><mi>n</mi><mo>≥</mo><mn>1</mn></mrow></msub><annotation encoding="application/x-tex">(\mu_{n})_{n\geq 1}</annotation></semantics></math> e <math id="p2.m2" class="ltx_Math" alttext="\mu" display="inline"><semantics><mi>μ</mi><annotation encoding="application/x-tex">\mu</annotation></semantics></math> medidas de probabilidade em <math id="p2.m3" class="ltx_Math" alttext="(E,\mathcal{A})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi>E</mi><mo>,</mo><mi class="ltx_font_mathcaligraphic">𝒜</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(E,\mathcal{A})</annotation></semantics></math>.
+São equivalentes:</p>
+<ol id="I3" class="ltx_enumerate">
+<li id="I3.ix1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">a)</span><div id="I3.ix1.p1" class="ltx_para">​<p class="ltx_p"><math id="I3.ix1.p1.m1" class="ltx_Math" alttext="\mu_{n}\Rightarrow\mu" display="inline"><semantics><mrow><msub><mi>μ</mi><mi>n</mi></msub><mo stretchy="false">⇒</mo><mi>μ</mi></mrow><annotation encoding="application/x-tex">\mu_{n}\Rightarrow\mu</annotation></semantics></math>,</p>
+</div>
+</li>
+<li id="I3.ix2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">a’)</span><div id="I3.ix2.p1" class="ltx_para">​<p class="ltx_p"><math id="I3.ix2.p1.m1" class="ltx_Math" alttext="\int f\d{\mu}_{n}\to\int f\d{\mu}" display="inline"><semantics><mrow><mrow><mo>∫</mo><mrow><mi>f</mi><mo>⁢</mo><msub><munder accentunder="true"><mtext class="ltx_mathvariant_italic">μ</mtext><mo>⋅</mo></munder><mi>n</mi></msub></mrow></mrow><mo rspace="0.111em" stretchy="false">→</mo><mrow><mo>∫</mo><mrow><mi>f</mi><mo>⁢</mo><munder accentunder="true"><mtext class="ltx_mathvariant_italic">μ</mtext><mo>⋅</mo></munder></mrow></mrow></mrow><annotation encoding="application/x-tex">\int f\d{\mu}_{n}\to\int f\d{\mu}</annotation></semantics></math>, para toda <math id="I3.ix2.p1.m2" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> unifmormemente contínua e limitada,</p>
+</div>
+</li>
+<li id="I3.ix3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">b)</span><div id="I3.ix3.p1" class="ltx_para">​<p class="ltx_p"><math id="I3.ix3.p1.m1" class="ltx_Math" alttext="\limsup_{n}\mu_{n}(F)\leq\mu(F)," display="inline"><semantics><mrow><mrow><mrow><msub><mo>lim sup</mo><mi>n</mi></msub><mrow><msub><mi>μ</mi><mi>n</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>F</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>≤</mo><mrow><mi>μ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>F</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\limsup_{n}\mu_{n}(F)\leq\mu(F),</annotation></semantics></math> para todo <math id="I3.ix3.p1.m2" class="ltx_Math" alttext="F\subseteq E" display="inline"><semantics><mrow><mi>F</mi><mo>⊆</mo><mi>E</mi></mrow><annotation encoding="application/x-tex">F\subseteq E</annotation></semantics></math> fechado,</p>
+</div>
+</li>
+<li id="I3.ix4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">b’)</span><div id="I3.ix4.p1" class="ltx_para">​<p class="ltx_p"><math id="I3.ix4.p1.m1" class="ltx_Math" alttext="\liminf_{n}\mu_{n}(G)\geq\mu(G)," display="inline"><semantics><mrow><mrow><mrow><msub><mo>lim inf</mo><mi>n</mi></msub><mrow><msub><mi>μ</mi><mi>n</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>G</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>≥</mo><mrow><mi>μ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>G</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\liminf_{n}\mu_{n}(G)\geq\mu(G),</annotation></semantics></math> para todo <math id="I3.ix4.p1.m2" class="ltx_Math" alttext="F\subseteq E" display="inline"><semantics><mrow><mi>F</mi><mo>⊆</mo><mi>E</mi></mrow><annotation encoding="application/x-tex">F\subseteq E</annotation></semantics></math> aberto,</p>
+</div>
+</li>
+<li id="I3.ix5" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">c)</span><div id="I3.ix5.p1" class="ltx_para">​<p class="ltx_p"><math id="I3.ix5.p1.m1" class="ltx_Math" alttext="\lim_{n}\mu_{n}(A)=\mu(A)," display="inline"><semantics><mrow><mrow><mrow><msub><mo>lim</mo><mi>n</mi></msub><mrow><msub><mi>μ</mi><mi>n</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mi>μ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\lim_{n}\mu_{n}(A)=\mu(A),</annotation></semantics></math> para todo <math id="I3.ix5.p1.m2" class="ltx_Math" alttext="A\in\mathcal{A}" display="inline"><semantics><mrow><mi>A</mi><mo>∈</mo><mi class="ltx_font_mathcaligraphic">𝒜</mi></mrow><annotation encoding="application/x-tex">A\in\mathcal{A}</annotation></semantics></math> com <math id="I3.ix5.p1.m3" class="ltx_Math" alttext="\mu(\partial A)=0" display="inline"><semantics><mrow><mrow><mi>μ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mo lspace="0em" rspace="0em">∂</mo><mi>A</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\mu(\partial A)=0</annotation></semantics></math>.</p>
+</div>
+</li>
+</ol>
+</div>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">Para memorizar o teorema acima, é conveniente lembrar dos dois exemplos:</p>
+<ol id="I4" class="ltx_enumerate">
+<li id="I4.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"> i)</span><div id="I4.i1.p1" class="ltx_para">​<p class="ltx_p">se <math id="I4.i1.p1.m1" class="ltx_Math" alttext="x_{n}\to x" display="inline"><semantics><mrow><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">→</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">x_{n}\to x</annotation></semantics></math> com <math id="I4.i1.p1.m2" class="ltx_Math" alttext="x_{n}\neq x" display="inline"><semantics><mrow><msub><mi>x</mi><mi>n</mi></msub><mo>≠</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">x_{n}\neq x</annotation></semantics></math>, <math id="I4.i1.p1.m3" class="ltx_Math" alttext="F=\{x\}" display="inline"><semantics><mrow><mi>F</mi><mo>=</mo><mrow><mo stretchy="false">{</mo><mi>x</mi><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">F=\{x\}</annotation></semantics></math> e <math id="I4.i1.p1.m4" class="ltx_Math" alttext="G=B(x,\delta)\setminus\{x\}" display="inline"><semantics><mrow><mi>G</mi><mo>=</mo><mrow><mrow><mi>B</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>δ</mi><mo stretchy="false">)</mo></mrow></mrow><mo>∖</mo><mrow><mo stretchy="false">{</mo><mi>x</mi><mo stretchy="false">}</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">G=B(x,\delta)\setminus\{x\}</annotation></semantics></math> temos, para <math id="I4.i1.p1.m5" class="ltx_Math" alttext="n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math> grande,</p>
+<div id="Ch3.E129" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch3.E129.m1" class="ltx_Math" alttext="\mu_{n}(F)=\mu(G)=0&lt;1=\mu(F)=\mu_{n}(G)," display="block"><semantics><mrow><mrow><mrow><msub><mi>μ</mi><mi>n</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>F</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>μ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>G</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn><mo>&lt;</mo><mn>1</mn><mo>=</mo><mrow><mi>μ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>F</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msub><mi>μ</mi><mi>n</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>G</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\mu_{n}(F)=\mu(G)=0&lt;1=\mu(F)=\mu_{n}(G),</annotation></semantics></math></span>
+                  <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.129)</span>
+                  
+                  
+                
+</div>
+</div>
+</li>
+<li id="I4.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"> ii)</span><div id="I4.i2.p1" class="ltx_para">​<p class="ltx_p">em <math id="I4.i2.p1.m1" class="ltx_Math" alttext="(\mathbb{R},\mathcal{B}(\mathbb{R}))" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi>ℝ</mi><mo>,</mo><mrow><mi class="ltx_font_mathcaligraphic">ℬ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ℝ</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(\mathbb{R},\mathcal{B}(\mathbb{R}))</annotation></semantics></math>, seja <math id="I4.i2.p1.m2" class="ltx_Math" alttext="\mu_{2n}=\delta_{n}" display="inline"><semantics><mrow><msub><mi>μ</mi><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow></msub><mo>=</mo><msub><mi>δ</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">\mu_{2n}=\delta_{n}</annotation></semantics></math> e <math id="I4.i2.p1.m3" class="ltx_Math" alttext="\mu_{2n+1}=\mu=\delta_{0}" display="inline"><semantics><mrow><msub><mi>μ</mi><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo>+</mo><mn>1</mn></mrow></msub><mo>=</mo><mi>μ</mi><mo>=</mo><msub><mi>δ</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">\mu_{2n+1}=\mu=\delta_{0}</annotation></semantics></math>.
+Obviamente <math id="I4.i2.p1.m4" class="ltx_Math" alttext="\mu_{n}" display="inline"><semantics><msub><mi>μ</mi><mi>n</mi></msub><annotation encoding="application/x-tex">\mu_{n}</annotation></semantics></math> não converge fracamente a <math id="I4.i2.p1.m5" class="ltx_Math" alttext="\mu" display="inline"><semantics><mi>μ</mi><annotation encoding="application/x-tex">\mu</annotation></semantics></math>. Contudo, para todo <math id="I4.i2.p1.m6" class="ltx_Math" alttext="A\in\mathcal{B}(\mathbb{R})" display="inline"><semantics><mrow><mi>A</mi><mo>∈</mo><mrow><mi class="ltx_font_mathcaligraphic">ℬ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ℝ</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">A\in\mathcal{B}(\mathbb{R})</annotation></semantics></math>,</p>
+<div id="Ch3.E130" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch3.E130.m1" class="ltx_Math" alttext="\begin{split}\liminf_{n}\mu_{n}(A)&amp;\leq\liminf_{n}\mu_{2n}(A)=\mu(A)\text{ e}%
+\\
+\limsup_{n}\mu_{n}(A)&amp;\geq\limsup_{n}\mu_{2n}(A)=\mu(A).\end{split}" display="block"><semantics><mtable columnspacing="0pt" displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_align_right" columnalign="right"><mrow><munder><mo movablelimits="false">lim inf</mo><mi>n</mi></munder><mrow><msub><mi>μ</mi><mi>n</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mi></mi><mo rspace="0.1389em">≤</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0.167em">lim inf</mo><mi>n</mi></munder><mrow><msub><mi>μ</mi><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mi>μ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mtext> e</mtext></mrow></mrow></mtd></mtr><mtr><mtd class="ltx_align_right" columnalign="right"><mrow><munder><mo movablelimits="false">lim sup</mo><mi>n</mi></munder><mrow><msub><mi>μ</mi><mi>n</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mi></mi><mo rspace="0.1389em">≥</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0.167em">lim sup</mo><mi>n</mi></munder><mrow><msub><mi>μ</mi><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mi>μ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{split}\liminf_{n}\mu_{n}(A)&amp;\leq\liminf_{n}\mu_{2n}(A)=\mu(A)\text{ e}%
+\\
+\limsup_{n}\mu_{n}(A)&amp;\geq\limsup_{n}\mu_{2n}(A)=\mu(A).\end{split}</annotation></semantics></math></span>
+                  <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.130)</span>
+                  
+                  
+                
+</div>
+</div>
+</li>
+</ol>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Prova do Teorema <span class="ltx_ref ltx_ref_self"><span class="ltx_text ltx_ref_tag">3</span></span>.</h6>
+<div id="p4" class="ltx_para">
+<p class="ltx_p">Obviamente, <math id="p4.m1" class="ltx_Math" alttext="(a\Rightarrow a^{\prime})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo stretchy="false">⇒</mo><msup><mi>a</mi><mo>′</mo></msup></mrow><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(a\Rightarrow a^{\prime})</annotation></semantics></math>, pois <math id="p4.m2" class="ltx_math_unparsed" alttext="a^{\prime})" display="inline"><semantics><mrow><msup><mi>a</mi><mo>′</mo></msup><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">a^{\prime})</annotation></semantics></math> somente supõe a convergência das integrais para funções <math id="p4.m3" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> que sejam uniformemente contínuas, portanto é um requisito mais fraco que <math id="p4.m4" class="ltx_math_unparsed" alttext="a)" display="inline"><semantics><mrow><mi>a</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">a)</annotation></semantics></math>.</p>
+</div>
+<div id="p5" class="ltx_para">
+<p class="ltx_p">Observamos também que <math id="p5.m1" class="ltx_Math" alttext="(b\Leftrightarrow b^{\prime})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mrow><mi>b</mi><mo stretchy="false">⇔</mo><msup><mi>b</mi><mo>′</mo></msup></mrow><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(b\Leftrightarrow b^{\prime})</annotation></semantics></math>.
+De fato, basta tomarmos complementos e observar a mudança nos sinais das desigualdades.</p>
+</div>
+<div id="p6" class="ltx_para">
+<p class="ltx_p">Então, para a prova do teorema, basta mostrar que <math id="p6.m1" class="ltx_Math" alttext="(a^{\prime}\Rightarrow b)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mrow><msup><mi>a</mi><mo>′</mo></msup><mo stretchy="false">⇒</mo><mi>b</mi></mrow><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(a^{\prime}\Rightarrow b)</annotation></semantics></math>, <math id="p6.m2" class="ltx_Math" alttext="(b+b^{\prime}\Rightarrow c)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>b</mi><mo>+</mo><msup><mi>b</mi><mo>′</mo></msup></mrow><mo stretchy="false">⇒</mo><mi>c</mi></mrow><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(b+b^{\prime}\Rightarrow c)</annotation></semantics></math> e <math id="p6.m3" class="ltx_Math" alttext="(c\Rightarrow a)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mrow><mi>c</mi><mo stretchy="false">⇒</mo><mi>a</mi></mrow><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(c\Rightarrow a)</annotation></semantics></math>.</p>
+</div>
+<div id="p7" class="ltx_para">
+<p class="ltx_p">Começamos com <math id="p7.m1" class="ltx_Math" alttext="(a^{\prime}\Rightarrow b)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mrow><msup><mi>a</mi><mo>′</mo></msup><mo stretchy="false">⇒</mo><mi>b</mi></mrow><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(a^{\prime}\Rightarrow b)</annotation></semantics></math> e para tanto, consideramos <math id="p7.m2" class="ltx_Math" alttext="F\subseteq E" display="inline"><semantics><mrow><mi>F</mi><mo>⊆</mo><mi>E</mi></mrow><annotation encoding="application/x-tex">F\subseteq E</annotation></semantics></math> fechado.
+Seja <math id="p7.m3" class="ltx_Math" alttext="\delta&gt;0" display="inline"><semantics><mrow><mi>δ</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\delta&gt;0</annotation></semantics></math> e defina a função <math id="p7.m4" class="ltx_Math" alttext="f_{\delta}:E\to\mathbb{R}" display="inline"><semantics><mrow><msub><mi>f</mi><mi>δ</mi></msub><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>E</mi><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">f_{\delta}:E\to\mathbb{R}</annotation></semantics></math> dada por</p>
+<div id="Ch3.E131" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch3.E131.m1" class="ltx_Math" alttext="f_{\delta}(x)=\max\Big{\{}1-\frac{d(x,F)}{\delta},0\Big{\}}." display="block"><semantics><mrow><mrow><mrow><msub><mi>f</mi><mi>δ</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>max</mi><mo>⁡</mo><mrow><mo maxsize="160%" minsize="160%">{</mo><mrow><mn>1</mn><mo>−</mo><mrow><mfrac><mrow><mi>d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>F</mi><mo stretchy="false">)</mo></mrow></mrow><mi>δ</mi></mfrac><mo>⁢</mo><mn>,0</mn></mrow></mrow><mo maxsize="160%" minsize="160%">}</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">f_{\delta}(x)=\max\Big{\{}1-\frac{d(x,F)}{\delta},0\Big{\}}.</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.131)</span>
+              
+              
+            
+</div>
+<p class="ltx_p">Claramente, <math id="p7.m5" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> é uniformemente contínua e vale <math id="p7.m6" class="ltx_Math" alttext="\1{F}\leq f_{\delta}\leq\1{B(F,\delta)}" display="inline"><semantics><mrow><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\1</mtext></merror><mo>⁢</mo><mi>F</mi></mrow><mo>≤</mo><msub><mi>f</mi><mi>δ</mi></msub><mo>≤</mo><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\1</mtext></merror><mo>⁢</mo><mi>B</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>F</mi><mo>,</mo><mi>δ</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\1{F}\leq f_{\delta}\leq\1{B(F,\delta)}</annotation></semantics></math>.
+Dessa desigualdade, temos <math id="p7.m7" class="ltx_Math" alttext="\limsup_{n}\mu_{n}(F)\leq\limsup_{n}\int f_{\delta}\d{\mu}_{n}=\int f_{\delta}%
+\d{\mu}\leq\mu(B(F,\delta))" display="inline"><semantics><mrow><mrow><msub><mo>lim sup</mo><mi>n</mi></msub><mrow><msub><mi>μ</mi><mi>n</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>F</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo rspace="0.1389em">≤</mo><mrow><msub><mo lspace="0.1389em" rspace="0em">lim sup</mo><mi>n</mi></msub><mrow><mo>∫</mo><mrow><msub><mi>f</mi><mi>δ</mi></msub><mo>⁢</mo><msub><munder accentunder="true"><mtext class="ltx_mathvariant_italic">μ</mtext><mo>⋅</mo></munder><mi>n</mi></msub></mrow></mrow></mrow><mo rspace="0.111em">=</mo><mrow><mo>∫</mo><mrow><msub><mi>f</mi><mi>δ</mi></msub><mo>⁢</mo><munder accentunder="true"><mtext class="ltx_mathvariant_italic">μ</mtext><mo>⋅</mo></munder></mrow></mrow><mo>≤</mo><mrow><mi>μ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>B</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>F</mi><mo>,</mo><mi>δ</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\limsup_{n}\mu_{n}(F)\leq\limsup_{n}\int f_{\delta}\d{\mu}_{n}=\int f_{\delta}%
+\d{\mu}\leq\mu(B(F,\delta))</annotation></semantics></math>.
+Tomando agora o limite com <math id="p7.m8" class="ltx_Math" alttext="\delta\to 0" display="inline"><semantics><mrow><mi>δ</mi><mo stretchy="false">→</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\delta\to 0</annotation></semantics></math>, obtemos <math id="p7.m9" class="ltx_math_unparsed" alttext="b)" display="inline"><semantics><mrow><mi>b</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">b)</annotation></semantics></math> por continuidade da probabilidade <math id="p7.m10" class="ltx_Math" alttext="\mu" display="inline"><semantics><mi>μ</mi><annotation encoding="application/x-tex">\mu</annotation></semantics></math>.</p>
+</div>
+<div id="p8" class="ltx_para">
+<p class="ltx_p">Para mostrar <math id="p8.m1" class="ltx_Math" alttext="(b+b^{\prime}\Rightarrow c)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>b</mi><mo>+</mo><msup><mi>b</mi><mo>′</mo></msup></mrow><mo stretchy="false">⇒</mo><mi>c</mi></mrow><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(b+b^{\prime}\Rightarrow c)</annotation></semantics></math>, seja <math id="p8.m2" class="ltx_Math" alttext="A\in\mathcal{A}" display="inline"><semantics><mrow><mi>A</mi><mo>∈</mo><mi class="ltx_font_mathcaligraphic">𝒜</mi></mrow><annotation encoding="application/x-tex">A\in\mathcal{A}</annotation></semantics></math> tal que <math id="p8.m3" class="ltx_Math" alttext="\mu(\partial A)=0" display="inline"><semantics><mrow><mrow><mi>μ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mo lspace="0em" rspace="0em">∂</mo><mi>A</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\mu(\partial A)=0</annotation></semantics></math>.
+Nesse caso, sabemos que</p>
+<div id="Ch3.Ex12" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch3.Ex12.m1" class="ltx_Math" alttext="\begin{split}\limsup_{n}\mu_{n}(A)&amp;\leq\limsup_{n}\mu_{n}(\bar{A})\leq\mu(\bar%
+{A})=\mu(\mathring{A})\\
+&amp;\leq\liminf\mu_{n}(\mathring{A})\leq\liminf_{n}\mu_{n}(A),\end{split}" display="block"><semantics><mtable columnspacing="0pt" displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_align_right" columnalign="right"><mrow><munder><mo movablelimits="false">lim sup</mo><mi>n</mi></munder><mrow><msub><mi>μ</mi><mi>n</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mi></mi><mo rspace="0.1389em">≤</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0.167em">lim sup</mo><mi>n</mi></munder><mrow><msub><mi>μ</mi><mi>n</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mover accent="true"><mi>A</mi><mo>¯</mo></mover><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>≤</mo><mrow><mi>μ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mover accent="true"><mi>A</mi><mo>¯</mo></mover><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>μ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mover accent="true"><mi>A</mi><mo>̊</mo></mover><mo stretchy="false">)</mo></mrow></mrow></mrow></mtd></mtr><mtr><mtd></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mi></mi><mo rspace="0.1389em">≤</mo><mrow><mo lspace="0.1389em" movablelimits="false" rspace="0.167em">lim inf</mo><mrow><msub><mi>μ</mi><mi>n</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mover accent="true"><mi>A</mi><mo>̊</mo></mover><mo stretchy="false">)</mo></mrow></mrow></mrow><mo rspace="0.1389em">≤</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0.167em">lim inf</mo><mi>n</mi></munder><mrow><msub><mi>μ</mi><mi>n</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{split}\limsup_{n}\mu_{n}(A)&amp;\leq\limsup_{n}\mu_{n}(\bar{A})\leq\mu(\bar%
+{A})=\mu(\mathring{A})\\
+&amp;\leq\liminf\mu_{n}(\mathring{A})\leq\liminf_{n}\mu_{n}(A),\end{split}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">o que mostra o limite em <math id="p8.m4" class="ltx_math_unparsed" alttext="c)" display="inline"><semantics><mrow><mi>c</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">c)</annotation></semantics></math>.</p>
+</div>
+<div id="p9" class="ltx_para">
+<p class="ltx_p">Finalmente, resta mostrar <math id="p9.m1" class="ltx_Math" alttext="(c\Rightarrow a)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mrow><mi>c</mi><mo stretchy="false">⇒</mo><mi>a</mi></mrow><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(c\Rightarrow a)</annotation></semantics></math> e, para tanto, consideramos uma função <math id="p9.m2" class="ltx_Math" alttext="f:E\to\mathbb{R}" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>E</mi><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">f:E\to\mathbb{R}</annotation></semantics></math> contínua e limitada.
+Digamos, com <math id="p9.m3" class="ltx_Math" alttext="\lVert f\rVert_{\infty}=M" display="inline"><semantics><mrow><msub><mrow><mo fence="true" rspace="0em">∥</mo><mi>f</mi><mo fence="true" lspace="0em">∥</mo></mrow><mi mathvariant="normal">∞</mi></msub><mo>=</mo><mi>M</mi></mrow><annotation encoding="application/x-tex">\lVert f\rVert_{\infty}=M</annotation></semantics></math>.</p>
+</div>
+<div id="p10" class="ltx_para">
+<p class="ltx_p">Sabemos que os conjuntos <math id="p10.m1" class="ltx_Math" alttext="\{f^{-1}(\{a\})\}_{a\in\mathbb{R}}" display="inline"><semantics><msub><mrow><mo stretchy="false">{</mo><mrow><msup><mi>f</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mo stretchy="false">{</mo><mi>a</mi><mo stretchy="false">}</mo></mrow><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">}</mo></mrow><mrow><mi>a</mi><mo>∈</mo><mi>ℝ</mi></mrow></msub><annotation encoding="application/x-tex">\{f^{-1}(\{a\})\}_{a\in\mathbb{R}}</annotation></semantics></math> são disjuntos, logo os conjuntos <math id="p10.m2" class="ltx_Math" alttext="f^{-1}(\{a\})" display="inline"><semantics><mrow><msup><mi>f</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mo stretchy="false">{</mo><mi>a</mi><mo stretchy="false">}</mo></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">f^{-1}(\{a\})</annotation></semantics></math> podem ter medida <math id="p10.m3" class="ltx_Math" alttext="\mu" display="inline"><semantics><mi>μ</mi><annotation encoding="application/x-tex">\mu</annotation></semantics></math> positiva apenas para uma coleção enumerável de valores <math id="p10.m4" class="ltx_Math" alttext="a\in\mathbb{R}" display="inline"><semantics><mrow><mi>a</mi><mo>∈</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">a\in\mathbb{R}</annotation></semantics></math>.
+Obtemos assim uma coleção finita <math id="p10.m5" class="ltx_Math" alttext="b_{0}&lt;b_{1}&lt;\dots&lt;b_{k}" display="inline"><semantics><mrow><msub><mi>b</mi><mn>0</mn></msub><mo>&lt;</mo><msub><mi>b</mi><mn>1</mn></msub><mo>&lt;</mo><mi mathvariant="normal">⋯</mi><mo>&lt;</mo><msub><mi>b</mi><mi>k</mi></msub></mrow><annotation encoding="application/x-tex">b_{0}&lt;b_{1}&lt;\dots&lt;b_{k}</annotation></semantics></math>, tal que</p>
+<div id="Ch3.E132" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch3.E132.m1" class="ltx_Math" alttext="\begin{array}[]{c}b_{0}&lt;-M\text{ e }b_{k}&gt;M,\quad b_{i+1}-b_{i}\leq\delta\text%
+{ e}\\
+\mu\big{(}f^{-1}(\{b_{i}\})\big{)}=0\text{ para todo $i\leq k$}.\end{array}" display="block"><semantics><mtable displaystyle="true" rowspacing="0pt"><mtr><mtd><mrow><mrow><mrow><msub><mi>b</mi><mn>0</mn></msub><mo lspace="0em">⁢</mo><mrow><mo fence="true" rspace="0em">&lt;</mo><mrow><mo>−</mo><mrow><mi>M</mi><mo>⁢</mo><mtext> e </mtext><mo>⁢</mo><msub><mi>b</mi><mi>k</mi></msub></mrow></mrow><mo fence="true" lspace="0em">&gt;</mo></mrow><mo lspace="0em">⁢</mo><mi>M</mi></mrow><mo rspace="1.167em">,</mo><mrow><msub><mi>b</mi><mrow><mi>i</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>−</mo><msub><mi>b</mi><mi>i</mi></msub></mrow></mrow><mo>≤</mo><mrow><mi>δ</mi><mo>⁢</mo><mtext> e</mtext></mrow></mrow></mtd></mtr><mtr><mtd><mrow><mrow><mrow><mi>μ</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><msup><mi>f</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mo stretchy="false">{</mo><msub><mi>b</mi><mi>i</mi></msub><mo stretchy="false">}</mo></mrow><mo stretchy="false">)</mo></mrow></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo>=</mo><mrow><mn>0</mn><mo>⁢</mo><mrow><mtext> para todo </mtext><mrow><mi>i</mi><mo>≤</mo><mi>k</mi></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{array}[]{c}b_{0}&lt;-M\text{ e }b_{k}&gt;M,\quad b_{i+1}-b_{i}\leq\delta\text%
+{ e}\\
+\mu\big{(}f^{-1}(\{b_{i}\})\big{)}=0\text{ para todo $i\leq k$}.\end{array}</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.132)</span>
+              
+              
+            
+</div>
+</div>
+<figure id="Ch3.F3" class="ltx_figure"><div class="bml-overflow-wrapper"><svg id="Ch3.F3.pic1" class="ltx_picture ltx_centering" height="200.5" overflow="visible" version="1.1" width="300.87" viewBox="0 0 300.87 200.5"><g transform="translate(0,200.5) matrix(1 0 0 -1 0 0) translate(118.25,0) translate(0,23.76)"><g class="bml_fill_808080 bml_stroke_808080 bml_color_808080" fill="#808080" stroke="#808080" stroke-width="0.2pt"><path d="M -118.11 0 L 164.89 0" style="fill:none"></path><g stroke-dasharray="none" stroke-dashoffset="0.0pt" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.16pt" transform="matrix(1.0 0.0 0.0 1.0 164.89 0)"><path d="M -1.41 1.88 C -1.29 1.18 0 0.12 0.35 0 C 0 -0.12 -1.29 -1.18 -1.41 -1.88" style="fill:none"></path></g><g class="bml_fill_000000 bml_stroke_000000" fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 170.1 -2.98)"><foreignObject height="5.96" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="7.91"><math id="Ch3.F3.pic1.m1" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math></foreignObject></g></g><g class="bml_fill_808080 bml_stroke_808080 bml_color_808080" fill="#808080" stroke="#808080" stroke-width="0.2pt"><path d="M 9.45 -23.62 L 9.45 153.08" style="fill:none"></path><g stroke-dasharray="none" stroke-dashoffset="0.0pt" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.16pt" transform="matrix(0.0 1.0 -1.0 0.0 9.45 153.08)"><path d="M -1.41 1.88 C -1.29 1.18 0 0.12 0.35 0 C 0 -0.12 -1.29 -1.18 -1.41 -1.88" style="fill:none"></path></g><g class="bml_fill_000000 bml_stroke_000000" fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 -4.02 161.75)"><foreignObject height="13.84" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="26.93"><math id="Ch3.F3.pic1.m2" class="ltx_Math" alttext="f(x)" display="inline"><semantics><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">f(x)</annotation></semantics></math></foreignObject></g></g><g class="bml_fill_0000FF bml_stroke_0000FF bml_color_0000FF" fill="#0000FF" stroke="#0000FF" stroke-width="0.4pt"><path d="M -94.49 15.96 C -94.49 15.96 -87.38 18.19 -84.65 19.25 C -81.92 20.3 -77.54 22.17 -74.8 23.57 C -72.07 24.97 -67.69 27.46 -64.96 29.34 C -62.23 31.23 -57.85 34.6 -55.12 37.17 C -52.39 39.73 -48.01 44.36 -45.28 47.83 C -42.55 51.29 -38.17 57.64 -35.44 62.16 C -32.71 66.67 -28.33 75.08 -25.6 80.37 C -22.86 85.66 -18.48 95.44 -15.75 100.27 C -13.02 105.11 -8.64 112.93 -5.91 115.22 C -3.18 117.52 1.2 118.38 3.93 116.82 C 6.66 115.26 11.04 108.47 13.77 103.97 C 16.5 99.47 20.88 89.71 23.61 84.38 C 26.35 79.05 30.73 70.25 33.46 65.53 C 36.19 60.81 40.57 54.06 43.3 50.39 C 46.03 46.72 50.41 41.78 53.14 39.05 C 55.87 36.33 60.25 32.74 62.98 30.73 C 65.71 28.72 70.09 26.08 72.82 24.6 C 75.56 23.11 79.93 21.14 82.67 20.02 C 85.4 18.91 89.78 17.41 92.51 16.56 C 95.24 15.7 99.62 14.54 102.35 13.88 C 105.08 13.22 109.46 12.31 112.19 11.78 C 114.92 11.26 119.3 10.53 122.03 10.12 C 124.76 9.7 129.14 9.11 131.88 8.77 C 134.61 8.43 141.72 7.67 141.72 7.67" style="fill:none"></path></g><g class="bml_fill_808080 bml_stroke_808080 bml_color_808080" fill="#808080" stroke="#808080" stroke-dasharray="3.0pt,3.0pt" stroke-dashoffset="0.0pt" stroke-width="0.2pt"><path d="M -37.35 0 L -37.35 59.06 L 37.35 59.06 L 37.35 0" style="fill:none"></path></g><g class="bml_fill_808080 bml_stroke_808080 bml_color_808080" fill="#808080" stroke="#808080" stroke-dasharray="3.0pt,3.0pt" stroke-dashoffset="0.0pt" stroke-width="0.2pt"><path d="M -24.45 0 L -24.45 82.68 L 24.45 82.68 L 24.45 0" style="fill:none"></path></g><g class="bml_fill_000000 bml_stroke_000000" fill="#000000" stroke="#000000"><g stroke-width="0.8pt"><path d="M 7.09 -11.81 L 11.81 -11.81" style="fill:none"></path></g><g stroke-width="0.8pt"><path d="M 7.09 11.81 L 11.81 11.81" style="fill:none"></path></g><g stroke-width="0.8pt"><path d="M 7.09 35.43 L 11.81 35.43" style="fill:none"></path></g><g stroke-width="0.8pt"><path d="M 7.09 59.06 L 11.81 59.06" style="fill:none"></path></g><g stroke-width="0.8pt"><path d="M 7.09 82.68 L 11.81 82.68" style="fill:none"></path></g><g stroke-width="0.8pt"><path d="M 7.09 106.3 L 11.81 106.3" style="fill:none"></path></g><g stroke-width="0.8pt"><path d="M 7.09 129.92 L 11.81 129.92" style="fill:none"></path></g><g stroke-width="0.8pt"><path d="M -37.35 0 L -24.45 0" style="fill:none"></path></g><g stroke-width="0.8pt"><path d="M 37.35 0 L 24.45 0" style="fill:none"></path></g></g></g></svg></div>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figura 3.3: </span>Uma função contínua e limitada <math id="Ch3.F3.m4" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>, os pontos <math id="Ch3.F3.m5" class="ltx_Math" alttext="b_{i}" display="inline"><semantics><msub><mi>b</mi><mi>i</mi></msub><annotation encoding="application/x-tex">b_{i}</annotation></semantics></math> e um conjunto <math id="Ch3.F3.m6" class="ltx_Math" alttext="A_{i}" display="inline"><semantics><msub><mi>A</mi><mi>i</mi></msub><annotation encoding="application/x-tex">A_{i}</annotation></semantics></math>.</figcaption>
+</figure>
+<div id="p11" class="ltx_para">
+<p class="ltx_p">Iremos aproximar <math id="p11.m1" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> por uma função da forma <math id="p11.m2" class="ltx_Math" alttext="f_{\delta}=\sum_{i}b_{i}\1_{A_{i}}" display="inline"><semantics><mrow><msub><mi>f</mi><mi>δ</mi></msub><mo rspace="0.111em">=</mo><mrow><msub><mo>∑</mo><mi>i</mi></msub><mrow><msub><mi>b</mi><mi>i</mi></msub><mo>⁢</mo><msub><merror class="ltx_ERROR undefined undefined"><mtext>\1</mtext></merror><msub><mi>A</mi><mi>i</mi></msub></msub></mrow></mrow></mrow><annotation encoding="application/x-tex">f_{\delta}=\sum_{i}b_{i}\1_{A_{i}}</annotation></semantics></math>, onde os conjuntos <math id="p11.m3" class="ltx_Math" alttext="A_{i}=f^{-1}\big{(}[b_{i},b_{i+1})\big{)}" display="inline"><semantics><mrow><msub><mi>A</mi><mi>i</mi></msub><mo>=</mo><mrow><msup><mi>f</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mo stretchy="false">[</mo><msub><mi>b</mi><mi>i</mi></msub><mo>,</mo><msub><mi>b</mi><mrow><mi>i</mi><mo>+</mo><mn>1</mn></mrow></msub><mo stretchy="false">)</mo></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">A_{i}=f^{-1}\big{(}[b_{i},b_{i+1})\big{)}</annotation></semantics></math> são disjuntos.
+Obviamente <math id="p11.m4" class="ltx_Math" alttext="f_{\delta}\leq f\leq f_{\delta}+\delta" display="inline"><semantics><mrow><msub><mi>f</mi><mi>δ</mi></msub><mo>≤</mo><mi>f</mi><mo>≤</mo><mrow><msub><mi>f</mi><mi>δ</mi></msub><mo>+</mo><mi>δ</mi></mrow></mrow><annotation encoding="application/x-tex">f_{\delta}\leq f\leq f_{\delta}+\delta</annotation></semantics></math>, donde</p>
+<div id="Ch3.Ex13" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch3.Ex13.m1" class="ltx_Math" alttext="\liminf\int f_{\delta}\d{\mu}_{n}\leq\liminf\int f\d{\mu}_{n}\leq\limsup\int f%
+\d{\mu}_{n}\leq\liminf\int f_{\delta}\d{\mu}_{n}+\delta." display="block"><semantics><mrow><mrow><mrow><mo movablelimits="false" rspace="0em">lim inf</mo><mrow><mo>∫</mo><mrow><msub><mi>f</mi><mi>δ</mi></msub><mo>⁢</mo><msub><munder accentunder="true"><mtext class="ltx_mathvariant_italic">μ</mtext><mo>⋅</mo></munder><mi>n</mi></msub></mrow></mrow></mrow><mo rspace="0.1389em">≤</mo><mrow><mo lspace="0.1389em" movablelimits="false" rspace="0em">lim inf</mo><mrow><mo>∫</mo><mrow><mi>f</mi><mo>⁢</mo><msub><munder accentunder="true"><mtext class="ltx_mathvariant_italic">μ</mtext><mo>⋅</mo></munder><mi>n</mi></msub></mrow></mrow></mrow><mo rspace="0.1389em">≤</mo><mrow><mo lspace="0.1389em" movablelimits="false" rspace="0em">lim sup</mo><mrow><mo>∫</mo><mrow><mi>f</mi><mo>⁢</mo><msub><munder accentunder="true"><mtext class="ltx_mathvariant_italic">μ</mtext><mo>⋅</mo></munder><mi>n</mi></msub></mrow></mrow></mrow><mo rspace="0.1389em">≤</mo><mrow><mrow><mo lspace="0.1389em" movablelimits="false" rspace="0em">lim inf</mo><mrow><mo>∫</mo><mrow><msub><mi>f</mi><mi>δ</mi></msub><mo>⁢</mo><msub><munder accentunder="true"><mtext class="ltx_mathvariant_italic">μ</mtext><mo>⋅</mo></munder><mi>n</mi></msub></mrow></mrow></mrow><mo>+</mo><mi>δ</mi></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\liminf\int f_{\delta}\d{\mu}_{n}\leq\liminf\int f\d{\mu}_{n}\leq\limsup\int f%
+\d{\mu}_{n}\leq\liminf\int f_{\delta}\d{\mu}_{n}+\delta.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Mas como <math id="p11.m5" class="ltx_Math" alttext="\int f_{\delta}\d{\mu}_{n}=\sum_{i}b_{i}\mu_{n}(A_{i})" display="inline"><semantics><mrow><mrow><mo>∫</mo><mrow><msub><mi>f</mi><mi>δ</mi></msub><mo>⁢</mo><msub><munder accentunder="true"><mtext class="ltx_mathvariant_italic">μ</mtext><mo>⋅</mo></munder><mi>n</mi></msub></mrow></mrow><mo rspace="0.111em">=</mo><mrow><msub><mo>∑</mo><mi>i</mi></msub><mrow><msub><mi>b</mi><mi>i</mi></msub><mo>⁢</mo><msub><mi>μ</mi><mi>n</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\int f_{\delta}\d{\mu}_{n}=\sum_{i}b_{i}\mu_{n}(A_{i})</annotation></semantics></math>, a prova estará concluida se mostrarmos que <math id="p11.m6" class="ltx_Math" alttext="\mu_{n}(A_{i})\to\mu(A_{i})" display="inline"><semantics><mrow><mrow><msub><mi>μ</mi><mi>n</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">→</mo><mrow><mi>μ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\mu_{n}(A_{i})\to\mu(A_{i})</annotation></semantics></math> para todo <math id="p11.m7" class="ltx_Math" alttext="i\leq k" display="inline"><semantics><mrow><mi>i</mi><mo>≤</mo><mi>k</mi></mrow><annotation encoding="application/x-tex">i\leq k</annotation></semantics></math>.
+Isso segue de <math id="p11.m8" class="ltx_math_unparsed" alttext="d)" display="inline"><semantics><mrow><mi>d</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">d)</annotation></semantics></math>, pois <math id="p11.m9" class="ltx_Math" alttext="\partial A_{i}\subseteq f^{-1}(\{b_{i},b_{i+1}\})" display="inline"><semantics><mrow><mrow><mo rspace="0em">∂</mo><msub><mi>A</mi><mi>i</mi></msub></mrow><mo>⊆</mo><mrow><msup><mi>f</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mo stretchy="false">{</mo><msub><mi>b</mi><mi>i</mi></msub><mo>,</mo><msub><mi>b</mi><mrow><mi>i</mi><mo>+</mo><mn>1</mn></mrow></msub><mo stretchy="false">}</mo></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\partial A_{i}\subseteq f^{-1}(\{b_{i},b_{i+1}\})</annotation></semantics></math>, que tem medida zero.
+∎</p>
+</div>
+</div>
+<div id="p12" class="ltx_para">
+<span class="ltx_ERROR undefined">{exercise}</span>
+<p class="ltx_p">Lembrando que em <math id="p12.m1" class="ltx_Math" alttext="(\mathbb{R},\mathcal{B}(\mathbb{R}))" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi>ℝ</mi><mo>,</mo><mrow><mi class="ltx_font_mathcaligraphic">ℬ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ℝ</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(\mathbb{R},\mathcal{B}(\mathbb{R}))</annotation></semantics></math>, temos <math id="p12.m2" class="ltx_Math" alttext="\tfrac{1}{n}\sum_{i=1}^{n}\delta_{i/n}\Rightarrow U_{[0,1]}" display="inline"><semantics><mrow><mrow><mfrac><mn>1</mn><mi>n</mi></mfrac><mo>⁢</mo><mrow><msubsup><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><msub><mi>δ</mi><mrow><mi>i</mi><mo>/</mo><mi>n</mi></mrow></msub></mrow></mrow><mo stretchy="false">⇒</mo><msub><mi>U</mi><mrow><mo stretchy="false">[</mo><mn>0,1</mn><mo stretchy="false">]</mo></mrow></msub></mrow><annotation encoding="application/x-tex">\tfrac{1}{n}\sum_{i=1}^{n}\delta_{i/n}\Rightarrow U_{[0,1]}</annotation></semantics></math>, use o ítem <math id="p12.m3" class="ltx_math_unparsed" alttext="d)" display="inline"><semantics><mrow><mi>d</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">d)</annotation></semantics></math> do Teorema <span class="ltx_ref ltx_ref_self"><span class="ltx_text ltx_ref_tag">3</span></span> para dar uma caracterização dos conjuntos Riemann-mensuráveis.
+Mais precisamente, encontre os <math id="p12.m4" class="ltx_Math" alttext="A\subseteq\mathbb{R}" display="inline"><semantics><mrow><mi>A</mi><mo>⊆</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">A\subseteq\mathbb{R}</annotation></semantics></math> tais que <math id="p12.m5" class="ltx_Math" alttext="\tfrac{1}{n}\sum_{i=1}^{n}\delta_{i/n}(A)" display="inline"><semantics><mrow><mfrac><mn>1</mn><mi>n</mi></mfrac><mo>⁢</mo><mrow><msubsup><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><mrow><msub><mi>δ</mi><mrow><mi>i</mi><mo>/</mo><mi>n</mi></mrow></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\tfrac{1}{n}\sum_{i=1}^{n}\delta_{i/n}(A)</annotation></semantics></math> converge para a medida de Lebesgue de <math id="p12.m6" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>.</p>
+</div>
+<div class="ltx_pagination ltx_role_newpage"></div>
+<div id="p13" class="ltx_para">
+<span class="ltx_ERROR undefined">\todosec</span>
+<p class="ltx_p">Tópico: Análise de componentes principaisvariáveis gaussianas e principal component analysis…</p>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+<a href="Ch3.S8.html" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a><a href="Ch4.html" class="navigation navigation-next" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+</div>
+</div>
+<script src="bookml/gitbook/js/app.min.js"></script>
+<script src="bookml/gitbook/js/jquery.highlight.js"></script>
+<script src="bookml/gitbook/js/plugin-search.js"></script>
+<script src="bookml/gitbook/js/plugin-fontsettings.js"></script>
+<script src="bookml/gitbook/js/plugin-bookdown.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+        MathJax = {
+          startup: {
+            ready() {
+              // do not process equations disabled with \bmlDisableMathJax (code suggested by Davide P. Cervone)
+              class bmlFindMathML extends MathJax._.input.mathml.FindMathML.FindMathML {
+                processMath(set) {
+                  const adaptor = this.adaptor;
+                  for (const node of set.values()) {
+                    if (adaptor.hasClass(node, 'bml_disable_mathjax')) {
+                      set.delete(node);
+                    }
+                  }
+                  return super.processMath(set);
+                }
+              }
+
+              MathJax._.components.global.combineDefaults(MathJax.config, 'mml', {FindMathML: new bmlFindMathML()});
+
+              MathJax.startup.defaultReady();
+
+              // preproces MathML to make MathJax aware of certain LaTeXML and BookML additional info
+              const mmlFilters = MathJax.startup.input[0].mmlFilters;
+
+              // convert the LaTeXML calligraphic (chancery) annotation to a form MathJax understands
+              // since the corresponding Unicode characters render as script (rounded)
+              const script2latin = {
+                '𝒜': 'A', 'ℬ': 'B', '𝒞': 'C', '𝒟': 'D', 'ℰ': 'E', 'ℱ': 'F', '𝒢': 'G',
+                'ℋ': 'H', 'ℐ': 'I', '𝒥': 'J', '𝒦': 'K', 'ℒ': 'L', 'ℳ': 'M', '𝒩': 'N',
+                '𝒪': 'O', '𝒫': 'P', '𝒬': 'Q', 'ℛ': 'R', '𝒮': 'S', '𝒯': 'T', '𝒰': 'U',
+                '𝒱': 'V', '𝒲': 'W', '𝒳': 'X', '𝒴': 'Y', '𝒵': 'Z',
+              };
+
+              mmlFilters.add((args) => {
+                for (const n of args.data.getElementsByClassName('ltx_font_mathcaligraphic')) {
+                  n.classList.add('MJX-tex-calligraphic');
+                  const letter = script2latin[n.textContent];
+                  if (letter !== undefined) { n.textContent = letter; }
+                }
+              });
+
+              // adjust characters based on Unicode variation sequences
+              const replacements = {
+                // MathJax renders the empty set as the U+FE00 variant, so the plain character needs adjusting
+                '∅': { variant: 'variant' },
+                // MathJax renders script characters in rounded style, which is fine for no variation and U+FE00
+                '𝒜\xFE00': { text: 'A', variant: 'tex-calligraphic' },
+                'ℬ\xFE00': { text: 'B', variant: 'tex-calligraphic' },
+                '𝒞\xFE00': { text: 'C', variant: 'tex-calligraphic' },
+                '𝒟\xFE00': { text: 'D', variant: 'tex-calligraphic' },
+                'ℰ\xFE00': { text: 'E', variant: 'tex-calligraphic' },
+                'ℱ\xFE00': { text: 'F', variant: 'tex-calligraphic' },
+                '𝒢\xFE00': { text: 'G', variant: 'tex-calligraphic' },
+                'ℋ\xFE00': { text: 'H', variant: 'tex-calligraphic' },
+                'ℐ\xFE00': { text: 'I', variant: 'tex-calligraphic' },
+                '𝒥\xFE00': { text: 'J', variant: 'tex-calligraphic' },
+                '𝒦\xFE00': { text: 'K', variant: 'tex-calligraphic' },
+                'ℒ\xFE00': { text: 'L', variant: 'tex-calligraphic' },
+                'ℳ\xFE00': { text: 'M', variant: 'tex-calligraphic' },
+                '𝒩\xFE00': { text: 'N', variant: 'tex-calligraphic' },
+                '𝒪\xFE00': { text: 'O', variant: 'tex-calligraphic' },
+                '𝒫\xFE00': { text: 'P', variant: 'tex-calligraphic' },
+                '𝒬\xFE00': { text: 'Q', variant: 'tex-calligraphic' },
+                'ℛ\xFE00': { text: 'R', variant: 'tex-calligraphic' },
+                '𝒮\xFE00': { text: 'S', variant: 'tex-calligraphic' },
+                '𝒯\xFE00': { text: 'T', variant: 'tex-calligraphic' },
+                '𝒰\xFE00': { text: 'U', variant: 'tex-calligraphic' },
+                '𝒱\xFE00': { text: 'V', variant: 'tex-calligraphic' },
+                '𝒲\xFE00': { text: 'W', variant: 'tex-calligraphic' },
+                '𝒳\xFE00': { text: 'X', variant: 'tex-calligraphic' },
+                '𝒴\xFE00': { text: 'Y', variant: 'tex-calligraphic' },
+                '𝒵\xFE00': { text: 'Z', variant: 'tex-calligraphic' }
+              };
+
+              mmlFilters.add((args) => {
+                let nodes = document.evaluate('.//m:mi | .//m:mn | .//m:mo | .//m:ms', args.data,
+                  () => 'http://www.w3.org/1998/Math/MathML', XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE);
+                for (let i = 0; i < nodes.snapshotLength; i++) {
+                  const n = nodes.snapshotItem(i);
+                  const repl = replacements[n.innerHTML];
+                  if (repl !== undefined) {
+                    const variant = repl['variant'];
+                    const text = repl['text'];
+                    if (variant !== undefined) { n.classList.add('MJX-' + variant); n.removeAttribute('mathvariant'); }
+                    if (text !== undefined) { n.innerHTML = text; }
+                  }
+                }
+              });
+            }
+          }
+        };
+      </script>
+<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js"></script>
+<script type="text/javascript">
+                gitbook.require(["gitbook"], function(gitbook) {
+                gitbook.start({
+                  "fontsettings": {
+                    "theme": "white",
+                    "family": "sans",
+                    "size": 2
+                  },
+                  "download": [ [ "Notas_de_aula.pdf", "PDF" ], ],
+                  "search": {
+                    "engine": "fuse"
+                  },
+                  "toc": {
+                    "collapse": "none"
+                  }
+                });
+              });
+            </script>
+</body>
+
+</html>

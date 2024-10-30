@@ -1,0 +1,715 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>2.10 Espaços canônicos ‣ Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I</title>
+<!--Generated on Tue Aug 27 13:34:01 2024 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
+<style>:root { --bml-ltx-font-size: 10; }</style>
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-table.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-search.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-bookdown.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-fontsettings.css" type="text/css">
+<link rel="stylesheet" href="ltx-book.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook,plain.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook.css" type="text/css">
+<link rel="stylesheet" href="bmluser/colors.gitbook-Notas_de_aula.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6"></script>
+<link rel="up" href="Ch2.html" title="Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I">
+<link rel="up up" href="index.html" title="Notas de aula: Probabilidade I">
+<link rel="start" href="index.html" title="Notas de aula: Probabilidade I">
+<link rel="prev" href="Ch2.S9.html" title="2.9 Núcleos de transição ‣ Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I">
+<link rel="next" href="Ch2.Sx4.html" title="Tópico: Cadeias de Markov ‣ Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch2.S1.html" title="2.1 Caso enumerável ‣ Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch2.Sx1.html" title="Tópico: Método Probabilístico ‣ Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch2.S2.html" title="2.2 Caso absolutamente contínuo ‣ Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch2.S3.html" title="2.3 Funções acumuladas de distribuição ‣ Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch2.S4.html" title="2.4 Espaços produto finito ‣ Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch2.S5.html" title="2.5 Independência ‣ Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch2.Sx2.html" title="Tópico: Lei dos pequenos números ‣ Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch2.S6.html" title="2.6 Espaços produto infinito ‣ Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch2.Sx3.html" title="Tópico: Percolação ‣ Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch2.S7.html" title="2.7 Distribuições conjuntas ‣ Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch2.S8.html" title="2.8 Probabilidades condicionais ‣ Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch2.S9.html" title="2.9 Núcleos de transição ‣ Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch2.Sx4.html" title="Tópico: Cadeias de Markov ‣ Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch2.Sx5.html" title="Tópico: Urna de Pólya ‣ Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I">
+<link rel="chapter" href="Chx1.html" title="Licença ‣ Notas de aula: Probabilidade I">
+<link rel="chapter" href="Chx2.html" title="Contribuições ‣ Notas de aula: Probabilidade I">
+<link rel="chapter" href="Ch1.html" title="Capítulo 1 Fundamentos ‣ Notas de aula: Probabilidade I">
+<link rel="chapter" href="Ch2.html" title="Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I">
+<link rel="chapter" href="Ch3.html" title="Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I">
+<link rel="chapter" href="Ch4.html" title="Capítulo 4 Esperança condicional ‣ Notas de aula: Probabilidade I">
+<link rel="chapter" href="Ch5.html" title="Capítulo 5 Soluções de exercícios ‣ Notas de aula: Probabilidade I">
+<link rel="bibliography" href="bib.html" title="Referências ‣ Notas de aula: Probabilidade I">
+<link rel="index" href="idx.html" title="Índice Remissivo ‣ Notas de aula: Probabilidade I">
+<meta name="keywords" lang="pt-BR" content="Teorema, bi-mensurável, canônico, da Extensão, espaço, polonês">
+</head>
+<body>
+<div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+<a href="#bml-main-content" tabindex="0" class="bml-skip-to-content">Skip to content.</a>
+<div class="book-summary"><nav class="ltx_page_navbar">
+<ul class="ltx_toclist summary">
+<li>
+<a href="index.html" title="" class="ltx_ref" rel="start">Notas de aula: Probabilidade I</a>
+</li>
+<li class="divider">
+<li data-level="" data-path="Chx1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Chx1.html" title="In Notas de aula: Probabilidade I" class="ltx_ref">Licença</a></li>
+<li data-level="" data-path="Chx2.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Chx2.html" title="In Notas de aula: Probabilidade I" class="ltx_ref">Contribuições</a></li>
+<li data-level="1" data-path="Ch1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch1.html" title="In Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1 </span></b>Fundamentos</a></li>
+<li data-level="2" data-path="Ch2.html" class="ltx_tocentry ltx_tocentry_chapter  chapter ">
+<a href="Ch2.html" title="In Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2 </span></b>Construção de espaços de probabilidade</a>
+<ol class="ltx_toclist ltx_toclist_chapter">
+<li data-level="2.1" data-path="Ch2.S1.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch2.S1.html" title="In Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2.1 </span></b>Caso enumerável</a></li>
+<li data-level="" data-path="Ch2.Sx1.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch2.Sx1.html" title="In Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I" class="ltx_ref">Tópico: Método Probabilístico</a></li>
+<li data-level="2.2" data-path="Ch2.S2.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch2.S2.html" title="In Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2.2 </span></b>Caso absolutamente contínuo</a></li>
+<li data-level="2.3" data-path="Ch2.S3.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch2.S3.html" title="In Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2.3 </span></b>Funções acumuladas de distribuição</a></li>
+<li data-level="2.4" data-path="Ch2.S4.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch2.S4.html" title="In Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2.4 </span></b>Espaços produto finito</a></li>
+<li data-level="2.5" data-path="Ch2.S5.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch2.S5.html" title="In Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2.5 </span></b>Independência</a></li>
+<li data-level="" data-path="Ch2.Sx2.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch2.Sx2.html" title="In Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I" class="ltx_ref">Tópico: Lei dos pequenos números</a></li>
+<li data-level="2.6" data-path="Ch2.S6.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch2.S6.html" title="In Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2.6 </span></b>Espaços produto infinito</a></li>
+<li data-level="" data-path="Ch2.Sx3.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch2.Sx3.html" title="In Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I" class="ltx_ref">Tópico: Percolação</a></li>
+<li data-level="2.7" data-path="Ch2.S7.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch2.S7.html" title="In Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2.7 </span></b>Distribuições conjuntas</a></li>
+<li data-level="2.8" data-path="Ch2.S8.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch2.S8.html" title="In Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2.8 </span></b>Probabilidades condicionais</a></li>
+<li data-level="2.9" data-path="Ch2.S9.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch2.S9.html" title="In Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2.9 </span></b>Núcleos de transição</a></li>
+<li data-level="2.10" data-path="" class="ltx_tocentry ltx_tocentry_section ltx_ref_self  chapter active">
+<a href="" title="In Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2.10 </span></b>Espaços canônicos</a>
+<ol class="ltx_toclist ltx_toclist_section">
+<li data-level="2.10.1" data-path="" class="ltx_tocentry ltx_tocentry_subsection  chapter "><a href="#SS1" title="In 2.10 Espaços canônicos ‣ Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2.10.1 </span></b>Espaços poloneses</a></li>
+</ol>
+</li>
+<li data-level="" data-path="Ch2.Sx4.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch2.Sx4.html" title="In Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I" class="ltx_ref">Tópico: Cadeias de Markov</a></li>
+<li data-level="" data-path="Ch2.Sx5.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch2.Sx5.html" title="In Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I" class="ltx_ref">Tópico: Urna de Pólya</a></li>
+</ol>
+</li>
+<li data-level="3" data-path="Ch3.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch3.html" title="In Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3 </span></b>Somas de variáveis independentes</a></li>
+<li data-level="4" data-path="Ch4.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch4.html" title="In Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4 </span></b>Esperança condicional</a></li>
+<li data-level="5" data-path="Ch5.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch5.html" title="In Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">5 </span></b>Soluções de exercícios</a></li>
+<li data-level="" data-path="bib.html" class="ltx_tocentry ltx_tocentry_bibliography  chapter "><a href="bib.html" title="In Notas de aula: Probabilidade I" class="ltx_ref">Referências</a></li>
+<li data-level="" data-path="idx.html" class="ltx_tocentry ltx_tocentry_index  chapter "><a href="idx.html" title="In Notas de aula: Probabilidade I" class="ltx_ref">Índice Remissivo</a></li>
+</ul>
+</nav></div>
+<div class="ltx_page_main book-body fixed">
+<div class="body-inner">
+<div class="book-header fixed" role="navigation"><h1>Espaços canônicos</h1></div>
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="ltx_page_content page-inner" id="bml-main-content">
+<section class="ltx_section normal" lang="pt-BR">
+<div class="section level1">
+
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section header-section-number">2.10</span> Espaços canônicos</h1>
+
+<div id="p1" class="ltx_para">
+<p class="ltx_p">Em várias áreas da matemática, existe um importante conceito de equivalência entre duas estruturas, como por exemplo: homeomorfismos, isometrias e isomorfismos.
+Nessa seção estudaremos o caso análogo para espaços mensuráveis, que nos trará uma grande surpresa.</p>
+</div>
+<div id="p2" class="ltx_para">
+<span class="ltx_ERROR undefined">{definition}</span>
+<p class="ltx_p">Uma função <math id="p2.m1" class="ltx_Math" alttext="\phi:E\to E^{\prime}" display="inline"><semantics><mrow><mi>ϕ</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>E</mi><mo stretchy="false">→</mo><msup><mi>E</mi><mo>′</mo></msup></mrow></mrow><annotation encoding="application/x-tex">\phi:E\to E^{\prime}</annotation></semantics></math> entre dois espaços mensuráveis é dita bi-mensurável  quando <math id="p2.m2" class="ltx_Math" alttext="\phi" display="inline"><semantics><mi>ϕ</mi><annotation encoding="application/x-tex">\phi</annotation></semantics></math> é uma bijeção mensurável, com inversa mensurável.</p>
+</div>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">Vamos agora tentar classificar os espaços a menos de bi-mensurabilidade.
+Descobriremos que na verdade os borelianos da reta incluem praticamente tudo em que podemos estar interessados.
+Começamos com a seguinte definição.</p>
+</div>
+<div id="p4" class="ltx_para">
+<span class="ltx_ERROR undefined">{definition}</span>
+<p class="ltx_p">Dizemos que o espaço mensurável <math id="p4.m1" class="ltx_Math" alttext="(E,\mathcal{A})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi>E</mi><mo>,</mo><mi class="ltx_font_mathcaligraphic">𝒜</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(E,\mathcal{A})</annotation></semantics></math> é canônico  se existe uma função <math id="p4.m2" class="ltx_Math" alttext="\phi:E\to B" display="inline"><semantics><mrow><mi>ϕ</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>E</mi><mo stretchy="false">→</mo><mi>B</mi></mrow></mrow><annotation encoding="application/x-tex">\phi:E\to B</annotation></semantics></math> bi-mensurável para algum <math id="p4.m3" class="ltx_Math" alttext="B\in\mathcal{B}(\mathbb{R})" display="inline"><semantics><mrow><mi>B</mi><mo>∈</mo><mrow><mi class="ltx_font_mathcaligraphic">ℬ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ℝ</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">B\in\mathcal{B}(\mathbb{R})</annotation></semantics></math>.</p>
+</div>
+<div id="p5" class="ltx_para">
+<p class="ltx_p">Antes de mostrar que essa classe de espaços canônicos inclui muitíssimos exemplos, vamos motivar a definição acima exemplificando como esse conceito pode ser utilizado.</p>
+</div>
+<div id="p6" class="ltx_para">
+<span class="ltx_ERROR undefined">{theorem}</span>
+<p class="ltx_p">[Extensão de Kolmogorov Extendida]
+
+Se <math id="p6.m1" class="ltx_Math" alttext="(E_{1},\mathcal{F}_{1}),(E_{2},\mathcal{F}_{2}),\dots" display="inline"><semantics><mrow><mrow><mo stretchy="false">(</mo><msub><mi>E</mi><mn>1</mn></msub><mo>,</mo><msub><mi class="ltx_font_mathcaligraphic">ℱ</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow><mo>,</mo><mrow><mo stretchy="false">(</mo><msub><mi>E</mi><mn>2</mn></msub><mo>,</mo><msub><mi class="ltx_font_mathcaligraphic">ℱ</mi><mn>2</mn></msub><mo stretchy="false">)</mo></mrow><mo>,</mo><mi mathvariant="normal">…</mi></mrow><annotation encoding="application/x-tex">(E_{1},\mathcal{F}_{1}),(E_{2},\mathcal{F}_{2}),\dots</annotation></semantics></math> são espaços mensuráveis canônicos, então o Teorema <a href="Ch2.S6.html#SS2" title="2.6.2 Teorema da Extensão de Kolmogorov ‣ 2.6 Espaços produto infinito ‣ Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.6.2</span></a> (da extensão de Kolmogorov)
+também é válido no espaço produto <math id="p6.m2" class="ltx_Math" alttext="\Omega=E_{1}\times E_{2}\times\dots" display="inline"><semantics><mrow><mi mathvariant="normal">Ω</mi><mo>=</mo><mrow><msub><mi>E</mi><mn>1</mn></msub><mo lspace="0.222em" rspace="0.222em">×</mo><msub><mi>E</mi><mn>2</mn></msub><mo lspace="0.222em" rspace="0.222em">×</mo><mi mathvariant="normal">…</mi></mrow></mrow><annotation encoding="application/x-tex">\Omega=E_{1}\times E_{2}\times\dots</annotation></semantics></math>: 
+<br class="ltx_break">Se a seguinte condição de consistência for válida</p>
+<div id="Ch2.E103" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch2.E103.m1" class="ltx_Math" alttext="\forall n\geq 0,\forall A\in\bigotimes_{i=1}^{n}\mathcal{F}_{i},\quad P_{n+1}(%
+A\times E_{n+1})=P_{n}(A)." display="block"><semantics><mrow><mrow><mrow><mrow><mo rspace="0.167em">∀</mo><mi>n</mi></mrow><mo>≥</mo><mn>0</mn></mrow><mo>,</mo><mrow><mrow><mrow><mo rspace="0.167em">∀</mo><mi>A</mi></mrow><mo rspace="0.111em">∈</mo><mrow><munderover><mo movablelimits="false">⨂</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><msub><mi class="ltx_font_mathcaligraphic">ℱ</mi><mi>i</mi></msub></mrow></mrow><mo rspace="1.167em">,</mo><mrow><mrow><msub><mi>P</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo lspace="0.222em" rspace="0.222em">×</mo><msub><mi>E</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msub><mi>P</mi><mi>n</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\forall n\geq 0,\forall A\in\bigotimes_{i=1}^{n}\mathcal{F}_{i},\quad P_{n+1}(%
+A\times E_{n+1})=P_{n}(A).</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(2.103)</span>
+            
+            
+          
+</div>
+<p class="ltx_p">então existe uma probabilidade <math id="p6.m3" class="ltx_Math" alttext="P" display="inline"><semantics><mi>P</mi><annotation encoding="application/x-tex">P</annotation></semantics></math> em <math id="p6.m4" class="ltx_Math" alttext="\Omega" display="inline"><semantics><mi mathvariant="normal">Ω</mi><annotation encoding="application/x-tex">\Omega</annotation></semantics></math> tal que</p>
+<div id="Ch2.E104" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch2.E104.m1" class="ltx_Math" alttext="\forall n\geq 0,\forall A\in\bigotimes_{i=1}^{n}\mathcal{F}_{i},\quad P(A%
+\times E_{n+1}\times E_{n+2}\times\dots)=P_{n}(A)." display="block"><semantics><mrow><mrow><mrow><mrow><mo rspace="0.167em">∀</mo><mi>n</mi></mrow><mo>≥</mo><mn>0</mn></mrow><mo>,</mo><mrow><mrow><mrow><mo rspace="0.167em">∀</mo><mi>A</mi></mrow><mo rspace="0.111em">∈</mo><mrow><munderover><mo movablelimits="false">⨂</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><msub><mi class="ltx_font_mathcaligraphic">ℱ</mi><mi>i</mi></msub></mrow></mrow><mo rspace="1.167em">,</mo><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo lspace="0.222em" rspace="0.222em">×</mo><msub><mi>E</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo lspace="0.222em" rspace="0.222em">×</mo><msub><mi>E</mi><mrow><mi>n</mi><mo>+</mo><mn>2</mn></mrow></msub><mo lspace="0.222em" rspace="0.222em">×</mo><mi mathvariant="normal">…</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msub><mi>P</mi><mi>n</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\forall n\geq 0,\forall A\in\bigotimes_{i=1}^{n}\mathcal{F}_{i},\quad P(A%
+\times E_{n+1}\times E_{n+2}\times\dots)=P_{n}(A).</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(2.104)</span>
+            
+            
+          
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demonstração.</h6>
+<div id="p7" class="ltx_para">
+<p class="ltx_p">Sejam <math id="p7.m1" class="ltx_Math" alttext="\phi_{i}:E_{i}\to B_{i}\in\mathcal{B}(\mathbb{R})" display="inline"><semantics><mrow><msub><mi>ϕ</mi><mi>i</mi></msub><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><msub><mi>E</mi><mi>i</mi></msub><mo stretchy="false">→</mo><msub><mi>B</mi><mi>i</mi></msub><mo>∈</mo><mrow><mi class="ltx_font_mathcaligraphic">ℬ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ℝ</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\phi_{i}:E_{i}\to B_{i}\in\mathcal{B}(\mathbb{R})</annotation></semantics></math> bijeções bi-mensuráveis e defina <math id="p7.m2" class="ltx_Math" alttext="\widebar{\phi}_{n}:E_{1}\times\dots\times E_{n}\to\mathbb{R}^{n}" display="inline"><semantics><mrow><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\widebar</mtext></merror><mo>⁢</mo><msub><mi>ϕ</mi><mi>n</mi></msub></mrow><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mrow><msub><mi>E</mi><mn>1</mn></msub><mo lspace="0.222em" rspace="0.222em">×</mo><mi mathvariant="normal">⋯</mi><mo lspace="0.222em" rspace="0.222em">×</mo><msub><mi>E</mi><mi>n</mi></msub></mrow><mo stretchy="false">→</mo><msup><mi>ℝ</mi><mi>n</mi></msup></mrow></mrow><annotation encoding="application/x-tex">\widebar{\phi}_{n}:E_{1}\times\dots\times E_{n}\to\mathbb{R}^{n}</annotation></semantics></math> por <math id="p7.m3" class="ltx_Math" alttext="\widebar{\phi}_{n}(\omega_{1},\dots,\omega_{n})=\big{(}\phi_{1}(\omega_{1}),%
+\dots,\phi_{n}(\omega_{n})\big{)}" display="inline"><semantics><mrow><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\widebar</mtext></merror><mo>⁢</mo><msub><mi>ϕ</mi><mi>n</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>ω</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>ω</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><msub><mi>ϕ</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>ω</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mrow><msub><mi>ϕ</mi><mi>n</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>ω</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><annotation encoding="application/x-tex">\widebar{\phi}_{n}(\omega_{1},\dots,\omega_{n})=\big{(}\phi_{1}(\omega_{1}),%
+\dots,\phi_{n}(\omega_{n})\big{)}</annotation></semantics></math>.
+Assim podemos introduzir as medidas de probabilidade</p>
+<div id="Ch2.E105" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch2.E105.m1" class="ltx_Math" alttext="\widebar{P}_{n}=(\widebar{\phi}_{n})_{*}P_{n},\text{ em $\mathbb{R}^{n}$}." display="block"><semantics><mrow><mrow><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\widebar</mtext></merror><mo>⁢</mo><msub><mi>P</mi><mi>n</mi></msub></mrow><mo>=</mo><mrow><mrow><msub><mrow><mo stretchy="false">(</mo><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\widebar</mtext></merror><mo>⁢</mo><msub><mi>ϕ</mi><mi>n</mi></msub></mrow><mo stretchy="false">)</mo></mrow><mo>∗</mo></msub><mo>⁢</mo><msub><mi>P</mi><mi>n</mi></msub></mrow><mo>,</mo><mrow><mtext> em </mtext><msup><mi>ℝ</mi><mi>n</mi></msup></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\widebar{P}_{n}=(\widebar{\phi}_{n})_{*}P_{n},\text{ em $\mathbb{R}^{n}$}.</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(2.105)</span>
+              
+              
+            
+</div>
+<p class="ltx_p">É fácil verificar que as <math id="p7.m4" class="ltx_Math" alttext="\widebar{P}_{n}" display="inline"><semantics><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\widebar</mtext></merror><mo>⁢</mo><msub><mi>P</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">\widebar{P}_{n}</annotation></semantics></math> são consistentes como em (<a href="Ch2.S6.html#Ch2.E58" title="In 2.6.2 Teorema da Extensão de Kolmogorov ‣ 2.6 Espaços produto infinito ‣ Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.58</span></a>).
+Logo, existe <math id="p7.m5" class="ltx_Math" alttext="\widebar{P}" display="inline"><semantics><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\widebar</mtext></merror><mo>⁢</mo><mi>P</mi></mrow><annotation encoding="application/x-tex">\widebar{P}</annotation></semantics></math> em <math id="p7.m6" class="ltx_Math" alttext="(\mathbb{R}^{\mathbb{N}},\mathcal{F})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><msup><mi>ℝ</mi><mi>ℕ</mi></msup><mo>,</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(\mathbb{R}^{\mathbb{N}},\mathcal{F})</annotation></semantics></math> extendendo <math id="p7.m7" class="ltx_Math" alttext="\widebar{P}_{n}" display="inline"><semantics><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\widebar</mtext></merror><mo>⁢</mo><msub><mi>P</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">\widebar{P}_{n}</annotation></semantics></math>.</p>
+</div>
+<div id="p8" class="ltx_para">
+<p class="ltx_p">Vamos agora definir uma medida em <math id="p8.m1" class="ltx_Math" alttext="\prod_{i=1}^{\infty}E_{i}" display="inline"><semantics><mrow><msubsup><mo>∏</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><msub><mi>E</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">\prod_{i=1}^{\infty}E_{i}</annotation></semantics></math>.
+Para tanto, primeiramente fixamos para cada <math id="p8.m2" class="ltx_Math" alttext="i\geq 1" display="inline"><semantics><mrow><mi>i</mi><mo>≥</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">i\geq 1</annotation></semantics></math> um elemento arbitrário <math id="p8.m3" class="ltx_Math" alttext="w_{i}" display="inline"><semantics><msub><mi>w</mi><mi>i</mi></msub><annotation encoding="application/x-tex">w_{i}</annotation></semantics></math> de <math id="p8.m4" class="ltx_Math" alttext="E_{i}" display="inline"><semantics><msub><mi>E</mi><mi>i</mi></msub><annotation encoding="application/x-tex">E_{i}</annotation></semantics></math> e definimos <math id="p8.m5" class="ltx_Math" alttext="\psi_{i}:\mathbb{R}\to E_{i}" display="inline"><semantics><mrow><msub><mi>ψ</mi><mi>i</mi></msub><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>ℝ</mi><mo stretchy="false">→</mo><msub><mi>E</mi><mi>i</mi></msub></mrow></mrow><annotation encoding="application/x-tex">\psi_{i}:\mathbb{R}\to E_{i}</annotation></semantics></math> por</p>
+<div id="Ch2.Ex7" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch2.Ex7.m1" class="ltx_Math" alttext="\psi_{i}(x)=\begin{cases}\phi_{i}^{-1}(x),\quad&amp;\text{se $x\in B_{i}$,}\\
+w_{i}&amp;\text{no caso contr\'{a}rio}.\end{cases}" display="block"><semantics><mrow><mrow><msub><mi>ψ</mi><mi>i</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo>{</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><msubsup><mi>ϕ</mi><mi>i</mi><mrow><mo>−</mo><mn>1</mn></mrow></msubsup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>,</mo></mrow></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mtext>se </mtext><mrow><mi>x</mi><mo>∈</mo><msub><mi>B</mi><mi>i</mi></msub></mrow><mtext>,</mtext></mrow></mtd></mtr><mtr><mtd class="ltx_align_left" columnalign="left"><msub><mi>w</mi><mi>i</mi></msub></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mtext>no caso contrário</mtext><mo lspace="0em">.</mo></mrow></mtd></mtr></mtable></mrow></mrow><annotation encoding="application/x-tex">\psi_{i}(x)=\begin{cases}\phi_{i}^{-1}(x),\quad&amp;\text{se $x\in B_{i}$,}\\
+w_{i}&amp;\text{no caso contr\'{a}rio}.\end{cases}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Como <math id="p8.m6" class="ltx_Math" alttext="B_{i}\in\mathcal{B}(\mathbb{R})" display="inline"><semantics><mrow><msub><mi>B</mi><mi>i</mi></msub><mo>∈</mo><mrow><mi class="ltx_font_mathcaligraphic">ℬ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ℝ</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">B_{i}\in\mathcal{B}(\mathbb{R})</annotation></semantics></math>, concluimos que <math id="p8.m7" class="ltx_Math" alttext="\psi_{i}" display="inline"><semantics><msub><mi>ψ</mi><mi>i</mi></msub><annotation encoding="application/x-tex">\psi_{i}</annotation></semantics></math> é mensurável.</p>
+</div>
+<div id="p9" class="ltx_para">
+<p class="ltx_p">Finalmente, consideramos o mapa <math id="p9.m1" class="ltx_Math" alttext="\Psi:\mathbb{R}^{\mathbb{N}}\to\Omega" display="inline"><semantics><mrow><mi mathvariant="normal">Ψ</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><msup><mi>ℝ</mi><mi>ℕ</mi></msup><mo stretchy="false">→</mo><mi mathvariant="normal">Ω</mi></mrow></mrow><annotation encoding="application/x-tex">\Psi:\mathbb{R}^{\mathbb{N}}\to\Omega</annotation></semantics></math> dado por</p>
+<div id="Ch2.E106" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch2.E106.m1" class="ltx_Math" alttext="\Psi(x_{1},x_{2},\dots)=(\psi_{1}(x_{1}),\psi_{2}(x_{2}),\dots)." display="block"><semantics><mrow><mrow><mrow><mi mathvariant="normal">Ψ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><msub><mi>x</mi><mn>2</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>ψ</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mo>,</mo><mrow><msub><mi>ψ</mi><mn>2</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>2</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mo>,</mo><mi mathvariant="normal">…</mi><mo stretchy="false">)</mo></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\Psi(x_{1},x_{2},\dots)=(\psi_{1}(x_{1}),\psi_{2}(x_{2}),\dots).</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(2.106)</span>
+              
+              
+            
+</div>
+<p class="ltx_p">Resta mostrar que a medida <math id="p9.m2" class="ltx_Math" alttext="P=\Psi_{*}\widebar{P}" display="inline"><semantics><mrow><mi>P</mi><mo>=</mo><mrow><msub><mi mathvariant="normal">Ψ</mi><mo>∗</mo></msub><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\widebar</mtext></merror><mo>⁢</mo><mi>P</mi></mrow></mrow><annotation encoding="application/x-tex">P=\Psi_{*}\widebar{P}</annotation></semantics></math> estende as probabilidades <math id="p9.m3" class="ltx_Math" alttext="P_{n}" display="inline"><semantics><msub><mi>P</mi><mi>n</mi></msub><annotation encoding="application/x-tex">P_{n}</annotation></semantics></math>.
+Observe que</p>
+<div id="Ch2.Ex8" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch2.Ex8.m1" class="ltx_Math" alttext="\begin{split}P\big{(}A_{1}\times\dots\times A_{n}\times&amp;E_{n+1}\times\dots\big%
+{)}=\widebar{P}\big{(}\Psi^{-1}(A_{1}\times\dots\times A_{n}\times E_{n+1}%
+\times\dots)\big{)}\\
+&amp;=\widebar{P}\big{(}\psi^{-1}_{1}(A_{1})\times\dots\times\psi^{-1}_{n}(A_{n})%
+\times\mathbb{R}\times\dots\big{)}\\
+&amp;=\widebar{P}_{n}(\psi^{-1}_{1}(A_{1})\times\dots\times\psi^{-1}_{n}(A_{n}))\\
+&amp;=P_{n}\big{(}\phi^{-1}_{1}\big{(}\psi^{-1}_{1}(A_{1}))\times\dots\times\phi^{%
+-1}_{n}\big{(}\psi_{n}^{-1}(A_{n})\big{)}\big{)}\\
+&amp;=P_{n}(A_{1}\times\dots\times A_{n}),\end{split}" display="block"><semantics><mtable columnspacing="0pt" displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_align_right" columnalign="right"><mrow><mi>P</mi><mrow><mo maxsize="120%" minsize="120%">(</mo><msub><mi>A</mi><mn>1</mn></msub><mo lspace="0.222em" rspace="0.222em">×</mo><mi mathvariant="normal">⋯</mi><mo lspace="0.222em" rspace="0.222em">×</mo><msub><mi>A</mi><mi>n</mi></msub><mo lspace="0.222em">×</mo></mrow></mrow></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><msub><mi>E</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo lspace="0.222em" rspace="0.222em">×</mo><mi mathvariant="normal">…</mi><mo maxsize="120%" minsize="120%">)</mo><mo>=</mo><merror class="ltx_ERROR undefined undefined"><mtext>\widebar</mtext></merror><mi>P</mi><mo maxsize="120%" minsize="120%">(</mo><msup><mi mathvariant="normal">Ψ</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mn>1</mn></msub><mo lspace="0.222em" rspace="0.222em">×</mo><mi mathvariant="normal">⋯</mi><mo lspace="0.222em" rspace="0.222em">×</mo><msub><mi>A</mi><mi>n</mi></msub><mo lspace="0.222em" rspace="0.222em">×</mo><msub><mi>E</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo lspace="0.222em" rspace="0.222em">×</mo><mi mathvariant="normal">…</mi><mo stretchy="false">)</mo></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mtd></mtr><mtr><mtd></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mi></mi><mo>=</mo><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\widebar</mtext></merror><mo>⁢</mo><mi>P</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mrow><mrow><mrow><msubsup><mi>ψ</mi><mn>1</mn><mrow><mo>−</mo><mn>1</mn></mrow></msubsup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mn>1</mn></msub><mo rspace="0.055em" stretchy="false">)</mo></mrow></mrow><mo rspace="0.222em">×</mo><mi mathvariant="normal">⋯</mi><mo lspace="0.222em" rspace="0.222em">×</mo><msubsup><mi>ψ</mi><mi>n</mi><mrow><mo>−</mo><mn>1</mn></mrow></msubsup></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mi>n</mi></msub><mo rspace="0.055em" stretchy="false">)</mo></mrow></mrow><mo rspace="0.222em">×</mo><mi>ℝ</mi><mo lspace="0.222em" rspace="0.222em">×</mo><mi mathvariant="normal">…</mi></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow></mtd></mtr><mtr><mtd></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mi></mi><mo>=</mo><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\widebar</mtext></merror><mo>⁢</mo><msub><mi>P</mi><mi>n</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mrow><msubsup><mi>ψ</mi><mn>1</mn><mrow><mo>−</mo><mn>1</mn></mrow></msubsup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mn>1</mn></msub><mo rspace="0.055em" stretchy="false">)</mo></mrow></mrow><mo rspace="0.222em">×</mo><mi mathvariant="normal">⋯</mi><mo lspace="0.222em" rspace="0.222em">×</mo><msubsup><mi>ψ</mi><mi>n</mi><mrow><mo>−</mo><mn>1</mn></mrow></msubsup></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mtd></mtr><mtr><mtd></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mi></mi><mo>=</mo><mrow><msub><mi>P</mi><mi>n</mi></msub><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mrow><mrow><msubsup><mi>ϕ</mi><mn>1</mn><mrow><mo>−</mo><mn>1</mn></mrow></msubsup><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><msubsup><mi>ψ</mi><mn>1</mn><mrow><mo>−</mo><mn>1</mn></mrow></msubsup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mo rspace="0.055em" stretchy="false">)</mo></mrow></mrow><mo rspace="0.222em">×</mo><mi mathvariant="normal">⋯</mi><mo lspace="0.222em" rspace="0.222em">×</mo><msubsup><mi>ϕ</mi><mi>n</mi><mrow><mo>−</mo><mn>1</mn></mrow></msubsup></mrow><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><msubsup><mi>ψ</mi><mi>n</mi><mrow><mo>−</mo><mn>1</mn></mrow></msubsup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow></mtd></mtr><mtr><mtd></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mi></mi><mo>=</mo><mrow><msub><mi>P</mi><mi>n</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>A</mi><mn>1</mn></msub><mo lspace="0.222em" rspace="0.222em">×</mo><mi mathvariant="normal">⋯</mi><mo lspace="0.222em" rspace="0.222em">×</mo><msub><mi>A</mi><mi>n</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>,</mo></mrow></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{split}P\big{(}A_{1}\times\dots\times A_{n}\times&amp;E_{n+1}\times\dots\big%
+{)}=\widebar{P}\big{(}\Psi^{-1}(A_{1}\times\dots\times A_{n}\times E_{n+1}%
+\times\dots)\big{)}\\
+&amp;=\widebar{P}\big{(}\psi^{-1}_{1}(A_{1})\times\dots\times\psi^{-1}_{n}(A_{n})%
+\times\mathbb{R}\times\dots\big{)}\\
+&amp;=\widebar{P}_{n}(\psi^{-1}_{1}(A_{1})\times\dots\times\psi^{-1}_{n}(A_{n}))\\
+&amp;=P_{n}\big{(}\phi^{-1}_{1}\big{(}\psi^{-1}_{1}(A_{1}))\times\dots\times\phi^{%
+-1}_{n}\big{(}\psi_{n}^{-1}(A_{n})\big{)}\big{)}\\
+&amp;=P_{n}(A_{1}\times\dots\times A_{n}),\end{split}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">concluindo a prova do teorema.
+∎</p>
+</div>
+</div>
+<div id="p10" class="ltx_para">
+<p class="ltx_p">Uma ferramenta importante para construirmos espaços canônicos é a seguinte.</p>
+</div>
+<div id="p11" class="ltx_para">
+<span class="ltx_ERROR undefined">{lemma}</span>
+<p class="ltx_p">Seja <math id="p11.m1" class="ltx_Math" alttext="(E,\mathcal{A})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi>E</mi><mo>,</mo><mi class="ltx_font_mathcaligraphic">𝒜</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(E,\mathcal{A})</annotation></semantics></math> é um espaço canônico e <math id="p11.m2" class="ltx_Math" alttext="A\in\mathcal{A}" display="inline"><semantics><mrow><mi>A</mi><mo>∈</mo><mi class="ltx_font_mathcaligraphic">𝒜</mi></mrow><annotation encoding="application/x-tex">A\in\mathcal{A}</annotation></semantics></math>, então <math id="p11.m3" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> também é canônico quando dotado da <math id="p11.m4" class="ltx_Math" alttext="\sigma" display="inline"><semantics><mi>σ</mi><annotation encoding="application/x-tex">\sigma</annotation></semantics></math>-álgebra <math id="p11.m5" class="ltx_Math" alttext="\{A\cap C\,:\,C\in\mathcal{A}\}" display="inline"><semantics><mrow><mo stretchy="false">{</mo><mrow><mi>A</mi><mo>∩</mo><mi>C</mi></mrow><mo lspace="0.448em" rspace="0.448em">:</mo><mrow><mi>C</mi><mo>∈</mo><mi class="ltx_font_mathcaligraphic">𝒜</mi></mrow><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{A\cap C\,:\,C\in\mathcal{A}\}</annotation></semantics></math> induzida por <math id="p11.m6" class="ltx_Math" alttext="\mathcal{A}" display="inline"><semantics><mi class="ltx_font_mathcaligraphic">𝒜</mi><annotation encoding="application/x-tex">\mathcal{A}</annotation></semantics></math> em <math id="p11.m7" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>.</p>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demonstração.</h6>
+<div id="p12" class="ltx_para">
+<p class="ltx_p">Seja <math id="p12.m1" class="ltx_Math" alttext="\phi:E\to B\in\mathcal{B}(\mathbb{R})" display="inline"><semantics><mrow><mi>ϕ</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>E</mi><mo stretchy="false">→</mo><mi>B</mi><mo>∈</mo><mrow><mi class="ltx_font_mathcaligraphic">ℬ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ℝ</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\phi:E\to B\in\mathcal{B}(\mathbb{R})</annotation></semantics></math> uma função bi-mensurável que mostra que <math id="p12.m2" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math> é canônico.
+Consideramos <math id="p12.m3" class="ltx_Math" alttext="\phi^{\prime}:A\to\mathbb{R}" display="inline"><semantics><mrow><msup><mi>ϕ</mi><mo>′</mo></msup><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>A</mi><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">\phi^{\prime}:A\to\mathbb{R}</annotation></semantics></math> dada pela restrição de <math id="p12.m4" class="ltx_Math" alttext="\phi" display="inline"><semantics><mi>ϕ</mi><annotation encoding="application/x-tex">\phi</annotation></semantics></math> a <math id="p12.m5" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> e precisamos mostrar as seguintes afirmativas:</p>
+<ol id="I1" class="ltx_enumerate">
+<li id="I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"> a)</span><div id="I1.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i1.p1.m1" class="ltx_Math" alttext="\phi^{\prime}" display="inline"><semantics><msup><mi>ϕ</mi><mo>′</mo></msup><annotation encoding="application/x-tex">\phi^{\prime}</annotation></semantics></math> é injetiva.</p>
+</div>
+</li>
+<li id="I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"> b)</span><div id="I1.i2.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i2.p1.m1" class="ltx_Math" alttext="\phi^{\prime}" display="inline"><semantics><msup><mi>ϕ</mi><mo>′</mo></msup><annotation encoding="application/x-tex">\phi^{\prime}</annotation></semantics></math> é mensurável.</p>
+</div>
+</li>
+<li id="I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"> c)</span><div id="I1.i3.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i3.p1.m1" class="ltx_Math" alttext="\phi(A)\in\mathcal{B}(\mathbb{R})" display="inline"><semantics><mrow><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo>∈</mo><mrow><mi class="ltx_font_mathcaligraphic">ℬ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ℝ</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\phi(A)\in\mathcal{B}(\mathbb{R})</annotation></semantics></math>.</p>
+</div>
+</li>
+<li id="I1.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"> d)</span><div id="I1.i4.p1" class="ltx_para">​<p class="ltx_p">A inversa de <math id="I1.i4.p1.m1" class="ltx_Math" alttext="\phi^{\prime}" display="inline"><semantics><msup><mi>ϕ</mi><mo>′</mo></msup><annotation encoding="application/x-tex">\phi^{\prime}</annotation></semantics></math> (chamada <math id="I1.i4.p1.m2" class="ltx_Math" alttext="\psi^{\prime}" display="inline"><semantics><msup><mi>ψ</mi><mo>′</mo></msup><annotation encoding="application/x-tex">\psi^{\prime}</annotation></semantics></math>) de <math id="I1.i4.p1.m3" class="ltx_Math" alttext="\phi^{\prime}(A)" display="inline"><semantics><mrow><msup><mi>ϕ</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\phi^{\prime}(A)</annotation></semantics></math> em <math id="I1.i4.p1.m4" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> é mensurável.</p>
+</div>
+</li>
+</ol>
+<p class="ltx_p">Vejamos,</p>
+<ol id="I2" class="ltx_enumerate">
+<li id="I2.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"> a)</span><div id="I2.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i1.p1.m1" class="ltx_Math" alttext="\phi" display="inline"><semantics><mi>ϕ</mi><annotation encoding="application/x-tex">\phi</annotation></semantics></math> ser injetiva implica que <math id="I2.i1.p1.m2" class="ltx_Math" alttext="\phi^{\prime}" display="inline"><semantics><msup><mi>ϕ</mi><mo>′</mo></msup><annotation encoding="application/x-tex">\phi^{\prime}</annotation></semantics></math> também o é.</p>
+</div>
+</li>
+<li id="I2.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"> b)</span><div id="I2.i2.p1" class="ltx_para">​<p class="ltx_p">Dado <math id="I2.i2.p1.m1" class="ltx_Math" alttext="D\in\mathcal{B}(\mathbb{R})" display="inline"><semantics><mrow><mi>D</mi><mo>∈</mo><mrow><mi class="ltx_font_mathcaligraphic">ℬ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ℝ</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">D\in\mathcal{B}(\mathbb{R})</annotation></semantics></math>, <math id="I2.i2.p1.m2" class="ltx_Math" alttext="(\phi^{\prime})^{-1}(D)=A\cap\phi^{-1}(D)" display="inline"><semantics><mrow><mrow><msup><mrow><mo stretchy="false">(</mo><msup><mi>ϕ</mi><mo>′</mo></msup><mo stretchy="false">)</mo></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>D</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>A</mi><mo>∩</mo><mrow><msup><mi>ϕ</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>D</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">(\phi^{\prime})^{-1}(D)=A\cap\phi^{-1}(D)</annotation></semantics></math> which is of the form <math id="I2.i2.p1.m3" class="ltx_Math" alttext="A\cap C" display="inline"><semantics><mrow><mi>A</mi><mo>∩</mo><mi>C</mi></mrow><annotation encoding="application/x-tex">A\cap C</annotation></semantics></math> with <math id="I2.i2.p1.m4" class="ltx_Math" alttext="C\in\mathcal{B}(\mathbb{R}^{d})" display="inline"><semantics><mrow><mi>C</mi><mo>∈</mo><mrow><mi class="ltx_font_mathcaligraphic">ℬ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>ℝ</mi><mi>d</mi></msup><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">C\in\mathcal{B}(\mathbb{R}^{d})</annotation></semantics></math>.</p>
+</div>
+</li>
+<li id="I2.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"> c)</span><div id="I2.i3.p1" class="ltx_para">​<p class="ltx_p">Denotando por <math id="I2.i3.p1.m1" class="ltx_Math" alttext="\psi:B\to E" display="inline"><semantics><mrow><mi>ψ</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>B</mi><mo stretchy="false">→</mo><mi>E</mi></mrow></mrow><annotation encoding="application/x-tex">\psi:B\to E</annotation></semantics></math> a inversa de <math id="I2.i3.p1.m2" class="ltx_Math" alttext="\phi" display="inline"><semantics><mi>ϕ</mi><annotation encoding="application/x-tex">\phi</annotation></semantics></math>, temos que <math id="I2.i3.p1.m3" class="ltx_Math" alttext="\phi(A)=\psi^{-1}(A)\in\mathcal{B}(B)" display="inline"><semantics><mrow><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msup><mi>ψ</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo>∈</mo><mrow><mi class="ltx_font_mathcaligraphic">ℬ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>B</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\phi(A)=\psi^{-1}(A)\in\mathcal{B}(B)</annotation></semantics></math> pois <math id="I2.i3.p1.m4" class="ltx_Math" alttext="\psi" display="inline"><semantics><mi>ψ</mi><annotation encoding="application/x-tex">\psi</annotation></semantics></math> é mensurável.</p>
+</div>
+</li>
+<li id="I2.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"> d)</span><div id="I2.i4.p1" class="ltx_para">​<p class="ltx_p">Finalmente, se <math id="I2.i4.p1.m1" class="ltx_Math" alttext="D\in\mathcal{B}(A)" display="inline"><semantics><mrow><mi>D</mi><mo>∈</mo><mrow><mi class="ltx_font_mathcaligraphic">ℬ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">D\in\mathcal{B}(A)</annotation></semantics></math>, então <math id="I2.i4.p1.m2" class="ltx_Math" alttext="(\psi^{\prime})^{-1}(D)=\psi^{-1}(D)\in\mathcal{B}(B)" display="inline"><semantics><mrow><mrow><msup><mrow><mo stretchy="false">(</mo><msup><mi>ψ</mi><mo>′</mo></msup><mo stretchy="false">)</mo></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>D</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msup><mi>ψ</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>D</mi><mo stretchy="false">)</mo></mrow></mrow><mo>∈</mo><mrow><mi class="ltx_font_mathcaligraphic">ℬ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>B</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">(\psi^{\prime})^{-1}(D)=\psi^{-1}(D)\in\mathcal{B}(B)</annotation></semantics></math>, novamente pela mensurabilidade de <math id="I2.i4.p1.m3" class="ltx_Math" alttext="\psi" display="inline"><semantics><mi>ψ</mi><annotation encoding="application/x-tex">\psi</annotation></semantics></math>.</p>
+</div>
+</li>
+</ol>
+<p class="ltx_p">Concluindo portanto a bi-mensurabilidade de <math id="p12.m6" class="ltx_Math" alttext="\phi^{\prime}" display="inline"><semantics><msup><mi>ϕ</mi><mo>′</mo></msup><annotation encoding="application/x-tex">\phi^{\prime}</annotation></semantics></math> quando o seu contra-domínio é restrito a sua imagem.
+∎</p>
+</div>
+</div>
+<div id="p13" class="ltx_para">
+<p class="ltx_p">A seguir daremos um exemplo de espaço canônico que será importante na seção seguinte.</p>
+</div>
+<div id="p14" class="ltx_para">
+<span class="ltx_ERROR undefined">{lemma}</span>
+<p class="ltx_p">O espaço produto <math id="p14.m1" class="ltx_Math" alttext="E=\mathbb{N}\times\mathbb{N}\times\dots" display="inline"><semantics><mrow><mi>E</mi><mo>=</mo><mrow><mi>ℕ</mi><mo lspace="0.222em" rspace="0.222em">×</mo><mi>ℕ</mi><mo lspace="0.222em" rspace="0.222em">×</mo><mi mathvariant="normal">…</mi></mrow></mrow><annotation encoding="application/x-tex">E=\mathbb{N}\times\mathbb{N}\times\dots</annotation></semantics></math>, dotado da <math id="p14.m2" class="ltx_Math" alttext="\sigma" display="inline"><semantics><mi>σ</mi><annotation encoding="application/x-tex">\sigma</annotation></semantics></math>-álgebra produto é canônico.</p>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demonstração.</h6>
+<div id="p15" class="ltx_para">
+<p class="ltx_p">Primeiramente definimos em <math id="p15.m1" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math> a Métrica de Hamming:</p>
+<div id="Ch2.E107" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch2.E107.m1" class="ltx_Math" alttext="d_{H}(x,y)=\sum_{i\geq 1}\frac{1}{2^{i+1}}\1_{\{x_{i}\neq y_{i}\}}." display="block"><semantics><mrow><mrow><mrow><msub><mi>d</mi><mi>H</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mo rspace="0.111em">=</mo><mrow><munder><mo movablelimits="false">∑</mo><mrow><mi>i</mi><mo>≥</mo><mn>1</mn></mrow></munder><mrow><mfrac><mn>1</mn><msup><mn>2</mn><mrow><mi>i</mi><mo>+</mo><mn>1</mn></mrow></msup></mfrac><mo>⁢</mo><msub><merror class="ltx_ERROR undefined undefined"><mtext>\1</mtext></merror><mrow><mo stretchy="false">{</mo><mrow><msub><mi>x</mi><mi>i</mi></msub><mo>≠</mo><msub><mi>y</mi><mi>i</mi></msub></mrow><mo stretchy="false">}</mo></mrow></msub></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">d_{H}(x,y)=\sum_{i\geq 1}\frac{1}{2^{i+1}}\1_{\{x_{i}\neq y_{i}\}}.</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(2.107)</span>
+              
+              
+            
+</div>
+<p class="ltx_p">Fica como exercício mostrar que a <math id="p15.m2" class="ltx_Math" alttext="\sigma" display="inline"><semantics><mi>σ</mi><annotation encoding="application/x-tex">\sigma</annotation></semantics></math>-álgebra dos borelianos induzida por essa métrica coincide com a <math id="p15.m3" class="ltx_Math" alttext="\sigma" display="inline"><semantics><mi>σ</mi><annotation encoding="application/x-tex">\sigma</annotation></semantics></math>-álgebra produto em <math id="p15.m4" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math>.
+Definimos agora o mapa <math id="p15.m5" class="ltx_Math" alttext="\phi:E\to\mathbb{R}" display="inline"><semantics><mrow><mi>ϕ</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>E</mi><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">\phi:E\to\mathbb{R}</annotation></semantics></math> dado por</p>
+<div id="Ch2.E108" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch2.E108.m1" class="ltx_Math" alttext="\phi(n_{1},n_{2},\dots)=2^{-n_{1}}+2^{-1-n_{1}-n_{2}}+\dots+2^{-k-\sum_{i=1}^{%
+k}n_{i}}+\dots" display="block"><semantics><mrow><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>n</mi><mn>1</mn></msub><mo>,</mo><msub><mi>n</mi><mn>2</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msup><mn>2</mn><mrow><mo>−</mo><msub><mi>n</mi><mn>1</mn></msub></mrow></msup><mo>+</mo><msup><mn>2</mn><mrow><mrow><mo>−</mo><mn>1</mn></mrow><mo>−</mo><msub><mi>n</mi><mn>1</mn></msub><mo>−</mo><msub><mi>n</mi><mn>2</mn></msub></mrow></msup><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><msup><mn>2</mn><mrow><mrow><mo>−</mo><mi>k</mi></mrow><mo>−</mo><mrow><mstyle displaystyle="false"><msubsup><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>k</mi></msubsup></mstyle><msub><mi>n</mi><mi>i</mi></msub></mrow></mrow></msup><mo>+</mo><mi mathvariant="normal">…</mi></mrow></mrow><annotation encoding="application/x-tex">\phi(n_{1},n_{2},\dots)=2^{-n_{1}}+2^{-1-n_{1}-n_{2}}+\dots+2^{-k-\sum_{i=1}^{%
+k}n_{i}}+\dots</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(2.108)</span>
+              
+              
+            
+</div>
+<p class="ltx_p">Também deixamos a cargo do leitor mostrar que <math id="p15.m6" class="ltx_Math" alttext="\phi" display="inline"><semantics><mi>ϕ</mi><annotation encoding="application/x-tex">\phi</annotation></semantics></math> define um homeomorfismo entre <math id="p15.m7" class="ltx_Math" alttext="(E,d_{H})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi>E</mi><mo>,</mo><msub><mi>d</mi><mi>H</mi></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(E,d_{H})</annotation></semantics></math> e um boreliano de <math id="p15.m8" class="ltx_Math" alttext="\mathbb{R}" display="inline"><semantics><mi>ℝ</mi><annotation encoding="application/x-tex">\mathbb{R}</annotation></semantics></math>.
+∎</p>
+</div>
+</div>
+<section id="SS1" class="ltx_subsection normal">
+<div class="section level2">
+
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection header-section-number">2.10.1</span> Espaços poloneses</h2>
+
+<div id="SS1.p1" class="ltx_para">
+<p class="ltx_p">Nessa seção mostraremos que todos espaços chamados poloneses são canônicos.</p>
+</div>
+<div id="SS1.p2" class="ltx_para">
+<span class="ltx_ERROR undefined">{definition}</span>
+<p class="ltx_p">Um espaço métrico <math id="SS1.p2.m1" class="ltx_Math" alttext="(E,d)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi>E</mi><mo>,</mo><mi>d</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(E,d)</annotation></semantics></math> é dito polonês  se é separável e completo.</p>
+</div>
+<div id="SS1.p3" class="ltx_para">
+<span class="ltx_ERROR undefined">{example}</span>
+<p class="ltx_p"></p>
+<ol id="I3" class="ltx_enumerate">
+<li id="I3.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"> a)</span><div id="I3.i1.p1" class="ltx_para">​<p class="ltx_p">Todo espaço enumerável <math id="I3.i1.p1.m1" class="ltx_Math" alttext="\Omega" display="inline"><semantics><mi mathvariant="normal">Ω</mi><annotation encoding="application/x-tex">\Omega</annotation></semantics></math> pode ser feito em um espaço métrico polonês de forma que a <math id="I3.i1.p1.m2" class="ltx_Math" alttext="\sigma" display="inline"><semantics><mi>σ</mi><annotation encoding="application/x-tex">\sigma</annotation></semantics></math>-álgebra de Borel seja <math id="I3.i1.p1.m3" class="ltx_Math" alttext="\mathcal{P}(\Omega)" display="inline"><semantics><mrow><mi class="ltx_font_mathcaligraphic">𝒫</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">Ω</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mathcal{P}(\Omega)</annotation></semantics></math>.</p>
+</div>
+</li>
+<li id="I3.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"> b)</span><div id="I3.i2.p1" class="ltx_para">​<p class="ltx_p"><math id="I3.i2.p1.m1" class="ltx_Math" alttext="\mathbb{R}^{n}" display="inline"><semantics><msup><mi>ℝ</mi><mi>n</mi></msup><annotation encoding="application/x-tex">\mathbb{R}^{n}</annotation></semantics></math> e <math id="I3.i2.p1.m2" class="ltx_Math" alttext="C([0,1])" display="inline"><semantics><mrow><mi>C</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mo stretchy="false">[</mo><mn>0,1</mn><mo stretchy="false">]</mo></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">C([0,1])</annotation></semantics></math> são notoriamente poloneses.</p>
+</div>
+</li>
+</ol>
+</div>
+<div id="SS1.p4" class="ltx_para">
+<span class="ltx_ERROR undefined">{exercise}</span>
+<p class="ltx_p">Se <math id="SS1.p4.m1" class="ltx_Math" alttext="(E_{i},d_{i})_{i=1}^{\infty}" display="inline"><semantics><msubsup><mrow><mo stretchy="false">(</mo><msub><mi>E</mi><mi>i</mi></msub><mo>,</mo><msub><mi>d</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><annotation encoding="application/x-tex">(E_{i},d_{i})_{i=1}^{\infty}</annotation></semantics></math> é uma sequencia de espaços métricos poloneses, mostre que <math id="SS1.p4.m2" class="ltx_Math" alttext="E=\prod_{i=1}^{\infty}E_{i}" display="inline"><semantics><mrow><mi>E</mi><mo rspace="0.111em">=</mo><mrow><msubsup><mo>∏</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><msub><mi>E</mi><mi>i</mi></msub></mrow></mrow><annotation encoding="application/x-tex">E=\prod_{i=1}^{\infty}E_{i}</annotation></semantics></math> com a métrica</p>
+<div id="Ch2.E109" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch2.E109.m1" class="ltx_Math" alttext="d(x,y)=\sum_{i=1}^{\infty}\frac{1}{2^{i+1}}\frac{d_{i}(x_{i},y_{i})}{1+d_{i}(x%
+_{i},y_{i})}" display="block"><semantics><mrow><mrow><mi>d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><mfrac><mn>1</mn><msup><mn>2</mn><mrow><mi>i</mi><mo>+</mo><mn>1</mn></mrow></msup></mfrac><mo>⁢</mo><mfrac><mrow><msub><mi>d</mi><mi>i</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mi>i</mi></msub><mo>,</mo><msub><mi>y</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mrow><mn>1</mn><mo>+</mo><mrow><msub><mi>d</mi><mi>i</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mi>i</mi></msub><mo>,</mo><msub><mi>y</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow></mfrac></mrow></mrow></mrow><annotation encoding="application/x-tex">d(x,y)=\sum_{i=1}^{\infty}\frac{1}{2^{i+1}}\frac{d_{i}(x_{i},y_{i})}{1+d_{i}(x%
+_{i},y_{i})}</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(2.109)</span>
+              
+              
+            
+</div>
+<p class="ltx_p">também é polonês.
+Mostre também que a topologia induzida por essa métrica é equivalente à topologia produto em <math id="SS1.p4.m3" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math>.</p>
+</div>
+<div id="SS1.p5" class="ltx_para">
+<p class="ltx_p">Outros exemplos de espaços poloneses são dados pelo seguinte lema, que também será útil para provar o resultado principal desta seção.</p>
+</div>
+<div id="SS1.p6" class="ltx_para">
+<span class="ltx_ERROR undefined">{lemma}</span>
+<p class="ltx_p">Seja <math id="SS1.p6.m1" class="ltx_Math" alttext="(E,d)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi>E</mi><mo>,</mo><mi>d</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(E,d)</annotation></semantics></math> um espaço polonês e <math id="SS1.p6.m2" class="ltx_Math" alttext="G,F\subseteq E" display="inline"><semantics><mrow><mrow><mi>G</mi><mo>,</mo><mi>F</mi></mrow><mo>⊆</mo><mi>E</mi></mrow><annotation encoding="application/x-tex">G,F\subseteq E</annotation></semantics></math> um aberto e um fechado de <math id="SS1.p6.m3" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math> respectivamente.
+Então, existe uma métrica <math id="SS1.p6.m4" class="ltx_Math" alttext="d^{\prime}" display="inline"><semantics><msup><mi>d</mi><mo>′</mo></msup><annotation encoding="application/x-tex">d^{\prime}</annotation></semantics></math> em <math id="SS1.p6.m5" class="ltx_Math" alttext="F\cap G" display="inline"><semantics><mrow><mi>F</mi><mo>∩</mo><mi>G</mi></mrow><annotation encoding="application/x-tex">F\cap G</annotation></semantics></math> tal que</p>
+<ol id="I4" class="ltx_enumerate">
+<li id="I4.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"> a)</span><div id="I4.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I4.i1.p1.m1" class="ltx_Math" alttext="d" display="inline"><semantics><mi>d</mi><annotation encoding="application/x-tex">d</annotation></semantics></math> e <math id="I4.i1.p1.m2" class="ltx_Math" alttext="d^{\prime}" display="inline"><semantics><msup><mi>d</mi><mo>′</mo></msup><annotation encoding="application/x-tex">d^{\prime}</annotation></semantics></math> são equivalentes em <math id="I4.i1.p1.m3" class="ltx_Math" alttext="F\cap G" display="inline"><semantics><mrow><mi>F</mi><mo>∩</mo><mi>G</mi></mrow><annotation encoding="application/x-tex">F\cap G</annotation></semantics></math> (induzem a mesma noção de convergência),</p>
+</div>
+</li>
+<li id="I4.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"> b)</span><div id="I4.i2.p1" class="ltx_para">​<p class="ltx_p"><math id="I4.i2.p1.m1" class="ltx_Math" alttext="d(x,y)\leq d^{\prime}(x,y)" display="inline"><semantics><mrow><mrow><mi>d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≤</mo><mrow><msup><mi>d</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">d(x,y)\leq d^{\prime}(x,y)</annotation></semantics></math> para todo <math id="I4.i2.p1.m2" class="ltx_Math" alttext="x,y\in F\cap G" display="inline"><semantics><mrow><mrow><mi>x</mi><mo>,</mo><mi>y</mi></mrow><mo>∈</mo><mrow><mi>F</mi><mo>∩</mo><mi>G</mi></mrow></mrow><annotation encoding="application/x-tex">x,y\in F\cap G</annotation></semantics></math> e</p>
+</div>
+</li>
+<li id="I4.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"> c)</span><div id="I4.i3.p1" class="ltx_para">​<p class="ltx_p"><math id="I4.i3.p1.m1" class="ltx_Math" alttext="(F\cap G,d^{\prime})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mrow><mi>F</mi><mo>∩</mo><mi>G</mi></mrow><mo>,</mo><msup><mi>d</mi><mo>′</mo></msup><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(F\cap G,d^{\prime})</annotation></semantics></math> é polonês.</p>
+</div>
+</li>
+</ol>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demonstração.</h6>
+<div id="SS1.p7" class="ltx_para">
+<p class="ltx_p">A primeira observação que faremos é que <math id="SS1.p7.m1" class="ltx_Math" alttext="F\cap G" display="inline"><semantics><mrow><mi>F</mi><mo>∩</mo><mi>G</mi></mrow><annotation encoding="application/x-tex">F\cap G</annotation></semantics></math> é separável com respeito a <math id="SS1.p7.m2" class="ltx_Math" alttext="d" display="inline"><semantics><mi>d</mi><annotation encoding="application/x-tex">d</annotation></semantics></math>.
+Isso segue do fato de separabilidade ser equivalente à existência de uma base enumerável.</p>
+</div>
+<div id="SS1.p8" class="ltx_para">
+<p class="ltx_p">Vamos definir para <math id="SS1.p8.m1" class="ltx_Math" alttext="x,y" display="inline"><semantics><mrow><mi>x</mi><mo>,</mo><mi>y</mi></mrow><annotation encoding="application/x-tex">x,y</annotation></semantics></math> em <math id="SS1.p8.m2" class="ltx_Math" alttext="G" display="inline"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>,</p>
+<div id="Ch2.E110" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch2.E110.m1" class="ltx_Math" alttext="d^{\prime}(x,y)=d(x,y)+\Big{|}\frac{1}{d(x,G^{c})}-\frac{1}{d(y,G^{c})}\Big{|}," display="block"><semantics><mrow><mrow><mrow><msup><mi>d</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mo maxsize="160%" minsize="160%">|</mo><mrow><mfrac><mn>1</mn><mrow><mi>d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><msup><mi>G</mi><mi>c</mi></msup><mo stretchy="false">)</mo></mrow></mrow></mfrac><mo>−</mo><mfrac><mn>1</mn><mrow><mi>d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo>,</mo><msup><mi>G</mi><mi>c</mi></msup><mo stretchy="false">)</mo></mrow></mrow></mfrac></mrow><mo maxsize="160%" minsize="160%">|</mo></mrow></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">d^{\prime}(x,y)=d(x,y)+\Big{|}\frac{1}{d(x,G^{c})}-\frac{1}{d(y,G^{c})}\Big{|},</annotation></semantics></math></span>
+                <span class="ltx_tag ltx_tag_equation ltx_align_right">(2.110)</span>
+                
+                
+              
+</div>
+<p class="ltx_p">onde <math id="SS1.p8.m3" class="ltx_Math" alttext="d(x,A)=\inf\{d(x,x^{\prime})\,:\,x^{\prime}\in A\}" display="inline"><semantics><mrow><mrow><mi>d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo rspace="0.1389em">=</mo><mrow><mo lspace="0.1389em" rspace="0em">inf</mo><mrow><mo stretchy="false">{</mo><mrow><mi>d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><msup><mi>x</mi><mo>′</mo></msup><mo rspace="0.448em" stretchy="false">)</mo></mrow></mrow><mo rspace="0.448em">:</mo><mrow><msup><mi>x</mi><mo>′</mo></msup><mo>∈</mo><mi>A</mi></mrow><mo stretchy="false">}</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">d(x,A)=\inf\{d(x,x^{\prime})\,:\,x^{\prime}\in A\}</annotation></semantics></math>.
+Não é difícil ver que com a definição acima (e deixamos como exercício) que:</p>
+<ol id="I5" class="ltx_enumerate">
+<li id="I5.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"> a)</span><div id="I5.i1.p1" class="ltx_para">​<p class="ltx_p">As métricas <math id="I5.i1.p1.m1" class="ltx_Math" alttext="d" display="inline"><semantics><mi>d</mi><annotation encoding="application/x-tex">d</annotation></semantics></math> e <math id="I5.i1.p1.m2" class="ltx_Math" alttext="d^{\prime}" display="inline"><semantics><msup><mi>d</mi><mo>′</mo></msup><annotation encoding="application/x-tex">d^{\prime}</annotation></semantics></math> são equivalentes em <math id="I5.i1.p1.m3" class="ltx_Math" alttext="G" display="inline"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>.</p>
+</div>
+</li>
+<li id="I5.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"> b)</span><div id="I5.i2.p1" class="ltx_para">​<p class="ltx_p"><math id="I5.i2.p1.m1" class="ltx_Math" alttext="F\cap G" display="inline"><semantics><mrow><mi>F</mi><mo>∩</mo><mi>G</mi></mrow><annotation encoding="application/x-tex">F\cap G</annotation></semantics></math> é separável quando dotado da métrica <math id="I5.i2.p1.m2" class="ltx_Math" alttext="d^{\prime}" display="inline"><semantics><msup><mi>d</mi><mo>′</mo></msup><annotation encoding="application/x-tex">d^{\prime}</annotation></semantics></math>.</p>
+</div>
+</li>
+<li id="I5.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"> c)</span><div id="I5.i3.p1" class="ltx_para">​<p class="ltx_p"><math id="I5.i3.p1.m1" class="ltx_Math" alttext="(F\cap G,d^{\prime})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mrow><mi>F</mi><mo>∩</mo><mi>G</mi></mrow><mo>,</mo><msup><mi>d</mi><mo>′</mo></msup><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(F\cap G,d^{\prime})</annotation></semantics></math> é completo.</p>
+</div>
+</li>
+</ol>
+<p class="ltx_p">Isso termina a prova do lema.
+∎</p>
+</div>
+</div>
+<div id="SS1.p9" class="ltx_para">
+<span class="ltx_ERROR undefined">{example}</span>
+<p class="ltx_p">Um importante exemplo é dado por espaços produto.
+Seja <math id="SS1.p9.m1" class="ltx_Math" alttext="(E_{i},d_{i})_{i=1}^{\infty}" display="inline"><semantics><msubsup><mrow><mo stretchy="false">(</mo><msub><mi>E</mi><mi>i</mi></msub><mo>,</mo><msub><mi>d</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><annotation encoding="application/x-tex">(E_{i},d_{i})_{i=1}^{\infty}</annotation></semantics></math> uma sequência de espaços poloneses e introduza em
+<math id="SS1.p9.m2" class="ltx_Math" alttext="E=\prod_{i=1}^{\infty}E_{i}" display="inline"><semantics><mrow><mi>E</mi><mo rspace="0.111em">=</mo><mrow><msubsup><mo>∏</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><msub><mi>E</mi><mi>i</mi></msub></mrow></mrow><annotation encoding="application/x-tex">E=\prod_{i=1}^{\infty}E_{i}</annotation></semantics></math> a métrica <math id="SS1.p9.m3" class="ltx_Math" alttext="d" display="inline"><semantics><mi>d</mi><annotation encoding="application/x-tex">d</annotation></semantics></math> definida em (<a href="#Ch2.E109" title="In 2.10.1 Espaços poloneses ‣ 2.10 Espaços canônicos ‣ Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.109</span></a>).
+Então, se <math id="SS1.p9.m4" class="ltx_Math" alttext="A_{1}\subseteq E_{1}" display="inline"><semantics><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>⊆</mo><msub><mi>E</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">A_{1}\subseteq E_{1}</annotation></semantics></math>, <math id="SS1.p9.m5" class="ltx_Math" alttext="\dots" display="inline"><semantics><mi mathvariant="normal">…</mi><annotation encoding="application/x-tex">\dots</annotation></semantics></math>, <math id="SS1.p9.m6" class="ltx_Math" alttext="A_{k}\subseteq E_{k}" display="inline"><semantics><mrow><msub><mi>A</mi><mi>k</mi></msub><mo>⊆</mo><msub><mi>E</mi><mi>k</mi></msub></mrow><annotation encoding="application/x-tex">A_{k}\subseteq E_{k}</annotation></semantics></math> forem abertos, o retângulo <math id="SS1.p9.m7" class="ltx_Math" alttext="R=A_{1}\times\dots\times A_{k}\times E_{k+1}\times\dots" display="inline"><semantics><mrow><mi>R</mi><mo>=</mo><mrow><msub><mi>A</mi><mn>1</mn></msub><mo lspace="0.222em" rspace="0.222em">×</mo><mi mathvariant="normal">⋯</mi><mo lspace="0.222em" rspace="0.222em">×</mo><msub><mi>A</mi><mi>k</mi></msub><mo lspace="0.222em" rspace="0.222em">×</mo><msub><mi>E</mi><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></msub><mo lspace="0.222em" rspace="0.222em">×</mo><mi mathvariant="normal">…</mi></mrow></mrow><annotation encoding="application/x-tex">R=A_{1}\times\dots\times A_{k}\times E_{k+1}\times\dots</annotation></semantics></math> é aberto.
+Dessa forma vemos que tanto <math id="SS1.p9.m8" class="ltx_Math" alttext="R" display="inline"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math> como <math id="SS1.p9.m9" class="ltx_Math" alttext="R^{c}" display="inline"><semantics><msup><mi>R</mi><mi>c</mi></msup><annotation encoding="application/x-tex">R^{c}</annotation></semantics></math> podem ser dotados de métricas com as quais se tornam espaços poloneses.
+Além disso tais métricas podem ser escolhidas satisfazendo as hipóteses do Lema <a href="#SS1" title="2.10.1 Espaços poloneses ‣ 2.10 Espaços canônicos ‣ Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.10.1</span></a></p>
+</div>
+<div id="SS1.p10" class="ltx_para">
+<p class="ltx_p">O próximo lema é o ingrediente chave para provarmos o resultado principal dessa seção.
+Ele nos dá uma maneira de fatiar um espaço polonês em uma partição de espaços poloneses pequenos.</p>
+</div>
+<div id="SS1.p11" class="ltx_para">
+<span class="ltx_ERROR undefined">{lemma}</span>
+<p class="ltx_p">Seja <math id="SS1.p11.m1" class="ltx_Math" alttext="(E,d)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi>E</mi><mo>,</mo><mi>d</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(E,d)</annotation></semantics></math> um espaço polonês e <math id="SS1.p11.m2" class="ltx_Math" alttext="r&gt;0" display="inline"><semantics><mrow><mi>r</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">r&gt;0</annotation></semantics></math>.
+Então existe uma partição finita ou enumerável <math id="SS1.p11.m3" class="ltx_Math" alttext="(A_{i})_{i\in I}" display="inline"><semantics><msub><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow><mrow><mi>i</mi><mo>∈</mo><mi>I</mi></mrow></msub><annotation encoding="application/x-tex">(A_{i})_{i\in I}</annotation></semantics></math> de <math id="SS1.p11.m4" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> e métricas <math id="SS1.p11.m5" class="ltx_Math" alttext="(d_{i})_{i\in I}" display="inline"><semantics><msub><mrow><mo stretchy="false">(</mo><msub><mi>d</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow><mrow><mi>i</mi><mo>∈</mo><mi>I</mi></mrow></msub><annotation encoding="application/x-tex">(d_{i})_{i\in I}</annotation></semantics></math> nesses respectivos subconjuntos de forma
+que para todo <math id="SS1.p11.m6" class="ltx_Math" alttext="i\in I" display="inline"><semantics><mrow><mi>i</mi><mo>∈</mo><mi>I</mi></mrow><annotation encoding="application/x-tex">i\in I</annotation></semantics></math>,</p>
+<ol id="I6" class="ltx_enumerate">
+<li id="I6.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"> a)</span><div id="I6.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I6.i1.p1.m1" class="ltx_Math" alttext="(A_{i},d_{i})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mi>i</mi></msub><mo>,</mo><msub><mi>d</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(A_{i},d_{i})</annotation></semantics></math> são espaços poloneses disjuntos.</p>
+</div>
+</li>
+<li id="I6.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"> b)</span><div id="I6.i2.p1" class="ltx_para">​<p class="ltx_p"><math id="I6.i2.p1.m1" class="ltx_Math" alttext="d_{i}" display="inline"><semantics><msub><mi>d</mi><mi>i</mi></msub><annotation encoding="application/x-tex">d_{i}</annotation></semantics></math> e <math id="I6.i2.p1.m2" class="ltx_Math" alttext="d" display="inline"><semantics><mi>d</mi><annotation encoding="application/x-tex">d</annotation></semantics></math> são equivalentes em <math id="I6.i2.p1.m3" class="ltx_Math" alttext="A_{i}" display="inline"><semantics><msub><mi>A</mi><mi>i</mi></msub><annotation encoding="application/x-tex">A_{i}</annotation></semantics></math> e <math id="I6.i2.p1.m4" class="ltx_Math" alttext="d_{i}\geq d" display="inline"><semantics><mrow><msub><mi>d</mi><mi>i</mi></msub><mo>≥</mo><mi>d</mi></mrow><annotation encoding="application/x-tex">d_{i}\geq d</annotation></semantics></math>.</p>
+</div>
+</li>
+<li id="I6.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"> c)</span><div id="I6.i3.p1" class="ltx_para">​<p class="ltx_p">O diâmetro de <math id="I6.i3.p1.m1" class="ltx_Math" alttext="A_{i}" display="inline"><semantics><msub><mi>A</mi><mi>i</mi></msub><annotation encoding="application/x-tex">A_{i}</annotation></semantics></math> (com respeito a <math id="I6.i3.p1.m2" class="ltx_Math" alttext="d" display="inline"><semantics><mi>d</mi><annotation encoding="application/x-tex">d</annotation></semantics></math>) é menor ou igual a <math id="I6.i3.p1.m3" class="ltx_Math" alttext="r" display="inline"><semantics><mi>r</mi><annotation encoding="application/x-tex">r</annotation></semantics></math>.</p>
+</div>
+</li>
+</ol>
+<p class="ltx_p">Observe que podemos sempre escolher <math id="SS1.p11.m7" class="ltx_Math" alttext="I=\mathbb{N}" display="inline"><semantics><mrow><mi>I</mi><mo>=</mo><mi>ℕ</mi></mrow><annotation encoding="application/x-tex">I=\mathbb{N}</annotation></semantics></math> mas nesse caso os <math id="SS1.p11.m8" class="ltx_Math" alttext="A_{i}" display="inline"><semantics><msub><mi>A</mi><mi>i</mi></msub><annotation encoding="application/x-tex">A_{i}</annotation></semantics></math> podem ser vazios.</p>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demonstração.</h6>
+<div id="SS1.p12" class="ltx_para">
+<p class="ltx_p">Obtemos através da separabilidade de <math id="SS1.p12.m1" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math>, uma coleção de bolas <math id="SS1.p12.m2" class="ltx_Math" alttext="(B_{i})_{i\geq 1}" display="inline"><semantics><msub><mrow><mo stretchy="false">(</mo><msub><mi>B</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow><mrow><mi>i</mi><mo>≥</mo><mn>1</mn></mrow></msub><annotation encoding="application/x-tex">(B_{i})_{i\geq 1}</annotation></semantics></math> com diâmetros limitados por <math id="SS1.p12.m3" class="ltx_Math" alttext="r" display="inline"><semantics><mi>r</mi><annotation encoding="application/x-tex">r</annotation></semantics></math> e cobrindo <math id="SS1.p12.m4" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math>.
+Então definimos</p>
+<div id="Ch2.E111" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch2.E111.m1" class="ltx_Math" alttext="A_{1}=B_{1},\quad\text{e}\quad A_{n}=B_{n}\setminus\mcup_{i=0}^{n-1}B_{i}\quad%
+\text{para $n\geq 1$.}" display="block"><semantics><mrow><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>=</mo><mrow><msub><mi>B</mi><mn>1</mn></msub><mo rspace="1.167em">,</mo><mtext>e</mtext></mrow></mrow><mspace width="1em"></mspace><mrow><msub><mi>A</mi><mi>n</mi></msub><mo>=</mo><mrow><mrow><msub><mi>B</mi><mi>n</mi></msub><mo>∖</mo><mrow><msubsup><merror class="ltx_ERROR undefined undefined"><mtext>\mcup</mtext></merror><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msubsup><mo>⁢</mo><msub><mi>B</mi><mi>i</mi></msub></mrow></mrow><mspace width="1em"></mspace><mrow><mtext>para </mtext><mrow><mi>n</mi><mo>≥</mo><mn>1</mn></mrow><mtext>.</mtext></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">A_{1}=B_{1},\quad\text{e}\quad A_{n}=B_{n}\setminus\mcup_{i=0}^{n-1}B_{i}\quad%
+\text{para $n\geq 1$.}</annotation></semantics></math></span>
+                <span class="ltx_tag ltx_tag_equation ltx_align_right">(2.111)</span>
+                
+                
+              
+</div>
+</div>
+<div id="SS1.p13" class="ltx_para">
+<p class="ltx_p">Agora podemos dotar cada um dos <math id="SS1.p13.m1" class="ltx_Math" alttext="A_{i}" display="inline"><semantics><msub><mi>A</mi><mi>i</mi></msub><annotation encoding="application/x-tex">A_{i}</annotation></semantics></math> com a métrica <math id="SS1.p13.m2" class="ltx_Math" alttext="d_{i}" display="inline"><semantics><msub><mi>d</mi><mi>i</mi></msub><annotation encoding="application/x-tex">d_{i}</annotation></semantics></math> obtida através do Lema <a href="#SS1" title="2.10.1 Espaços poloneses ‣ 2.10 Espaços canônicos ‣ Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.10.1</span></a> (observe para tanto que os <math id="SS1.p13.m3" class="ltx_Math" alttext="A_{i}" display="inline"><semantics><msub><mi>A</mi><mi>i</mi></msub><annotation encoding="application/x-tex">A_{i}</annotation></semantics></math> são dados por interseções de um aberto com um fechado).
+As propriedades enunciadas no lema são trivialmente satisfeitas.
+∎</p>
+</div>
+</div>
+<div id="SS1.p14" class="ltx_para">
+<p class="ltx_p">Terminamos essa seção com esse importante resultado, que confirma nossa afirmação de que quase todos os espaços mensuráveis que podemos nos interessar são canônicos.</p>
+</div>
+<div id="SS1.p15" class="ltx_para">
+<span class="ltx_ERROR undefined">{theorem}</span>
+<p class="ltx_p">Todo sub-conjunto boreliano de espaço polonês <math id="SS1.p15.m1" class="ltx_Math" alttext="(E,d)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi>E</mi><mo>,</mo><mi>d</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(E,d)</annotation></semantics></math> é canônico.</p>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demonstração.</h6>
+<div id="SS1.p16" class="ltx_para">
+<p class="ltx_p">Primeiramente, pelo Lema <span class="ltx_ref ltx_ref_self"><span class="ltx_text ltx_ref_tag">2.10</span></span>, basta mostrar que todo espaço <math id="SS1.p16.m1" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math> polonês é canônico.
+Pelo Lema <span class="ltx_ref ltx_ref_self"><span class="ltx_text ltx_ref_tag">2.10</span></span> e novamente o Lema <span class="ltx_ref ltx_ref_self"><span class="ltx_text ltx_ref_tag">2.10</span></span>,
+<span class="ltx_ERROR undefined">{display}</span>
+basta construir uma função bi-mensurável <math id="SS1.p16.m2" class="ltx_Math" alttext="\phi:E\to B\in\mathcal{B}(\mathbb{N}^{\mathbb{N}})" display="inline"><semantics><mrow><mi>ϕ</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>E</mi><mo stretchy="false">→</mo><mi>B</mi><mo>∈</mo><mrow><mi class="ltx_font_mathcaligraphic">ℬ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>ℕ</mi><mi>ℕ</mi></msup><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\phi:E\to B\in\mathcal{B}(\mathbb{N}^{\mathbb{N}})</annotation></semantics></math>
+
+e depois compô-la com uma função bi-mensurável <math id="SS1.p16.m3" class="ltx_Math" alttext="\phi^{\prime}:B\to C\in\mathcal{B}(\mathbb{R})" display="inline"><semantics><mrow><msup><mi>ϕ</mi><mo>′</mo></msup><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>B</mi><mo stretchy="false">→</mo><mi>C</mi><mo>∈</mo><mrow><mi class="ltx_font_mathcaligraphic">ℬ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ℝ</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\phi^{\prime}:B\to C\in\mathcal{B}(\mathbb{R})</annotation></semantics></math>.</p>
+</div>
+<div id="SS1.p17" class="ltx_para">
+<p class="ltx_p">Para começar, construiremos uma partição encaixada de <math id="SS1.p17.m1" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math>.
+Mais precisamente, defina os conjuntos <math id="SS1.p17.m2" class="ltx_Math" alttext="M_{n}" display="inline"><semantics><msub><mi>M</mi><mi>n</mi></msub><annotation encoding="application/x-tex">M_{n}</annotation></semantics></math> que serão utilizados como índices</p>
+<div id="Ch2.E112" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch2.E112.m1" class="ltx_Math" alttext="M_{n}=\mathbb{N}^{n}\quad\text{para $n\geq 1$ e}\quad M=\cup_{n}M_{n}." display="block"><semantics><mrow><mrow><mrow><msub><mi>M</mi><mi>n</mi></msub><mo>=</mo><mrow><msup><mi>ℕ</mi><mi>n</mi></msup><mspace width="1em"></mspace><mrow><mtext>para </mtext><mrow><mi>n</mi><mo>≥</mo><mn>1</mn></mrow><mtext> e</mtext></mrow></mrow></mrow><mspace width="1em"></mspace><mrow><mi>M</mi><mo rspace="0em">=</mo><mrow><msub><mo lspace="0em">∪</mo><mi>n</mi></msub><msub><mi>M</mi><mi>n</mi></msub></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">M_{n}=\mathbb{N}^{n}\quad\text{para $n\geq 1$ e}\quad M=\cup_{n}M_{n}.</annotation></semantics></math></span>
+                <span class="ltx_tag ltx_tag_equation ltx_align_right">(2.112)</span>
+                
+                
+              
+</div>
+</div>
+<div id="SS1.p18" class="ltx_para">
+<p class="ltx_p">Vamos definir borelianos <math id="SS1.p18.m1" class="ltx_Math" alttext="A_{m}" display="inline"><semantics><msub><mi>A</mi><mi>m</mi></msub><annotation encoding="application/x-tex">A_{m}</annotation></semantics></math> de <math id="SS1.p18.m2" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math> e métricas <math id="SS1.p18.m3" class="ltx_Math" alttext="d_{m}" display="inline"><semantics><msub><mi>d</mi><mi>m</mi></msub><annotation encoding="application/x-tex">d_{m}</annotation></semantics></math> em <math id="SS1.p18.m4" class="ltx_Math" alttext="A_{m}" display="inline"><semantics><msub><mi>A</mi><mi>m</mi></msub><annotation encoding="application/x-tex">A_{m}</annotation></semantics></math> para cada <math id="SS1.p18.m5" class="ltx_Math" alttext="m\in M" display="inline"><semantics><mrow><mi>m</mi><mo>∈</mo><mi>M</mi></mrow><annotation encoding="application/x-tex">m\in M</annotation></semantics></math>.
+Faremos isso da seguinte forma:</p>
+<ol id="I7" class="ltx_enumerate">
+<li id="I7.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"> a)</span><div id="I7.i1.p1" class="ltx_para">​<p class="ltx_p">se <math id="I7.i1.p1.m1" class="ltx_Math" alttext="m=i\in M_{1}" display="inline"><semantics><mrow><mi>m</mi><mo>=</mo><mi>i</mi><mo>∈</mo><msub><mi>M</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">m=i\in M_{1}</annotation></semantics></math>, então definimos <math id="I7.i1.p1.m2" class="ltx_Math" alttext="A_{1},A_{2},A_{3},\dots" display="inline"><semantics><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>,</mo><msub><mi>A</mi><mn>2</mn></msub><mo>,</mo><msub><mi>A</mi><mn>3</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi></mrow><annotation encoding="application/x-tex">A_{1},A_{2},A_{3},\dots</annotation></semantics></math> e <math id="I7.i1.p1.m3" class="ltx_Math" alttext="d_{1},d_{2},d_{3},\dots" display="inline"><semantics><mrow><msub><mi>d</mi><mn>1</mn></msub><mo>,</mo><msub><mi>d</mi><mn>2</mn></msub><mo>,</mo><msub><mi>d</mi><mn>3</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi></mrow><annotation encoding="application/x-tex">d_{1},d_{2},d_{3},\dots</annotation></semantics></math> como no Lema <a href="#SS1" title="2.10.1 Espaços poloneses ‣ 2.10 Espaços canônicos ‣ Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.10.1</span></a> com <math id="I7.i1.p1.m4" class="ltx_Math" alttext="r=1" display="inline"><semantics><mrow><mi>r</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">r=1</annotation></semantics></math>,</p>
+</div>
+</li>
+<li id="I7.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"> b)</span><div id="I7.i2.p1" class="ltx_para">​<p class="ltx_p">se <math id="I7.i2.p1.m1" class="ltx_Math" alttext="(A_{m},d_{m})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mi>m</mi></msub><mo>,</mo><msub><mi>d</mi><mi>m</mi></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(A_{m},d_{m})</annotation></semantics></math> já foi definido para algum <math id="I7.i2.p1.m2" class="ltx_Math" alttext="m\in M_{n}" display="inline"><semantics><mrow><mi>m</mi><mo>∈</mo><msub><mi>M</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">m\in M_{n}</annotation></semantics></math>, então utilizamos também o Lema <a href="#SS1" title="2.10.1 Espaços poloneses ‣ 2.10 Espaços canônicos ‣ Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.10.1</span></a> com <math id="I7.i2.p1.m3" class="ltx_Math" alttext="r=1/n" display="inline"><semantics><mrow><mi>r</mi><mo>=</mo><mrow><mn>1</mn><mo>/</mo><mi>n</mi></mrow></mrow><annotation encoding="application/x-tex">r=1/n</annotation></semantics></math> para particionar o conjunto <math id="I7.i2.p1.m4" class="ltx_Math" alttext="A_{m}" display="inline"><semantics><msub><mi>A</mi><mi>m</mi></msub><annotation encoding="application/x-tex">A_{m}</annotation></semantics></math> (com a métrica <math id="I7.i2.p1.m5" class="ltx_Math" alttext="d_{m}" display="inline"><semantics><msub><mi>d</mi><mi>m</mi></msub><annotation encoding="application/x-tex">d_{m}</annotation></semantics></math>) em <math id="I7.i2.p1.m6" class="ltx_Math" alttext="A_{(m,1)},A_{(m,2)},\dots" display="inline"><semantics><mrow><msub><mi>A</mi><mrow><mo stretchy="false">(</mo><mrow><mi>m</mi><mo>⁢</mo><mn>,1</mn></mrow><mo stretchy="false">)</mo></mrow></msub><mo>,</mo><msub><mi>A</mi><mrow><mo stretchy="false">(</mo><mrow><mi>m</mi><mo>⁢</mo><mn>,2</mn></mrow><mo stretchy="false">)</mo></mrow></msub><mo>,</mo><mi mathvariant="normal">…</mi></mrow><annotation encoding="application/x-tex">A_{(m,1)},A_{(m,2)},\dots</annotation></semantics></math> com suas respectivas métricas <math id="I7.i2.p1.m7" class="ltx_Math" alttext="d_{(m,1)},d_{(m,2)},\dots" display="inline"><semantics><mrow><msub><mi>d</mi><mrow><mo stretchy="false">(</mo><mrow><mi>m</mi><mo>⁢</mo><mn>,1</mn></mrow><mo stretchy="false">)</mo></mrow></msub><mo>,</mo><msub><mi>d</mi><mrow><mo stretchy="false">(</mo><mrow><mi>m</mi><mo>⁢</mo><mn>,2</mn></mrow><mo stretchy="false">)</mo></mrow></msub><mo>,</mo><mi mathvariant="normal">…</mi></mrow><annotation encoding="application/x-tex">d_{(m,1)},d_{(m,2)},\dots</annotation></semantics></math></p>
+</div>
+</li>
+</ol>
+<p class="ltx_p">Obviamente suporemos que são válidas as propriedades de tais métricas garantidas pelo Lema <a href="#SS1" title="2.10.1 Espaços poloneses ‣ 2.10 Espaços canônicos ‣ Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.10.1</span></a>.</p>
+</div>
+<div id="SS1.p19" class="ltx_para">
+<p class="ltx_p">Podemos desde já definir <math id="SS1.p19.m1" class="ltx_Math" alttext="\phi:E\to\mathbb{N}^{\mathbb{N}}" display="inline"><semantics><mrow><mi>ϕ</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>E</mi><mo stretchy="false">→</mo><msup><mi>ℕ</mi><mi>ℕ</mi></msup></mrow></mrow><annotation encoding="application/x-tex">\phi:E\to\mathbb{N}^{\mathbb{N}}</annotation></semantics></math> e para tanto, considere <math id="SS1.p19.m2" class="ltx_Math" alttext="x\in E" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>E</mi></mrow><annotation encoding="application/x-tex">x\in E</annotation></semantics></math>.
+Indutivamente</p>
+<ol id="I8" class="ltx_enumerate">
+<li id="I8.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"> a)</span><div id="I8.i1.p1" class="ltx_para">​<p class="ltx_p">como <math id="I8.i1.p1.m1" class="ltx_Math" alttext="\{A_{m}\}_{m\in M_{1}}" display="inline"><semantics><msub><mrow><mo stretchy="false">{</mo><msub><mi>A</mi><mi>m</mi></msub><mo stretchy="false">}</mo></mrow><mrow><mi>m</mi><mo>∈</mo><msub><mi>M</mi><mn>1</mn></msub></mrow></msub><annotation encoding="application/x-tex">\{A_{m}\}_{m\in M_{1}}</annotation></semantics></math> formam uma partição de <math id="I8.i1.p1.m2" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math>, definimos <math id="I8.i1.p1.m3" class="ltx_Math" alttext="\phi_{1}(x)" display="inline"><semantics><mrow><msub><mi>ϕ</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\phi_{1}(x)</annotation></semantics></math> como o único índice tal que <math id="I8.i1.p1.m4" class="ltx_Math" alttext="x\in A_{\phi_{1}(x)}" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><msub><mi>A</mi><mrow><msub><mi>ϕ</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></msub></mrow><annotation encoding="application/x-tex">x\in A_{\phi_{1}(x)}</annotation></semantics></math>,</p>
+</div>
+</li>
+<li id="I8.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"> b)</span><div id="I8.i2.p1" class="ltx_para">​<p class="ltx_p">se já encontramos <math id="I8.i2.p1.m1" class="ltx_Math" alttext="\phi_{1}(x),\dots,\phi_{n}(x)" display="inline"><semantics><mrow><mrow><msub><mi>ϕ</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mrow><msub><mi>ϕ</mi><mi>n</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\phi_{1}(x),\dots,\phi_{n}(x)</annotation></semantics></math> tal que <math id="I8.i2.p1.m2" class="ltx_Math" alttext="x\in A_{(\phi_{1}(x),\dots,\phi_{n}(x))}" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><msub><mi>A</mi><mrow><mo stretchy="false">(</mo><mrow><msub><mi>ϕ</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mrow><msub><mi>ϕ</mi><mi>n</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></msub></mrow><annotation encoding="application/x-tex">x\in A_{(\phi_{1}(x),\dots,\phi_{n}(x))}</annotation></semantics></math>, então o fato que particionamos o último conjunto na definição de <math id="I8.i2.p1.m3" class="ltx_Math" alttext="A_{m}" display="inline"><semantics><msub><mi>A</mi><mi>m</mi></msub><annotation encoding="application/x-tex">A_{m}</annotation></semantics></math>, <math id="I8.i2.p1.m4" class="ltx_Math" alttext="m\in M_{n+1}" display="inline"><semantics><mrow><mi>m</mi><mo>∈</mo><msub><mi>M</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow><annotation encoding="application/x-tex">m\in M_{n+1}</annotation></semantics></math> nos garante que podemos definir unicamente <math id="I8.i2.p1.m5" class="ltx_Math" alttext="\phi_{n+1}(x)" display="inline"><semantics><mrow><msub><mi>ϕ</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\phi_{n+1}(x)</annotation></semantics></math> de forma a continuar a indução.</p>
+</div>
+</li>
+</ol>
+<p class="ltx_p">Da maneira acima já obtivemos <math id="SS1.p19.m3" class="ltx_Math" alttext="\phi(x)=(\phi_{1}(x),\phi_{2}(x),\dots)" display="inline"><semantics><mrow><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>ϕ</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>,</mo><mrow><msub><mi>ϕ</mi><mn>2</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>,</mo><mi mathvariant="normal">…</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\phi(x)=(\phi_{1}(x),\phi_{2}(x),\dots)</annotation></semantics></math>.
+Para terminar, devemos mostrar que <math id="SS1.p19.m4" class="ltx_Math" alttext="\phi" display="inline"><semantics><mi>ϕ</mi><annotation encoding="application/x-tex">\phi</annotation></semantics></math> é bi-mensurável quando seu contra-domínio é restrito à sua imagem.</p>
+</div>
+<div id="SS1.p20" class="ltx_para">
+<p class="ltx_p">Isso começa com a prova de que <math id="SS1.p20.m1" class="ltx_Math" alttext="\phi" display="inline"><semantics><mi>ϕ</mi><annotation encoding="application/x-tex">\phi</annotation></semantics></math> é injetiva.
+Se <math id="SS1.p20.m2" class="ltx_Math" alttext="\phi(x)=\phi(y)" display="inline"><semantics><mrow><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\phi(x)=\phi(y)</annotation></semantics></math>, então existe uma sequência <math id="SS1.p20.m3" class="ltx_Math" alttext="m_{n}\in M_{n}" display="inline"><semantics><mrow><msub><mi>m</mi><mi>n</mi></msub><mo>∈</mo><msub><mi>M</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">m_{n}\in M_{n}</annotation></semantics></math> tal que <math id="SS1.p20.m4" class="ltx_Math" alttext="x,y\in A_{m_{n}}" display="inline"><semantics><mrow><mrow><mi>x</mi><mo>,</mo><mi>y</mi></mrow><mo>∈</mo><msub><mi>A</mi><msub><mi>m</mi><mi>n</mi></msub></msub></mrow><annotation encoding="application/x-tex">x,y\in A_{m_{n}}</annotation></semantics></math> para todo <math id="SS1.p20.m5" class="ltx_Math" alttext="n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>.
+Mas isso não é possível dado que o diâmetro de <math id="SS1.p20.m6" class="ltx_Math" alttext="A_{m_{n+1}}" display="inline"><semantics><msub><mi>A</mi><msub><mi>m</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub></msub><annotation encoding="application/x-tex">A_{m_{n+1}}</annotation></semantics></math> é menor ou igual a <math id="SS1.p20.m7" class="ltx_Math" alttext="1/n" display="inline"><semantics><mrow><mn>1</mn><mo>/</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">1/n</annotation></semantics></math> na métrica <math id="SS1.p20.m8" class="ltx_Math" alttext="d_{m_{n}}\geq d" display="inline"><semantics><mrow><msub><mi>d</mi><msub><mi>m</mi><mi>n</mi></msub></msub><mo>≥</mo><mi>d</mi></mrow><annotation encoding="application/x-tex">d_{m_{n}}\geq d</annotation></semantics></math>.
+Isso mostra que <math id="SS1.p20.m9" class="ltx_Math" alttext="x=y" display="inline"><semantics><mrow><mi>x</mi><mo>=</mo><mi>y</mi></mrow><annotation encoding="application/x-tex">x=y</annotation></semantics></math>.</p>
+</div>
+<div id="SS1.p21" class="ltx_para">
+<p class="ltx_p">Vejamos agora que <math id="SS1.p21.m1" class="ltx_Math" alttext="\phi" display="inline"><semantics><mi>ϕ</mi><annotation encoding="application/x-tex">\phi</annotation></semantics></math> é mensurável.
+Seja <math id="SS1.p21.m2" class="ltx_Math" alttext="w\in\mathbb{N}^{\mathbb{N}}" display="inline"><semantics><mrow><mi>w</mi><mo>∈</mo><msup><mi>ℕ</mi><mi>ℕ</mi></msup></mrow><annotation encoding="application/x-tex">w\in\mathbb{N}^{\mathbb{N}}</annotation></semantics></math> tal que <math id="SS1.p21.m3" class="ltx_Math" alttext="\phi(x)=w" display="inline"><semantics><mrow><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi>w</mi></mrow><annotation encoding="application/x-tex">\phi(x)=w</annotation></semantics></math> e tome <math id="SS1.p21.m4" class="ltx_Math" alttext="G\subseteq\mathbb{N}^{\mathbb{N}}" display="inline"><semantics><mrow><mi>G</mi><mo>⊆</mo><msup><mi>ℕ</mi><mi>ℕ</mi></msup></mrow><annotation encoding="application/x-tex">G\subseteq\mathbb{N}^{\mathbb{N}}</annotation></semantics></math> com <math id="SS1.p21.m5" class="ltx_Math" alttext="G=\{(w_{1},\dots,w_{l})\}\times\mathbb{N}^{\mathbb{N}}" display="inline"><semantics><mrow><mi>G</mi><mo>=</mo><mrow><mrow><mo stretchy="false">{</mo><mrow><mo stretchy="false">(</mo><msub><mi>w</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>w</mi><mi>l</mi></msub><mo stretchy="false">)</mo></mrow><mo rspace="0.055em" stretchy="false">}</mo></mrow><mo rspace="0.222em">×</mo><msup><mi>ℕ</mi><mi>ℕ</mi></msup></mrow></mrow><annotation encoding="application/x-tex">G=\{(w_{1},\dots,w_{l})\}\times\mathbb{N}^{\mathbb{N}}</annotation></semantics></math> (esses conjuntos geram a <math id="SS1.p21.m6" class="ltx_Math" alttext="\sigma" display="inline"><semantics><mi>σ</mi><annotation encoding="application/x-tex">\sigma</annotation></semantics></math>-álgebra canônica em <math id="SS1.p21.m7" class="ltx_Math" alttext="\mathbb{N}^{\mathbb{N}}" display="inline"><semantics><msup><mi>ℕ</mi><mi>ℕ</mi></msup><annotation encoding="application/x-tex">\mathbb{N}^{\mathbb{N}}</annotation></semantics></math>).
+Claramente, <math id="SS1.p21.m8" class="ltx_Math" alttext="\phi^{-1}(G)=A_{(\phi_{1}(x),\dots,\phi_{l}(x))}" display="inline"><semantics><mrow><mrow><msup><mi>ϕ</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>G</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msub><mi>A</mi><mrow><mo stretchy="false">(</mo><mrow><msub><mi>ϕ</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mrow><msub><mi>ϕ</mi><mi>l</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></msub></mrow><annotation encoding="application/x-tex">\phi^{-1}(G)=A_{(\phi_{1}(x),\dots,\phi_{l}(x))}</annotation></semantics></math>, de forma que mostramos que <math id="SS1.p21.m9" class="ltx_Math" alttext="\phi" display="inline"><semantics><mi>ϕ</mi><annotation encoding="application/x-tex">\phi</annotation></semantics></math> é mensurável.</p>
+</div>
+<div id="SS1.p22" class="ltx_para">
+<p class="ltx_p">Para mostrar que sua inversa <math id="SS1.p22.m1" class="ltx_Math" alttext="\psi:\phi(E)\to E" display="inline"><semantics><mrow><mi>ψ</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>E</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">→</mo><mi>E</mi></mrow></mrow><annotation encoding="application/x-tex">\psi:\phi(E)\to E</annotation></semantics></math> é mensurável, veremos que ela é de fato contínua com respeito à Métrica de Hamming definida em (<a href="#Ch2.E107" title="In 2.10 Espaços canônicos ‣ Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.107</span></a>).
+Dado <math id="SS1.p22.m2" class="ltx_Math" alttext="n\geq 1" display="inline"><semantics><mrow><mi>n</mi><mo>≥</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">n\geq 1</annotation></semantics></math>, tomamos <math id="SS1.p22.m3" class="ltx_Math" alttext="\delta&lt;2^{-n}" display="inline"><semantics><mrow><mi>δ</mi><mo>&lt;</mo><msup><mn>2</mn><mrow><mo>−</mo><mi>n</mi></mrow></msup></mrow><annotation encoding="application/x-tex">\delta&lt;2^{-n}</annotation></semantics></math>.
+Se <math id="SS1.p22.m4" class="ltx_Math" alttext="w,w^{\prime}\in\phi(E)" display="inline"><semantics><mrow><mrow><mi>w</mi><mo>,</mo><msup><mi>w</mi><mo>′</mo></msup></mrow><mo>∈</mo><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>E</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">w,w^{\prime}\in\phi(E)</annotation></semantics></math> são tais que <math id="SS1.p22.m5" class="ltx_Math" alttext="d_{H}(w,w^{\prime})&lt;\delta" display="inline"><semantics><mrow><mrow><msub><mi>d</mi><mi>H</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>w</mi><mo>,</mo><msup><mi>w</mi><mo>′</mo></msup><mo stretchy="false">)</mo></mrow></mrow><mo>&lt;</mo><mi>δ</mi></mrow><annotation encoding="application/x-tex">d_{H}(w,w^{\prime})&lt;\delta</annotation></semantics></math> em <math id="SS1.p22.m6" class="ltx_Math" alttext="\mathbb{N}^{\mathbb{N}}" display="inline"><semantics><msup><mi>ℕ</mi><mi>ℕ</mi></msup><annotation encoding="application/x-tex">\mathbb{N}^{\mathbb{N}}</annotation></semantics></math>, então <math id="SS1.p22.m7" class="ltx_Math" alttext="w_{i}=w^{\prime}_{i}" display="inline"><semantics><mrow><msub><mi>w</mi><mi>i</mi></msub><mo>=</mo><msubsup><mi>w</mi><mi>i</mi><mo>′</mo></msubsup></mrow><annotation encoding="application/x-tex">w_{i}=w^{\prime}_{i}</annotation></semantics></math> para todo <math id="SS1.p22.m8" class="ltx_Math" alttext="i\leq n" display="inline"><semantics><mrow><mi>i</mi><mo>≤</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">i\leq n</annotation></semantics></math>, de forma que <math id="SS1.p22.m9" class="ltx_Math" alttext="\phi^{-1}(w)" display="inline"><semantics><mrow><msup><mi>ϕ</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>w</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\phi^{-1}(w)</annotation></semantics></math> e <math id="SS1.p22.m10" class="ltx_Math" alttext="\phi^{-1}(w^{\prime})" display="inline"><semantics><mrow><msup><mi>ϕ</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>w</mi><mo>′</mo></msup><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\phi^{-1}(w^{\prime})</annotation></semantics></math> pertencem a <math id="SS1.p22.m11" class="ltx_Math" alttext="A_{(w_{1},\dots,w_{n})}" display="inline"><semantics><msub><mi>A</mi><mrow><mo stretchy="false">(</mo><msub><mi>w</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>w</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></msub><annotation encoding="application/x-tex">A_{(w_{1},\dots,w_{n})}</annotation></semantics></math>.
+A continuidade de <math id="SS1.p22.m12" class="ltx_Math" alttext="\phi^{-1}" display="inline"><semantics><msup><mi>ϕ</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><annotation encoding="application/x-tex">\phi^{-1}</annotation></semantics></math> segue do fato que o diâmetro de <math id="SS1.p22.m13" class="ltx_Math" alttext="A_{(w_{1},\dots,w_{n})}" display="inline"><semantics><msub><mi>A</mi><mrow><mo stretchy="false">(</mo><msub><mi>w</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>w</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></msub><annotation encoding="application/x-tex">A_{(w_{1},\dots,w_{n})}</annotation></semantics></math> é no máximo <math id="SS1.p22.m14" class="ltx_Math" alttext="1/n" display="inline"><semantics><mrow><mn>1</mn><mo>/</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">1/n</annotation></semantics></math> (com respeito a <math id="SS1.p22.m15" class="ltx_Math" alttext="d_{(w_{1},\dots,w_{n-1})}" display="inline"><semantics><msub><mi>d</mi><mrow><mo stretchy="false">(</mo><msub><mi>w</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>w</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub><mo stretchy="false">)</mo></mrow></msub><annotation encoding="application/x-tex">d_{(w_{1},\dots,w_{n-1})}</annotation></semantics></math> e portanto com respeito a <math id="SS1.p22.m16" class="ltx_Math" alttext="d" display="inline"><semantics><mi>d</mi><annotation encoding="application/x-tex">d</annotation></semantics></math>).</p>
+</div>
+<div id="SS1.p23" class="ltx_para">
+<p class="ltx_p">Mas atenção, apesar de que parece que provamos o teorema, ainda falta mostrar que <math id="SS1.p23.m1" class="ltx_Math" alttext="\phi(E)" display="inline"><semantics><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>E</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\phi(E)</annotation></semantics></math> é mensurável.
+Para tanto, afirmamos que</p>
+<div id="Ch2.E113" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch2.E113.m1" class="ltx_Math" alttext="\phi(E)=\mathbb{N}^{\mathbb{N}}\setminus\Big{(}\bigcup_{(w_{1},\dots,w_{k})\in%
+\mathcal{E}}\{w_{1}\}\times\{w_{k}\}\times\mathbb{N}\times\dots\Big{)}," display="block"><semantics><mrow><mrow><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>E</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msup><mi>ℕ</mi><mi>ℕ</mi></msup><mo>∖</mo><mrow><mo maxsize="160%" minsize="160%">(</mo><mrow><munder><mo lspace="0em" movablelimits="false" rspace="0em">⋃</mo><mrow><mrow><mo stretchy="false">(</mo><msub><mi>w</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>w</mi><mi>k</mi></msub><mo stretchy="false">)</mo></mrow><mo>∈</mo><mi class="ltx_font_mathcaligraphic">ℰ</mi></mrow></munder><mrow><mrow><mo stretchy="false">{</mo><msub><mi>w</mi><mn>1</mn></msub><mo rspace="0.055em" stretchy="false">}</mo></mrow><mo rspace="0.222em">×</mo><mrow><mo stretchy="false">{</mo><msub><mi>w</mi><mi>k</mi></msub><mo rspace="0.055em" stretchy="false">}</mo></mrow><mo rspace="0.222em">×</mo><mi>ℕ</mi><mo lspace="0.222em" rspace="0.222em">×</mo><mi mathvariant="normal">…</mi></mrow></mrow><mo maxsize="160%" minsize="160%">)</mo></mrow></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\phi(E)=\mathbb{N}^{\mathbb{N}}\setminus\Big{(}\bigcup_{(w_{1},\dots,w_{k})\in%
+\mathcal{E}}\{w_{1}\}\times\{w_{k}\}\times\mathbb{N}\times\dots\Big{)},</annotation></semantics></math></span>
+                <span class="ltx_tag ltx_tag_equation ltx_align_right">(2.113)</span>
+                
+                
+              
+</div>
+<p class="ltx_p">onde</p>
+<div id="Ch2.Ex9" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch2.Ex9.m1" class="ltx_Math" alttext="\mathcal{E}:=\{(w_{1},\dots,w_{k})\in\bigcup_{n\geq 1}\mathbb{N}^{n}\,:\,A_{%
+\omega_{1},\dots,\omega_{k}}=\emptyset\}." display="block"><semantics><mrow><mrow><mi class="ltx_font_mathcaligraphic">ℰ</mi><mo lspace="0.278em" rspace="0.278em">:=</mo><mrow><mo stretchy="false">{</mo><mrow><mrow><mo stretchy="false">(</mo><msub><mi>w</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>w</mi><mi>k</mi></msub><mo stretchy="false">)</mo></mrow><mo rspace="0.111em">∈</mo><mrow><munder><mo movablelimits="false">⋃</mo><mrow><mi>n</mi><mo>≥</mo><mn>1</mn></mrow></munder><msup><mi>ℕ</mi><mi>n</mi></msup></mrow></mrow><mo lspace="0.278em" rspace="0.448em">:</mo><mrow><msub><mi>A</mi><mrow><msub><mi>ω</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>ω</mi><mi>k</mi></msub></mrow></msub><mo>=</mo><mi>∅︀</mi></mrow><mo stretchy="false">}</mo></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\mathcal{E}:=\{(w_{1},\dots,w_{k})\in\bigcup_{n\geq 1}\mathbb{N}^{n}\,:\,A_{%
+\omega_{1},\dots,\omega_{k}}=\emptyset\}.</annotation></semantics></math></span>
+</div>
+</div>
+<div id="SS1.p24" class="ltx_para">
+<p class="ltx_p">A igualdade acima será mostrada no que segue.</p>
+</div>
+<div id="SS1.p25" class="ltx_para">
+<p class="ltx_p">Dado <math id="SS1.p25.m1" class="ltx_Math" alttext="w\in\phi(E)" display="inline"><semantics><mrow><mi>w</mi><mo>∈</mo><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>E</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">w\in\phi(E)</annotation></semantics></math> existe <math id="SS1.p25.m2" class="ltx_Math" alttext="x\in E" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>E</mi></mrow><annotation encoding="application/x-tex">x\in E</annotation></semantics></math> tal que <math id="SS1.p25.m3" class="ltx_Math" alttext="\phi(x)=w" display="inline"><semantics><mrow><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi>w</mi></mrow><annotation encoding="application/x-tex">\phi(x)=w</annotation></semantics></math>.
+Como <math id="SS1.p25.m4" class="ltx_Math" alttext="x\in A_{w_{1},\dots,w_{n}}" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><msub><mi>A</mi><mrow><msub><mi>w</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>w</mi><mi>n</mi></msub></mrow></msub></mrow><annotation encoding="application/x-tex">x\in A_{w_{1},\dots,w_{n}}</annotation></semantics></math> para todo <math id="SS1.p25.m5" class="ltx_Math" alttext="n\geq 1" display="inline"><semantics><mrow><mi>n</mi><mo>≥</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">n\geq 1</annotation></semantics></math>, esses conjuntos não são vazios.
+Logo <math id="SS1.p25.m6" class="ltx_Math" alttext="w" display="inline"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math> não pertence à união em (<a href="#Ch2.E113" title="In 2.10.1 Espaços poloneses ‣ 2.10 Espaços canônicos ‣ Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.113</span></a>), mostrando o lado (<math id="SS1.p25.m7" class="ltx_Math" alttext="\subseteq" display="inline"><semantics><mo>⊆</mo><annotation encoding="application/x-tex">\subseteq</annotation></semantics></math>) da equalidade.
+Finalmente, suponha que <math id="SS1.p25.m8" class="ltx_Math" alttext="w=(w_{1},w_{2},\dots)" display="inline"><semantics><mrow><mi>w</mi><mo>=</mo><mrow><mo stretchy="false">(</mo><msub><mi>w</mi><mn>1</mn></msub><mo>,</mo><msub><mi>w</mi><mn>2</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">w=(w_{1},w_{2},\dots)</annotation></semantics></math> é tal que para todo <math id="SS1.p25.m9" class="ltx_Math" alttext="k\geq 1" display="inline"><semantics><mrow><mi>k</mi><mo>≥</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">k\geq 1</annotation></semantics></math>, <math id="SS1.p25.m10" class="ltx_Math" alttext="A_{w_{1},\dots,w_{k}}\neq\varnothing" display="inline"><semantics><mrow><msub><mi>A</mi><mrow><msub><mi>w</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>w</mi><mi>k</mi></msub></mrow></msub><mo>≠</mo><mi mathvariant="normal">∅</mi></mrow><annotation encoding="application/x-tex">A_{w_{1},\dots,w_{k}}\neq\varnothing</annotation></semantics></math>.
+Tomamos portanto para todo <math id="SS1.p25.m11" class="ltx_Math" alttext="k\geq 1" display="inline"><semantics><mrow><mi>k</mi><mo>≥</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">k\geq 1</annotation></semantics></math> um ponto <math id="SS1.p25.m12" class="ltx_Math" alttext="x_{k}\in A_{w_{1},\dots,w_{k}}" display="inline"><semantics><mrow><msub><mi>x</mi><mi>k</mi></msub><mo>∈</mo><msub><mi>A</mi><mrow><msub><mi>w</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>w</mi><mi>k</mi></msub></mrow></msub></mrow><annotation encoding="application/x-tex">x_{k}\in A_{w_{1},\dots,w_{k}}</annotation></semantics></math>.</p>
+</div>
+<div id="SS1.p26" class="ltx_para">
+<p class="ltx_p">Afirmamos que</p>
+<div id="Ch2.E114" class="ltx_equation ltx_eqn_div">
+<span><span class="ltx_text ltx_markedasmath">para todo <math id="Ch2.E114.m1.m1" class="ltx_Math" alttext="n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>, <math id="Ch2.E114.m1.m2" class="ltx_Math" alttext="(x_{k})_{k\geq n}" display="inline"><semantics><msub><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mi>k</mi></msub><mo stretchy="false">)</mo></mrow><mrow><mi>k</mi><mo>≥</mo><mi>n</mi></mrow></msub><annotation encoding="application/x-tex">(x_{k})_{k\geq n}</annotation></semantics></math> é Cauchy em <math id="Ch2.E114.m1.m3" class="ltx_Math" alttext="(A_{w_{1},\dots,w_{n}},d_{w_{1},\dots,w_{n}})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mrow><msub><mi>w</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>w</mi><mi>n</mi></msub></mrow></msub><mo>,</mo><msub><mi>d</mi><mrow><msub><mi>w</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>w</mi><mi>n</mi></msub></mrow></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(A_{w_{1},\dots,w_{n}},d_{w_{1},\dots,w_{n}})</annotation></semantics></math>,</span></span>
+                <span class="ltx_tag ltx_tag_equation ltx_align_right">(2.114)</span>
+                
+                
+              
+</div>
+<p class="ltx_p">o que segue logo do fato que por <math id="SS1.p26.m1" class="ltx_Math" alttext="k\geq n+1" display="inline"><semantics><mrow><mi>k</mi><mo>≥</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></mrow><annotation encoding="application/x-tex">k\geq n+1</annotation></semantics></math>, <math id="SS1.p26.m2" class="ltx_Math" alttext="x_{k}\in A_{w_{1},\dots,w_{k}}" display="inline"><semantics><mrow><msub><mi>x</mi><mi>k</mi></msub><mo>∈</mo><msub><mi>A</mi><mrow><msub><mi>w</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>w</mi><mi>k</mi></msub></mrow></msub></mrow><annotation encoding="application/x-tex">x_{k}\in A_{w_{1},\dots,w_{k}}</annotation></semantics></math> cujo <math id="SS1.p26.m3" class="ltx_Math" alttext="d_{w_{1},\dots,w_{n}}" display="inline"><semantics><msub><mi>d</mi><mrow><msub><mi>w</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>w</mi><mi>n</mi></msub></mrow></msub><annotation encoding="application/x-tex">d_{w_{1},\dots,w_{n}}</annotation></semantics></math>-diâmetro é menor que <math id="SS1.p26.m4" class="ltx_Math" alttext="1/k" display="inline"><semantics><mrow><mn>1</mn><mo>/</mo><mi>k</mi></mrow><annotation encoding="application/x-tex">1/k</annotation></semantics></math>.</p>
+</div>
+<div id="SS1.p27" class="ltx_para">
+<p class="ltx_p">Consideramos <math id="SS1.p27.m1" class="ltx_Math" alttext="x^{n}" display="inline"><semantics><msup><mi>x</mi><mi>n</mi></msup><annotation encoding="application/x-tex">x^{n}</annotation></semantics></math> o limite de <math id="SS1.p27.m2" class="ltx_Math" alttext="(x_{k})_{k\geq n}" display="inline"><semantics><msub><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mi>k</mi></msub><mo stretchy="false">)</mo></mrow><mrow><mi>k</mi><mo>≥</mo><mi>n</mi></mrow></msub><annotation encoding="application/x-tex">(x_{k})_{k\geq n}</annotation></semantics></math> em <math id="SS1.p27.m3" class="ltx_Math" alttext="(A_{w_{1},\dots,w_{n}},d_{w_{1},\dots,w_{n}})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mrow><msub><mi>w</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>w</mi><mi>n</mi></msub></mrow></msub><mo>,</mo><msub><mi>d</mi><mrow><msub><mi>w</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>w</mi><mi>n</mi></msub></mrow></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(A_{w_{1},\dots,w_{n}},d_{w_{1},\dots,w_{n}})</annotation></semantics></math>.
+É fácil de mostrar que <math id="SS1.p27.m4" class="ltx_Math" alttext="x^{n}=x^{0}:=x" display="inline"><semantics><mrow><msup><mi>x</mi><mi>n</mi></msup><mo>=</mo><msup><mi>x</mi><mn>0</mn></msup><mo lspace="0.278em" rspace="0.278em">:=</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">x^{n}=x^{0}:=x</annotation></semantics></math> (o limite da sequência em <math id="SS1.p27.m5" class="ltx_Math" alttext="(E,d)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi>E</mi><mo>,</mo><mi>d</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(E,d)</annotation></semantics></math>) para todo valor de <math id="SS1.p27.m6" class="ltx_Math" alttext="n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>.
+É suficiente ver que <math id="SS1.p27.m7" class="ltx_Math" alttext="d(x^{n},x_{k})\leq d_{w_{1},\dots,w_{n}}(x^{n},x_{k})" display="inline"><semantics><mrow><mrow><mi>d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mi>n</mi></msup><mo>,</mo><msub><mi>x</mi><mi>k</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>≤</mo><mrow><msub><mi>d</mi><mrow><msub><mi>w</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>w</mi><mi>n</mi></msub></mrow></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mi>n</mi></msup><mo>,</mo><msub><mi>x</mi><mi>k</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">d(x^{n},x_{k})\leq d_{w_{1},\dots,w_{n}}(x^{n},x_{k})</annotation></semantics></math>, para todo <math id="SS1.p27.m8" class="ltx_Math" alttext="k\geq n" display="inline"><semantics><mrow><mi>k</mi><mo>≥</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">k\geq n</annotation></semantics></math>, o que implica que <math id="SS1.p27.m9" class="ltx_Math" alttext="x^{n}" display="inline"><semantics><msup><mi>x</mi><mi>n</mi></msup><annotation encoding="application/x-tex">x^{n}</annotation></semantics></math> é o limite em <math id="SS1.p27.m10" class="ltx_Math" alttext="(E,d)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi>E</mi><mo>,</mo><mi>d</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(E,d)</annotation></semantics></math>.</p>
+</div>
+<div id="SS1.p28" class="ltx_para">
+<p class="ltx_p">Como consequência podemos concluir que <math id="SS1.p28.m1" class="ltx_Math" alttext="x\in A_{w_{1},\dots,w_{n}}" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><msub><mi>A</mi><mrow><msub><mi>w</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>w</mi><mi>n</mi></msub></mrow></msub></mrow><annotation encoding="application/x-tex">x\in A_{w_{1},\dots,w_{n}}</annotation></semantics></math> para todo <math id="SS1.p28.m2" class="ltx_Math" alttext="n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math> e então que <math id="SS1.p28.m3" class="ltx_Math" alttext="\phi(x)=\omega" display="inline"><semantics><mrow><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi>ω</mi></mrow><annotation encoding="application/x-tex">\phi(x)=\omega</annotation></semantics></math>, o que conclui a prova do teorema.
+∎</p>
+</div>
+</div>
+<div class="ltx_pagination ltx_role_newpage"></div>
+</div>
+</section>
+</div>
+</section>
+</div>
+</div>
+</div>
+<a href="Ch2.S9.html" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a><a href="Ch2.Sx4.html" class="navigation navigation-next" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+</div>
+</div>
+<script src="bookml/gitbook/js/app.min.js"></script>
+<script src="bookml/gitbook/js/jquery.highlight.js"></script>
+<script src="bookml/gitbook/js/plugin-search.js"></script>
+<script src="bookml/gitbook/js/plugin-fontsettings.js"></script>
+<script src="bookml/gitbook/js/plugin-bookdown.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+        MathJax = {
+          startup: {
+            ready() {
+              // do not process equations disabled with \bmlDisableMathJax (code suggested by Davide P. Cervone)
+              class bmlFindMathML extends MathJax._.input.mathml.FindMathML.FindMathML {
+                processMath(set) {
+                  const adaptor = this.adaptor;
+                  for (const node of set.values()) {
+                    if (adaptor.hasClass(node, 'bml_disable_mathjax')) {
+                      set.delete(node);
+                    }
+                  }
+                  return super.processMath(set);
+                }
+              }
+
+              MathJax._.components.global.combineDefaults(MathJax.config, 'mml', {FindMathML: new bmlFindMathML()});
+
+              MathJax.startup.defaultReady();
+
+              // preproces MathML to make MathJax aware of certain LaTeXML and BookML additional info
+              const mmlFilters = MathJax.startup.input[0].mmlFilters;
+
+              // convert the LaTeXML calligraphic (chancery) annotation to a form MathJax understands
+              // since the corresponding Unicode characters render as script (rounded)
+              const script2latin = {
+                '𝒜': 'A', 'ℬ': 'B', '𝒞': 'C', '𝒟': 'D', 'ℰ': 'E', 'ℱ': 'F', '𝒢': 'G',
+                'ℋ': 'H', 'ℐ': 'I', '𝒥': 'J', '𝒦': 'K', 'ℒ': 'L', 'ℳ': 'M', '𝒩': 'N',
+                '𝒪': 'O', '𝒫': 'P', '𝒬': 'Q', 'ℛ': 'R', '𝒮': 'S', '𝒯': 'T', '𝒰': 'U',
+                '𝒱': 'V', '𝒲': 'W', '𝒳': 'X', '𝒴': 'Y', '𝒵': 'Z',
+              };
+
+              mmlFilters.add((args) => {
+                for (const n of args.data.getElementsByClassName('ltx_font_mathcaligraphic')) {
+                  n.classList.add('MJX-tex-calligraphic');
+                  const letter = script2latin[n.textContent];
+                  if (letter !== undefined) { n.textContent = letter; }
+                }
+              });
+
+              // adjust characters based on Unicode variation sequences
+              const replacements = {
+                // MathJax renders the empty set as the U+FE00 variant, so the plain character needs adjusting
+                '∅': { variant: 'variant' },
+                // MathJax renders script characters in rounded style, which is fine for no variation and U+FE00
+                '𝒜\xFE00': { text: 'A', variant: 'tex-calligraphic' },
+                'ℬ\xFE00': { text: 'B', variant: 'tex-calligraphic' },
+                '𝒞\xFE00': { text: 'C', variant: 'tex-calligraphic' },
+                '𝒟\xFE00': { text: 'D', variant: 'tex-calligraphic' },
+                'ℰ\xFE00': { text: 'E', variant: 'tex-calligraphic' },
+                'ℱ\xFE00': { text: 'F', variant: 'tex-calligraphic' },
+                '𝒢\xFE00': { text: 'G', variant: 'tex-calligraphic' },
+                'ℋ\xFE00': { text: 'H', variant: 'tex-calligraphic' },
+                'ℐ\xFE00': { text: 'I', variant: 'tex-calligraphic' },
+                '𝒥\xFE00': { text: 'J', variant: 'tex-calligraphic' },
+                '𝒦\xFE00': { text: 'K', variant: 'tex-calligraphic' },
+                'ℒ\xFE00': { text: 'L', variant: 'tex-calligraphic' },
+                'ℳ\xFE00': { text: 'M', variant: 'tex-calligraphic' },
+                '𝒩\xFE00': { text: 'N', variant: 'tex-calligraphic' },
+                '𝒪\xFE00': { text: 'O', variant: 'tex-calligraphic' },
+                '𝒫\xFE00': { text: 'P', variant: 'tex-calligraphic' },
+                '𝒬\xFE00': { text: 'Q', variant: 'tex-calligraphic' },
+                'ℛ\xFE00': { text: 'R', variant: 'tex-calligraphic' },
+                '𝒮\xFE00': { text: 'S', variant: 'tex-calligraphic' },
+                '𝒯\xFE00': { text: 'T', variant: 'tex-calligraphic' },
+                '𝒰\xFE00': { text: 'U', variant: 'tex-calligraphic' },
+                '𝒱\xFE00': { text: 'V', variant: 'tex-calligraphic' },
+                '𝒲\xFE00': { text: 'W', variant: 'tex-calligraphic' },
+                '𝒳\xFE00': { text: 'X', variant: 'tex-calligraphic' },
+                '𝒴\xFE00': { text: 'Y', variant: 'tex-calligraphic' },
+                '𝒵\xFE00': { text: 'Z', variant: 'tex-calligraphic' }
+              };
+
+              mmlFilters.add((args) => {
+                let nodes = document.evaluate('.//m:mi | .//m:mn | .//m:mo | .//m:ms', args.data,
+                  () => 'http://www.w3.org/1998/Math/MathML', XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE);
+                for (let i = 0; i < nodes.snapshotLength; i++) {
+                  const n = nodes.snapshotItem(i);
+                  const repl = replacements[n.innerHTML];
+                  if (repl !== undefined) {
+                    const variant = repl['variant'];
+                    const text = repl['text'];
+                    if (variant !== undefined) { n.classList.add('MJX-' + variant); n.removeAttribute('mathvariant'); }
+                    if (text !== undefined) { n.innerHTML = text; }
+                  }
+                }
+              });
+            }
+          }
+        };
+      </script>
+<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js"></script>
+<script type="text/javascript">
+                gitbook.require(["gitbook"], function(gitbook) {
+                gitbook.start({
+                  "fontsettings": {
+                    "theme": "white",
+                    "family": "sans",
+                    "size": 2
+                  },
+                  "download": [ [ "Notas_de_aula.pdf", "PDF" ], ],
+                  "search": {
+                    "engine": "fuse"
+                  },
+                  "toc": {
+                    "collapse": "none"
+                  }
+                });
+              });
+            </script>
+</body>
+
+</html>

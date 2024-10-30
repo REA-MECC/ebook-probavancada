@@ -1,0 +1,417 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>4.1 Esperança condicional ‣ Capítulo 4 Esperança condicional ‣ Notas de aula: Probabilidade I</title>
+<!--Generated on Tue Aug 27 13:34:01 2024 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
+<style>:root { --bml-ltx-font-size: 10; }</style>
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-table.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-search.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-bookdown.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-fontsettings.css" type="text/css">
+<link rel="stylesheet" href="ltx-book.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook,plain.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook.css" type="text/css">
+<link rel="stylesheet" href="bmluser/colors.gitbook-Notas_de_aula.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6"></script>
+<link rel="up" href="Ch4.html" title="Capítulo 4 Esperança condicional ‣ Notas de aula: Probabilidade I">
+<link rel="up up" href="index.html" title="Notas de aula: Probabilidade I">
+<link rel="start" href="index.html" title="Notas de aula: Probabilidade I">
+<link rel="prev" href="Ch4.html" title="Capítulo 4 Esperança condicional ‣ Notas de aula: Probabilidade I">
+<link rel="next" href="Ch4.S2.html" title="4.2 Propriedades básicas da esperança condicional ‣ Capítulo 4 Esperança condicional ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch4.S2.html" title="4.2 Propriedades básicas da esperança condicional ‣ Capítulo 4 Esperança condicional ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch4.S3.html" title="4.3 Probabilidade Condicional Regular ‣ Capítulo 4 Esperança condicional ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch4.S4.html" title="4.4 Princípio da substituição ‣ Capítulo 4 Esperança condicional ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch4.Sx1.html" title="Tópico: Processos de Poisson em ℝ ‣ Capítulo 4 Esperança condicional ‣ Notas de aula: Probabilidade I">
+<link rel="chapter" href="Chx1.html" title="Licença ‣ Notas de aula: Probabilidade I">
+<link rel="chapter" href="Chx2.html" title="Contribuições ‣ Notas de aula: Probabilidade I">
+<link rel="chapter" href="Ch1.html" title="Capítulo 1 Fundamentos ‣ Notas de aula: Probabilidade I">
+<link rel="chapter" href="Ch2.html" title="Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I">
+<link rel="chapter" href="Ch3.html" title="Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I">
+<link rel="chapter" href="Ch4.html" title="Capítulo 4 Esperança condicional ‣ Notas de aula: Probabilidade I">
+<link rel="chapter" href="Ch5.html" title="Capítulo 5 Soluções de exercícios ‣ Notas de aula: Probabilidade I">
+<link rel="bibliography" href="bib.html" title="Referências ‣ Notas de aula: Probabilidade I">
+<link rel="index" href="idx.html" title="Índice Remissivo ‣ Notas de aula: Probabilidade I">
+<meta name="keywords" lang="pt-BR" content="condicional, esperança">
+</head>
+<body>
+<div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+<a href="#bml-main-content" tabindex="0" class="bml-skip-to-content">Skip to content.</a>
+<div class="book-summary"><nav class="ltx_page_navbar">
+<ul class="ltx_toclist summary">
+<li>
+<a href="index.html" title="" class="ltx_ref" rel="start">Notas de aula: Probabilidade I</a>
+</li>
+<li class="divider">
+<li data-level="" data-path="Chx1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Chx1.html" title="In Notas de aula: Probabilidade I" class="ltx_ref">Licença</a></li>
+<li data-level="" data-path="Chx2.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Chx2.html" title="In Notas de aula: Probabilidade I" class="ltx_ref">Contribuições</a></li>
+<li data-level="1" data-path="Ch1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch1.html" title="In Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1 </span></b>Fundamentos</a></li>
+<li data-level="2" data-path="Ch2.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch2.html" title="In Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2 </span></b>Construção de espaços de probabilidade</a></li>
+<li data-level="3" data-path="Ch3.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch3.html" title="In Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3 </span></b>Somas de variáveis independentes</a></li>
+<li data-level="4" data-path="Ch4.html" class="ltx_tocentry ltx_tocentry_chapter  chapter ">
+<a href="Ch4.html" title="In Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4 </span></b>Esperança condicional</a>
+<ol class="ltx_toclist ltx_toclist_chapter">
+<li data-level="4.1" data-path="" class="ltx_tocentry ltx_tocentry_section ltx_ref_self  chapter active"><a href="" title="In Capítulo 4 Esperança condicional ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4.1 </span></b>Esperança condicional</a></li>
+<li data-level="4.2" data-path="Ch4.S2.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch4.S2.html" title="In Capítulo 4 Esperança condicional ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4.2 </span></b>Propriedades básicas da esperança condicional</a></li>
+<li data-level="4.3" data-path="Ch4.S3.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch4.S3.html" title="In Capítulo 4 Esperança condicional ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4.3 </span></b>Probabilidade Condicional Regular</a></li>
+<li data-level="4.4" data-path="Ch4.S4.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch4.S4.html" title="In Capítulo 4 Esperança condicional ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4.4 </span></b>Princípio da substituição</a></li>
+<li data-level="" data-path="Ch4.Sx1.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch4.Sx1.html" title="In Capítulo 4 Esperança condicional ‣ Notas de aula: Probabilidade I" class="ltx_ref">Tópico: Processos de Poisson em <math class="ltx_Math" alttext="\mathbb{R}" display="inline"><semantics><mi>ℝ</mi><annotation encoding="application/x-tex">\mathbb{R}</annotation></semantics></math></a></li>
+</ol>
+</li>
+<li data-level="5" data-path="Ch5.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch5.html" title="In Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">5 </span></b>Soluções de exercícios</a></li>
+<li data-level="" data-path="bib.html" class="ltx_tocentry ltx_tocentry_bibliography  chapter "><a href="bib.html" title="In Notas de aula: Probabilidade I" class="ltx_ref">Referências</a></li>
+<li data-level="" data-path="idx.html" class="ltx_tocentry ltx_tocentry_index  chapter "><a href="idx.html" title="In Notas de aula: Probabilidade I" class="ltx_ref">Índice Remissivo</a></li>
+</ul>
+</nav></div>
+<div class="ltx_page_main book-body fixed">
+<div class="body-inner">
+<div class="book-header fixed" role="navigation"><h1>Esperança condicional</h1></div>
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="ltx_page_content page-inner" id="bml-main-content">
+<section class="ltx_section normal" lang="pt-BR">
+<div class="section level1">
+
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section header-section-number">4.1</span> Esperança condicional</h1>
+
+<div id="p1" class="ltx_para">
+<p class="ltx_p">Como já foi dito anteriormente, a estrutura de <math id="p1.m1" class="ltx_Math" alttext="\sigma" display="inline"><semantics><mi>σ</mi><annotation encoding="application/x-tex">\sigma</annotation></semantics></math>-álgebra tem um papel muito importante em probabilidade.
+Durante o curso de Teoria da Medida, muitas vezes o conceito de <math id="p1.m2" class="ltx_Math" alttext="\sigma" display="inline"><semantics><mi>σ</mi><annotation encoding="application/x-tex">\sigma</annotation></semantics></math>-álgebra parece uma tecnicalidade que simplesmente dificulta nosso acesso ao conteúdo realmente interessante do curso.
+Em alguns momentos, chegamos a desejar que tudo fosse mensurável e não tivéssemos que nos preocupar com tais formalidades.</p>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">Contudo, no estudo que iniciaremos agora, nos restringiremos a <math id="p2.m1" class="ltx_Math" alttext="\sigma" display="inline"><semantics><mi>σ</mi><annotation encoding="application/x-tex">\sigma</annotation></semantics></math>-álgebras menores de maneira proposital.
+Ficará claro em particular, que o estudo de mensurabilidade não é uma mera tecnicalidade, mas sim uma ferramenta importante.</p>
+</div>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">Esse interesse, vem da necessidade de representar situações de “informação incompleta”, onde podemos apenas observar uma parte da realidade.
+Isso certamente é de suma importância em diversas aplicações, desde a estatística, física e computação até a teoria de jogos.
+Vamos começar com um exemplo simples.</p>
+</div>
+<div id="p4" class="ltx_para">
+<p class="ltx_p">Suponha que <math id="p4.m1" class="ltx_Math" alttext="\Omega=\mathbb{R}^{2}" display="inline"><semantics><mrow><mi mathvariant="normal">Ω</mi><mo>=</mo><msup><mi>ℝ</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\Omega=\mathbb{R}^{2}</annotation></semantics></math> é dotado da <math id="p4.m2" class="ltx_Math" alttext="\sigma" display="inline"><semantics><mi>σ</mi><annotation encoding="application/x-tex">\sigma</annotation></semantics></math>-álgebra de Borel e denotamos por <math id="p4.m3" class="ltx_Math" alttext="X_{1},X_{2}" display="inline"><semantics><mrow><msub><mi>X</mi><mn>1</mn></msub><mo>,</mo><msub><mi>X</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">X_{1},X_{2}</annotation></semantics></math> as coordenadas canônicas.
+Como podemos representar matematicamente a afirmação “uma pessoa somente conhece o valor de <math id="p4.m4" class="ltx_Math" alttext="X_{1}" display="inline"><semantics><msub><mi>X</mi><mn>1</mn></msub><annotation encoding="application/x-tex">X_{1}</annotation></semantics></math> e não de <math id="p4.m5" class="ltx_Math" alttext="X_{2}" display="inline"><semantics><msub><mi>X</mi><mn>2</mn></msub><annotation encoding="application/x-tex">X_{2}</annotation></semantics></math>”?
+Digamos por exemplo que essa pessoa deverá tomar uma decisão (por exemplo escolher um elemento de <math id="p4.m6" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math>) baseando-se apenas nessa informação incompleta.
+A maneira que modelamos isso matemáticamente é dizendo que a decisão da pessoa deve ser uma função <math id="p4.m7" class="ltx_Math" alttext="f:\Omega\to E" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi mathvariant="normal">Ω</mi><mo stretchy="false">→</mo><mi>E</mi></mrow></mrow><annotation encoding="application/x-tex">f:\Omega\to E</annotation></semantics></math> mensurável com respeito a <math id="p4.m8" class="ltx_Math" alttext="\sigma(X_{1})" display="inline"><semantics><mrow><mi>σ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>X</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\sigma(X_{1})</annotation></semantics></math>.</p>
+</div>
+<div id="p5" class="ltx_para">
+<p class="ltx_p">Nossa primeira utilização desse conceito será feita agora ao introduzirmos a noção de esperaça condicional, que generaliza o conceito de esperança.
+Relembrando o cálculo (<a href="Ch3.S2.html#Ch3.E22" title="In 3.2 Variância ‣ Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.22</span></a>), nós podemos pensar em <math id="p5.m1" class="ltx_Math" alttext="E(X)" display="inline"><semantics><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">E(X)</annotation></semantics></math> como uma boa maneira de aproximar <math id="p5.m2" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> por um número real.
+Isso por exemplo poderia ser útil se não temos nenhuma informação sobre o que ocorreu, mas ainda sim temos que tentar adivinhar o valor de <math id="p5.m3" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>.
+Mas vamos agora imaginar uma outra situação, onde temos um pouco de informação sobre o que ocorreu.</p>
+</div>
+<div id="p6" class="ltx_para">
+<p class="ltx_p">Voltando ao exemplo em que <math id="p6.m1" class="ltx_Math" alttext="\Omega=\mathbb{R}^{2}" display="inline"><semantics><mrow><mi mathvariant="normal">Ω</mi><mo>=</mo><msup><mi>ℝ</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\Omega=\mathbb{R}^{2}</annotation></semantics></math>, digamos que nós podemos observar o valor de <math id="p6.m2" class="ltx_Math" alttext="X_{1}" display="inline"><semantics><msub><mi>X</mi><mn>1</mn></msub><annotation encoding="application/x-tex">X_{1}</annotation></semantics></math>, mas gostaríamos de estimar o valor de <math id="p6.m3" class="ltx_Math" alttext="X_{2}" display="inline"><semantics><msub><mi>X</mi><mn>2</mn></msub><annotation encoding="application/x-tex">X_{2}</annotation></semantics></math>.
+De acordo com o que discutimos acima, nossa estimativa agora não precisa mais ser apenas um número real, podendo ser qualquer função mensurável com respeito a <math id="p6.m4" class="ltx_Math" alttext="\sigma(X_{1})" display="inline"><semantics><mrow><mi>σ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>X</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\sigma(X_{1})</annotation></semantics></math>.</p>
+</div>
+<div id="p7" class="ltx_para">
+<p class="ltx_p">Vamos no que segue tornar esse discussão rigorosa, mas antes lembramos um lema básico de Teoria da Medida.</p>
+</div>
+<div id="p8" class="ltx_para">
+<span class="ltx_ERROR undefined">{lemma}</span>
+<p class="ltx_p">Se <math id="p8.m1" class="ltx_Math" alttext="f,f^{\prime}" display="inline"><semantics><mrow><mi>f</mi><mo>,</mo><msup><mi>f</mi><mo>′</mo></msup></mrow><annotation encoding="application/x-tex">f,f^{\prime}</annotation></semantics></math> são funções mensuráveis tais que</p>
+<div id="Ch4.E1" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.E1.m1" class="ltx_Math" alttext="\int_{A}f\d{\mu}=\int_{A}f^{\prime}\d{\mu},\text{ para todo $A\in\mathcal{F}^{%
+\prime}$,}" display="block"><semantics><mrow><mrow><msub><mo>∫</mo><mi>A</mi></msub><mrow><mi>f</mi><mo>⁢</mo><munder accentunder="true"><mtext class="ltx_mathvariant_italic">μ</mtext><mo>⋅</mo></munder></mrow></mrow><mo rspace="0.111em">=</mo><mrow><mrow><msub><mo>∫</mo><mi>A</mi></msub><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><munder accentunder="true"><mtext class="ltx_mathvariant_italic">μ</mtext><mo>⋅</mo></munder></mrow></mrow><mo>,</mo><mrow><mtext> para todo </mtext><mrow><mi>A</mi><mo>∈</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></mrow><mtext>,</mtext></mrow></mrow></mrow><annotation encoding="application/x-tex">\int_{A}f\d{\mu}=\int_{A}f^{\prime}\d{\mu},\text{ para todo $A\in\mathcal{F}^{%
+\prime}$,}</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.1)</span>
+            
+            
+          
+</div>
+<p class="ltx_p">então <math id="p8.m2" class="ltx_Math" alttext="f=f^{\prime}" display="inline"><semantics><mrow><mi>f</mi><mo>=</mo><msup><mi>f</mi><mo>′</mo></msup></mrow><annotation encoding="application/x-tex">f=f^{\prime}</annotation></semantics></math> <math id="p8.m3" class="ltx_Math" alttext="\mu" display="inline"><semantics><mi>μ</mi><annotation encoding="application/x-tex">\mu</annotation></semantics></math>-quase certamente.</p>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demonstração.</h6>
+<div id="p9" class="ltx_para">
+<p class="ltx_p">Aplicando a hipótese para <math id="p9.m1" class="ltx_Math" alttext="A=[f&gt;f^{\prime}]" display="inline"><semantics><mrow><mi>A</mi><mo>=</mo><mrow><mo stretchy="false">[</mo><mrow><mi>f</mi><mo>&gt;</mo><msup><mi>f</mi><mo>′</mo></msup></mrow><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">A=[f&gt;f^{\prime}]</annotation></semantics></math>, vemos que</p>
+<div id="Ch4.E2" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.E2.m1" class="ltx_Math" alttext="\int_{A}f-f^{\prime}\d{\mu}=0," display="block"><semantics><mrow><mrow><mrow><mrow><msub><mo>∫</mo><mi>A</mi></msub><mi>f</mi></mrow><mo>−</mo><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><munder accentunder="true"><mtext class="ltx_mathvariant_italic">μ</mtext><mo>⋅</mo></munder></mrow></mrow><mo>=</mo><mn>0</mn></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\int_{A}f-f^{\prime}\d{\mu}=0,</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.2)</span>
+              
+              
+            
+</div>
+<p class="ltx_p">mas no conjunto <math id="p9.m2" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> acima, o integrando é positivo.
+Portanto, <math id="p9.m3" class="ltx_Math" alttext="f=f^{\prime}" display="inline"><semantics><mrow><mi>f</mi><mo>=</mo><msup><mi>f</mi><mo>′</mo></msup></mrow><annotation encoding="application/x-tex">f=f^{\prime}</annotation></semantics></math>, <math id="p9.m4" class="ltx_Math" alttext="\mu" display="inline"><semantics><mi>μ</mi><annotation encoding="application/x-tex">\mu</annotation></semantics></math>-quase certamente em <math id="p9.m5" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>.
+Aplicando o mesmo raciocínio para <math id="p9.m6" class="ltx_Math" alttext="[f&lt;f^{\prime}]" display="inline"><semantics><mrow><mo stretchy="false">[</mo><mrow><mi>f</mi><mo>&lt;</mo><msup><mi>f</mi><mo>′</mo></msup></mrow><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[f&lt;f^{\prime}]</annotation></semantics></math> obtemos que <math id="p9.m7" class="ltx_Math" alttext="f=f^{\prime}" display="inline"><semantics><mrow><mi>f</mi><mo>=</mo><msup><mi>f</mi><mo>′</mo></msup></mrow><annotation encoding="application/x-tex">f=f^{\prime}</annotation></semantics></math> quase certamente.
+∎</p>
+</div>
+</div>
+<div id="p10" class="ltx_para">
+<p class="ltx_p">O lema acima nos diz que se soubermos integrar <math id="p10.m1" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> em todos os eventos <math id="p10.m2" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>, então podemos recuperar a função <math id="p10.m3" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> propriamente dita.
+O que aconteceria se soubéssemos integrar <math id="p10.m4" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> apenas para eventos <math id="p10.m5" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> em uma sub-<math id="p10.m6" class="ltx_Math" alttext="\sigma" display="inline"><semantics><mi>σ</mi><annotation encoding="application/x-tex">\sigma</annotation></semantics></math>-álgebra?
+É isso que estudaremos à partir de agora.</p>
+</div>
+<div id="p11" class="ltx_para">
+<span class="ltx_ERROR undefined">{definition}</span>
+<p class="ltx_p">Seja uma variável aleatória <math id="p11.m1" class="ltx_Math" alttext="X\in\mathcal{L}^{1}(P)" display="inline"><semantics><mrow><mi>X</mi><mo>∈</mo><mrow><msup><mi class="ltx_font_mathcaligraphic">ℒ</mi><mn>1</mn></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>P</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">X\in\mathcal{L}^{1}(P)</annotation></semantics></math> e uma sub-<math id="p11.m2" class="ltx_Math" alttext="\sigma" display="inline"><semantics><mi>σ</mi><annotation encoding="application/x-tex">\sigma</annotation></semantics></math>-álgebra <math id="p11.m3" class="ltx_Math" alttext="\mathcal{F}^{\prime}\subseteq\mathcal{F}" display="inline"><semantics><mrow><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup><mo>⊆</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi></mrow><annotation encoding="application/x-tex">\mathcal{F}^{\prime}\subseteq\mathcal{F}</annotation></semantics></math>.
+Dizemos que uma variável aleatória <math id="p11.m4" class="ltx_Math" alttext="Y" display="inline"><semantics><mi>Y</mi><annotation encoding="application/x-tex">Y</annotation></semantics></math> é a esperança condicional  de <math id="p11.m5" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> com respeito a <math id="p11.m6" class="ltx_Math" alttext="\mathcal{F}^{\prime}" display="inline"><semantics><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup><annotation encoding="application/x-tex">\mathcal{F}^{\prime}</annotation></semantics></math> (ou a esperança condicional de <math id="p11.m7" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> dada <math id="p11.m8" class="ltx_Math" alttext="\mathcal{F}^{\prime}" display="inline"><semantics><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup><annotation encoding="application/x-tex">\mathcal{F}^{\prime}</annotation></semantics></math>) se</p>
+<ol id="I1" class="ltx_enumerate">
+<li id="I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"> a)</span><div id="I1.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i1.p1.m1" class="ltx_Math" alttext="Y" display="inline"><semantics><mi>Y</mi><annotation encoding="application/x-tex">Y</annotation></semantics></math> é <math id="I1.i1.p1.m2" class="ltx_Math" alttext="\mathcal{F}^{\prime}" display="inline"><semantics><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup><annotation encoding="application/x-tex">\mathcal{F}^{\prime}</annotation></semantics></math>-mensurável e</p>
+</div>
+</li>
+<li id="I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"> b)</span><div id="I1.i2.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i2.p1.m1" class="ltx_Math" alttext="E(X\1_{A})=E(Y\1_{A})" display="inline"><semantics><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo>⁢</mo><msub><merror class="ltx_ERROR undefined undefined"><mtext>\1</mtext></merror><mi>A</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>Y</mi><mo>⁢</mo><msub><merror class="ltx_ERROR undefined undefined"><mtext>\1</mtext></merror><mi>A</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">E(X\1_{A})=E(Y\1_{A})</annotation></semantics></math> para todo <math id="I1.i2.p1.m2" class="ltx_Math" alttext="A\in\mathcal{F}^{\prime}" display="inline"><semantics><mrow><mi>A</mi><mo>∈</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></mrow><annotation encoding="application/x-tex">A\in\mathcal{F}^{\prime}</annotation></semantics></math>.</p>
+</div>
+</li>
+</ol>
+<p class="ltx_p">Nesse caso, escrevemos</p>
+<div id="Ch4.E3" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.E3.m1" class="ltx_Math" alttext="Y=E(X|\mathcal{F}^{\prime})." display="block"><semantics><mrow><mrow><mi>Y</mi><mo>=</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo fence="false">|</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">Y=E(X|\mathcal{F}^{\prime}).</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.3)</span>
+            
+            
+          
+</div>
+</div>
+<div id="p12" class="ltx_para">
+<p class="ltx_p">Observe que faz sentido escrever <math id="p12.m1" class="ltx_Math" alttext="E\big{(}Y|\mathcal{F}^{\prime}\big{)}(\omega)" display="inline"><semantics><mrow><mi>E</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mi>Y</mi><mo fence="false">|</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ω</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">E\big{(}Y|\mathcal{F}^{\prime}\big{)}(\omega)</annotation></semantics></math>, pois <math id="p12.m2" class="ltx_Math" alttext="E(X|\mathcal{F}^{\prime})" display="inline"><semantics><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo fence="false">|</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">E(X|\mathcal{F}^{\prime})</annotation></semantics></math> é uma variável aleatória.</p>
+</div>
+<div id="p13" class="ltx_para">
+<p class="ltx_p">Interpretamos informalmente a definição acima como “<math id="p13.m1" class="ltx_Math" alttext="Y" display="inline"><semantics><mi>Y</mi><annotation encoding="application/x-tex">Y</annotation></semantics></math> é a melhor aproximação <math id="p13.m2" class="ltx_Math" alttext="\mathcal{F}^{\prime}" display="inline"><semantics><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup><annotation encoding="application/x-tex">\mathcal{F}^{\prime}</annotation></semantics></math>-mensurável de <math id="p13.m3" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>”.
+Ou <math id="p13.m4" class="ltx_Math" alttext="Y" display="inline"><semantics><mi>Y</mi><annotation encoding="application/x-tex">Y</annotation></semantics></math> é a melhor aproximação que podermos fazer de <math id="p13.m5" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> se “conhecemos apenas <math id="p13.m6" class="ltx_Math" alttext="\mathcal{F}^{\prime}" display="inline"><semantics><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup><annotation encoding="application/x-tex">\mathcal{F}^{\prime}</annotation></semantics></math>”.</p>
+</div>
+<div id="p14" class="ltx_para">
+<span class="ltx_ERROR undefined">{example}</span>
+<p class="ltx_p">Se <math id="p14.m1" class="ltx_Math" alttext="\mathcal{F}^{\prime}=\{\varnothing,\Omega\}" display="inline"><semantics><mrow><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup><mo>=</mo><mrow><mo stretchy="false">{</mo><mi mathvariant="normal">∅</mi><mo>,</mo><mi mathvariant="normal">Ω</mi><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">\mathcal{F}^{\prime}=\{\varnothing,\Omega\}</annotation></semantics></math>, então <math id="p14.m2" class="ltx_Math" alttext="Y=E(X)" display="inline"><semantics><mrow><mi>Y</mi><mo>=</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">Y=E(X)</annotation></semantics></math> (uma variável aleatória constante) é esperança condicional de <math id="p14.m3" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> dado <math id="p14.m4" class="ltx_Math" alttext="\mathcal{F}^{\prime}" display="inline"><semantics><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup><annotation encoding="application/x-tex">\mathcal{F}^{\prime}</annotation></semantics></math>, pois</p>
+<ol id="I2" class="ltx_enumerate">
+<li id="I2.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"> a)</span><div id="I2.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i1.p1.m1" class="ltx_Math" alttext="Y" display="inline"><semantics><mi>Y</mi><annotation encoding="application/x-tex">Y</annotation></semantics></math> é <math id="I2.i1.p1.m2" class="ltx_Math" alttext="\mathcal{F}^{\prime}" display="inline"><semantics><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup><annotation encoding="application/x-tex">\mathcal{F}^{\prime}</annotation></semantics></math>-mensurável (por ser constante). Além disso</p>
+</div>
+</li>
+<li id="I2.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"> b)</span><div id="I2.i2.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i2.p1.m1" class="ltx_Math" alttext="E(X\1_{\varnothing})=0=E(Y\1_{\varnothing})" display="inline"><semantics><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo>⁢</mo><msub><merror class="ltx_ERROR undefined undefined"><mtext>\1</mtext></merror><mi mathvariant="normal">∅</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn><mo>=</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>Y</mi><mo>⁢</mo><msub><merror class="ltx_ERROR undefined undefined"><mtext>\1</mtext></merror><mi mathvariant="normal">∅</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">E(X\1_{\varnothing})=0=E(Y\1_{\varnothing})</annotation></semantics></math> e <math id="I2.i2.p1.m2" class="ltx_Math" alttext="E(X\1_{\Omega})=E(X)=E(Y\1_{\Omega})" display="inline"><semantics><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo>⁢</mo><msub><merror class="ltx_ERROR undefined undefined"><mtext>\1</mtext></merror><mi mathvariant="normal">Ω</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>Y</mi><mo>⁢</mo><msub><merror class="ltx_ERROR undefined undefined"><mtext>\1</mtext></merror><mi mathvariant="normal">Ω</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">E(X\1_{\Omega})=E(X)=E(Y\1_{\Omega})</annotation></semantics></math>.</p>
+</div>
+</li>
+</ol>
+</div>
+<div id="p15" class="ltx_para">
+<p class="ltx_p">Uma propriedade muito importante que segue da Definição <span class="ltx_ref ltx_ref_self"><span class="ltx_text ltx_ref_tag">4.1</span></span> é dada pela seguinte</p>
+</div>
+<div id="p16" class="ltx_para">
+<span class="ltx_ERROR undefined">{proposition}</span>
+<p class="ltx_p">Se <math id="p16.m1" class="ltx_Math" alttext="Y" display="inline"><semantics><mi>Y</mi><annotation encoding="application/x-tex">Y</annotation></semantics></math> satisfaz as <math id="p16.m2" class="ltx_math_unparsed" alttext="a)" display="inline"><semantics><mrow><mi>a</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">a)</annotation></semantics></math> e <math id="p16.m3" class="ltx_math_unparsed" alttext="b)" display="inline"><semantics><mrow><mi>b</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">b)</annotation></semantics></math> em Definição <span class="ltx_ref ltx_ref_self"><span class="ltx_text ltx_ref_tag">4.1</span></span>, então <math id="p16.m4" class="ltx_Math" alttext="Y\in\mathcal{L}^{1}(P)" display="inline"><semantics><mrow><mi>Y</mi><mo>∈</mo><mrow><msup><mi class="ltx_font_mathcaligraphic">ℒ</mi><mn>1</mn></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>P</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">Y\in\mathcal{L}^{1}(P)</annotation></semantics></math>.</p>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demonstração.</h6>
+<div id="p17" class="ltx_para">
+<p class="ltx_p">Tomamos <math id="p17.m1" class="ltx_Math" alttext="A=[Y\geq 0]" display="inline"><semantics><mrow><mi>A</mi><mo>=</mo><mrow><mo stretchy="false">[</mo><mrow><mi>Y</mi><mo>≥</mo><mn>0</mn></mrow><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">A=[Y\geq 0]</annotation></semantics></math> e <math id="p17.m2" class="ltx_Math" alttext="A^{\prime}=[Y&lt;0]" display="inline"><semantics><mrow><msup><mi>A</mi><mo>′</mo></msup><mo>=</mo><mrow><mo stretchy="false">[</mo><mrow><mi>Y</mi><mo>&lt;</mo><mn>0</mn></mrow><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">A^{\prime}=[Y&lt;0]</annotation></semantics></math> que estão em <math id="p17.m3" class="ltx_Math" alttext="\mathcal{F}^{\prime}" display="inline"><semantics><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup><annotation encoding="application/x-tex">\mathcal{F}^{\prime}</annotation></semantics></math> e estimamos</p>
+<div id="Ch4.E4" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.E4.m1" class="ltx_Math" alttext="\int|Y|\d{P}=\int_{A}Y\d{P}+\int_{A^{\prime}}Y\d{P}=\int_{A}X\d{P}+\int_{A^{%
+\prime}}X\d{P}\leq\int|X|\d{P}&lt;\infty" display="block"><semantics><mrow><mrow><mo rspace="0em">∫</mo><mrow><mrow><mo stretchy="false">|</mo><mi>Y</mi><mo stretchy="false">|</mo></mrow><mo>⁢</mo><munder accentunder="true"><mtext>P</mtext><mo>⋅</mo></munder></mrow></mrow><mo rspace="0.111em">=</mo><mrow><mrow><msub><mo>∫</mo><mi>A</mi></msub><mrow><mi>Y</mi><mo>⁢</mo><munder accentunder="true"><mtext>P</mtext><mo>⋅</mo></munder></mrow></mrow><mo rspace="0.055em">+</mo><mrow><msub><mo>∫</mo><msup><mi>A</mi><mo>′</mo></msup></msub><mrow><mi>Y</mi><mo>⁢</mo><munder accentunder="true"><mtext>P</mtext><mo>⋅</mo></munder></mrow></mrow></mrow><mo rspace="0.111em">=</mo><mrow><mrow><msub><mo>∫</mo><mi>A</mi></msub><mrow><mi>X</mi><mo>⁢</mo><munder accentunder="true"><mtext>P</mtext><mo>⋅</mo></munder></mrow></mrow><mo rspace="0.055em">+</mo><mrow><msub><mo>∫</mo><msup><mi>A</mi><mo>′</mo></msup></msub><mrow><mi>X</mi><mo>⁢</mo><munder accentunder="true"><mtext>P</mtext><mo>⋅</mo></munder></mrow></mrow></mrow><mo rspace="0.111em">≤</mo><mrow><mo rspace="0em">∫</mo><mrow><mrow><mo stretchy="false">|</mo><mi>X</mi><mo stretchy="false">|</mo></mrow><mo>⁢</mo><munder accentunder="true"><mtext>P</mtext><mo>⋅</mo></munder></mrow></mrow><mo>&lt;</mo><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">\int|Y|\d{P}=\int_{A}Y\d{P}+\int_{A^{\prime}}Y\d{P}=\int_{A}X\d{P}+\int_{A^{%
+\prime}}X\d{P}\leq\int|X|\d{P}&lt;\infty</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.4)</span>
+              
+              
+            
+</div>
+<p class="ltx_p">O que mostra a proposição.
+∎</p>
+</div>
+</div>
+<div id="p18" class="ltx_para">
+<p class="ltx_p">Além caso trivial dado acima pelo Exemplo <span class="ltx_ref ltx_ref_self"><span class="ltx_text ltx_ref_tag">4.1</span></span>, quando podemos esperar que existam esperanças condicionais?</p>
+</div>
+<div id="p19" class="ltx_para">
+<span class="ltx_ERROR undefined">{theorem}</span>
+<p class="ltx_p">Dada <math id="p19.m1" class="ltx_Math" alttext="X\in\mathcal{L}^{1}(P)" display="inline"><semantics><mrow><mi>X</mi><mo>∈</mo><mrow><msup><mi class="ltx_font_mathcaligraphic">ℒ</mi><mn>1</mn></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>P</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">X\in\mathcal{L}^{1}(P)</annotation></semantics></math> e <math id="p19.m2" class="ltx_Math" alttext="\mathcal{F}^{\prime}\subseteq\mathcal{F}" display="inline"><semantics><mrow><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup><mo>⊆</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi></mrow><annotation encoding="application/x-tex">\mathcal{F}^{\prime}\subseteq\mathcal{F}</annotation></semantics></math> uma <math id="p19.m3" class="ltx_Math" alttext="\sigma" display="inline"><semantics><mi>σ</mi><annotation encoding="application/x-tex">\sigma</annotation></semantics></math>-álgebra, então existe a esperança condicional <math id="p19.m4" class="ltx_Math" alttext="E(X|\mathcal{F}^{\prime})" display="inline"><semantics><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo fence="false">|</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">E(X|\mathcal{F}^{\prime})</annotation></semantics></math>.
+Além disso ela é única <math id="p19.m5" class="ltx_Math" alttext="P" display="inline"><semantics><mi>P</mi><annotation encoding="application/x-tex">P</annotation></semantics></math>-quase certamente.</p>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demonstração.</h6>
+<div id="p20" class="ltx_para">
+<p class="ltx_p">Vamos primeiro mostrar a unicidade quase certa.
+Para isso, supomos que existam <math id="p20.m1" class="ltx_Math" alttext="Y" display="inline"><semantics><mi>Y</mi><annotation encoding="application/x-tex">Y</annotation></semantics></math> e <math id="p20.m2" class="ltx_Math" alttext="Y^{\prime}" display="inline"><semantics><msup><mi>Y</mi><mo>′</mo></msup><annotation encoding="application/x-tex">Y^{\prime}</annotation></semantics></math> satisfazendo as condições da Definição <span class="ltx_ref ltx_ref_self"><span class="ltx_text ltx_ref_tag">4.1</span></span> (logo em <math id="p20.m3" class="ltx_Math" alttext="\mathcal{L}^{1}" display="inline"><semantics><msup><mi class="ltx_font_mathcaligraphic">ℒ</mi><mn>1</mn></msup><annotation encoding="application/x-tex">\mathcal{L}^{1}</annotation></semantics></math>).
+Iremos proceder como no Lema <span class="ltx_ref ltx_ref_self"><span class="ltx_text ltx_ref_tag">4.1</span></span> acima, definindo <math id="p20.m4" class="ltx_Math" alttext="A=[Y&gt;Y^{\prime}]" display="inline"><semantics><mrow><mi>A</mi><mo>=</mo><mrow><mo stretchy="false">[</mo><mrow><mi>Y</mi><mo>&gt;</mo><msup><mi>Y</mi><mo>′</mo></msup></mrow><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">A=[Y&gt;Y^{\prime}]</annotation></semantics></math>, donde concluímos que</p>
+<div id="Ch4.E5" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.E5.m1" class="ltx_Math" alttext="E\big{(}(Y-Y^{\prime})\1_{A}\big{)}=E(Y\1_{A})-E(Y^{\prime}\1_{A})=0." display="block"><semantics><mrow><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>Y</mi><mo>−</mo><msup><mi>Y</mi><mo>′</mo></msup></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><merror class="ltx_ERROR undefined undefined"><mtext>\1</mtext></merror><mi>A</mi></msub></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>Y</mi><mo>⁢</mo><msub><merror class="ltx_ERROR undefined undefined"><mtext>\1</mtext></merror><mi>A</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>Y</mi><mo>′</mo></msup><mo>⁢</mo><msub><merror class="ltx_ERROR undefined undefined"><mtext>\1</mtext></merror><mi>A</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mn>0</mn></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">E\big{(}(Y-Y^{\prime})\1_{A}\big{)}=E(Y\1_{A})-E(Y^{\prime}\1_{A})=0.</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.5)</span>
+              
+              
+            
+</div>
+<p class="ltx_p">Mas como <math id="p20.m5" class="ltx_Math" alttext="Y&gt;Y^{\prime}" display="inline"><semantics><mrow><mi>Y</mi><mo>&gt;</mo><msup><mi>Y</mi><mo>′</mo></msup></mrow><annotation encoding="application/x-tex">Y&gt;Y^{\prime}</annotation></semantics></math> em <math id="p20.m6" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>, vemos que <math id="p20.m7" class="ltx_Math" alttext="Y\leq Y^{\prime}" display="inline"><semantics><mrow><mi>Y</mi><mo>≤</mo><msup><mi>Y</mi><mo>′</mo></msup></mrow><annotation encoding="application/x-tex">Y\leq Y^{\prime}</annotation></semantics></math> quase certamtente.
+A prova da unicidade pode ser completa trocando os papéis de <math id="p20.m8" class="ltx_Math" alttext="Y" display="inline"><semantics><mi>Y</mi><annotation encoding="application/x-tex">Y</annotation></semantics></math> e <math id="p20.m9" class="ltx_Math" alttext="Y^{\prime}" display="inline"><semantics><msup><mi>Y</mi><mo>′</mo></msup><annotation encoding="application/x-tex">Y^{\prime}</annotation></semantics></math> acima.</p>
+</div>
+<div id="p21" class="ltx_para">
+<p class="ltx_p">Vamos agora para a prova da existência.
+Como <math id="p21.m1" class="ltx_Math" alttext="X\in\mathcal{L}^{1}(P)" display="inline"><semantics><mrow><mi>X</mi><mo>∈</mo><mrow><msup><mi class="ltx_font_mathcaligraphic">ℒ</mi><mn>1</mn></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>P</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">X\in\mathcal{L}^{1}(P)</annotation></semantics></math>, podemos introduzir</p>
+<div id="Ch4.E6" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.E6.m1" class="ltx_Math" alttext="\mu(A)=E(X\1_{A})," display="block"><semantics><mrow><mrow><mrow><mi>μ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo>⁢</mo><msub><merror class="ltx_ERROR undefined undefined"><mtext>\1</mtext></merror><mi>A</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\mu(A)=E(X\1_{A}),</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.6)</span>
+              
+              
+            
+</div>
+<p class="ltx_p">que define uma medida com sinal em <math id="p21.m2" class="ltx_Math" alttext="(\Omega,\mathcal{F})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">Ω</mi><mo>,</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(\Omega,\mathcal{F})</annotation></semantics></math>, com variação total finita.</p>
+</div>
+<div id="p22" class="ltx_para">
+<p class="ltx_p">Caso o leitor não se sinta familiarizado com o conceito de medida com sinal, poderá decompor <math id="p22.m1" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> em partes positiva e negativa e proceguir sem problemas.</p>
+</div>
+<div id="p23" class="ltx_para">
+<p class="ltx_p">Um passo importante da prova é observar que <math id="p23.m1" class="ltx_Math" alttext="\mu" display="inline"><semantics><mi>μ</mi><annotation encoding="application/x-tex">\mu</annotation></semantics></math> também define uma medida no espaço <math id="p23.m2" class="ltx_Math" alttext="(\Omega,\mathcal{F}^{\prime})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">Ω</mi><mo>,</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(\Omega,\mathcal{F}^{\prime})</annotation></semantics></math>.
+Estamos portanto propositalmente restringindo nossa <math id="p23.m3" class="ltx_Math" alttext="\sigma" display="inline"><semantics><mi>σ</mi><annotation encoding="application/x-tex">\sigma</annotation></semantics></math>-álgebra.
+Como <math id="p23.m4" class="ltx_Math" alttext="P(A)=0" display="inline"><semantics><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">P(A)=0</annotation></semantics></math> implica que <math id="p23.m5" class="ltx_Math" alttext="\mu(A)=0" display="inline"><semantics><mrow><mrow><mi>μ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\mu(A)=0</annotation></semantics></math>, temos que <math id="p23.m6" class="ltx_Math" alttext="\mu\ll P" display="inline"><semantics><mrow><mi>μ</mi><mo>≪</mo><mi>P</mi></mrow><annotation encoding="application/x-tex">\mu\ll P</annotation></semantics></math> e podemos aplicar o Teorema de Radon-Nikodim para obter uma derivada <math id="p23.m7" class="ltx_Math" alttext="Y:\Omega\to\mathbb{R}" display="inline"><semantics><mrow><mi>Y</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi mathvariant="normal">Ω</mi><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">Y:\Omega\to\mathbb{R}</annotation></semantics></math> tal que</p>
+<ol id="I3" class="ltx_enumerate">
+<li id="I3.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"> a)</span><div id="I3.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I3.i1.p1.m1" class="ltx_Math" alttext="Y" display="inline"><semantics><mi>Y</mi><annotation encoding="application/x-tex">Y</annotation></semantics></math> é <math id="I3.i1.p1.m2" class="ltx_Math" alttext="\mathcal{F}^{\prime}" display="inline"><semantics><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup><annotation encoding="application/x-tex">\mathcal{F}^{\prime}</annotation></semantics></math>-mensurável e</p>
+</div>
+</li>
+<li id="I3.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"> b)</span><div id="I3.i2.p1" class="ltx_para">​<p class="ltx_p"><math id="I3.i2.p1.m1" class="ltx_Math" alttext="\mu(A)=\int_{A}Y\d{P}" display="inline"><semantics><mrow><mrow><mi>μ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo rspace="0.111em">=</mo><mrow><msub><mo>∫</mo><mi>A</mi></msub><mrow><mi>Y</mi><mo>⁢</mo><munder accentunder="true"><mtext>P</mtext><mo>⋅</mo></munder></mrow></mrow></mrow><annotation encoding="application/x-tex">\mu(A)=\int_{A}Y\d{P}</annotation></semantics></math>.</p>
+</div>
+</li>
+</ol>
+<p class="ltx_p">Agora é só observar que as afirmações acima correspondem às condições da Definição <span class="ltx_ref ltx_ref_self"><span class="ltx_text ltx_ref_tag">4.1</span></span>.
+∎</p>
+</div>
+</div>
+<div id="p24" class="ltx_para">
+<p class="ltx_p">Observe que a condição de <math id="p24.m1" class="ltx_Math" alttext="\mathcal{F}^{\prime}" display="inline"><semantics><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup><annotation encoding="application/x-tex">\mathcal{F}^{\prime}</annotation></semantics></math>-mensurabilidade é essencial para a unicidade.
+De fato, <math id="p24.m2" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> obviamente satisfaz a segunda condição da Definição <span class="ltx_ref ltx_ref_self"><span class="ltx_text ltx_ref_tag">4.1</span></span>, mas não necessariamente a primeira.</p>
+</div>
+<div id="p25" class="ltx_para">
+<span class="ltx_ERROR undefined">{exercise}</span>
+<p class="ltx_p">Mostre que se <math id="p25.m1" class="ltx_Math" alttext="X\in\mathcal{F}^{\prime}" display="inline"><semantics><mrow><mi>X</mi><mo>∈</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></mrow><annotation encoding="application/x-tex">X\in\mathcal{F}^{\prime}</annotation></semantics></math>, então <math id="p25.m2" class="ltx_Math" alttext="E(X|\mathcal{F}^{\prime})=X" display="inline"><semantics><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo fence="false">|</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi>X</mi></mrow><annotation encoding="application/x-tex">E(X|\mathcal{F}^{\prime})=X</annotation></semantics></math> quase certamente.</p>
+</div>
+<div id="p26" class="ltx_para">
+<span class="ltx_ERROR undefined">{exercise}</span>
+<p class="ltx_p">Seja <math id="p26.m1" class="ltx_Math" alttext="P" display="inline"><semantics><mi>P</mi><annotation encoding="application/x-tex">P</annotation></semantics></math> a probabilidade uniforme em <math id="p26.m2" class="ltx_Math" alttext="\{(x_{1},x_{2})\in[0,1]^{2};x_{1}\geq x_{2}\}" display="inline"><semantics><mrow><mo stretchy="false">{</mo><mrow><mrow><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><msub><mi>x</mi><mn>2</mn></msub><mo stretchy="false">)</mo></mrow><mo>∈</mo><msup><mrow><mo stretchy="false">[</mo><mn>0,1</mn><mo stretchy="false">]</mo></mrow><mn>2</mn></msup></mrow><mo>;</mo><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>≥</mo><msub><mi>x</mi><mn>2</mn></msub></mrow></mrow><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{(x_{1},x_{2})\in[0,1]^{2};x_{1}\geq x_{2}\}</annotation></semantics></math>.
+Calcule <math id="p26.m3" class="ltx_Math" alttext="E(X_{2}|X_{1})" display="inline"><semantics><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>X</mi><mn>2</mn></msub><mo fence="false">|</mo><msub><mi>X</mi><mn>1</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">E(X_{2}|X_{1})</annotation></semantics></math>.</p>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+<a href="Ch4.html" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a><a href="Ch4.S2.html" class="navigation navigation-next" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+</div>
+</div>
+<script src="bookml/gitbook/js/app.min.js"></script>
+<script src="bookml/gitbook/js/jquery.highlight.js"></script>
+<script src="bookml/gitbook/js/plugin-search.js"></script>
+<script src="bookml/gitbook/js/plugin-fontsettings.js"></script>
+<script src="bookml/gitbook/js/plugin-bookdown.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+        MathJax = {
+          startup: {
+            ready() {
+              // do not process equations disabled with \bmlDisableMathJax (code suggested by Davide P. Cervone)
+              class bmlFindMathML extends MathJax._.input.mathml.FindMathML.FindMathML {
+                processMath(set) {
+                  const adaptor = this.adaptor;
+                  for (const node of set.values()) {
+                    if (adaptor.hasClass(node, 'bml_disable_mathjax')) {
+                      set.delete(node);
+                    }
+                  }
+                  return super.processMath(set);
+                }
+              }
+
+              MathJax._.components.global.combineDefaults(MathJax.config, 'mml', {FindMathML: new bmlFindMathML()});
+
+              MathJax.startup.defaultReady();
+
+              // preproces MathML to make MathJax aware of certain LaTeXML and BookML additional info
+              const mmlFilters = MathJax.startup.input[0].mmlFilters;
+
+              // convert the LaTeXML calligraphic (chancery) annotation to a form MathJax understands
+              // since the corresponding Unicode characters render as script (rounded)
+              const script2latin = {
+                '𝒜': 'A', 'ℬ': 'B', '𝒞': 'C', '𝒟': 'D', 'ℰ': 'E', 'ℱ': 'F', '𝒢': 'G',
+                'ℋ': 'H', 'ℐ': 'I', '𝒥': 'J', '𝒦': 'K', 'ℒ': 'L', 'ℳ': 'M', '𝒩': 'N',
+                '𝒪': 'O', '𝒫': 'P', '𝒬': 'Q', 'ℛ': 'R', '𝒮': 'S', '𝒯': 'T', '𝒰': 'U',
+                '𝒱': 'V', '𝒲': 'W', '𝒳': 'X', '𝒴': 'Y', '𝒵': 'Z',
+              };
+
+              mmlFilters.add((args) => {
+                for (const n of args.data.getElementsByClassName('ltx_font_mathcaligraphic')) {
+                  n.classList.add('MJX-tex-calligraphic');
+                  const letter = script2latin[n.textContent];
+                  if (letter !== undefined) { n.textContent = letter; }
+                }
+              });
+
+              // adjust characters based on Unicode variation sequences
+              const replacements = {
+                // MathJax renders the empty set as the U+FE00 variant, so the plain character needs adjusting
+                '∅': { variant: 'variant' },
+                // MathJax renders script characters in rounded style, which is fine for no variation and U+FE00
+                '𝒜\xFE00': { text: 'A', variant: 'tex-calligraphic' },
+                'ℬ\xFE00': { text: 'B', variant: 'tex-calligraphic' },
+                '𝒞\xFE00': { text: 'C', variant: 'tex-calligraphic' },
+                '𝒟\xFE00': { text: 'D', variant: 'tex-calligraphic' },
+                'ℰ\xFE00': { text: 'E', variant: 'tex-calligraphic' },
+                'ℱ\xFE00': { text: 'F', variant: 'tex-calligraphic' },
+                '𝒢\xFE00': { text: 'G', variant: 'tex-calligraphic' },
+                'ℋ\xFE00': { text: 'H', variant: 'tex-calligraphic' },
+                'ℐ\xFE00': { text: 'I', variant: 'tex-calligraphic' },
+                '𝒥\xFE00': { text: 'J', variant: 'tex-calligraphic' },
+                '𝒦\xFE00': { text: 'K', variant: 'tex-calligraphic' },
+                'ℒ\xFE00': { text: 'L', variant: 'tex-calligraphic' },
+                'ℳ\xFE00': { text: 'M', variant: 'tex-calligraphic' },
+                '𝒩\xFE00': { text: 'N', variant: 'tex-calligraphic' },
+                '𝒪\xFE00': { text: 'O', variant: 'tex-calligraphic' },
+                '𝒫\xFE00': { text: 'P', variant: 'tex-calligraphic' },
+                '𝒬\xFE00': { text: 'Q', variant: 'tex-calligraphic' },
+                'ℛ\xFE00': { text: 'R', variant: 'tex-calligraphic' },
+                '𝒮\xFE00': { text: 'S', variant: 'tex-calligraphic' },
+                '𝒯\xFE00': { text: 'T', variant: 'tex-calligraphic' },
+                '𝒰\xFE00': { text: 'U', variant: 'tex-calligraphic' },
+                '𝒱\xFE00': { text: 'V', variant: 'tex-calligraphic' },
+                '𝒲\xFE00': { text: 'W', variant: 'tex-calligraphic' },
+                '𝒳\xFE00': { text: 'X', variant: 'tex-calligraphic' },
+                '𝒴\xFE00': { text: 'Y', variant: 'tex-calligraphic' },
+                '𝒵\xFE00': { text: 'Z', variant: 'tex-calligraphic' }
+              };
+
+              mmlFilters.add((args) => {
+                let nodes = document.evaluate('.//m:mi | .//m:mn | .//m:mo | .//m:ms', args.data,
+                  () => 'http://www.w3.org/1998/Math/MathML', XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE);
+                for (let i = 0; i < nodes.snapshotLength; i++) {
+                  const n = nodes.snapshotItem(i);
+                  const repl = replacements[n.innerHTML];
+                  if (repl !== undefined) {
+                    const variant = repl['variant'];
+                    const text = repl['text'];
+                    if (variant !== undefined) { n.classList.add('MJX-' + variant); n.removeAttribute('mathvariant'); }
+                    if (text !== undefined) { n.innerHTML = text; }
+                  }
+                }
+              });
+            }
+          }
+        };
+      </script>
+<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js"></script>
+<script type="text/javascript">
+                gitbook.require(["gitbook"], function(gitbook) {
+                gitbook.start({
+                  "fontsettings": {
+                    "theme": "white",
+                    "family": "sans",
+                    "size": 2
+                  },
+                  "download": [ [ "Notas_de_aula.pdf", "PDF" ], ],
+                  "search": {
+                    "engine": "fuse"
+                  },
+                  "toc": {
+                    "collapse": "none"
+                  }
+                });
+              });
+            </script>
+</body>
+
+</html>

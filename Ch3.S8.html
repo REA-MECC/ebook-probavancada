@@ -1,0 +1,949 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>3.8 O Teorema Central do Limite ‣ Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I</title>
+<!--Generated on Tue Aug 27 13:34:01 2024 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
+<style>:root { --bml-ltx-font-size: 10; }</style>
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-table.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-search.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-bookdown.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-fontsettings.css" type="text/css">
+<link rel="stylesheet" href="ltx-book.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook,plain.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook.css" type="text/css">
+<link rel="stylesheet" href="bmluser/colors.gitbook-Notas_de_aula.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6"></script>
+<link rel="up" href="Ch3.html" title="Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I">
+<link rel="up up" href="index.html" title="Notas de aula: Probabilidade I">
+<link rel="start" href="index.html" title="Notas de aula: Probabilidade I">
+<link rel="prev" href="Ch3.Sx2.html" title="Tópico: Funções características 1 footnote 1 1 footnote 1 Somos gratos a Rangel Baldasso por escrever essa seção. ‣ Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I">
+<link rel="next" href="Ch3.Sx3.html" title="Tópico: O Teorema de Portmanteau ‣ Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch3.S1.html" title="3.1 Esperança ‣ Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch3.S2.html" title="3.2 Variância ‣ Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch3.S3.html" title="3.3 Lei fraca dos grandes números ‣ Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch3.Sx1.html" title="Tópico: Contando triângulos ‣ Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch3.S4.html" title="3.4 Lei forte dos grandes números ‣ Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch3.S5.html" title="3.5 Lei {0,1} de Kolmogorov ‣ Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch3.S6.html" title="3.6 Momentos exponenciais ‣ Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch3.S7.html" title="3.7 Princípio de Grandes Desvios ‣ Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch3.Sx2.html" title="Tópico: Funções características 1 footnote 1 1 footnote 1 Somos gratos a Rangel Baldasso por escrever essa seção. ‣ Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch3.Sx3.html" title="Tópico: O Teorema de Portmanteau ‣ Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I">
+<link rel="chapter" href="Chx1.html" title="Licença ‣ Notas de aula: Probabilidade I">
+<link rel="chapter" href="Chx2.html" title="Contribuições ‣ Notas de aula: Probabilidade I">
+<link rel="chapter" href="Ch1.html" title="Capítulo 1 Fundamentos ‣ Notas de aula: Probabilidade I">
+<link rel="chapter" href="Ch2.html" title="Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I">
+<link rel="chapter" href="Ch3.html" title="Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I">
+<link rel="chapter" href="Ch4.html" title="Capítulo 4 Esperança condicional ‣ Notas de aula: Probabilidade I">
+<link rel="chapter" href="Ch5.html" title="Capítulo 5 Soluções de exercícios ‣ Notas de aula: Probabilidade I">
+<link rel="bibliography" href="bib.html" title="Referências ‣ Notas de aula: Probabilidade I">
+<link rel="index" href="idx.html" title="Índice Remissivo ‣ Notas de aula: Probabilidade I">
+<meta name="keywords" lang="pt-BR" content="Central do Limite, Teorema, convergência, distribuição, flutuações, fraca, normal">
+</head>
+<body>
+<div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+<a href="#bml-main-content" tabindex="0" class="bml-skip-to-content">Skip to content.</a>
+<div class="book-summary"><nav class="ltx_page_navbar">
+<ul class="ltx_toclist summary">
+<li>
+<a href="index.html" title="" class="ltx_ref" rel="start">Notas de aula: Probabilidade I</a>
+</li>
+<li class="divider">
+<li data-level="" data-path="Chx1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Chx1.html" title="In Notas de aula: Probabilidade I" class="ltx_ref">Licença</a></li>
+<li data-level="" data-path="Chx2.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Chx2.html" title="In Notas de aula: Probabilidade I" class="ltx_ref">Contribuições</a></li>
+<li data-level="1" data-path="Ch1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch1.html" title="In Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1 </span></b>Fundamentos</a></li>
+<li data-level="2" data-path="Ch2.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch2.html" title="In Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2 </span></b>Construção de espaços de probabilidade</a></li>
+<li data-level="3" data-path="Ch3.html" class="ltx_tocentry ltx_tocentry_chapter  chapter ">
+<a href="Ch3.html" title="In Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3 </span></b>Somas de variáveis independentes</a>
+<ol class="ltx_toclist ltx_toclist_chapter">
+<li data-level="3.1" data-path="Ch3.S1.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch3.S1.html" title="In Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3.1 </span></b>Esperança</a></li>
+<li data-level="3.2" data-path="Ch3.S2.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch3.S2.html" title="In Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3.2 </span></b>Variância</a></li>
+<li data-level="3.3" data-path="Ch3.S3.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch3.S3.html" title="In Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3.3 </span></b>Lei fraca dos grandes números</a></li>
+<li data-level="" data-path="Ch3.Sx1.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch3.Sx1.html" title="In Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I" class="ltx_ref">Tópico: Contando triângulos</a></li>
+<li data-level="3.4" data-path="Ch3.S4.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch3.S4.html" title="In Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3.4 </span></b>Lei forte dos grandes números</a></li>
+<li data-level="3.5" data-path="Ch3.S5.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch3.S5.html" title="In Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3.5 </span></b>Lei <math class="ltx_Math" alttext="\{0,1\}" display="inline"><semantics><mrow><mo stretchy="false">{</mo><mn>0,1</mn><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{0,1\}</annotation></semantics></math> de Kolmogorov</a></li>
+<li data-level="3.6" data-path="Ch3.S6.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch3.S6.html" title="In Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3.6 </span></b>Momentos exponenciais</a></li>
+<li data-level="3.7" data-path="Ch3.S7.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch3.S7.html" title="In Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3.7 </span></b>Princípio de Grandes Desvios</a></li>
+<li data-level="" data-path="Ch3.Sx2.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch3.Sx2.html" title="In Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I" class="ltx_ref">Tópico: Funções características</a></li>
+<li data-level="3.8" data-path="" class="ltx_tocentry ltx_tocentry_section ltx_ref_self  chapter active">
+<a href="" title="In Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3.8 </span></b>O Teorema Central do Limite</a>
+<ol class="ltx_toclist ltx_toclist_section">
+<li data-level="3.8.1" data-path="" class="ltx_tocentry ltx_tocentry_subsection  chapter "><a href="#SS1" title="In 3.8 O Teorema Central do Limite ‣ Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3.8.1 </span></b>A distribuição normal</a></li>
+<li data-level="3.8.2" data-path="" class="ltx_tocentry ltx_tocentry_subsection  chapter "><a href="#SS2" title="In 3.8 O Teorema Central do Limite ‣ Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3.8.2 </span></b>Convergência fraca</a></li>
+<li data-level="3.8.3" data-path="" class="ltx_tocentry ltx_tocentry_subsection  chapter "><a href="#SS3" title="In 3.8 O Teorema Central do Limite ‣ Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3.8.3 </span></b>Convergência fraca em <math class="ltx_Math" alttext="\mathbb{R}" display="inline"><semantics><mi>ℝ</mi><annotation encoding="application/x-tex">\mathbb{R}</annotation></semantics></math></a></li>
+<li data-level="3.8.4" data-path="" class="ltx_tocentry ltx_tocentry_subsection  chapter "><a href="#SS4" title="In 3.8 O Teorema Central do Limite ‣ Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3.8.4 </span></b>O TCL para uma sequência i.i.d.</a></li>
+</ol>
+</li>
+<li data-level="" data-path="Ch3.Sx3.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch3.Sx3.html" title="In Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I" class="ltx_ref">Tópico: O Teorema de Portmanteau</a></li>
+</ol>
+</li>
+<li data-level="4" data-path="Ch4.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch4.html" title="In Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4 </span></b>Esperança condicional</a></li>
+<li data-level="5" data-path="Ch5.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch5.html" title="In Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">5 </span></b>Soluções de exercícios</a></li>
+<li data-level="" data-path="bib.html" class="ltx_tocentry ltx_tocentry_bibliography  chapter "><a href="bib.html" title="In Notas de aula: Probabilidade I" class="ltx_ref">Referências</a></li>
+<li data-level="" data-path="idx.html" class="ltx_tocentry ltx_tocentry_index  chapter "><a href="idx.html" title="In Notas de aula: Probabilidade I" class="ltx_ref">Índice Remissivo</a></li>
+</ul>
+</nav></div>
+<div class="ltx_page_main book-body fixed">
+<div class="body-inner">
+<div class="book-header fixed" role="navigation"><h1>O Teorema Central do Limite</h1></div>
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="ltx_page_content page-inner" id="bml-main-content">
+<section class="ltx_section normal" lang="pt-BR">
+<div class="section level1">
+
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section header-section-number">3.8</span> O Teorema Central do Limite</h1>
+
+<div id="p1" class="ltx_para">
+<p class="ltx_p">Até o presente momento, já sabemos por exemplo que médias de variáveis aleatórias <span class="ltx_ERROR undefined">\iid</span>, suficientemente regulares convergem para sua esperança quase certamente.
+Vamos fazer contudo um experimento para visualizar esse fenômeno.</p>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">Nesse experimento, jogamos <math id="p2.m1" class="ltx_Math" alttext="100" display="inline"><semantics><mn>100</mn><annotation encoding="application/x-tex">100</annotation></semantics></math> moedas e contamos quantas caras obtivemos.
+Pelo que discutimos anteriormente, esperamos que esse número se encontre por volta de <math id="p2.m2" class="ltx_Math" alttext="50" display="inline"><semantics><mn>50</mn><annotation encoding="application/x-tex">50</annotation></semantics></math>, que é a esperança desta soma de variáveis <span class="ltx_ERROR undefined">\iid</span>.
+Vamos portanto repetir esse experimento mil vezes e observar quantas vezes obtemos algo próximo de <math id="p2.m3" class="ltx_Math" alttext="50" display="inline"><semantics><mn>50</mn><annotation encoding="application/x-tex">50</annotation></semantics></math>, veja Figura <a href="#Ch3.F2" title="Figura 3.2 ‣ 3.8 O Teorema Central do Limite ‣ Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.2</span></a>.</p>
+</div>
+<figure id="Ch3.F2" class="ltx_figure"><div class="bml-overflow-wrapper"><svg id="Ch3.F2.pic1" class="ltx_picture ltx_centering" height="160.43" overflow="visible" version="1.1" width="349.43" viewBox="0 0 349.43 160.43"><g class="bml_fill_000000 bml_stroke_000000" fill="#000000" stroke="#000000" stroke-width="0.4pt" transform="translate(0,160.43) matrix(1 0 0 -1 0 0) translate(34.19,0) translate(0,22.35)"><path d="M 0 137.16 L 0 0 L 314.32 0" style="fill:none"></path><g stroke-dasharray="none" stroke-dashoffset="0.0pt" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.32pt" transform="matrix(0.0 1.0 -1.0 0.0 0 137.16)"><path d="M -1.66 2.21 C -1.52 1.38 0 0.14 0.42 0 C 0 -0.14 -1.52 -1.38 -1.66 -2.21" style="fill:none"></path></g><g stroke-dasharray="none" stroke-dashoffset="0.0pt" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.32pt" transform="matrix(1.0 0.0 0.0 1.0 314.32 0)"><path d="M -1.66 2.21 C -1.52 1.38 0 0.14 0.42 0 C 0 -0.14 -1.52 -1.38 -1.66 -2.21" style="fill:none"></path></g><path d="M 39.37 -3.94 L 39.37 3.94" style="fill:none"></path><g class="bml_fill_000000 bml_stroke_000000" fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 32.45 -17.74)"><foreignObject height="8.92" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="13.84"><math id="Ch3.F2.pic1.m1" class="ltx_Math" alttext="10" display="inline"><semantics><mn>10</mn><annotation encoding="application/x-tex">10</annotation></semantics></math></foreignObject></g><path d="M 78.74 -3.94 L 78.74 3.94" style="fill:none"></path><g class="bml_fill_000000 bml_stroke_000000" fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 71.82 -17.74)"><foreignObject height="8.92" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="13.84"><math id="Ch3.F2.pic1.m2" class="ltx_Math" alttext="20" display="inline"><semantics><mn>20</mn><annotation encoding="application/x-tex">20</annotation></semantics></math></foreignObject></g><path d="M 118.11 -3.94 L 118.11 3.94" style="fill:none"></path><g class="bml_fill_000000 bml_stroke_000000" fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 111.19 -17.74)"><foreignObject height="8.92" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="13.84"><math id="Ch3.F2.pic1.m3" class="ltx_Math" alttext="30" display="inline"><semantics><mn>30</mn><annotation encoding="application/x-tex">30</annotation></semantics></math></foreignObject></g><path d="M 157.48 -3.94 L 157.48 3.94" style="fill:none"></path><g class="bml_fill_000000 bml_stroke_000000" fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 150.56 -17.74)"><foreignObject height="8.92" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="13.84"><math id="Ch3.F2.pic1.m4" class="ltx_Math" alttext="40" display="inline"><semantics><mn>40</mn><annotation encoding="application/x-tex">40</annotation></semantics></math></foreignObject></g><path d="M 196.85 -3.94 L 196.85 3.94" style="fill:none"></path><g class="bml_fill_000000 bml_stroke_000000" fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 189.93 -17.74)"><foreignObject height="8.92" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="13.84"><math id="Ch3.F2.pic1.m5" class="ltx_Math" alttext="50" display="inline"><semantics><mn>50</mn><annotation encoding="application/x-tex">50</annotation></semantics></math></foreignObject></g><path d="M 236.22 -3.94 L 236.22 3.94" style="fill:none"></path><g class="bml_fill_000000 bml_stroke_000000" fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 229.3 -17.74)"><foreignObject height="8.92" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="13.84"><math id="Ch3.F2.pic1.m6" class="ltx_Math" alttext="60" display="inline"><semantics><mn>60</mn><annotation encoding="application/x-tex">60</annotation></semantics></math></foreignObject></g><path d="M 275.59 -3.94 L 275.59 3.94" style="fill:none"></path><g class="bml_fill_000000 bml_stroke_000000" fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 268.67 -17.74)"><foreignObject height="8.92" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="13.84"><math id="Ch3.F2.pic1.m7" class="ltx_Math" alttext="70" display="inline"><semantics><mn>70</mn><annotation encoding="application/x-tex">70</annotation></semantics></math></foreignObject></g><path d="M -3.94 19.69 L 3.94 19.69" style="fill:none"></path><g class="bml_fill_000000 bml_stroke_000000" fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 -22.66 15.23)"><foreignObject height="8.92" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="13.84"><math id="Ch3.F2.pic1.m8" class="ltx_Math" alttext="50" display="inline"><semantics><mn>50</mn><annotation encoding="application/x-tex">50</annotation></semantics></math></foreignObject></g><path d="M -3.94 39.37 L 3.94 39.37" style="fill:none"></path><g class="bml_fill_000000 bml_stroke_000000" fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 -29.58 34.91)"><foreignObject height="8.92" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="20.76"><math id="Ch3.F2.pic1.m9" class="ltx_Math" alttext="100" display="inline"><semantics><mn>100</mn><annotation encoding="application/x-tex">100</annotation></semantics></math></foreignObject></g><path d="M -3.94 59.06 L 3.94 59.06" style="fill:none"></path><g class="bml_fill_000000 bml_stroke_000000" fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 -29.58 54.6)"><foreignObject height="8.92" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="20.76"><math id="Ch3.F2.pic1.m10" class="ltx_Math" alttext="150" display="inline"><semantics><mn>150</mn><annotation encoding="application/x-tex">150</annotation></semantics></math></foreignObject></g><path d="M -3.94 78.74 L 3.94 78.74" style="fill:none"></path><g class="bml_fill_000000 bml_stroke_000000" fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 -29.58 74.28)"><foreignObject height="8.92" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="20.76"><math id="Ch3.F2.pic1.m11" class="ltx_Math" alttext="200" display="inline"><semantics><mn>200</mn><annotation encoding="application/x-tex">200</annotation></semantics></math></foreignObject></g><path d="M -3.94 98.43 L 3.94 98.43" style="fill:none"></path><g class="bml_fill_000000 bml_stroke_000000" fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 -29.58 93.97)"><foreignObject height="8.92" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="20.76"><math id="Ch3.F2.pic1.m12" class="ltx_Math" alttext="250" display="inline"><semantics><mn>250</mn><annotation encoding="application/x-tex">250</annotation></semantics></math></foreignObject></g><path d="M -3.94 118.11 L 3.94 118.11" style="fill:none"></path><g class="bml_fill_000000 bml_stroke_000000" fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 -29.58 113.65)"><foreignObject height="8.92" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="20.76"><math id="Ch3.F2.pic1.m13" class="ltx_Math" alttext="300" display="inline"><semantics><mn>300</mn><annotation encoding="application/x-tex">300</annotation></semantics></math></foreignObject></g><g class="bml_fill_808080 bml_stroke_808080 bml_color_808080" fill="#808080" fill-opacity="0.5" stroke="#808080" stroke-opacity="0.5"><path d="M 133.86 0 M 133.86 0 L 133.86 2.76 L 146.46 2.76 L 146.46 0 Z M 146.46 2.76"></path></g><g class="bml_fill_808080 bml_stroke_808080 bml_color_808080" fill="#808080" fill-opacity="0.5" stroke="#808080" stroke-opacity="0.5"><path d="M 146.46 0 M 146.46 0 L 146.46 10.63 L 159.05 10.63 L 159.05 0 Z M 159.05 10.63"></path></g><g class="bml_fill_808080 bml_stroke_808080 bml_color_808080" fill="#808080" fill-opacity="0.5" stroke="#808080" stroke-opacity="0.5"><path d="M 159.05 0 M 159.05 0 L 159.05 25.59 L 171.65 25.59 L 171.65 0 Z M 171.65 25.59"></path></g><g class="bml_fill_808080 bml_stroke_808080 bml_color_808080" fill="#808080" fill-opacity="0.5" stroke="#808080" stroke-opacity="0.5"><path d="M 171.65 0 M 171.65 0 L 171.65 63.39 L 184.25 63.39 L 184.25 0 Z M 184.25 63.39"></path></g><g class="bml_fill_808080 bml_stroke_808080 bml_color_808080" fill="#808080" fill-opacity="0.5" stroke="#808080" stroke-opacity="0.5"><path d="M 184.25 0 M 184.25 0 L 184.25 112.99 L 196.85 112.99 L 196.85 0 Z M 196.85 112.99"></path></g><g class="bml_fill_808080 bml_stroke_808080 bml_color_808080" fill="#808080" fill-opacity="0.5" stroke="#808080" stroke-opacity="0.5"><path d="M 196.85 0 M 196.85 0 L 196.85 78.74 L 209.45 78.74 L 209.45 0 Z M 209.45 78.74"></path></g><g class="bml_fill_808080 bml_stroke_808080 bml_color_808080" fill="#808080" fill-opacity="0.5" stroke="#808080" stroke-opacity="0.5"><path d="M 209.45 0 M 209.45 0 L 209.45 66.14 L 222.05 66.14 L 222.05 0 Z M 222.05 66.14"></path></g><g class="bml_fill_808080 bml_stroke_808080 bml_color_808080" fill="#808080" fill-opacity="0.5" stroke="#808080" stroke-opacity="0.5"><path d="M 222.05 0 M 222.05 0 L 222.05 22.83 L 234.65 22.83 L 234.65 0 Z M 234.65 22.83"></path></g><g class="bml_fill_808080 bml_stroke_808080 bml_color_808080" fill="#808080" fill-opacity="0.5" stroke="#808080" stroke-opacity="0.5"><path d="M 234.65 0 M 234.65 0 L 234.65 8.66 L 247.24 8.66 L 247.24 0 Z M 247.24 8.66"></path></g><g class="bml_fill_808080 bml_stroke_808080 bml_color_808080" fill="#808080" fill-opacity="0.5" stroke="#808080" stroke-opacity="0.5"><path d="M 247.24 0 M 247.24 0 L 247.24 1.97 L 259.84 1.97 L 259.84 0 Z M 259.84 1.97"></path></g></g></svg></div>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figura 3.2: </span>Vários ensaios de uma variável <math id="Ch3.F2.m3" class="ltx_Math" alttext="\Bin(100,0.5)" display="inline"><semantics><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\Bin</mtext></merror><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>100,0.5</mn><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\Bin(100,0.5)</annotation></semantics></math>, pra ser mais preciso <math id="Ch3.F2.m4" class="ltx_Math" alttext="1000" display="inline"><semantics><mn>1000</mn><annotation encoding="application/x-tex">1000</annotation></semantics></math> ensaios. Cada barra representa o número de ensaios que caíram no intervalo determinado pela base da barra. Note que apesar dos experimentos se concentrarem em torno da média, alguns se afastam um pouco (obviamente pois o experimento é aleatório). Nessa seção estudaremos esses desvios espontâneos, que são chamados de flutuaçãoes. </figcaption>
+</figure>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">Nosso objetivo nessa seção será obter qual é o tamanho típico das flutuações em torno da média dessa soma de variáveis aleatórias.
+Ao contrário do que fizemos ao estudar Grandes Desvios, nós agora estamos buscando flutuações menores, que acontecem espontaneamente e não com baixa probabilidade.</p>
+</div>
+<div id="p4" class="ltx_para">
+<p class="ltx_p">Note também que apesar de observarmos uma aleatoriedade na Figura <a href="#Ch3.F2" title="Figura 3.2 ‣ 3.8 O Teorema Central do Limite ‣ Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.2</span></a>, também notamos uma certa regularidade que muitas vezes é chamada de ’forma de sino’ no histograma apresentado.</p>
+</div>
+<section id="SS1" class="ltx_subsection normal">
+<div class="section level2">
+
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection header-section-number">3.8.1</span> A distribuição normal</h2>
+
+<div id="SS1.p1" class="ltx_para">
+<p class="ltx_p">Começaremos estudando qual poderia ser uma possível forma limite para o histograma da Figura <a href="#Ch3.F2" title="Figura 3.2 ‣ 3.8 O Teorema Central do Limite ‣ Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.2</span></a>.</p>
+</div>
+<div id="SS1.p2" class="ltx_para">
+<p class="ltx_p">Como uma primeira tentativa, suponha que <math id="SS1.p2.m1" class="ltx_Math" alttext="\sum_{i=1}^{\infty}Z_{i}" display="inline"><semantics><mrow><msubsup><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><msub><mi>Z</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">\sum_{i=1}^{\infty}Z_{i}</annotation></semantics></math> possui uma certa distribuição <math id="SS1.p2.m2" class="ltx_Math" alttext="\mu" display="inline"><semantics><mi>μ</mi><annotation encoding="application/x-tex">\mu</annotation></semantics></math> (veremos posteriormente que isso somente pode acontecer em casos triviais).
+Mas se esse fosse o caso, poderíamos dividir a soma nos termos pares e ímpares <math id="SS1.p2.m3" class="ltx_Math" alttext="X=\sum_{i\text{ par}}Z_{i}" display="inline"><semantics><mrow><mi>X</mi><mo rspace="0.111em">=</mo><mrow><msub><mo>∑</mo><mrow><mi>i</mi><mo>⁢</mo><mtext> par</mtext></mrow></msub><msub><mi>Z</mi><mi>i</mi></msub></mrow></mrow><annotation encoding="application/x-tex">X=\sum_{i\text{ par}}Z_{i}</annotation></semantics></math> e <math id="SS1.p2.m4" class="ltx_Math" alttext="Y=\sum_{i\text{ \'{\i}mpar}}Z_{i}" display="inline"><semantics><mrow><mi>Y</mi><mo rspace="0.111em">=</mo><mrow><msub><mo>∑</mo><mrow><mi>i</mi><mo>⁢</mo><mtext> ímpar</mtext></mrow></msub><msub><mi>Z</mi><mi>i</mi></msub></mrow></mrow><annotation encoding="application/x-tex">Y=\sum_{i\text{ \'{\i}mpar}}Z_{i}</annotation></semantics></math>.
+Nesse caso teríamos <math id="SS1.p2.m5" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> e <math id="SS1.p2.m6" class="ltx_Math" alttext="Y" display="inline"><semantics><mi>Y</mi><annotation encoding="application/x-tex">Y</annotation></semantics></math> independentes e também distribuídos como <math id="SS1.p2.m7" class="ltx_Math" alttext="\mu" display="inline"><semantics><mi>μ</mi><annotation encoding="application/x-tex">\mu</annotation></semantics></math> (pois são dados por uma soma que tem a mesma distribuição daquela que define <math id="SS1.p2.m8" class="ltx_Math" alttext="\mu" display="inline"><semantics><mi>μ</mi><annotation encoding="application/x-tex">\mu</annotation></semantics></math>).</p>
+</div>
+<div id="SS1.p3" class="ltx_para">
+<p class="ltx_p">O seguinte lema mostra que isso somente pode acontecer na situação trivial em que <math id="SS1.p3.m1" class="ltx_Math" alttext="\mu=\delta_{0}" display="inline"><semantics><mrow><mi>μ</mi><mo>=</mo><msub><mi>δ</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">\mu=\delta_{0}</annotation></semantics></math>.</p>
+</div>
+<div id="SS1.p4" class="ltx_para">
+<span class="ltx_ERROR undefined">{lemma}</span>
+<p class="ltx_p">Sejam <math id="SS1.p4.m1" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> e <math id="SS1.p4.m2" class="ltx_Math" alttext="Y" display="inline"><semantics><mi>Y</mi><annotation encoding="application/x-tex">Y</annotation></semantics></math> variáveis aleatórias em <math id="SS1.p4.m3" class="ltx_Math" alttext="\mathcal{L}^{2}" display="inline"><semantics><msup><mi class="ltx_font_mathcaligraphic">ℒ</mi><mn>2</mn></msup><annotation encoding="application/x-tex">\mathcal{L}^{2}</annotation></semantics></math>, <span class="ltx_ERROR undefined">\iid</span>com distribuição <math id="SS1.p4.m4" class="ltx_Math" alttext="\mu" display="inline"><semantics><mi>μ</mi><annotation encoding="application/x-tex">\mu</annotation></semantics></math>.
+Nesse caso, se <math id="SS1.p4.m5" class="ltx_Math" alttext="X+Y" display="inline"><semantics><mrow><mi>X</mi><mo>+</mo><mi>Y</mi></mrow><annotation encoding="application/x-tex">X+Y</annotation></semantics></math> também tem distribuição <math id="SS1.p4.m6" class="ltx_Math" alttext="\mu" display="inline"><semantics><mi>μ</mi><annotation encoding="application/x-tex">\mu</annotation></semantics></math>, então <math id="SS1.p4.m7" class="ltx_Math" alttext="\mu=\delta_{0}" display="inline"><semantics><mrow><mi>μ</mi><mo>=</mo><msub><mi>δ</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">\mu=\delta_{0}</annotation></semantics></math>.</p>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demonstração.</h6>
+<div id="SS1.p5" class="ltx_para">
+<p class="ltx_p">Sabemos que</p>
+<div id="Ch3.E95" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch3.E95.m1" class="ltx_Math" alttext="\begin{split}E(X+Y)&amp;=E(X)+E(Y)=2E(X)\text{ e}\\
+\Var(X+Y)&amp;=\Var(X)+\Var(Y)=2\Var(X).\end{split}" display="block"><semantics><mtable columnspacing="0pt" displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_align_right" columnalign="right"><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo>+</mo><mi>Y</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mi></mi><mo>=</mo><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>Y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mtext> e</mtext></mrow></mrow></mtd></mtr><mtr><mtd class="ltx_align_right" columnalign="right"><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\Var</mtext></merror><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo>+</mo><mi>Y</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mi></mi><mo>=</mo><mrow><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\Var</mtext></merror><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\Var</mtext></merror><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>Y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\Var</mtext></merror><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{split}E(X+Y)&amp;=E(X)+E(Y)=2E(X)\text{ e}\\
+\Var(X+Y)&amp;=\Var(X)+\Var(Y)=2\Var(X).\end{split}</annotation></semantics></math></span>
+                <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.95)</span>
+                
+                
+              
+</div>
+<p class="ltx_p">Mas como <math id="SS1.p5.m1" class="ltx_Math" alttext="X+Y" display="inline"><semantics><mrow><mi>X</mi><mo>+</mo><mi>Y</mi></mrow><annotation encoding="application/x-tex">X+Y</annotation></semantics></math> tem a mesma distribuição de <math id="SS1.p5.m2" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>, então <math id="SS1.p5.m3" class="ltx_Math" alttext="E(X)=2E(X)" display="inline"><semantics><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">E(X)=2E(X)</annotation></semantics></math> e <math id="SS1.p5.m4" class="ltx_Math" alttext="\Var(X)=2\Var(X)" display="inline"><semantics><mrow><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\Var</mtext></merror><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\Var</mtext></merror><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\Var(X)=2\Var(X)</annotation></semantics></math>, donde ambas são zero.
+Usando o método dos segundo momento, para todo <math id="SS1.p5.m5" class="ltx_Math" alttext="a&gt;0" display="inline"><semantics><mrow><mi>a</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">a&gt;0</annotation></semantics></math>,</p>
+<div id="Ch3.E96" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch3.E96.m1" class="ltx_Math" alttext="P[|X|\geq a]\leq\frac{\Var(X)}{a^{2}}=0," display="block"><semantics><mrow><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><mrow><mo stretchy="false">|</mo><mi>X</mi><mo stretchy="false">|</mo></mrow><mo>≥</mo><mi>a</mi></mrow><mo stretchy="false">]</mo></mrow></mrow><mo>≤</mo><mfrac><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\Var</mtext></merror><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow><msup><mi>a</mi><mn>2</mn></msup></mfrac><mo>=</mo><mn>0</mn></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">P[|X|\geq a]\leq\frac{\Var(X)}{a^{2}}=0,</annotation></semantics></math></span>
+                <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.96)</span>
+                
+                
+              
+</div>
+<p class="ltx_p">terminando a prova de que <math id="SS1.p5.m6" class="ltx_Math" alttext="X=0" display="inline"><semantics><mrow><mi>X</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">X=0</annotation></semantics></math> quase certamente.
+∎</p>
+</div>
+</div>
+<div id="SS1.p6" class="ltx_para">
+<p class="ltx_p">A intuição dessa prova é que quando somamos duas variáveis não determinísticas, a incerteza da soma (medida através da variância) tende a aumentar.
+Dessa forma não podemos obter a mesma distribuição após a soma.</p>
+</div>
+<div id="SS1.p7" class="ltx_para">
+<p class="ltx_p">Mas existe uma maneira simples de tornar esse problema interessante novamente.
+Digamos que <math id="SS1.p7.m1" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> e <math id="SS1.p7.m2" class="ltx_Math" alttext="Y" display="inline"><semantics><mi>Y</mi><annotation encoding="application/x-tex">Y</annotation></semantics></math> pertencem a <math id="SS1.p7.m3" class="ltx_Math" alttext="\mathcal{L}^{2}" display="inline"><semantics><msup><mi class="ltx_font_mathcaligraphic">ℒ</mi><mn>2</mn></msup><annotation encoding="application/x-tex">\mathcal{L}^{2}</annotation></semantics></math> e são i.i.d.
+Então</p>
+<div id="Ch3.E97" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch3.E97.m1" class="ltx_Math" alttext="\Var\Big{(}\frac{X+Y}{\sqrt{2}}\Big{)}=2\Var\Big{(}\frac{X}{\sqrt{2}}\Big{)}=%
+\Var(X)." display="block"><semantics><mrow><mrow><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\Var</mtext></merror><mo>⁢</mo><mrow><mo maxsize="160%" minsize="160%">(</mo><mfrac><mrow><mi>X</mi><mo>+</mo><mi>Y</mi></mrow><msqrt><mn>2</mn></msqrt></mfrac><mo maxsize="160%" minsize="160%">)</mo></mrow></mrow><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\Var</mtext></merror><mo>⁢</mo><mrow><mo maxsize="160%" minsize="160%">(</mo><mfrac><mi>X</mi><msqrt><mn>2</mn></msqrt></mfrac><mo maxsize="160%" minsize="160%">)</mo></mrow></mrow><mo>=</mo><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\Var</mtext></merror><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\Var\Big{(}\frac{X+Y}{\sqrt{2}}\Big{)}=2\Var\Big{(}\frac{X}{\sqrt{2}}\Big{)}=%
+\Var(X).</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.97)</span>
+              
+              
+            
+</div>
+<p class="ltx_p">Então podemos nos perguntar se</p>
+</div>
+<div id="SS1.p8" class="ltx_para">
+<span class="ltx_ERROR undefined">{question}</span>
+<p class="ltx_p">Existe alguma distribuição não trivial <math id="SS1.p8.m1" class="ltx_Math" alttext="\mu" display="inline"><semantics><mi>μ</mi><annotation encoding="application/x-tex">\mu</annotation></semantics></math> em <math id="SS1.p8.m2" class="ltx_Math" alttext="\mathcal{L}^{2}" display="inline"><semantics><msup><mi class="ltx_font_mathcaligraphic">ℒ</mi><mn>2</mn></msup><annotation encoding="application/x-tex">\mathcal{L}^{2}</annotation></semantics></math> tal que, se <math id="SS1.p8.m3" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> e <math id="SS1.p8.m4" class="ltx_Math" alttext="Y" display="inline"><semantics><mi>Y</mi><annotation encoding="application/x-tex">Y</annotation></semantics></math> são independentes e distribuídas de acordo com <math id="SS1.p8.m5" class="ltx_Math" alttext="\mu" display="inline"><semantics><mi>μ</mi><annotation encoding="application/x-tex">\mu</annotation></semantics></math>, temos</p>
+<div id="Ch3.E98" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch3.E98.m1" class="ltx_Math" alttext="\frac{X+Y}{\sqrt{2}}\distr\mu\;?" display="block"><semantics><mrow><mfrac><mrow><mi>X</mi><mo>+</mo><mi>Y</mi></mrow><msqrt><mn>2</mn></msqrt></mfrac><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\distr</mtext></merror><mo>⁢</mo><mi>μ</mi><mo lspace="0.280em">⁢</mo><mi mathvariant="normal">?</mi></mrow><annotation encoding="application/x-tex">\frac{X+Y}{\sqrt{2}}\distr\mu\;?</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.98)</span>
+              
+              
+            
+</div>
+<p class="ltx_p">Pelo menos sabemos agora que a variância não se altera através dessa operação.</p>
+</div>
+<div id="SS1.p9" class="ltx_para">
+<p class="ltx_p">Ou em outras palavras, queremos saber se existe algum ponto fixo para o operador <math id="SS1.p9.m1" class="ltx_Math" alttext="\Gamma" display="inline"><semantics><mi mathvariant="normal">Γ</mi><annotation encoding="application/x-tex">\Gamma</annotation></semantics></math> que toma uma distribuição <math id="SS1.p9.m2" class="ltx_Math" alttext="\mu" display="inline"><semantics><mi>μ</mi><annotation encoding="application/x-tex">\mu</annotation></semantics></math> em <math id="SS1.p9.m3" class="ltx_Math" alttext="\mathbb{R}" display="inline"><semantics><mi>ℝ</mi><annotation encoding="application/x-tex">\mathbb{R}</annotation></semantics></math> e retorna</p>
+<div id="Ch3.E99" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch3.E99.m1" class="ltx_Math" alttext="\Gamma(\mu)=\Big{(}\frac{X_{1}+X_{2}}{\sqrt{2}}\Big{)}\circ\mu\otimes\mu." display="block"><semantics><mrow><mrow><mrow><mi mathvariant="normal">Γ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>μ</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mrow><mo maxsize="160%" minsize="160%">(</mo><mfrac><mrow><msub><mi>X</mi><mn>1</mn></msub><mo>+</mo><msub><mi>X</mi><mn>2</mn></msub></mrow><msqrt><mn>2</mn></msqrt></mfrac><mo maxsize="160%" minsize="160%" rspace="0.055em">)</mo></mrow><mo rspace="0.222em">∘</mo><mi>μ</mi></mrow><mo lspace="0.222em" rspace="0.222em">⊗</mo><mi>μ</mi></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\Gamma(\mu)=\Big{(}\frac{X_{1}+X_{2}}{\sqrt{2}}\Big{)}\circ\mu\otimes\mu.</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.99)</span>
+              
+              
+            
+</div>
+</div>
+<div id="SS1.p10" class="ltx_para">
+<p class="ltx_p">Para tentar responder a essa questão, vamos estudar mais a fundo qual é a distribuição da soma de duas variáveis aleatórias independentes.
+Para isso, considere a distribuição <math id="SS1.p10.m1" class="ltx_Math" alttext="(X,Y)\circ P" display="inline"><semantics><mrow><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><mi>Y</mi><mo rspace="0.055em" stretchy="false">)</mo></mrow><mo rspace="0.222em">∘</mo><mi>P</mi></mrow><annotation encoding="application/x-tex">(X,Y)\circ P</annotation></semantics></math> do par, que coincide com <math id="SS1.p10.m2" class="ltx_Math" alttext="\mu\otimes\mu" display="inline"><semantics><mrow><mi>μ</mi><mo lspace="0.222em" rspace="0.222em">⊗</mo><mi>μ</mi></mrow><annotation encoding="application/x-tex">\mu\otimes\mu</annotation></semantics></math>, nos dando</p>
+<div id="Ch3.E100" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch3.E100.m1" class="ltx_Math" alttext="P\Big{[}\frac{X+Y}{\sqrt{2}}\leq z\Big{]}=\mu\otimes\mu\big{(}\big{\{}(x,y);%
+\tfrac{x+y}{\sqrt{2}}\leq z\big{\}}\big{)}." display="block"><semantics><mrow><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo maxsize="160%" minsize="160%">[</mo><mrow><mfrac><mrow><mi>X</mi><mo>+</mo><mi>Y</mi></mrow><msqrt><mn>2</mn></msqrt></mfrac><mo>≤</mo><mi>z</mi></mrow><mo maxsize="160%" minsize="160%">]</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>μ</mi><mo lspace="0.222em" rspace="0.222em">⊗</mo><mi>μ</mi></mrow><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mo maxsize="120%" minsize="120%">{</mo><mrow><mrow><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo>;</mo><mstyle displaystyle="false"><mfrac><mrow><mi>x</mi><mo>+</mo><mi>y</mi></mrow><msqrt><mn>2</mn></msqrt></mfrac></mstyle></mrow><mo>≤</mo><mi>z</mi></mrow><mo maxsize="120%" minsize="120%">}</mo></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">P\Big{[}\frac{X+Y}{\sqrt{2}}\leq z\Big{]}=\mu\otimes\mu\big{(}\big{\{}(x,y);%
+\tfrac{x+y}{\sqrt{2}}\leq z\big{\}}\big{)}.</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.100)</span>
+              
+              
+            
+</div>
+</div>
+<div id="SS1.p11" class="ltx_para">
+<p class="ltx_p">Note também que a transformação linear <math id="SS1.p11.m1" class="ltx_Math" alttext="(x,y)\mapsto\tfrac{1}{\sqrt{2}}\big{(}x+y,x-y\big{)}" display="inline"><semantics><mrow><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo stretchy="false">↦</mo><mrow><mfrac><mn>1</mn><msqrt><mn>2</mn></msqrt></mfrac><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mi>x</mi><mo>+</mo><mi>y</mi></mrow><mo>,</mo><mrow><mi>x</mi><mo>−</mo><mi>y</mi></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">(x,y)\mapsto\tfrac{1}{\sqrt{2}}\big{(}x+y,x-y\big{)}</annotation></semantics></math> é uma rotação rígida em <math id="SS1.p11.m2" class="ltx_Math" alttext="\mathbb{R}^{2}" display="inline"><semantics><msup><mi>ℝ</mi><mn>2</mn></msup><annotation encoding="application/x-tex">\mathbb{R}^{2}</annotation></semantics></math>, o que nos motiva a propor a pergunta mais simples.</p>
+</div>
+<div id="SS1.p12" class="ltx_para">
+<span class="ltx_ERROR undefined">{question}</span>
+<p class="ltx_p">Existe alguma distribuição não trivial <math id="SS1.p12.m1" class="ltx_Math" alttext="\mu" display="inline"><semantics><mi>μ</mi><annotation encoding="application/x-tex">\mu</annotation></semantics></math> em <math id="SS1.p12.m2" class="ltx_Math" alttext="\mathcal{L}^{2}" display="inline"><semantics><msup><mi class="ltx_font_mathcaligraphic">ℒ</mi><mn>2</mn></msup><annotation encoding="application/x-tex">\mathcal{L}^{2}</annotation></semantics></math> tal que, se <math id="SS1.p12.m3" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> e <math id="SS1.p12.m4" class="ltx_Math" alttext="Y" display="inline"><semantics><mi>Y</mi><annotation encoding="application/x-tex">Y</annotation></semantics></math> são independentes e distribuídas de acordo com <math id="SS1.p12.m5" class="ltx_Math" alttext="\mu" display="inline"><semantics><mi>μ</mi><annotation encoding="application/x-tex">\mu</annotation></semantics></math>, a distribuição do par <math id="SS1.p12.m6" class="ltx_Math" alttext="(X,Y)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><mi>Y</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(X,Y)</annotation></semantics></math> é invariante por rotações?</p>
+</div>
+<div id="SS1.p13" class="ltx_para">
+<p class="ltx_p">Ainda estamos numa busca não rigorosa de tal distribuição, então vamos supor algumas outras propriedades, como por exemplo que <math id="SS1.p13.m1" class="ltx_Math" alttext="\mu" display="inline"><semantics><mi>μ</mi><annotation encoding="application/x-tex">\mu</annotation></semantics></math> seja absolutamente contínua com respeito a Lebesgue, isto é <math id="SS1.p13.m2" class="ltx_Math" alttext="\d{\mu}=f(x)\d{x}" display="inline"><semantics><mrow><munder accentunder="true"><mtext class="ltx_mathvariant_italic">μ</mtext><mo>⋅</mo></munder><mo>=</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><munder accentunder="true"><mtext>x</mtext><mo>⋅</mo></munder></mrow></mrow><annotation encoding="application/x-tex">\d{\mu}=f(x)\d{x}</annotation></semantics></math>.
+Nesse caso, já vimos que <math id="SS1.p13.m3" class="ltx_Math" alttext="(X,Y)\distr f(x)f(y)\d{x}\d{y}" display="inline"><semantics><mrow><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><mi>Y</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\distr</mtext></merror><mo>⁢</mo><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><munder accentunder="true"><mtext>x</mtext><mo>⋅</mo></munder><mo>⁢</mo><munder accentunder="true"><mtext>y</mtext><mo>⋅</mo></munder></mrow><annotation encoding="application/x-tex">(X,Y)\distr f(x)f(y)\d{x}\d{y}</annotation></semantics></math> e no fundo estamos procurando uma função <math id="SS1.p13.m4" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> tal que</p>
+<div id="Ch3.E101" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch3.E101.m1" class="ltx_Math" alttext="f(x)f(y)=h(x^{2}+y^{2}),\text{ para todo $x,y\in\mathbb{R}$ e alguma $h:%
+\mathbb{R}_{+}\to\mathbb{R}_{+}$.}" display="block"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>h</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>,</mo><mrow><mtext> para todo </mtext><mrow><mrow><mi>x</mi><mo>,</mo><mi>y</mi></mrow><mo>∈</mo><mi>ℝ</mi></mrow><mtext> e alguma </mtext><mrow><mi>h</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><msub><mi>ℝ</mi><mo>+</mo></msub><mo stretchy="false">→</mo><msub><mi>ℝ</mi><mo>+</mo></msub></mrow></mrow><mtext>.</mtext></mrow></mrow></mrow><annotation encoding="application/x-tex">f(x)f(y)=h(x^{2}+y^{2}),\text{ para todo $x,y\in\mathbb{R}$ e alguma $h:%
+\mathbb{R}_{+}\to\mathbb{R}_{+}$.}</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.101)</span>
+              
+              
+            
+</div>
+<p class="ltx_p">Para trasformar o produto <math id="SS1.p13.m5" class="ltx_Math" alttext="f(x)f(y)" display="inline"><semantics><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">f(x)f(y)</annotation></semantics></math> em uma soma, definimos <math id="SS1.p13.m6" class="ltx_Math" alttext="g=\log f" display="inline"><semantics><mrow><mi>g</mi><mo>=</mo><mrow><mi>log</mi><mo lspace="0.167em">⁡</mo><mi>f</mi></mrow></mrow><annotation encoding="application/x-tex">g=\log f</annotation></semantics></math> e <math id="SS1.p13.m7" class="ltx_Math" alttext="k=\log h" display="inline"><semantics><mrow><mi>k</mi><mo>=</mo><mrow><mi>log</mi><mo lspace="0.167em">⁡</mo><mi>h</mi></mrow></mrow><annotation encoding="application/x-tex">k=\log h</annotation></semantics></math> e o que gostaríamos que acontecesse é <math id="SS1.p13.m8" class="ltx_Math" alttext="g(x)+g(y)=k(x^{2}+y^{2})" display="inline"><semantics><mrow><mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mi>k</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">g(x)+g(y)=k(x^{2}+y^{2})</annotation></semantics></math>.
+Como ainda não estamos preocupados com unicidade de <math id="SS1.p13.m9" class="ltx_Math" alttext="\mu" display="inline"><semantics><mi>μ</mi><annotation encoding="application/x-tex">\mu</annotation></semantics></math> e apenas com a existência, já podemos encontrar nossa resposta para nossa pergunta, escolhendo uma função quadrática, tal como <math id="SS1.p13.m10" class="ltx_Math" alttext="g(x)=\alpha x^{2}-\beta" display="inline"><semantics><mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>α</mi><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>−</mo><mi>β</mi></mrow></mrow><annotation encoding="application/x-tex">g(x)=\alpha x^{2}-\beta</annotation></semantics></math>.</p>
+</div>
+<div id="SS1.p14" class="ltx_para">
+<p class="ltx_p">Mas temos ainda que cuidar para que <math id="SS1.p14.m1" class="ltx_Math" alttext="f(x)=\ex{\alpha x^{2}-\beta}" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\ex</mtext></merror><mo>⁢</mo><mi>α</mi><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>−</mo><mi>β</mi></mrow></mrow><annotation encoding="application/x-tex">f(x)=\ex{\alpha x^{2}-\beta}</annotation></semantics></math> seja uma densidade, ou seja <math id="SS1.p14.m2" class="ltx_Math" alttext="\int f\d{x}=1" display="inline"><semantics><mrow><mrow><mo>∫</mo><mrow><mi>f</mi><mo>⁢</mo><munder accentunder="true"><mtext>x</mtext><mo>⋅</mo></munder></mrow></mrow><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\int f\d{x}=1</annotation></semantics></math>.
+Para isso, precisamos que <math id="SS1.p14.m3" class="ltx_Math" alttext="\alpha" display="inline"><semantics><mi>α</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math> seja negativo e, fixado <math id="SS1.p14.m4" class="ltx_Math" alttext="\alpha" display="inline"><semantics><mi>α</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math>, o valor de <math id="SS1.p14.m5" class="ltx_Math" alttext="\beta" display="inline"><semantics><mi>β</mi><annotation encoding="application/x-tex">\beta</annotation></semantics></math> já estará determinado por normalização.
+Tudo isso motiva finalmente a seguinte definição.</p>
+</div>
+<div id="SS1.p15" class="ltx_para">
+<span class="ltx_ERROR undefined">{definition}</span>
+<p class="ltx_p">Dizemos que <math id="SS1.p15.m1" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> tem distibuição normal canônica, se </p>
+<div id="Ch3.E102" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch3.E102.m1" class="ltx_Math" alttext="X\distr\frac{1}{\sqrt{2\pi}}\exp\big{\{}-x^{2}/2\big{\}}\d{x}." display="block"><semantics><mrow><mrow><mi>X</mi><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\distr</mtext></merror><mo>⁢</mo><mfrac><mn>1</mn><msqrt><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi></mrow></msqrt></mfrac><mo lspace="0.167em">⁢</mo><mrow><mi>exp</mi><mo>⁡</mo><mrow><mo maxsize="120%" minsize="120%">{</mo><mrow><mo>−</mo><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>/</mo><mn>2</mn></mrow></mrow><mo maxsize="120%" minsize="120%">}</mo></mrow></mrow><mo>⁢</mo><munder accentunder="true"><mtext>x</mtext><mo>⋅</mo></munder></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">X\distr\frac{1}{\sqrt{2\pi}}\exp\big{\{}-x^{2}/2\big{\}}\d{x}.</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.102)</span>
+              
+              
+            
+</div>
+<p class="ltx_p">Além disso, para <math id="SS1.p15.m2" class="ltx_Math" alttext="m\in\mathbb{R}" display="inline"><semantics><mrow><mi>m</mi><mo>∈</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">m\in\mathbb{R}</annotation></semantics></math> e <math id="SS1.p15.m3" class="ltx_Math" alttext="\sigma\geq 0" display="inline"><semantics><mrow><mi>σ</mi><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\sigma\geq 0</annotation></semantics></math>, dizemos que <math id="SS1.p15.m4" class="ltx_Math" alttext="Y\distr\mathcal{N}(m,\sigma^{2})" display="inline"><semantics><mrow><mi>Y</mi><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\distr</mtext></merror><mo>⁢</mo><mi class="ltx_font_mathcaligraphic">𝒩</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>m</mi><mo>,</mo><msup><mi>σ</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">Y\distr\mathcal{N}(m,\sigma^{2})</annotation></semantics></math> se <math id="SS1.p15.m5" class="ltx_Math" alttext="Y" display="inline"><semantics><mi>Y</mi><annotation encoding="application/x-tex">Y</annotation></semantics></math> tem a mesma distribuição de <math id="SS1.p15.m6" class="ltx_Math" alttext="\sigma X+m" display="inline"><semantics><mrow><mrow><mi>σ</mi><mo>⁢</mo><mi>X</mi></mrow><mo>+</mo><mi>m</mi></mrow><annotation encoding="application/x-tex">\sigma X+m</annotation></semantics></math>, onde <math id="SS1.p15.m7" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> tem distribuição normal canônica <math id="SS1.p15.m8" class="ltx_Math" alttext="\mathcal{N}(0,1)" display="inline"><semantics><mrow><mi class="ltx_font_mathcaligraphic">𝒩</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0,1</mn><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mathcal{N}(0,1)</annotation></semantics></math>. Note que <math id="SS1.p15.m9" class="ltx_Math" alttext="\mathcal{N}(m,0)=\delta_{m}" display="inline"><semantics><mrow><mrow><mi class="ltx_font_mathcaligraphic">𝒩</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>m</mi><mo>⁢</mo><mn>,0</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msub><mi>δ</mi><mi>m</mi></msub></mrow><annotation encoding="application/x-tex">\mathcal{N}(m,0)=\delta_{m}</annotation></semantics></math>.
+Muitas vezes chamamos essa distribuição de gaussiana, obviamente em homenagem a Gauss.</p>
+</div>
+<div id="SS1.p16" class="ltx_para">
+<p class="ltx_p">Vamos rapidamente observar que a definição acima realmente descreve uma distribuição de probabilidade, ou seja que a integral dessa densidade é um.
+Para tanto, vamos usar um truque conhecido, que consiste em retornar ao plano.
+Obviamente,</p>
+<div id="Ch3.E103" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch3.E103.m1" class="ltx_Math" alttext="\begin{split}\Big{(}\int\exp\big{\{}-x^{2}/2\big{\}}\d{x}\Big{)}^{2}&amp;=\int\int%
+\exp\big{\{}-(x^{2}+y^{2})/2\big{\}}\d{x}\d{y}\\
+&amp;=\int_{0}^{2\pi}\int_{0}^{\infty}\exp\{-r^{2}/2\}r\d{r}\d{\theta}\overset{2s%
+\;=\;r^{2}}{=}2\pi.\end{split}" display="block"><semantics><mtable columnspacing="0pt" displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_align_right" columnalign="right"><msup><mrow><mo maxsize="160%" minsize="160%">(</mo><mrow><mo lspace="0em">∫</mo><mrow><mrow><mi>exp</mi><mo>⁡</mo><mrow><mo maxsize="120%" minsize="120%">{</mo><mrow><mo>−</mo><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>/</mo><mn>2</mn></mrow></mrow><mo maxsize="120%" minsize="120%">}</mo></mrow></mrow><mo>⁢</mo><munder accentunder="true"><mtext>x</mtext><mo>⋅</mo></munder></mrow></mrow><mo maxsize="160%" minsize="160%">)</mo></mrow><mn>2</mn></msup></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mi></mi><mo rspace="0.111em">=</mo><mrow><mo rspace="0em">∫</mo><mrow><mo>∫</mo><mrow><mrow><mi>exp</mi><mo>⁡</mo><mrow><mo maxsize="120%" minsize="120%">{</mo><mrow><mo>−</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow><mo>/</mo><mn>2</mn></mrow></mrow><mo maxsize="120%" minsize="120%">}</mo></mrow></mrow><mo>⁢</mo><munder accentunder="true"><mtext>x</mtext><mo>⋅</mo></munder><mo>⁢</mo><munder accentunder="true"><mtext>y</mtext><mo>⋅</mo></munder></mrow></mrow></mrow></mrow></mtd></mtr><mtr><mtd></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mi></mi><mo rspace="0.111em">=</mo><mrow><msubsup><mo rspace="0em">∫</mo><mn>0</mn><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi></mrow></msubsup><mrow><msubsup><mo>∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup><mrow><mrow><mi>exp</mi><mo>⁡</mo><mrow><mo stretchy="false">{</mo><mrow><mo>−</mo><mrow><msup><mi>r</mi><mn>2</mn></msup><mo>/</mo><mn>2</mn></mrow></mrow><mo stretchy="false">}</mo></mrow></mrow><mo>⁢</mo><mi>r</mi><mo>⁢</mo><munder accentunder="true"><mtext>r</mtext><mo>⋅</mo></munder><mo>⁢</mo><munder accentunder="true"><mtext class="ltx_mathvariant_italic">θ</mtext><mo>⋅</mo></munder><mo>⁢</mo><mover accent="true"><mo>=</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>s</mi></mrow><mo lspace="0.558em" rspace="0.558em">=</mo><msup><mi>r</mi><mn>2</mn></msup></mrow></mover><mo>⁢</mo><mn>2</mn><mo>⁢</mo><mi>π</mi></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{split}\Big{(}\int\exp\big{\{}-x^{2}/2\big{\}}\d{x}\Big{)}^{2}&amp;=\int\int%
+\exp\big{\{}-(x^{2}+y^{2})/2\big{\}}\d{x}\d{y}\\
+&amp;=\int_{0}^{2\pi}\int_{0}^{\infty}\exp\{-r^{2}/2\}r\d{r}\d{\theta}\overset{2s%
+\;=\;r^{2}}{=}2\pi.\end{split}</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.103)</span>
+              
+              
+            
+</div>
+<p class="ltx_p">Donde a constante em (<a href="#Ch3.E102" title="In 3.8.1 A distribuição normal ‣ 3.8 O Teorema Central do Limite ‣ Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.102</span></a>) está de fato correta.</p>
+</div>
+<div id="SS1.p17" class="ltx_para">
+<span class="ltx_ERROR undefined">{exercise}</span>
+<p class="ltx_p">Mostre que a distribuição <math id="SS1.p17.m1" class="ltx_Math" alttext="\mathcal{N}(m,\sigma^{2})" display="inline"><semantics><mrow><mi class="ltx_font_mathcaligraphic">𝒩</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>m</mi><mo>,</mo><msup><mi>σ</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mathcal{N}(m,\sigma^{2})</annotation></semantics></math>, tem densidade</p>
+<div id="Ch3.E104" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch3.E104.m1" class="ltx_Math" alttext="\frac{1}{\sigma\sqrt{2\pi}}\ex{-(x-m)^{2}/(2\sigma^{2})}." display="block"><semantics><mrow><mrow><mrow><mfrac><mn>1</mn><mrow><mi>σ</mi><mo>⁢</mo><msqrt><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi></mrow></msqrt></mrow></mfrac><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\ex</mtext></merror></mrow><mo>−</mo><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>−</mo><mi>m</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>/</mo><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo>⁢</mo><msup><mi>σ</mi><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\frac{1}{\sigma\sqrt{2\pi}}\ex{-(x-m)^{2}/(2\sigma^{2})}.</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.104)</span>
+              
+              
+            
+</div>
+</div>
+<div id="SS1.p18" class="ltx_para">
+<span class="ltx_ERROR undefined">{exercise}</span>
+<p class="ltx_p">Mostre que <math id="SS1.p18.m1" class="ltx_Math" alttext="Y\distr\mathcal{N}(m,\sigma^{2})" display="inline"><semantics><mrow><mi>Y</mi><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\distr</mtext></merror><mo>⁢</mo><mi class="ltx_font_mathcaligraphic">𝒩</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>m</mi><mo>,</mo><msup><mi>σ</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">Y\distr\mathcal{N}(m,\sigma^{2})</annotation></semantics></math> tem esperança <math id="SS1.p18.m2" class="ltx_Math" alttext="m" display="inline"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math> e variância <math id="SS1.p18.m3" class="ltx_Math" alttext="\sigma^{2}" display="inline"><semantics><msup><mi>σ</mi><mn>2</mn></msup><annotation encoding="application/x-tex">\sigma^{2}</annotation></semantics></math>.</p>
+</div>
+<div id="SS1.p19" class="ltx_para">
+<p class="ltx_p">Para confirmar que de fato as distribuições normais se comportam bem com respeito a somas independentes, apresentamos o seguinte resultado.</p>
+</div>
+<div id="SS1.p20" class="ltx_para">
+<span class="ltx_ERROR undefined">{proposition}</span>
+<p class="ltx_p">Se <math id="SS1.p20.m1" class="ltx_Math" alttext="X\distr\mathcal{N}(m,\sigma^{2})" display="inline"><semantics><mrow><mi>X</mi><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\distr</mtext></merror><mo>⁢</mo><mi class="ltx_font_mathcaligraphic">𝒩</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>m</mi><mo>,</mo><msup><mi>σ</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">X\distr\mathcal{N}(m,\sigma^{2})</annotation></semantics></math> e <math id="SS1.p20.m2" class="ltx_Math" alttext="Y\distr\mathcal{N}(\bar{m},\bar{\sigma}^{2})" display="inline"><semantics><mrow><mi>Y</mi><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\distr</mtext></merror><mo>⁢</mo><mi class="ltx_font_mathcaligraphic">𝒩</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mover accent="true"><mi>m</mi><mo>¯</mo></mover><mo>,</mo><msup><mover accent="true"><mi>σ</mi><mo>¯</mo></mover><mn>2</mn></msup><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">Y\distr\mathcal{N}(\bar{m},\bar{\sigma}^{2})</annotation></semantics></math> são independentes, então <math id="SS1.p20.m3" class="ltx_Math" alttext="X+Y" display="inline"><semantics><mrow><mi>X</mi><mo>+</mo><mi>Y</mi></mrow><annotation encoding="application/x-tex">X+Y</annotation></semantics></math> tem distribuição <math id="SS1.p20.m4" class="ltx_Math" alttext="\mathcal{N}(m+\bar{m},\sigma^{2}+\bar{\sigma}^{2})" display="inline"><semantics><mrow><mi class="ltx_font_mathcaligraphic">𝒩</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>m</mi><mo>+</mo><mover accent="true"><mi>m</mi><mo>¯</mo></mover></mrow><mo>,</mo><mrow><msup><mi>σ</mi><mn>2</mn></msup><mo>+</mo><msup><mover accent="true"><mi>σ</mi><mo>¯</mo></mover><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mathcal{N}(m+\bar{m},\sigma^{2}+\bar{\sigma}^{2})</annotation></semantics></math>.
+Em particular, <math id="SS1.p20.m5" class="ltx_Math" alttext="\mu" display="inline"><semantics><mi>μ</mi><annotation encoding="application/x-tex">\mu</annotation></semantics></math> é um ponto fixo do operador <math id="SS1.p20.m6" class="ltx_Math" alttext="\Gamma" display="inline"><semantics><mi mathvariant="normal">Γ</mi><annotation encoding="application/x-tex">\Gamma</annotation></semantics></math> definido em (<a href="#Ch3.E99" title="In 3.8.1 A distribuição normal ‣ 3.8 O Teorema Central do Limite ‣ Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.99</span></a>).</p>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demonstração.</h6>
+<div id="SS1.p21" class="ltx_para">
+<p class="ltx_p">O caso em que <math id="SS1.p21.m1" class="ltx_Math" alttext="\sigma" display="inline"><semantics><mi>σ</mi><annotation encoding="application/x-tex">\sigma</annotation></semantics></math> ou <math id="SS1.p21.m2" class="ltx_Math" alttext="\bar{\sigma}" display="inline"><semantics><mover accent="true"><mi>σ</mi><mo>¯</mo></mover><annotation encoding="application/x-tex">\bar{\sigma}</annotation></semantics></math> se anulam é trivial, portanto vamos considerar que ambas são positivas.
+Não é difícil ver que podemos também supor que <math id="SS1.p21.m3" class="ltx_Math" alttext="m=\bar{m}=0" display="inline"><semantics><mrow><mi>m</mi><mo>=</mo><mover accent="true"><mi>m</mi><mo>¯</mo></mover><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">m=\bar{m}=0</annotation></semantics></math>.
+Podemos então calcular</p>
+<div id="Ch3.E105" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch3.E105.m1" class="ltx_Math" alttext="P[X+Y\leq a]=P[\sigma W+\bar{\sigma}Z\leq a]," display="block"><semantics><mrow><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><mrow><mi>X</mi><mo>+</mo><mi>Y</mi></mrow><mo>≤</mo><mi>a</mi></mrow><mo stretchy="false">]</mo></mrow></mrow><mo>=</mo><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><mrow><mrow><mi>σ</mi><mo>⁢</mo><mi>W</mi></mrow><mo>+</mo><mrow><mover accent="true"><mi>σ</mi><mo>¯</mo></mover><mo>⁢</mo><mi>Z</mi></mrow></mrow><mo>≤</mo><mi>a</mi></mrow><mo stretchy="false">]</mo></mrow></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">P[X+Y\leq a]=P[\sigma W+\bar{\sigma}Z\leq a],</annotation></semantics></math></span>
+                <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.105)</span>
+                
+                
+              
+</div>
+<p class="ltx_p">onde <math id="SS1.p21.m4" class="ltx_Math" alttext="W" display="inline"><semantics><mi>W</mi><annotation encoding="application/x-tex">W</annotation></semantics></math> e <math id="SS1.p21.m5" class="ltx_Math" alttext="Z" display="inline"><semantics><mi>Z</mi><annotation encoding="application/x-tex">Z</annotation></semantics></math> são independentes com distribuição <math id="SS1.p21.m6" class="ltx_Math" alttext="\mathcal{N}(0,1)" display="inline"><semantics><mrow><mi class="ltx_font_mathcaligraphic">𝒩</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0,1</mn><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mathcal{N}(0,1)</annotation></semantics></math>.
+Assim, a probabilidade acima pode ser escrita como</p>
+<div id="Ch3.E106" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch3.E106.m1" class="ltx_Math" alttext="\mathcal{N}(0,1)\otimes\mathcal{N}(0,1)\Big{(}\big{\{}(w,z)\in\mathbb{R}^{2};%
+\sigma w+\bar{\sigma}z\leq a\big{\}}\Big{)}." display="block"><semantics><mrow><mrow><mrow><mrow><mi class="ltx_font_mathcaligraphic">𝒩</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0,1</mn><mo rspace="0.055em" stretchy="false">)</mo></mrow></mrow><mo rspace="0.222em">⊗</mo><mi class="ltx_font_mathcaligraphic">𝒩</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0,1</mn><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo maxsize="160%" minsize="160%">(</mo><mrow><mo maxsize="120%" minsize="120%">{</mo><mrow><mrow><mrow><mo stretchy="false">(</mo><mi>w</mi><mo>,</mo><mi>z</mi><mo stretchy="false">)</mo></mrow><mo>∈</mo><msup><mi>ℝ</mi><mn>2</mn></msup></mrow><mo>;</mo><mrow><mrow><mrow><mi>σ</mi><mo>⁢</mo><mi>w</mi></mrow><mo>+</mo><mrow><mover accent="true"><mi>σ</mi><mo>¯</mo></mover><mo>⁢</mo><mi>z</mi></mrow></mrow><mo>≤</mo><mi>a</mi></mrow></mrow><mo maxsize="120%" minsize="120%">}</mo></mrow><mo maxsize="160%" minsize="160%">)</mo></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\mathcal{N}(0,1)\otimes\mathcal{N}(0,1)\Big{(}\big{\{}(w,z)\in\mathbb{R}^{2};%
+\sigma w+\bar{\sigma}z\leq a\big{\}}\Big{)}.</annotation></semantics></math></span>
+                <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.106)</span>
+                
+                
+              
+</div>
+<p class="ltx_p">Agora aplicaremos a rotação rígida <math id="SS1.p21.m7" class="ltx_Math" alttext="A:\mathbb{R}^{2}\to\mathbb{R}^{2}" display="inline"><semantics><mrow><mi>A</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><msup><mi>ℝ</mi><mn>2</mn></msup><mo stretchy="false">→</mo><msup><mi>ℝ</mi><mn>2</mn></msup></mrow></mrow><annotation encoding="application/x-tex">A:\mathbb{R}^{2}\to\mathbb{R}^{2}</annotation></semantics></math> dada por</p>
+<div id="Ch3.E107" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch3.E107.m1" class="ltx_Math" alttext="A(w,z)=\frac{1}{\sqrt{\sigma^{2}+\bar{\sigma}^{2}}}\big{(}\sigma w+\bar{\sigma%
+}z,\bar{\sigma}w-\sigma z\big{)}." display="block"><semantics><mrow><mrow><mrow><mi>A</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>w</mi><mo>,</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mfrac><mn>1</mn><msqrt><mrow><msup><mi>σ</mi><mn>2</mn></msup><mo>+</mo><msup><mover accent="true"><mi>σ</mi><mo>¯</mo></mover><mn>2</mn></msup></mrow></msqrt></mfrac><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mrow><mi>σ</mi><mo>⁢</mo><mi>w</mi></mrow><mo>+</mo><mrow><mover accent="true"><mi>σ</mi><mo>¯</mo></mover><mo>⁢</mo><mi>z</mi></mrow></mrow><mo>,</mo><mrow><mrow><mover accent="true"><mi>σ</mi><mo>¯</mo></mover><mo>⁢</mo><mi>w</mi></mrow><mo>−</mo><mrow><mi>σ</mi><mo>⁢</mo><mi>z</mi></mrow></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">A(w,z)=\frac{1}{\sqrt{\sigma^{2}+\bar{\sigma}^{2}}}\big{(}\sigma w+\bar{\sigma%
+}z,\bar{\sigma}w-\sigma z\big{)}.</annotation></semantics></math></span>
+                <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.107)</span>
+                
+                
+              
+</div>
+</div>
+<div id="SS1.p22" class="ltx_para">
+<p class="ltx_p">Como sabemos que a densidade <math id="SS1.p22.m1" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> de <math id="SS1.p22.m2" class="ltx_Math" alttext="(W,Z)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi>W</mi><mo>,</mo><mi>Z</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(W,Z)</annotation></semantics></math> é invariante por <math id="SS1.p22.m3" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>, ou seja <math id="SS1.p22.m4" class="ltx_Math" alttext="f\circ A=f" display="inline"><semantics><mrow><mrow><mi>f</mi><mo lspace="0.222em" rspace="0.222em">∘</mo><mi>A</mi></mrow><mo>=</mo><mi>f</mi></mrow><annotation encoding="application/x-tex">f\circ A=f</annotation></semantics></math>, então podemos escrever (<a href="#Ch3.E106" title="In 3.8.1 A distribuição normal ‣ 3.8 O Teorema Central do Limite ‣ Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.106</span></a>) como</p>
+<div id="Ch3.Ex9" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch3.Ex9.m1" class="ltx_Math" alttext="\begin{split}\mathcal{N}(0,1)&amp;\otimes\mathcal{N}(0,1)\Big{(}A\big{(}\big{\{}(w%
+,z)\in\mathbb{R}^{2};\sigma w+\bar{\sigma}z\leq a\big{\}}\big{)}\Big{)}\\
+&amp;=\mathcal{N}(0,1)\otimes\mathcal{N}(0,1)\Big{(}\Big{\{}(w,z);\frac{1}{\sqrt{%
+\sigma^{2}+\bar{\sigma}^{2}}}w\leq a\Big{\}}\Big{)}\\
+&amp;=\mathcal{N}(0,1)\big{(}(-\infty,a\sqrt{\sigma^{2}+\bar{\sigma}^{2}}\big{]}%
+\big{)}=\mathcal{N}(0,\sigma^{2}+\bar{\sigma}^{2})\big{(}(-\infty,a\big{]}\big%
+{)},\end{split}" display="block"><semantics><mtable columnspacing="0pt" displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_align_right" columnalign="right"><mrow><mi class="ltx_font_mathcaligraphic">𝒩</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0,1</mn><mo stretchy="false">)</mo></mrow></mrow></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mi></mi><mo lspace="0.222em" rspace="0.222em">⊗</mo><mrow><mi class="ltx_font_mathcaligraphic">𝒩</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0,1</mn><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo maxsize="160%" minsize="160%">(</mo><mrow><mi>A</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mo maxsize="120%" minsize="120%">{</mo><mrow><mrow><mrow><mo stretchy="false">(</mo><mi>w</mi><mo>,</mo><mi>z</mi><mo stretchy="false">)</mo></mrow><mo>∈</mo><msup><mi>ℝ</mi><mn>2</mn></msup></mrow><mo>;</mo><mrow><mrow><mrow><mi>σ</mi><mo>⁢</mo><mi>w</mi></mrow><mo>+</mo><mrow><mover accent="true"><mi>σ</mi><mo>¯</mo></mover><mo>⁢</mo><mi>z</mi></mrow></mrow><mo>≤</mo><mi>a</mi></mrow></mrow><mo maxsize="120%" minsize="120%">}</mo></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo maxsize="160%" minsize="160%">)</mo></mrow></mrow></mrow></mtd></mtr><mtr><mtd></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mi></mi><mo>=</mo><mrow><mrow><mrow><mi class="ltx_font_mathcaligraphic">𝒩</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0,1</mn><mo rspace="0.055em" stretchy="false">)</mo></mrow></mrow><mo rspace="0.222em">⊗</mo><mi class="ltx_font_mathcaligraphic">𝒩</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0,1</mn><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo maxsize="160%" minsize="160%">(</mo><mrow><mo maxsize="160%" minsize="160%">{</mo><mrow><mrow><mrow><mo stretchy="false">(</mo><mi>w</mi><mo>,</mo><mi>z</mi><mo stretchy="false">)</mo></mrow><mo>;</mo><mrow><mfrac><mn>1</mn><msqrt><mrow><msup><mi>σ</mi><mn>2</mn></msup><mo>+</mo><msup><mover accent="true"><mi>σ</mi><mo>¯</mo></mover><mn>2</mn></msup></mrow></msqrt></mfrac><mo>⁢</mo><mi>w</mi></mrow></mrow><mo>≤</mo><mi>a</mi></mrow><mo maxsize="160%" minsize="160%">}</mo></mrow><mo maxsize="160%" minsize="160%">)</mo></mrow></mrow></mrow></mtd></mtr><mtr><mtd></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mi></mi><mo>=</mo><mrow><mi class="ltx_font_mathcaligraphic">𝒩</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0,1</mn><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mi mathvariant="normal">∞</mi></mrow><mo>,</mo><mrow><mi>a</mi><mo>⁢</mo><msqrt><mrow><msup><mi>σ</mi><mn>2</mn></msup><mo>+</mo><msup><mover accent="true"><mi>σ</mi><mo>¯</mo></mover><mn>2</mn></msup></mrow></msqrt></mrow><mo maxsize="120%" minsize="120%">]</mo></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo>=</mo><mrow><mi class="ltx_font_mathcaligraphic">𝒩</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mrow><msup><mi>σ</mi><mn>2</mn></msup><mo>+</mo><msup><mover accent="true"><mi>σ</mi><mo>¯</mo></mover><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mi mathvariant="normal">∞</mi></mrow><mo>,</mo><mi>a</mi><mo maxsize="120%" minsize="120%">]</mo></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow><mo>,</mo></mrow></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{split}\mathcal{N}(0,1)&amp;\otimes\mathcal{N}(0,1)\Big{(}A\big{(}\big{\{}(w%
+,z)\in\mathbb{R}^{2};\sigma w+\bar{\sigma}z\leq a\big{\}}\big{)}\Big{)}\\
+&amp;=\mathcal{N}(0,1)\otimes\mathcal{N}(0,1)\Big{(}\Big{\{}(w,z);\frac{1}{\sqrt{%
+\sigma^{2}+\bar{\sigma}^{2}}}w\leq a\Big{\}}\Big{)}\\
+&amp;=\mathcal{N}(0,1)\big{(}(-\infty,a\sqrt{\sigma^{2}+\bar{\sigma}^{2}}\big{]}%
+\big{)}=\mathcal{N}(0,\sigma^{2}+\bar{\sigma}^{2})\big{(}(-\infty,a\big{]}\big%
+{)},\end{split}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">terminando a prova da proposição.
+∎</p>
+</div>
+</div>
+<div id="SS1.p23" class="ltx_para">
+<p class="ltx_p">Podemos obter um corolário interessante sobre a soma de normais i.i.d.
+<span class="ltx_ERROR undefined">{corollary}</span>
+
+Sejam <math id="SS1.p23.m1" class="ltx_Math" alttext="X_{1},X_{2},\dots" display="inline"><semantics><mrow><msub><mi>X</mi><mn>1</mn></msub><mo>,</mo><msub><mi>X</mi><mn>2</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi></mrow><annotation encoding="application/x-tex">X_{1},X_{2},\dots</annotation></semantics></math> variáveis <span class="ltx_ERROR undefined">\iid</span>com distribuição <math id="SS1.p23.m2" class="ltx_Math" alttext="\mathcal{N}(m,\sigma^{2})" display="inline"><semantics><mrow><mi class="ltx_font_mathcaligraphic">𝒩</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>m</mi><mo>,</mo><msup><mi>σ</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mathcal{N}(m,\sigma^{2})</annotation></semantics></math>, então</p>
+<div id="Ch3.E108" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch3.E108.m1" class="ltx_Math" alttext="X_{1}+\dots+X_{n}\distr\mathcal{N}(nm,n\sigma^{2})." display="block"><semantics><mrow><mrow><msub><mi>X</mi><mn>1</mn></msub><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><mrow><msub><mi>X</mi><mi>n</mi></msub><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\distr</mtext></merror><mo>⁢</mo><mi class="ltx_font_mathcaligraphic">𝒩</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>⁢</mo><mi>m</mi></mrow><mo>,</mo><mrow><mi>n</mi><mo>⁢</mo><msup><mi>σ</mi><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">X_{1}+\dots+X_{n}\distr\mathcal{N}(nm,n\sigma^{2}).</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.108)</span>
+              
+              
+            
+</div>
+<p class="ltx_p">Como consequência</p>
+<div id="Ch3.E109" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch3.E109.m1" class="ltx_Math" alttext="\frac{\sum_{i=1}^{n}X_{i}-nE(X_{1})}{\sigma\sqrt{n}}\distr\mathcal{N}(0,1)." display="block"><semantics><mrow><mrow><mfrac><mrow><mrow><msubsup><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><msub><mi>X</mi><mi>i</mi></msub></mrow><mo>−</mo><mrow><mi>n</mi><mo>⁢</mo><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>X</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><mrow><mi>σ</mi><mo>⁢</mo><msqrt><mi>n</mi></msqrt></mrow></mfrac><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\distr</mtext></merror><mo>⁢</mo><mi class="ltx_font_mathcaligraphic">𝒩</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0,1</mn><mo stretchy="false">)</mo></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\frac{\sum_{i=1}^{n}X_{i}-nE(X_{1})}{\sigma\sqrt{n}}\distr\mathcal{N}(0,1).</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.109)</span>
+              
+              
+            
+</div>
+</div>
+<div id="SS1.p24" class="ltx_para">
+<p class="ltx_p">Lembrando da Lei dos Grandes Números, se dividimos a soma dos <math id="SS1.p24.m1" class="ltx_Math" alttext="X_{i}-E(X_{i})" display="inline"><semantics><mrow><msub><mi>X</mi><mi>i</mi></msub><mo>−</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>X</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">X_{i}-E(X_{i})</annotation></semantics></math> por <math id="SS1.p24.m2" class="ltx_Math" alttext="n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>, essa fração vai a zero quase certamente.
+O que concluímos acima é que ao dividir por <math id="SS1.p24.m3" class="ltx_Math" alttext="\sqrt{n}" display="inline"><semantics><msqrt><mi>n</mi></msqrt><annotation encoding="application/x-tex">\sqrt{n}</annotation></semantics></math> obtemos um limite não trivial (nem zero, nem infinito) e aleatório (não determinístico).</p>
+</div>
+<div id="SS1.p25" class="ltx_para">
+<p class="ltx_p">Mais uma observação curiosa: nossa motivação para a definição da distribuição normal passou por invariância por rotações e podemos extender essa invariância para <math id="SS1.p25.m1" class="ltx_Math" alttext="n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math> normais independentes.
+Note que somar as coordenadas canônicas é equivalente a tomar o produdo escalar com o vetor <math id="SS1.p25.m2" class="ltx_Math" alttext="(1,1,\dots,1)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mn>1,1</mn><mo>,</mo><mrow><mi mathvariant="normal">…</mi><mo>⁢</mo><mn>,1</mn></mrow><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(1,1,\dots,1)</annotation></semantics></math>, que tem norma euclideana <math id="SS1.p25.m3" class="ltx_Math" alttext="\sqrt{n}" display="inline"><semantics><msqrt><mi>n</mi></msqrt><annotation encoding="application/x-tex">\sqrt{n}</annotation></semantics></math>.</p>
+</div>
+<div id="SS1.p26" class="ltx_para">
+<p class="ltx_p">Uma outra maneira de entender o corolário acima é que a normal é um ponto fixo da operação seguinte</p>
+<ol id="I1" class="ltx_enumerate">
+<li id="I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"> a)</span><div id="I1.i1.p1" class="ltx_para">​<p class="ltx_p">tome uma distribuição <math id="I1.i1.p1.m1" class="ltx_Math" alttext="\mu\in\mathcal{L}^{2}" display="inline"><semantics><mrow><mi>μ</mi><mo>∈</mo><msup><mi class="ltx_font_mathcaligraphic">ℒ</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\mu\in\mathcal{L}^{2}</annotation></semantics></math>,</p>
+</div>
+</li>
+<li id="I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"> b)</span><div id="I1.i2.p1" class="ltx_para">​<p class="ltx_p">considere <math id="I1.i2.p1.m1" class="ltx_Math" alttext="X_{1},\dots,X_{n}" display="inline"><semantics><mrow><msub><mi>X</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>X</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">X_{1},\dots,X_{n}</annotation></semantics></math> <span class="ltx_ERROR undefined">\iid</span>com distribuição <math id="I1.i2.p1.m2" class="ltx_Math" alttext="\mu" display="inline"><semantics><mi>μ</mi><annotation encoding="application/x-tex">\mu</annotation></semantics></math> e</p>
+</div>
+</li>
+<li id="I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"> c)</span><div id="I1.i3.p1" class="ltx_para">​<p class="ltx_p">retorne a distribuição de</p>
+<div id="Ch3.E110" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch3.E110.m1" class="ltx_Math" alttext="\frac{X_{1}+\dots+X_{n}-nE(X_{1})}{\sqrt{n}}." display="block"><semantics><mrow><mfrac><mrow><mrow><msub><mi>X</mi><mn>1</mn></msub><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><msub><mi>X</mi><mi>n</mi></msub></mrow><mo>−</mo><mrow><mi>n</mi><mo>⁢</mo><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>X</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><msqrt><mi>n</mi></msqrt></mfrac><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\frac{X_{1}+\dots+X_{n}-nE(X_{1})}{\sqrt{n}}.</annotation></semantics></math></span>
+                    <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.110)</span>
+                    
+                    
+                  
+</div>
+</div>
+</li>
+</ol>
+</div>
+<div id="SS1.p27" class="ltx_para">
+<p class="ltx_p">Na Questão <a href="#SS1" title="3.8.1 A distribuição normal ‣ 3.8 O Teorema Central do Limite ‣ Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.8.1</span></a>, nos perguntamos quais seriam os outros possíveis pontos fixos de <math id="SS1.p27.m1" class="ltx_Math" alttext="\Gamma" display="inline"><semantics><mi mathvariant="normal">Γ</mi><annotation encoding="application/x-tex">\Gamma</annotation></semantics></math> e isso será considerado depois.
+Mas uma outra questão bastante importante é se o ponto fixo <math id="SS1.p27.m2" class="ltx_Math" alttext="\mathcal{N}(0,1)" display="inline"><semantics><mrow><mi class="ltx_font_mathcaligraphic">𝒩</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0,1</mn><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mathcal{N}(0,1)</annotation></semantics></math> é atrator, ou seja se começando com outras distribuições poderíamos nos aproximar de <math id="SS1.p27.m3" class="ltx_Math" alttext="\mathcal{N}(0,1)" display="inline"><semantics><mrow><mi class="ltx_font_mathcaligraphic">𝒩</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0,1</mn><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mathcal{N}(0,1)</annotation></semantics></math> à medida que iteramos <math id="SS1.p27.m4" class="ltx_Math" alttext="\Gamma" display="inline"><semantics><mi mathvariant="normal">Γ</mi><annotation encoding="application/x-tex">\Gamma</annotation></semantics></math>.</p>
+</div>
+<div id="SS1.p28" class="ltx_para">
+<p class="ltx_p">Isso é estudado no Teorema Central do Limite (TCL) que provaremos posteriormente.
+Mas antes, precisamos desenvolver uma boa definição de convergência para distribuições, ou em outras palavras definir uma topologia.
+Esse será o nosso próximo tópico.</p>
+</div>
+</div>
+</section>
+<section id="SS2" class="ltx_subsection normal">
+<div class="section level2">
+
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection header-section-number">3.8.2</span> Convergência fraca</h2>
+
+<div id="SS2.p1" class="ltx_para">
+<p class="ltx_p">Em muitos casos é importante termos bem definida uma noção de convergência de medidas de probabilidade.
+Supondo por exemplo no espaço mensurável <math id="SS2.p1.m1" class="ltx_Math" alttext="(E,\mathcal{A})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi>E</mi><mo>,</mo><mi class="ltx_font_mathcaligraphic">𝒜</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(E,\mathcal{A})</annotation></semantics></math>, tenhamos uma sequência de probabilidades <math id="SS2.p1.m2" class="ltx_Math" alttext="\mu_{n}" display="inline"><semantics><msub><mi>μ</mi><mi>n</mi></msub><annotation encoding="application/x-tex">\mu_{n}</annotation></semantics></math> e gostaríamos de saber se ela converge a uma determinada <math id="SS2.p1.m3" class="ltx_Math" alttext="\mu" display="inline"><semantics><mi>μ</mi><annotation encoding="application/x-tex">\mu</annotation></semantics></math>.</p>
+</div>
+<div id="SS2.p2" class="ltx_para">
+<p class="ltx_p">Um candidato natural para dara sentido a essa convergência poderia se a distância de variação total entre duas medidas</p>
+<div id="Ch3.E111" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch3.E111.m1" class="ltx_Math" alttext="d_{\VT}(\mu,\nu)=\sup_{A\in\mathcal{A}}|\mu(A)-\nu(A)|." display="block"><semantics><mrow><mrow><mrow><msub><mi>d</mi><merror class="ltx_ERROR undefined undefined"><mtext>\VT</mtext></merror></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>μ</mi><mo>,</mo><mi>ν</mi><mo stretchy="false">)</mo></mrow></mrow><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0em">sup</mo><mrow><mi>A</mi><mo>∈</mo><mi class="ltx_font_mathcaligraphic">𝒜</mi></mrow></munder><mrow><mo stretchy="false">|</mo><mrow><mrow><mi>μ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>ν</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">|</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">d_{\VT}(\mu,\nu)=\sup_{A\in\mathcal{A}}|\mu(A)-\nu(A)|.</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.111)</span>
+              
+              
+            
+</div>
+<p class="ltx_p">Não é difícil mostrar que a definição acima induz uma métrica, mas ela possui alguns problemas que descreveremos a seguir.</p>
+</div>
+<div id="SS2.p3" class="ltx_para">
+<span class="ltx_ERROR undefined">{exercise}</span>
+<p class="ltx_p">Mostre que <math id="SS2.p3.m1" class="ltx_Math" alttext="d_{\VT}" display="inline"><semantics><msub><mi>d</mi><merror class="ltx_ERROR undefined undefined"><mtext>\VT</mtext></merror></msub><annotation encoding="application/x-tex">d_{\VT}</annotation></semantics></math> define uma métrica.</p>
+</div>
+<div id="SS2.p4" class="ltx_para">
+<span class="ltx_ERROR undefined">{exercise}</span>
+<p class="ltx_p">Sejam <math id="SS2.p4.m1" class="ltx_Math" alttext="\mu" display="inline"><semantics><mi>μ</mi><annotation encoding="application/x-tex">\mu</annotation></semantics></math> e <math id="SS2.p4.m2" class="ltx_Math" alttext="\nu" display="inline"><semantics><mi>ν</mi><annotation encoding="application/x-tex">\nu</annotation></semantics></math> absolutamente contínuas com respeito a uma medida fixa <math id="SS2.p4.m3" class="ltx_Math" alttext="\eta" display="inline"><semantics><mi>η</mi><annotation encoding="application/x-tex">\eta</annotation></semantics></math>, tendo densidades <math id="SS2.p4.m4" class="ltx_Math" alttext="\rho" display="inline"><semantics><mi>ρ</mi><annotation encoding="application/x-tex">\rho</annotation></semantics></math> e <math id="SS2.p4.m5" class="ltx_Math" alttext="\pi" display="inline"><semantics><mi>π</mi><annotation encoding="application/x-tex">\pi</annotation></semantics></math> respectivamente.
+Encontre uma fórmula para <math id="SS2.p4.m6" class="ltx_Math" alttext="d_{\VT}(\mu,\nu)" display="inline"><semantics><mrow><msub><mi>d</mi><merror class="ltx_ERROR undefined undefined"><mtext>\VT</mtext></merror></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>μ</mi><mo>,</mo><mi>ν</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">d_{\VT}(\mu,\nu)</annotation></semantics></math> em termos das densidades.
+Essa fórmula nos remete a qual distância entre funções?</p>
+</div>
+<div id="SS2.p5" class="ltx_para">
+<p class="ltx_p">Digamos que o espaço amostral <math id="SS2.p5.m1" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math> já seja provido de uma métrica <math id="SS2.p5.m2" class="ltx_Math" alttext="d" display="inline"><semantics><mi>d</mi><annotation encoding="application/x-tex">d</annotation></semantics></math> e <math id="SS2.p5.m3" class="ltx_Math" alttext="\mathcal{A}" display="inline"><semantics><mi class="ltx_font_mathcaligraphic">𝒜</mi><annotation encoding="application/x-tex">\mathcal{A}</annotation></semantics></math> seja a <math id="SS2.p5.m4" class="ltx_Math" alttext="\sigma" display="inline"><semantics><mi>σ</mi><annotation encoding="application/x-tex">\sigma</annotation></semantics></math>-álgebra dos borelianos em <math id="SS2.p5.m5" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math>.
+Qualquer que seja a noção de convergência que iremos considerar, gostaríamos de dizer que <math id="SS2.p5.m6" class="ltx_Math" alttext="\delta_{x_{n}}" display="inline"><semantics><msub><mi>δ</mi><msub><mi>x</mi><mi>n</mi></msub></msub><annotation encoding="application/x-tex">\delta_{x_{n}}</annotation></semantics></math> converge a <math id="SS2.p5.m7" class="ltx_Math" alttext="\delta_{x}" display="inline"><semantics><msub><mi>δ</mi><mi>x</mi></msub><annotation encoding="application/x-tex">\delta_{x}</annotation></semantics></math> sempre que <math id="SS2.p5.m8" class="ltx_Math" alttext="x_{n}\to x" display="inline"><semantics><mrow><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">→</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">x_{n}\to x</annotation></semantics></math> em <math id="SS2.p5.m9" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math>.
+Esse porém não é o caso para <math id="SS2.p5.m10" class="ltx_Math" alttext="d_{\VT}" display="inline"><semantics><msub><mi>d</mi><merror class="ltx_ERROR undefined undefined"><mtext>\VT</mtext></merror></msub><annotation encoding="application/x-tex">d_{\VT}</annotation></semantics></math>, pois se <math id="SS2.p5.m11" class="ltx_Math" alttext="x_{n}\neq x" display="inline"><semantics><mrow><msub><mi>x</mi><mi>n</mi></msub><mo>≠</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">x_{n}\neq x</annotation></semantics></math> para todo <math id="SS2.p5.m12" class="ltx_Math" alttext="n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math> e <math id="SS2.p5.m13" class="ltx_Math" alttext="\{x\}\in\mathcal{A}" display="inline"><semantics><mrow><mrow><mo stretchy="false">{</mo><mi>x</mi><mo stretchy="false">}</mo></mrow><mo>∈</mo><mi class="ltx_font_mathcaligraphic">𝒜</mi></mrow><annotation encoding="application/x-tex">\{x\}\in\mathcal{A}</annotation></semantics></math>, teríamos</p>
+<div id="Ch3.E112" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch3.E112.m1" class="ltx_Math" alttext="d_{\VT}(\delta_{x_{n}},\delta_{x})\geq|\delta_{x_{n}}(\{x\})-\delta_{x}(\{x\})%
+|=|0-1|=1." display="block"><semantics><mrow><mrow><mrow><msub><mi>d</mi><merror class="ltx_ERROR undefined undefined"><mtext>\VT</mtext></merror></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>δ</mi><msub><mi>x</mi><mi>n</mi></msub></msub><mo>,</mo><msub><mi>δ</mi><mi>x</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>≥</mo><mrow><mo stretchy="false">|</mo><mrow><mrow><msub><mi>δ</mi><msub><mi>x</mi><mi>n</mi></msub></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mo stretchy="false">{</mo><mi>x</mi><mo stretchy="false">}</mo></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><msub><mi>δ</mi><mi>x</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mo stretchy="false">{</mo><mi>x</mi><mo stretchy="false">}</mo></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">|</mo></mrow><mo>=</mo><mrow><mo stretchy="false">|</mo><mrow><mn>0</mn><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">|</mo></mrow><mo>=</mo><mn>1</mn></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">d_{\VT}(\delta_{x_{n}},\delta_{x})\geq|\delta_{x_{n}}(\{x\})-\delta_{x}(\{x\})%
+|=|0-1|=1.</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.112)</span>
+              
+              
+            
+</div>
+</div>
+<div id="SS2.p6" class="ltx_para">
+<p class="ltx_p">Aqueles que já viram o conceito de convergência fraca acharão natural que a convergência de <math id="SS2.p6.m1" class="ltx_Math" alttext="\mu_{n}" display="inline"><semantics><msub><mi>μ</mi><mi>n</mi></msub><annotation encoding="application/x-tex">\mu_{n}</annotation></semantics></math> para <math id="SS2.p6.m2" class="ltx_Math" alttext="\mu" display="inline"><semantics><mi>μ</mi><annotation encoding="application/x-tex">\mu</annotation></semantics></math> seja definida em termos da convergência das integrais <math id="SS2.p6.m3" class="ltx_Math" alttext="\int f\d{\mu}_{n}" display="inline"><semantics><mrow><mo>∫</mo><mrow><mi>f</mi><mo>⁢</mo><msub><munder accentunder="true"><mtext class="ltx_mathvariant_italic">μ</mtext><mo>⋅</mo></munder><mi>n</mi></msub></mrow></mrow><annotation encoding="application/x-tex">\int f\d{\mu}_{n}</annotation></semantics></math> para <math id="SS2.p6.m4" class="ltx_Math" alttext="\int f\d{\mu}" display="inline"><semantics><mrow><mo>∫</mo><mrow><mi>f</mi><mo>⁢</mo><munder accentunder="true"><mtext class="ltx_mathvariant_italic">μ</mtext><mo>⋅</mo></munder></mrow></mrow><annotation encoding="application/x-tex">\int f\d{\mu}</annotation></semantics></math>.
+Porém, como mencionamos no exemplo das medidas <math id="SS2.p6.m5" class="ltx_Math" alttext="\delta_{x_{n}}" display="inline"><semantics><msub><mi>δ</mi><msub><mi>x</mi><mi>n</mi></msub></msub><annotation encoding="application/x-tex">\delta_{x_{n}}</annotation></semantics></math> acima, gostaríamos também de a convergência respeitasse a topologia original do espaço <math id="SS2.p6.m6" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math>, o que torna natural o seguinte conceito.</p>
+</div>
+<div id="SS2.p7" class="ltx_para">
+<span class="ltx_ERROR undefined">{definition}</span>
+<p class="ltx_p">Dizemos que uma sequência de medidas de probabilidade <math id="SS2.p7.m1" class="ltx_Math" alttext="\mu_{n}" display="inline"><semantics><msub><mi>μ</mi><mi>n</mi></msub><annotation encoding="application/x-tex">\mu_{n}</annotation></semantics></math> converge fracamente (ou converge em distribuição) para uma probabilidade <math id="SS2.p7.m2" class="ltx_Math" alttext="\mu" display="inline"><semantics><mi>μ</mi><annotation encoding="application/x-tex">\mu</annotation></semantics></math> se </p>
+<div id="Ch3.E113" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch3.E113.m1" class="ltx_Math" alttext="\lim_{n\to\infty}\int f\d{\mu}_{n}=\int f\d{\mu},\text{ para toda $f:E\to%
+\mathbb{R}$ cont\'{\i}nua e limitada.}" display="block"><semantics><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mrow><mo lspace="0.167em">∫</mo><mrow><mi>f</mi><mo>⁢</mo><msub><munder accentunder="true"><mtext class="ltx_mathvariant_italic">μ</mtext><mo>⋅</mo></munder><mi>n</mi></msub></mrow></mrow></mrow><mo rspace="0.111em">=</mo><mrow><mrow><mo>∫</mo><mrow><mi>f</mi><mo>⁢</mo><munder accentunder="true"><mtext class="ltx_mathvariant_italic">μ</mtext><mo>⋅</mo></munder></mrow></mrow><mo>,</mo><mrow><mtext> para toda </mtext><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>E</mi><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow><mtext> contínua e limitada.</mtext></mrow></mrow></mrow><annotation encoding="application/x-tex">\lim_{n\to\infty}\int f\d{\mu}_{n}=\int f\d{\mu},\text{ para toda $f:E\to%
+\mathbb{R}$ cont\'{\i}nua e limitada.}</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.113)</span>
+              
+              
+            
+</div>
+<p class="ltx_p">Essa convergência muitas vezes é denotada por <math id="SS2.p7.m3" class="ltx_Math" alttext="\mu_{n}\Rightarrow\mu" display="inline"><semantics><mrow><msub><mi>μ</mi><mi>n</mi></msub><mo stretchy="false">⇒</mo><mi>μ</mi></mrow><annotation encoding="application/x-tex">\mu_{n}\Rightarrow\mu</annotation></semantics></math>.</p>
+</div>
+<div id="SS2.p8" class="ltx_para">
+<p class="ltx_p">Essa definição fica ainda mais natural para aqueles que conhecem o Teorema da Representação de Riesz.
+Com isso em mente, podemos relacionar a convergência em distribuição com a convergência fraca-<math id="SS2.p8.m1" class="ltx_Math" alttext="\star" display="inline"><semantics><mo>⋆</mo><annotation encoding="application/x-tex">\star</annotation></semantics></math> no espaço de medidas finitas.</p>
+</div>
+<div id="SS2.p9" class="ltx_para">
+<span class="ltx_ERROR undefined">{exercise}</span>
+<p class="ltx_p">Mostre que em <math id="SS2.p9.m1" class="ltx_Math" alttext="(\mathbb{R},\mathcal{B}(\mathbb{R}))" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi>ℝ</mi><mo>,</mo><mrow><mi class="ltx_font_mathcaligraphic">ℬ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ℝ</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(\mathbb{R},\mathcal{B}(\mathbb{R}))</annotation></semantics></math>, temos que <math id="SS2.p9.m2" class="ltx_Math" alttext="\tfrac{1}{n}\sum_{i=1}^{n}\delta_{i/n}\Rightarrow U_{[0,1]}" display="inline"><semantics><mrow><mrow><mfrac><mn>1</mn><mi>n</mi></mfrac><mo>⁢</mo><mrow><msubsup><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><msub><mi>δ</mi><mrow><mi>i</mi><mo>/</mo><mi>n</mi></mrow></msub></mrow></mrow><mo stretchy="false">⇒</mo><msub><mi>U</mi><mrow><mo stretchy="false">[</mo><mn>0,1</mn><mo stretchy="false">]</mo></mrow></msub></mrow><annotation encoding="application/x-tex">\tfrac{1}{n}\sum_{i=1}^{n}\delta_{i/n}\Rightarrow U_{[0,1]}</annotation></semantics></math>.</p>
+</div>
+<div id="SS2.p10" class="ltx_para">
+<span class="ltx_ERROR undefined">{exercise}</span>
+<p class="ltx_p">Considere a função <math id="SS2.p10.m1" class="ltx_Math" alttext="\phi" display="inline"><semantics><mi>ϕ</mi><annotation encoding="application/x-tex">\phi</annotation></semantics></math> do espaço de medidas em <math id="SS2.p10.m2" class="ltx_Math" alttext="([0,1],\mathcal{B}([0,1]))" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mrow><mo stretchy="false">[</mo><mn>0,1</mn><mo stretchy="false">]</mo></mrow><mo>,</mo><mrow><mi class="ltx_font_mathcaligraphic">ℬ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mo stretchy="false">[</mo><mn>0,1</mn><mo stretchy="false">]</mo></mrow><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">([0,1],\mathcal{B}([0,1]))</annotation></semantics></math> nele mesmo, dada por:</p>
+<div id="Ch3.E114" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch3.E114.m1" class="ltx_Math" alttext="\phi(\mu)(A)=\tfrac{1}{2}\big{(}\mu(3A)+\mu(3A-2)\big{)}." display="block"><semantics><mrow><mrow><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>μ</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mrow><mi>μ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>3</mn><mo>⁢</mo><mi>A</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>μ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>3</mn><mo>⁢</mo><mi>A</mi></mrow><mo>−</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\phi(\mu)(A)=\tfrac{1}{2}\big{(}\mu(3A)+\mu(3A-2)\big{)}.</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.114)</span>
+              
+              
+            
+</div>
+<p class="ltx_p">Identifique o limite em distribuição de <math id="SS2.p10.m3" class="ltx_Math" alttext="\phi^{(n)}(\delta_{0})" display="inline"><semantics><mrow><msup><mi>ϕ</mi><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>δ</mi><mn>0</mn></msub><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\phi^{(n)}(\delta_{0})</annotation></semantics></math>.
+Mostre que</p>
+<ol id="I2" class="ltx_enumerate">
+<li id="I2.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"> a)</span><div id="I2.i1.p1" class="ltx_para">​<p class="ltx_p">a função de distribuição acumulada associada ao limite é contínua,</p>
+</div>
+</li>
+<li id="I2.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"> b)</span><div id="I2.i2.p1" class="ltx_para">​<p class="ltx_p">o limite não é absolutamente contínuo com respeito à medida de Lebesgue.</p>
+</div>
+</li>
+</ol>
+</div>
+<div id="SS2.p11" class="ltx_para">
+<span class="ltx_ERROR undefined">{exercise}</span>
+<p class="ltx_p">Sejam <math id="SS2.p11.m1" class="ltx_Math" alttext="X_{1},X_{2},\dots" display="inline"><semantics><mrow><msub><mi>X</mi><mn>1</mn></msub><mo>,</mo><msub><mi>X</mi><mn>2</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi></mrow><annotation encoding="application/x-tex">X_{1},X_{2},\dots</annotation></semantics></math> i.i.d. distribuidas como <math id="SS2.p11.m2" class="ltx_Math" alttext="\text{Exp}(1)" display="inline"><semantics><mrow><mtext>Exp</mtext><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\text{Exp}(1)</annotation></semantics></math> e defina</p>
+<div id="Ch3.E115" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch3.E115.m1" class="ltx_Math" alttext="M_{n}=\max_{i=1,\dots,n}X_{i}." display="block"><semantics><mrow><mrow><msub><mi>M</mi><mi>n</mi></msub><mo>=</mo><mrow><munder><mi>max</mi><mrow><mi>i</mi><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi>n</mi></mrow></mrow></munder><mo lspace="0.167em">⁡</mo><msub><mi>X</mi><mi>i</mi></msub></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">M_{n}=\max_{i=1,\dots,n}X_{i}.</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.115)</span>
+              
+              
+            
+</div>
+<p class="ltx_p">Mostre que <math id="SS2.p11.m3" class="ltx_Math" alttext="M_{n}-\log(n)" display="inline"><semantics><mrow><msub><mi>M</mi><mi>n</mi></msub><mo>−</mo><mrow><mi>log</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">M_{n}-\log(n)</annotation></semantics></math> converge fracamente e identifique o limite.
+Observe que não precisamos dividir <math id="SS2.p11.m4" class="ltx_Math" alttext="M_{n}-\log(n)" display="inline"><semantics><mrow><msub><mi>M</mi><mi>n</mi></msub><mo>−</mo><mrow><mi>log</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">M_{n}-\log(n)</annotation></semantics></math> por nada para obter a convergência.</p>
+</div>
+<div id="SS2.p12" class="ltx_para">
+<p class="ltx_p">Nós algumas vezes denotamos <math id="SS2.p12.m1" class="ltx_Math" alttext="X_{n}\Rightarrow X" display="inline"><semantics><mrow><msub><mi>X</mi><mi>n</mi></msub><mo stretchy="false">⇒</mo><mi>X</mi></mrow><annotation encoding="application/x-tex">X_{n}\Rightarrow X</annotation></semantics></math> quando <math id="SS2.p12.m2" class="ltx_Math" alttext="X_{n}" display="inline"><semantics><msub><mi>X</mi><mi>n</mi></msub><annotation encoding="application/x-tex">X_{n}</annotation></semantics></math> e <math id="SS2.p12.m3" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> são elementos aleatórios de <math id="SS2.p12.m4" class="ltx_Math" alttext="(\Omega,\mathcal{F},P)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">Ω</mi><mo>,</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>,</mo><mi>P</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(\Omega,\mathcal{F},P)</annotation></semantics></math> para descrever a convergência fraca de suas respectivas distribuições.
+Mais precisamente, <math id="SS2.p12.m5" class="ltx_Math" alttext="X_{n}\circ P\Rightarrow X\circ P" display="inline"><semantics><mrow><mrow><msub><mi>X</mi><mi>n</mi></msub><mo lspace="0.222em" rspace="0.222em">∘</mo><mi>P</mi></mrow><mo stretchy="false">⇒</mo><mrow><mi>X</mi><mo lspace="0.222em" rspace="0.222em">∘</mo><mi>P</mi></mrow></mrow><annotation encoding="application/x-tex">X_{n}\circ P\Rightarrow X\circ P</annotation></semantics></math>.</p>
+</div>
+</div>
+</section>
+<section id="SS3" class="ltx_subsection normal">
+<div class="section level2">
+
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection header-section-number">3.8.3</span> Convergência fraca em <math id="SS3.m1" class="ltx_Math" alttext="\mathbb{R}" display="inline"><semantics><mi>ℝ</mi><annotation encoding="application/x-tex">\mathbb{R}</annotation></semantics></math>
+</h2>
+
+<div id="SS3.p1" class="ltx_para">
+<p class="ltx_p">No caso especial em que <math id="SS3.p1.m1" class="ltx_Math" alttext="E=\mathbb{R}" display="inline"><semantics><mrow><mi>E</mi><mo>=</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">E=\mathbb{R}</annotation></semantics></math>, temos vários outras maneiras de caracterizar convergência em distribuição.
+A primeira é dada pela seguinte</p>
+</div>
+<div id="SS3.p2" class="ltx_para">
+<span class="ltx_ERROR undefined">{proposition}</span>
+<p class="ltx_p">Se <math id="SS3.p2.m1" class="ltx_Math" alttext="\int g\d{\mu}_{n}" display="inline"><semantics><mrow><mo>∫</mo><mrow><mi>g</mi><mo>⁢</mo><msub><munder accentunder="true"><mtext class="ltx_mathvariant_italic">μ</mtext><mo>⋅</mo></munder><mi>n</mi></msub></mrow></mrow><annotation encoding="application/x-tex">\int g\d{\mu}_{n}</annotation></semantics></math> converge para <math id="SS3.p2.m2" class="ltx_Math" alttext="\int g\d{\mu}" display="inline"><semantics><mrow><mo>∫</mo><mrow><mi>g</mi><mo>⁢</mo><munder accentunder="true"><mtext class="ltx_mathvariant_italic">μ</mtext><mo>⋅</mo></munder></mrow></mrow><annotation encoding="application/x-tex">\int g\d{\mu}</annotation></semantics></math> para toda <math id="SS3.p2.m3" class="ltx_Math" alttext="g\in C^{3}" display="inline"><semantics><mrow><mi>g</mi><mo>∈</mo><msup><mi>C</mi><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">g\in C^{3}</annotation></semantics></math> limitada e com as três primeiras derivadas limitadas, então <math id="SS3.p2.m4" class="ltx_Math" alttext="\mu_{n}\Rightarrow\mu" display="inline"><semantics><mrow><msub><mi>μ</mi><mi>n</mi></msub><mo stretchy="false">⇒</mo><mi>μ</mi></mrow><annotation encoding="application/x-tex">\mu_{n}\Rightarrow\mu</annotation></semantics></math>.</p>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demonstração.</h6>
+<div id="SS3.p3" class="ltx_para">
+<p class="ltx_p">Primeiramente, vamos ver que podemos nos concentrar em um conjunto compacto da reta.</p>
+</div>
+<div id="SS3.p4" class="ltx_para">
+<p class="ltx_p">Para isso fixe um <math id="SS3.p4.m1" class="ltx_Math" alttext="\varepsilon&gt;0" display="inline"><semantics><mrow><mi>ε</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\varepsilon&gt;0</annotation></semantics></math> e tome <math id="SS3.p4.m2" class="ltx_Math" alttext="M^{\prime}" display="inline"><semantics><msup><mi>M</mi><mo>′</mo></msup><annotation encoding="application/x-tex">M^{\prime}</annotation></semantics></math> tal que <math id="SS3.p4.m3" class="ltx_Math" alttext="\mu\big{(}[-M^{\prime},M^{\prime}]\big{)}&gt;1-\varepsilon/3" display="inline"><semantics><mrow><mrow><mi>μ</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mo stretchy="false">[</mo><mrow><mo>−</mo><msup><mi>M</mi><mo>′</mo></msup></mrow><mo>,</mo><msup><mi>M</mi><mo>′</mo></msup><mo stretchy="false">]</mo></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo>&gt;</mo><mrow><mn>1</mn><mo>−</mo><mrow><mi>ε</mi><mo>/</mo><mn>3</mn></mrow></mrow></mrow><annotation encoding="application/x-tex">\mu\big{(}[-M^{\prime},M^{\prime}]\big{)}&gt;1-\varepsilon/3</annotation></semantics></math>.
+Tomando uma função <math id="SS3.p4.m4" class="ltx_Math" alttext="g" display="inline"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math> satisfazendo as hipóteses do teorema e tal que</p>
+<div id="Ch3.E116" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch3.E116.m1" class="ltx_Math" alttext="\1{[-M^{\prime},M^{\prime}]}\leq g\leq\1{[-M^{\prime}-1,M^{\prime}+1]}," display="block"><semantics><mrow><mrow><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\1</mtext></merror><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><mo>−</mo><msup><mi>M</mi><mo>′</mo></msup></mrow><mo>,</mo><msup><mi>M</mi><mo>′</mo></msup><mo stretchy="false">]</mo></mrow></mrow><mo>≤</mo><mi>g</mi><mo>≤</mo><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\1</mtext></merror><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><mrow><mo>−</mo><msup><mi>M</mi><mo>′</mo></msup></mrow><mo>−</mo><mn>1</mn></mrow><mo>,</mo><mrow><msup><mi>M</mi><mo>′</mo></msup><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">]</mo></mrow></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\1{[-M^{\prime},M^{\prime}]}\leq g\leq\1{[-M^{\prime}-1,M^{\prime}+1]},</annotation></semantics></math></span>
+                <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.116)</span>
+                
+                
+              
+</div>
+<p class="ltx_p">concluimos que</p>
+<div id="Ch3.E117" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch3.E117.m1" class="ltx_Math" alttext="\mu_{n}\big{(}[-M^{\prime}-1,M^{\prime}+1]\big{)}\geq 1-\varepsilon/2," display="block"><semantics><mrow><mrow><mrow><msub><mi>μ</mi><mi>n</mi></msub><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mo stretchy="false">[</mo><mrow><mrow><mo>−</mo><msup><mi>M</mi><mo>′</mo></msup></mrow><mo>−</mo><mn>1</mn></mrow><mo>,</mo><mrow><msup><mi>M</mi><mo>′</mo></msup><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">]</mo></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo>≥</mo><mrow><mn>1</mn><mo>−</mo><mrow><mi>ε</mi><mo>/</mo><mn>2</mn></mrow></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\mu_{n}\big{(}[-M^{\prime}-1,M^{\prime}+1]\big{)}\geq 1-\varepsilon/2,</annotation></semantics></math></span>
+                <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.117)</span>
+                
+                
+              
+</div>
+<p class="ltx_p">para todo <math id="SS3.p4.m5" class="ltx_Math" alttext="n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math> suficientemente grande.
+Se tomamos <math id="SS3.p4.m6" class="ltx_Math" alttext="M\geq M^{\prime}" display="inline"><semantics><mrow><mi>M</mi><mo>≥</mo><msup><mi>M</mi><mo>′</mo></msup></mrow><annotation encoding="application/x-tex">M\geq M^{\prime}</annotation></semantics></math> suficientemente grande, podemos obter a cota acima para todo <math id="SS3.p4.m7" class="ltx_Math" alttext="n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math> (com <math id="SS3.p4.m8" class="ltx_Math" alttext="M" display="inline"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math> no lugar de <math id="SS3.p4.m9" class="ltx_Math" alttext="M^{\prime}+1" display="inline"><semantics><mrow><msup><mi>M</mi><mo>′</mo></msup><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">M^{\prime}+1</annotation></semantics></math> e <math id="SS3.p4.m10" class="ltx_Math" alttext="\varepsilon" display="inline"><semantics><mi>ε</mi><annotation encoding="application/x-tex">\varepsilon</annotation></semantics></math> no lugar de <math id="SS3.p4.m11" class="ltx_Math" alttext="\varepsilon/2" display="inline"><semantics><mrow><mi>ε</mi><mo>/</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">\varepsilon/2</annotation></semantics></math>).</p>
+</div>
+<div id="SS3.p5" class="ltx_para">
+<p class="ltx_p">Fixamos agora uma <math id="SS3.p5.m1" class="ltx_Math" alttext="f:\mathbb{R}\to\mathbb{R}" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>ℝ</mi><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">f:\mathbb{R}\to\mathbb{R}</annotation></semantics></math> contínua e limitada.
+Sabemos que é possível aproximar <math id="SS3.p5.m2" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> por uma função <math id="SS3.p5.m3" class="ltx_Math" alttext="g\in C^{3}" display="inline"><semantics><mrow><mi>g</mi><mo>∈</mo><msup><mi>C</mi><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">g\in C^{3}</annotation></semantics></math> de suporte compacto, com <math id="SS3.p5.m4" class="ltx_Math" alttext="\lVert g\rVert_{\infty}\leq 2\lVert f\rVert_{\infty}" display="inline"><semantics><mrow><msub><mrow><mo fence="true" rspace="0em">∥</mo><mi>g</mi><mo fence="true" lspace="0em">∥</mo></mrow><mi mathvariant="normal">∞</mi></msub><mo>≤</mo><mrow><mn>2</mn><mo lspace="0em">⁢</mo><msub><mrow><mo fence="true" rspace="0em">∥</mo><mi>f</mi><mo fence="true" lspace="0em">∥</mo></mrow><mi mathvariant="normal">∞</mi></msub></mrow></mrow><annotation encoding="application/x-tex">\lVert g\rVert_{\infty}\leq 2\lVert f\rVert_{\infty}</annotation></semantics></math> e <math id="SS3.p5.m5" class="ltx_Math" alttext="|g-f|\leq\varepsilon/M" display="inline"><semantics><mrow><mrow><mo stretchy="false">|</mo><mrow><mi>g</mi><mo>−</mo><mi>f</mi></mrow><mo stretchy="false">|</mo></mrow><mo>≤</mo><mrow><mi>ε</mi><mo>/</mo><mi>M</mi></mrow></mrow><annotation encoding="application/x-tex">|g-f|\leq\varepsilon/M</annotation></semantics></math> uniformemente no intervalo <math id="SS3.p5.m6" class="ltx_Math" alttext="[-M,M]" display="inline"><semantics><mrow><mo stretchy="false">[</mo><mrow><mo>−</mo><mi>M</mi></mrow><mo>,</mo><mi>M</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[-M,M]</annotation></semantics></math>.
+Essa <math id="SS3.p5.m7" class="ltx_Math" alttext="g" display="inline"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math> certamente satisfaz as hipóteses do teorema.</p>
+</div>
+<div id="SS3.p6" class="ltx_para">
+<p class="ltx_p">Portanto,</p>
+<div id="Ch3.Ex10" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch3.Ex10.m1" class="ltx_Math" alttext="\begin{split}\Big{|}\int f\d{\mu}_{n}-\int f\d{\mu}\Big{|}&amp;\leq 2\varepsilon%
+\lVert f\rVert_{\infty}+\Big{|}\int_{-M}^{M}f\d{\mu}_{n}-\int_{-M}^{M}f\d{\mu}%
+\Big{|}\\
+&amp;\leq 2\varepsilon\lVert f\rVert_{\infty}+\frac{\varepsilon}{M}2M+\Big{|}\int_%
+{-M}^{M}g\d{\mu}_{n}-\int_{-M}^{M}g\d{\mu}\Big{|}\\
+&amp;\leq 2\varepsilon\lVert f\rVert_{\infty}+2\varepsilon+\Big{|}\int g\d{\mu}_{n%
+}-\int\d{\mu}\Big{|}.\end{split}" display="block"><semantics><mtable columnspacing="0pt" displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_align_right" columnalign="right"><mrow><mo maxsize="160%" minsize="160%">|</mo><mrow><mrow><mo lspace="0em">∫</mo><mrow><mi>f</mi><mo>⁢</mo><msub><munder accentunder="true"><mtext class="ltx_mathvariant_italic">μ</mtext><mo>⋅</mo></munder><mi>n</mi></msub></mrow></mrow><mo rspace="0.055em">−</mo><mrow><mo>∫</mo><mrow><mi>f</mi><mo>⁢</mo><munder accentunder="true"><mtext class="ltx_mathvariant_italic">μ</mtext><mo>⋅</mo></munder></mrow></mrow></mrow><mo maxsize="160%" minsize="160%">|</mo></mrow></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mi></mi><mo>≤</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>ε</mi><mo lspace="0em">⁢</mo><msub><mrow><mo fence="true" rspace="0em">∥</mo><mi>f</mi><mo fence="true" lspace="0em" rspace="0em">∥</mo></mrow><mi mathvariant="normal">∞</mi></msub></mrow><mo>+</mo><mrow><mo maxsize="160%" minsize="160%">|</mo><mrow><mrow><msubsup><mo lspace="0em">∫</mo><mrow><mo>−</mo><mi>M</mi></mrow><mi>M</mi></msubsup><mrow><mi>f</mi><mo>⁢</mo><msub><munder accentunder="true"><mtext class="ltx_mathvariant_italic">μ</mtext><mo>⋅</mo></munder><mi>n</mi></msub></mrow></mrow><mo rspace="0.055em">−</mo><mrow><msubsup><mo>∫</mo><mrow><mo>−</mo><mi>M</mi></mrow><mi>M</mi></msubsup><mrow><mi>f</mi><mo>⁢</mo><munder accentunder="true"><mtext class="ltx_mathvariant_italic">μ</mtext><mo>⋅</mo></munder></mrow></mrow></mrow><mo maxsize="160%" minsize="160%">|</mo></mrow></mrow></mrow></mtd></mtr><mtr><mtd></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mi></mi><mo>≤</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>ε</mi><mo lspace="0em">⁢</mo><msub><mrow><mo fence="true" rspace="0em">∥</mo><mi>f</mi><mo fence="true" lspace="0em" rspace="0em">∥</mo></mrow><mi mathvariant="normal">∞</mi></msub></mrow><mo>+</mo><mrow><mfrac><mi>ε</mi><mi>M</mi></mfrac><mo>⁢</mo><mn>2</mn><mo>⁢</mo><mi>M</mi></mrow><mo>+</mo><mrow><mo maxsize="160%" minsize="160%">|</mo><mrow><mrow><msubsup><mo lspace="0em">∫</mo><mrow><mo>−</mo><mi>M</mi></mrow><mi>M</mi></msubsup><mrow><mi>g</mi><mo>⁢</mo><msub><munder accentunder="true"><mtext class="ltx_mathvariant_italic">μ</mtext><mo>⋅</mo></munder><mi>n</mi></msub></mrow></mrow><mo rspace="0.055em">−</mo><mrow><msubsup><mo>∫</mo><mrow><mo>−</mo><mi>M</mi></mrow><mi>M</mi></msubsup><mrow><mi>g</mi><mo>⁢</mo><munder accentunder="true"><mtext class="ltx_mathvariant_italic">μ</mtext><mo>⋅</mo></munder></mrow></mrow></mrow><mo maxsize="160%" minsize="160%">|</mo></mrow></mrow></mrow></mtd></mtr><mtr><mtd></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mi></mi><mo>≤</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>ε</mi><mo lspace="0em">⁢</mo><msub><mrow><mo fence="true" rspace="0em">∥</mo><mi>f</mi><mo fence="true" lspace="0em" rspace="0em">∥</mo></mrow><mi mathvariant="normal">∞</mi></msub></mrow><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mi>ε</mi></mrow><mo>+</mo><mrow><mo maxsize="160%" minsize="160%">|</mo><mrow><mrow><mo lspace="0em">∫</mo><mrow><mi>g</mi><mo>⁢</mo><msub><munder accentunder="true"><mtext class="ltx_mathvariant_italic">μ</mtext><mo>⋅</mo></munder><mi>n</mi></msub></mrow></mrow><mo rspace="0.055em">−</mo><mrow><mo>∫</mo><munder accentunder="true"><mtext class="ltx_mathvariant_italic">μ</mtext><mo>⋅</mo></munder></mrow></mrow><mo maxsize="160%" minsize="160%">|</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{split}\Big{|}\int f\d{\mu}_{n}-\int f\d{\mu}\Big{|}&amp;\leq 2\varepsilon%
+\lVert f\rVert_{\infty}+\Big{|}\int_{-M}^{M}f\d{\mu}_{n}-\int_{-M}^{M}f\d{\mu}%
+\Big{|}\\
+&amp;\leq 2\varepsilon\lVert f\rVert_{\infty}+\frac{\varepsilon}{M}2M+\Big{|}\int_%
+{-M}^{M}g\d{\mu}_{n}-\int_{-M}^{M}g\d{\mu}\Big{|}\\
+&amp;\leq 2\varepsilon\lVert f\rVert_{\infty}+2\varepsilon+\Big{|}\int g\d{\mu}_{n%
+}-\int\d{\mu}\Big{|}.\end{split}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Como o último termo converge a zero e <math id="SS3.p6.m1" class="ltx_Math" alttext="\varepsilon" display="inline"><semantics><mi>ε</mi><annotation encoding="application/x-tex">\varepsilon</annotation></semantics></math> foi escolhido arbitrariamente, isso conclui a prova da proposição.
+∎</p>
+</div>
+</div>
+<div class="ltx_pagination ltx_role_newpage"></div>
+</div>
+</section>
+<section id="SS4" class="ltx_subsection normal">
+<div class="section level2">
+
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection header-section-number">3.8.4</span> O TCL para uma sequência i.i.d.</h2>
+
+<div id="SS4.p1" class="ltx_para">
+<span class="ltx_ERROR undefined">{theorem}</span>
+<p class="ltx_p">[Teorema Central do Limite]
+
+
+Considere em <math id="SS4.p1.m1" class="ltx_Math" alttext="(\Omega,\mathcal{F},P)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">Ω</mi><mo>,</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>,</mo><mi>P</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(\Omega,\mathcal{F},P)</annotation></semantics></math>, uma sequência <math id="SS4.p1.m2" class="ltx_Math" alttext="X_{1},X_{2},\dots" display="inline"><semantics><mrow><msub><mi>X</mi><mn>1</mn></msub><mo>,</mo><msub><mi>X</mi><mn>2</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi></mrow><annotation encoding="application/x-tex">X_{1},X_{2},\dots</annotation></semantics></math> de variáveis aleatórias <span class="ltx_ERROR undefined">\iid</span>em <math id="SS4.p1.m3" class="ltx_Math" alttext="\mathcal{L}^{3}" display="inline"><semantics><msup><mi class="ltx_font_mathcaligraphic">ℒ</mi><mn>3</mn></msup><annotation encoding="application/x-tex">\mathcal{L}^{3}</annotation></semantics></math>.
+Nesse caso, se definimos <math id="SS4.p1.m4" class="ltx_Math" alttext="m=E(X_{1})" display="inline"><semantics><mrow><mi>m</mi><mo>=</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>X</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">m=E(X_{1})</annotation></semantics></math> e <math id="SS4.p1.m5" class="ltx_Math" alttext="\sigma^{2}=\Var(X_{1})" display="inline"><semantics><mrow><msup><mi>σ</mi><mn>2</mn></msup><mo>=</mo><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\Var</mtext></merror><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>X</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\sigma^{2}=\Var(X_{1})</annotation></semantics></math>, temos</p>
+<div id="Ch3.E118" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch3.E118.m1" class="ltx_Math" alttext="\frac{\sum_{i=1}^{n}(X_{i}-m)}{\sigma\sqrt{n}}\Rightarrow\mathcal{N}(0,1)." display="block"><semantics><mrow><mrow><mfrac><mrow><msubsup><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><mrow><mo lspace="0em" stretchy="false">(</mo><mrow><msub><mi>X</mi><mi>i</mi></msub><mo>−</mo><mi>m</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mrow><mi>σ</mi><mo>⁢</mo><msqrt><mi>n</mi></msqrt></mrow></mfrac><mo stretchy="false">⇒</mo><mrow><mi class="ltx_font_mathcaligraphic">𝒩</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0,1</mn><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\frac{\sum_{i=1}^{n}(X_{i}-m)}{\sigma\sqrt{n}}\Rightarrow\mathcal{N}(0,1).</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.118)</span>
+              
+              
+            
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demonstração.</h6>
+<div id="SS4.p2" class="ltx_para">
+<p class="ltx_p">Primeiramente, observe que podemos supor que <math id="SS4.p2.m1" class="ltx_Math" alttext="m=0" display="inline"><semantics><mrow><mi>m</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">m=0</annotation></semantics></math>, pois de qualquer forma iremos subtrair a média da distribuição na qual nos interessamos.
+Uma outra observação importante é que podemos supor <math id="SS4.p2.m2" class="ltx_Math" alttext="\sigma=1" display="inline"><semantics><mrow><mi>σ</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\sigma=1</annotation></semantics></math>, pois no caso geral de qualquer forma estamos somando <math id="SS4.p2.m3" class="ltx_Math" alttext="X_{i}/\sigma" display="inline"><semantics><mrow><msub><mi>X</mi><mi>i</mi></msub><mo>/</mo><mi>σ</mi></mrow><annotation encoding="application/x-tex">X_{i}/\sigma</annotation></semantics></math> no enunciado.</p>
+</div>
+<div id="SS4.p3" class="ltx_para">
+<p class="ltx_p">Como vimos na Proposição <a href="#SS3" title="3.8.3 Convergência fraca em ℝ ‣ 3.8 O Teorema Central do Limite ‣ Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.8.3</span></a>, basta mostrar a convergência das integrais de funções <math id="SS4.p3.m1" class="ltx_Math" alttext="g\in C^{3}" display="inline"><semantics><mrow><mi>g</mi><mo>∈</mo><msup><mi>C</mi><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">g\in C^{3}</annotation></semantics></math>, que possuam todas as três primeiras derivadas limitadas.
+Considerando a função</p>
+<div id="Ch3.E119" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch3.E119.m1" class="ltx_Math" alttext="\phi^{n}(x_{1},\dots,x_{n}):=g\Big{(}\frac{x_{1}+\dots+x_{n}}{\sqrt{n}}\Big{)}," display="block"><semantics><mrow><mrow><mrow><msup><mi>ϕ</mi><mi>n</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>x</mi><mi>n</mi></msub><mo rspace="0.278em" stretchy="false">)</mo></mrow></mrow><mo rspace="0.278em">:=</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo maxsize="160%" minsize="160%">(</mo><mfrac><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><msub><mi>x</mi><mi>n</mi></msub></mrow><msqrt><mi>n</mi></msqrt></mfrac><mo maxsize="160%" minsize="160%">)</mo></mrow></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\phi^{n}(x_{1},\dots,x_{n}):=g\Big{(}\frac{x_{1}+\dots+x_{n}}{\sqrt{n}}\Big{)},</annotation></semantics></math></span>
+                <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.119)</span>
+                
+                
+              
+</div>
+<p class="ltx_p">nos basta provar a convergência das sequências de números reais</p>
+<div id="Ch3.E120" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch3.E120.m1" class="ltx_Math" alttext="\lim_{n}\int\phi^{n}(X_{1},\dots,X_{n})\d{P}=\int g(s)\mathcal{N}(0,1)(\d{s})." display="block"><semantics><mrow><mrow><mrow><munder><mo movablelimits="false">lim</mo><mi>n</mi></munder><mrow><mo lspace="0.167em">∫</mo><mrow><msup><mi>ϕ</mi><mi>n</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>X</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>X</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow><mo>⁢</mo><munder accentunder="true"><mtext>P</mtext><mo>⋅</mo></munder></mrow></mrow></mrow><mo rspace="0.111em">=</mo><mrow><mo>∫</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>s</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi class="ltx_font_mathcaligraphic">𝒩</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0,1</mn><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><munder accentunder="true"><mtext>s</mtext><mo>⋅</mo></munder><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\lim_{n}\int\phi^{n}(X_{1},\dots,X_{n})\d{P}=\int g(s)\mathcal{N}(0,1)(\d{s}).</annotation></semantics></math></span>
+                <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.120)</span>
+                
+                
+              
+</div>
+</div>
+<div id="SS4.p4" class="ltx_para">
+<p class="ltx_p">Vale lembrar que no Corolário <a href="#SS1" title="3.8.1 A distribuição normal ‣ 3.8 O Teorema Central do Limite ‣ Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.8.1</span></a> já estabelecemos algo mais forte para variáveis normais.
+Mais precisamente, suponha que extendemos nosso espaço de probabilidade para <math id="SS4.p4.m1" class="ltx_Math" alttext="(\Omega^{\prime},\mathcal{F}^{\prime},P^{\prime})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><msup><mi mathvariant="normal">Ω</mi><mo>′</mo></msup><mo>,</mo><msup><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo>′</mo></msup><mo>,</mo><msup><mi>P</mi><mo>′</mo></msup><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(\Omega^{\prime},\mathcal{F}^{\prime},P^{\prime})</annotation></semantics></math>, onde exista uma sequência <math id="SS4.p4.m2" class="ltx_Math" alttext="Y_{1},Y_{2},\dots" display="inline"><semantics><mrow><msub><mi>Y</mi><mn>1</mn></msub><mo>,</mo><msub><mi>Y</mi><mn>2</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi></mrow><annotation encoding="application/x-tex">Y_{1},Y_{2},\dots</annotation></semantics></math> de variáveis aleatórias <span class="ltx_ERROR undefined">\iid</span>com distribuição <math id="SS4.p4.m3" class="ltx_Math" alttext="\mathcal{N}(0,1)" display="inline"><semantics><mrow><mi class="ltx_font_mathcaligraphic">𝒩</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0,1</mn><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mathcal{N}(0,1)</annotation></semantics></math> independente de <math id="SS4.p4.m4" class="ltx_Math" alttext="X_{1},X_{2},\dots" display="inline"><semantics><mrow><msub><mi>X</mi><mn>1</mn></msub><mo>,</mo><msub><mi>X</mi><mn>2</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi></mrow><annotation encoding="application/x-tex">X_{1},X_{2},\dots</annotation></semantics></math>
+Então, para todo <math id="SS4.p4.m5" class="ltx_Math" alttext="n\geq 1" display="inline"><semantics><mrow><mi>n</mi><mo>≥</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">n\geq 1</annotation></semantics></math>,</p>
+<div id="Ch3.E121" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch3.E121.m1" class="ltx_Math" alttext="\int\phi^{n}(Y_{1},\dots,Y_{n})\d{P}^{\prime}=\int g(s)\mathcal{N}(0,1)(\d{s})," display="block"><semantics><mrow><mrow><mrow><mo>∫</mo><mrow><msup><mi>ϕ</mi><mi>n</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>Y</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>Y</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><munder accentunder="true"><mtext>P</mtext><mo>⋅</mo></munder><mo>′</mo></msup></mrow></mrow><mo rspace="0.111em">=</mo><mrow><mo>∫</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>s</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi class="ltx_font_mathcaligraphic">𝒩</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0,1</mn><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><munder accentunder="true"><mtext>s</mtext><mo>⋅</mo></munder><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\int\phi^{n}(Y_{1},\dots,Y_{n})\d{P}^{\prime}=\int g(s)\mathcal{N}(0,1)(\d{s}),</annotation></semantics></math></span>
+                <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.121)</span>
+                
+                
+              
+</div>
+<p class="ltx_p">o que tornaria o limite em (<a href="#Ch3.E120" title="In 3.8.4 O TCL para uma sequência i.i.d. ‣ 3.8 O Teorema Central do Limite ‣ Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.120</span></a>) trivial para tais variáveis.
+A nossa estratégia será aproximar <math id="SS4.p4.m6" class="ltx_Math" alttext="\phi^{n}(X_{1},\dots,X_{n})" display="inline"><semantics><mrow><msup><mi>ϕ</mi><mi>n</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>X</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>X</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\phi^{n}(X_{1},\dots,X_{n})</annotation></semantics></math> por <math id="SS4.p4.m7" class="ltx_Math" alttext="\phi(Y_{1},\dots,Y_{n})" display="inline"><semantics><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>Y</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>Y</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\phi(Y_{1},\dots,Y_{n})</annotation></semantics></math>, e faremos isso trocando uma variável de cada vez.</p>
+</div>
+<div id="SS4.p5" class="ltx_para">
+<p class="ltx_p">Para entender o que acontece quando trocamos uma das variáveis <math id="SS4.p5.m1" class="ltx_Math" alttext="X_{i}" display="inline"><semantics><msub><mi>X</mi><mi>i</mi></msub><annotation encoding="application/x-tex">X_{i}</annotation></semantics></math> por <math id="SS4.p5.m2" class="ltx_Math" alttext="Y_{i}" display="inline"><semantics><msub><mi>Y</mi><mi>i</mi></msub><annotation encoding="application/x-tex">Y_{i}</annotation></semantics></math>, temos que expandir <math id="SS4.p5.m3" class="ltx_Math" alttext="g" display="inline"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math> em série de potências, isto é, escrever</p>
+<div id="Ch3.E122" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch3.E122.m1" class="ltx_Math" alttext="g(s)=g(s_{0})+g^{\prime}(s_{0})(s-s_{0})+g^{\prime\prime}(s_{o})(s-s_{0})^{2}/%
+2+r_{s_{0}}(s-s_{0})," display="block"><semantics><mrow><mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>s</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>s</mi><mn>0</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><msup><mi>g</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>s</mi><mn>0</mn></msub><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>s</mi><mo>−</mo><msub><mi>s</mi><mn>0</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mrow><msup><mi>g</mi><mo>′′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>s</mi><mi>o</mi></msub><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>s</mi><mo>−</mo><msub><mi>s</mi><mn>0</mn></msub></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow><mo>/</mo><mn>2</mn></mrow><mo>+</mo><mrow><msub><mi>r</mi><msub><mi>s</mi><mn>0</mn></msub></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>s</mi><mo>−</mo><msub><mi>s</mi><mn>0</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">g(s)=g(s_{0})+g^{\prime}(s_{0})(s-s_{0})+g^{\prime\prime}(s_{o})(s-s_{0})^{2}/%
+2+r_{s_{0}}(s-s_{0}),</annotation></semantics></math></span>
+                <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.122)</span>
+                
+                
+              
+</div>
+<p class="ltx_p">onde <math id="SS4.p5.m4" class="ltx_Math" alttext="r_{s_{0}}(h)/h^{3}" display="inline"><semantics><mrow><mrow><msub><mi>r</mi><msub><mi>s</mi><mn>0</mn></msub></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>h</mi><mo stretchy="false">)</mo></mrow></mrow><mo>/</mo><msup><mi>h</mi><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">r_{s_{0}}(h)/h^{3}</annotation></semantics></math> é limitada por <math id="SS4.p5.m5" class="ltx_Math" alttext="M" display="inline"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>, uniformemente em <math id="SS4.p5.m6" class="ltx_Math" alttext="h" display="inline"><semantics><mi>h</mi><annotation encoding="application/x-tex">h</annotation></semantics></math> e <math id="SS4.p5.m7" class="ltx_Math" alttext="s_{0}" display="inline"><semantics><msub><mi>s</mi><mn>0</mn></msub><annotation encoding="application/x-tex">s_{0}</annotation></semantics></math> em consequência das nossas suposições sobre <math id="SS4.p5.m8" class="ltx_Math" alttext="g" display="inline"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math>.</p>
+</div>
+<div id="SS4.p6" class="ltx_para">
+<p class="ltx_p">Denotando <math id="SS4.p6.m1" class="ltx_Math" alttext="z_{i}=(y_{1},\dots,y_{i-1},x_{i},\dots x_{n})" display="inline"><semantics><mrow><msub><mi>z</mi><mi>i</mi></msub><mo>=</mo><mrow><mo stretchy="false">(</mo><msub><mi>y</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>y</mi><mrow><mi>i</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>,</mo><msub><mi>x</mi><mi>i</mi></msub><mo>,</mo><mrow><mi mathvariant="normal">…</mi><mo>⁢</mo><msub><mi>x</mi><mi>n</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">z_{i}=(y_{1},\dots,y_{i-1},x_{i},\dots x_{n})</annotation></semantics></math>, <math id="SS4.p6.m2" class="ltx_Math" alttext="z_{i}^{o}:=(y_{1},\dots,y_{n-1},0,x_{n+1},\dots,x_{n})" display="inline"><semantics><mrow><msubsup><mi>z</mi><mi>i</mi><mi>o</mi></msubsup><mo lspace="0.278em" rspace="0.278em">:=</mo><mrow><mo stretchy="false">(</mo><msub><mi>y</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mrow><msub><mi>y</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>⁢</mo><mn>,0</mn></mrow><mo>,</mo><msub><mi>x</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">z_{i}^{o}:=(y_{1},\dots,y_{n-1},0,x_{n+1},\dots,x_{n})</annotation></semantics></math> e <math id="SS4.p6.m3" class="ltx_Math" alttext="s_{i}^{o}=y_{1}+\dots+y_{n-1}+x_{n+1}+\dots x_{n}" display="inline"><semantics><mrow><msubsup><mi>s</mi><mi>i</mi><mi>o</mi></msubsup><mo>=</mo><mrow><msub><mi>y</mi><mn>1</mn></msub><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><msub><mi>y</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>+</mo><msub><mi>x</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>+</mo><mrow><mi mathvariant="normal">…</mi><mo>⁢</mo><msub><mi>x</mi><mi>n</mi></msub></mrow></mrow></mrow><annotation encoding="application/x-tex">s_{i}^{o}=y_{1}+\dots+y_{n-1}+x_{n+1}+\dots x_{n}</annotation></semantics></math>, temos</p>
+<div id="Ch3.E123" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch3.E123.m1" class="ltx_Math" alttext="\phi^{n}(z_{i})=\phi^{n}(z_{i}^{o})+g^{\prime}\Big{(}\frac{s_{i}^{o}}{\sqrt{n}%
+}\Big{)}\frac{x_{i}}{\sqrt{n}}+g^{\prime\prime}\Big{(}\frac{s_{i}^{o}}{\sqrt{n%
+}}\Big{)}\frac{x_{i}^{2}}{2n}+r_{\frac{s_{i}^{o}}{\sqrt{n}}}\Big{(}\frac{x_{i}%
+}{\sqrt{n}}\Big{)}," display="block"><semantics><mrow><mrow><mrow><msup><mi>ϕ</mi><mi>n</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>z</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><msup><mi>ϕ</mi><mi>n</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msubsup><mi>z</mi><mi>i</mi><mi>o</mi></msubsup><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><msup><mi>g</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo maxsize="160%" minsize="160%">(</mo><mfrac><msubsup><mi>s</mi><mi>i</mi><mi>o</mi></msubsup><msqrt><mi>n</mi></msqrt></mfrac><mo maxsize="160%" minsize="160%">)</mo></mrow><mo>⁢</mo><mfrac><msub><mi>x</mi><mi>i</mi></msub><msqrt><mi>n</mi></msqrt></mfrac></mrow><mo>+</mo><mrow><msup><mi>g</mi><mo>′′</mo></msup><mo>⁢</mo><mrow><mo maxsize="160%" minsize="160%">(</mo><mfrac><msubsup><mi>s</mi><mi>i</mi><mi>o</mi></msubsup><msqrt><mi>n</mi></msqrt></mfrac><mo maxsize="160%" minsize="160%">)</mo></mrow><mo>⁢</mo><mfrac><msubsup><mi>x</mi><mi>i</mi><mn>2</mn></msubsup><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow></mfrac></mrow><mo>+</mo><mrow><msub><mi>r</mi><mfrac><msubsup><mi>s</mi><mi>i</mi><mi>o</mi></msubsup><msqrt><mi>n</mi></msqrt></mfrac></msub><mo>⁢</mo><mrow><mo maxsize="160%" minsize="160%">(</mo><mfrac><msub><mi>x</mi><mi>i</mi></msub><msqrt><mi>n</mi></msqrt></mfrac><mo maxsize="160%" minsize="160%">)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\phi^{n}(z_{i})=\phi^{n}(z_{i}^{o})+g^{\prime}\Big{(}\frac{s_{i}^{o}}{\sqrt{n}%
+}\Big{)}\frac{x_{i}}{\sqrt{n}}+g^{\prime\prime}\Big{(}\frac{s_{i}^{o}}{\sqrt{n%
+}}\Big{)}\frac{x_{i}^{2}}{2n}+r_{\frac{s_{i}^{o}}{\sqrt{n}}}\Big{(}\frac{x_{i}%
+}{\sqrt{n}}\Big{)},</annotation></semantics></math></span>
+                <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.123)</span>
+                
+                
+              
+</div>
+<p class="ltx_p">Nós propositalmente expandimos <math id="SS4.p6.m4" class="ltx_Math" alttext="\phi^{n}" display="inline"><semantics><msup><mi>ϕ</mi><mi>n</mi></msup><annotation encoding="application/x-tex">\phi^{n}</annotation></semantics></math> até ordem dois, pois <math id="SS4.p6.m5" class="ltx_Math" alttext="X_{i}" display="inline"><semantics><msub><mi>X</mi><mi>i</mi></msub><annotation encoding="application/x-tex">X_{i}</annotation></semantics></math> e <math id="SS4.p6.m6" class="ltx_Math" alttext="Y_{i}" display="inline"><semantics><msub><mi>Y</mi><mi>i</mi></msub><annotation encoding="application/x-tex">Y_{i}</annotation></semantics></math> possuem os mesmos momentos de ordem um (<math id="SS4.p6.m7" class="ltx_Math" alttext="m=0" display="inline"><semantics><mrow><mi>m</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">m=0</annotation></semantics></math>) e dois (<math id="SS4.p6.m8" class="ltx_Math" alttext="\sigma^{2}=1" display="inline"><semantics><mrow><msup><mi>σ</mi><mn>2</mn></msup><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\sigma^{2}=1</annotation></semantics></math>).</p>
+</div>
+<div id="SS4.p7" class="ltx_para">
+<p class="ltx_p">Integrando os dois lados da igualdade acima com respeito a <math id="SS4.p7.m1" class="ltx_Math" alttext="Z_{i}\circ P" display="inline"><semantics><mrow><msub><mi>Z</mi><mi>i</mi></msub><mo lspace="0.222em" rspace="0.222em">∘</mo><mi>P</mi></mrow><annotation encoding="application/x-tex">Z_{i}\circ P</annotation></semantics></math> (denotamos como antes, <math id="SS4.p7.m2" class="ltx_Math" alttext="Z_{i}=(Y_{1},\dots,Y_{i-1},X_{i},\dots,X_{n})" display="inline"><semantics><mrow><msub><mi>Z</mi><mi>i</mi></msub><mo>=</mo><mrow><mo stretchy="false">(</mo><msub><mi>Y</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>Y</mi><mrow><mi>i</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>,</mo><msub><mi>X</mi><mi>i</mi></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>X</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">Z_{i}=(Y_{1},\dots,Y_{i-1},X_{i},\dots,X_{n})</annotation></semantics></math> e <math id="SS4.p7.m3" class="ltx_Math" alttext="Z_{i}^{o}" display="inline"><semantics><msubsup><mi>Z</mi><mi>i</mi><mi>o</mi></msubsup><annotation encoding="application/x-tex">Z_{i}^{o}</annotation></semantics></math>, <math id="SS4.p7.m4" class="ltx_Math" alttext="S_{i}^{o}" display="inline"><semantics><msubsup><mi>S</mi><mi>i</mi><mi>o</mi></msubsup><annotation encoding="application/x-tex">S_{i}^{o}</annotation></semantics></math> analogamente), teremos</p>
+<div id="Ch3.E124" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch3.E124.m1" class="ltx_Math" alttext="\int\phi^{n}(Z_{i})\d{P}^{\prime}=\int\phi^{n}(Z_{i}^{o})\d{P}^{\prime}+\frac{%
+1}{2n}v_{i}+k_{i}," display="block"><semantics><mrow><mrow><mrow><mo>∫</mo><mrow><msup><mi>ϕ</mi><mi>n</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>Z</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><munder accentunder="true"><mtext>P</mtext><mo>⋅</mo></munder><mo>′</mo></msup></mrow></mrow><mo rspace="0.111em">=</mo><mrow><mrow><mo>∫</mo><mrow><msup><mi>ϕ</mi><mi>n</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msubsup><mi>Z</mi><mi>i</mi><mi>o</mi></msubsup><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><munder accentunder="true"><mtext>P</mtext><mo>⋅</mo></munder><mo>′</mo></msup></mrow></mrow><mo>+</mo><mrow><mfrac><mn>1</mn><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow></mfrac><mo>⁢</mo><msub><mi>v</mi><mi>i</mi></msub></mrow><mo>+</mo><msub><mi>k</mi><mi>i</mi></msub></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\int\phi^{n}(Z_{i})\d{P}^{\prime}=\int\phi^{n}(Z_{i}^{o})\d{P}^{\prime}+\frac{%
+1}{2n}v_{i}+k_{i},</annotation></semantics></math></span>
+                <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.124)</span>
+                
+                
+              
+</div>
+<p class="ltx_p">onde as quantidades <math id="SS4.p7.m5" class="ltx_Math" alttext="v" display="inline"><semantics><mi>v</mi><annotation encoding="application/x-tex">v</annotation></semantics></math> e <math id="SS4.p7.m6" class="ltx_Math" alttext="k" display="inline"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>, se escrevem como</p>
+<div id="Ch3.E125" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch3.E125.m1" class="ltx_Math" alttext="v_{i}=\int g^{\prime\prime}\Big{(}\frac{S_{i}^{o}}{\sqrt{n}}\Big{)}\d{P}^{%
+\prime}\quad\text{ e }\quad k_{i}=\int r_{S_{i}^{o}/\sqrt{n}}\Big{(}\frac{X_{i%
+}}{\sqrt{n}}\Big{)}\d{P}^{\prime}." display="block"><semantics><mrow><mrow><mrow><msub><mi>v</mi><mi>i</mi></msub><mo rspace="0.111em">=</mo><mrow><mrow><mo>∫</mo><mrow><msup><mi>g</mi><mo>′′</mo></msup><mo>⁢</mo><mrow><mo maxsize="160%" minsize="160%">(</mo><mfrac><msubsup><mi>S</mi><mi>i</mi><mi>o</mi></msubsup><msqrt><mi>n</mi></msqrt></mfrac><mo maxsize="160%" minsize="160%">)</mo></mrow><mo>⁢</mo><msup><munder accentunder="true"><mtext>P</mtext><mo>⋅</mo></munder><mo>′</mo></msup></mrow></mrow><mspace width="1em"></mspace><mtext> e </mtext></mrow></mrow><mspace width="1em"></mspace><mrow><msub><mi>k</mi><mi>i</mi></msub><mo rspace="0.111em">=</mo><mrow><mo>∫</mo><mrow><msub><mi>r</mi><mrow><msubsup><mi>S</mi><mi>i</mi><mi>o</mi></msubsup><mo>/</mo><msqrt><mi>n</mi></msqrt></mrow></msub><mo>⁢</mo><mrow><mo maxsize="160%" minsize="160%">(</mo><mfrac><msub><mi>X</mi><mi>i</mi></msub><msqrt><mi>n</mi></msqrt></mfrac><mo maxsize="160%" minsize="160%">)</mo></mrow><mo>⁢</mo><msup><munder accentunder="true"><mtext>P</mtext><mo>⋅</mo></munder><mo>′</mo></msup></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">v_{i}=\int g^{\prime\prime}\Big{(}\frac{S_{i}^{o}}{\sqrt{n}}\Big{)}\d{P}^{%
+\prime}\quad\text{ e }\quad k_{i}=\int r_{S_{i}^{o}/\sqrt{n}}\Big{(}\frac{X_{i%
+}}{\sqrt{n}}\Big{)}\d{P}^{\prime}.</annotation></semantics></math></span>
+                <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.125)</span>
+                
+                
+              
+</div>
+<p class="ltx_p">Note que <math id="SS4.p7.m7" class="ltx_Math" alttext="v_{i}" display="inline"><semantics><msub><mi>v</mi><mi>i</mi></msub><annotation encoding="application/x-tex">v_{i}</annotation></semantics></math> não depende de <math id="SS4.p7.m8" class="ltx_Math" alttext="X_{i}" display="inline"><semantics><msub><mi>X</mi><mi>i</mi></msub><annotation encoding="application/x-tex">X_{i}</annotation></semantics></math> e que</p>
+<div id="Ch3.E126" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch3.E126.m1" class="ltx_Math" alttext="|k_{i}|\leq\Big{|}\int\Big{(}\frac{X_{i}^{3}}{n^{3/2}}\Big{)}\Big{(}\frac{n^{3%
+/2}}{X_{i}^{3}}\Big{)}r_{S_{i}^{o}/\sqrt{n}}\Big{(}\frac{X_{i}}{\sqrt{n}}\Big{%
+)}\d{P}^{\prime}\Big{|}\leq\frac{M}{n^{3/2}}E(|X_{i}^{3}|)." display="block"><semantics><mrow><mrow><mrow><mo stretchy="false">|</mo><msub><mi>k</mi><mi>i</mi></msub><mo stretchy="false">|</mo></mrow><mo>≤</mo><mrow><mo maxsize="160%" minsize="160%">|</mo><mrow><mo lspace="0em" rspace="0em">∫</mo><mrow><mrow><mo maxsize="160%" minsize="160%">(</mo><mfrac><msubsup><mi>X</mi><mi>i</mi><mn>3</mn></msubsup><msup><mi>n</mi><mrow><mn>3</mn><mo>/</mo><mn>2</mn></mrow></msup></mfrac><mo maxsize="160%" minsize="160%">)</mo></mrow><mo>⁢</mo><mrow><mo maxsize="160%" minsize="160%">(</mo><mfrac><msup><mi>n</mi><mrow><mn>3</mn><mo>/</mo><mn>2</mn></mrow></msup><msubsup><mi>X</mi><mi>i</mi><mn>3</mn></msubsup></mfrac><mo maxsize="160%" minsize="160%">)</mo></mrow><mo>⁢</mo><msub><mi>r</mi><mrow><msubsup><mi>S</mi><mi>i</mi><mi>o</mi></msubsup><mo>/</mo><msqrt><mi>n</mi></msqrt></mrow></msub><mo>⁢</mo><mrow><mo maxsize="160%" minsize="160%">(</mo><mfrac><msub><mi>X</mi><mi>i</mi></msub><msqrt><mi>n</mi></msqrt></mfrac><mo maxsize="160%" minsize="160%">)</mo></mrow><mo>⁢</mo><msup><munder accentunder="true"><mtext>P</mtext><mo>⋅</mo></munder><mo>′</mo></msup></mrow></mrow><mo maxsize="160%" minsize="160%">|</mo></mrow><mo>≤</mo><mrow><mfrac><mi>M</mi><msup><mi>n</mi><mrow><mn>3</mn><mo>/</mo><mn>2</mn></mrow></msup></mfrac><mo>⁢</mo><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mo stretchy="false">|</mo><msubsup><mi>X</mi><mi>i</mi><mn>3</mn></msubsup><mo stretchy="false">|</mo></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">|k_{i}|\leq\Big{|}\int\Big{(}\frac{X_{i}^{3}}{n^{3/2}}\Big{)}\Big{(}\frac{n^{3%
+/2}}{X_{i}^{3}}\Big{)}r_{S_{i}^{o}/\sqrt{n}}\Big{(}\frac{X_{i}}{\sqrt{n}}\Big{%
+)}\d{P}^{\prime}\Big{|}\leq\frac{M}{n^{3/2}}E(|X_{i}^{3}|).</annotation></semantics></math></span>
+                <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.126)</span>
+                
+                
+              
+</div>
+</div>
+<div id="SS4.p8" class="ltx_para">
+<p class="ltx_p">As observações acima são o ponto mais importante da prova de que essa aproximação funciona e uma outra maneira de colocá-las é a seguinte.
+Como <math id="SS4.p8.m1" class="ltx_Math" alttext="X_{i}" display="inline"><semantics><msub><mi>X</mi><mi>i</mi></msub><annotation encoding="application/x-tex">X_{i}</annotation></semantics></math> e <math id="SS4.p8.m2" class="ltx_Math" alttext="Y_{i}" display="inline"><semantics><msub><mi>Y</mi><mi>i</mi></msub><annotation encoding="application/x-tex">Y_{i}</annotation></semantics></math> possuem os dois primeiros momentos iguais, os dois primeiros termos de Taylor coincidem após a integração (o primeiro se anula e o segundo é <math id="SS4.p8.m3" class="ltx_Math" alttext="v_{i}" display="inline"><semantics><msub><mi>v</mi><mi>i</mi></msub><annotation encoding="application/x-tex">v_{i}</annotation></semantics></math> tanto para <math id="SS4.p8.m4" class="ltx_Math" alttext="X_{i}" display="inline"><semantics><msub><mi>X</mi><mi>i</mi></msub><annotation encoding="application/x-tex">X_{i}</annotation></semantics></math> quanto para <math id="SS4.p8.m5" class="ltx_Math" alttext="Y_{i}" display="inline"><semantics><msub><mi>Y</mi><mi>i</mi></msub><annotation encoding="application/x-tex">Y_{i}</annotation></semantics></math>).
+O resto é de ordem muito pequena para influir no limite.</p>
+</div>
+<div id="SS4.p9" class="ltx_para">
+<p class="ltx_p">De fato, se retiramos o termo <math id="SS4.p9.m1" class="ltx_Math" alttext="Y_{i}" display="inline"><semantics><msub><mi>Y</mi><mi>i</mi></msub><annotation encoding="application/x-tex">Y_{i}</annotation></semantics></math> de <math id="SS4.p9.m2" class="ltx_Math" alttext="Z_{i+1}" display="inline"><semantics><msub><mi>Z</mi><mrow><mi>i</mi><mo>+</mo><mn>1</mn></mrow></msub><annotation encoding="application/x-tex">Z_{i+1}</annotation></semantics></math>, fazendo a mesma expansão que para <math id="SS4.p9.m3" class="ltx_Math" alttext="X_{i}" display="inline"><semantics><msub><mi>X</mi><mi>i</mi></msub><annotation encoding="application/x-tex">X_{i}</annotation></semantics></math>, obtemos</p>
+<div id="Ch3.E127" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch3.E127.m1" class="ltx_Math" alttext="\int\phi^{n}(Z_{i+1})\d{P}^{\prime}=\int\phi^{n}(Z_{i}^{o})\d{P}^{\prime}+%
+\frac{1}{2n}v_{i}+k^{\prime}_{i}," display="block"><semantics><mrow><mrow><mrow><mo>∫</mo><mrow><msup><mi>ϕ</mi><mi>n</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>Z</mi><mrow><mi>i</mi><mo>+</mo><mn>1</mn></mrow></msub><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><munder accentunder="true"><mtext>P</mtext><mo>⋅</mo></munder><mo>′</mo></msup></mrow></mrow><mo rspace="0.111em">=</mo><mrow><mrow><mo>∫</mo><mrow><msup><mi>ϕ</mi><mi>n</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msubsup><mi>Z</mi><mi>i</mi><mi>o</mi></msubsup><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><munder accentunder="true"><mtext>P</mtext><mo>⋅</mo></munder><mo>′</mo></msup></mrow></mrow><mo>+</mo><mrow><mfrac><mn>1</mn><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow></mfrac><mo>⁢</mo><msub><mi>v</mi><mi>i</mi></msub></mrow><mo>+</mo><msubsup><mi>k</mi><mi>i</mi><mo>′</mo></msubsup></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\int\phi^{n}(Z_{i+1})\d{P}^{\prime}=\int\phi^{n}(Z_{i}^{o})\d{P}^{\prime}+%
+\frac{1}{2n}v_{i}+k^{\prime}_{i},</annotation></semantics></math></span>
+                <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.127)</span>
+                
+                
+              
+</div>
+<p class="ltx_p">com o termo de ordem superior <math id="SS4.p9.m4" class="ltx_Math" alttext="k^{\prime}_{i}" display="inline"><semantics><msubsup><mi>k</mi><mi>i</mi><mo>′</mo></msubsup><annotation encoding="application/x-tex">k^{\prime}_{i}</annotation></semantics></math> sendo definido exatamente como <math id="SS4.p9.m5" class="ltx_Math" alttext="k_{i}" display="inline"><semantics><msub><mi>k</mi><mi>i</mi></msub><annotation encoding="application/x-tex">k_{i}</annotation></semantics></math>, mas com <math id="SS4.p9.m6" class="ltx_Math" alttext="Y_{i}" display="inline"><semantics><msub><mi>Y</mi><mi>i</mi></msub><annotation encoding="application/x-tex">Y_{i}</annotation></semantics></math> no lugar de <math id="SS4.p9.m7" class="ltx_Math" alttext="X_{i}" display="inline"><semantics><msub><mi>X</mi><mi>i</mi></msub><annotation encoding="application/x-tex">X_{i}</annotation></semantics></math>.</p>
+</div>
+<div id="SS4.p10" class="ltx_para">
+<p class="ltx_p">Estamos prontos agora para a computação final</p>
+<div id="Ch3.Ex11" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch3.Ex11.m1" class="ltx_Math" alttext="\begin{split}\Big{|}\int\phi^{n}&amp;(X_{1},\dots,X_{n})\d{P}-\int g(s)\mathcal{N}%
+(0,1)(\d{s})\Big{|}\\
+&amp;=\Big{|}\int\phi^{n}(Z_{0})\d{P}^{\prime}-\int\phi^{n}(Z_{n})\d{P}^{\prime}%
+\Big{|}\\
+&amp;\leq\sum_{i=0}^{n-1}\Big{|}\int\phi^{n}(Z_{i})\d{P}^{\prime}-\int\phi^{n}(Z_{%
+i+1})\d{P}^{\prime}\Big{|}=\sum_{i=0}^{n-1}|k_{i}-k^{\prime}_{i}|\\
+&amp;\leq n\frac{M}{n^{3/2}}\big{(}E(|X_{1}|^{3})+E(|Y_{1}|^{3})\big{)},\end{split}" display="block"><semantics><mtable columnspacing="0pt" displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_align_right" columnalign="right"><mrow><mo fence="false" maxsize="160%" minsize="160%">|</mo><mo>∫</mo><msup><mi>ϕ</mi><mi>n</mi></msup></mrow></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mo stretchy="false">(</mo><msub><mi>X</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>X</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow><munder accentunder="true"><mtext>P</mtext><mo>⋅</mo></munder><mo rspace="0.055em">−</mo><mo>∫</mo><mi>g</mi><mrow><mo stretchy="false">(</mo><mi>s</mi><mo stretchy="false">)</mo></mrow><mi class="ltx_font_mathcaligraphic">𝒩</mi><mrow><mo stretchy="false">(</mo><mn>0,1</mn><mo stretchy="false">)</mo></mrow><mrow><mo stretchy="false">(</mo><munder accentunder="true"><mtext>s</mtext><mo>⋅</mo></munder><mo stretchy="false">)</mo></mrow><mo fence="false" maxsize="160%" minsize="160%">|</mo></mrow></mtd></mtr><mtr><mtd></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mi></mi><mo>=</mo><mrow><mo maxsize="160%" minsize="160%">|</mo><mrow><mrow><mo lspace="0em">∫</mo><mrow><msup><mi>ϕ</mi><mi>n</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>Z</mi><mn>0</mn></msub><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><munder accentunder="true"><mtext>P</mtext><mo>⋅</mo></munder><mo>′</mo></msup></mrow></mrow><mo rspace="0.055em">−</mo><mrow><mo>∫</mo><mrow><msup><mi>ϕ</mi><mi>n</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>Z</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><munder accentunder="true"><mtext>P</mtext><mo>⋅</mo></munder><mo>′</mo></msup></mrow></mrow></mrow><mo maxsize="160%" minsize="160%">|</mo></mrow></mrow></mtd></mtr><mtr><mtd></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mi></mi><mo rspace="0.111em">≤</mo><mrow><munderover><mo movablelimits="false" rspace="0em">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></munderover><mrow><mo maxsize="160%" minsize="160%">|</mo><mrow><mrow><mo lspace="0em">∫</mo><mrow><msup><mi>ϕ</mi><mi>n</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>Z</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><munder accentunder="true"><mtext>P</mtext><mo>⋅</mo></munder><mo>′</mo></msup></mrow></mrow><mo rspace="0.055em">−</mo><mrow><mo>∫</mo><mrow><msup><mi>ϕ</mi><mi>n</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>Z</mi><mrow><mi>i</mi><mo>+</mo><mn>1</mn></mrow></msub><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><munder accentunder="true"><mtext>P</mtext><mo>⋅</mo></munder><mo>′</mo></msup></mrow></mrow></mrow><mo maxsize="160%" minsize="160%">|</mo></mrow></mrow><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false" rspace="0em">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></munderover><mrow><mo stretchy="false">|</mo><mrow><msub><mi>k</mi><mi>i</mi></msub><mo>−</mo><msubsup><mi>k</mi><mi>i</mi><mo>′</mo></msubsup></mrow><mo stretchy="false">|</mo></mrow></mrow></mrow></mtd></mtr><mtr><mtd></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mi></mi><mo>≤</mo><mrow><mi>n</mi><mo>⁢</mo><mfrac><mi>M</mi><msup><mi>n</mi><mrow><mn>3</mn><mo>/</mo><mn>2</mn></mrow></msup></mfrac><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mrow><mo stretchy="false">|</mo><msub><mi>X</mi><mn>1</mn></msub><mo stretchy="false">|</mo></mrow><mn>3</mn></msup><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mrow><mo stretchy="false">|</mo><msub><mi>Y</mi><mn>1</mn></msub><mo stretchy="false">|</mo></mrow><mn>3</mn></msup><mo stretchy="false">)</mo></mrow></mrow></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow><mo>,</mo></mrow></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{split}\Big{|}\int\phi^{n}&amp;(X_{1},\dots,X_{n})\d{P}-\int g(s)\mathcal{N}%
+(0,1)(\d{s})\Big{|}\\
+&amp;=\Big{|}\int\phi^{n}(Z_{0})\d{P}^{\prime}-\int\phi^{n}(Z_{n})\d{P}^{\prime}%
+\Big{|}\\
+&amp;\leq\sum_{i=0}^{n-1}\Big{|}\int\phi^{n}(Z_{i})\d{P}^{\prime}-\int\phi^{n}(Z_{%
+i+1})\d{P}^{\prime}\Big{|}=\sum_{i=0}^{n-1}|k_{i}-k^{\prime}_{i}|\\
+&amp;\leq n\frac{M}{n^{3/2}}\big{(}E(|X_{1}|^{3})+E(|Y_{1}|^{3})\big{)},\end{split}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">que claramente converge a zero, provando o teorema.
+∎</p>
+</div>
+</div>
+<div id="SS4.p11" class="ltx_para">
+<span class="ltx_ERROR undefined">{corollary}</span>
+<p class="ltx_p">A <math id="SS4.p11.m1" class="ltx_Math" alttext="\mathcal{N}(0,1)" display="inline"><semantics><mrow><mi class="ltx_font_mathcaligraphic">𝒩</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0,1</mn><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mathcal{N}(0,1)</annotation></semantics></math> é a única distribuição <math id="SS4.p11.m2" class="ltx_Math" alttext="\mu" display="inline"><semantics><mi>μ</mi><annotation encoding="application/x-tex">\mu</annotation></semantics></math> que possui esperança zero, variância <math id="SS4.p11.m3" class="ltx_Math" alttext="1" display="inline"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math> e é tal que se <math id="SS4.p11.m4" class="ltx_Math" alttext="X,Y" display="inline"><semantics><mrow><mi>X</mi><mo>,</mo><mi>Y</mi></mrow><annotation encoding="application/x-tex">X,Y</annotation></semantics></math> são <span class="ltx_ERROR undefined">\iid</span>com distribuição <math id="SS4.p11.m5" class="ltx_Math" alttext="\mu" display="inline"><semantics><mi>μ</mi><annotation encoding="application/x-tex">\mu</annotation></semantics></math>, então <math id="SS4.p11.m6" class="ltx_Math" alttext="(X+Y)/\sqrt{2}" display="inline"><semantics><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo>+</mo><mi>Y</mi></mrow><mo stretchy="false">)</mo></mrow><mo>/</mo><msqrt><mn>2</mn></msqrt></mrow><annotation encoding="application/x-tex">(X+Y)/\sqrt{2}</annotation></semantics></math> também possuem distribuição <math id="SS4.p11.m7" class="ltx_Math" alttext="\mu" display="inline"><semantics><mi>μ</mi><annotation encoding="application/x-tex">\mu</annotation></semantics></math>.
+Em outras palavras, <math id="SS4.p11.m8" class="ltx_Math" alttext="\mathcal{N}(0,\sigma^{2})" display="inline"><semantics><mrow><mi class="ltx_font_mathcaligraphic">𝒩</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><msup><mi>σ</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mathcal{N}(0,\sigma^{2})</annotation></semantics></math>, para <math id="SS4.p11.m9" class="ltx_Math" alttext="\sigma\geq 0" display="inline"><semantics><mrow><mi>σ</mi><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\sigma\geq 0</annotation></semantics></math>, são os únicos pontos fixos de <math id="SS4.p11.m10" class="ltx_Math" alttext="\Gamma" display="inline"><semantics><mi mathvariant="normal">Γ</mi><annotation encoding="application/x-tex">\Gamma</annotation></semantics></math> em <math id="SS4.p11.m11" class="ltx_Math" alttext="\mathcal{L}^{3}" display="inline"><semantics><msup><mi class="ltx_font_mathcaligraphic">ℒ</mi><mn>3</mn></msup><annotation encoding="application/x-tex">\mathcal{L}^{3}</annotation></semantics></math>.</p>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demonstração.</h6>
+<div id="SS4.p12" class="ltx_para">
+<p class="ltx_p">Usando a invariância enunciada acima, temos que</p>
+<div id="Ch3.E128" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch3.E128.m1" class="ltx_Math" alttext="\frac{X_{1}+\dots+X_{2^{k}}}{\sqrt{2^{k}}}\distr\mu." display="block"><semantics><mrow><mrow><mfrac><mrow><msub><mi>X</mi><mn>1</mn></msub><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><msub><mi>X</mi><msup><mn>2</mn><mi>k</mi></msup></msub></mrow><msqrt><msup><mn>2</mn><mi>k</mi></msup></msqrt></mfrac><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\distr</mtext></merror><mo>⁢</mo><mi>μ</mi></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\frac{X_{1}+\dots+X_{2^{k}}}{\sqrt{2^{k}}}\distr\mu.</annotation></semantics></math></span>
+                <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.128)</span>
+                
+                
+              
+</div>
+<p class="ltx_p">Mas pelo Teorema central do limite, a distribuição dessa combinação de <math id="SS4.p12.m1" class="ltx_Math" alttext="X_{i}" display="inline"><semantics><msub><mi>X</mi><mi>i</mi></msub><annotation encoding="application/x-tex">X_{i}</annotation></semantics></math> deve convergir a <math id="SS4.p12.m2" class="ltx_Math" alttext="\mathcal{N}(0,1)" display="inline"><semantics><mrow><mi class="ltx_font_mathcaligraphic">𝒩</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0,1</mn><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mathcal{N}(0,1)</annotation></semantics></math>, logo temos <math id="SS4.p12.m3" class="ltx_Math" alttext="\mu=\mathcal{N}(0,1)" display="inline"><semantics><mrow><mi>μ</mi><mo>=</mo><mrow><mi class="ltx_font_mathcaligraphic">𝒩</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0,1</mn><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\mu=\mathcal{N}(0,1)</annotation></semantics></math>.
+∎</p>
+</div>
+</div>
+<div id="SS4.p13" class="ltx_para">
+<p class="ltx_p">Vamos terminar essa seção com uma aplicação do teorema acima.</p>
+</div>
+<div id="SS4.p14" class="ltx_para">
+<span class="ltx_ERROR undefined">{exercise}</span>
+<p class="ltx_p">Digamos que jogamos <math id="SS4.p14.m1" class="ltx_Math" alttext="100" display="inline"><semantics><mn>100</mn><annotation encoding="application/x-tex">100</annotation></semantics></math> moedas honestas e independentes, como foi proposto no início da seção, obtendo finalmente uma variável aleatória <math id="SS4.p14.m2" class="ltx_Math" alttext="Y\distr\Bin(100,1/2)" display="inline"><semantics><mrow><mi>Y</mi><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\distr</mtext></merror><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\Bin</mtext></merror><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>100,1</mn><mo>/</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">Y\distr\Bin(100,1/2)</annotation></semantics></math>.
+Usando o <a href="#SS4" title="In 3.8 O Teorema Central do Limite ‣ Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I" class="ltx_ref ltx_refmacro_nameref"><span class="ltx_text ltx_ref_title">O TCL para uma sequência i.i.d.</span></a>, estime <math id="SS4.p14.m3" class="ltx_Math" alttext="P[Y\geq 55]" display="inline"><semantics><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><mi>Y</mi><mo>≥</mo><mn>55</mn></mrow><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">P[Y\geq 55]</annotation></semantics></math> usando uma aproximação por uma <math id="SS4.p14.m4" class="ltx_Math" alttext="\mathcal{N}(0,1)" display="inline"><semantics><mrow><mi class="ltx_font_mathcaligraphic">𝒩</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0,1</mn><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mathcal{N}(0,1)</annotation></semantics></math>.
+Calcule numericamente o valor real desta probabilidade e compare ambas as estimativas.</p>
+</div>
+<span id="todo5" class="ltx_note ltx_role_todo"><sup class="ltx_note_mark">5</sup><span class="ltx_note_outer"><span class="ltx_note_content"><sup class="ltx_note_mark">5</sup><span class="ltx_note_type">todo: </span>
+            <span class="ltx_tag ltx_tag_note">5</span>
+            
+            
+            
+          falar de Tao Vu, se os momentos batem a distrib de auto-val é proxima + funcao zeta.</span></span></span>
+<div id="SS4.p15" class="ltx_para">
+<span class="ltx_ERROR undefined">\todosec</span>
+<p class="ltx_p">Tópico: Mecânica estatística do gás idealMostrar a equivalência de ensembles.</p>
+</div>
+<div id="SS4.p16" class="ltx_para">
+<span class="ltx_ERROR undefined">\todosec</span>
+<p class="ltx_p">Tópico: Funções características???funcoes caracteristicas e tomografia…</p>
+</div>
+<div class="ltx_pagination ltx_role_newpage"></div>
+</div>
+</section>
+</div>
+</section>
+</div>
+</div>
+</div>
+<a href="Ch3.Sx2.html" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a><a href="Ch3.Sx3.html" class="navigation navigation-next" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+</div>
+</div>
+<script src="bookml/gitbook/js/app.min.js"></script>
+<script src="bookml/gitbook/js/jquery.highlight.js"></script>
+<script src="bookml/gitbook/js/plugin-search.js"></script>
+<script src="bookml/gitbook/js/plugin-fontsettings.js"></script>
+<script src="bookml/gitbook/js/plugin-bookdown.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+        MathJax = {
+          startup: {
+            ready() {
+              // do not process equations disabled with \bmlDisableMathJax (code suggested by Davide P. Cervone)
+              class bmlFindMathML extends MathJax._.input.mathml.FindMathML.FindMathML {
+                processMath(set) {
+                  const adaptor = this.adaptor;
+                  for (const node of set.values()) {
+                    if (adaptor.hasClass(node, 'bml_disable_mathjax')) {
+                      set.delete(node);
+                    }
+                  }
+                  return super.processMath(set);
+                }
+              }
+
+              MathJax._.components.global.combineDefaults(MathJax.config, 'mml', {FindMathML: new bmlFindMathML()});
+
+              MathJax.startup.defaultReady();
+
+              // preproces MathML to make MathJax aware of certain LaTeXML and BookML additional info
+              const mmlFilters = MathJax.startup.input[0].mmlFilters;
+
+              // convert the LaTeXML calligraphic (chancery) annotation to a form MathJax understands
+              // since the corresponding Unicode characters render as script (rounded)
+              const script2latin = {
+                '𝒜': 'A', 'ℬ': 'B', '𝒞': 'C', '𝒟': 'D', 'ℰ': 'E', 'ℱ': 'F', '𝒢': 'G',
+                'ℋ': 'H', 'ℐ': 'I', '𝒥': 'J', '𝒦': 'K', 'ℒ': 'L', 'ℳ': 'M', '𝒩': 'N',
+                '𝒪': 'O', '𝒫': 'P', '𝒬': 'Q', 'ℛ': 'R', '𝒮': 'S', '𝒯': 'T', '𝒰': 'U',
+                '𝒱': 'V', '𝒲': 'W', '𝒳': 'X', '𝒴': 'Y', '𝒵': 'Z',
+              };
+
+              mmlFilters.add((args) => {
+                for (const n of args.data.getElementsByClassName('ltx_font_mathcaligraphic')) {
+                  n.classList.add('MJX-tex-calligraphic');
+                  const letter = script2latin[n.textContent];
+                  if (letter !== undefined) { n.textContent = letter; }
+                }
+              });
+
+              // adjust characters based on Unicode variation sequences
+              const replacements = {
+                // MathJax renders the empty set as the U+FE00 variant, so the plain character needs adjusting
+                '∅': { variant: 'variant' },
+                // MathJax renders script characters in rounded style, which is fine for no variation and U+FE00
+                '𝒜\xFE00': { text: 'A', variant: 'tex-calligraphic' },
+                'ℬ\xFE00': { text: 'B', variant: 'tex-calligraphic' },
+                '𝒞\xFE00': { text: 'C', variant: 'tex-calligraphic' },
+                '𝒟\xFE00': { text: 'D', variant: 'tex-calligraphic' },
+                'ℰ\xFE00': { text: 'E', variant: 'tex-calligraphic' },
+                'ℱ\xFE00': { text: 'F', variant: 'tex-calligraphic' },
+                '𝒢\xFE00': { text: 'G', variant: 'tex-calligraphic' },
+                'ℋ\xFE00': { text: 'H', variant: 'tex-calligraphic' },
+                'ℐ\xFE00': { text: 'I', variant: 'tex-calligraphic' },
+                '𝒥\xFE00': { text: 'J', variant: 'tex-calligraphic' },
+                '𝒦\xFE00': { text: 'K', variant: 'tex-calligraphic' },
+                'ℒ\xFE00': { text: 'L', variant: 'tex-calligraphic' },
+                'ℳ\xFE00': { text: 'M', variant: 'tex-calligraphic' },
+                '𝒩\xFE00': { text: 'N', variant: 'tex-calligraphic' },
+                '𝒪\xFE00': { text: 'O', variant: 'tex-calligraphic' },
+                '𝒫\xFE00': { text: 'P', variant: 'tex-calligraphic' },
+                '𝒬\xFE00': { text: 'Q', variant: 'tex-calligraphic' },
+                'ℛ\xFE00': { text: 'R', variant: 'tex-calligraphic' },
+                '𝒮\xFE00': { text: 'S', variant: 'tex-calligraphic' },
+                '𝒯\xFE00': { text: 'T', variant: 'tex-calligraphic' },
+                '𝒰\xFE00': { text: 'U', variant: 'tex-calligraphic' },
+                '𝒱\xFE00': { text: 'V', variant: 'tex-calligraphic' },
+                '𝒲\xFE00': { text: 'W', variant: 'tex-calligraphic' },
+                '𝒳\xFE00': { text: 'X', variant: 'tex-calligraphic' },
+                '𝒴\xFE00': { text: 'Y', variant: 'tex-calligraphic' },
+                '𝒵\xFE00': { text: 'Z', variant: 'tex-calligraphic' }
+              };
+
+              mmlFilters.add((args) => {
+                let nodes = document.evaluate('.//m:mi | .//m:mn | .//m:mo | .//m:ms', args.data,
+                  () => 'http://www.w3.org/1998/Math/MathML', XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE);
+                for (let i = 0; i < nodes.snapshotLength; i++) {
+                  const n = nodes.snapshotItem(i);
+                  const repl = replacements[n.innerHTML];
+                  if (repl !== undefined) {
+                    const variant = repl['variant'];
+                    const text = repl['text'];
+                    if (variant !== undefined) { n.classList.add('MJX-' + variant); n.removeAttribute('mathvariant'); }
+                    if (text !== undefined) { n.innerHTML = text; }
+                  }
+                }
+              });
+            }
+          }
+        };
+      </script>
+<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js"></script>
+<script type="text/javascript">
+                gitbook.require(["gitbook"], function(gitbook) {
+                gitbook.start({
+                  "fontsettings": {
+                    "theme": "white",
+                    "family": "sans",
+                    "size": 2
+                  },
+                  "download": [ [ "Notas_de_aula.pdf", "PDF" ], ],
+                  "search": {
+                    "engine": "fuse"
+                  },
+                  "toc": {
+                    "collapse": "none"
+                  }
+                });
+              });
+            </script>
+</body>
+
+</html>

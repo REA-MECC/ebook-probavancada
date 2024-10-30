@@ -1,0 +1,591 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Tópico: Processos de Poisson em ℝ ‣ Capítulo 4 Esperança condicional ‣ Notas de aula: Probabilidade I</title>
+<!--Generated on Tue Aug 27 13:34:01 2024 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
+<style>:root { --bml-ltx-font-size: 10; }</style>
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-table.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-search.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-bookdown.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-fontsettings.css" type="text/css">
+<link rel="stylesheet" href="ltx-book.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook,plain.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook.css" type="text/css">
+<link rel="stylesheet" href="bmluser/colors.gitbook-Notas_de_aula.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6"></script>
+<link rel="up" href="Ch4.html" title="Capítulo 4 Esperança condicional ‣ Notas de aula: Probabilidade I">
+<link rel="up up" href="index.html" title="Notas de aula: Probabilidade I">
+<link rel="start" href="index.html" title="Notas de aula: Probabilidade I">
+<link rel="prev" href="Ch4.S4.html" title="4.4 Princípio da substituição ‣ Capítulo 4 Esperança condicional ‣ Notas de aula: Probabilidade I">
+<link rel="next" href="Ch5.html" title="Capítulo 5 Soluções de exercícios ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch4.S1.html" title="4.1 Esperança condicional ‣ Capítulo 4 Esperança condicional ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch4.S2.html" title="4.2 Propriedades básicas da esperança condicional ‣ Capítulo 4 Esperança condicional ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch4.S3.html" title="4.3 Probabilidade Condicional Regular ‣ Capítulo 4 Esperança condicional ‣ Notas de aula: Probabilidade I">
+<link rel="section" href="Ch4.S4.html" title="4.4 Princípio da substituição ‣ Capítulo 4 Esperança condicional ‣ Notas de aula: Probabilidade I">
+<link rel="chapter" href="Chx1.html" title="Licença ‣ Notas de aula: Probabilidade I">
+<link rel="chapter" href="Chx2.html" title="Contribuições ‣ Notas de aula: Probabilidade I">
+<link rel="chapter" href="Ch1.html" title="Capítulo 1 Fundamentos ‣ Notas de aula: Probabilidade I">
+<link rel="chapter" href="Ch2.html" title="Capítulo 2 Construção de espaços de probabilidade ‣ Notas de aula: Probabilidade I">
+<link rel="chapter" href="Ch3.html" title="Capítulo 3 Somas de variáveis independentes ‣ Notas de aula: Probabilidade I">
+<link rel="chapter" href="Ch4.html" title="Capítulo 4 Esperança condicional ‣ Notas de aula: Probabilidade I">
+<link rel="chapter" href="Ch5.html" title="Capítulo 5 Soluções de exercícios ‣ Notas de aula: Probabilidade I">
+<link rel="bibliography" href="bib.html" title="Referências ‣ Notas de aula: Probabilidade I">
+<link rel="index" href="idx.html" title="Índice Remissivo ‣ Notas de aula: Probabilidade I">
+<meta name="keywords" lang="pt-BR" content="Princípio, Processo de Poisson, da Substituição">
+</head>
+<body>
+<div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+<a href="#bml-main-content" tabindex="0" class="bml-skip-to-content">Skip to content.</a>
+<div class="book-summary"><nav class="ltx_page_navbar">
+<ul class="ltx_toclist summary">
+<li>
+<a href="index.html" title="" class="ltx_ref" rel="start">Notas de aula: Probabilidade I</a>
+</li>
+<li class="divider">
+<li data-level="" data-path="Chx1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Chx1.html" title="In Notas de aula: Probabilidade I" class="ltx_ref">Licença</a></li>
+<li data-level="" data-path="Chx2.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Chx2.html" title="In Notas de aula: Probabilidade I" class="ltx_ref">Contribuições</a></li>
+<li data-level="1" data-path="Ch1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch1.html" title="In Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1 </span></b>Fundamentos</a></li>
+<li data-level="2" data-path="Ch2.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch2.html" title="In Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2 </span></b>Construção de espaços de probabilidade</a></li>
+<li data-level="3" data-path="Ch3.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch3.html" title="In Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3 </span></b>Somas de variáveis independentes</a></li>
+<li data-level="4" data-path="Ch4.html" class="ltx_tocentry ltx_tocentry_chapter  chapter ">
+<a href="Ch4.html" title="In Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4 </span></b>Esperança condicional</a>
+<ol class="ltx_toclist ltx_toclist_chapter">
+<li data-level="4.1" data-path="Ch4.S1.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch4.S1.html" title="In Capítulo 4 Esperança condicional ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4.1 </span></b>Esperança condicional</a></li>
+<li data-level="4.2" data-path="Ch4.S2.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch4.S2.html" title="In Capítulo 4 Esperança condicional ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4.2 </span></b>Propriedades básicas da esperança condicional</a></li>
+<li data-level="4.3" data-path="Ch4.S3.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch4.S3.html" title="In Capítulo 4 Esperança condicional ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4.3 </span></b>Probabilidade Condicional Regular</a></li>
+<li data-level="4.4" data-path="Ch4.S4.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch4.S4.html" title="In Capítulo 4 Esperança condicional ‣ Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4.4 </span></b>Princípio da substituição</a></li>
+<li data-level="" data-path="" class="ltx_tocentry ltx_tocentry_section ltx_ref_self  chapter active"><a href="" title="In Capítulo 4 Esperança condicional ‣ Notas de aula: Probabilidade I" class="ltx_ref">Tópico: Processos de Poisson em <math class="ltx_Math" alttext="\mathbb{R}" display="inline"><semantics><mi>ℝ</mi><annotation encoding="application/x-tex">\mathbb{R}</annotation></semantics></math></a></li>
+</ol>
+</li>
+<li data-level="5" data-path="Ch5.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch5.html" title="In Notas de aula: Probabilidade I" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">5 </span></b>Soluções de exercícios</a></li>
+<li data-level="" data-path="bib.html" class="ltx_tocentry ltx_tocentry_bibliography  chapter "><a href="bib.html" title="In Notas de aula: Probabilidade I" class="ltx_ref">Referências</a></li>
+<li data-level="" data-path="idx.html" class="ltx_tocentry ltx_tocentry_index  chapter "><a href="idx.html" title="In Notas de aula: Probabilidade I" class="ltx_ref">Índice Remissivo</a></li>
+</ul>
+</nav></div>
+<div class="ltx_page_main book-body fixed">
+<div class="body-inner">
+<div class="book-header fixed" role="navigation"><h1>Tópico: Processos de Poisson em </h1></div>
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="ltx_page_content page-inner" id="bml-main-content">
+<section class="ltx_section normal" lang="pt-BR">
+<div class="section level1">
+
+<h1 class="ltx_title ltx_title_section">Tópico: Processos de Poisson em <math id="m1" class="ltx_Math" alttext="\mathbb{R}" display="inline"><semantics><mi>ℝ</mi><annotation encoding="application/x-tex">\mathbb{R}</annotation></semantics></math>
+</h1>
+
+<div id="p1" class="ltx_para">
+<p class="ltx_p">Nessa seção aplicaremos o conceito de Probabilidade Condicional Regular e do Princípio da Substituição  para estudarmos um importante processo de chegadas chamado Processo de Poisson. </p>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">O Tenente Boavista está encarregado de vigiar o Sargento Pimenta, que frequentemente dorme durante sua vigília.
+Para isso, Boavista tem que decidir os momentos <math id="p2.m1" class="ltx_Math" alttext="t_{1},t_{2},\dots\in\mathbb{R}" display="inline"><semantics><mrow><mrow><msub><mi>t</mi><mn>1</mn></msub><mo>,</mo><msub><mi>t</mi><mn>2</mn></msub><mo>,</mo><mi mathvariant="normal">⋯</mi></mrow><mo>∈</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">t_{1},t_{2},\dots\in\mathbb{R}</annotation></semantics></math> que ele irá verificar se Pimenta está cochilando.
+Uma primeira estratégia poderia ser tomar intervalos igualmente espaçados, <math id="p2.m2" class="ltx_Math" alttext="t_{1}=1,\dots,t_{k}=k" display="inline"><semantics><mrow><mrow><msub><mi>t</mi><mn>1</mn></msub><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mi mathvariant="normal">…</mi></mrow></mrow><mo>,</mo><mrow><msub><mi>t</mi><mi>k</mi></msub><mo>=</mo><mi>k</mi></mrow></mrow><annotation encoding="application/x-tex">t_{1}=1,\dots,t_{k}=k</annotation></semantics></math>, mas o Sargento certamente iria dormir nos intevalos <math id="p2.m3" class="ltx_Math" alttext="(k+\varepsilon,k+1-\varepsilon)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mrow><mi>k</mi><mo>+</mo><mi>ε</mi></mrow><mo>,</mo><mrow><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow><mo>−</mo><mi>ε</mi></mrow><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(k+\varepsilon,k+1-\varepsilon)</annotation></semantics></math> sem se preocupar.</p>
+</div>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">Dado esse problema, o Tenente decide escolher tempos aleatórios <math id="p3.m1" class="ltx_Math" alttext="T_{1},T_{2},\dots" display="inline"><semantics><mrow><msub><mi>T</mi><mn>1</mn></msub><mo>,</mo><msub><mi>T</mi><mn>2</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi></mrow><annotation encoding="application/x-tex">T_{1},T_{2},\dots</annotation></semantics></math>
+Mas é importante lembrar que não são todas as distribuições que funcionarão bem, por exemplo se <math id="p3.m2" class="ltx_Math" alttext="T_{k}-T_{k-1}\geq a" display="inline"><semantics><mrow><mrow><msub><mi>T</mi><mi>k</mi></msub><mo>−</mo><msub><mi>T</mi><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></msub></mrow><mo>≥</mo><mi>a</mi></mrow><annotation encoding="application/x-tex">T_{k}-T_{k-1}\geq a</annotation></semantics></math> quase certamente o Sargento irá se aproveitar desse intervalinho.</p>
+</div>
+<div id="p4" class="ltx_para">
+<p class="ltx_p">A primeira simplificação que o Tenente imagina para esse problema é a seguinte: dado que houve uma vistoria no instante <math id="p4.m1" class="ltx_Math" alttext="t_{k}" display="inline"><semantics><msub><mi>t</mi><mi>k</mi></msub><annotation encoding="application/x-tex">t_{k}</annotation></semantics></math>, então o que acontecerá à partir daí será o mesmo processo com o qual ele começou.
+Isso pode ser traduzido de maneira rigorosa como</p>
+<div id="Ch4.E57" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.E57.m1" class="ltx_Math" alttext="P\big{[}(T_{k+1}-t_{k},T_{k+2}-t_{k},\dots)\in A|T_{k}=t_{k}\big{]}=P\big{[}(T%
+_{1},T_{2},\dots)\in A\big{]}," display="block"><semantics><mrow><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">[</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><msub><mi>T</mi><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>−</mo><msub><mi>t</mi><mi>k</mi></msub></mrow><mo>,</mo><mrow><msub><mi>T</mi><mrow><mi>k</mi><mo>+</mo><mn>2</mn></mrow></msub><mo>−</mo><msub><mi>t</mi><mi>k</mi></msub></mrow><mo>,</mo><mi mathvariant="normal">…</mi><mo stretchy="false">)</mo></mrow><mo>∈</mo><mrow><mi>A</mi><mo fence="false">|</mo><msub><mi>T</mi><mi>k</mi></msub></mrow><mo>=</mo><msub><mi>t</mi><mi>k</mi></msub></mrow><mo maxsize="120%" minsize="120%">]</mo></mrow></mrow><mo>=</mo><mrow><mi>P</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">[</mo><mrow><mrow><mo stretchy="false">(</mo><msub><mi>T</mi><mn>1</mn></msub><mo>,</mo><msub><mi>T</mi><mn>2</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo stretchy="false">)</mo></mrow><mo>∈</mo><mi>A</mi></mrow><mo maxsize="120%" minsize="120%">]</mo></mrow></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">P\big{[}(T_{k+1}-t_{k},T_{k+2}-t_{k},\dots)\in A|T_{k}=t_{k}\big{]}=P\big{[}(T%
+_{1},T_{2},\dots)\in A\big{]},</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.57)</span>
+            
+            
+          
+</div>
+<p class="ltx_p"><math id="p4.m2" class="ltx_Math" alttext="T_{k}\circ P" display="inline"><semantics><mrow><msub><mi>T</mi><mi>k</mi></msub><mo lspace="0.222em" rspace="0.222em">∘</mo><mi>P</mi></mrow><annotation encoding="application/x-tex">T_{k}\circ P</annotation></semantics></math>-quase certamente.
+Não iremos entrar muito em detalhes sobre qual é essa esperança condicional, pois no momento ainda estamos trabalhando heuristicamente, mas já podemos dizer que:</p>
+<div id="Ch4.E58" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.E58.m1" class="ltx_Math" alttext="\begin{split}P\big{[}T_{1}\in A_{1},T_{2}-T_{1}\in A_{2}\big{]}&amp;=E\big{[}\1_{T%
+_{1}\in A_{1}}P[T_{2}-T_{1}\in A_{2}|T_{1}=t_{1}]\circ T_{1}\big{]}\\
+&amp;\overset{\eqref{e:Poisson_incr_ind}}{=}E\big{[}\1_{T_{1}\in A_{1}}P[T_{1}\in A%
+_{2}]\big{]}=P[T_{1}\in A_{1}]P[T_{1}\in A_{2}].\end{split}" display="block"><semantics><mtable columnspacing="0pt" displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_align_right" columnalign="right"><mrow><mi>P</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">[</mo><mrow><mrow><msub><mi>T</mi><mn>1</mn></msub><mo>∈</mo><msub><mi>A</mi><mn>1</mn></msub></mrow><mo>,</mo><mrow><mrow><msub><mi>T</mi><mn>2</mn></msub><mo>−</mo><msub><mi>T</mi><mn>1</mn></msub></mrow><mo>∈</mo><msub><mi>A</mi><mn>2</mn></msub></mrow></mrow><mo maxsize="120%" minsize="120%">]</mo></mrow></mrow></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mi></mi><mo>=</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">[</mo><mrow><mrow><msub><merror class="ltx_ERROR undefined undefined"><mtext>\1</mtext></merror><mrow><msub><mi>T</mi><mn>1</mn></msub><mo>∈</mo><msub><mi>A</mi><mn>1</mn></msub></mrow></msub><mo>⁢</mo><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><mrow><msub><mi>T</mi><mn>2</mn></msub><mo>−</mo><msub><mi>T</mi><mn>1</mn></msub></mrow><mo>∈</mo><mrow><msub><mi>A</mi><mn>2</mn></msub><mo fence="false">|</mo><msub><mi>T</mi><mn>1</mn></msub></mrow><mo>=</mo><msub><mi>t</mi><mn>1</mn></msub></mrow><mo rspace="0.055em" stretchy="false">]</mo></mrow></mrow><mo rspace="0.222em">∘</mo><msub><mi>T</mi><mn>1</mn></msub></mrow><mo maxsize="120%" minsize="120%">]</mo></mrow></mrow></mrow></mtd></mtr><mtr><mtd></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mrow><mover accent="true"><mo>=</mo><mrow><mi>(</mi><mo>⁢</mo><semantics class="ltx_mathvariant_italic"><annotation-xml encoding="text/html" style="display: block;"><a href="#Ch4.E57" title="In Tópico: Processos de Poisson em ℝ ‣ Capítulo 4 Esperança condicional ‣ Notas de aula: Probabilidade I" class="ltx_ref ltx_font_italic"><span class="ltx_text ltx_ref_tag">4.57</span></a></annotation-xml></semantics><mo>⁢</mo><mi>)</mi></mrow></mover><mo>⁢</mo><mi>E</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">[</mo><mrow><msub><merror class="ltx_ERROR undefined undefined"><mtext>\1</mtext></merror><mrow><msub><mi>T</mi><mn>1</mn></msub><mo>∈</mo><msub><mi>A</mi><mn>1</mn></msub></mrow></msub><mo>⁢</mo><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><msub><mi>T</mi><mn>1</mn></msub><mo>∈</mo><msub><mi>A</mi><mn>2</mn></msub></mrow><mo stretchy="false">]</mo></mrow></mrow><mo maxsize="120%" minsize="120%">]</mo></mrow></mrow><mo>=</mo><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><msub><mi>T</mi><mn>1</mn></msub><mo>∈</mo><msub><mi>A</mi><mn>1</mn></msub></mrow><mo stretchy="false">]</mo></mrow><mo>⁢</mo><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><msub><mi>T</mi><mn>1</mn></msub><mo>∈</mo><msub><mi>A</mi><mn>2</mn></msub></mrow><mo stretchy="false">]</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{split}P\big{[}T_{1}\in A_{1},T_{2}-T_{1}\in A_{2}\big{]}&amp;=E\big{[}\1_{T%
+_{1}\in A_{1}}P[T_{2}-T_{1}\in A_{2}|T_{1}=t_{1}]\circ T_{1}\big{]}\\
+&amp;\overset{\eqref{e:Poisson_incr_ind}}{=}E\big{[}\1_{T_{1}\in A_{1}}P[T_{1}\in A%
+_{2}]\big{]}=P[T_{1}\in A_{1}]P[T_{1}\in A_{2}].\end{split}</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.58)</span>
+            
+            
+          
+</div>
+<p class="ltx_p">Procedendo de maneira análoga, podemos concluir que <math id="p4.m3" class="ltx_Math" alttext="(T_{1},T_{2}-T_{1},T_{3}-T_{2},\dots)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><msub><mi>T</mi><mn>1</mn></msub><mo>,</mo><mrow><msub><mi>T</mi><mn>2</mn></msub><mo>−</mo><msub><mi>T</mi><mn>1</mn></msub></mrow><mo>,</mo><mrow><msub><mi>T</mi><mn>3</mn></msub><mo>−</mo><msub><mi>T</mi><mn>2</mn></msub></mrow><mo>,</mo><mi mathvariant="normal">…</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(T_{1},T_{2}-T_{1},T_{3}-T_{2},\dots)</annotation></semantics></math> são uma coleção <span class="ltx_ERROR undefined">\iid</span>.
+Agora o Tenente Boavista somente precisa escolher a distribuição de <math id="p4.m4" class="ltx_Math" alttext="T_{1}" display="inline"><semantics><msub><mi>T</mi><mn>1</mn></msub><annotation encoding="application/x-tex">T_{1}</annotation></semantics></math>.</p>
+</div>
+<div id="p5" class="ltx_para">
+<p class="ltx_p">Para essa escolha, ele sabe que se ele não chegar em tempo <math id="p5.m1" class="ltx_Math" alttext="t" display="inline"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math>, então o Sargento Pimenta sabe que sua próxima chegada terá distribuição <math id="p5.m2" class="ltx_Math" alttext="P[T_{1}-t\in A|T_{1}&gt;t]" display="inline"><semantics><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><mrow><msub><mi>T</mi><mn>1</mn></msub><mo>−</mo><mi>t</mi></mrow><mo>∈</mo><mrow><mi>A</mi><mo>⁢</mo><mrow><mo stretchy="false">|</mo><msub><mi>T</mi><mn>1</mn></msub><mo fence="true" lspace="0em">&gt;</mo></mrow><mo lspace="0em">⁢</mo><mi>t</mi></mrow></mrow><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">P[T_{1}-t\in A|T_{1}&gt;t]</annotation></semantics></math>.
+Como o Tenente Boavista gostaria que essa essa informação fosse inútil para o Sargento Pimenta, ele escolherá</p>
+<div id="Ch4.E59" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.E59.m1" class="ltx_Math" alttext="P[T_{1}-t\in A|T_{1}&gt;t]=P[T_{1}\in A]." display="block"><semantics><mrow><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><mrow><msub><mi>T</mi><mn>1</mn></msub><mo>−</mo><mi>t</mi></mrow><mo>∈</mo><mrow><mi>A</mi><mo>⁢</mo><mrow><mo stretchy="false">|</mo><msub><mi>T</mi><mn>1</mn></msub><mo fence="true" lspace="0em">&gt;</mo></mrow><mo lspace="0em">⁢</mo><mi>t</mi></mrow></mrow><mo stretchy="false">]</mo></mrow></mrow><mo>=</mo><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><msub><mi>T</mi><mn>1</mn></msub><mo>∈</mo><mi>A</mi></mrow><mo stretchy="false">]</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">P[T_{1}-t\in A|T_{1}&gt;t]=P[T_{1}\in A].</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.59)</span>
+            
+            
+          
+</div>
+<p class="ltx_p">E sabemos que as distribuições <math id="p5.m3" class="ltx_Math" alttext="\Exp(\lambda)" display="inline"><semantics><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\Exp</mtext></merror><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>λ</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\Exp(\lambda)</annotation></semantics></math>, para <math id="p5.m4" class="ltx_Math" alttext="\lambda&gt;0" display="inline"><semantics><mrow><mi>λ</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\lambda&gt;0</annotation></semantics></math> satisfazem isso, portanto já temos um candidato ao nosso processo de vistorias, mas antes vamos introduzir algumas notações.</p>
+</div>
+<div id="p6" class="ltx_para">
+<p class="ltx_p">Já podemos perceber por (<a href="#Ch4.E58" title="In Tópico: Processos de Poisson em ℝ ‣ Capítulo 4 Esperança condicional ‣ Notas de aula: Probabilidade I" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.58</span></a>) que mais importante que os tempos <math id="p6.m1" class="ltx_Math" alttext="T_{k}" display="inline"><semantics><msub><mi>T</mi><mi>k</mi></msub><annotation encoding="application/x-tex">T_{k}</annotation></semantics></math>, serão os intervalos entre visitas <math id="p6.m2" class="ltx_Math" alttext="X_{k}=T_{k}-T_{k-1}" display="inline"><semantics><mrow><msub><mi>X</mi><mi>k</mi></msub><mo>=</mo><mrow><msub><mi>T</mi><mi>k</mi></msub><mo>−</mo><msub><mi>T</mi><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></msub></mrow></mrow><annotation encoding="application/x-tex">X_{k}=T_{k}-T_{k-1}</annotation></semantics></math>.</p>
+</div>
+<div id="p7" class="ltx_para">
+<p class="ltx_p">Seja <math id="p7.m1" class="ltx_Math" alttext="\mathcal{D}\big{(}[0,\infty)\big{)}" display="inline"><semantics><mrow><mi class="ltx_font_mathcaligraphic">𝒟</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mo stretchy="false">[</mo><mn>0</mn><mo>,</mo><mi mathvariant="normal">∞</mi><mo stretchy="false">)</mo></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mathcal{D}\big{(}[0,\infty)\big{)}</annotation></semantics></math> o espaço de todas as funções càdlàg em <math id="p7.m2" class="ltx_Math" alttext="\mathbb{N}" display="inline"><semantics><mi>ℕ</mi><annotation encoding="application/x-tex">\mathbb{N}</annotation></semantics></math>, ou seja</p>
+<div id="Ch4.Ex4" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.Ex4.m1" class="ltx_Math" alttext="\mathcal{D}\big{(}[0,\infty)\big{)}=\big{\{}f:\mathbb{R}_{+}\to\mathbb{N}:f%
+\text{ \'{e} cont\'{\i}nua \`{a} direita e com limite \`{a} esquerda}\big{\}}." display="block"><semantics><mrow><mrow><mrow><mi class="ltx_font_mathcaligraphic">𝒟</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mo stretchy="false">[</mo><mn>0</mn><mo>,</mo><mi mathvariant="normal">∞</mi><mo stretchy="false">)</mo></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo>=</mo><mrow><mo maxsize="120%" minsize="120%">{</mo><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mrow><msub><mi>ℝ</mi><mo>+</mo></msub><mo stretchy="false">→</mo><mi>ℕ</mi></mrow><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>f</mi><mo>⁢</mo><mtext> é contínua à direita e com limite à esquerda</mtext></mrow></mrow><mo maxsize="120%" minsize="120%">}</mo></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\mathcal{D}\big{(}[0,\infty)\big{)}=\big{\{}f:\mathbb{R}_{+}\to\mathbb{N}:f%
+\text{ \'{e} cont\'{\i}nua \`{a} direita e com limite \`{a} esquerda}\big{\}}.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Definiremos <math id="p7.m3" class="ltx_Math" alttext="\Gamma:\mathbb{R}^{\mathbb{N}}\to\mathcal{D}\big{(}[0,\infty)\big{)}" display="inline"><semantics><mrow><mi mathvariant="normal">Γ</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><msup><mi>ℝ</mi><mi>ℕ</mi></msup><mo stretchy="false">→</mo><mrow><mi class="ltx_font_mathcaligraphic">𝒟</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mo stretchy="false">[</mo><mn>0</mn><mo>,</mo><mi mathvariant="normal">∞</mi><mo stretchy="false">)</mo></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\Gamma:\mathbb{R}^{\mathbb{N}}\to\mathcal{D}\big{(}[0,\infty)\big{)}</annotation></semantics></math> da seguinte forma: dados <math id="p7.m4" class="ltx_Math" alttext="(x_{1},x_{2},\dots)\in\mathbb{R}^{\mathbb{N}}" display="inline"><semantics><mrow><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><msub><mi>x</mi><mn>2</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo stretchy="false">)</mo></mrow><mo>∈</mo><msup><mi>ℝ</mi><mi>ℕ</mi></msup></mrow><annotation encoding="application/x-tex">(x_{1},x_{2},\dots)\in\mathbb{R}^{\mathbb{N}}</annotation></semantics></math>, seja <math id="p7.m5" class="ltx_Math" alttext="\Gamma(x_{1},\dots)=N" display="inline"><semantics><mrow><mrow><mi mathvariant="normal">Γ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi>N</mi></mrow><annotation encoding="application/x-tex">\Gamma(x_{1},\dots)=N</annotation></semantics></math>, tal que</p>
+<div id="Ch4.E60" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.E60.m1" class="ltx_Math" alttext="N_{t}=\max\{n;\sum_{i=1}^{n}x_{i}\leq t\}," display="block"><semantics><mrow><mrow><msub><mi>N</mi><mi>t</mi></msub><mo>=</mo><mrow><mi>max</mi><mo>⁡</mo><mrow><mo stretchy="false">{</mo><mi>n</mi><mo rspace="0em">;</mo><mrow><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><msub><mi>x</mi><mi>i</mi></msub></mrow><mo>≤</mo><mi>t</mi></mrow><mo stretchy="false">}</mo></mrow></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">N_{t}=\max\{n;\sum_{i=1}^{n}x_{i}\leq t\},</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.60)</span>
+            
+            
+          
+</div>
+<p class="ltx_p">que conta quantas visitas ocorreram antes de <math id="p7.m6" class="ltx_Math" alttext="t" display="inline"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math>, veja Figura <a href="#Ch4.F2" title="Figura 4.2 ‣ Tópico: Processos de Poisson em ℝ ‣ Capítulo 4 Esperança condicional ‣ Notas de aula: Probabilidade I" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.2</span></a>.</p>
+</div>
+<figure id="Ch4.F2" class="ltx_figure"><div class="bml-overflow-wrapper"><svg id="Ch4.F2.pic1" class="ltx_picture ltx_centering" height="277.44" overflow="visible" version="1.1" width="570.3" viewBox="0 0 570.3 277.44"><g class="bml_fill_000000 bml_stroke_000000" fill="#000000" stroke="#000000" stroke-width="0.4pt" transform="translate(0,277.44) matrix(1 0 0 -1 0 0) translate(39.37,0) translate(0,39.37)"><clipPath id="pgfcp1"><path d="M -39.37 -39.37 M -39.37 -39.37 L -39.37 196.85 L 314.96 196.85 L 314.96 -39.37 Z M 314.96 196.85"></path></clipPath><g clip-path="url(#pgfcp1)"><path d="M 0 156.84 L 0 0 L 353.69 0" style="fill:none"></path><g stroke-dasharray="none" stroke-dashoffset="0.0pt" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.32pt" transform="matrix(0.0 1.0 -1.0 0.0 0 156.84)"><path d="M -1.66 2.21 C -1.52 1.38 0 0.14 0.42 0 C 0 -0.14 -1.52 -1.38 -1.66 -2.21" style="fill:none"></path></g><g></g><g stroke-dasharray="none" stroke-dashoffset="0.0pt" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.32pt" transform="matrix(1.0 0.0 0.0 1.0 353.69 0)"><path d="M -1.66 2.21 C -1.52 1.38 0 0.14 0.42 0 C 0 -0.14 -1.52 -1.38 -1.66 -2.21" style="fill:none"></path></g><g></g><g stroke-dasharray="3.0pt,3.0pt" stroke-dashoffset="0.0pt"><path d="M 170.3 0 L 170.3 0" style="fill:none"></path></g><g></g><g stroke-width="0.8pt"><path d="M 0 0 L 170.3 0" style="fill:none"></path></g><g></g><g class="bml_fill_FFFFFF bml_stroke_FFFFFF" fill="#FFFFFF" stroke="#FFFFFF"><path d="M 170.3 0 M 171.88 0 C 171.88 0.87 171.17 1.57 170.3 1.57 C 169.43 1.57 168.73 0.87 168.73 0 C 168.73 -0.87 169.43 -1.57 170.3 -1.57 C 171.17 -1.57 171.88 -0.87 171.88 0 Z M 170.3 0"></path></g><g></g><g class="bml_fill_000000 bml_stroke_000000" fill="#000000" stroke="#000000"><path d="M 170.3 0 M 171.88 0 C 171.88 0.87 171.17 1.57 170.3 1.57 C 169.43 1.57 168.73 0.87 168.73 0 C 168.73 -0.87 169.43 -1.57 170.3 -1.57 C 171.17 -1.57 171.88 -0.87 171.88 0 Z M 170.3 0" style="fill:none"></path></g><g></g><g class="bml_fill_000000 bml_stroke_000000" fill="#000000" stroke="#000000"><path d="M 0 0 M 1.57 0 C 1.57 0.87 0.87 1.57 0 1.57 C -0.87 1.57 -1.57 0.87 -1.57 0 C -1.57 -0.87 -0.87 -1.57 0 -1.57 C 0.87 -1.57 1.57 -0.87 1.57 0 Z M 0 0"></path></g><g></g><g class="bml_fill_000000 bml_stroke_000000" fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 165.87 -13.4)"><foreignObject height="11.01" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="8.87"><math id="Ch4.F2.pic1.m1" class="ltx_Math" alttext="t_{1}" display="inline"><semantics><msub><mi>t</mi><mn>1</mn></msub><annotation encoding="application/x-tex">t_{1}</annotation></semantics></math></foreignObject></g><g></g><g stroke-dasharray="3.0pt,3.0pt" stroke-dashoffset="0.0pt"><path d="M 182.11 0 L 182.11 39.37" style="fill:none"></path></g><g></g><g stroke-width="0.8pt"><path d="M 170.3 39.37 L 182.11 39.37" style="fill:none"></path></g><g></g><g class="bml_fill_FFFFFF bml_stroke_FFFFFF" fill="#FFFFFF" stroke="#FFFFFF"><path d="M 182.11 39.37 M 183.69 39.37 C 183.69 40.24 182.98 40.94 182.11 40.94 C 181.24 40.94 180.54 40.24 180.54 39.37 C 180.54 38.5 181.24 37.8 182.11 37.8 C 182.98 37.8 183.69 38.5 183.69 39.37 Z M 182.11 39.37"></path></g><g></g><g class="bml_fill_000000 bml_stroke_000000" fill="#000000" stroke="#000000"><path d="M 182.11 39.37 M 183.69 39.37 C 183.69 40.24 182.98 40.94 182.11 40.94 C 181.24 40.94 180.54 40.24 180.54 39.37 C 180.54 38.5 181.24 37.8 182.11 37.8 C 182.98 37.8 183.69 38.5 183.69 39.37 Z M 182.11 39.37" style="fill:none"></path></g><g></g><g class="bml_fill_000000 bml_stroke_000000" fill="#000000" stroke="#000000"><path d="M 170.3 39.37 M 171.88 39.37 C 171.88 40.24 171.17 40.94 170.3 40.94 C 169.43 40.94 168.73 40.24 168.73 39.37 C 168.73 38.5 169.43 37.8 170.3 37.8 C 171.17 37.8 171.88 38.5 171.88 39.37 Z M 170.3 39.37"></path></g><g></g><g class="bml_fill_000000 bml_stroke_000000" fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 177.68 -13.4)"><foreignObject height="11.01" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="8.87"><math id="Ch4.F2.pic1.m2" class="ltx_Math" alttext="t_{2}" display="inline"><semantics><msub><mi>t</mi><mn>2</mn></msub><annotation encoding="application/x-tex">t_{2}</annotation></semantics></math></foreignObject></g><g></g><g stroke-dasharray="3.0pt,3.0pt" stroke-dashoffset="0.0pt"><path d="M 195.84 0 L 195.84 78.74" style="fill:none"></path></g><g></g><g stroke-width="0.8pt"><path d="M 182.11 78.74 L 195.84 78.74" style="fill:none"></path></g><g></g><g class="bml_fill_FFFFFF bml_stroke_FFFFFF" fill="#FFFFFF" stroke="#FFFFFF"><path d="M 195.84 78.74 M 197.42 78.74 C 197.42 79.61 196.71 80.31 195.84 80.31 C 194.97 80.31 194.27 79.61 194.27 78.74 C 194.27 77.87 194.97 77.17 195.84 77.17 C 196.71 77.17 197.42 77.87 197.42 78.74 Z M 195.84 78.74"></path></g><g></g><g class="bml_fill_000000 bml_stroke_000000" fill="#000000" stroke="#000000"><path d="M 195.84 78.74 M 197.42 78.74 C 197.42 79.61 196.71 80.31 195.84 80.31 C 194.97 80.31 194.27 79.61 194.27 78.74 C 194.27 77.87 194.97 77.17 195.84 77.17 C 196.71 77.17 197.42 77.87 197.42 78.74 Z M 195.84 78.74" style="fill:none"></path></g><g></g><g class="bml_fill_000000 bml_stroke_000000" fill="#000000" stroke="#000000"><path d="M 182.11 78.74 M 183.69 78.74 C 183.69 79.61 182.98 80.31 182.11 80.31 C 181.24 80.31 180.54 79.61 180.54 78.74 C 180.54 77.87 181.24 77.17 182.11 77.17 C 182.98 77.17 183.69 77.87 183.69 78.74 Z M 182.11 78.74"></path></g><g></g><g class="bml_fill_000000 bml_stroke_000000" fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 191.41 -13.4)"><foreignObject height="11.01" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="8.87"><math id="Ch4.F2.pic1.m3" class="ltx_Math" alttext="t_{3}" display="inline"><semantics><msub><mi>t</mi><mn>3</mn></msub><annotation encoding="application/x-tex">t_{3}</annotation></semantics></math></foreignObject></g><g></g><g stroke-dasharray="3.0pt,3.0pt" stroke-dashoffset="0.0pt"><path d="M 322.57 0 L 322.57 118.11" style="fill:none"></path></g><g></g><g stroke-width="0.8pt"><path d="M 195.84 118.11 L 322.57 118.11" style="fill:none"></path></g><g></g><g class="bml_fill_FFFFFF bml_stroke_FFFFFF" fill="#FFFFFF" stroke="#FFFFFF"><path d="M 322.57 118.11 M 324.14 118.11 C 324.14 118.98 323.44 119.68 322.57 119.68 C 321.7 119.68 320.99 118.98 320.99 118.11 C 320.99 117.24 321.7 116.54 322.57 116.54 C 323.44 116.54 324.14 117.24 324.14 118.11 Z M 322.57 118.11"></path></g><g></g><g class="bml_fill_000000 bml_stroke_000000" fill="#000000" stroke="#000000"><path d="M 322.57 118.11 M 324.14 118.11 C 324.14 118.98 323.44 119.68 322.57 119.68 C 321.7 119.68 320.99 118.98 320.99 118.11 C 320.99 117.24 321.7 116.54 322.57 116.54 C 323.44 116.54 324.14 117.24 324.14 118.11 Z M 322.57 118.11" style="fill:none"></path></g><g></g><g class="bml_fill_000000 bml_stroke_000000" fill="#000000" stroke="#000000"><path d="M 195.84 118.11 M 197.42 118.11 C 197.42 118.98 196.71 119.68 195.84 119.68 C 194.97 119.68 194.27 118.98 194.27 118.11 C 194.27 117.24 194.97 116.54 195.84 116.54 C 196.71 116.54 197.42 117.24 197.42 118.11 Z M 195.84 118.11"></path></g><g></g><g class="bml_fill_000000 bml_stroke_000000" fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 318.13 -13.4)"><foreignObject height="11.01" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="8.87"><math id="Ch4.F2.pic1.m4" class="ltx_Math" alttext="t_{4}" display="inline"><semantics><msub><mi>t</mi><mn>4</mn></msub><annotation encoding="application/x-tex">t_{4}</annotation></semantics></math></foreignObject></g><g></g><g stroke-dasharray="3.0pt,3.0pt" stroke-dashoffset="0.0pt"><path d="M 412.29 0 L 412.29 157.48" style="fill:none"></path></g><g></g><g stroke-width="0.8pt"><path d="M 322.57 157.48 L 412.29 157.48" style="fill:none"></path></g><g></g><g class="bml_fill_FFFFFF bml_stroke_FFFFFF" fill="#FFFFFF" stroke="#FFFFFF"><path d="M 412.29 157.48 M 413.86 157.48 C 413.86 158.35 413.16 159.05 412.29 159.05 C 411.42 159.05 410.71 158.35 410.71 157.48 C 410.71 156.61 411.42 155.91 412.29 155.91 C 413.16 155.91 413.86 156.61 413.86 157.48 Z M 412.29 157.48"></path></g><g></g><g class="bml_fill_000000 bml_stroke_000000" fill="#000000" stroke="#000000"><path d="M 412.29 157.48 M 413.86 157.48 C 413.86 158.35 413.16 159.05 412.29 159.05 C 411.42 159.05 410.71 158.35 410.71 157.48 C 410.71 156.61 411.42 155.91 412.29 155.91 C 413.16 155.91 413.86 156.61 413.86 157.48 Z M 412.29 157.48" style="fill:none"></path></g><g></g><g class="bml_fill_000000 bml_stroke_000000" fill="#000000" stroke="#000000"><path d="M 322.57 157.48 M 324.14 157.48 C 324.14 158.35 323.44 159.05 322.57 159.05 C 321.7 159.05 320.99 158.35 320.99 157.48 C 320.99 156.61 321.7 155.91 322.57 155.91 C 323.44 155.91 324.14 156.61 324.14 157.48 Z M 322.57 157.48"></path></g><g></g><g class="bml_fill_000000 bml_stroke_000000" fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 407.85 -13.4)"><foreignObject height="11.01" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="8.87"><math id="Ch4.F2.pic1.m5" class="ltx_Math" alttext="t_{5}" display="inline"><semantics><msub><mi>t</mi><mn>5</mn></msub><annotation encoding="application/x-tex">t_{5}</annotation></semantics></math></foreignObject></g><g></g><g stroke-dasharray="3.0pt,3.0pt" stroke-dashoffset="0.0pt"><path d="M 476.93 0 L 476.93 196.85" style="fill:none"></path></g><g></g><g stroke-width="0.8pt"><path d="M 412.29 196.85 L 476.93 196.85" style="fill:none"></path></g><g></g><g class="bml_fill_FFFFFF bml_stroke_FFFFFF" fill="#FFFFFF" stroke="#FFFFFF"><path d="M 476.93 196.85 M 478.51 196.85 C 478.51 197.72 477.8 198.42 476.93 198.42 C 476.06 198.42 475.36 197.72 475.36 196.85 C 475.36 195.98 476.06 195.28 476.93 195.28 C 477.8 195.28 478.51 195.98 478.51 196.85 Z M 476.93 196.85"></path></g><g></g><g class="bml_fill_000000 bml_stroke_000000" fill="#000000" stroke="#000000"><path d="M 476.93 196.85 M 478.51 196.85 C 478.51 197.72 477.8 198.42 476.93 198.42 C 476.06 198.42 475.36 197.72 475.36 196.85 C 475.36 195.98 476.06 195.28 476.93 195.28 C 477.8 195.28 478.51 195.98 478.51 196.85 Z M 476.93 196.85" style="fill:none"></path></g><g></g><g class="bml_fill_000000 bml_stroke_000000" fill="#000000" stroke="#000000"><path d="M 412.29 196.85 M 413.86 196.85 C 413.86 197.72 413.16 198.42 412.29 198.42 C 411.42 198.42 410.71 197.72 410.71 196.85 C 410.71 195.98 411.42 195.28 412.29 195.28 C 413.16 195.28 413.86 195.98 413.86 196.85 Z M 412.29 196.85"></path></g><g></g><g class="bml_fill_000000 bml_stroke_000000" fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 472.5 -13.4)"><foreignObject height="11.01" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="8.87"><math id="Ch4.F2.pic1.m6" class="ltx_Math" alttext="t_{6}" display="inline"><semantics><msub><mi>t</mi><mn>6</mn></msub><annotation encoding="application/x-tex">t_{6}</annotation></semantics></math></foreignObject></g><g></g><g stroke-dasharray="3.0pt,3.0pt" stroke-dashoffset="0.0pt"><path d="M 521.89 0 L 521.89 236.22" style="fill:none"></path></g><g></g><g stroke-width="0.8pt"><path d="M 476.93 236.22 L 521.89 236.22" style="fill:none"></path></g><g></g><g class="bml_fill_FFFFFF bml_stroke_FFFFFF" fill="#FFFFFF" stroke="#FFFFFF"><path d="M 521.89 236.22 M 523.46 236.22 C 523.46 237.09 522.76 237.8 521.89 237.8 C 521.02 237.8 520.31 237.09 520.31 236.22 C 520.31 235.35 521.02 234.65 521.89 234.65 C 522.76 234.65 523.46 235.35 523.46 236.22 Z M 521.89 236.22"></path></g><g></g><g class="bml_fill_000000 bml_stroke_000000" fill="#000000" stroke="#000000"><path d="M 521.89 236.22 M 523.46 236.22 C 523.46 237.09 522.76 237.8 521.89 237.8 C 521.02 237.8 520.31 237.09 520.31 236.22 C 520.31 235.35 521.02 234.65 521.89 234.65 C 522.76 234.65 523.46 235.35 523.46 236.22 Z M 521.89 236.22" style="fill:none"></path></g><g></g><g class="bml_fill_000000 bml_stroke_000000" fill="#000000" stroke="#000000"><path d="M 476.93 236.22 M 478.51 236.22 C 478.51 237.09 477.8 237.8 476.93 237.8 C 476.06 237.8 475.36 237.09 475.36 236.22 C 475.36 235.35 476.06 234.65 476.93 234.65 C 477.8 234.65 478.51 235.35 478.51 236.22 Z M 476.93 236.22"></path></g><g></g><g class="bml_fill_000000 bml_stroke_000000" fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 517.45 -13.4)"><foreignObject height="11.01" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="8.87"><math id="Ch4.F2.pic1.m7" class="ltx_Math" alttext="t_{7}" display="inline"><semantics><msub><mi>t</mi><mn>7</mn></msub><annotation encoding="application/x-tex">t_{7}</annotation></semantics></math></foreignObject></g><g></g></g></g></svg></div>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figura 4.2: </span>A função <math id="Ch4.F2.m3" class="ltx_Math" alttext="N_{t}" display="inline"><semantics><msub><mi>N</mi><mi>t</mi></msub><annotation encoding="application/x-tex">N_{t}</annotation></semantics></math> definindo o número de chegadas do Processo de pontos de Poisson.
+Note que <math id="Ch4.F2.m4" class="ltx_Math" alttext="N" display="inline"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math> é càdlàg.</figcaption>
+</figure>
+<div id="p8" class="ltx_para">
+<p class="ltx_p">Poderíamos nos perguntar qual é a <math id="p8.m1" class="ltx_Math" alttext="\sigma" display="inline"><semantics><mi>σ</mi><annotation encoding="application/x-tex">\sigma</annotation></semantics></math>-álgebra que estamos considerando no espaço <math id="p8.m2" class="ltx_Math" alttext="\mathcal{D}\big{(}[0,\infty)\big{)}" display="inline"><semantics><mrow><mi class="ltx_font_mathcaligraphic">𝒟</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mo stretchy="false">[</mo><mn>0</mn><mo>,</mo><mi mathvariant="normal">∞</mi><mo stretchy="false">)</mo></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mathcal{D}\big{(}[0,\infty)\big{)}</annotation></semantics></math>, essa é uma interessante questão que deve ser abordada em estudos mais profundos desse espaço.
+Mas por enquanto será suficiente considerarmos a <math id="p8.m3" class="ltx_Math" alttext="\sigma" display="inline"><semantics><mi>σ</mi><annotation encoding="application/x-tex">\sigma</annotation></semantics></math>-álgebra induzida pelo mapa <math id="p8.m4" class="ltx_Math" alttext="\Gamma" display="inline"><semantics><mi mathvariant="normal">Γ</mi><annotation encoding="application/x-tex">\Gamma</annotation></semantics></math> (a maior que ainda o deixa mensurável).</p>
+</div>
+<div id="p9" class="ltx_para">
+<p class="ltx_p">Estamos prontos agora pra definir o nosso processo.</p>
+</div>
+<div id="p10" class="ltx_para">
+<span class="ltx_ERROR undefined">{definition}</span>
+<p class="ltx_p">Fixado <math id="p10.m1" class="ltx_Math" alttext="\lambda&gt;0" display="inline"><semantics><mrow><mi>λ</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\lambda&gt;0</annotation></semantics></math>, definimos um Processo de Poisson em <math id="p10.m2" class="ltx_Math" alttext="\mathbb{R}" display="inline"><semantics><mi>ℝ</mi><annotation encoding="application/x-tex">\mathbb{R}</annotation></semantics></math> com parâmetro <math id="p10.m3" class="ltx_Math" alttext="\lambda" display="inline"><semantics><mi>λ</mi><annotation encoding="application/x-tex">\lambda</annotation></semantics></math> como a lei <math id="p10.m4" class="ltx_Math" alttext="\mathbb{P}_{\lambda}" display="inline"><semantics><msub><mi>ℙ</mi><mi>λ</mi></msub><annotation encoding="application/x-tex">\mathbb{P}_{\lambda}</annotation></semantics></math> em <math id="p10.m5" class="ltx_Math" alttext="\mathcal{D}\big{(}[0,\infty)\big{)}" display="inline"><semantics><mrow><mi class="ltx_font_mathcaligraphic">𝒟</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mo stretchy="false">[</mo><mn>0</mn><mo>,</mo><mi mathvariant="normal">∞</mi><mo stretchy="false">)</mo></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mathcal{D}\big{(}[0,\infty)\big{)}</annotation></semantics></math>, dada por <math id="p10.m6" class="ltx_Math" alttext="\Gamma\circ\Exp(\lambda)^{\otimes\mathbb{N}}" display="inline"><semantics><mrow><mrow><mi mathvariant="normal">Γ</mi><mo lspace="0.222em" rspace="0.222em">∘</mo><merror class="ltx_ERROR undefined undefined"><mtext>\Exp</mtext></merror></mrow><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mi>λ</mi><mo stretchy="false">)</mo></mrow><mrow><mi></mi><mo lspace="0.222em" rspace="0.222em">⊗</mo><mi>ℕ</mi></mrow></msup></mrow><annotation encoding="application/x-tex">\Gamma\circ\Exp(\lambda)^{\otimes\mathbb{N}}</annotation></semantics></math>.
+Ou em outras palavras, o processo de contagem de chegadas <math id="p10.m7" class="ltx_Math" alttext="N_{t}" display="inline"><semantics><msub><mi>N</mi><mi>t</mi></msub><annotation encoding="application/x-tex">N_{t}</annotation></semantics></math>, no qual os intervalos entre chegadas são independentes e distribuídos como <math id="p10.m8" class="ltx_Math" alttext="\Exp(\lambda)" display="inline"><semantics><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\Exp</mtext></merror><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>λ</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\Exp(\lambda)</annotation></semantics></math>.</p>
+</div>
+<div id="p11" class="ltx_para">
+<p class="ltx_p">Lembramos que como de costume definimos <math id="p11.m1" class="ltx_Math" alttext="X_{1},X_{2},\dots" display="inline"><semantics><mrow><msub><mi>X</mi><mn>1</mn></msub><mo>,</mo><msub><mi>X</mi><mn>2</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi></mrow><annotation encoding="application/x-tex">X_{1},X_{2},\dots</annotation></semantics></math> como sendo as projeções canônicas em <math id="p11.m2" class="ltx_Math" alttext="\mathbb{R}^{\mathbb{N}}" display="inline"><semantics><msup><mi>ℝ</mi><mi>ℕ</mi></msup><annotation encoding="application/x-tex">\mathbb{R}^{\mathbb{N}}</annotation></semantics></math> onde definimos <math id="p11.m3" class="ltx_Math" alttext="\Exp(\lambda)^{\otimes\mathbb{N}}" display="inline"><semantics><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\Exp</mtext></merror><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mi>λ</mi><mo stretchy="false">)</mo></mrow><mrow><mi></mi><mo lspace="0.222em" rspace="0.222em">⊗</mo><mi>ℕ</mi></mrow></msup></mrow><annotation encoding="application/x-tex">\Exp(\lambda)^{\otimes\mathbb{N}}</annotation></semantics></math>.
+Como esses representam os intervalos entre chegadas, definimos também</p>
+<div id="Ch4.E61" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.E61.m1" class="ltx_Math" alttext="T_{k}=\sum_{i=1}^{k}X_{i},\text{ para $k\geq 1$}." display="block"><semantics><mrow><mrow><msub><mi>T</mi><mi>k</mi></msub><mo rspace="0.111em">=</mo><mrow><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>k</mi></munderover><msub><mi>X</mi><mi>i</mi></msub></mrow><mo>,</mo><mrow><mtext> para </mtext><mrow><mi>k</mi><mo>≥</mo><mn>1</mn></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">T_{k}=\sum_{i=1}^{k}X_{i},\text{ para $k\geq 1$}.</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.61)</span>
+            
+            
+          
+</div>
+</div>
+<div id="p12" class="ltx_para">
+<p class="ltx_p">Podemos agora enunciar o primeiro lema, que nos fornece a distribuição do número de chegadas em um dado tempo <math id="p12.m1" class="ltx_Math" alttext="t\geq 0" display="inline"><semantics><mrow><mi>t</mi><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">t\geq 0</annotation></semantics></math>.</p>
+</div>
+<div id="p13" class="ltx_para">
+<span class="ltx_ERROR undefined">{lemma}</span>
+<p class="ltx_p">Se <math id="p13.m1" class="ltx_Math" alttext="\lambda&gt;0" display="inline"><semantics><mrow><mi>λ</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\lambda&gt;0</annotation></semantics></math> e <math id="p13.m2" class="ltx_Math" alttext="t\geq 0" display="inline"><semantics><mrow><mi>t</mi><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">t\geq 0</annotation></semantics></math>, então <math id="p13.m3" class="ltx_Math" alttext="N_{t}\distr\Poisson(\lambda t)" display="inline"><semantics><mrow><msub><mi>N</mi><mi>t</mi></msub><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\distr</mtext></merror><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\Poisson</mtext></merror><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>λ</mi><mo>⁢</mo><mi>t</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">N_{t}\distr\Poisson(\lambda t)</annotation></semantics></math> sob <math id="p13.m4" class="ltx_Math" alttext="\mathbb{P}_{\lambda}" display="inline"><semantics><msub><mi>ℙ</mi><mi>λ</mi></msub><annotation encoding="application/x-tex">\mathbb{P}_{\lambda}</annotation></semantics></math>.</p>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demonstração.</h6>
+<div id="p14" class="ltx_para">
+<p class="ltx_p">Vamos primeiramente ver que</p>
+<div id="Ch4.E62" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.E62.m1" class="ltx_Math" alttext="\mathbb{P}_{\lambda}[N_{t}=0]=\mathbb{P}_{\lambda}[X_{1}&gt;t]=e^{-\lambda t}," display="block"><semantics><mrow><mrow><mrow><msub><mi>ℙ</mi><mi>λ</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><msub><mi>N</mi><mi>t</mi></msub><mo>=</mo><mn>0</mn></mrow><mo stretchy="false">]</mo></mrow></mrow><mo>=</mo><mrow><msub><mi>ℙ</mi><mi>λ</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><msub><mi>X</mi><mn>1</mn></msub><mo>&gt;</mo><mi>t</mi></mrow><mo stretchy="false">]</mo></mrow></mrow><mo>=</mo><msup><mi>e</mi><mrow><mo>−</mo><mrow><mi>λ</mi><mo>⁢</mo><mi>t</mi></mrow></mrow></msup></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\mathbb{P}_{\lambda}[N_{t}=0]=\mathbb{P}_{\lambda}[X_{1}&gt;t]=e^{-\lambda t},</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.62)</span>
+              
+              
+            
+</div>
+<p class="ltx_p">que coincide com o caso poissoniano.</p>
+</div>
+<div id="p15" class="ltx_para">
+<p class="ltx_p">Para verificar o caso arbitrário <math id="p15.m1" class="ltx_Math" alttext="[N_{t}=k]" display="inline"><semantics><mrow><mo stretchy="false">[</mo><mrow><msub><mi>N</mi><mi>t</mi></msub><mo>=</mo><mi>k</mi></mrow><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[N_{t}=k]</annotation></semantics></math>, utilizaremos indução e os resultados de esperança condicional regular que vimos anteriormente.
+Primeiro, observe que se <math id="p15.m2" class="ltx_Math" alttext="x_{1}&gt;s" display="inline"><semantics><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>&gt;</mo><mi>s</mi></mrow><annotation encoding="application/x-tex">x_{1}&gt;s</annotation></semantics></math>, então</p>
+<div id="Ch4.E63" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.E63.m1" class="ltx_Math" alttext="\Gamma(x_{1},x_{2},\dots)(r-s)=\Gamma(x_{1}-s,x_{2},\dots)(r)." display="block"><semantics><mrow><mrow><mrow><mi mathvariant="normal">Γ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><msub><mi>x</mi><mn>2</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>r</mi><mo>−</mo><mi>s</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi mathvariant="normal">Γ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>−</mo><mi>s</mi></mrow><mo>,</mo><msub><mi>x</mi><mn>2</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\Gamma(x_{1},x_{2},\dots)(r-s)=\Gamma(x_{1}-s,x_{2},\dots)(r).</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.63)</span>
+              
+              
+            
+</div>
+<p class="ltx_p">Logo,</p>
+<div id="Ch4.Ex5" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.Ex5.m1" class="ltx_Math" alttext="\begin{array}[]{e}\mathbb{P}_{\lambda}[N_{t}=k]&amp;=&amp;\mathbb{P}_{\lambda}[X_{1}%
+\leq t,\Gamma(X_{2},X_{3},\dots)(t-X_{1})=k-1]\\
+&amp;=&amp;\mathbb{E}_{\lambda}\Big{[}\1_{X_{1}\leq t}\mathbb{P}_{\lambda}[\Gamma(X_{2%
+},X_{3},\dots)(t-X_{1})=k-1|X_{1}]\Big{]}\\
+&amp;\overset{\textnormal{Subst.}}{=}&amp;\mathbb{E}_{\lambda}\Big{[}\1_{X_{1}\leq t}%
+\mathbb{P}_{\lambda}[\Gamma(X_{2},X_{3},\dots)(t-x_{1})=k-1|X_{1}=x_{1}]\circ X%
+_{1}\Big{]}\\
+&amp;\overset{\textnormal{induc.}}{=}&amp;\mathbb{E}_{\lambda}\Big{[}\1_{X_{1}\leq t}%
+\big{(}\Poisson(\lambda(t-x_{1}))(\{k-1\})\big{)}\circ X_{1}\Big{]}\\
+&amp;=&amp;\mathbb{E}_{\lambda}\Big{[}\1_{X_{1}\leq t}\frac{(\lambda(t-X_{1}))^{k-1}e^%
+{-\lambda(t-X_{1})}}{(k-1)!}\Big{]}\\
+&amp;=&amp;\int_{0}^{t}\frac{(\lambda(t-x_{1}))^{k-1}e^{-\lambda(t-x_{1})}}{(k-1)!}%
+\lambda e^{-\lambda x_{1}}\d{x}_{1}=\frac{\lambda^{k}e^{-\lambda t}}{(k-1)!}%
+\frac{t^{k}}{k},\end{array}" display="block"><semantics><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd><mrow><msub><mi>ℙ</mi><mi>λ</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><msub><mi>N</mi><mi>t</mi></msub><mo>=</mo><mi>k</mi></mrow><mo stretchy="false">]</mo></mrow></mrow></mtd><mtd><mo>=</mo></mtd><mtd><mrow><msub><mi>ℙ</mi><mi>λ</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><mrow><msub><mi>X</mi><mn>1</mn></msub><mo>≤</mo><mi>t</mi></mrow><mo>,</mo><mrow><mrow><mi mathvariant="normal">Γ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>X</mi><mn>2</mn></msub><mo>,</mo><msub><mi>X</mi><mn>3</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>t</mi><mo>−</mo><msub><mi>X</mi><mn>1</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></mrow></mrow><mo stretchy="false">]</mo></mrow></mrow></mtd></mtr><mtr><mtd></mtd><mtd><mo>=</mo></mtd><mtd><mrow><msub><mi>𝔼</mi><mi>λ</mi></msub><mo>⁢</mo><mrow><mo maxsize="160%" minsize="160%">[</mo><mrow><msub><merror class="ltx_ERROR undefined undefined"><mtext>\1</mtext></merror><mrow><msub><mi>X</mi><mn>1</mn></msub><mo>≤</mo><mi>t</mi></mrow></msub><mo>⁢</mo><msub><mi>ℙ</mi><mi>λ</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><mrow><mi mathvariant="normal">Γ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>X</mi><mn>2</mn></msub><mo>,</mo><msub><mi>X</mi><mn>3</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>t</mi><mo>−</mo><msub><mi>X</mi><mn>1</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>k</mi><mo>−</mo><mrow><mn>1</mn><mo fence="false">|</mo><msub><mi>X</mi><mn>1</mn></msub></mrow></mrow></mrow><mo stretchy="false">]</mo></mrow></mrow><mo maxsize="160%" minsize="160%">]</mo></mrow></mrow></mtd></mtr><mtr><mtd></mtd><mtd><mover accent="true"><mo>=</mo><mtext>Subst.</mtext></mover></mtd><mtd><mrow><msub><mi>𝔼</mi><mi>λ</mi></msub><mo>⁢</mo><mrow><mo maxsize="160%" minsize="160%">[</mo><mrow><mrow><msub><merror class="ltx_ERROR undefined undefined"><mtext>\1</mtext></merror><mrow><msub><mi>X</mi><mn>1</mn></msub><mo>≤</mo><mi>t</mi></mrow></msub><mo>⁢</mo><msub><mi>ℙ</mi><mi>λ</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><mrow><mi mathvariant="normal">Γ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>X</mi><mn>2</mn></msub><mo>,</mo><msub><mi>X</mi><mn>3</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>t</mi><mo>−</mo><msub><mi>x</mi><mn>1</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>k</mi><mo>−</mo><mrow><mn>1</mn><mo fence="false">|</mo><msub><mi>X</mi><mn>1</mn></msub></mrow></mrow><mo>=</mo><msub><mi>x</mi><mn>1</mn></msub></mrow><mo rspace="0.055em" stretchy="false">]</mo></mrow></mrow><mo rspace="0.222em">∘</mo><msub><mi>X</mi><mn>1</mn></msub></mrow><mo maxsize="160%" minsize="160%">]</mo></mrow></mrow></mtd></mtr><mtr><mtd></mtd><mtd><mover accent="true"><mo>=</mo><mtext>induc.</mtext></mover></mtd><mtd><mrow><msub><mi>𝔼</mi><mi>λ</mi></msub><mo>⁢</mo><mrow><mo maxsize="160%" minsize="160%">[</mo><mrow><mrow><msub><merror class="ltx_ERROR undefined undefined"><mtext>\1</mtext></merror><mrow><msub><mi>X</mi><mn>1</mn></msub><mo>≤</mo><mi>t</mi></mrow></msub><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\Poisson</mtext></merror><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>λ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>t</mi><mo>−</mo><msub><mi>x</mi><mn>1</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mo stretchy="false">{</mo><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">}</mo></mrow><mo stretchy="false">)</mo></mrow></mrow><mo maxsize="120%" minsize="120%" rspace="0.055em">)</mo></mrow></mrow><mo rspace="0.222em">∘</mo><msub><mi>X</mi><mn>1</mn></msub></mrow><mo maxsize="160%" minsize="160%">]</mo></mrow></mrow></mtd></mtr><mtr><mtd></mtd><mtd><mo>=</mo></mtd><mtd><mrow><msub><mi>𝔼</mi><mi>λ</mi></msub><mo>⁢</mo><mrow><mo maxsize="160%" minsize="160%">[</mo><mrow><msub><merror class="ltx_ERROR undefined undefined"><mtext>\1</mtext></merror><mrow><msub><mi>X</mi><mn>1</mn></msub><mo>≤</mo><mi>t</mi></mrow></msub><mo>⁢</mo><mstyle displaystyle="false"><mfrac><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>λ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>t</mi><mo>−</mo><msub><mi>X</mi><mn>1</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></msup><mo>⁢</mo><msup><mi>e</mi><mrow><mo>−</mo><mrow><mi>λ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>t</mi><mo>−</mo><msub><mi>X</mi><mn>1</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></msup></mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>!</mo></mrow></mfrac></mstyle></mrow><mo maxsize="160%" minsize="160%">]</mo></mrow></mrow></mtd></mtr><mtr><mtd></mtd><mtd><mo>=</mo></mtd><mtd><mrow><mrow><mrow><mstyle displaystyle="false"><msubsup><mo>∫</mo><mn>0</mn><mi>t</mi></msubsup></mstyle><mrow><mstyle displaystyle="false"><mfrac><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>λ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>t</mi><mo>−</mo><msub><mi>x</mi><mn>1</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></msup><mo>⁢</mo><msup><mi>e</mi><mrow><mo>−</mo><mrow><mi>λ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>t</mi><mo>−</mo><msub><mi>x</mi><mn>1</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></msup></mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>!</mo></mrow></mfrac></mstyle><mo>⁢</mo><mi>λ</mi><mo>⁢</mo><msup><mi>e</mi><mrow><mo>−</mo><mrow><mi>λ</mi><mo>⁢</mo><msub><mi>x</mi><mn>1</mn></msub></mrow></mrow></msup><mo>⁢</mo><msub><munder accentunder="true"><mtext>x</mtext><mo>⋅</mo></munder><mn>1</mn></msub></mrow></mrow><mo>=</mo><mrow><mstyle displaystyle="false"><mfrac><mrow><msup><mi>λ</mi><mi>k</mi></msup><mo>⁢</mo><msup><mi>e</mi><mrow><mo>−</mo><mrow><mi>λ</mi><mo>⁢</mo><mi>t</mi></mrow></mrow></msup></mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>!</mo></mrow></mfrac></mstyle><mo>⁢</mo><mstyle displaystyle="false"><mfrac><msup><mi>t</mi><mi>k</mi></msup><mi>k</mi></mfrac></mstyle></mrow></mrow><mo>,</mo></mrow></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{array}[]{e}\mathbb{P}_{\lambda}[N_{t}=k]&amp;=&amp;\mathbb{P}_{\lambda}[X_{1}%
+\leq t,\Gamma(X_{2},X_{3},\dots)(t-X_{1})=k-1]\\
+&amp;=&amp;\mathbb{E}_{\lambda}\Big{[}\1_{X_{1}\leq t}\mathbb{P}_{\lambda}[\Gamma(X_{2%
+},X_{3},\dots)(t-X_{1})=k-1|X_{1}]\Big{]}\\
+&amp;\overset{\textnormal{Subst.}}{=}&amp;\mathbb{E}_{\lambda}\Big{[}\1_{X_{1}\leq t}%
+\mathbb{P}_{\lambda}[\Gamma(X_{2},X_{3},\dots)(t-x_{1})=k-1|X_{1}=x_{1}]\circ X%
+_{1}\Big{]}\\
+&amp;\overset{\textnormal{induc.}}{=}&amp;\mathbb{E}_{\lambda}\Big{[}\1_{X_{1}\leq t}%
+\big{(}\Poisson(\lambda(t-x_{1}))(\{k-1\})\big{)}\circ X_{1}\Big{]}\\
+&amp;=&amp;\mathbb{E}_{\lambda}\Big{[}\1_{X_{1}\leq t}\frac{(\lambda(t-X_{1}))^{k-1}e^%
+{-\lambda(t-X_{1})}}{(k-1)!}\Big{]}\\
+&amp;=&amp;\int_{0}^{t}\frac{(\lambda(t-x_{1}))^{k-1}e^{-\lambda(t-x_{1})}}{(k-1)!}%
+\lambda e^{-\lambda x_{1}}\d{x}_{1}=\frac{\lambda^{k}e^{-\lambda t}}{(k-1)!}%
+\frac{t^{k}}{k},\end{array}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">como queríamos demonstrar.
+∎</p>
+</div>
+</div>
+<div class="ltx_pagination ltx_role_newpage"></div>
+<div id="p16" class="ltx_para">
+<p class="ltx_p">Um outro resultado importante sobre esses processos se relaciona ao fato de reiniciar o sistema em tempo <math id="p16.m1" class="ltx_Math" alttext="t&gt;0" display="inline"><semantics><mrow><mi>t</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">t&gt;0</annotation></semantics></math>.
+Isso é feito com o seguinte mapa <math id="p16.m2" class="ltx_Math" alttext="\theta_{t}:\mathcal{D}\big{(}[0,\infty)\big{)}\to\mathcal{D}\big{(}[0,\infty)%
+\big{)}" display="inline"><semantics><mrow><msub><mi>θ</mi><mi>t</mi></msub><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mrow><mi class="ltx_font_mathcaligraphic">𝒟</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mo stretchy="false">[</mo><mn>0</mn><mo>,</mo><mi mathvariant="normal">∞</mi><mo stretchy="false">)</mo></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo stretchy="false">→</mo><mrow><mi class="ltx_font_mathcaligraphic">𝒟</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mo stretchy="false">[</mo><mn>0</mn><mo>,</mo><mi mathvariant="normal">∞</mi><mo stretchy="false">)</mo></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\theta_{t}:\mathcal{D}\big{(}[0,\infty)\big{)}\to\mathcal{D}\big{(}[0,\infty)%
+\big{)}</annotation></semantics></math>, que leva <math id="p16.m3" class="ltx_Math" alttext="N" display="inline"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math> em</p>
+<div id="Ch4.E64" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.E64.m1" class="ltx_Math" alttext="\theta_{t}(N)(s)=N_{s+t}-N_{t}." display="block"><semantics><mrow><mrow><mrow><msub><mi>θ</mi><mi>t</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>N</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>s</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msub><mi>N</mi><mrow><mi>s</mi><mo>+</mo><mi>t</mi></mrow></msub><mo>−</mo><msub><mi>N</mi><mi>t</mi></msub></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\theta_{t}(N)(s)=N_{s+t}-N_{t}.</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.64)</span>
+            
+            
+          
+</div>
+</div>
+<div id="p17" class="ltx_para">
+<span class="ltx_ERROR undefined">{exercise}</span>
+<p class="ltx_p">Mostre que o mapa <math id="p17.m1" class="ltx_Math" alttext="\theta_{t}" display="inline"><semantics><msub><mi>θ</mi><mi>t</mi></msub><annotation encoding="application/x-tex">\theta_{t}</annotation></semantics></math> é mensurável.</p>
+</div>
+<div id="p18" class="ltx_para">
+<span class="ltx_ERROR undefined">{lemma}</span>
+<p class="ltx_p">Fixe <math id="p18.m1" class="ltx_Math" alttext="\lambda,t&gt;0" display="inline"><semantics><mrow><mrow><mi>λ</mi><mo>,</mo><mi>t</mi></mrow><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\lambda,t&gt;0</annotation></semantics></math> e seja <math id="p18.m2" class="ltx_Math" alttext="N" display="inline"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math> um processo de Poisson de taxa <math id="p18.m3" class="ltx_Math" alttext="\lambda" display="inline"><semantics><mi>λ</mi><annotation encoding="application/x-tex">\lambda</annotation></semantics></math>.
+Então, para <math id="p18.m4" class="ltx_Math" alttext="k\in\mathbb{Z}_{+}" display="inline"><semantics><mrow><mi>k</mi><mo>∈</mo><msub><mi>ℤ</mi><mo>+</mo></msub></mrow><annotation encoding="application/x-tex">k\in\mathbb{Z}_{+}</annotation></semantics></math> e <math id="p18.m5" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> mensurável,</p>
+<div id="Ch4.E65" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.E65.m1" class="ltx_Math" alttext="\mathbb{P}_{\lambda}[N_{t}=k,\theta_{t}\circ N\in A]=\mathbb{P}_{\lambda}[N_{t%
+}=k]\mathbb{P}_{\lambda}[N\in A]." display="block"><semantics><mrow><mrow><mrow><msub><mi>ℙ</mi><mi>λ</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><mrow><msub><mi>N</mi><mi>t</mi></msub><mo>=</mo><mi>k</mi></mrow><mo>,</mo><mrow><mrow><msub><mi>θ</mi><mi>t</mi></msub><mo lspace="0.222em" rspace="0.222em">∘</mo><mi>N</mi></mrow><mo>∈</mo><mi>A</mi></mrow></mrow><mo stretchy="false">]</mo></mrow></mrow><mo>=</mo><mrow><msub><mi>ℙ</mi><mi>λ</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><msub><mi>N</mi><mi>t</mi></msub><mo>=</mo><mi>k</mi></mrow><mo stretchy="false">]</mo></mrow><mo>⁢</mo><msub><mi>ℙ</mi><mi>λ</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><mi>N</mi><mo>∈</mo><mi>A</mi></mrow><mo stretchy="false">]</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\mathbb{P}_{\lambda}[N_{t}=k,\theta_{t}\circ N\in A]=\mathbb{P}_{\lambda}[N_{t%
+}=k]\mathbb{P}_{\lambda}[N\in A].</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.65)</span>
+            
+            
+          
+</div>
+</div>
+<div id="p19" class="ltx_para">
+<p class="ltx_p">Em particular, isso mostra que a distribuição do processo de Poisson <math id="p19.m1" class="ltx_Math" alttext="N" display="inline"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math> é invariante pelo mapa <math id="p19.m2" class="ltx_Math" alttext="\theta_{t}" display="inline"><semantics><msub><mi>θ</mi><mi>t</mi></msub><annotation encoding="application/x-tex">\theta_{t}</annotation></semantics></math>.</p>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demonstração.</h6>
+<div id="p20" class="ltx_para">
+<p class="ltx_p">Começamos reescrevendo o evento e condicionando em <math id="p20.m1" class="ltx_Math" alttext="T_{k}" display="inline"><semantics><msub><mi>T</mi><mi>k</mi></msub><annotation encoding="application/x-tex">T_{k}</annotation></semantics></math> como abaixo</p>
+<div id="Ch4.Ex6" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.Ex6.m1" class="ltx_Math" alttext="\begin{split}\mathbb{P}_{\lambda}&amp;[N_{t}=k,\theta_{t}\circ N\in A]\\
+&amp;=\mathbb{P}_{\lambda}[T_{k}\leq t,T_{k+1}&gt;t,\theta_{t}\circ N\in A]\\
+&amp;=\mathbb{E}_{\lambda}\big{[}{\bf 1}_{T_{k}\leq t}\mathbb{E}_{\lambda}[X_{k+1}%
+&gt;t-t_{k},\theta_{t}\circ N\in A|T_{k}=t_{k}]\circ T_{k}\big{]}\\
+&amp;=\mathbb{E}_{\lambda}\Big{[}{\bf 1}_{T_{k}\leq t}\mathbb{E}_{\lambda}\big{[}X%
+_{k+1}&gt;t-t_{k},\Gamma(X_{k+1}-(t-t_{k}),X_{k+2},X_{k+3},\dots)\in A|T_{k}=t_{k%
+}\big{]}\circ T_{k}\Big{]},\\
+\intertext{que, usando que $X_{i}$ s\~{a}o independentes e $X_{k+1}$ n\~{a}o %
+tem sem mem\'{o}ria, \'{e} igual a}&amp;=\mathbb{E}_{\lambda}\Big{[}{\bf 1}_{T_{k}%
+\leq t}\mathbb{P}_{\lambda}\big{[}X_{k+1}&gt;t-t_{k}|T_{k}=t_{k}\big{]}\circ T_{k%
+}\Big{]}\mathbb{P}_{\lambda}[N\in A]\\
+&amp;=\mathbb{P}_{\lambda}[N_{t}=t]\mathbb{P}_{\lambda}[N\in A],\end{split}" display="block"><semantics><mtable columnspacing="0pt" displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_align_right" columnalign="right"><msub><mi>ℙ</mi><mi>λ</mi></msub></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mo stretchy="false">[</mo><mrow><mrow><msub><mi>N</mi><mi>t</mi></msub><mo>=</mo><mi>k</mi></mrow><mo>,</mo><mrow><mrow><msub><mi>θ</mi><mi>t</mi></msub><mo lspace="0.222em" rspace="0.222em">∘</mo><mi>N</mi></mrow><mo>∈</mo><mi>A</mi></mrow></mrow><mo stretchy="false">]</mo></mrow></mtd></mtr><mtr><mtd></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mi></mi><mo>=</mo><mrow><msub><mi>ℙ</mi><mi>λ</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><mrow><msub><mi>T</mi><mi>k</mi></msub><mo>≤</mo><mi>t</mi></mrow><mo>,</mo><mrow><mrow><msub><mi>T</mi><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>&gt;</mo><mi>t</mi></mrow><mo>,</mo><mrow><mrow><msub><mi>θ</mi><mi>t</mi></msub><mo lspace="0.222em" rspace="0.222em">∘</mo><mi>N</mi></mrow><mo>∈</mo><mi>A</mi></mrow></mrow></mrow><mo stretchy="false">]</mo></mrow></mrow></mrow></mtd></mtr><mtr><mtd></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mi></mi><mo>=</mo><mrow><msub><mi>𝔼</mi><mi>λ</mi></msub><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">[</mo><mrow><mrow><msub><mn>𝟏</mn><mrow><msub><mi>T</mi><mi>k</mi></msub><mo>≤</mo><mi>t</mi></mrow></msub><mo>⁢</mo><msub><mi>𝔼</mi><mi>λ</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><mrow><msub><mi>X</mi><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>&gt;</mo><mrow><mi>t</mi><mo>−</mo><msub><mi>t</mi><mi>k</mi></msub></mrow></mrow><mo>,</mo><mrow><mrow><msub><mi>θ</mi><mi>t</mi></msub><mo lspace="0.222em" rspace="0.222em">∘</mo><mi>N</mi></mrow><mo>∈</mo><mrow><mi>A</mi><mo fence="false">|</mo><msub><mi>T</mi><mi>k</mi></msub></mrow><mo>=</mo><msub><mi>t</mi><mi>k</mi></msub></mrow></mrow><mo rspace="0.055em" stretchy="false">]</mo></mrow></mrow><mo rspace="0.222em">∘</mo><msub><mi>T</mi><mi>k</mi></msub></mrow><mo maxsize="120%" minsize="120%">]</mo></mrow></mrow></mrow></mtd></mtr><mtr><mtd></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mi></mi><mo>=</mo><mrow><msub><mi>𝔼</mi><mi>λ</mi></msub><mo>⁢</mo><mrow><mo maxsize="160%" minsize="160%">[</mo><mrow><mrow><msub><mn>𝟏</mn><mrow><msub><mi>T</mi><mi>k</mi></msub><mo>≤</mo><mi>t</mi></mrow></msub><mo>⁢</mo><msub><mi>𝔼</mi><mi>λ</mi></msub><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">[</mo><mrow><mrow><msub><mi>X</mi><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>&gt;</mo><mrow><mi>t</mi><mo>−</mo><msub><mi>t</mi><mi>k</mi></msub></mrow></mrow><mo>,</mo><mrow><mrow><mi mathvariant="normal">Γ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>X</mi><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>−</mo><mrow><mo stretchy="false">(</mo><mrow><mi>t</mi><mo>−</mo><msub><mi>t</mi><mi>k</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>,</mo><msub><mi>X</mi><mrow><mi>k</mi><mo>+</mo><mn>2</mn></mrow></msub><mo>,</mo><msub><mi>X</mi><mrow><mi>k</mi><mo>+</mo><mn>3</mn></mrow></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo stretchy="false">)</mo></mrow></mrow><mo>∈</mo><mrow><mi>A</mi><mo fence="false">|</mo><msub><mi>T</mi><mi>k</mi></msub></mrow><mo>=</mo><msub><mi>t</mi><mi>k</mi></msub></mrow></mrow><mo maxsize="120%" minsize="120%" rspace="0.055em">]</mo></mrow></mrow><mo rspace="0.222em">∘</mo><msub><mi>T</mi><mi>k</mi></msub></mrow><mo maxsize="160%" minsize="160%">]</mo></mrow></mrow></mrow><mo>,</mo></mrow></mtd></mtr><mtr><mtd class="ltx_align_right" columnalign="right"><mtext class="ltx_intertext">que, usando que 
+                            
+                              
+                                
+                                X
+                                i
+                              
+                            
+                           são independentes e 
+                            
+                              
+                                
+                                X
+                                
+                                  +
+                                  k
+                                  1
+                                
+                              
+                            
+                           não tem sem memória, é igual a</mtext></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mi></mi><mo>=</mo><mrow><msub><mi>𝔼</mi><mi>λ</mi></msub><mo>⁢</mo><mrow><mo maxsize="160%" minsize="160%">[</mo><mrow><mrow><msub><mn>𝟏</mn><mrow><msub><mi>T</mi><mi>k</mi></msub><mo>≤</mo><mi>t</mi></mrow></msub><mo>⁢</mo><msub><mi>ℙ</mi><mi>λ</mi></msub><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">[</mo><mrow><msub><mi>X</mi><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>&gt;</mo><mrow><mi>t</mi><mo>−</mo><mrow><msub><mi>t</mi><mi>k</mi></msub><mo fence="false">|</mo><msub><mi>T</mi><mi>k</mi></msub></mrow></mrow><mo>=</mo><msub><mi>t</mi><mi>k</mi></msub></mrow><mo maxsize="120%" minsize="120%" rspace="0.055em">]</mo></mrow></mrow><mo rspace="0.222em">∘</mo><msub><mi>T</mi><mi>k</mi></msub></mrow><mo maxsize="160%" minsize="160%">]</mo></mrow><mo>⁢</mo><msub><mi>ℙ</mi><mi>λ</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><mi>N</mi><mo>∈</mo><mi>A</mi></mrow><mo stretchy="false">]</mo></mrow></mrow></mrow></mtd></mtr><mtr><mtd></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mi></mi><mo>=</mo><mrow><msub><mi>ℙ</mi><mi>λ</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><msub><mi>N</mi><mi>t</mi></msub><mo>=</mo><mi>t</mi></mrow><mo stretchy="false">]</mo></mrow><mo>⁢</mo><msub><mi>ℙ</mi><mi>λ</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><mi>N</mi><mo>∈</mo><mi>A</mi></mrow><mo stretchy="false">]</mo></mrow></mrow></mrow><mo>,</mo></mrow></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{split}\mathbb{P}_{\lambda}&amp;[N_{t}=k,\theta_{t}\circ N\in A]\\
+&amp;=\mathbb{P}_{\lambda}[T_{k}\leq t,T_{k+1}&gt;t,\theta_{t}\circ N\in A]\\
+&amp;=\mathbb{E}_{\lambda}\big{[}{\bf 1}_{T_{k}\leq t}\mathbb{E}_{\lambda}[X_{k+1}%
+&gt;t-t_{k},\theta_{t}\circ N\in A|T_{k}=t_{k}]\circ T_{k}\big{]}\\
+&amp;=\mathbb{E}_{\lambda}\Big{[}{\bf 1}_{T_{k}\leq t}\mathbb{E}_{\lambda}\big{[}X%
+_{k+1}&gt;t-t_{k},\Gamma(X_{k+1}-(t-t_{k}),X_{k+2},X_{k+3},\dots)\in A|T_{k}=t_{k%
+}\big{]}\circ T_{k}\Big{]},\\
+\intertext{que, usando que $X_{i}$ s\~{a}o independentes e $X_{k+1}$ n\~{a}o %
+tem sem mem\'{o}ria, \'{e} igual a}&amp;=\mathbb{E}_{\lambda}\Big{[}{\bf 1}_{T_{k}%
+\leq t}\mathbb{P}_{\lambda}\big{[}X_{k+1}&gt;t-t_{k}|T_{k}=t_{k}\big{]}\circ T_{k%
+}\Big{]}\mathbb{P}_{\lambda}[N\in A]\\
+&amp;=\mathbb{P}_{\lambda}[N_{t}=t]\mathbb{P}_{\lambda}[N\in A],\end{split}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">terminando a prova do lema.
+∎</p>
+</div>
+</div>
+<div id="p21" class="ltx_para">
+<p class="ltx_p">Como corolário do lema acima, podemos deduzir que um processo de Poisson possui incrementos independentes.
+Mais precisamente,</p>
+</div>
+<div id="p22" class="ltx_para">
+<span class="ltx_ERROR undefined">{corollary}</span>
+<p class="ltx_p">Seja <math id="p22.m1" class="ltx_Math" alttext="N" display="inline"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math> um Processo de Poisson <math id="p22.m2" class="ltx_Math" alttext="N" display="inline"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math> com taxa <math id="p22.m3" class="ltx_Math" alttext="\lambda&gt;0" display="inline"><semantics><mrow><mi>λ</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\lambda&gt;0</annotation></semantics></math>.
+Considerando também tempos <math id="p22.m4" class="ltx_Math" alttext="0=t_{0}&lt;t_{1}&lt;\dots&lt;t_{j}" display="inline"><semantics><mrow><mn>0</mn><mo>=</mo><msub><mi>t</mi><mn>0</mn></msub><mo>&lt;</mo><msub><mi>t</mi><mn>1</mn></msub><mo>&lt;</mo><mi mathvariant="normal">⋯</mi><mo>&lt;</mo><msub><mi>t</mi><mi>j</mi></msub></mrow><annotation encoding="application/x-tex">0=t_{0}&lt;t_{1}&lt;\dots&lt;t_{j}</annotation></semantics></math>, e inteiros <math id="p22.m5" class="ltx_Math" alttext="k_{1},\dots,k_{j}\geq 0" display="inline"><semantics><mrow><mrow><msub><mi>k</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>k</mi><mi>j</mi></msub></mrow><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">k_{1},\dots,k_{j}\geq 0</annotation></semantics></math> temos</p>
+<div id="Ch4.Ex7" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.Ex7.m1" class="ltx_Math" alttext="\mathbb{P}_{\lambda}\big{[}N_{t_{1}}=k_{1},\dots,N_{t_{j}}-N_{t_{j-1}}=k_{j}%
+\big{]}=\mathbb{P}_{\lambda}[N_{t_{1}}=k_{1}]\cdots\mathbb{P}_{\lambda}[N_{t_{%
+j}-t_{j-1}}=k_{j}]" display="block"><semantics><mrow><mrow><msub><mi>ℙ</mi><mi>λ</mi></msub><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">[</mo><mrow><mrow><msub><mi>N</mi><msub><mi>t</mi><mn>1</mn></msub></msub><mo>=</mo><mrow><msub><mi>k</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi></mrow></mrow><mo>,</mo><mrow><mrow><msub><mi>N</mi><msub><mi>t</mi><mi>j</mi></msub></msub><mo>−</mo><msub><mi>N</mi><msub><mi>t</mi><mrow><mi>j</mi><mo>−</mo><mn>1</mn></mrow></msub></msub></mrow><mo>=</mo><msub><mi>k</mi><mi>j</mi></msub></mrow></mrow><mo maxsize="120%" minsize="120%">]</mo></mrow></mrow><mo>=</mo><mrow><msub><mi>ℙ</mi><mi>λ</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><msub><mi>N</mi><msub><mi>t</mi><mn>1</mn></msub></msub><mo>=</mo><msub><mi>k</mi><mn>1</mn></msub></mrow><mo stretchy="false">]</mo></mrow><mo>⁢</mo><mi mathvariant="normal">⋯</mi><mo>⁢</mo><msub><mi>ℙ</mi><mi>λ</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><msub><mi>N</mi><mrow><msub><mi>t</mi><mi>j</mi></msub><mo>−</mo><msub><mi>t</mi><mrow><mi>j</mi><mo>−</mo><mn>1</mn></mrow></msub></mrow></msub><mo>=</mo><msub><mi>k</mi><mi>j</mi></msub></mrow><mo stretchy="false">]</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\mathbb{P}_{\lambda}\big{[}N_{t_{1}}=k_{1},\dots,N_{t_{j}}-N_{t_{j-1}}=k_{j}%
+\big{]}=\mathbb{P}_{\lambda}[N_{t_{1}}=k_{1}]\cdots\mathbb{P}_{\lambda}[N_{t_{%
+j}-t_{j-1}}=k_{j}]</annotation></semantics></math></span>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demonstração.</h6>
+<div id="p23" class="ltx_para">
+<p class="ltx_p">Basta observar que</p>
+<div id="Ch4.E66" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.E66.m1" class="ltx_Math" alttext="[N_{t_{2}}-N_{t_{1}},\dots,N_{t_{j}}-N_{t_{j-1}}]=[N_{t_{2}-t_{1}},\dots,N_{t_%
+{j}-t_{1}}-N_{t_{j-1}-t_{1}}]\circ\theta_{t_{1}}" display="block"><semantics><mrow><mrow><mo stretchy="false">[</mo><mrow><msub><mi>N</mi><msub><mi>t</mi><mn>2</mn></msub></msub><mo>−</mo><msub><mi>N</mi><msub><mi>t</mi><mn>1</mn></msub></msub></mrow><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mrow><msub><mi>N</mi><msub><mi>t</mi><mi>j</mi></msub></msub><mo>−</mo><msub><mi>N</mi><msub><mi>t</mi><mrow><mi>j</mi><mo>−</mo><mn>1</mn></mrow></msub></msub></mrow><mo stretchy="false">]</mo></mrow><mo>=</mo><mrow><mrow><mo stretchy="false">[</mo><msub><mi>N</mi><mrow><msub><mi>t</mi><mn>2</mn></msub><mo>−</mo><msub><mi>t</mi><mn>1</mn></msub></mrow></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mrow><msub><mi>N</mi><mrow><msub><mi>t</mi><mi>j</mi></msub><mo>−</mo><msub><mi>t</mi><mn>1</mn></msub></mrow></msub><mo>−</mo><msub><mi>N</mi><mrow><msub><mi>t</mi><mrow><mi>j</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>−</mo><msub><mi>t</mi><mn>1</mn></msub></mrow></msub></mrow><mo rspace="0.055em" stretchy="false">]</mo></mrow><mo rspace="0.222em">∘</mo><msub><mi>θ</mi><msub><mi>t</mi><mn>1</mn></msub></msub></mrow></mrow><annotation encoding="application/x-tex">[N_{t_{2}}-N_{t_{1}},\dots,N_{t_{j}}-N_{t_{j-1}}]=[N_{t_{2}-t_{1}},\dots,N_{t_%
+{j}-t_{1}}-N_{t_{j-1}-t_{1}}]\circ\theta_{t_{1}}</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.66)</span>
+              
+              
+            
+</div>
+<p class="ltx_p">e aplicar o lema para obter</p>
+<div id="Ch4.Ex8" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.Ex8.m1" class="ltx_Math" alttext="\begin{split}\mathbb{P}_{\lambda}\big{[}&amp;N_{t_{1}}=k_{1},\dots,N_{t_{j}}-N_{t_%
+{j-1}}=k_{j}\big{]}\\
+&amp;=\mathbb{P}_{\lambda}[N_{t_{1}}=k_{1}]\mathbb{P}_{\lambda}[N_{t_{2}-t_{1}}=k_%
+{2},\dots N_{t_{j}-t_{1}}-N{t_{j-1}-t_{1}}=k_{j}].\end{split}" display="block"><semantics><mtable columnspacing="0pt" displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_align_right" columnalign="right"><mrow><msub><mi>ℙ</mi><mi>λ</mi></msub><mo maxsize="120%" minsize="120%">[</mo></mrow></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><msub><mi>N</mi><msub><mi>t</mi><mn>1</mn></msub></msub><mo>=</mo><msub><mi>k</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>N</mi><msub><mi>t</mi><mi>j</mi></msub></msub><mo>−</mo><msub><mi>N</mi><msub><mi>t</mi><mrow><mi>j</mi><mo>−</mo><mn>1</mn></mrow></msub></msub><mo>=</mo><msub><mi>k</mi><mi>j</mi></msub><mo maxsize="120%" minsize="120%">]</mo></mrow></mtd></mtr><mtr><mtd></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mi></mi><mo>=</mo><mrow><msub><mi>ℙ</mi><mi>λ</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><msub><mi>N</mi><msub><mi>t</mi><mn>1</mn></msub></msub><mo>=</mo><msub><mi>k</mi><mn>1</mn></msub></mrow><mo stretchy="false">]</mo></mrow><mo>⁢</mo><msub><mi>ℙ</mi><mi>λ</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><mrow><msub><mi>N</mi><mrow><msub><mi>t</mi><mn>2</mn></msub><mo>−</mo><msub><mi>t</mi><mn>1</mn></msub></mrow></msub><mo>=</mo><msub><mi>k</mi><mn>2</mn></msub></mrow><mo>,</mo><mrow><mrow><mrow><mi mathvariant="normal">…</mi><mo>⁢</mo><msub><mi>N</mi><mrow><msub><mi>t</mi><mi>j</mi></msub><mo>−</mo><msub><mi>t</mi><mn>1</mn></msub></mrow></msub></mrow><mo>−</mo><mrow><mi>N</mi><mo>⁢</mo><msub><mi>t</mi><mrow><mi>j</mi><mo>−</mo><mn>1</mn></mrow></msub></mrow><mo>−</mo><msub><mi>t</mi><mn>1</mn></msub></mrow><mo>=</mo><msub><mi>k</mi><mi>j</mi></msub></mrow></mrow><mo stretchy="false">]</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{split}\mathbb{P}_{\lambda}\big{[}&amp;N_{t_{1}}=k_{1},\dots,N_{t_{j}}-N_{t_%
+{j-1}}=k_{j}\big{]}\\
+&amp;=\mathbb{P}_{\lambda}[N_{t_{1}}=k_{1}]\mathbb{P}_{\lambda}[N_{t_{2}-t_{1}}=k_%
+{2},\dots N_{t_{j}-t_{1}}-N{t_{j-1}-t_{1}}=k_{j}].\end{split}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Repetindo essa operação iterativamente, obtemos o resultado desejado.
+∎</p>
+</div>
+</div>
+<div id="p24" class="ltx_para">
+<div id="Ch4.E67" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.E67.m1" class="ltx_Math" alttext="T_{1},\dots,T_{k}\text{ under }\mathbb{P}^{t,k}_{\lambda}\overset{d}{\sim}" display="block"><semantics><mrow><msub><mi>T</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mrow><msub><mi>T</mi><mi>k</mi></msub><mo>⁢</mo><mtext> under </mtext><mo>⁢</mo><msubsup><mi>ℙ</mi><mi>λ</mi><mrow><mi>t</mi><mo>,</mo><mi>k</mi></mrow></msubsup><mo>⁢</mo><mover accent="true"><mo>∼</mo><mo>𝑑</mo></mover></mrow></mrow><annotation encoding="application/x-tex">T_{1},\dots,T_{k}\text{ under }\mathbb{P}^{t,k}_{\lambda}\overset{d}{\sim}</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.67)</span>
+            
+            
+          
+</div>
+</div>
+<div id="p25" class="ltx_para">
+<p class="ltx_p"><math id="p25.m1" class="ltx_Math" alttext="x_{1}=t_{1}" display="inline"><semantics><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>=</mo><msub><mi>t</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">x_{1}=t_{1}</annotation></semantics></math>, <math id="p25.m2" class="ltx_Math" alttext="x_{2}=t_{2}-t_{1},\dots,x_{k}=t_{k}-t_{k-1}" display="inline"><semantics><mrow><mrow><msub><mi>x</mi><mn>2</mn></msub><mo>=</mo><mrow><mrow><msub><mi>t</mi><mn>2</mn></msub><mo>−</mo><msub><mi>t</mi><mn>1</mn></msub></mrow><mo>,</mo><mi mathvariant="normal">…</mi></mrow></mrow><mo>,</mo><mrow><msub><mi>x</mi><mi>k</mi></msub><mo>=</mo><mrow><msub><mi>t</mi><mi>k</mi></msub><mo>−</mo><msub><mi>t</mi><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></msub></mrow></mrow></mrow><annotation encoding="application/x-tex">x_{2}=t_{2}-t_{1},\dots,x_{k}=t_{k}-t_{k-1}</annotation></semantics></math></p>
+<div id="Ch4.E68" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.E68.m1" class="ltx_Math" alttext="\begin{split}\rho^{t,k}_{\rho}(t_{1},\dots,t_{k})&amp;={\bf 1}_{0\leq t_{1}\leq%
+\dots\leq t_{k}\leq t}\;\frac{1}{\mathbb{P}_{\lambda}[N_{t}=k]}\lambda e^{-%
+\lambda x_{1}}\lambda e^{-\lambda x_{2}}\cdots e^{-\lambda x_{k}}e^{-\lambda(t%
+-t_{k})}\\
+&amp;={\bf 1}_{0\leq t_{1}\leq\dots\leq t_{k}\leq t}\;\frac{k!}{e^{-\lambda t}(%
+\lambda t)^{k}}\lambda^{k}e^{-\lambda t}={\bf 1}_{0\leq t_{1}\leq\dots\leq t_{%
+k}\leq t}\;\frac{k!}{t^{k}}.\end{split}" display="block"><semantics><mtable columnspacing="0pt" displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_align_right" columnalign="right"><mrow><msubsup><mi>ρ</mi><mi>ρ</mi><mrow><mi>t</mi><mo>,</mo><mi>k</mi></mrow></msubsup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>t</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>t</mi><mi>k</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mi></mi><mo>=</mo><mrow><msub><mn>𝟏</mn><mrow><mn>0</mn><mo>≤</mo><msub><mi>t</mi><mn>1</mn></msub><mo>≤</mo><mi mathvariant="normal">⋯</mi><mo>≤</mo><msub><mi>t</mi><mi>k</mi></msub><mo>≤</mo><mi>t</mi></mrow></msub><mo>⁢</mo><mfrac><mn>1</mn><mrow><msub><mi>ℙ</mi><mi>λ</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><msub><mi>N</mi><mi>t</mi></msub><mo>=</mo><mi>k</mi></mrow><mo stretchy="false">]</mo></mrow></mrow></mfrac><mo>⁢</mo><mi>λ</mi><mo>⁢</mo><msup><mi>e</mi><mrow><mo>−</mo><mrow><mi>λ</mi><mo>⁢</mo><msub><mi>x</mi><mn>1</mn></msub></mrow></mrow></msup><mo>⁢</mo><mi>λ</mi><mo>⁢</mo><msup><mi>e</mi><mrow><mo>−</mo><mrow><mi>λ</mi><mo>⁢</mo><msub><mi>x</mi><mn>2</mn></msub></mrow></mrow></msup><mo>⁢</mo><mi mathvariant="normal">⋯</mi><mo>⁢</mo><msup><mi>e</mi><mrow><mo>−</mo><mrow><mi>λ</mi><mo>⁢</mo><msub><mi>x</mi><mi>k</mi></msub></mrow></mrow></msup><mo>⁢</mo><msup><mi>e</mi><mrow><mo>−</mo><mrow><mi>λ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>t</mi><mo>−</mo><msub><mi>t</mi><mi>k</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></msup></mrow></mrow></mtd></mtr><mtr><mtd></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mi></mi><mo>=</mo><mrow><msub><mn>𝟏</mn><mrow><mn>0</mn><mo>≤</mo><msub><mi>t</mi><mn>1</mn></msub><mo>≤</mo><mi mathvariant="normal">⋯</mi><mo>≤</mo><msub><mi>t</mi><mi>k</mi></msub><mo>≤</mo><mi>t</mi></mrow></msub><mo>⁢</mo><mfrac><mrow><mi>k</mi><mo>!</mo></mrow><mrow><msup><mi>e</mi><mrow><mo>−</mo><mrow><mi>λ</mi><mo>⁢</mo><mi>t</mi></mrow></mrow></msup><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>λ</mi><mo>⁢</mo><mi>t</mi></mrow><mo stretchy="false">)</mo></mrow><mi>k</mi></msup></mrow></mfrac><mo>⁢</mo><msup><mi>λ</mi><mi>k</mi></msup><mo>⁢</mo><msup><mi>e</mi><mrow><mo>−</mo><mrow><mi>λ</mi><mo>⁢</mo><mi>t</mi></mrow></mrow></msup></mrow><mo>=</mo><mrow><msub><mn>𝟏</mn><mrow><mn>0</mn><mo>≤</mo><msub><mi>t</mi><mn>1</mn></msub><mo>≤</mo><mi mathvariant="normal">⋯</mi><mo>≤</mo><msub><mi>t</mi><mi>k</mi></msub><mo>≤</mo><mi>t</mi></mrow></msub><mo>⁢</mo><mfrac><mrow><mi>k</mi><mo>!</mo></mrow><msup><mi>t</mi><mi>k</mi></msup></mfrac></mrow></mrow><mo lspace="0em">.</mo></mrow></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{split}\rho^{t,k}_{\rho}(t_{1},\dots,t_{k})&amp;={\bf 1}_{0\leq t_{1}\leq%
+\dots\leq t_{k}\leq t}\;\frac{1}{\mathbb{P}_{\lambda}[N_{t}=k]}\lambda e^{-%
+\lambda x_{1}}\lambda e^{-\lambda x_{2}}\cdots e^{-\lambda x_{k}}e^{-\lambda(t%
+-t_{k})}\\
+&amp;={\bf 1}_{0\leq t_{1}\leq\dots\leq t_{k}\leq t}\;\frac{k!}{e^{-\lambda t}(%
+\lambda t)^{k}}\lambda^{k}e^{-\lambda t}={\bf 1}_{0\leq t_{1}\leq\dots\leq t_{%
+k}\leq t}\;\frac{k!}{t^{k}}.\end{split}</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.68)</span>
+            
+            
+          
+</div>
+<p class="ltx_p">Note que não depende de <math id="p25.m3" class="ltx_Math" alttext="\lambda" display="inline"><semantics><mi>λ</mi><annotation encoding="application/x-tex">\lambda</annotation></semantics></math>.</p>
+</div>
+<div id="p26" class="ltx_para">
+<p class="ltx_p">Considere variáveis uniformes <math id="p26.m1" class="ltx_Math" alttext="U_{1},\dots,U_{k}" display="inline"><semantics><mrow><msub><mi>U</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>U</mi><mi>k</mi></msub></mrow><annotation encoding="application/x-tex">U_{1},\dots,U_{k}</annotation></semantics></math> no intervalo <math id="p26.m2" class="ltx_Math" alttext="[0,t]" display="inline"><semantics><mrow><mo stretchy="false">[</mo><mn>0</mn><mo>,</mo><mi>t</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[0,t]</annotation></semantics></math></p>
+<div id="Ch4.E69" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.E69.m1" class="ltx_Math" alttext="\rho^{t,k}(u_{1},\dots,u_{k})={\bf 1}_{\tilde{u}_{1},\dots,\tilde{u}_{k}\in[0,%
+t]}\;\frac{1}{t^{k}}" display="block"><semantics><mrow><mrow><msup><mi>ρ</mi><mrow><mi>t</mi><mo>,</mo><mi>k</mi></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>u</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>u</mi><mi>k</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msub><mn>𝟏</mn><mrow><mrow><msub><mover accent="true"><mi>u</mi><mo>~</mo></mover><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mover accent="true"><mi>u</mi><mo>~</mo></mover><mi>k</mi></msub></mrow><mo>∈</mo><mrow><mo stretchy="false">[</mo><mn>0</mn><mo>,</mo><mi>t</mi><mo stretchy="false">]</mo></mrow></mrow></msub><mo>⁢</mo><mfrac><mn>1</mn><msup><mi>t</mi><mi>k</mi></msup></mfrac></mrow></mrow><annotation encoding="application/x-tex">\rho^{t,k}(u_{1},\dots,u_{k})={\bf 1}_{\tilde{u}_{1},\dots,\tilde{u}_{k}\in[0,%
+t]}\;\frac{1}{t^{k}}</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.69)</span>
+            
+            
+          
+</div>
+</div>
+<div id="p27" class="ltx_para">
+<p class="ltx_p">Seja <math id="p27.m1" class="ltx_Math" alttext="\tilde{U}_{1}&lt;\dots&lt;\tilde{U}_{k}" display="inline"><semantics><mrow><msub><mover accent="true"><mi>U</mi><mo>~</mo></mover><mn>1</mn></msub><mo>&lt;</mo><mi mathvariant="normal">⋯</mi><mo>&lt;</mo><msub><mover accent="true"><mi>U</mi><mo>~</mo></mover><mi>k</mi></msub></mrow><annotation encoding="application/x-tex">\tilde{U}_{1}&lt;\dots&lt;\tilde{U}_{k}</annotation></semantics></math> a versão ordenada das <math id="p27.m2" class="ltx_Math" alttext="U_{i}" display="inline"><semantics><msub><mi>U</mi><mi>i</mi></msub><annotation encoding="application/x-tex">U_{i}</annotation></semantics></math>’s.</p>
+<div id="Ch4.E70" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.E70.m1" class="ltx_math_unparsed" alttext="(\tilde{U}_{1},\dots,\tilde{U}_{k})\overset{q.c.}{=}\sum_{\sigma\text{ perm. %
+de $\{1,\dots,k\}$}}(U_{\sigma_{1}},\dots,U_{\sigma_{k}}){\bf 1}_{0\leq U_{%
+\sigma_{1}}\leq\dots\leq U_{\sigma_{k}}\leq t}" display="block"><semantics><mrow><mrow><mo stretchy="false">(</mo><msub><mover accent="true"><mi>U</mi><mo>~</mo></mover><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mover accent="true"><mi>U</mi><mo>~</mo></mover><mi>k</mi></msub><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mover accent="true"><mo>=</mo><mrow><mi>q</mi><mo lspace="0em" rspace="0.167em">.</mo><mi>c</mi><mo lspace="0em">.</mo></mrow></mover><mo lspace="0.278em">⁢</mo><mrow><munder><mo movablelimits="false" rspace="0em">∑</mo><mrow><mi>σ</mi><mo>⁢</mo><mrow><mtext> perm. de </mtext><mrow><mo stretchy="false">{</mo><mn>1</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi>k</mi><mo stretchy="false">}</mo></mrow></mrow></mrow></munder><mrow><mrow><mo stretchy="false">(</mo><msub><mi>U</mi><msub><mi>σ</mi><mn>1</mn></msub></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>U</mi><msub><mi>σ</mi><mi>k</mi></msub></msub><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mn>𝟏</mn><mrow><mn>0</mn><mo>≤</mo><msub><mi>U</mi><msub><mi>σ</mi><mn>1</mn></msub></msub><mo>≤</mo><mi mathvariant="normal">⋯</mi><mo>≤</mo><msub><mi>U</mi><msub><mi>σ</mi><mi>k</mi></msub></msub><mo>≤</mo><mi>t</mi></mrow></msub></mrow></mrow></mrow><annotation encoding="application/x-tex">(\tilde{U}_{1},\dots,\tilde{U}_{k})\overset{q.c.}{=}\sum_{\sigma\text{ perm. %
+de $\{1,\dots,k\}$}}(U_{\sigma_{1}},\dots,U_{\sigma_{k}}){\bf 1}_{0\leq U_{%
+\sigma_{1}}\leq\dots\leq U_{\sigma_{k}}\leq t}</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.70)</span>
+            
+            
+          
+</div>
+</div>
+<div id="p28" class="ltx_para">
+<p class="ltx_p">Então,</p>
+<div id="Ch4.E71" class="ltx_equation ltx_eqn_div">
+<span><math id="Ch4.E71.m1" class="ltx_Math" alttext="\begin{split}\tilde{\rho}^{t,k}&amp;={\bf 1}_{0\leq\tilde{u}_{1}\leq\dots\leq%
+\tilde{u}_{k}\leq t}\;\frac{1}{t^{k}}\sum_{\sigma\text{ perm. de $\{1,\dots,k%
+\}$}}\rho^{t,k}(\tilde{u}_{\sigma_{1}},\dots,\tilde{u}_{\sigma_{k}})\\
+&amp;={\bf 1}_{0\leq\tilde{u}_{1}\leq\dots\leq\tilde{u}_{k}\leq t}\;\frac{k!}{t^{k%
+}}\end{split}" display="block"><semantics><mtable columnspacing="0pt" displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_align_right" columnalign="right"><msup><mover accent="true"><mi>ρ</mi><mo>~</mo></mover><mrow><mi>t</mi><mo>,</mo><mi>k</mi></mrow></msup></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mi></mi><mo>=</mo><mrow><msub><mn>𝟏</mn><mrow><mn>0</mn><mo>≤</mo><msub><mover accent="true"><mi>u</mi><mo>~</mo></mover><mn>1</mn></msub><mo>≤</mo><mi mathvariant="normal">⋯</mi><mo>≤</mo><msub><mover accent="true"><mi>u</mi><mo>~</mo></mover><mi>k</mi></msub><mo>≤</mo><mi>t</mi></mrow></msub><mo>⁢</mo><mfrac><mn>1</mn><msup><mi>t</mi><mi>k</mi></msup></mfrac><mo>⁢</mo><mrow><munder><mo movablelimits="false">∑</mo><mrow><mi>σ</mi><mo>⁢</mo><mrow><mtext> perm. de </mtext><mrow><mo stretchy="false">{</mo><mn>1</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi>k</mi><mo stretchy="false">}</mo></mrow></mrow></mrow></munder><mrow><msup><mi>ρ</mi><mrow><mi>t</mi><mo>,</mo><mi>k</mi></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mover accent="true"><mi>u</mi><mo>~</mo></mover><msub><mi>σ</mi><mn>1</mn></msub></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mover accent="true"><mi>u</mi><mo>~</mo></mover><msub><mi>σ</mi><mi>k</mi></msub></msub><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></mrow></mtd></mtr><mtr><mtd></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mi></mi><mo>=</mo><mrow><msub><mn>𝟏</mn><mrow><mn>0</mn><mo>≤</mo><msub><mover accent="true"><mi>u</mi><mo>~</mo></mover><mn>1</mn></msub><mo>≤</mo><mi mathvariant="normal">⋯</mi><mo>≤</mo><msub><mover accent="true"><mi>u</mi><mo>~</mo></mover><mi>k</mi></msub><mo>≤</mo><mi>t</mi></mrow></msub><mo>⁢</mo><mfrac><mrow><mi>k</mi><mo>!</mo></mrow><msup><mi>t</mi><mi>k</mi></msup></mfrac></mrow></mrow></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{split}\tilde{\rho}^{t,k}&amp;={\bf 1}_{0\leq\tilde{u}_{1}\leq\dots\leq%
+\tilde{u}_{k}\leq t}\;\frac{1}{t^{k}}\sum_{\sigma\text{ perm. de $\{1,\dots,k%
+\}$}}\rho^{t,k}(\tilde{u}_{\sigma_{1}},\dots,\tilde{u}_{\sigma_{k}})\\
+&amp;={\bf 1}_{0\leq\tilde{u}_{1}\leq\dots\leq\tilde{u}_{k}\leq t}\;\frac{k!}{t^{k%
+}}\end{split}</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.71)</span>
+            
+            
+          
+</div>
+</div>
+<div class="ltx_pagination ltx_role_newpage"></div>
+<div id="p29" class="ltx_para">
+<span class="ltx_ERROR undefined">\todosec</span>
+<p class="ltx_p">Tópico: Processos de Markov em tempo contínuofazer…</p>
+</div>
+<div id="p30" class="ltx_para">
+<span class="ltx_ERROR undefined">\todosec</span>
+<p class="ltx_p">Tópico: Sistemas de partículasfazer…</p>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+<a href="Ch4.S4.html" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a><a href="Ch5.html" class="navigation navigation-next" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+</div>
+</div>
+<script src="bookml/gitbook/js/app.min.js"></script>
+<script src="bookml/gitbook/js/jquery.highlight.js"></script>
+<script src="bookml/gitbook/js/plugin-search.js"></script>
+<script src="bookml/gitbook/js/plugin-fontsettings.js"></script>
+<script src="bookml/gitbook/js/plugin-bookdown.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+        MathJax = {
+          startup: {
+            ready() {
+              // do not process equations disabled with \bmlDisableMathJax (code suggested by Davide P. Cervone)
+              class bmlFindMathML extends MathJax._.input.mathml.FindMathML.FindMathML {
+                processMath(set) {
+                  const adaptor = this.adaptor;
+                  for (const node of set.values()) {
+                    if (adaptor.hasClass(node, 'bml_disable_mathjax')) {
+                      set.delete(node);
+                    }
+                  }
+                  return super.processMath(set);
+                }
+              }
+
+              MathJax._.components.global.combineDefaults(MathJax.config, 'mml', {FindMathML: new bmlFindMathML()});
+
+              MathJax.startup.defaultReady();
+
+              // preproces MathML to make MathJax aware of certain LaTeXML and BookML additional info
+              const mmlFilters = MathJax.startup.input[0].mmlFilters;
+
+              // convert the LaTeXML calligraphic (chancery) annotation to a form MathJax understands
+              // since the corresponding Unicode characters render as script (rounded)
+              const script2latin = {
+                '𝒜': 'A', 'ℬ': 'B', '𝒞': 'C', '𝒟': 'D', 'ℰ': 'E', 'ℱ': 'F', '𝒢': 'G',
+                'ℋ': 'H', 'ℐ': 'I', '𝒥': 'J', '𝒦': 'K', 'ℒ': 'L', 'ℳ': 'M', '𝒩': 'N',
+                '𝒪': 'O', '𝒫': 'P', '𝒬': 'Q', 'ℛ': 'R', '𝒮': 'S', '𝒯': 'T', '𝒰': 'U',
+                '𝒱': 'V', '𝒲': 'W', '𝒳': 'X', '𝒴': 'Y', '𝒵': 'Z',
+              };
+
+              mmlFilters.add((args) => {
+                for (const n of args.data.getElementsByClassName('ltx_font_mathcaligraphic')) {
+                  n.classList.add('MJX-tex-calligraphic');
+                  const letter = script2latin[n.textContent];
+                  if (letter !== undefined) { n.textContent = letter; }
+                }
+              });
+
+              // adjust characters based on Unicode variation sequences
+              const replacements = {
+                // MathJax renders the empty set as the U+FE00 variant, so the plain character needs adjusting
+                '∅': { variant: 'variant' },
+                // MathJax renders script characters in rounded style, which is fine for no variation and U+FE00
+                '𝒜\xFE00': { text: 'A', variant: 'tex-calligraphic' },
+                'ℬ\xFE00': { text: 'B', variant: 'tex-calligraphic' },
+                '𝒞\xFE00': { text: 'C', variant: 'tex-calligraphic' },
+                '𝒟\xFE00': { text: 'D', variant: 'tex-calligraphic' },
+                'ℰ\xFE00': { text: 'E', variant: 'tex-calligraphic' },
+                'ℱ\xFE00': { text: 'F', variant: 'tex-calligraphic' },
+                '𝒢\xFE00': { text: 'G', variant: 'tex-calligraphic' },
+                'ℋ\xFE00': { text: 'H', variant: 'tex-calligraphic' },
+                'ℐ\xFE00': { text: 'I', variant: 'tex-calligraphic' },
+                '𝒥\xFE00': { text: 'J', variant: 'tex-calligraphic' },
+                '𝒦\xFE00': { text: 'K', variant: 'tex-calligraphic' },
+                'ℒ\xFE00': { text: 'L', variant: 'tex-calligraphic' },
+                'ℳ\xFE00': { text: 'M', variant: 'tex-calligraphic' },
+                '𝒩\xFE00': { text: 'N', variant: 'tex-calligraphic' },
+                '𝒪\xFE00': { text: 'O', variant: 'tex-calligraphic' },
+                '𝒫\xFE00': { text: 'P', variant: 'tex-calligraphic' },
+                '𝒬\xFE00': { text: 'Q', variant: 'tex-calligraphic' },
+                'ℛ\xFE00': { text: 'R', variant: 'tex-calligraphic' },
+                '𝒮\xFE00': { text: 'S', variant: 'tex-calligraphic' },
+                '𝒯\xFE00': { text: 'T', variant: 'tex-calligraphic' },
+                '𝒰\xFE00': { text: 'U', variant: 'tex-calligraphic' },
+                '𝒱\xFE00': { text: 'V', variant: 'tex-calligraphic' },
+                '𝒲\xFE00': { text: 'W', variant: 'tex-calligraphic' },
+                '𝒳\xFE00': { text: 'X', variant: 'tex-calligraphic' },
+                '𝒴\xFE00': { text: 'Y', variant: 'tex-calligraphic' },
+                '𝒵\xFE00': { text: 'Z', variant: 'tex-calligraphic' }
+              };
+
+              mmlFilters.add((args) => {
+                let nodes = document.evaluate('.//m:mi | .//m:mn | .//m:mo | .//m:ms', args.data,
+                  () => 'http://www.w3.org/1998/Math/MathML', XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE);
+                for (let i = 0; i < nodes.snapshotLength; i++) {
+                  const n = nodes.snapshotItem(i);
+                  const repl = replacements[n.innerHTML];
+                  if (repl !== undefined) {
+                    const variant = repl['variant'];
+                    const text = repl['text'];
+                    if (variant !== undefined) { n.classList.add('MJX-' + variant); n.removeAttribute('mathvariant'); }
+                    if (text !== undefined) { n.innerHTML = text; }
+                  }
+                }
+              });
+            }
+          }
+        };
+      </script>
+<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js"></script>
+<script type="text/javascript">
+                gitbook.require(["gitbook"], function(gitbook) {
+                gitbook.start({
+                  "fontsettings": {
+                    "theme": "white",
+                    "family": "sans",
+                    "size": 2
+                  },
+                  "download": [ [ "Notas_de_aula.pdf", "PDF" ], ],
+                  "search": {
+                    "engine": "fuse"
+                  },
+                  "toc": {
+                    "collapse": "none"
+                  }
+                });
+              });
+            </script>
+</body>
+
+</html>
